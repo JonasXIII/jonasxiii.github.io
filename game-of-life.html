@@ -1,25 +1,35 @@
-<body>
-    <main>
-        <h1>Conway's Game of Life</h1>
-        <p>Welcome to my interactive implementation of Conway's Game of Life.</p>
-        <div style="display: flex; align-items: flex-start; gap: 20px;">
-            <!-- Controls Panel -->
-            <div id="controls">
-                <button id="pauseResume">Pause</button>
-                <button id="step">Step</button>
-                <label for="fpsSlider">FPS:</label>
-                <input type="range" id="fpsSlider" min="1" max="60" value="30">
-                <span id="fpsDisplay">30 FPS</span>
-                <button id="reset">Reset</button>
-                <button id="randomize">Randomize</button> <!-- New button -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <div id="header-container"></div>
+            <h1>Conway's Game of Life</h1>
+            <p>Welcome to my interactive implementation of Conway's Game of Life.</p>
+            <div style="display: flex; align-items: flex-start; gap: 20px;">
+                <!-- Controls Panel -->
+                <div id="controls">
+                    <button id="pauseResume">Pause</button>
+                    <button id="step">Step</button>
+                    <label for="fpsSlider">FPS:</label>
+                    <input type="range" id="fpsSlider" min="1" max="60" value="30">
+                    <span id="fpsDisplay">30 FPS</span>
+                    <button id="reset">Reset</button>
+                    <button id="randomize">Randomize</button> <!-- New button -->
+                </div>
+                
+                <!-- Canvas -->
+                <canvas id="gameOfLifeCanvas" width="500" height="500"></canvas>
             </div>
-            
-            <!-- Canvas -->
-            <canvas id="gameOfLifeCanvas" width="500" height="500"></canvas>
-        </div>
-        <script src="game-of-life.js"></script>
-    </main>
-    <footer>
-        <p>&copy; 2024 Jonas Loeser</p>
-    </footer>
-</body>
+            <script src="game-of-life.js"></script>
+        </main>
+
+        <div id="footer-container"></div>
+        <script src="load-header-footer.js"></script>
+    </body>
+</html> 
