@@ -1,7 +1,7 @@
-// Initial chess board setup
+// Chessboard DOM element
 const boardElement = document.getElementById('chessboard');
 
-// Piece setup (simplified for demonstration)
+// Initial chessboard setup
 const initialBoard = [
     ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
     ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
@@ -13,18 +13,20 @@ const initialBoard = [
     ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
 ];
 
-// Piece notation (for simplicity)
+// Piece symbols for rendering
 const pieceSymbols = {
     'K': '♔', 'Q': '♕', 'R': '♖', 'B': '♗', 'N': '♘', 'P': '♙',
     'k': '♚', 'q': '♛', 'r': '♜', 'b': '♝', 'n': '♞', 'p': '♟'
 };
 
+// Game state
 let selectedPiece = null;
 let legalMoves = [];
+let turn = 'w'; // 'w' for white, 'b' for black
 
-// Function to create the chessboard
+// Create the chessboard
 function createBoard() {
-    boardElement.innerHTML = '';  // Clear previous board
+    boardElement.innerHTML = ''; // Clear the board
     for (let row = 0; row < 8; row++) {
         for (let col = 0; col < 8; col++) {
             const square = document.createElement('div');
@@ -33,32 +35,34 @@ function createBoard() {
             square.dataset.row = row;
             square.dataset.col = col;
             square.addEventListener('click', handleSquareClick);
-            if (initialBoard[row][col]) {
-                square.textContent = pieceSymbols[initialBoard[row][col]];
+            const piece = initialBoard[row][col];
+            if (piece) {
+                square.textContent = pieceSymbols[piece];
             }
             boardElement.appendChild(square);
         }
     }
 }
 
-// Function to handle square clicks
+// Handle square clicks
 function handleSquareClick(event) {
     const square = event.target;
     const row = parseInt(square.dataset.row);
     const col = parseInt(square.dataset.col);
 
     if (selectedPiece) {
-        // If a piece is selected, check if the square is a legal move
+        // Attempt to move the piece
         if (legalMoves.some(move => move.row === row && move.col === col)) {
             movePiece(row, col);
             deselectPiece();
+            turn = turn === 'w' ? 'b' : 'w'; // Switch turn
         } else {
             deselectPiece();
         }
     } else {
         // Select the piece
         const piece = initialBoard[row][col];
-        if (piece) {
+        if (piece && isPieceTurn(piece)) {
             selectedPiece = { row, col, piece };
             legalMoves = getLegalMoves(row, col, piece);
             highlightLegalMoves();
@@ -66,7 +70,7 @@ function handleSquareClick(event) {
     }
 }
 
-// Function to highlight legal moves
+// Highlight legal moves
 function highlightLegalMoves() {
     const squares = document.querySelectorAll('.square');
     squares.forEach(square => square.classList.remove('legal-move'));
@@ -77,40 +81,62 @@ function highlightLegalMoves() {
     });
 }
 
-// Function to calculate legal moves (simplified)
+// Get legal moves for a piece
 function getLegalMoves(row, col, piece) {
-    // For simplicity, only allow basic moves (you can expand this later with real logic)
     const moves = [];
-    if (piece.toLowerCase() === 'p') {
-        // Pawn movement (simplified, one square forward)
-        const direction = piece === 'p' ? 1 : -1; // White moves down, black moves up
-        if (row + direction >= 0 && row + direction < 8) {
-            moves.push({ row: row + direction, col });
+    const directions = {
+        'p': [[1, 0], [1, 1], [1, -1]],
+        'P': [[-1, 0], [-1, 1], [-1, -1]],
+        'r': [[0, 1], [0, -1], [1, 0], [-1, 0]],
+        'b': [[1, 1], [1, -1], [-1, 1], [-1, -1]],
+        'q': [[0, 1], [0, -1], [1, 0], [-1, 0], [1, 1], [1, -1], [-1, 1], [-1, -1]],
+        'k': [[0, 1], [0, -1], [1, 0], [-1, 0], [1, 1], [1, -1], [-1, 1], [-1, -1]],
+        'n': [[2, 1], [2, -1], [-2, 1], [-2, -1], [1, 2], [1, -2], [-1, 2], [-1, -2]]
+    };
+
+    directions[piece.toLowerCase()]?.forEach(([dx, dy]) => {
+        const newRow = row + dx;
+        const newCol = col + dy;
+        if (newRow >= 0 && newRow < 8 && newCol >= 0 && newCol < 8) {
+            const target = initialBoard[newRow][newCol];
+            if (piece.toLowerCase() === 'p') {
+                // Pawn specific logic
+                const direction = piece === 'p' ? 1 : -1;
+                if (dy === 0 && !target) moves.push({ row: newRow, col: newCol });
+                if (dy !== 0 && target && isEnemyPiece(piece, target)) moves.push({ row: newRow, col: newCol });
+            } else {
+                // General move logic
+                if (!target || isEnemyPiece(piece, target)) moves.push({ row: newRow, col: newCol });
+            }
         }
-    } else if (piece.toLowerCase() === 'r') {
-        // Rook movement (straight lines)
-        for (let i = 1; i < 8; i++) {
-            moves.push({ row, col: col + i }); // Horizontal right
-            moves.push({ row, col: col - i }); // Horizontal left
-            moves.push({ row: row + i, col }); // Vertical down
-            moves.push({ row: row - i, col }); // Vertical up
-        }
-    }
+    });
+
     return moves;
 }
 
-// Function to move the piece
+// Move the piece
 function movePiece(row, col) {
     initialBoard[row][col] = selectedPiece.piece;
     initialBoard[selectedPiece.row][selectedPiece.col] = '';
-    createBoard(); // Recreate the board after the move
+    createBoard();
 }
 
-// Function to deselect the piece
+// Deselect the piece
 function deselectPiece() {
     selectedPiece = null;
     legalMoves = [];
     highlightLegalMoves();
+}
+
+// Check if the piece belongs to the current turn
+function isPieceTurn(piece) {
+    return (turn === 'w' && piece === piece.toUpperCase()) || (turn === 'b' && piece === piece.toLowerCase());
+}
+
+// Check if the target piece is an enemy
+function isEnemyPiece(piece, target) {
+    return (piece === piece.toUpperCase() && target === target.toLowerCase()) ||
+           (piece === piece.toLowerCase() && target === target.toUpperCase());
 }
 
 // Initialize the game
