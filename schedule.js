@@ -19,42 +19,38 @@ const friends = [
 function renderSchedule() {
     schedule.innerHTML = "";
 
-    // Add days as headers
-    const daysRow = document.createElement("div");
-    daysRow.className = "schedule-header";
+    // Add day headers (row 1, columns 2-6)
     const dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-    dayNames.forEach(day => {
+    dayNames.forEach((day, index) => {
         const dayHeader = document.createElement("div");
         dayHeader.className = "schedule-header";
+        dayHeader.style.gridColumn = `${index + 2}`; // Columns start at 2 for days
         dayHeader.textContent = day;
         schedule.appendChild(dayHeader);
     });
 
-    // Add time column
-    const timeColumn = document.createElement("div");
-    timeColumn.className = "time-column";
+    // Add time column (column 1, rows 2-57)
     for (let i = 8; i <= 21.75; i += 0.25) {
         const timeSlot = document.createElement("div");
         timeSlot.className = "time-slot";
         const hour = Math.floor(i);
         const minutes = (i % 1) * 60;
         timeSlot.textContent = `${hour}:${minutes === 0 ? "00" : minutes}`;
-        timeColumn.appendChild(timeSlot);
+        timeSlot.style.gridRow = `${(i - 8) * 4 + 2}`; // Start at row 2
+        schedule.appendChild(timeSlot);
     }
-    schedule.appendChild(timeColumn);
 
-    // Add schedule columns for days
-    for (let i = 0; i < 5; i++) {
-        const dayColumn = document.createElement("div");
-        dayColumn.className = "schedule-day";
-        for (let j = 8; j <= 21.75; j += 0.25) {
+    // Add schedule slots (columns 2-6, rows 2-57)
+    for (let day = 0; day < 5; day++) {
+        for (let time = 8; time <= 21.75; time += 0.25) {
             const slot = document.createElement("div");
             slot.className = "schedule-slot";
-            slot.dataset.day = i;
-            slot.dataset.hour = j;
-            dayColumn.appendChild(slot);
+            slot.dataset.day = day;
+            slot.dataset.hour = time;
+            slot.style.gridColumn = `${day + 2}`; // Columns start at 2
+            slot.style.gridRow = `${(time - 8) * 4 + 2}`; // Rows start at 2
+            schedule.appendChild(slot);
         }
-        schedule.appendChild(dayColumn);
     }
 }
 
