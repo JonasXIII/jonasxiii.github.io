@@ -1,12 +1,19 @@
+const MAX_COMBINE_SLOTS = 8; // Maximum number of adjacent slots to combine
+
 const schedule = document.getElementById("schedule");
 const friendToggles = document.getElementById("friend-toggles");
 
 const friends = [
     { name: "Alice", color: "red", schedule: [{ day: 0, start: 8, end: 10, text: "Meeting" }] },
-    { name: "Bob", color: "blue", schedule: [{ day: 0, start: 9, end: 11, text: "Call" }] },
-    { name: "Jonas", color: "green", schedule: [{day:0,start:13,end:14},{day:0,start:17,end:18},{day:1,start:13,end:18},{day:2,start:13,end:14},{day:3,start:14,end:18},{day:4,start:13,end:14}] },
-    { name: "Diana", color: "purple", schedule: [{ day: 2, start: 8.25, end: 9.75, text: "Work" }] },
-    { name: "Eve", color: "orange", schedule: [{ day: 3, start: 8, end: 20, text: "Hackathon" }] },
+    { name: "Jonas", color: "green", schedule: [
+        { day: 0, start: 13, end: 14, text: "Cloud Computing" },
+        { day: 0, start: 17, end: 17.5, text: "Arch" },
+        { day: 1, start: 13, end: 18, text: "Cloud Computing" },
+        { day: 2, start: 13, end: 14, text: "Cloud Computing" },
+        { day: 3, start: 14, end: 18, text: "Deep Learning" },
+        { day: 4, start: 13, end: 14, text: "Cloud Computing" },
+    ] },
+    { name: "Charlie", color: "blue", schedule: [{ day: 0, start: 9, end: 12, text: "Call" }] },
 ];
 
 function renderSchedule() {
@@ -15,15 +22,13 @@ function renderSchedule() {
     // Add days as headers
     const daysRow = document.createElement("div");
     daysRow.className = "schedule-header";
-    daysRow.style.gridColumn = "2 / span 5";
     const dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
     dayNames.forEach(day => {
         const dayHeader = document.createElement("div");
         dayHeader.className = "schedule-header";
         dayHeader.textContent = day;
-        daysRow.appendChild(dayHeader);
+        schedule.appendChild(dayHeader);
     });
-    schedule.appendChild(daysRow);
 
     // Add time column
     const timeColumn = document.createElement("div");
@@ -72,7 +77,7 @@ function updateSchedule() {
         });
     });
 
-    // Place events in the corresponding slots
+    // Group and display events
     Object.entries(eventsBySlot).forEach(([key, events]) => {
         const [day, hour] = key.split("-");
         const slot = document.querySelector(
@@ -80,24 +85,32 @@ function updateSchedule() {
         );
 
         if (slot) {
-            const totalEvents = events.length;
-            events.forEach((event, index) => {
+            // Handle merging of adjacent slots
+            let mergedHeight = 1;
+            let mergedEvents = events;
+            for (let offset = 1; offset <= MAX_COMBINE_SLOTS; offset++) {
+                const nextKey = `${day}-${parseFloat(hour) + offset * 0.25}`;
+                if (eventsBySlot[nextKey] && JSON.stringify(eventsBySlot[nextKey]) === JSON.stringify(events)) {
+                    mergedHeight++;
+                    delete eventsBySlot[nextKey]; // Mark the merged slot as processed
+                } else {
+                    break;
+                }
+            }
+
+            slot.style.height = `${25 * mergedHeight}px`; // Adjust height for merged slots
+
+            // Add event boxes
+            const totalEvents = mergedEvents.length;
+            mergedEvents.forEach((event, index) => {
                 const box = document.createElement("div");
                 box.className = "event-box";
                 box.style.backgroundColor = event.color;
                 box.style.width = `${100 / totalEvents}%`;
                 box.style.left = `${(100 / totalEvents) * index}%`;
-                box.textContent = totalEvents === 1 ? event.text : ""; // Show text only when there's no conflict
+                box.textContent = event.text;
                 slot.appendChild(box);
             });
-
-            // Add shared text for overlapping events with the same text
-            if (events.length > 1 && events.every(e => e.text === events[0].text)) {
-                const sharedText = document.createElement("div");
-                sharedText.className = "shared-text";
-                sharedText.textContent = events[0].text;
-                slot.appendChild(sharedText);
-            }
         }
     });
 }
