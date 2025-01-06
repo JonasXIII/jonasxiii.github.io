@@ -13,6 +13,19 @@ const friends = [
 // Render the schedule grid
 function renderSchedule() {
     schedule.innerHTML = "";
+
+    // Add time column
+    const timeColumn = document.createElement("div");
+    timeColumn.className = "time-column";
+    for (let i = 8; i <= 21; i++) {
+        const timeSlot = document.createElement("div");
+        timeSlot.className = "time-slot";
+        timeSlot.textContent = `${i}:00`;
+        timeColumn.appendChild(timeSlot);
+    }
+    schedule.appendChild(timeColumn);
+
+    // Add schedule columns for days
     for (let i = 0; i < 5; i++) {
         const dayColumn = document.createElement("div");
         dayColumn.className = "schedule-day";
