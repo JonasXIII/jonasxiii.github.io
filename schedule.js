@@ -3,9 +3,9 @@ const friendToggles = document.getElementById("friend-toggles");
 
 // Data: Example time sheets for friends
 const friends = [
-    { name: "Alice", color: "red", schedule: [{ day: 0, start: 8, end: 12 }] },
-    { name: "Bob", color: "blue", schedule: [{ day: 1, start: 10, end: 15 }] },
-    { name: "Charlie", color: "green", schedule: [{ day: 2, start: 9, end: 17 }] },
+    { name: "Jonas", color: "green", schedule: [{day:0,start:13,end:14},{day:0,start:17,end:18},{day:1,start:13,end:18},{day:2,start:13,end:14},{day:3,start:14,end:18},{day:4,start:13,end:14}] },
+    { name: "Leo", color: "blue", schedule: [{ day: 1, start: 10, end: 15 }] },
+    { name: "Charlie", color: "red", schedule: [{ day: 2, start: 9, end: 17 }] },
     { name: "Diana", color: "purple", schedule: [{ day: 3, start: 13, end: 18 }] },
     { name: "Eve", color: "orange", schedule: [{ day: 4, start: 8, end: 20 }] },
 ];
