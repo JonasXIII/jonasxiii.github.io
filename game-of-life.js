@@ -41,9 +41,9 @@ function drawGrid() {
 // Calculate the next generation
 function nextGeneration() {
     const newGrid = grid.map(arr => [...arr]);
-    for (let i = 0; i < gridSize; i++) {
-        for (let j = 0; j < gridSize; j++) {
-            const neighbors = countNeighbors(i, j);
+    for (let i = 1; i < gridSize-1; i++) {
+        for (let j = 1; j < gridSize-1; j++) {
+            const neighbors = countNeighborsSafeSafe(i, j);
             if (grid[i][j] === 1 && (neighbors < 2 || neighbors > 3)) {
                 newGrid[i][j] = 0;
             } else if (grid[i][j] === 0 && neighbors === 3) {
@@ -51,22 +51,50 @@ function nextGeneration() {
             }
         }
     }
+    for (let i = 1; i < gridSize-1; i++) {
+        neightborsTop = countNeighbors(0, i);
+        neightborsBottom = countNeighbors(gridSize-1, i);
+        neightborsLeft = countNeighbors(i, 0);
+        neightborsRight = countNeighbors(i, gridSize-1);
+        newGrid[i][0] = newGrid[i][gridSize-2];
+        newGrid[i][gridSize-1] = newGrid[i][1];
+        newGrid[0][i] = newGrid[gridSize-2][i];
+        newGrid[gridSize-1][i] = newGrid[1][i];
+    }
+    newGrid[0][0] = countNeighbors(0, 0);
+    newGrid[0][gridSize-1] = countNeighbors(0, gridSize-1);
+    newGrid[gridSize-1][0] = countNeighbors(gridSize-1, 0);
+    newGrid[gridSize-1][gridSize-1] = countNeighbors(gridSize-1, gridSize-1);
+
+
     grid = newGrid;
 }
 
 // Count neighbors of a cell
+function countNeighborsSafe(x, y) {
+    let count = 0;
+    count += grid[y-1][x-1];
+    count += grid[y-1][x];
+    count += grid[y-1][x+1];
+    count += grid[y][x-1];
+    count += grid[y][x];
+    count += grid[y][x+1];
+    count += grid[y+1][x-1];
+    count += grid[y+1][x];
+    count += grid[y+1][x+1];
+    return count;
+}
 function countNeighbors(x, y) {
     let count = 0;
-    for (let i = -1; i <= 1; i++) {
-        for (let j = -1; j <= 1; j++) {
-            if (i === 0 && j === 0) continue;
-            const nx = x + i;
-            const ny = y + j;
-            if (nx >= 0 && nx < gridSize && ny >= 0 && ny < gridSize) {
-                count += grid[nx][ny];
-            }
-        }
-    }
+    count += grid[(y-1+gridSize) % gridSize][(x-1+gridSize) % gridSize];
+    count += grid[(y-1+gridSize) % gridSize][x];
+    count += grid[(y-1+gridSize) % gridSize][(x+1) % gridSize];
+    count += grid[y][(x-1+gridSize) % gridSize];
+    count += grid[y][x];
+    count += grid[y][(x+1) % gridSize];
+    count += grid[(y+1) % gridSize][(x-1+gridSize) % gridSize];
+    count += grid[(y+1) % gridSize][x];
+    count += grid[(y+1) % gridSize][(x+1) % gridSize];
     return count;
 }
 
