@@ -4,16 +4,59 @@ const schedule = document.getElementById("schedule");
 const friendToggles = document.getElementById("friend-toggles");
 
 const friends = [
-    { name: "Alice", color: "red", schedule: [{ day: 0, start: 8, end: 10, text: "Meeting" }] },
-    { name: "Jonas", color: "green", schedule: [
-        { day: 0, start: 13, end: 14, text: "Cloud Computing" },
-        { day: 0, start: 17, end: 17.5, text: "Arch" },
-        { day: 1, start: 13, end: 18, text: "Cloud Computing" },
-        { day: 2, start: 13, end: 14, text: "Cloud Computing" },
-        { day: 3, start: 14, end: 18, text: "Deep Learning" },
-        { day: 4, start: 13, end: 14, text: "Cloud Computing" },
+    { name: "Dylan", color: "blue", schedule: [
+        { day: 0, start: 13, end: 14, text: "Cloud Computing"},
+        { day: 1, start: 9.5, end: 10, text: "Astro"},
+        { day: 1, start: 13, end: 14, text: "Cloud Computing"},
+        { day: 1, start: 14, end: 16, text: "247 Lab"},
+        { day: 1, start: 16, end: 17, text: "Grad Seminar"},
+        { day: 1, start: 17, end: 17.5, text: "Tutorial"},
+        { day: 1, start: 17.5, end: 18, text: "Status"},
+        { day: 2, start: 13, end: 14, text: "Cloud Computing"},
+        { day: 3, start: 16.5, end: 17.5, text: "Reading Group"},
+        { day: 3, start: 10, end: 10.5, text: "Grading Meeting"},
+        { day: 4, start: 13, end: 14, text: "Cloud Computing"}
     ] },
-    { name: "Charlie", color: "blue", schedule: [{ day: 0, start: 9, end: 12, text: "Call" }] },
+    { name: "Jonas", color: "green", schedule: [
+        { day: 0, start: 13, end: 14, text: "Cloud Computing"},
+        { day: 0, start: 17, end: 17.5, text: "Arch"},
+        { day: 1, start: 13, end: 14, text: "Cloud Computing"},
+        { day: 1, start: 14, end: 16, text: "Deep Learning"},
+        { day: 1, start: 16, end: 17, text: "Grad Seminar"},
+        { day: 1, start: 17, end: 17.5, text: "Tutorial"},
+        { day: 1, start: 17.5, end: 18, text: "Status"},
+        { day: 2, start: 13, end: 14, text: "Cloud Computing"},
+        { day: 3, start: 14, end: 18, text: "Deep Learning"},
+        { day: 3, start: 16.5, end: 17.5, text: "Reading Group"},
+        { day: 4, start: 13, end: 14, text: "Cloud Computing"}
+    ] },
+    { name: "Nic", color: "red", schedule: [
+        { day: 0, start: 11, end: 11.5, text: "Bio"},
+        { day: 1, start: 14, end: 16, text: "Deep Learning"},
+        { day: 1, start: 16, end: 17, text: "Grad Seminar"},
+        { day: 1, start: 17, end: 17.5, text: "Tutorial"},
+        { day: 1, start: 17.5, end: 18, text: "Status"},
+        { day: 2, start: 10, end: 14, text: "241 Lab"},
+        { day: 3, start: 14, end: 18, text: "Deep Learning"},
+        { day: 3, start: 16.5, end: 17.5, text: "Reading Group"},
+    ] },
+    { name: "Katelynn", color: "purple", schedule: [
+        { day: 0, start: 11, end: 12, text: "Databases"},
+        { day: 0, start: 12, end: 13, text: "OOD"},
+        { day: 0, start: 16, end: 16.5, text: "Climate"},
+        { day: 1, start: 11, end: 12, text: "Databases"},
+        { day: 1, start: 12, end: 13, text: "OOD"},
+        { day: 1, start: 14, end: 16, text: "Deep Learning"},
+        { day: 1, start: 17, end: 17.5, text: "Tutorial"},
+        { day: 1, start: 17.5, end: 18, text: "Status"},
+        { day: 2, start: 9.5, end: 10, text: "Colab Climate"},
+        { day: 2, start: 11, end: 12, text: "Databases"},
+        { day: 2, start: 12, end: 13, text: "OOD"},
+        { day: 3, start: 14, end: 18, text: "Deep Learning"},
+        { day: 3, start: 16.5, end: 17.5, text: "Reading Group"},
+        { day: 4, start: 11, end: 12, text: "Databases"},
+        { day: 4, start: 12, end: 13, text: "OOD"},
+    ] },
 ];
 
 function renderSchedule() {
