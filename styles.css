@@ -170,40 +170,90 @@ a:hover {
   background-color: rgba(0, 255, 0, 0.3);
 }
 
-.schedule-header {
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-}
-
-.time-slot {
-  text-align: right;
-  padding-right: 10px;
-}
-
-.schedule-slot {
-  position: relative;
-  border: 1px solid #ddd;
-  height: 25px;
-  overflow: visible;
-}
-
-.event-box {
-  position: absolute;
-  height: 100%;
-  opacity: 0.8;
-  color: white;
-  padding: 2px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 12px;
+#schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
 }
 
 #schedule {
   display: grid;
-  grid-template-columns: 80px repeat(5, 1fr);
+  grid-template-columns: 50px repeat(5, 1fr); /* Time column + 5 day columns */
+  grid-template-rows: 50px repeat(56, 25px); /* Header row + time slots */
   gap: 1px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background: #ccc;
+  border: 2px solid #333;
+  width: 100%;
+  position: relative;
+}
+
+.schedule-header {
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  background: #f4f4f4;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.time-column {
+  grid-column: 1;
+  text-align: center;
+  font-weight: bold;
+  background-color: #f4f4f4;
+  border-right: 2px solid #ccc;
+}
+
+.time-slot {
+  height: 25px;
+  line-height: 25px;
+  font-size: 0.9em;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule-day {
+  position: relative;
+  background: white;
+  border-left: 1px solid #ddd;
+}
+
+.schedule-slot {
+  position: relative;
+  height: 25px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.event-box {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.shared-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  pointer-events: none; /* Prevent interaction with shared text */
 }

@@ -1,4 +1,4 @@
-const MAX_COMBINE_SLOTS = 8;
+const MAX_COMBINE_SLOTS = 8; // Maximum number of adjacent slots to combine
 
 const schedule = document.getElementById("schedule");
 const friendToggles = document.getElementById("friend-toggles");
@@ -59,85 +59,11 @@ const friends = [
     ] },
 ];
 
-function fillSchedule() {
-    const alltimeSlots = [[],[],[],[],[]];
-    for (let i = 0; i < 5; i++) {
-        for (let j = 0; j < 56; j++) {
-            alltimeSlots[i].push([]);
-        }
-    }
-    for (const friend of friends) {
-        if (!document.getElementById(`toggle-${friend.name}`).checked) continue;
-        for (const event of friend.schedule) {
-            for (let i = event.start; i < event.end; i += 0.25) {
-                const val = Math.round(i*4) - 32;
-                if (val >= 0 && val < 56) {
-                    alltimeSlots[event.day][val].push({text: event.text, color: friend.color});
-                }
-            }
-        }
-    }
-    return alltimeSlots;
-}
-
-function arrayEquals(a1, a2) {
-    return JSON.stringify([...a1].sort((a, b) => a.text.localeCompare(b.text))) === 
-           JSON.stringify([...a2].sort((a, b) => a.text.localeCompare(b.text)));
-}
-
-function identicalTimeSlots(allTimeSlots, time1, time2) {
-    if (time1 < 0 || time2 < 0 || time1 >= 56 || time2 >= 56) return false;
-    
-    for (let day = 0; day < 5; day++) {
-        if (!arrayEquals(allTimeSlots[day][time1], allTimeSlots[day][time2])) {
-            return false;
-        }
-    }
-    return true;
-}
-
-function getFinalTimeSlots(filledSchedule) {
-    const goodTimeSlots = [];
-    let currentSlot = 0;
-    
-    while (currentSlot < 56) {
-        goodTimeSlots.push(currentSlot);
-        
-        // Find how many subsequent slots are identical
-        let nextSlot = currentSlot + 1;
-        while (nextSlot < 56 && identicalTimeSlots(filledSchedule, currentSlot, nextSlot)) {
-            nextSlot++;
-        }
-        
-        // Jump to the next different slot
-        currentSlot = nextSlot;
-    }
-    
-    return goodTimeSlots;
-}
-
-function getMergedHeight(filledSchedule, startSlot, finalTimeSlots, startIndex) {
-    let height = 1;
-    for (let i = startIndex + 1; i < finalTimeSlots.length; i++) {
-        if (identicalTimeSlots(filledSchedule, startSlot, finalTimeSlots[i])) {
-            height++;
-        } else {
-            break;
-        }
-    }
-    return height;
-}
-
 function renderSchedule() {
     schedule.innerHTML = "";
-    
-    // Add day headers
+
+    // Add day headers (row 1, columns 2-6)
     const dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-    const timeHeader = document.createElement("div");
-    timeHeader.className = "schedule-header";
-    timeHeader.style.gridColumn = "1";
-    schedule.appendChild(timeHeader);
-    
     dayNames.forEach((day, index) => {
         const dayHeader = document.createElement("div");
         dayHeader.className = "schedule-header";
@@ -146,60 +72,298 @@ function renderSchedule() {
         schedule.appendChild(dayHeader);
     });
 
-    const filledSchedule = fillSchedule();
-    const finalTimeSlots = getFinalTimeSlots(filledSchedule);
-    
-    // Track which grid rows we've already handled due to merging
-    const handledRows = new Set();
-
-    finalTimeSlots.forEach((slotIndex, index) => {
-        if (handledRows.has(index)) return;
-
-        const mergedHeight = getMergedHeight(filledSchedule, slotIndex, finalTimeSlots, index);
-        for (let i = 0; i < mergedHeight; i++) {
-            handledRows.add(index + i);
-        }
-
-        const hour = Math.floor(slotIndex / 4) + 8;
-        const minutes = (slotIndex % 4) * 15;
-        const timeString = `${hour}:${minutes.toString().padStart(2, "0")}`;
-        
-        // Add time label
+    // Add time column (column 1, rows 2-57)
+    for (let i = 8; i <= 21.75; i += 0.25) {
         const timeSlot = document.createElement("div");
         timeSlot.className = "time-slot";
-        timeSlot.textContent = timeString;
-        timeSlot.style.gridRow = `${index + 2}`;
-        timeSlot.style.gridColumn = "1";
+        const hour = Math.floor(i);
+        const minutes = (i % 1) * 60;
+        timeSlot.textContent = `${hour}:${minutes === 0 ? "00" : minutes}`;
+        timeSlot.style.gridRow = `${(i - 8) * 4 + 2}`;
         schedule.appendChild(timeSlot);
+    }
 
-        // Add schedule slots for each day
-        for (let day = 0; day < 5; day++) {
+    // Add schedule slots
+    for (let day = 0; day < 5; day++) {
+        for (let time = 8; time <= 21.75; time += 0.25) {
             const slot = document.createElement("div");
             slot.className = "schedule-slot";
+            slot.dataset.day = day;
+            slot.dataset.time = time;
             slot.style.gridColumn = `${day + 2}`;
-            slot.style.gridRow = `${index + 2}`;
+            slot.style.gridRow = `${(time - 8) * 4 + 2}`;
+            schedule.appendChild(slot);
+        }
+    }
+}
 
-            const events = filledSchedule[day][slotIndex];
-            if (events.length > 0) {
-                slot.style.height = `${25 * mergedHeight}px`;
+function areEventsEqual(events1, events2) {
+    if (!events1 || !events2) return false;
+    if (events1.length !== events2.length) return false;
+    
+    const sortedEvents1 = [...events1].sort((a, b) => a.text.localeCompare(b.text));
+    const sortedEvents2 = [...events2].sort((a, b) => a.text.localeCompare(b.text));
+    
+    return sortedEvents1.every((event, index) => 
+        event.text === sortedEvents2[index].text && 
+        event.color === sortedEvents2[index].color
+    );
+}
+
+function findContinuousSlots(eventsBySlot, day, startTime) {
+    let count = 0;
+    const baseEvents = eventsBySlot[`${day}-${startTime}`];
+    
+    for (let i = 1; i < MAX_COMBINE_SLOTS; i++) {
+        const nextTime = startTime + i * 0.25;
+        const nextKey = `${day}-${nextTime}`;
+        
+        if (areEventsEqual(baseEvents, eventsBySlot[nextKey])) {
+            count++;
+        } else {
+            break;
+        }
+    }
+    
+    return count + 1; // Include the initial slot
+}
+
+function isTimeSlotIdenticalAcrossWeek(eventsBySlot, time) {
+    // Check if we have events for this time across all days
+    const eventsForTime = [];
+    for (let day = 0; day < 5; day++) {
+        const key = `${day}-${time}`;
+        if (!eventsBySlot[key]) return false;
+        eventsForTime.push(eventsBySlot[key]);
+    }
+    
+    // Check if all days have identical events
+    return eventsForTime.every(events => areEventsEqual(events, eventsForTime[0]));
+}
+
+function findCompressibleTimeRange(eventsBySlot, startTime) {
+    let endTime = startTime;
+    let consecutiveSlots = 0;
+    
+    // Look ahead for identical time slots
+    while (endTime < 21.75 && consecutiveSlots < MAX_COMBINE_SLOTS) {
+        if (!isTimeSlotIdenticalAcrossWeek(eventsBySlot, endTime + 0.25)) {
+            break;
+        }
+        endTime += 0.25;
+        consecutiveSlots++;
+    }
+    
+    // Only compress if the range is longer than 30 minutes (2 slots)
+    if (endTime - startTime >= 0.5) {
+        return {
+            endTime,
+            shouldCompress: true,
+            totalSlots: consecutiveSlots + 1
+        };
+    }
+    
+    return {
+        endTime: startTime + 0.25,
+        shouldCompress: false,
+        totalSlots: 1
+    };
+}
+function findWeeklyPatterns(activeFriends) {
+    // Create a map of time slots to their events across the week
+    const weeklyPatterns = new Map();
+    
+    // For each time slot, collect all events across days
+    for (let time = 8; time <= 21.75; time += 0.25) {
+        const eventsAtTime = new Array(5).fill(null).map(() => []);
+        
+        activeFriends.forEach(friend => {
+            friend.schedule.forEach(event => {
+                if (time >= event.start && time < event.end) {
+                    eventsAtTime[event.day].push({
+                        text: event.text,
+                        color: friend.color
+                    });
+                }
+            });
+        });
+        
+        // Sort events at each time slot for consistent comparison
+        eventsAtTime.forEach(events => {
+            events.sort((a, b) => a.text.localeCompare(b.text));
+        });
+        
+        weeklyPatterns.set(time, eventsAtTime);
+    }
+    
+    return weeklyPatterns;
+}
+
+function areEventArraysEqual(arr1, arr2) {
+    if (arr1.length !== arr2.length) return false;
+    return arr1.every((event, i) => 
+        event.text === arr2[i].text && 
+        event.color === arr2[i].color
+    );
+}
+
+function isTimeConsistent(eventsAtTime) {
+    if (eventsAtTime[0].length === 0) return false;
+    
+    // Check if all days have the same events
+    return eventsAtTime.every(dayEvents => 
+        areEventArraysEqual(dayEvents, eventsAtTime[0])
+    );
+}
+
+function findCompressibleRanges(weeklyPatterns) {
+    const ranges = [];
+    let currentRange = null;
+    
+    for (let time = 8; time <= 21.75; time += 0.25) {
+        const eventsAtTime = weeklyPatterns.get(time);
+        const isConsistent = isTimeConsistent(eventsAtTime);
+        
+        if (isConsistent) {
+            if (!currentRange) {
+                currentRange = {
+                    start: time,
+                    events: eventsAtTime[0]
+                };
+            }
+        } else if (currentRange) {
+            currentRange.end = time;
+            if (currentRange.end - currentRange.start >= 0.5) { // 30 minutes or longer
+                ranges.push(currentRange);
+            }
+            currentRange = null;
+        }
+    }
+    
+    // Handle case where range extends to end of day
+    if (currentRange) {
+        currentRange.end = 21.75;
+        if (currentRange.end - currentRange.start >= 0.5) {
+            ranges.push(currentRange);
+        }
+    }
+    
+    return ranges;
+}
+function updateSchedule() {
+    renderSchedule();
+    const activeFriends = friends.filter(friend =>
+        document.getElementById(`toggle-${friend.name}`).checked
+    );
+
+    // Find weekly patterns and compressible ranges
+    const weeklyPatterns = findWeeklyPatterns(activeFriends);
+    const compressibleRanges = findCompressibleRanges(weeklyPatterns);
+    
+    // Collect all events by timeslot for regular processing
+    const eventsBySlot = {};
+    const processedSlots = new Set();
+    
+    activeFriends.forEach(friend => {
+        friend.schedule.forEach(event => {
+            for (let time = event.start; time < event.end; time += 0.25) {
+                const key = `${event.day}-${time}`;
+                if (!eventsBySlot[key]) eventsBySlot[key] = [];
+                eventsBySlot[key].push({ ...event, color: friend.color });
+            }
+        });
+    });
+
+    // Process compressible ranges first
+    compressibleRanges.forEach(range => {
+        // Only show the first two slots of the range on Monday
+        const slot = document.querySelector(
+            `.schedule-slot[data-day="0"][data-time="${range.start}"]`
+        );
+        
+        if (slot) {
+            slot.style.display = 'block';
+            slot.style.height = '50px'; // Two slots height
+            slot.style.backgroundColor = 'white';
+            slot.style.zIndex = '1';
+            slot.style.position = 'relative';
+            
+            // Add event boxes
+            range.events.forEach((event, index) => {
+                const box = document.createElement("div");
+                box.className = "event-box";
+                box.style.backgroundColor = event.color;
+                box.style.width = `${100 / range.events.length}%`;
+                box.style.left = `${(100 / range.events.length) * index}%`;
+                box.style.height = '100%';
+                box.textContent = event.text;
+                slot.appendChild(box);
+            });
+            
+            // Hide all other slots in this range across all days
+            for (let day = 0; day < 5; day++) {
+                for (let time = range.start; time < range.end; time += 0.25) {
+                    const key = `${day}-${time}`;
+                    processedSlots.add(key);
+                    
+                    if (day !== 0 || time > range.start + 0.25) {
+                        const hideSlot = document.querySelector(
+                            `.schedule-slot[data-day="${day}"][data-time="${time}"]`
+                        );
+                        if (hideSlot) {
+                            hideSlot.style.display = 'none';
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // Process remaining non-compressed slots
+    Object.entries(eventsBySlot).forEach(([key, events]) => {
+        if (processedSlots.has(key)) return;
+        
+        const [day, time] = key.split("-").map(Number);
+        const slot = document.querySelector(
+            `.schedule-slot[data-day="${day}"][data-time="${time}"]`
+        );
+
+        if (slot) {
+            const continuousSlots = findContinuousSlots(eventsBySlot, day, time);
+            
+            // Mark slots as processed and hide them
+            for (let i = 0; i < continuousSlots; i++) {
+                const slotKey = `${day}-${time + i * 0.25}`;
+                processedSlots.add(slotKey);
                 
-                // Sort events by text for consistent ordering
-                const sortedEvents = [...events].sort((a, b) => a.text.localeCompare(b.text));
-                
-                sortedEvents.forEach((event, eventIndex) => {
-                    const box = document.createElement("div");
-                    box.className = "event-box";
-                    box.style.backgroundColor = event.color;
-                    box.style.width = `${100 / events.length}%`;
-                    box.style.left = `${(100 / events.length) * eventIndex}%`;
-                    box.textContent = event.text;
-                    slot.appendChild(box);
-                });
-            } else {
-                slot.style.height = "25px";
+                if (i > 0) {
+                    const laterSlot = document.querySelector(
+                        `.schedule-slot[data-day="${day}"][data-time="${time + i * 0.25}"]`
+                    );
+                    if (laterSlot) {
+                        laterSlot.style.display = 'none';
+                    }
+                }
             }
 
-            schedule.appendChild(slot);
+            // Set up the first slot
+            slot.style.display = 'block';
+            slot.style.height = `${25 * continuousSlots}px`;
+            slot.style.position = 'relative';
+            slot.style.backgroundColor = 'white';
+            slot.style.zIndex = '1';
+
+            // Add event boxes
+            events.forEach((event, index) => {
+                const box = document.createElement("div");
+                box.className = "event-box";
+                box.style.backgroundColor = event.color;
+                box.style.width = `${100 / events.length}%`;
+                box.style.left = `${(100 / events.length) * index}%`;
+                box.style.height = '100%';
+                box.textContent = event.text;
+                slot.appendChild(box);
+            });
         }
     });
 }
@@ -220,9 +384,9 @@ function createToggles() {
         container.appendChild(label);
         friendToggles.appendChild(container);
 
-        toggle.addEventListener("change", renderSchedule);
+        toggle.addEventListener("change", updateSchedule);
     });
 }
 
 createToggles();
-renderSchedule();
+updateSchedule();
