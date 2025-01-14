@@ -102,8 +102,8 @@
                 { "day": 3, "start": 13, "end": 14, "text": "Robotics Meeting" },
                 { "day": 3, "start": 16.5, "end": 17.5, "text": "Reading Group" },
                 { "day": 4, "start": 13, "end": 14.5, "text": "WWU Workout" },
-                { "day": 4, "start": 15, "end": 16, "text": "WWU Workout" },
+                { "day": 4, "start": 15, "end": 16, "text": "WWU Workout" }
             ]
-        },
+        }
     ]
 }
