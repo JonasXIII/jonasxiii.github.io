@@ -89,6 +89,21 @@
                 { "day": 4, "start": 12, "end": 13, "text": "Math" },
                 { "day": 4, "start": 13, "end": 14, "text": "Physics" }
             ]
-        }
+        },
+        {
+            "name": "Diego",
+            "color": "pink",
+            "schedule": [
+                { "day": 0, "start": 13, "end": 14, "text": "Robotics Meeting" },
+                { "day": 0, "start": 15, "end": 16, "text": "Robotics Meeting" },
+                { "day": 1, "start": 12, "end": 13, "text": "GCAM Meeting" },
+                { "day": 1, "start": 16, "end": 17, "text": "Grad Seminar" },
+                { "day": 2, "start": 12.5, "end": 13, "text": "GCAM Meeting" },
+                { "day": 3, "start": 13, "end": 14, "text": "Robotics Meeting" },
+                { "day": 3, "start": 16.5, "end": 17.5, "text": "Reading Group" },
+                { "day": 4, "start": 13, "end": 14.5, "text": "WWU Workout" },
+                { "day": 4, "start": 15, "end": 16, "text": "WWU Workout" },
+            ]
+        },
     ]
 }
