@@ -1,0 +1,133 @@
+/* css/style.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #5a67d8;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #434190;
+}
+
+/* Kingdom Display */
+.kingdom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-name {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.regenerate-button {
+    background-color: #38a169;
+}
+.regenerate-button:hover {
+    background-color: #2f855a;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #5a67d8;
+    text-decoration: none;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #4a4a4a;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.form-group input[type="checkbox"] {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.75rem;
+}
+.form-group label {
+    font-size: 1.1rem;
+}
