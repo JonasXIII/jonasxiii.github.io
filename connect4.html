@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connect 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #game-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #board {
+            display: grid;
+            grid-template-columns: repeat(7, 50px);
+            grid-template-rows: repeat(6, 50px);
+            border: 2px solid black;
+            background-color: #f7b538; /* Light brown for the board */
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .cell {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid #333; /* Darker border for visibility */
+            cursor: pointer;
+            transition: background-color 0.2s ease; /* Smooth transition */
+        }
+
+        .cell:hover {
+            /* Slightly darker shade on hover, more subtle */
+            background-color: #ddd;
+        }
+
+        .red {
+            background-color: red;
+            border-color: darkred;
+        }
+
+        .yellow {
+            background-color: yellow;
+            border-color: #b8860b;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease;
+            margin-right: 10px; /* Add some right margin between buttons */
+        }
+
+        button:hover {
+            background-color: #367c39; /* Darker green */
+        }
+
+        button:disabled {
+            background-color: #ccc; /* Gray */
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        #message {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="message">Connect 4</div>
+        <div id="board"></div>
+        <div id="controls">
+            <button id="reset-button">Reset</button>
+            <button id="undo-button" disabled>Undo</button>
+        </div>
+    </div>
+    <script>
+        const boardElement = document.getElementById('board');
+        const messageElement = document.getElementById('message');
+        const resetButton = document.getElementById('reset-button');
+        const undoButton = document.getElementById('undo-button');
+
+        const ROWS = 6;
+        const COLS = 7;
+        let board = createEmptyBoard(); // Initialize the board array
+        let currentPlayer = 'red';
+        let gameWon = false;
+        let history = []; // Stack to store game state for undo
+
+        function createEmptyBoard() {
+            return Array(ROWS).fill(null).map(() => Array(COLS).fill(null));
+        }
+
+        function createBoardElement() {
+            boardElement.innerHTML = ''; // Clear the board
+            for (let row = 0; row < ROWS; row++) {
+                for (let col = 0; col < COLS; col++) {
+                    const cell = document.createElement('div');
+                    cell.classList.add('cell');
+                    cell.dataset.row = row;
+                    cell.dataset.col = col;
+                    cell.addEventListener('click', handleClick);
+                    boardElement.appendChild(cell);
+                }
+            }
+        }
+
+
+        function handleClick(event) {
+            if (gameWon) return;
+
+            const row = parseInt(event.target.dataset.row); // Unused, but good to have.
+            const col = parseInt(event.target.dataset.col);
+
+            let actualRow = dropPiece(col); // Find the actual row where the piece lands
+
+            if (actualRow === null) {
+                return; // Column is full
+            }
+
+            // Store the current state for undo
+            history.push({
+                board: board.map(row => [...row]),
+                currentPlayer: currentPlayer,
+                gameWon: gameWon
+            });
+            undoButton.disabled = false; // Enable undo after a move
+
+            board[actualRow][col] = currentPlayer;
+            renderBoard(); // Re-render the board to show the new piece
+
+            gameWon = checkWin(actualRow, col); //checkWin needs row and col
+
+            if (gameWon) {
+                messageElement.textContent = `${currentPlayer} wins!`;
+                disableCells();
+                return;
+            }
+
+            currentPlayer = currentPlayer === 'red' ? 'yellow' : 'red';
+            messageElement.textContent = `It's ${currentPlayer}'s turn`;
+        }
+      function dropPiece(col) {
+        for (let row = ROWS - 1; row >= 0; row--) {
+          if (board[row][col] === null) {
+            return row; // Found an empty slot, return the row
+          }
+        }
+        return null; // Column is full
+      }
+
+        function checkWin(row, col) {
+            const directions = [
+                [0, 1], [1, 0], [1, 1], [1, -1]  // horizontal, vertical, diagonal (both directions)
+            ];
+            const player = board[row][col];
+
+            if (!player) return false;
+
+            for (let [deltaRow, deltaCol] of directions) {
+                let count = 0;
+                for (let i = -3; i <= 3; i++) { //check 3 in both directions.
+                    const newRow = row + i * deltaRow;
+                    const newCol = col + i * deltaCol;
+                    if (newRow >= 0 && newRow < ROWS && newCol >= 0 && newCol < COLS && board[newRow][newCol] === player) {
+                        count++;
+                        if (count >= 4) return true;
+                    }
+                    else{
+                        count = 0; //reset count if the chain is broken
+                    }
+                }
+            }
+            return false;
+        }
+
+        function disableCells() {
+            const cells = document.getElementsByClassName('cell');
+            for (let cell of cells) {
+                cell.removeEventListener('click', handleClick);
+            }
+        }
+
+        function renderBoard() {
+            for (let row = 0; row < ROWS; row++) {
+                for (let col = 0; col < COLS; col++) {
+                    const cell = document.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+                    cell.className = 'cell'; // Reset to default style first
+                    if (board[row][col]) {
+                        cell.classList.add(board[row][col]);
+                    }
+                }
+            }
+        }
+
+        function resetGame() {
+            board = createEmptyBoard();
+            currentPlayer = 'red';
+            gameWon = false;
+            history = []; // Clear history
+            undoButton.disabled = true;
+            messageElement.textContent = "Connect 4";
+            createBoardElement(); //re-render
+        }
+
+        function undoMove() {
+            if (history.length > 0) {
+                const previousState = history.pop();
+                board = previousState.board;
+                currentPlayer = previousState.currentPlayer;
+                gameWon = previousState.gameWon;
+                renderBoard(); // Update the display
+                messageElement.textContent = `It's ${currentPlayer}'s turn`;
+                if (history.length === 0) {
+                    undoButton.disabled = true; // Disable if no more moves to undo
+                }
+            }
+        }
+
+        resetButton.addEventListener('click', resetGame);
+        undoButton.addEventListener('click', undoMove);
+
+        // Initialize the game when the page loads
+        createBoardElement();
+    </script>
+</body>
+</html>
