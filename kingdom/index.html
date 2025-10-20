@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dominion — Kingdom Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- silence missing favicon -->
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div id="layout">
+    <aside id="sidebar">
+      <h2>Options</h2>
+
+      <div class="controls">
+        <label><input type="checkbox" id="accs"> Require +Actions</label>
+        <label><input type="checkbox" id="draw"> Require Draw</label>
+        <label><input type="checkbox" id="blacklist"> Apply Blacklist</label>
+        <label><input type="checkbox" id="baseOnly"> Base Set Only</label>
+      </div>
+
+      <button id="generate">🎲 Generate New Kingdom (reload with params)</button>
+
+      <div id="note" class="note">
+      </div>
+    </aside>
+
+    <main id="content">
+      <div id="cards" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <!-- IMPORTANT: type="module" so imports work in the browser -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
