@@ -1,5 +1,5 @@
 // js/main.js
-import { loadCards, getRandomKingdom } from './modules/kingdom.js';
+import { loadCards, getRandomKingdom, getBonusCards } from './modules/kingdom.js';
 import { renderKingdom } from './modules/display.js';
 
 // parse URL search params into boolean flags
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const blacklistBox = document.getElementById('blacklist');
   const baseOnlyBox = document.getElementById('baseOnly');
   const generateBtn = document.getElementById('generate');
-  const cardsContainer = document.getElementById('cards');
+  const kingdomContainer = document.getElementById('kingdom-cards');
 
   // 1) read params, reflect in UI
   const params = readParams();
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   // 3) load card data (cards of owned sets, applying blacklist if requested)
-  const cards = await loadCards({ baseOnly: params.baseOnly, applyBlacklist: params.blacklist });
+  const { cards, events, projects, prophecies, othercards } = await loadCards({ baseOnly: params.baseOnly, applyBlacklist: params.blacklist });
   
   // 4) generate kingdom according to params
   const kingdom = getRandomKingdom(cards, {
@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   // 5) generate bonus kingdom cards
-  const bonusCards = getBonusCards(cards);
-
+  const [upbonuses, sidebonuses] = getBonusCards(cards, kingdom, events, projects, prophecies, othercards);
+  
   // 6) render
-  renderKingdom(kingdom, cardsContainer);
+  renderKingdom(kingdom, 'kingdom-cards', [upbonuses, sidebonuses]);
 });

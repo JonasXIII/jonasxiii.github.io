@@ -1,5 +1,14 @@
 
 [
   "alchemy_possession",
-  "prosperity_mountebank"
+  "prosperity_mountebank",
+  "promos_captain",
+  "promos_envoy",
+  "promos_walledvillage",
+  "promos_governor",
+  "promos_dismantle",
+  "promos_church",
+  "promos_marchland",
+  "promos_prince",
+  "promos_event_summon"
 ]

@@ -1,9 +1,10 @@
 // js/modules/kingdom.js
 
 // load dominion cards, owned sets and blacklist
-export async function loadCards(options = {}){
-  const {baseOnly = false, applyBlacklist = false} = options;
+export async function loadCards(options = {}) {
+  const { baseOnly = false, applyBlacklist = false } = options;
 
+  // Load all three JSON files at once
   const [cardsRes, setsRes, blacklistRes] = await Promise.all([
     fetch('./data/dominion_cards.json'),
     fetch('./data/mysets.json'),
@@ -14,26 +15,44 @@ export async function loadCards(options = {}){
   if (!setsRes.ok) throw new Error('Failed loading mysets.json');
   if (!blacklistRes.ok) console.warn('no blacklist.json found; continuing with empty blacklist');
 
-
+  // Parse data
   const cardsData = await cardsRes.json();
   const mysets = await setsRes.json();
   const blacklist = blacklistRes.ok ? await blacklistRes.json() : [];
 
-  const all = [];
+  // Containers for each type
+  const cards = [];
+  const events = [];
+  const projects = [];
+  const prophecies = [];
+  const othercards = [];
+
+  // Loop through each expansion
   for (const [setId, setInfo] of Object.entries(cardsData)) {
-    if (mysets[setId]) {
-      if (baseOnly && setId !== 'baseset2') continue;
-      if (Array.isArray(setInfo.cards)) {
-        for (const c of setInfo.cards) {
-          if (applyBlacklist && blacklist.includes(c.id)) continue;
-          all.push({ ...c, setId });
-        }
+    if (!mysets[setId]) continue; // skip sets the player doesn’t own
+    if (baseOnly && setId !== 'baseset2') continue;
+
+    // Utility to safely handle each group type
+    const addCardsFromGroup = (group, targetArray) => {
+      if (!Array.isArray(group)) return;
+      for (const c of group) {
+        if (applyBlacklist && blacklist.includes(c.id)) continue;
+        targetArray.push({ ...c, setId });
       }
-    }
+    };
+
+    // Add each kind of card type if present
+    addCardsFromGroup(setInfo.cards, cards);
+    addCardsFromGroup(setInfo.events, events);
+    addCardsFromGroup(setInfo.projects, projects);
+    addCardsFromGroup(setInfo.prophecies, prophecies);
+    addCardsFromGroup(setInfo.othercards, othercards);
   }
 
-  return all;
+  return { cards, events, projects, prophecies, othercards };
 }
+
+
 
 
 function shuffle(arr) {
@@ -101,17 +120,77 @@ export function getRandomKingdom(cardsPool, config = {}) {
   return fallback;
 }
 
-export function getBonusCards(cardPool) {
-  const event = false;
-  const project = false;
-  const doubleProject = false;
-  const shelters = false;
-  const platinum = false;
-  const colony = false;
-  const river_boat = false;
-  const prophecy = false;
+function getRandEventCard(events) {
+  if (!Array.isArray(events) || events.length === 0) return null;
+  const index = Math.floor(Math.random() * events.length);
+  return events[index];
+}
+function getRandProjectCard(projects) {
+  if (!Array.isArray(projects) || projects.length === 0) return null;
+  const index = Math.floor(Math.random() * projects.length);
+  return projects[index];
+}
+function getTwoRandProjectCard(projects) {
+  if (!Array.isArray(projects) || projects.length < 2) return null;
+  const shuffled = shuffle(projects);
+  return [shuffled[0], shuffled[1]];
+}
+function getShelterCards(othercards) {
+  if (!Array.isArray(othercards)) return [];
 
-  for (const card of cardPool) {
+  return othercards.filter(card => 
+    typeof card.type === "string" && card.type.includes("Shelter")
+  );
+}
+function getPlatinumCard(othercards) {
+  if (!Array.isArray(othercards)) return [];
+  return othercards.filter(card => card.name === "Platinum");
+}
+
+function getColonyCard(othercards) {
+  if (!Array.isArray(othercards)) return [];
+  return othercards.filter(card => card.name === "Colony");
+}
+function getRiverboatBonusCard(allCards, kingdom) {
+  if (!Array.isArray(allCards) || !Array.isArray(kingdom)) return [];
+
+  // Build a set of card IDs already in the kingdom for quick lookup
+  const kingdomIds = new Set(kingdom.map(c => c.id));
+
+  // Filter for eligible cards
+  const candidates = allCards.filter(card =>
+    card.cost?.treasure === 5 &&  // costs exactly 5
+    !card.isDuration &&           // not a duration card
+    !kingdomIds.has(card.id)      // not already in the kingdom
+  );
+
+  if (candidates.length === 0) return null; // no valid cards
+
+  // Pick a random one
+  const index = Math.floor(Math.random() * candidates.length);
+  return candidates[index];
+}
+
+function getProphecyCard(prophecies) {
+  if (!Array.isArray(prophecies) || prophecies.length === 0) return null;
+  const index = Math.floor(Math.random() * prophecies.length);
+  return prophecies[index];
+}
+
+
+
+
+export function getBonusCards(cardPool, kingdom, events, projects, prophecies, othercards) {
+  let event = false;
+  let project = false;
+  let doubleProject = false;
+  let shelters = false;
+  let platinum = false;
+  let colony = false;
+  let river_boat = false;
+  let prophecy = false;
+
+  for (const card of kingdom) {
     if (card.setId === 'renaissance' && Math.random() < 0.2) project = true;
     if (card.setId === 'renaissance' && Math.random() < 0.2 && project) doubleProject = true;
     if (card.setId === 'risingsun' && Math.random() < 0.2) event = true;
@@ -122,10 +201,31 @@ export function getBonusCards(cardPool) {
     if (card.isOmen) prophecy = true;
   }
 
-  const bonuses = [];
+  const upbonuses = [];
+  const sidebonuses = [];
+  if (shelters) upbonuses.push(...getShelterCards(othercards));
+  if (platinum) upbonuses.push(...getPlatinumCard(othercards));
+  if (colony) upbonuses.push(...getColonyCard(othercards));
   
+  if(doubleProject) {
+    sidebonuses.push(...getTwoRandProjectCard(projects));
+  } else if (project) {
+    const projectCard = getRandProjectCard(projects);
+    if (projectCard) sidebonuses.push(projectCard);
+  }
+  if (river_boat) {
+    const riverboatCard = getRiverboatBonusCard(cardPool, kingdom);
+    if (riverboatCard) upbonuses.push(riverboatCard);
+  }
+  if (prophecy) {
+    const prophecyCard = getProphecyCard(prophecies);
+    if (prophecyCard) sidebonuses.push(prophecyCard);
+  }
+  if (event) {
+    const eventCard = getRandEventCard(events);
+    if (eventCard) sidebonuses.push(eventCard);
+  }
 
 
-
-  return [];
+  return [upbonuses, sidebonuses];
 }

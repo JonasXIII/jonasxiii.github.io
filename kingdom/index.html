@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,33 +5,49 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dominion — Kingdom Generator</title>
   <link rel="stylesheet" href="style.css">
-  <!-- silence missing favicon -->
   <link rel="icon" href="data:,">
 </head>
 <body>
   <div id="layout">
+    <!-- Sidebar -->
     <aside id="sidebar">
-      <h2>Options</h2>
-
+      <h2>Kingdom Options</h2>
       <div class="controls">
         <label><input type="checkbox" id="accs"> Require +Actions</label>
         <label><input type="checkbox" id="draw"> Require Draw</label>
         <label><input type="checkbox" id="blacklist"> Apply Blacklist</label>
         <label><input type="checkbox" id="baseOnly"> Base Set Only</label>
       </div>
-
-      <button id="generate">🎲 Generate New Kingdom (reload with params)</button>
-
-      <div id="note" class="note">
-      </div>
+      <button id="generate">🎲 Generate New Kingdom</button>
+      <div id="note" class="note">Your kingdom will be generated based on the selected options</div>
     </aside>
 
+    <!-- Main content -->
     <main id="content">
-      <div id="cards" aria-live="polite"></div>
+      <section class="kingdom-section">
+        <h2 class="section-title">Kingdom Cards</h2>
+        <div id="kingdom-cards">
+          <!-- Kingdom cards will be inserted here by JavaScript -->
+        </div>
+      </section>
+
+      <section class="bonus-section">
+        <h2 class="section-title">Bonus Cards</h2>
+        <div id="bonus-upright" class="bonus-grid">
+          <!-- Upright bonus cards will be inserted here -->
+        </div>
+      </section>
+
+      <section class="bonus-section">
+        <h2 class="section-title">Landscape Cards</h2>
+        <div id="bonus-sideways" class="bonus-grid">
+          <!-- Sideways bonus cards will be inserted here -->
+        </div>
+      </section>
     </main>
   </div>
 
-  <!-- IMPORTANT: type="module" so imports work in the browser -->
+  <!-- Script -->
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
