@@ -194,3 +194,91 @@ body {
     justify-content: center;
   }
 }
+
+/* Card overlay and controls */
+.card {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 12px;
+  z-index: 10;
+}
+
+.card.active .card-overlay {
+  display: flex;
+}
+
+.card-controls {
+  display: flex;
+  gap: 15px;
+}
+
+.card-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-btn:hover {
+  transform: scale(1.1);
+  background: white;
+}
+
+.card-btn.lock-btn {
+  color: #2c3e50;
+}
+
+.card-btn.reroll-btn {
+  color: #e74c3c;
+}
+
+.card-name {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Locked state */
+.card.locked {
+  box-shadow: 0 0 0 3px #ffd166, 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card.locked::after {
+  content: "🔒";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+  background: rgba(255, 209, 102, 0.9);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}

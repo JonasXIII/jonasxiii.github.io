@@ -65,3 +65,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 6) render
   renderKingdom(kingdom, 'kingdom-cards', [upbonuses, sidebonuses]);
 });
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.card')) {
+    document.querySelectorAll('.card.active').forEach(card => {
+      card.classList.remove('active');
+    });
+  }
+});
