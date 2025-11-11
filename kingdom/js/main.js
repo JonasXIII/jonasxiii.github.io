@@ -21,8 +21,11 @@ function readParams() {
   return {
     accs: p.get('accs') === 'true',
     draw: p.get('draw') === 'true',
+    attack: p.get('attack') === 'true',
+    reactionIfAttack: p.get('reactionIfAttack') === 'true',
     blacklist: p.get('blacklist') === 'true',
-    baseOnly: p.get('baseOnly') === 'true'
+    baseOnly: p.get('baseOnly') === 'true',
+    twoExpansions: p.get('twoExpansions') === 'true'
   };
 }
 
@@ -31,8 +34,11 @@ function writeParams(params) {
   const p = new URLSearchParams();
   if (params.accs) p.set('accs', 'true');
   if (params.draw) p.set('draw', 'true');
+  if (params.attack) p.set('attack', 'true');
+  if (params.reactionIfAttack) p.set('reactionIfAttack', 'true');
   if (params.blacklist) p.set('blacklist', 'true');
   if (params.baseOnly) p.set('baseOnly', 'true');
+  if (params.twoExpansions) p.set('twoExpansions', 'true');
   window.location.search = p.toString();
 }
 
@@ -47,6 +53,9 @@ function generateNewKingdom() {
   currentState.kingdom = getSmartKingdom(currentState.cardLists, {
     requireAccs: currentState.config.accs,
     requireDraw: currentState.config.draw,
+    requireAttack: currentState.config.attack,
+    requireReactionIfAttack: currentState.config.reactionIfAttack,
+    twoExpansionsOnly: currentState.config.twoExpansions,
     lockedCards: lockedCards
   });
   
@@ -109,7 +118,10 @@ function handleCardReroll(cardId) {
       currentState.cardLists,
       {
         requireAccs: currentState.config.accs,
-        requireDraw: currentState.config.draw
+        requireDraw: currentState.config.draw,
+        requireAttack: currentState.config.attack,
+        requireReactionIfAttack: currentState.config.reactionIfAttack,
+        twoExpansionsOnly: currentState.config.twoExpansions
       }
     );
     
@@ -164,8 +176,11 @@ window.dominionHandlers = {
 document.addEventListener('DOMContentLoaded', async () => {
   const accsBox = document.getElementById('accs');
   const drawBox = document.getElementById('draw');
+  const attackBox = document.getElementById('attack');
+  const reactionIfAttackBox = document.getElementById('reactionIfAttack');
   const blacklistBox = document.getElementById('blacklist');
   const baseOnlyBox = document.getElementById('baseOnly');
+  const twoExpansionsBox = document.getElementById('twoExpansions');
   const generateBtn = document.getElementById('generate');
 
   // 1) Read params, reflect in UI
@@ -173,8 +188,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   currentState.config = params;
   accsBox.checked = params.accs;
   drawBox.checked = params.draw;
+  attackBox.checked = params.attack;
+  reactionIfAttackBox.checked = params.reactionIfAttack;
   blacklistBox.checked = params.blacklist;
   baseOnlyBox.checked = params.baseOnly;
+  twoExpansionsBox.checked = params.twoExpansions;
 
   // 2) Load card data
   const { cards, events, projects, prophecies, othercards } = await loadCards({ 
@@ -202,16 +220,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     const settingsChanged = 
       accsBox.checked !== currentState.config.accs ||
       drawBox.checked !== currentState.config.draw ||
+      attackBox.checked !== currentState.config.attack ||
+      reactionIfAttackBox.checked !== currentState.config.reactionIfAttack ||
       blacklistBox.checked !== currentState.config.blacklist ||
-      baseOnlyBox.checked !== currentState.config.baseOnly;
+      baseOnlyBox.checked !== currentState.config.baseOnly ||
+      twoExpansionsBox.checked !== currentState.config.twoExpansions;
     
     if (settingsChanged) {
       // Settings changed, need full reload
       const newParams = {
         accs: accsBox.checked,
         draw: drawBox.checked,
+        attack: attackBox.checked,
+        reactionIfAttack: reactionIfAttackBox.checked,
         blacklist: blacklistBox.checked,
-        baseOnly: baseOnlyBox.checked
+        baseOnly: baseOnlyBox.checked,
+        twoExpansions: twoExpansionsBox.checked
       };
       writeParams(newParams);
     } else {
