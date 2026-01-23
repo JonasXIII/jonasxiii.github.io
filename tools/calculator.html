@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scientific Calculator</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <div id="header-container"></div>
+        <main>
+            <h1>Scientific Calculator</h1>
+            <div id="calculator-container">
+                <div id="calculator">
+                    <div id="calc-display-area">
+                        <div id="calc-expression"></div>
+                        <div id="calc-display">0</div>
+                    </div>
+
+                    <div id="calc-memory">
+                        <span id="memory-indicator"></span>
+                    </div>
+
+                    <div id="calc-buttons">
+                        <!-- Memory Row -->
+                        <button class="calc-btn mem-btn" data-action="mc">MC</button>
+                        <button class="calc-btn mem-btn" data-action="mr">MR</button>
+                        <button class="calc-btn mem-btn" data-action="ms">MS</button>
+                        <button class="calc-btn mem-btn" data-action="m+">M+</button>
+                        <button class="calc-btn mem-btn" data-action="m-">M-</button>
+
+                        <!-- Scientific Functions Row 1 -->
+                        <button class="calc-btn func-btn" data-action="sin">sin</button>
+                        <button class="calc-btn func-btn" data-action="cos">cos</button>
+                        <button class="calc-btn func-btn" data-action="tan">tan</button>
+                        <button class="calc-btn func-btn" data-action="sqrt">√</button>
+                        <button class="calc-btn func-btn" data-action="pow">x²</button>
+
+                        <!-- Scientific Functions Row 2 -->
+                        <button class="calc-btn func-btn" data-action="log">log</button>
+                        <button class="calc-btn func-btn" data-action="ln">ln</button>
+                        <button class="calc-btn func-btn" data-action="exp">exp</button>
+                        <button class="calc-btn func-btn" data-action="pi">π</button>
+                        <button class="calc-btn func-btn" data-action="e">e</button>
+
+                        <!-- Number Pad and Operators -->
+                        <button class="calc-btn operator-btn" data-action="(">(</button>
+                        <button class="calc-btn operator-btn" data-action=")">)</button>
+                        <button class="calc-btn clear-btn" data-action="clear">C</button>
+                        <button class="calc-btn clear-btn" data-action="backspace">⌫</button>
+                        <button class="calc-btn operator-btn" data-action="/">÷</button>
+
+                        <button class="calc-btn num-btn" data-value="7">7</button>
+                        <button class="calc-btn num-btn" data-value="8">8</button>
+                        <button class="calc-btn num-btn" data-value="9">9</button>
+                        <button class="calc-btn operator-btn" data-action="*">×</button>
+                        <button class="calc-btn operator-btn" data-action="%">%</button>
+
+                        <button class="calc-btn num-btn" data-value="4">4</button>
+                        <button class="calc-btn num-btn" data-value="5">5</button>
+                        <button class="calc-btn num-btn" data-value="6">6</button>
+                        <button class="calc-btn operator-btn" data-action="-">−</button>
+                        <button class="calc-btn func-btn" data-action="1/x">1/x</button>
+
+                        <button class="calc-btn num-btn" data-value="1">1</button>
+                        <button class="calc-btn num-btn" data-value="2">2</button>
+                        <button class="calc-btn num-btn" data-value="3">3</button>
+                        <button class="calc-btn operator-btn" data-action="+">+</button>
+                        <button class="calc-btn func-btn" data-action="±">±</button>
+
+                        <button class="calc-btn num-btn span-2" data-value="0">0</button>
+                        <button class="calc-btn num-btn" data-value=".">.</button>
+                        <button class="calc-btn equals-btn span-2" data-action="=">=</button>
+                    </div>
+                </div>
+
+                <div id="calc-history">
+                    <h3>History</h3>
+                    <button id="clear-history-btn">Clear History</button>
+                    <div id="history-list"></div>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+        <script src="../load-header-footer.js"></script>
+        <script src="calculator.js"></script>
+    </body>
+</html>
