@@ -19,7 +19,7 @@
   "intrigue2": true,
   "intrigue": false,
   "menagerie": false,
-  "nocturne": false,
+  "nocturne": true,
   "plunder": false,
   "promos": true,
   "prosperity2add": false,

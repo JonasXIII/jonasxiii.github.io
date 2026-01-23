@@ -3,15 +3,15 @@ import json
 import requests
 
 BASE = "https://dominionrandomizer.com/img/cards"
-OUT_DIR = "dominion_randomizer\data\dominion_card_imgs"
+OUT_DIR = "kingdom\data\dominion_card_imgs"
 
 # always resolve relative to script dir
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-with open(os.path.join(script_dir, "dominion_randomizer\data\dominion_cards.json"), "r", encoding="utf-8") as f:
+with open(os.path.join(script_dir, "kingdom\data\dominion_cards.json"), "r", encoding="utf-8") as f:
     all_cards = json.load(f)
 
-with open(os.path.join(script_dir, "dominion_randomizer\data\mysets.json"), "r", encoding="utf-8") as f:
+with open(os.path.join(script_dir, "kingdom\data\mysets.json"), "r", encoding="utf-8") as f:
     expansions = json.load(f)
 
 os.makedirs(OUT_DIR, exist_ok=True)

@@ -1,3 +1,5 @@
+// js/modules/display.js - Display and UI interaction module
+
 export function renderKingdom(kingdom, kingdomContainer = 'kingdom-cards', bonusTuple = [[], []]) {
   const [upbonuses, sidebonuses] = bonusTuple;
 
@@ -21,12 +23,20 @@ export function renderKingdom(kingdom, kingdomContainer = 'kingdom-cards', bonus
     
     // Store card data as attributes for later use
     el.dataset.cardId = card.id;
-    el.dataset.cardName = card.name;
+    el.dataset.cardName = card.name || card.id;
     el.dataset.cardSet = card.setId;
     
     const img = document.createElement('img');
     img.src = `./data/dominion_card_imgs/${card.setId}/${card.id}.jpg`;
     img.alt = card.name || card.id;
+    img.onerror = function() {
+      // Fallback for missing images
+      this.style.display = 'none';
+      const placeholder = document.createElement('div');
+      placeholder.style.cssText = 'width:100%;height:200px;background:#ddd;display:flex;align-items:center;justify-content:center;color:#666;font-size:14px;text-align:center;padding:10px;';
+      placeholder.textContent = card.name || card.id;
+      el.insertBefore(placeholder, el.firstChild);
+    };
     
     // Create overlay with controls
     const overlay = document.createElement('div');
@@ -35,7 +45,7 @@ export function renderKingdom(kingdom, kingdomContainer = 'kingdom-cards', bonus
     // Card name display
     const nameDisplay = document.createElement('div');
     nameDisplay.className = 'card-name';
-    nameDisplay.textContent = card.setId || card.id;
+    nameDisplay.textContent = card.name || card.id;
     
     // Control buttons container
     const controls = document.createElement('div');
@@ -81,8 +91,15 @@ export function renderKingdom(kingdom, kingdomContainer = 'kingdom-cards', bonus
       e.stopPropagation(); // Prevent card click event
       el.classList.toggle('locked');
       
+      const isLocking = el.classList.contains('locked');
+      
+      // Call the handler from main.js
+      if (window.dominionHandlers && window.dominionHandlers.handleCardLock) {
+        window.dominionHandlers.handleCardLock(card.id, isLocking);
+      }
+      
       // Update lock button appearance
-      if (el.classList.contains('locked')) {
+      if (isLocking) {
         lockBtn.innerHTML = '🔓';
         lockBtn.title = 'Unlock this card';
         console.log(`Locked card: ${card.name || card.id}`);
@@ -98,15 +115,10 @@ export function renderKingdom(kingdom, kingdomContainer = 'kingdom-cards', bonus
       e.stopPropagation(); // Prevent card click event
       console.log(`Reroll requested for: ${card.name || card.id}`);
       
-      // In a real implementation, this would call a function to replace this card
-      // For now, we'll just show a visual effect and log the action
-      el.style.opacity = '0.7';
-      setTimeout(() => {
-        el.style.opacity = '1';
-      }, 300);
-      
-      // You would implement actual reroll logic here
-      alert(`Reroll functionality for ${card.name || card.id} would be implemented here!`);
+      // Call the handler from main.js
+      if (window.dominionHandlers && window.dominionHandlers.handleCardReroll) {
+        window.dominionHandlers.handleCardReroll(card.id);
+      }
     });
     
     return el;

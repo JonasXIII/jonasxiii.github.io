@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dominion — Kingdom Generator</title>
+  <title>Dominion – Kingdom Generator</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:,">
 </head>
@@ -15,11 +15,13 @@
       <div class="controls">
         <label><input type="checkbox" id="accs"> Require +Actions</label>
         <label><input type="checkbox" id="draw"> Require Draw</label>
+        <label><input type="checkbox" id="attack"> Require Attack</label>
+        <label><input type="checkbox" id="reactionIfAttack"> Require Reaction (if Attack)</label>
         <label><input type="checkbox" id="blacklist"> Apply Blacklist</label>
         <label><input type="checkbox" id="baseOnly"> Base Set Only</label>
+        <label><input type="checkbox" id="twoExpansions"> Two Expansions Only</label>
       </div>
       <button id="generate">🎲 Generate New Kingdom</button>
-      <div id="note" class="note">Your kingdom will be generated based on the selected options</div>
     </aside>
 
     <!-- Main content -->
