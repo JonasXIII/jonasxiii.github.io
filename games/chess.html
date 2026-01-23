@@ -10,7 +10,26 @@
         <div id="header-container"></div>
         <main>
             <h1>Chess Game</h1>
-            <div id="chessboard"></div>
+            <div id="chess-container">
+                <div id="chess-game-area">
+                    <div id="chessboard"></div>
+                </div>
+                <div id="chess-side-panel">
+                    <div class="chess-panel-section">
+                        <h3>Captured Pieces</h3>
+                        <div id="captured-white" class="captured-pieces"></div>
+                        <div id="captured-black" class="captured-pieces"></div>
+                    </div>
+                    <div class="chess-panel-section">
+                        <h3>Move History</h3>
+                        <div id="move-history"></div>
+                    </div>
+                    <div class="chess-panel-section">
+                        <button id="new-game-btn" class="chess-control-btn">New Game</button>
+                        <button id="undo-move-btn" class="chess-control-btn">Undo Move</button>
+                    </div>
+                </div>
+            </div>
             <script src="chess.js"></script>
         </main>
 

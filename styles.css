@@ -179,6 +179,220 @@ a:hover {
   opacity: 0.8;
 }
 
+.square.last-move {
+  background-color: rgba(255, 255, 100, 0.4) !important;
+  box-shadow: inset 0 0 15px rgba(255, 200, 0, 0.5);
+}
+
+/* Chess container layout */
+#chess-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+#chess-game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#chess-side-panel {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chess-panel-section {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #b58863;
+}
+
+.chess-panel-section h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.2em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+}
+
+/* Move history styling */
+#move-history {
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+}
+
+#move-history::-webkit-scrollbar {
+  width: 8px;
+}
+
+#move-history::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+#move-history::-webkit-scrollbar-thumb {
+  background: #b58863;
+  border-radius: 5px;
+}
+
+#move-history::-webkit-scrollbar-thumb:hover {
+  background: #8b6f47;
+}
+
+.move-pair {
+  display: flex;
+  gap: 15px;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.move-pair:last-child {
+  border-bottom: none;
+}
+
+.move-number {
+  font-weight: bold;
+  color: #666;
+  min-width: 25px;
+}
+
+.move-notation {
+  color: #333;
+  font-size: 1.1em;
+  min-width: 80px;
+}
+
+.history-empty {
+  text-align: center;
+  color: #a0aec0;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* Captured pieces styling */
+.captured-pieces {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 30px;
+  font-size: 1.3em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.captured-pieces:empty::after {
+  content: 'None';
+  color: #999;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+#captured-white {
+  border: 2px solid #f0d9b5;
+}
+
+#captured-black {
+  border: 2px solid #b58863;
+}
+
+/* Chess control buttons */
+#new-game-btn, #undo-move-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#new-game-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#new-game-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+#undo-move-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+#undo-move-btn:hover {
+  background-color: #e68900;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 152, 0, 0.3);
+}
+
+/* Game status styling */
+.status-normal {
+  color: #333;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 5px;
+  border-left: 4px solid #4CAF50;
+}
+
+.status-check {
+  color: #d32f2f;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #ffebee;
+  border-radius: 5px;
+  border-left: 4px solid #d32f2f;
+  animation: pulse-check 0.5s ease-in-out;
+}
+
+.status-gameover {
+  color: #1976d2;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #e3f2fd;
+  border-radius: 5px;
+  border-left: 4px solid #1976d2;
+}
+
+@keyframes pulse-check {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
 /* Tic-Tac-Toe styling */
 .tic-tac-toe-grid {
   display: grid;
@@ -332,11 +546,15 @@ a:hover {
 #tetris-game {
   border: 3px solid #333;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 #tetris-canvas {
   display: block;
   background-color: #000;
+  border-radius: 3px;
 }
 
 #tetris-info {
@@ -369,6 +587,41 @@ a:hover {
   display: block;
   background-color: #000;
   margin: 0 auto;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#tetris-status {
+  font-size: 1.5em;
+  margin: 20px 0;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#tetris-reset-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#tetris-reset-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+}
+
+#tetris-reset-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .controls-info {
@@ -422,6 +675,27 @@ a:hover {
   text-align: right;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  transition: all 0.3s ease;
+}
+
+@keyframes calc-shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes calc-flash-success {
+  0%, 100% { background-color: transparent; }
+  50% { background-color: rgba(72, 187, 120, 0.3); }
+}
+
+.calc-shake {
+  animation: calc-shake 0.5s;
+}
+
+.calc-flash-success {
+  animation: calc-flash-success 0.3s;
+  border-radius: 5px;
 }
 
 #calc-memory {
@@ -449,20 +723,39 @@ a:hover {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #4a5568;
   color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
 }
 
 .calc-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .calc-btn:active {
-  transform: translateY(0);
+  transform: translateY(0) scale(0.98);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Ripple effect */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: scale(0);
+  animation: ripple-animation 0.6s ease-out;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
 .num-btn {
@@ -479,6 +772,7 @@ a:hover {
 
 .operator-btn:hover {
   background-color: #f6ad55;
+  box-shadow: 0 4px 12px rgba(237, 137, 54, 0.4);
 }
 
 .func-btn {
@@ -488,6 +782,7 @@ a:hover {
 
 .func-btn:hover {
   background-color: #63b3ed;
+  box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
 }
 
 .mem-btn {
@@ -497,6 +792,7 @@ a:hover {
 
 .mem-btn:hover {
   background-color: #68d391;
+  box-shadow: 0 4px 12px rgba(72, 187, 120, 0.4);
 }
 
 .clear-btn {
@@ -505,6 +801,7 @@ a:hover {
 
 .clear-btn:hover {
   background-color: #f56565;
+  box-shadow: 0 4px 12px rgba(252, 129, 129, 0.4);
 }
 
 .equals-btn {
@@ -513,6 +810,8 @@ a:hover {
 
 .equals-btn:hover {
   background-color: #4fd1c5;
+  box-shadow: 0 4px 12px rgba(56, 178, 172, 0.5);
+  transform: translateY(-3px) scale(1.05);
 }
 
 .span-2 {
@@ -546,11 +845,20 @@ a:hover {
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 15px;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #clear-history-btn:hover {
   background-color: #fc8181;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(245, 101, 101, 0.3);
+}
+
+#clear-history-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 #history-list {
@@ -567,12 +875,34 @@ a:hover {
   border-radius: 8px;
   border-left: 4px solid #667eea;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.history-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, rgba(102, 126, 234, 0.1), transparent);
+  transition: width 0.3s ease;
 }
 
 .history-item:hover {
   background-color: #edf2f7;
-  transform: translateX(5px);
+  transform: translateX(8px) scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-item:hover::before {
+  width: 100%;
+}
+
+.history-item:active {
+  transform: translateX(5px) scale(0.98);
 }
 
 .history-expression {

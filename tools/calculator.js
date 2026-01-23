@@ -19,16 +19,48 @@ function init() {
     setupEventListeners();
 }
 
+// Create ripple effect
+function createRipple(event) {
+    const button = event.currentTarget;
+    const ripple = document.createElement('span');
+    const rect = button.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const x = event.clientX - rect.left - size / 2;
+    const y = event.clientY - rect.top - size / 2;
+
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = x + 'px';
+    ripple.style.top = y + 'px';
+    ripple.classList.add('ripple');
+
+    const existingRipple = button.querySelector('.ripple');
+    if (existingRipple) {
+        existingRipple.remove();
+    }
+
+    button.appendChild(ripple);
+
+    setTimeout(() => {
+        ripple.remove();
+    }, 600);
+}
+
 // Setup event listeners
 function setupEventListeners() {
     // Number buttons
     document.querySelectorAll('.num-btn').forEach(btn => {
-        btn.addEventListener('click', () => handleNumber(btn.dataset.value));
+        btn.addEventListener('click', (e) => {
+            createRipple(e);
+            handleNumber(btn.dataset.value);
+        });
     });
 
     // Action buttons
     document.querySelectorAll('[data-action]').forEach(btn => {
-        btn.addEventListener('click', () => handleAction(btn.dataset.action));
+        btn.addEventListener('click', (e) => {
+            createRipple(e);
+            handleAction(btn.dataset.action);
+        });
     });
 
     // Clear history
@@ -278,11 +310,19 @@ function calculate() {
         currentValue = result.toString();
         isNewNumber = true;
         updateDisplay();
+
+        // Flash success
+        display.classList.add('calc-flash-success');
+        setTimeout(() => display.classList.remove('calc-flash-success'), 300);
     } catch (error) {
         currentValue = 'Error';
         expression = '';
         isNewNumber = true;
         updateDisplay();
+
+        // Shake on error
+        display.classList.add('calc-shake');
+        setTimeout(() => display.classList.remove('calc-shake'), 500);
     }
 }
 

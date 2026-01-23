@@ -44,6 +44,7 @@ let gameActive = false;
 let paused = false;
 let dropInterval = 1000;
 let lastDropTime = 0;
+let particles = [];
 
 // Initialize game
 function initGame() {
@@ -79,6 +80,58 @@ function createPiece() {
     };
 }
 
+// Calculate ghost piece position
+function getGhostPosition() {
+    if (!currentPiece) return null;
+
+    const ghost = {
+        type: currentPiece.type,
+        shape: currentPiece.shape,
+        color: currentPiece.color,
+        x: currentPiece.x,
+        y: currentPiece.y
+    };
+
+    while (!collides(ghost, 0, 1)) {
+        ghost.y++;
+    }
+
+    return ghost;
+}
+
+// Draw ghost piece
+function drawGhostPiece(context, ghost) {
+    if (!ghost) return;
+
+    for (let r = 0; r < ghost.shape.length; r++) {
+        for (let c = 0; c < ghost.shape[r].length; c++) {
+            if (ghost.shape[r][c]) {
+                const x = ghost.x + c;
+                const y = ghost.y + r;
+
+                // Draw semi-transparent outline
+                context.strokeStyle = ghost.color;
+                context.lineWidth = 2;
+                context.strokeRect(
+                    x * BLOCK_SIZE + 2,
+                    y * BLOCK_SIZE + 2,
+                    BLOCK_SIZE - 4,
+                    BLOCK_SIZE - 4
+                );
+
+                // Fill with very transparent color
+                context.fillStyle = ghost.color + '20';
+                context.fillRect(
+                    x * BLOCK_SIZE + 2,
+                    y * BLOCK_SIZE + 2,
+                    BLOCK_SIZE - 4,
+                    BLOCK_SIZE - 4
+                );
+            }
+        }
+    }
+}
+
 // Draw the board
 function drawBoard() {
     ctx.fillStyle = '#000';
@@ -109,10 +162,19 @@ function drawBoard() {
         }
     }
 
+    // Draw ghost piece
+    if (currentPiece && gameActive && !paused) {
+        const ghost = getGhostPosition();
+        drawGhostPiece(ctx, ghost);
+    }
+
     // Draw current piece
     if (currentPiece) {
         drawPiece(ctx, currentPiece);
     }
+
+    // Draw particles
+    drawParticles();
 }
 
 // Draw a single block
@@ -154,6 +216,50 @@ function drawNextPiece() {
             }
         }
     }
+}
+
+// Particle system for line clear effects
+function createParticles(row) {
+    for (let c = 0; c < COLS; c++) {
+        const color = board[row][c];
+        if (color) {
+            const particleCount = 3;
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: (c + 0.5) * BLOCK_SIZE,
+                    y: (row + 0.5) * BLOCK_SIZE,
+                    vx: (Math.random() - 0.5) * 8,
+                    vy: (Math.random() - 0.5) * 8 - 2,
+                    color: color,
+                    life: 1.0,
+                    size: BLOCK_SIZE / 3
+                });
+            }
+        }
+    }
+}
+
+function updateParticles() {
+    for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.3; // gravity
+        p.life -= 0.02;
+
+        if (p.life <= 0) {
+            particles.splice(i, 1);
+        }
+    }
+}
+
+function drawParticles() {
+    particles.forEach(p => {
+        ctx.globalAlpha = p.life;
+        ctx.fillStyle = p.color;
+        ctx.fillRect(p.x - p.size / 2, p.y - p.size / 2, p.size, p.size);
+        ctx.globalAlpha = 1.0;
+    });
 }
 
 // Check collision
@@ -261,17 +367,31 @@ function lockPiece() {
 // Clear completed lines
 function clearLines() {
     let linesCleared = 0;
+    const clearedRows = [];
 
     for (let r = ROWS - 1; r >= 0; r--) {
         if (board[r].every(cell => cell !== 0)) {
-            board.splice(r, 1);
-            board.unshift(Array(COLS).fill(0));
+            clearedRows.push(r);
             linesCleared++;
-            r++; // Check this row again
         }
     }
 
+    // Create particles for cleared lines
     if (linesCleared > 0) {
+        clearedRows.forEach(row => createParticles(row));
+
+        // Remove cleared lines after a brief delay for particle effect
+        setTimeout(() => {
+            clearedRows.forEach(() => {
+                for (let r = ROWS - 1; r >= 0; r--) {
+                    if (board[r].every(cell => cell !== 0)) {
+                        board.splice(r, 1);
+                        board.unshift(Array(COLS).fill(0));
+                    }
+                }
+            });
+        }, 100);
+
         lines += linesCleared;
 
         // Scoring: 1 line = 100, 2 = 300, 3 = 500, 4 = 800
@@ -295,7 +415,7 @@ function updateScore() {
 
 // Game loop
 function gameLoop(timestamp = 0) {
-    if (!gameActive) return;
+    if (!gameActive && particles.length === 0) return;
 
     if (!paused) {
         if (timestamp - lastDropTime > dropInterval) {
@@ -303,6 +423,10 @@ function gameLoop(timestamp = 0) {
             lastDropTime = timestamp;
         }
     }
+
+    // Always update and draw particles
+    updateParticles();
+    drawBoard();
 
     requestAnimationFrame(gameLoop);
 }
