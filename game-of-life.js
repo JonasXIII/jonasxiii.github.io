@@ -43,7 +43,7 @@ function nextGeneration() {
     const newGrid = grid.map(arr => [...arr]);
     for (let i = 1; i < gridSize-1; i++) {
         for (let j = 1; j < gridSize-1; j++) {
-            const neighbors = countNeighborsSafeSafe(i, j);
+            const neighbors = countNeighbors(i, j);
             if (grid[i][j] === 1 && (neighbors < 2 || neighbors > 3)) {
                 newGrid[i][j] = 0;
             } else if (grid[i][j] === 0 && neighbors === 3) {

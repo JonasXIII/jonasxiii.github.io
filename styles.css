@@ -131,16 +131,50 @@ a:hover {
 
 
 
-.time-slot {
-  display: flex;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 5px;
+/* Chess board styling */
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  border: 3px solid #333;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-.event {
-  background-color: #f0f0f0;
-  border: 1px solid #999;
-  padding: 5px;
-  margin: 0 2px;
-  text-align: center;
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.square.white {
+  background-color: #f0d9b5;
+}
+
+.square.black {
+  background-color: #b58863;
+}
+
+.square.selected {
+  background-color: #7fa650 !important;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.square.legal-move {
+  background-color: rgba(255, 255, 0, 0.5) !important;
+  cursor: pointer;
+}
+
+.square.legal-move:hover {
+  background-color: rgba(255, 200, 0, 0.7) !important;
+}
+
+.square:hover {
+  opacity: 0.8;
 }

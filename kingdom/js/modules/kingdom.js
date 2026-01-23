@@ -185,8 +185,7 @@ export function getBonusCards(cardPool, kingdom, events, projects, prophecies, o
   let project = false;
   let doubleProject = false;
   let shelters = false;
-  let platinum = false;
-  let colony = false;
+  let platinum_colony = false;
   let river_boat = false;
   let prophecy = false;
 
@@ -195,8 +194,7 @@ export function getBonusCards(cardPool, kingdom, events, projects, prophecies, o
     if (card.setId === 'renaissance' && Math.random() < 0.2 && project) doubleProject = true;
     if (card.setId === 'risingsun' && Math.random() < 0.2) event = true;
     if (card.setId === 'darkages' && Math.random() < 0.2) shelters = true;
-    if (card.setId === 'prosperity' && Math.random() < 0.2) platinum = true;
-    if (card.setId === 'prosperity' && Math.random() < 0.2) colony = true;
+    if (card.setId === 'prosperity' && Math.random() < 0.2) platinum_colony = true;
     if (card.name === 'Riverboat') river_boat = true;
     if (card.isOmen) prophecy = true;
   }
@@ -204,8 +202,8 @@ export function getBonusCards(cardPool, kingdom, events, projects, prophecies, o
   const upbonuses = [];
   const sidebonuses = [];
   if (shelters) upbonuses.push(...getShelterCards(othercards));
-  if (platinum) upbonuses.push(...getPlatinumCard(othercards));
-  if (colony) upbonuses.push(...getColonyCard(othercards));
+  if (platinum_colony) upbonuses.push(...getPlatinumCard(othercards));
+  if (platinum_colony) upbonuses.push(...getColonyCard(othercards));
   
   if(doubleProject) {
     sidebonuses.push(...getTwoRandProjectCard(projects));
