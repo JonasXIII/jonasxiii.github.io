@@ -1,0 +1,35 @@
+[
+  {
+    "layout": "image-left",
+    "title": "Story Title",
+    "date": "Month Year",
+    "image": "https://via.placeholder.com/400x300",
+    "imageAlt": "Description of image",
+    "caption": "Caption for your image",
+    "text": "This is where you write your story. You can talk about a meaningful experience, a trip you took, or an important moment in your life. Replace this text with your own story."
+  },
+  {
+    "layout": "image-right",
+    "title": "Another Story",
+    "date": "Month Year",
+    "image": "https://via.placeholder.com/400x300",
+    "imageAlt": "Description of image",
+    "caption": "Another caption",
+    "text": "Here's another story with the image on the right side. This creates a nice alternating pattern as you scroll down the page. Add as many of these as you'd like!"
+  },
+  {
+    "layout": "full-width",
+    "title": "A Memorable Experience",
+    "date": "Month Year",
+    "image": "https://via.placeholder.com/800x400",
+    "imageAlt": "Description of image",
+    "caption": "Full-width image caption",
+    "text": "Use this layout for particularly important stories or when you have a wide, beautiful photo that deserves to be shown at full width. The text appears below the image in this style."
+  },
+  {
+    "layout": "text-only",
+    "title": "A Thought or Reflection",
+    "date": "Month Year",
+    "text": "Sometimes you might want to share thoughts or reflections without an image. This layout is perfect for that. You can write longer passages here without needing to include a photo."
+  }
+]
