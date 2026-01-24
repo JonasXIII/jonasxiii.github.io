@@ -1,30 +1,30 @@
 [
   {
     "layout": "image-left",
-    "title": "Nature's Hidden Wonders",
+    "title": "Forest Discoveries",
     "date": "October 2024",
     "image": "images/Mushroom_Goo.jpg",
-    "imageAlt": "Close-up of a unique mushroom formation",
-    "caption": "A fascinating mushroom discovery during a forest hike",
-    "text": "During a recent nature walk, I stumbled upon this incredible mushroom formation. The intricate patterns and unique texture caught my eye immediately. It's moments like these that remind me how much beauty exists in the small details of nature that we often overlook. This discovery sparked my interest in mycology and the fascinating world of fungi."
+    "imageAlt": "An interesting mushroom found on a forest hike",
+    "caption": "An unusual mushroom discovered during a forest hike",
+    "text": "During a recent forest hike, I came across this fascinating mushroom. The intricate patterns and unique texture immediately caught my attention. It's amazing how nature creates such interesting forms, and how much you can discover when you take the time to slow down and really look at the small details around you."
   },
   {
     "layout": "image-right",
-    "title": "Garden Delights",
+    "title": "Bean in the Curtains",
     "date": "September 2024",
-    "image": "images/Bean_Curtains.jpg",
-    "imageAlt": "Fresh beans hanging in the garden",
-    "caption": "Harvest time in the backyard garden",
-    "text": "There's something deeply satisfying about growing your own food. These beans were the result of months of care and patience. Watching them grow from tiny seeds to this abundant harvest taught me valuable lessons about nurturing, patience, and the rewards of consistent effort. Fresh from the garden, they tasted unlike anything from a store."
+    "image": "images/Bean_Curtain.jpg",
+    "imageAlt": "Bean the cat peeking through the curtains",
+    "caption": "Bean found her favorite hiding spot",
+    "text": "This is Bean, my cat, doing what she does best - finding the most creative places to hide and observe. She loves perching in the curtains, watching the world go by from her secret vantage point. Cats have such unique personalities, and Bean never fails to make me smile with her quirky behavior and chosen hideaways."
   },
   {
     "layout": "full-width",
-    "title": "Winter's Embrace",
+    "title": "Winter in Winthrop",
     "date": "January 2024",
     "image": "images/Frozen_Lake.jpg",
-    "imageAlt": "Frozen lake covered in snow and ice",
-    "caption": "The serene beauty of a frozen lake in winter",
-    "text": "Winter transforms familiar landscapes into something magical. This frozen lake, which I had seen countless times during summer, became an entirely different world. The silence was profound, broken only by the occasional crack of ice settling. Standing there in the crisp cold air, I felt a deep sense of peace and connection to the natural cycle of seasons. It's a reminder that change, while sometimes harsh, can reveal unexpected beauty."
+    "imageAlt": "Row of cabins along a frozen lake in Winthrop, Washington",
+    "caption": "Our cabin getaway on the frozen lake in Winthrop, Washington",
+    "text": "This was taken during a winter trip to Winthrop, Washington. We stayed in one of these cabins right on the frozen lake. The whole scene was like something out of a winter postcard - the snow-covered cabins, the completely frozen lake, and the crisp mountain air. There's something special about spending time in a place where winter is embraced rather than endured. The silence and beauty of the frozen landscape made for an unforgettable getaway."
   },
   {
     "layout": "text-only",
