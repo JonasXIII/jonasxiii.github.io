@@ -33,6 +33,8 @@ let gameOver = false;
 let moveHistory = [];
 let capturedPieces = { white: [], black: [] };
 let lastMove = null;
+let castlingRights = { w: { kingSide: true, queenSide: true }, b: { kingSide: true, queenSide: true } };
+let enPassantTarget = null;
 
 // Initialize game
 function initGame() {
@@ -44,6 +46,8 @@ function initGame() {
     moveHistory = [];
     capturedPieces = { white: [], black: [] };
     lastMove = null;
+    castlingRights = { w: { kingSide: true, queenSide: true }, b: { kingSide: true, queenSide: true } };
+    enPassantTarget = null;
     createBoard();
     updateMoveHistory();
     updateCapturedPieces();
@@ -92,7 +96,13 @@ function updateGameStatus() {
     }
 
     if (gameOver) {
-        statusDiv.textContent = `Game Over! ${turn === 'w' ? 'Black' : 'White'} wins!`;
+        if (isCheckmate(turn)) {
+            statusDiv.textContent = `Checkmate! ${turn === 'w' ? 'Black' : 'White'} wins!`;
+        } else if (isStalemate(turn)) {
+            statusDiv.textContent = `Stalemate! It's a draw!`;
+        } else {
+            statusDiv.textContent = `Game Over!`;
+        }
         statusDiv.className = 'status-gameover';
     } else if (isInCheck(turn)) {
         statusDiv.textContent = `${turn === 'w' ? 'White' : 'Black'}'s turn - CHECK!`;
@@ -142,6 +152,14 @@ function makeMove(toRow, toCol) {
     const fromCol = selectedPiece.col;
     const piece = selectedPiece.piece;
     const capturedPiece = board[toRow][toCol];
+    let movingPiece = piece;
+    let isEnPassantCapture = false;
+
+    // Check if this is an en passant capture
+    if (piece.toLowerCase() === 'p' && enPassantTarget &&
+        toRow === enPassantTarget.row && toCol === enPassantTarget.col) {
+        isEnPassantCapture = true;
+    }
 
     // Save move history for undo
     moveHistory.push({
@@ -149,10 +167,45 @@ function makeMove(toRow, toCol) {
         to: { row: toRow, col: toCol },
         piece: piece,
         captured: capturedPiece,
-        boardState: JSON.parse(JSON.stringify(board))
+        boardState: JSON.parse(JSON.stringify(board)),
+        castlingRights: JSON.parse(JSON.stringify(castlingRights)),
+        enPassantTarget: enPassantTarget,
+        isEnPassantCapture: isEnPassantCapture
     });
 
-    // Handle captured piece
+    // Handle castling
+    if (piece.toLowerCase() === 'k' && Math.abs(toCol - fromCol) === 2) {
+        // King-side castling
+        if (toCol === 6) {
+            const rook = board[fromRow][7];
+            board[fromRow][5] = rook;
+            board[fromRow][7] = '';
+        }
+        // Queen-side castling
+        else if (toCol === 2) {
+            const rook = board[fromRow][0];
+            board[fromRow][3] = rook;
+            board[fromRow][0] = '';
+        }
+    }
+
+    // Handle en passant capture
+    if (piece.toLowerCase() === 'p' && enPassantTarget &&
+        toRow === enPassantTarget.row && toCol === enPassantTarget.col) {
+        const capturedRow = piece === 'P' ? toRow + 1 : toRow - 1;
+        const capturedPawn = board[capturedRow][toCol];
+        board[capturedRow][toCol] = '';
+
+        const isWhitePiece = capturedPawn === capturedPawn.toUpperCase();
+        if (isWhitePiece) {
+            capturedPieces.white.push(capturedPawn);
+        } else {
+            capturedPieces.black.push(capturedPawn);
+        }
+        updateCapturedPieces();
+    }
+
+    // Handle regular captured piece
     if (capturedPiece) {
         const isWhitePiece = capturedPiece === capturedPiece.toUpperCase();
         if (isWhitePiece) {
@@ -163,9 +216,41 @@ function makeMove(toRow, toCol) {
         updateCapturedPieces();
     }
 
+    // Handle pawn promotion
+    if (piece.toLowerCase() === 'p') {
+        if ((piece === 'P' && toRow === 0) || (piece === 'p' && toRow === 7)) {
+            // Auto-promote to queen
+            movingPiece = piece === 'P' ? 'Q' : 'q';
+        }
+    }
+
     // Move the piece
-    board[toRow][toCol] = piece;
+    board[toRow][toCol] = movingPiece;
     board[fromRow][fromCol] = '';
+
+    // Update en passant target
+    enPassantTarget = null;
+    if (piece.toLowerCase() === 'p' && Math.abs(toRow - fromRow) === 2) {
+        enPassantTarget = {
+            row: piece === 'P' ? fromRow - 1 : fromRow + 1,
+            col: fromCol
+        };
+    }
+
+    // Update castling rights
+    if (piece === 'K') {
+        castlingRights.w.kingSide = false;
+        castlingRights.w.queenSide = false;
+    } else if (piece === 'k') {
+        castlingRights.b.kingSide = false;
+        castlingRights.b.queenSide = false;
+    } else if (piece === 'R') {
+        if (fromRow === 7 && fromCol === 0) castlingRights.w.queenSide = false;
+        if (fromRow === 7 && fromCol === 7) castlingRights.w.kingSide = false;
+    } else if (piece === 'r') {
+        if (fromRow === 0 && fromCol === 0) castlingRights.b.queenSide = false;
+        if (fromRow === 0 && fromCol === 7) castlingRights.b.kingSide = false;
+    }
 
     // Update last move
     lastMove = {
@@ -177,6 +262,8 @@ function makeMove(toRow, toCol) {
     turn = turn === 'w' ? 'b' : 'w';
 
     if (isCheckmate(turn)) {
+        gameOver = true;
+    } else if (isStalemate(turn)) {
         gameOver = true;
     }
 
@@ -190,10 +277,15 @@ function undoMove() {
 
     const lastMoveData = moveHistory.pop();
     board = JSON.parse(JSON.stringify(lastMoveData.boardState));
+    castlingRights = JSON.parse(JSON.stringify(lastMoveData.castlingRights));
+    enPassantTarget = lastMoveData.enPassantTarget;
 
     // Restore captured pieces
-    if (lastMoveData.captured) {
-        const isWhitePiece = lastMoveData.captured === lastMoveData.captured.toUpperCase();
+    if (lastMoveData.captured || lastMoveData.isEnPassantCapture) {
+        const isWhitePiece = lastMoveData.captured ?
+            lastMoveData.captured === lastMoveData.captured.toUpperCase() :
+            lastMoveData.piece === lastMoveData.piece.toLowerCase(); // If en passant, opposite color of moving piece
+
         if (isWhitePiece) {
             capturedPieces.white.pop();
         } else {
@@ -316,6 +408,10 @@ function getPossibleMoves(row, col, piece) {
                 if (target && isEnemyPiece(piece, target)) {
                     moves.push({ row: newRow, col: newCol });
                 }
+                // En passant
+                if (enPassantTarget && newRow === enPassantTarget.row && newCol === enPassantTarget.col) {
+                    moves.push({ row: newRow, col: newCol });
+                }
             }
         }
     } else if (pieceLower === 'n') {
@@ -339,6 +435,48 @@ function getPossibleMoves(row, col, piece) {
                 const target = board[newRow][newCol];
                 if (!target || isEnemyPiece(piece, target)) {
                     moves.push({ row: newRow, col: newCol });
+                }
+            }
+        }
+
+        // Castling
+        const color = piece === 'K' ? 'w' : 'b';
+        const backRank = piece === 'K' ? 7 : 0;
+
+        // King-side castling
+        if (castlingRights[color].kingSide &&
+            !board[backRank][5] && !board[backRank][6] &&
+            board[backRank][7] === (piece === 'K' ? 'R' : 'r')) {
+            // Check if king is in check or passes through check
+            if (!isInCheck(color)) {
+                const kingInBetween = board[row][col];
+                board[row][col] = '';
+                board[row][5] = piece;
+                const passesCheck = !isInCheck(color);
+                board[row][col] = kingInBetween;
+                board[row][5] = '';
+
+                if (passesCheck) {
+                    moves.push({ row: backRank, col: 6 });
+                }
+            }
+        }
+
+        // Queen-side castling
+        if (castlingRights[color].queenSide &&
+            !board[backRank][1] && !board[backRank][2] && !board[backRank][3] &&
+            board[backRank][0] === (piece === 'K' ? 'R' : 'r')) {
+            // Check if king is in check or passes through check
+            if (!isInCheck(color)) {
+                const kingInBetween = board[row][col];
+                board[row][col] = '';
+                board[row][3] = piece;
+                const passesCheck = !isInCheck(color);
+                board[row][col] = kingInBetween;
+                board[row][3] = '';
+
+                if (passesCheck) {
+                    moves.push({ row: backRank, col: 2 });
                 }
             }
         }
@@ -429,9 +567,29 @@ function isInCheck(player) {
     return false;
 }
 
-// Check if checkmate (same as before)
+// Check if checkmate
 function isCheckmate(player) {
     if (!isInCheck(player)) return false;
+
+    for (let r = 0; r < 8; r++) {
+        for (let c = 0; c < 8; c++) {
+            const piece = board[r][c];
+            if (piece && ((player === 'w' && piece === piece.toUpperCase()) ||
+                         (player === 'b' && piece === piece.toLowerCase()))) {
+                const moves = getLegalMoves(r, c, piece);
+                if (moves.length > 0) {
+                    return false;
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
+// Check if stalemate
+function isStalemate(player) {
+    if (isInCheck(player)) return false;
 
     for (let r = 0; r < 8; r++) {
         for (let c = 0; c < 8; c++) {
