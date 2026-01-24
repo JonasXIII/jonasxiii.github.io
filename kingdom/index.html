@@ -4,52 +4,65 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dominion – Kingdom Generator</title>
+  <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:,">
 </head>
 <body>
-  <div id="layout">
-    <!-- Sidebar -->
-    <aside id="sidebar">
-      <h2>Kingdom Options</h2>
-      <div class="controls">
-        <label><input type="checkbox" id="accs"> Require +Actions</label>
-        <label><input type="checkbox" id="draw"> Require Draw</label>
-        <label><input type="checkbox" id="attack"> Require Attack</label>
-        <label><input type="checkbox" id="reactionIfAttack"> Require Reaction (if Attack)</label>
-        <label><input type="checkbox" id="blacklist"> Apply Blacklist</label>
-        <label><input type="checkbox" id="baseOnly"> Base Set Only</label>
-        <label><input type="checkbox" id="twoExpansions"> Two Expansions Only</label>
+  <div id="header-container"></div>
+
+  <main class="kingdom-main">
+    <div class="kingdom-header">
+      <h1>Dominion Kingdom Generator</h1>
+      <p class="kingdom-intro">Generate random kingdom setups with advanced filtering options</p>
+    </div>
+
+    <div id="layout">
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <h2>Kingdom Options</h2>
+        <div class="controls">
+          <label><input type="checkbox" id="accs"> Require +Actions</label>
+          <label><input type="checkbox" id="draw"> Require Draw</label>
+          <label><input type="checkbox" id="attack"> Require Attack</label>
+          <label><input type="checkbox" id="reactionIfAttack"> Require Reaction (if Attack)</label>
+          <label><input type="checkbox" id="blacklist"> Apply Blacklist</label>
+          <label><input type="checkbox" id="baseOnly"> Base Set Only</label>
+          <label><input type="checkbox" id="twoExpansions"> Two Expansions Only</label>
+        </div>
+        <button id="generate">🎲 Generate New Kingdom</button>
+      </aside>
+
+      <!-- Main content -->
+      <div id="content">
+        <section class="kingdom-section">
+          <h2 class="section-title">Kingdom Cards</h2>
+          <div id="kingdom-cards">
+            <!-- Kingdom cards will be inserted here by JavaScript -->
+          </div>
+        </section>
+
+        <section class="bonus-section">
+          <h2 class="section-title">Bonus Cards</h2>
+          <div id="bonus-upright" class="bonus-grid">
+            <!-- Upright bonus cards will be inserted here -->
+          </div>
+        </section>
+
+        <section class="bonus-section">
+          <h2 class="section-title">Landscape Cards</h2>
+          <div id="bonus-sideways" class="bonus-grid">
+            <!-- Sideways bonus cards will be inserted here -->
+          </div>
+        </section>
       </div>
-      <button id="generate">🎲 Generate New Kingdom</button>
-    </aside>
+    </div>
+  </main>
 
-    <!-- Main content -->
-    <main id="content">
-      <section class="kingdom-section">
-        <h2 class="section-title">Kingdom Cards</h2>
-        <div id="kingdom-cards">
-          <!-- Kingdom cards will be inserted here by JavaScript -->
-        </div>
-      </section>
+  <div id="footer-container"></div>
 
-      <section class="bonus-section">
-        <h2 class="section-title">Bonus Cards</h2>
-        <div id="bonus-upright" class="bonus-grid">
-          <!-- Upright bonus cards will be inserted here -->
-        </div>
-      </section>
-
-      <section class="bonus-section">
-        <h2 class="section-title">Landscape Cards</h2>
-        <div id="bonus-sideways" class="bonus-grid">
-          <!-- Sideways bonus cards will be inserted here -->
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <!-- Script -->
+  <!-- Scripts -->
+  <script src="../load-header-footer.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
