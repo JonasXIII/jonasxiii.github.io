@@ -178,3 +178,65 @@ export function getStats() {
         totalCards: entries.reduce((sum, e) => sum + e.quantity, 0)
     };
 }
+
+// Get detailed stats for a set of collection entries (respects filters)
+export function getFilteredStats(entries) {
+    let totalPrice = 0;
+    let totalCards = 0;
+    const manaCurve = {};
+    const colorDist = {};
+    const rarityDist = {};
+    const typeDist = {};
+
+    for (const entry of entries) {
+        const cd = entry.cardData;
+        const qty = entry.quantity || 1;
+        totalCards += qty;
+
+        if (!cd) continue;
+
+        // Price
+        const price = parseFloat(cd.prices?.usd) || 0;
+        totalPrice += price * qty;
+
+        // Mana curve (exclude lands)
+        if (!cd.type_line.toLowerCase().includes('land')) {
+            const cmc = Math.min(Math.floor(cd.cmc || 0), 7);
+            manaCurve[cmc] = (manaCurve[cmc] || 0) + qty;
+        }
+
+        // Color distribution
+        const colors = cd.colors || [];
+        if (colors.length === 0) {
+            colorDist['C'] = (colorDist['C'] || 0) + qty;
+        } else {
+            for (const c of colors) {
+                colorDist[c] = (colorDist[c] || 0) + qty;
+            }
+        }
+
+        // Rarity
+        const rarity = cd.rarity || 'unknown';
+        rarityDist[rarity] = (rarityDist[rarity] || 0) + qty;
+
+        // Type (primary)
+        const tl = cd.type_line.toLowerCase();
+        const primaryTypes = ['creature', 'instant', 'sorcery', 'enchantment', 'artifact', 'planeswalker', 'land'];
+        for (const pt of primaryTypes) {
+            if (tl.includes(pt)) {
+                typeDist[pt] = (typeDist[pt] || 0) + qty;
+                break;
+            }
+        }
+    }
+
+    return {
+        uniqueCards: entries.length,
+        totalCards,
+        totalPrice,
+        manaCurve,
+        colorDist,
+        rarityDist,
+        typeDist
+    };
+}

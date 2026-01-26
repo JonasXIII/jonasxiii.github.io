@@ -10,6 +10,8 @@ export function renderCardTile(scryfallId, cardData, options = {}) {
     el.className = 'mtg-card-tile';
     el.dataset.scryfallId = scryfallId;
 
+    let currentFace = 0;
+
     const imgUri = getCardImageUri(cardData, options.imageSize || 'normal');
     if (imgUri) {
         const img = document.createElement('img');
@@ -31,28 +33,34 @@ export function renderCardTile(scryfallId, cardData, options = {}) {
         el.appendChild(ph);
     }
 
-    // Quantity badge
-    if (options.quantity !== undefined && options.quantity !== null) {
-        const badge = document.createElement('div');
-        badge.className = 'mtg-card-quantity';
-        badge.textContent = 'x' + options.quantity;
-        el.appendChild(badge);
+    // Price overlay on hover
+    if (cardData?.prices?.usd) {
+        const priceOverlay = document.createElement('div');
+        priceOverlay.className = 'mtg-card-price-overlay';
+        priceOverlay.textContent = '$' + cardData.prices.usd;
+        el.appendChild(priceOverlay);
     }
 
-    // Set badge
-    if (options.showSet && cardData) {
-        const setBadge = document.createElement('div');
-        setBadge.className = 'mtg-card-set-badge';
-        setBadge.textContent = cardData.set_name || cardData.set || '';
-        el.appendChild(setBadge);
-    }
-
-    // Name overlay on hover
-    if (cardData) {
-        const nameOverlay = document.createElement('div');
-        nameOverlay.className = 'mtg-card-name-overlay';
-        nameOverlay.textContent = cardData.name;
-        el.appendChild(nameOverlay);
+    // Flip button for double-faced cards
+    if (cardData && isMultiFaced(cardData)) {
+        const flipBtn = document.createElement('button');
+        flipBtn.className = 'mtg-card-flip-btn';
+        flipBtn.innerHTML = '&#x21BB;'; // ↻ rotation arrow
+        flipBtn.title = 'Flip card';
+        flipBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentFace = (currentFace + 1) % cardData.card_faces.length;
+            const newUri = getCardImageUri(cardData, options.imageSize || 'normal', currentFace);
+            const img = el.querySelector('img');
+            if (img && newUri) {
+                el.classList.add('mtg-card-flipping');
+                setTimeout(() => {
+                    img.src = newUri;
+                    el.classList.remove('mtg-card-flipping');
+                }, 150);
+            }
+        });
+        el.appendChild(flipBtn);
     }
 
     if (options.onClick) {
@@ -63,6 +71,7 @@ export function renderCardTile(scryfallId, cardData, options = {}) {
 }
 
 // --- Card Grid ---
+// Each card entry is expanded to show one tile per copy owned
 
 export function renderCardGrid(cards, containerId, options = {}) {
     const container = document.getElementById(containerId) || document.createElement('div');
@@ -72,13 +81,14 @@ export function renderCardGrid(cards, containerId, options = {}) {
     grid.className = 'mtg-card-grid';
 
     for (const card of cards) {
-        const tile = renderCardTile(card.scryfallId, card.cardData, {
-            quantity: card.quantity,
-            showSet: options.showSet,
-            imageSize: options.imageSize,
-            onClick: options.onCardClick
-        });
-        grid.appendChild(tile);
+        const count = card.quantity || 1;
+        for (let i = 0; i < count; i++) {
+            const tile = renderCardTile(card.scryfallId, card.cardData, {
+                imageSize: options.imageSize,
+                onClick: options.onCardClick
+            });
+            grid.appendChild(tile);
+        }
     }
 
     return grid;

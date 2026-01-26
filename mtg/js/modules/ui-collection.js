@@ -103,11 +103,11 @@ function renderContent() {
     // Sort
     entries = collection.sortCollection(entries, _sortBy, _sortDir);
 
-    // Update stats
+    // Compute filtered stats and update header
+    const filteredStats = collection.getFilteredStats(entries);
     const statsEl = document.getElementById('collection-stats');
     if (statsEl) {
-        const stats = collection.getStats();
-        statsEl.textContent = `${stats.uniqueCards} unique cards, ${stats.totalCards} total`;
+        statsEl.textContent = `${filteredStats.uniqueCards} unique, ${filteredStats.totalCards} total`;
     }
 
     // Empty state
@@ -121,12 +121,154 @@ function renderContent() {
         return;
     }
 
+    // Stats bar
+    const statsBar = renderStatsBar(filteredStats);
+    content.appendChild(statsBar);
+
     // Render grid
     const grid = renderCardGrid(entries, 'collection-grid', {
         showSet: true,
         onCardClick: (scryfallId, cardData) => openCardDetail(scryfallId)
     });
     content.appendChild(grid);
+}
+
+function renderStatsBar(stats) {
+    const bar = document.createElement('div');
+    bar.className = 'mtg-collection-stats-bar';
+
+    // --- Price ---
+    const priceSection = document.createElement('div');
+    priceSection.className = 'mtg-stats-section';
+    const priceLabel = document.createElement('div');
+    priceLabel.className = 'mtg-stats-section-label';
+    priceLabel.textContent = 'Total Value';
+    const priceValue = document.createElement('div');
+    priceValue.className = 'mtg-stats-section-value mtg-stats-price';
+    priceValue.textContent = '$' + stats.totalPrice.toFixed(2);
+    priceSection.appendChild(priceLabel);
+    priceSection.appendChild(priceValue);
+    bar.appendChild(priceSection);
+
+    // --- Mana Curve ---
+    const curveSection = document.createElement('div');
+    curveSection.className = 'mtg-stats-section mtg-stats-section-wide';
+    const curveLabel = document.createElement('div');
+    curveLabel.className = 'mtg-stats-section-label';
+    curveLabel.textContent = 'Mana Curve';
+    curveSection.appendChild(curveLabel);
+
+    const curveChart = document.createElement('div');
+    curveChart.className = 'mtg-stats-curve';
+    const maxCurve = Math.max(...Object.values(stats.manaCurve), 1);
+    for (let i = 0; i <= 7; i++) {
+        const count = stats.manaCurve[i] || 0;
+        const col = document.createElement('div');
+        col.className = 'mtg-stats-curve-col';
+
+        const barEl = document.createElement('div');
+        barEl.className = 'mtg-stats-curve-bar';
+        barEl.style.height = Math.max((count / maxCurve) * 100, 2) + '%';
+        if (count > 0) {
+            const countLabel = document.createElement('span');
+            countLabel.className = 'mtg-stats-curve-count';
+            countLabel.textContent = count;
+            barEl.appendChild(countLabel);
+        }
+        col.appendChild(barEl);
+
+        const label = document.createElement('div');
+        label.className = 'mtg-stats-curve-label';
+        label.textContent = i === 7 ? '7+' : String(i);
+        col.appendChild(label);
+
+        curveChart.appendChild(col);
+    }
+    curveSection.appendChild(curveChart);
+    bar.appendChild(curveSection);
+
+    // --- Color Distribution ---
+    const colorSection = document.createElement('div');
+    colorSection.className = 'mtg-stats-section';
+    const colorLabel = document.createElement('div');
+    colorLabel.className = 'mtg-stats-section-label';
+    colorLabel.textContent = 'Colors';
+    colorSection.appendChild(colorLabel);
+
+    const colorList = document.createElement('div');
+    colorList.className = 'mtg-stats-colors';
+    const colorNames = { W: 'White', U: 'Blue', B: 'Black', R: 'Red', G: 'Green', C: 'Colorless' };
+    const colorOrder = ['W', 'U', 'B', 'R', 'G', 'C'];
+    for (const c of colorOrder) {
+        const count = stats.colorDist[c];
+        if (!count) continue;
+        const item = document.createElement('div');
+        item.className = 'mtg-stats-color-item';
+        const dot = document.createElement('span');
+        dot.className = 'mtg-color-dot mtg-mana-' + c;
+        item.appendChild(dot);
+        const text = document.createElement('span');
+        text.textContent = count;
+        item.appendChild(text);
+        colorList.appendChild(item);
+    }
+    colorSection.appendChild(colorList);
+    bar.appendChild(colorSection);
+
+    // --- Rarity Distribution ---
+    const raritySection = document.createElement('div');
+    raritySection.className = 'mtg-stats-section';
+    const rarityLabel = document.createElement('div');
+    rarityLabel.className = 'mtg-stats-section-label';
+    rarityLabel.textContent = 'Rarity';
+    raritySection.appendChild(rarityLabel);
+
+    const rarityList = document.createElement('div');
+    rarityList.className = 'mtg-stats-rarities';
+    const rarityOrder = ['mythic', 'rare', 'uncommon', 'common'];
+    const rarityColors = { mythic: '#f56565', rare: '#ecc94b', uncommon: '#a0aec0', common: '#2d3748' };
+    const rarityLabels = { mythic: 'M', rare: 'R', uncommon: 'U', common: 'C' };
+    for (const r of rarityOrder) {
+        const count = stats.rarityDist[r];
+        if (!count) continue;
+        const item = document.createElement('div');
+        item.className = 'mtg-stats-rarity-item';
+        const badge = document.createElement('span');
+        badge.className = 'mtg-stats-rarity-badge';
+        badge.style.background = rarityColors[r];
+        badge.textContent = rarityLabels[r];
+        item.appendChild(badge);
+        const text = document.createElement('span');
+        text.textContent = count;
+        item.appendChild(text);
+        rarityList.appendChild(item);
+    }
+    raritySection.appendChild(rarityList);
+    bar.appendChild(raritySection);
+
+    // --- Type Distribution ---
+    const typeSection = document.createElement('div');
+    typeSection.className = 'mtg-stats-section';
+    const typeLabel = document.createElement('div');
+    typeLabel.className = 'mtg-stats-section-label';
+    typeLabel.textContent = 'Types';
+    typeSection.appendChild(typeLabel);
+
+    const typeList = document.createElement('div');
+    typeList.className = 'mtg-stats-types';
+    const typeOrder = ['creature', 'instant', 'sorcery', 'enchantment', 'artifact', 'planeswalker', 'land'];
+    for (const t of typeOrder) {
+        const count = stats.typeDist[t];
+        if (!count) continue;
+        const item = document.createElement('div');
+        item.className = 'mtg-stats-type-item';
+        item.textContent = t.charAt(0).toUpperCase() + t.slice(1) + ' ' + count;
+        typeList.appendChild(item);
+    }
+    typeSection.appendChild(typeList);
+    bar.appendChild(typeSection);
+
+    return bar;
 }
 
 function openCardDetail(scryfallId) {
