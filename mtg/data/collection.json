@@ -1,0 +1,65 @@
+{
+  "6881d7c8-5bb7-4f8c-9f03-50fb1309d9c8": {
+    "quantity": 4,
+    "oracle_id": "4457ed35-7c10-48c8-9776-456485fdf070",
+    "name": "Lightning Bolt",
+    "set": "tle",
+    "collector_number": "32"
+  },
+  "3c738171-d0dc-4cc2-8af8-1d306143db37": {
+    "quantity": 2,
+    "oracle_id": "4457ed35-7c10-48c8-9776-456485fdf070",
+    "name": "Lightning Bolt",
+    "set": "sld",
+    "collector_number": "2289"
+  },
+  "610a7782-ffe4-4b1c-bcc2-b3d89357e3da": {
+    "quantity": 3,
+    "oracle_id": "cc187110-1148-4090-bbb8-e205694a39f5",
+    "name": "Counterspell",
+    "set": "mar",
+    "collector_number": "9"
+  },
+  "8f69a74a-778c-4a1d-99ad-6ca04771fb23": {
+    "quantity": 1,
+    "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+    "name": "Sol Ring",
+    "set": "sld",
+    "collector_number": "2467"
+  },
+  "0d38ff41-a60c-4d70-92e4-4d3d3ab073a3": {
+    "quantity": 2,
+    "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
+    "name": "Sol Ring",
+    "set": "ecc",
+    "collector_number": "58"
+  },
+  "73542493-cd0b-4bb7-a5b8-8f889c76e4d6": {
+    "quantity": 4,
+    "oracle_id": "68954295-54e3-4303-a6bc-fc4547a4e3a3",
+    "name": "Llanowar Elves",
+    "set": "m19",
+    "collector_number": "314"
+  },
+  "be2b4177-e47c-4dde-9ead-31b7602065ec": {
+    "quantity": 2,
+    "oracle_id": "b1544f21-7e98-461b-aed5-e748b0168c52",
+    "name": "Swords to Plowshares",
+    "set": "cmr",
+    "collector_number": "387"
+  },
+  "95f27eeb-6f14-4db3-adb9-9be5ed76b34b": {
+    "quantity": 4,
+    "oracle_id": "53f7c868-b03e-4fc2-8dcf-a75bbfa3272b",
+    "name": "Dark Ritual",
+    "set": "a25",
+    "collector_number": "82"
+  },
+  "abff6c81-65a4-48fa-ba8f-580f87b0344a": {
+    "quantity": 3,
+    "oracle_id": "edd531b9-f615-4399-8c8c-1c5e18c4acbf",
+    "name": "Delver of Secrets // Insectile Aberration",
+    "set": "mid",
+    "collector_number": "47"
+  }
+}

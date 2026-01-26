@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Collection Manager</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main class="mtg-main">
+        <div class="mtg-banner">
+            <h1>MTG Collection Manager</h1>
+            <p class="mtg-subtitle">Manage your Magic: The Gathering collection, decks, and binders</p>
+        </div>
+
+        <div class="mtg-toolbar">
+            <div class="mtg-tabs">
+                <button class="mtg-tab active" data-tab="collection">Collection</button>
+                <button class="mtg-tab" data-tab="decks">Decks</button>
+                <button class="mtg-tab" data-tab="binders">Binders</button>
+            </div>
+            <div class="mtg-toolbar-actions">
+                <button id="save-changes-btn" class="mtg-btn mtg-btn-save" style="display:none;">Save Changes</button>
+            </div>
+        </div>
+
+        <div id="loading-overlay" class="mtg-loading">
+            <div class="mtg-loading-inner">
+                <div class="mtg-spinner"></div>
+                <p id="loading-text">Loading collection...</p>
+                <div class="mtg-progress-bar">
+                    <div id="loading-progress" class="mtg-progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-collection" class="mtg-tab-content active">
+            <div class="mtg-layout">
+                <aside id="collection-sidebar" class="mtg-sidebar"></aside>
+                <section id="collection-content" class="mtg-content"></section>
+            </div>
+        </div>
+
+        <div id="tab-decks" class="mtg-tab-content">
+            <div class="mtg-layout">
+                <aside id="decks-sidebar" class="mtg-sidebar"></aside>
+                <section id="decks-content" class="mtg-content"></section>
+                <aside id="decks-stats" class="mtg-sidebar mtg-sidebar-right"></aside>
+            </div>
+        </div>
+
+        <div id="tab-binders" class="mtg-tab-content">
+            <div class="mtg-layout">
+                <aside id="binders-sidebar" class="mtg-sidebar"></aside>
+                <section id="binders-content" class="mtg-content"></section>
+            </div>
+        </div>
+
+        <div id="modal-overlay" class="mtg-modal-overlay" style="display:none;">
+            <div id="modal-container" class="mtg-modal"></div>
+        </div>
+
+        <div id="toast-container" class="mtg-toast-container"></div>
+    </main>
+
+    <div id="footer-container"></div>
+    <script src="../load-header-footer.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
