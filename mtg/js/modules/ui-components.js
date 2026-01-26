@@ -8,6 +8,9 @@ import * as state from './state.js';
 export function renderCardTile(scryfallId, cardData, options = {}) {
     const el = document.createElement('div');
     el.className = 'mtg-card-tile';
+    if (options.finish && options.finish !== 'normal') {
+        el.classList.add('mtg-card-foil');
+    }
     el.dataset.scryfallId = scryfallId;
 
     let currentFace = 0;
@@ -33,11 +36,15 @@ export function renderCardTile(scryfallId, cardData, options = {}) {
         el.appendChild(ph);
     }
 
-    // Price overlay on hover
-    if (cardData?.prices?.usd) {
+    // Price overlay (use foil price when applicable)
+    const isFoilFinish = options.finish && options.finish !== 'normal';
+    const price = isFoilFinish
+        ? (cardData?.prices?.usd_foil || cardData?.prices?.usd)
+        : cardData?.prices?.usd;
+    if (price) {
         const priceOverlay = document.createElement('div');
         priceOverlay.className = 'mtg-card-price-overlay';
-        priceOverlay.textContent = '$' + cardData.prices.usd;
+        priceOverlay.textContent = '$' + price;
         el.appendChild(priceOverlay);
     }
 
@@ -85,7 +92,8 @@ export function renderCardGrid(cards, containerId, options = {}) {
         for (let i = 0; i < count; i++) {
             const tile = renderCardTile(card.scryfallId, card.cardData, {
                 imageSize: options.imageSize,
-                onClick: options.onCardClick
+                onClick: options.onCardClick,
+                finish: card.finish
             });
             grid.appendChild(tile);
         }

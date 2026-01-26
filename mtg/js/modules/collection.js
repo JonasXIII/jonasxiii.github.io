@@ -139,8 +139,10 @@ export function sortCollection(entries, sortBy = 'name', direction = 'asc') {
                 break;
             }
             case 'price': {
-                const priceA = parseFloat(cdA.prices?.usd) || 0;
-                const priceB = parseFloat(cdB.prices?.usd) || 0;
+                const foilA = a.finish && a.finish !== 'normal';
+                const foilB = b.finish && b.finish !== 'normal';
+                const priceA = parseFloat(foilA ? (cdA.prices?.usd_foil || cdA.prices?.usd) : cdA.prices?.usd) || 0;
+                const priceB = parseFloat(foilB ? (cdB.prices?.usd_foil || cdB.prices?.usd) : cdB.prices?.usd) || 0;
                 cmp = priceA - priceB;
                 break;
             }
@@ -195,8 +197,9 @@ export function getFilteredStats(entries) {
 
         if (!cd) continue;
 
-        // Price
-        const price = parseFloat(cd.prices?.usd) || 0;
+        // Price (use foil price when applicable)
+        const isFoil = entry.finish && entry.finish !== 'normal';
+        const price = parseFloat(isFoil ? (cd.prices?.usd_foil || cd.prices?.usd) : cd.prices?.usd) || 0;
         totalPrice += price * qty;
 
         // Mana curve (exclude lands)

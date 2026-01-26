@@ -1,65 +1,2570 @@
 {
-  "6881d7c8-5bb7-4f8c-9f03-50fb1309d9c8": {
-    "quantity": 4,
-    "oracle_id": "4457ed35-7c10-48c8-9776-456485fdf070",
-    "name": "Lightning Bolt",
-    "set": "tle",
-    "collector_number": "32"
-  },
-  "3c738171-d0dc-4cc2-8af8-1d306143db37": {
-    "quantity": 2,
-    "oracle_id": "4457ed35-7c10-48c8-9776-456485fdf070",
-    "name": "Lightning Bolt",
-    "set": "sld",
-    "collector_number": "2289"
-  },
-  "610a7782-ffe4-4b1c-bcc2-b3d89357e3da": {
-    "quantity": 3,
-    "oracle_id": "cc187110-1148-4090-bbb8-e205694a39f5",
-    "name": "Counterspell",
-    "set": "mar",
-    "collector_number": "9"
-  },
-  "8f69a74a-778c-4a1d-99ad-6ca04771fb23": {
+  "96b6b2e1-c3e6-464c-8a13-b15deb34e862": {
     "quantity": 1,
-    "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
-    "name": "Sol Ring",
-    "set": "sld",
-    "collector_number": "2467"
+    "oracle_id": "",
+    "name": "Aetherflux Reservoir",
+    "set": "kld",
+    "collector_number": "192",
+    "finish": "normal"
   },
-  "0d38ff41-a60c-4d70-92e4-4d3d3ab073a3": {
+  "cc6686e6-4535-49be-b0b3-e76464656cd2": {
     "quantity": 2,
-    "oracle_id": "6ad8011d-3471-4369-9d68-b264cc027487",
-    "name": "Sol Ring",
-    "set": "ecc",
-    "collector_number": "58"
+    "oracle_id": "",
+    "name": "Agent of Treachery",
+    "set": "m20",
+    "collector_number": "43",
+    "finish": "normal"
   },
-  "73542493-cd0b-4bb7-a5b8-8f889c76e4d6": {
-    "quantity": 4,
-    "oracle_id": "68954295-54e3-4303-a6bc-fc4547a4e3a3",
-    "name": "Llanowar Elves",
-    "set": "m19",
-    "collector_number": "314"
+  "1e30c6a4-62c4-444a-8c4c-a73d8f59b276": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "All Is Dust",
+    "set": "plst",
+    "collector_number": "MM2-1",
+    "finish": "normal"
   },
-  "be2b4177-e47c-4dde-9ead-31b7602065ec": {
+  "9fe88f96-fd3a-44e5-aa05-3bc63581e33d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Alms Collector",
+    "set": "c17",
+    "collector_number": "1",
+    "finish": "normal"
+  },
+  "dfe08e59-fdc4-436f-b05c-6ad386c46310": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ancient Greenwarden",
+    "set": "znr",
+    "collector_number": "178",
+    "finish": "normal"
+  },
+  "0348247d-0a70-4961-8590-9de41386c69b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ancient Ziggurat",
+    "set": "con",
+    "collector_number": "141",
+    "finish": "normal"
+  },
+  "7e7b9eea-a224-4db1-a089-cb385f7af20c": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Andúril, Flame of the West",
+    "set": "ltr",
+    "collector_number": "236",
+    "finish": "normal"
+  },
+  "9897074a-0ac4-4d1a-9aac-e77830cc5c78": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Angel of Destiny",
+    "set": "znr",
+    "collector_number": "2",
+    "finish": "normal"
+  },
+  "50a38cb7-d663-4fca-a462-a0199694aee3": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Angelic Skirmisher",
+    "set": "pgtc",
+    "collector_number": "A11",
+    "finish": "foil"
+  },
+  "f8d7a2c7-666d-4fc6-bac8-ef8eb66e355d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Animal Sanctuary",
+    "set": "m21",
+    "collector_number": "242",
+    "finish": "normal"
+  },
+  "eed73f84-ad08-44f8-a4fe-cd324ec1da92": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Animate Dead",
+    "set": "3ed",
+    "collector_number": "93",
+    "finish": "normal"
+  },
+  "5f8b022e-3e7a-40e6-99a0-53e5adbdafc5": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Apex Altisaur",
+    "set": "c19",
+    "collector_number": "31",
+    "finish": "normal"
+  },
+  "bf3edaaf-cf63-4e17-94ae-9d9991d9fb5f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Arcane Adaptation",
+    "set": "xln",
+    "collector_number": "46",
+    "finish": "normal"
+  },
+  "5caae5ae-845f-42c2-b1ae-956df2739433": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Archdruid's Charm",
+    "set": "mkm",
+    "collector_number": "151",
+    "finish": "normal"
+  },
+  "f2f7218a-511a-4ca8-899d-ae78a935f7a0": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Archmage Emeritus",
+    "set": "stx",
+    "collector_number": "377",
+    "finish": "foil"
+  },
+  "54ced5cf-b51a-4dab-97f7-50fb18e5c463": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Arid Mesa",
+    "set": "mh2",
+    "collector_number": "475",
+    "finish": "normal"
+  },
+  "112eb5ce-4fe5-45b3-b810-79fef74b07f9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ashiok, Nightmare Muse",
+    "set": "thb",
+    "collector_number": "208",
+    "finish": "normal"
+  },
+  "d5e1a75e-1369-4f28-bb7d-e7ea2e6087e9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ashnod's Altar",
+    "set": "chr",
+    "collector_number": "92",
+    "finish": "normal"
+  },
+  "def90432-6d13-4d28-aa27-f75dd26456bb": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Assassin's Trophy",
+    "set": "acr",
+    "collector_number": "95",
+    "finish": "normal"
+  },
+  "b2e330dd-7cd3-445d-9c05-56e4a57526e9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Atraxa, Praetors' Voice",
+    "set": "cm2",
+    "collector_number": "10",
+    "finish": "foil"
+  },
+  "42ce2d7f-5924-47c0-b5ed-dacf9f9617a0": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Authority of the Consuls",
+    "set": "fdn",
+    "collector_number": "137",
+    "finish": "normal"
+  },
+  "1af79737-46ff-48f2-a270-21bd6a05d17e": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Avatar of Woe",
+    "set": "cmd",
+    "collector_number": "73",
+    "finish": "normal"
+  },
+  "fab4cd7e-b56f-4408-a0e9-c07e040cc38f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Back to Basics",
+    "set": "usg",
+    "collector_number": "62",
+    "finish": "normal"
+  },
+  "c5cb3052-358d-44a7-8cfd-cd31b236494a": {
     "quantity": 2,
-    "oracle_id": "b1544f21-7e98-461b-aed5-e748b0168c52",
-    "name": "Swords to Plowshares",
+    "oracle_id": "",
+    "name": "Bala Ged Recovery // Bala Ged Sanctuary",
+    "set": "znr",
+    "collector_number": "180",
+    "finish": "normal"
+  },
+  "cb9b492f-a404-400f-be70-8b4901d2d82b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Bane of Progress",
+    "set": "c13",
+    "collector_number": "137",
+    "finish": "normal"
+  },
+  "7770e48e-72e1-4475-a4b5-c1c561a1beaa": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Basalt Monolith",
+    "set": "c13",
+    "collector_number": "237",
+    "finish": "normal"
+  },
+  "4744e0a0-c17b-4700-8897-528d2b57adda": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Basalt Monolith",
+    "set": "cm2",
+    "collector_number": "173",
+    "finish": "normal"
+  },
+  "97d8dbc9-d9f3-4e8e-95d2-27917c152a29": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Basalt Monolith",
+    "set": "ltc",
+    "collector_number": "274",
+    "finish": "normal"
+  },
+  "43b5d46e-7054-44f8-9a14-b412f2f0ab86": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Battle Hymn",
+    "set": "avr",
+    "collector_number": "128",
+    "finish": "normal"
+  },
+  "56355ff3-2232-4a11-b868-aec9a50b9ee5": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Bayou",
+    "set": "3ed",
+    "collector_number": "283",
+    "finish": "normal"
+  },
+  "feefe9f0-24a6-461c-9ef1-86c5a6f33b83": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Birds of Paradise",
+    "set": "cn2",
+    "collector_number": "176",
+    "finish": "normal"
+  },
+  "e6bc963e-042f-4cdc-be38-de8e386c00b3": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Birds of Paradise",
+    "set": "plst",
+    "collector_number": "CN2-176",
+    "finish": "normal"
+  },
+  "cf9e842f-4840-49e3-b4f3-c2fad395d41a": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Blasphemous Act",
+    "set": "ltc",
+    "collector_number": "211",
+    "finish": "normal"
+  },
+  "69d276fe-5f2b-41aa-80fa-64d3b60fd54f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Blazing Sunsteel",
     "set": "cmr",
-    "collector_number": "387"
+    "collector_number": "364",
+    "finish": "normal"
   },
-  "95f27eeb-6f14-4db3-adb9-9be5ed76b34b": {
-    "quantity": 4,
-    "oracle_id": "53f7c868-b03e-4fc2-8dcf-a75bbfa3272b",
-    "name": "Dark Ritual",
+  "6ba2edc7-dbc0-4948-9f37-a27a91bdf7b9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Bleachbone Verge",
+    "set": "dft",
+    "collector_number": "371",
+    "finish": "normal"
+  },
+  "bf51c665-7823-4d6a-b1da-8c2d93dae10b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Blinkmoth Nexus",
+    "set": "dst",
+    "collector_number": "163",
+    "finish": "normal"
+  },
+  "5faba6c8-3463-47c1-ba01-09eb87fcb2d5": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Blood Crypt",
+    "set": "rna",
+    "collector_number": "245",
+    "finish": "normal"
+  },
+  "7f430794-0d86-4f6a-97e0-4bbb6716d613": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Bloodstained Mire",
+    "set": "ktk",
+    "collector_number": "230",
+    "finish": "normal"
+  },
+  "d2124603-d20e-40eb-97f0-a66323397ac2": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Bolas's Citadel",
+    "set": "war",
+    "collector_number": "79",
+    "finish": "normal"
+  },
+  "473d3633-6dc7-4026-a50e-3ea76b9e8c20": {
+    "quantity": 6,
+    "oracle_id": "",
+    "name": "Boreal Druid",
+    "set": "csp",
+    "collector_number": "105",
+    "finish": "normal"
+  },
+  "8a8e0464-3f05-4719-ad42-577954751da8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Braid of Fire",
+    "set": "plst",
+    "collector_number": "CSP-78",
+    "finish": "foil"
+  },
+  "72507835-d27b-48e3-a602-b5b6c876557f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Brainstorm",
+    "set": "btd",
+    "collector_number": "3",
+    "finish": "normal"
+  },
+  "bb54233c-0844-4965-9cde-e8a4ef3e11b8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Breeding Pool",
+    "set": "rna",
+    "collector_number": "246",
+    "finish": "normal"
+  },
+  "5b5f03d2-608c-4fae-9a05-1695e277adf8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Burning Inquiry",
+    "set": "plst",
+    "collector_number": "M10-128",
+    "finish": "foil"
+  },
+  "2b934c78-258e-4b1e-9783-ec9f734e8776": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Cabal Coffers",
+    "set": "tor",
+    "collector_number": "139",
+    "finish": "normal"
+  },
+  "0bda51ef-ee3e-48d4-92e2-c9083bbe0f80": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Cabal Stronghold",
+    "set": "dom",
+    "collector_number": "238",
+    "finish": "normal"
+  },
+  "dfe6f9ec-3b7f-4c11-acd1-440e14217e5d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Caged Sun",
+    "set": "cm2",
+    "collector_number": "178",
+    "finish": "normal"
+  },
+  "ad5ea98a-e36e-4ab9-b4da-cc572f3777db": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Caretaker's Talent",
+    "set": "blb",
+    "collector_number": "6",
+    "finish": "normal"
+  },
+  "083f4ccc-9cfc-44b1-af77-304b65bd878b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Carrion Feeder",
+    "set": "dde",
+    "collector_number": "2",
+    "finish": "normal"
+  },
+  "91a54f0a-1e6b-4f1e-8109-605c8c2e777c": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Cathars' Crusade",
+    "set": "c16",
+    "collector_number": "61",
+    "finish": "normal"
+  },
+  "264ea67b-c796-4ecd-a71b-85d67b980056": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Cathars' Crusade",
+    "set": "cm2",
+    "collector_number": "20",
+    "finish": "normal"
+  },
+  "c67e509e-a219-4f7f-b7eb-8c446cc0620a": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Cavern-Hoard Dragon",
+    "set": "ltc",
+    "collector_number": "31",
+    "finish": "normal"
+  },
+  "ea123356-3055-4e42-b816-ac3c4e9087d1": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Chromatic Lantern",
+    "set": "grn",
+    "collector_number": "233",
+    "finish": "normal"
+  },
+  "062fcd2b-7f63-47bf-83ba-88e33d397a6e": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Chromatic Orrery",
+    "set": "pm21",
+    "collector_number": "228p",
+    "finish": "normal"
+  },
+  "41fd8502-52cb-4675-9c5a-cb39e2b10110": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "City of Brass",
+    "set": "ptc",
+    "collector_number": "mj112",
+    "finish": "normal"
+  },
+  "947eefb2-7156-4bd3-9e95-a18f87a951cd": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "City of Brass",
+    "set": "ptc",
+    "collector_number": "gb112",
+    "finish": "normal"
+  },
+  "c8769e97-aee8-4466-a9d7-0f4245ae4a97": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Concealed Courtyard",
+    "set": "kld",
+    "collector_number": "245",
+    "finish": "normal"
+  },
+  "3435fd09-a7a2-475e-a690-3c2011b70024": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Conjurer's Closet",
+    "set": "2xm",
+    "collector_number": "243",
+    "finish": "normal"
+  },
+  "12de1008-9c1b-4072-8678-befce9a81cc7": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Conjurer's Closet",
+    "set": "c13",
+    "collector_number": "239",
+    "finish": "normal"
+  },
+  "5d878dab-5ed2-4ef3-b2c7-472290892854": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Conspicuous Snoop",
+    "set": "m21",
+    "collector_number": "139",
+    "finish": "normal"
+  },
+  "8683a978-1bef-4b01-9361-56b1fc157d26": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Courser of Kruphix",
     "set": "a25",
-    "collector_number": "82"
+    "collector_number": "164",
+    "finish": "foil"
   },
-  "abff6c81-65a4-48fa-ba8f-580f87b0344a": {
+  "97c8e1ed-b3ab-4a08-9336-e513f23d45b3": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Crawlspace",
+    "set": "c13",
+    "collector_number": "240",
+    "finish": "normal"
+  },
+  "4249cc64-f75b-4c76-a41a-5b25873c74bc": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Crop Rotation",
+    "set": "2xm",
+    "collector_number": "161",
+    "finish": "normal"
+  },
+  "3795a4e7-646f-4bb7-b154-2610eb740e8d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Crypt Ghast",
+    "set": "gtc",
+    "collector_number": "61",
+    "finish": "normal"
+  },
+  "d022b7d7-e9f5-4f58-8010-331baaa4e3c4": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Curse of Disturbance",
+    "set": "c17",
+    "collector_number": "16",
+    "finish": "normal"
+  },
+  "ff08e5ed-f47b-4d8e-8b8b-41675dccef8b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Cyclonic Rift",
+    "set": "2xm",
+    "collector_number": "47",
+    "finish": "normal"
+  },
+  "f9f3869d-dbc1-42bb-aa43-8e4c2e79cfc1": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Damia, Sage of Stone",
+    "set": "cm2",
+    "collector_number": "2",
+    "finish": "foil"
+  },
+  "23b95b26-0bbf-4fa1-80c1-f621f1a1b947": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Damn",
+    "set": "mh2",
+    "collector_number": "396",
+    "finish": "etched"
+  },
+  "b0d88239-43dc-46b8-8d46-626e2f8f1070": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Dark Confidant",
+    "set": "2xm",
+    "collector_number": "81",
+    "finish": "normal"
+  },
+  "7d54f0dd-5d27-483b-8af9-92a1c5a785f2": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Dauthi Voidwalker",
+    "set": "mh2",
+    "collector_number": "397",
+    "finish": "etched"
+  },
+  "a65e485b-03a2-4634-9218-f5bb7c104d41": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Deathrite Shaman",
+    "set": "gk1",
+    "collector_number": "59",
+    "finish": "normal"
+  },
+  "8d727b9b-6114-414d-9172-16b6e1db41cc": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Demonic Consultation",
+    "set": "ice",
+    "collector_number": "121",
+    "finish": "normal"
+  },
+  "77be13ed-5ef5-4452-a16f-ccd3599d8555": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Demonic Tutor",
+    "set": "plst",
+    "collector_number": "DDC-49",
+    "finish": "normal"
+  },
+  "02f99756-d334-4dba-a375-ba3d91ecae62": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Detection Tower",
+    "set": "m19",
+    "collector_number": "249",
+    "finish": "normal"
+  },
+  "9f06db70-95f9-41eb-8e5f-8bc56fd34c09": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Dictate of Erebos",
+    "set": "jou",
+    "collector_number": "65",
+    "finish": "normal"
+  },
+  "4ccd8394-cbc9-4346-9b48-f6be447b3e08": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Dismember",
+    "set": "plst",
+    "collector_number": "MM2-79",
+    "finish": "normal"
+  },
+  "2e40c246-276b-45f1-ac86-f15c0df62a08": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Divinity of Pride",
+    "set": "c13",
+    "collector_number": "228",
+    "finish": "normal"
+  },
+  "514d53be-6ade-4f73-a844-e9ae2dafd6ce": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Dowsing Dagger // Lost Vale",
+    "set": "xln",
+    "collector_number": "235",
+    "finish": "normal"
+  },
+  "0430db1a-5cad-4444-ba93-57fb32e65606": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Dread Presence",
+    "set": "m20",
+    "collector_number": "96",
+    "finish": "normal"
+  },
+  "fb132ba1-6736-40d0-ae5f-e21f19fa3bec": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Dryad of the Ilysian Grove",
+    "set": "pthb",
+    "collector_number": "169p",
+    "finish": "normal"
+  },
+  "bb2d43eb-a72f-4721-82b5-121a7c4d2ffa": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Eidolon of Blossoms",
+    "set": "pjou",
+    "collector_number": "122★",
+    "finish": "foil"
+  },
+  "ea751fe2-b64a-4265-8885-a9016b29b5b3": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Eladamri's Call",
+    "set": "mh1",
+    "collector_number": "197",
+    "finish": "normal"
+  },
+  "f3f3ab83-3b8e-4747-98ae-7b981bcc77b1": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Electroduplicate",
+    "set": "fdn",
+    "collector_number": "328",
+    "finish": "normal"
+  },
+  "554a8769-c840-4c9d-9959-b075c174457b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Elemental Bond",
+    "set": "ori",
+    "collector_number": "174",
+    "finish": "normal"
+  },
+  "d8999135-ddb1-4e4c-b885-e25f23dac3d3": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Elesh Norn // The Argent Etchings",
+    "set": "mom",
+    "collector_number": "12",
+    "finish": "normal"
+  },
+  "df9da428-3af7-4027-b3f0-9138d953c37b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Eluge, the Shoreless Sea",
+    "set": "blb",
+    "collector_number": "288",
+    "finish": "foil"
+  },
+  "7bea6dea-d767-4092-a285-305d9997357a": {
     "quantity": 3,
-    "oracle_id": "edd531b9-f615-4399-8c8c-1c5e18c4acbf",
-    "name": "Delver of Secrets // Insectile Aberration",
-    "set": "mid",
-    "collector_number": "47"
+    "oracle_id": "",
+    "name": "Elves of Deep Shadow",
+    "set": "rav",
+    "collector_number": "161",
+    "finish": "normal"
+  },
+  "bf4b9a8a-b42a-46fb-b0d0-9cf800f63c8a": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Emry, Lurker of the Loch",
+    "set": "eld",
+    "collector_number": "43",
+    "finish": "normal"
+  },
+  "ce4c6535-afea-4704-b35c-badeb04c4f4c": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Exploration",
+    "set": "2xm",
+    "collector_number": "167",
+    "finish": "normal"
+  },
+  "8809830f-d8e1-4603-9652-0ad8b00234e9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Fabled Passage",
+    "set": "blb",
+    "collector_number": "252",
+    "finish": "foil"
+  },
+  "f15cd233-e27b-4cfd-aa4e-18040d1de22f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Fate Unraveler",
+    "set": "bng",
+    "collector_number": "68",
+    "finish": "normal"
+  },
+  "470ca3f4-29aa-4c4c-8ff2-8cdd70c69943": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Field of the Dead",
+    "set": "m20",
+    "collector_number": "247",
+    "finish": "normal"
+  },
+  "8c2996d9-3287-4480-8c04-7a378e37e3cf": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Flooded Strand",
+    "set": "ktk",
+    "collector_number": "233",
+    "finish": "normal"
+  },
+  "e9be371c-c688-44ad-ab71-bd4c9f242d58": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Force of Negation",
+    "set": "mh1",
+    "collector_number": "52",
+    "finish": "normal"
+  },
+  "6ef870ec-5dc4-4d50-8d8f-31839758fa57": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ghostly Prison",
+    "set": "cn2",
+    "collector_number": "86",
+    "finish": "normal"
+  },
+  "ad6e1ba7-047b-41a3-8ab4-17a5c5476749": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Gift of Doom",
+    "set": "c19",
+    "collector_number": "17",
+    "finish": "normal"
+  },
+  "db7c07b2-02b2-4e62-bf1b-4848e06eec28": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Gisa, the Hellraiser",
+    "set": "otj",
+    "collector_number": "89",
+    "finish": "foil"
+  },
+  "ffc70b2d-5a3a-49ea-97db-175a62248302": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Glarb, Calamity's Augur",
+    "set": "blb",
+    "collector_number": "215",
+    "finish": "normal"
+  },
+  "5adcb500-8c77-4925-8e2c-1243502827d1": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Glasspool Mimic // Glasspool Shore",
+    "set": "znr",
+    "collector_number": "60",
+    "finish": "normal"
+  },
+  "2540ec6b-9ffa-4ab0-bbd3-ddf1efd2db60": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Goblin Chieftain",
+    "set": "m12",
+    "collector_number": "138",
+    "finish": "foil"
+  },
+  "ced4c824-2dfc-42ae-84e6-09f8e3f51b5b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Godless Shrine",
+    "set": "rna",
+    "collector_number": "248",
+    "finish": "normal"
+  },
+  "8700b3a6-327b-4dc0-aa8d-434ca971a7b9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Goldvein Hydra",
+    "set": "otj",
+    "collector_number": "341",
+    "finish": "normal"
+  },
+  "1fa48620-4c3d-4f75-be1f-c12c4aa59f51": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Golos, Tireless Pilgrim",
+    "set": "m20",
+    "collector_number": "226",
+    "finish": "normal"
+  },
+  "737122cb-b8f4-4d51-80c4-83be6e8dfc86": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Golos, Tireless Pilgrim",
+    "set": "pm20",
+    "collector_number": "226p",
+    "finish": "normal"
+  },
+  "a5f25a6e-c98c-45e9-857f-c9fbfe7867bb": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Grafdigger's Cage",
+    "set": "pm20",
+    "collector_number": "227s",
+    "finish": "foil"
+  },
+  "47b38c68-8e72-4afc-bb5e-0b40880fdda9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Grave Betrayal",
+    "set": "rtr",
+    "collector_number": "67",
+    "finish": "normal"
+  },
+  "b88471f6-ccb3-4129-b7a4-62cee65605ef": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Grave Pact",
+    "set": "cm2",
+    "collector_number": "65",
+    "finish": "normal"
+  },
+  "ccad6ce0-ddf0-458d-bdae-3d7805fdc775": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Guardian Project",
+    "set": "rna",
+    "collector_number": "130",
+    "finish": "normal"
+  },
+  "f97a6d34-03ab-49f1-b02e-405b733f8843": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Hallowed Fountain",
+    "set": "rna",
+    "collector_number": "251",
+    "finish": "normal"
+  },
+  "9fc6f0e9-eb5f-4bc0-b3d7-756644b66d12": {
+    "quantity": 5,
+    "oracle_id": "",
+    "name": "Hare Apparent",
+    "set": "fdn",
+    "collector_number": "15",
+    "finish": "normal"
+  },
+  "01a8576e-cadc-4521-aadd-3a05f0bc4d20": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Heliod, Sun-Crowned",
+    "set": "thb",
+    "collector_number": "18",
+    "finish": "normal"
+  },
+  "1ba006c8-0ffc-4e68-9a55-c7b842d3add9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Helm of the Gods",
+    "set": "ori",
+    "collector_number": "230",
+    "finish": "normal"
+  },
+  "1d65d20c-09e5-4139-838b-7e0e48eb2b2b": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Helm of the Host",
+    "set": "dom",
+    "collector_number": "217",
+    "finish": "normal"
+  },
+  "ad6080b1-b032-4172-8594-4d894a60a80d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Herald of Leshrac",
+    "set": "csp",
+    "collector_number": "62",
+    "finish": "normal"
+  },
+  "07b06421-778a-4d23-862b-30fc5fa25928": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Herald's Horn",
+    "set": "c17",
+    "collector_number": "53",
+    "finish": "normal"
+  },
+  "d80823f7-565a-4d0d-9fd1-24a8b8efcc24": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "High Market",
+    "set": "c15",
+    "collector_number": "289",
+    "finish": "normal"
+  },
+  "0d69fce2-3307-4518-a196-e0b8155dca73": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "High Noon",
+    "set": "otj",
+    "collector_number": "314",
+    "finish": "normal"
+  },
+  "babe91f2-06be-4501-a95b-20968e906e1b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Honor-Worn Shaku",
+    "set": "chk",
+    "collector_number": "254",
+    "finish": "normal"
+  },
+  "3c76eaaf-58c9-4ef9-bf0a-7aa66397fa7d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Howling Mine",
+    "set": "ptc",
+    "collector_number": "mj325",
+    "finish": "normal"
+  },
+  "89a30b8f-6594-42ea-8e60-13ccb1e7efc0": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Hydroblast",
+    "set": "5ed",
+    "collector_number": "94",
+    "finish": "normal"
+  },
+  "f62716f0-fde2-49ef-b8a4-c1b03f451194": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Hydroblast",
+    "set": "ice",
+    "collector_number": "72",
+    "finish": "normal"
+  },
+  "56fb4035-197b-4d28-9bf7-bb62c304067e": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Impact Tremors",
+    "set": "dtk",
+    "collector_number": "140",
+    "finish": "normal"
+  },
+  "9bf2b208-79c6-4c4c-bf66-871352ed600f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Indatha Triome",
+    "set": "iko",
+    "collector_number": "309",
+    "finish": "normal"
+  },
+  "8f41e281-fcbb-450b-8a67-7b072c55c6f0": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Inexorable Tide",
+    "set": "som",
+    "collector_number": "35",
+    "finish": "normal"
+  },
+  "ec50c1c3-885e-47d3-ada7-cc0edbf09df1": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Inkmoth Nexus",
+    "set": "mbs",
+    "collector_number": "145",
+    "finish": "normal"
+  },
+  "275471e3-ded1-40ac-91ef-369dce5764d9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Inventors' Fair",
+    "set": "kld",
+    "collector_number": "247",
+    "finish": "normal"
+  },
+  "d423365c-a32c-4060-b178-3221e3200387": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Jet Medallion",
+    "set": "mh3",
+    "collector_number": "292",
+    "finish": "normal"
+  },
+  "5dabdea9-2015-49b9-853d-4f7e1262eab3": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Kaito, Cunning Infiltrator",
+    "set": "fdn",
+    "collector_number": "44",
+    "finish": "normal"
+  },
+  "87cc2855-6b14-44dd-a398-7dc2bbae081f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Kaldra Compleat",
+    "set": "mh2",
+    "collector_number": "227",
+    "finish": "normal"
+  },
+  "5c644650-3861-4a78-9e39-a413b073ddac": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Kami of Whispered Hopes",
+    "set": "mom",
+    "collector_number": "196",
+    "finish": "normal"
+  },
+  "b9d895af-7e8c-419f-bc5d-5596083fbfb6": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Karn's Bastion",
+    "set": "war",
+    "collector_number": "248",
+    "finish": "normal"
+  },
+  "07a3d9e8-8597-498b-869c-cff79e0df516": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Karn, Scion of Urza",
+    "set": "dom",
+    "collector_number": "1",
+    "finish": "normal"
+  },
+  "35e3a516-2989-4cac-892f-deb3d754ba7d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Kaya the Inexorable",
+    "set": "khm",
+    "collector_number": "288",
+    "finish": "foil"
+  },
+  "ab70c262-37a9-4dcd-80bb-d4422368eade": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Keranos, God of Storms",
+    "set": "jou",
+    "collector_number": "151",
+    "finish": "normal"
+  },
+  "f5b5b9bb-ee9f-4a52-bd74-fd2759c8e3d3": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ketria Triome",
+    "set": "iko",
+    "collector_number": "310",
+    "finish": "normal"
+  },
+  "2138a618-8ee7-4965-b597-d3e6339a3a6f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Kindred Summons",
+    "set": "c17",
+    "collector_number": "32",
+    "finish": "normal"
+  },
+  "79f1d9d5-c778-4d35-be6c-d7d34ab1c85f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Kiora's Follower",
+    "set": "pbng",
+    "collector_number": "150",
+    "finish": "normal"
+  },
+  "5b3c393c-3596-4bd9-a553-e0b03c2eb950": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Klothys, God of Destiny",
+    "set": "thb",
+    "collector_number": "220",
+    "finish": "normal"
+  },
+  "03066fa1-ea16-4a87-9218-120efa976909": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Kor Spiritdancer",
+    "set": "roe",
+    "collector_number": "31",
+    "finish": "normal"
+  },
+  "1babedec-caf1-4a4b-a151-062ca460cbb6": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Kruphix, God of Horizons",
+    "set": "plst",
+    "collector_number": "JOU-152",
+    "finish": "normal"
+  },
+  "ad590bea-b872-4af7-a612-c8e8759d59df": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Kuldotha Forgemaster",
+    "set": "som",
+    "collector_number": "169",
+    "finish": "normal"
+  },
+  "809205f3-acf5-4244-b360-09ce4ba76795": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Laboratory Maniac",
+    "set": "isd",
+    "collector_number": "61",
+    "finish": "normal"
+  },
+  "29b70152-1d7b-45c4-8c85-011d2338e0a8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Leyline of Anticipation",
+    "set": "m20",
+    "collector_number": "64",
+    "finish": "normal"
+  },
+  "d7447c11-05a1-44e4-831a-0bacf97d447d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Life from the Loam",
+    "set": "uma",
+    "collector_number": "172",
+    "finish": "normal"
+  },
+  "ccff131c-2a66-4ebf-97f1-774c9f41b222": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Lightning Greaves",
+    "set": "c17",
+    "collector_number": "215",
+    "finish": "normal"
+  },
+  "9e01e0e4-7e2b-41b5-86de-8e022170b3fc": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Lightning Greaves",
+    "set": "c19",
+    "collector_number": "217",
+    "finish": "normal"
+  },
+  "f0fbee02-b6cc-4cd1-a702-cf4f89c17921": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Lightning Greaves",
+    "set": "cm2",
+    "collector_number": "196",
+    "finish": "normal"
+  },
+  "0d995382-57a6-40a4-9050-31f57cb8dae3": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Liliana's Caress",
+    "set": "m11",
+    "collector_number": "103",
+    "finish": "normal"
+  },
+  "d75ebba8-34ca-47a0-bf13-8318ad73b343": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Liliana, Dreadhorde General",
+    "set": "war",
+    "collector_number": "97",
+    "finish": "normal"
+  },
+  "6683416a-5820-4cd0-b28a-60a53239e9ef": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Lithoform Engine",
+    "set": "znr",
+    "collector_number": "245",
+    "finish": "normal"
+  },
+  "80e7d9a3-06a1-400d-958c-9b5302e046a6": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Living Death",
+    "set": "cm2",
+    "collector_number": "68",
+    "finish": "normal"
+  },
+  "ce01ff8f-a037-484f-9148-c847ffaabc5a": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Lotho, Corrupt Shirriff",
+    "set": "ltr",
+    "collector_number": "213",
+    "finish": "foil"
+  },
+  "ae4f3aaf-3960-48cd-b34b-32e4ae5ae088": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Lumra, Bellow of the Woods",
+    "set": "blb",
+    "collector_number": "183",
+    "finish": "normal"
+  },
+  "10a79733-702c-4611-b073-71db7f1158b2": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Maddening Cacophony",
+    "set": "znr",
+    "collector_number": "67",
+    "finish": "normal"
+  },
+  "e514b13d-2d22-4d9e-a501-b0667f02edac": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Maelstrom Nexus",
+    "set": "2xm",
+    "collector_number": "206",
+    "finish": "normal"
+  },
+  "ba874c0c-f66f-4edc-9859-40273487aef0": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Mana Drain",
+    "set": "cmr",
+    "collector_number": "80",
+    "finish": "normal"
+  },
+  "32cd847e-a247-4f6e-95ea-316e7535e6fb": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Mana Geyser",
+    "set": "cns",
+    "collector_number": "147",
+    "finish": "normal"
+  },
+  "8b16d8b7-3ff8-4481-bd4a-aa283b78bead": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Manabarbs",
+    "set": "3ed",
+    "collector_number": "165",
+    "finish": "normal"
+  },
+  "fe45433b-e124-44d7-9463-dada39310148": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Manaweft Sliver",
+    "set": "m14",
+    "collector_number": "184",
+    "finish": "foil"
+  },
+  "e680e1a4-e67a-43c0-9314-c3aa7ddc971b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Mandate of Abaddon",
+    "set": "40k",
+    "collector_number": "40★",
+    "finish": "foil"
+  },
+  "4e8397e6-d13a-4996-8fde-b8a9895de287": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Marsh Flats",
+    "set": "mh2",
+    "collector_number": "476",
+    "finish": "normal"
+  },
+  "4b8eee4f-99e3-499d-9d6d-0bff023f6512": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Maze of Ith",
+    "set": "ema",
+    "collector_number": "241",
+    "finish": "normal"
+  },
+  "401f7042-24fd-42a0-ae7c-e6b7de1aa446": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Maze's End",
+    "set": "dgm",
+    "collector_number": "152",
+    "finish": "normal"
+  },
+  "801b124d-3546-4882-a6e1-c9c353628a18": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Mikaeus, the Unhallowed",
+    "set": "dka",
+    "collector_number": "70",
+    "finish": "normal"
+  },
+  "0b461cce-02c7-4c93-afaa-32400ff82942": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Mirari's Wake",
+    "set": "c17",
+    "collector_number": "181",
+    "finish": "normal"
+  },
+  "aff8d4f1-eaad-4afb-9097-2afab133f707": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Mishra's Factory",
+    "set": "4ed",
+    "collector_number": "361",
+    "finish": "normal"
+  },
+  "23d8e67a-5150-4782-98d1-da2ca79607ad": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Misty Rainforest",
+    "set": "mh2",
+    "collector_number": "477",
+    "finish": "normal"
+  },
+  "b65ec6ad-80d8-4c76-8b69-fc401a8f1ce8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Mithril Coat",
+    "set": "ltr",
+    "collector_number": "379",
+    "finish": "normal"
+  },
+  "fdbe1ac1-461f-4746-a8d8-6c8dea2c97c6": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Molten Duplication",
+    "set": "big",
+    "collector_number": "14",
+    "finish": "normal"
+  },
+  "dcd05b01-dc73-4dd2-970a-32ec6e153c86": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Mox Tantalite",
+    "set": "mh1",
+    "collector_number": "226",
+    "finish": "normal"
+  },
+  "c654737d-34ac-42ff-ae27-3a3bbb930fc1": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Muldrotha, the Gravetide",
+    "set": "dom",
+    "collector_number": "199",
+    "finish": "normal"
+  },
+  "188dfd03-010b-48ca-b0a3-dd9d77947215": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Mycosynth Lattice",
+    "set": "plst",
+    "collector_number": "BBD-241",
+    "finish": "normal"
+  },
+  "58e93dff-b774-4765-b7bd-d3957e42ff4a": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Mystic Remora",
+    "set": "ice",
+    "collector_number": "87",
+    "finish": "normal"
+  },
+  "63754036-d51e-47bb-925b-564d9dc922ff": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Narset's Reversal",
+    "set": "war",
+    "collector_number": "62",
+    "finish": "normal"
+  },
+  "02907b62-5456-4605-a8cd-321487928761": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Necroskitter",
+    "set": "eve",
+    "collector_number": "38",
+    "finish": "normal"
+  },
+  "45524a5f-253e-4fd7-a359-be6df50c0f53": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Norin the Wary",
+    "set": "plst",
+    "collector_number": "TSP-171",
+    "finish": "foil"
+  },
+  "1bdd1243-1d14-496a-9b7a-0c5b34461361": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Noxious Revival",
+    "set": "nph",
+    "collector_number": "118",
+    "finish": "normal"
+  },
+  "2456cf8e-06c3-408a-a182-fd10ec3aef64": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Noxious Revival",
+    "set": "plst",
+    "collector_number": "NPH-118",
+    "finish": "normal"
+  },
+  "834b27a0-dfd7-4f96-8cde-cacac4b24acc:foil": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Nykthos, Shrine to Nyx",
+    "set": "ths",
+    "collector_number": "223",
+    "finish": "foil"
+  },
+  "834b27a0-dfd7-4f96-8cde-cacac4b24acc": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Nykthos, Shrine to Nyx",
+    "set": "ths",
+    "collector_number": "223",
+    "finish": "normal"
+  },
+  "3462a3d0-5552-49fa-9eb7-100960c55891": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Oko, Thief of Crowns",
+    "set": "eld",
+    "collector_number": "197",
+    "finish": "normal"
+  },
+  "abf8df47-405c-42d8-be9e-0f0d0a49589b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Oloro, Ageless Ascetic",
+    "set": "c13",
+    "collector_number": "203",
+    "finish": "normal"
+  },
+  "7f89a173-0b2f-4a6a-b706-9aed8dbcabec": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Oracle of Mul Daya",
+    "set": "zen",
+    "collector_number": "172",
+    "finish": "normal"
+  },
+  "eff1f52c-5c43-4260-aaa0-6920846a191c": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Overgrown Tomb",
+    "set": "grn",
+    "collector_number": "253",
+    "finish": "normal"
+  },
+  "c9eee658-29e8-4ab5-8a0e-31f2f28a9a92": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ozolith, the Shattered Spire",
+    "set": "mom",
+    "collector_number": "198",
+    "finish": "normal"
+  },
+  "15856326-d943-476a-9d31-898b9f990bb6": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Panharmonicon",
+    "set": "kld",
+    "collector_number": "226",
+    "finish": "normal"
+  },
+  "09dc5495-e992-4709-b04f-7ac980b6e99f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Paradox Haze",
+    "set": "plst",
+    "collector_number": "TSP-71",
+    "finish": "foil"
+  },
+  "7a1cc51f-91bc-4c0a-8fee-84eef1479cd8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Phyrexian Arena",
+    "set": "8ed",
+    "collector_number": "152",
+    "finish": "normal"
+  },
+  "32aaa8b9-987b-4809-8a54-aa29bdc18805": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Phyrexian Crusader",
+    "set": "mbs",
+    "collector_number": "50",
+    "finish": "normal"
+  },
+  "34dbcdfe-b48c-44cb-b232-b484f5116cd4": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Phyrexian Metamorph",
+    "set": "plst",
+    "collector_number": "NPH-42",
+    "finish": "normal"
+  },
+  "50186729-8ba7-47a5-8e82-2da78b9736f0": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Phyrexian Reclamation",
+    "set": "c13",
+    "collector_number": "88",
+    "finish": "normal"
+  },
+  "228a2bb7-d9f0-47b5-a0d9-2adf1b33e995": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Phyrexian Reclamation",
+    "set": "ulg",
+    "collector_number": "63",
+    "finish": "normal"
+  },
+  "c87ebffe-5907-427b-9f9b-7c36a12b4a03": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Pitiless Plunderer",
+    "set": "rix",
+    "collector_number": "81",
+    "finish": "normal"
+  },
+  "ca7f4fd6-e268-4d15-bfbf-d9f0f95864fc": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Platinum Angel",
+    "set": "cn2",
+    "collector_number": "214",
+    "finish": "normal"
+  },
+  "797b30b0-bc82-43fd-a842-d5879e2441bd": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Polluted Delta",
+    "set": "mh3",
+    "collector_number": "465",
+    "finish": "normal"
+  },
+  "40b7a6db-e0a3-45f7-9ef7-e4fd5490adb7": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Pongify",
+    "set": "2xm",
+    "collector_number": "62",
+    "finish": "normal"
+  },
+  "80dd2950-502c-4859-85fe-9fbef09aef43": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Primevals' Glorious Rebirth",
+    "set": "dom",
+    "collector_number": "201",
+    "finish": "foil"
+  },
+  "e37da81e-be12-45a2-9128-376f1ad7b3e8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Prismatic Vista",
+    "set": "mh1",
+    "collector_number": "244",
+    "finish": "normal"
+  },
+  "01115986-1963-45c6-b706-2faee6c71e8f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Propaganda",
+    "set": "plst",
+    "collector_number": "C16-94",
+    "finish": "normal"
+  },
+  "68924203-c3d9-41ce-8ca8-c6dd491eb3ca": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Psychic Frog",
+    "set": "mh3",
+    "collector_number": "199",
+    "finish": "foil"
+  },
+  "ac3f40b1-fcd7-456c-afb9-759df8352e43": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Pyretic Ritual",
+    "set": "plst",
+    "collector_number": "M11-153",
+    "finish": "foil"
+  },
+  "c342cac5-08ae-4428-9c2c-f6c5904e54d2": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Pyroblast",
+    "set": "ice",
+    "collector_number": "213",
+    "finish": "normal"
+  },
+  "a2c56479-4bee-4edb-80d7-4af010b7c793": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Raffine's Tower",
+    "set": "snc",
+    "collector_number": "254",
+    "finish": "foil"
+  },
+  "bc85a0ae-aee8-4a19-a8fc-9f915d7c1499": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Raffine, Scheming Seer",
+    "set": "snc",
+    "collector_number": "327",
+    "finish": "normal"
+  },
+  "c1b138e1-f8fc-435c-9aed-98004768479c": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Rainbow Vale",
+    "set": "fem",
+    "collector_number": "99",
+    "finish": "normal"
+  },
+  "5865c39e-847e-4dc6-8e6c-a4200124f21f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ramos, Dragon Engine",
+    "set": "cmr",
+    "collector_number": "545",
+    "finish": "etched"
+  },
+  "8870ef0b-cb1f-463b-8509-fece4743d3d4": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ramunap Excavator",
+    "set": "cmr",
+    "collector_number": "433",
+    "finish": "normal"
+  },
+  "c303a627-cce3-4045-81f8-fe7427e0a941": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Raugrin Triome",
+    "set": "iko",
+    "collector_number": "311",
+    "finish": "normal"
+  },
+  "c303a627-cce3-4045-81f8-fe7427e0a941:foil": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Raugrin Triome",
+    "set": "iko",
+    "collector_number": "311",
+    "finish": "foil"
+  },
+  "e14adff9-33cc-467e-b782-068854c5e7b7": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Razaketh, the Foulblooded",
+    "set": "hou",
+    "collector_number": "73",
+    "finish": "normal"
+  },
+  "bee3dad4-88d8-424c-b3f8-d089b6891fb8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Reanimate",
+    "set": "arc",
+    "collector_number": "21",
+    "finish": "normal"
+  },
+  "609c34f9-9f53-4773-a02b-517209024fc2": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Reanimate",
+    "set": "otp",
+    "collector_number": "18",
+    "finish": "normal"
+  },
+  "70a45e9b-699e-425a-9f3d-267274830d3e": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Red Elemental Blast",
+    "set": "a25",
+    "collector_number": "147",
+    "finish": "normal"
+  },
+  "7b633ac2-bf98-42bd-8c26-8737a7d8edc7": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Reflecting Pool",
+    "set": "tmp",
+    "collector_number": "322",
+    "finish": "normal"
+  },
+  "97622209-9357-4347-8961-f77f8d2389d8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Relentless Assault",
+    "set": "cmr",
+    "collector_number": "416",
+    "finish": "normal"
+  },
+  "175b3d28-5c74-4972-9b5c-5e39762c78f4": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Relic of Sauron",
+    "set": "ltc",
+    "collector_number": "79",
+    "finish": "normal"
+  },
+  "e3f3d6e4-0abe-4042-a7f6-0395683e8582": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Render Silent",
+    "set": "dgm",
+    "collector_number": "96",
+    "finish": "normal"
+  },
+  "7062e2f3-bf4a-4a9a-962c-b45718a464bc": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Reverberate",
+    "set": "m12",
+    "collector_number": "152",
+    "finish": "normal"
+  },
+  "219ab03a-2b3b-4eef-8a42-2cbe793d2f33": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ring of Three Wishes",
+    "set": "m14",
+    "collector_number": "216",
+    "finish": "normal"
+  },
+  "838ffc87-517a-4d94-8ce0-bc9ed01ecc52": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Rings of Brighthearth",
+    "set": "cmr",
+    "collector_number": "335",
+    "finish": "normal"
+  },
+  "67432030-2ff6-4926-8320-3d813ed5888a": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Rite of Replication",
+    "set": "c15",
+    "collector_number": "105",
+    "finish": "normal"
+  },
+  "b7b598d0-535d-477d-a33d-d6a10ff5439a": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sacred Foundry",
+    "set": "grn",
+    "collector_number": "254",
+    "finish": "normal"
+  },
+  "8cb55caf-fc95-40dc-80af-5144f94333ee": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sage of Hours",
+    "set": "jou",
+    "collector_number": "50",
+    "finish": "normal"
+  },
+  "9cbdda50-8a27-4094-849d-b6f66def82ce": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sakura-Tribe Scout",
+    "set": "sok",
+    "collector_number": "144",
+    "finish": "normal"
+  },
+  "6296e928-6995-469f-a5fb-acb3e0989659": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sanguine Bond",
+    "set": "c13",
+    "collector_number": "92",
+    "finish": "normal"
+  },
+  "d21ef9e6-e2dd-4e0a-a36c-e07034ac4ba3": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Savai Triome",
+    "set": "iko",
+    "collector_number": "312",
+    "finish": "normal"
+  },
+  "229ecfc9-8d6b-4fdb-9001-64dc3e4e7a3f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Scalding Tarn",
+    "set": "mh2",
+    "collector_number": "478",
+    "finish": "normal"
+  },
+  "3e85dbfe-135d-48a8-be11-399f221073ac": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Scavenged Brawler",
+    "set": "brc",
+    "collector_number": "64",
+    "finish": "normal"
+  },
+  "61f42823-8a48-4b81-a037-664ba1c69f29": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Scute Swarm",
+    "set": "znr",
+    "collector_number": "203",
+    "finish": "normal"
+  },
+  "e3174fb4-5ce1-4594-b338-e301228e6484": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Seedborn Muse",
+    "set": "c19",
+    "collector_number": "179",
+    "finish": "normal"
+  },
+  "f8ce9858-747e-441c-95a8-6af44aa2098d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Setessan Champion",
+    "set": "thb",
+    "collector_number": "198",
+    "finish": "normal"
+  },
+  "e8b2168d-38e5-429f-8663-f0d258c9c441": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Setessan Champion",
+    "set": "thb",
+    "collector_number": "331",
+    "finish": "normal"
+  },
+  "939c6e19-4b27-4023-bb9c-ae440f91e21c": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Shadowspear",
+    "set": "thb",
+    "collector_number": "236",
+    "finish": "normal"
+  },
+  "5dfd8d35-3f73-4181-80a3-d4d69badcc47": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Shark Typhoon",
+    "set": "iko",
+    "collector_number": "319",
+    "finish": "normal"
+  },
+  "531da950-dc96-4050-94a8-e01b73ddd965": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sigarda's Aid",
+    "set": "cmr",
+    "collector_number": "384",
+    "finish": "normal"
+  },
+  "ac07e230-0297-4e1d-bdfe-119010e0ad8e": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Silent Clearing",
+    "set": "mh1",
+    "collector_number": "246",
+    "finish": "normal"
+  },
+  "3159553d-ab09-4970-8c68-613a9cd56a2d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Skullbriar, the Walking Grave",
+    "set": "2x2",
+    "collector_number": "540",
+    "finish": "etched"
+  },
+  "9090c72c-8d6f-4e94-9111-e5f6929094db": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Skullclamp",
+    "set": "c16",
+    "collector_number": "271",
+    "finish": "normal"
+  },
+  "ab56119b-1e13-44d4-b73b-991488c039f1": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Skullclamp",
+    "set": "c17",
+    "collector_number": "222",
+    "finish": "normal"
+  },
+  "cf3e09ff-c917-4c0c-8ddb-e152b4b0b82c": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Skyshroud Claim",
+    "set": "nem",
+    "collector_number": "117",
+    "finish": "normal"
+  },
+  "7af082fa-86a3-4f7b-966d-2be1f1d0c0bc": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Smothering Tithe",
+    "set": "rna",
+    "collector_number": "22",
+    "finish": "normal"
+  },
+  "c2933144-c931-498a-9e91-f5165873c3b7": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sorin, Grim Nemesis",
+    "set": "soi",
+    "collector_number": "251",
+    "finish": "normal"
+  },
+  "6bbdd169-958f-42df-812d-f75fbed9576f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Soul Warden",
+    "set": "m10",
+    "collector_number": "34",
+    "finish": "normal"
+  },
+  "08f23119-6977-4d89-9f11-cf3e5aea1792": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Spell Snare",
+    "set": "plst",
+    "collector_number": "DIS-33",
+    "finish": "normal"
+  },
+  "ce3bd0d8-7e44-4cf2-9012-8ff0bc39417f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sphere of Safety",
+    "set": "rtr",
+    "collector_number": "24",
+    "finish": "normal"
+  },
+  "ee5fdaa3-7879-4fa3-a157-60c7890a660a": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Spirit Mantle",
+    "set": "cmr",
+    "collector_number": "385",
+    "finish": "normal"
+  },
+  "2f8f22fb-7291-4517-9b15-e98501f2856b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Splinter Twin",
+    "set": "roe",
+    "collector_number": "165",
+    "finish": "normal"
+  },
+  "b8ebe3cf-7143-453a-b0ef-2f5bdaac3185": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Steam Vents",
+    "set": "grn",
+    "collector_number": "257",
+    "finish": "normal"
+  },
+  "b7ee82ac-08e3-45e3-9817-0369a4ae72db": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Stitch Together",
+    "set": "cm2",
+    "collector_number": "78",
+    "finish": "normal"
+  },
+  "0a786855-6eb4-42c0-a528-4842db46809d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Stock Up",
+    "set": "dft",
+    "collector_number": "67",
+    "finish": "normal"
+  },
+  "f29f3415-971c-4a5d-aae9-3893f4bdab1e": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Stomping Ground",
+    "set": "gtc",
+    "collector_number": "247",
+    "finish": "normal"
+  },
+  "88326f60-1c86-4aca-8e6a-b1882a048635": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Strionic Resonator",
+    "set": "c19",
+    "collector_number": "224",
+    "finish": "normal"
+  },
+  "3344c1ea-e8b2-481e-b9eb-604c87e34925": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Stunt Double",
+    "set": "cn2",
+    "collector_number": "38",
+    "finish": "foil"
+  },
+  "9f7983bf-2a3b-4428-8c01-35285f589da8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sudden Substitution",
+    "set": "c19",
+    "collector_number": "11",
+    "finish": "normal"
+  },
+  "c36820fa-ee86-4206-9a0d-737a67cf5208": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sunbaked Canyon",
+    "set": "mh1",
+    "collector_number": "247",
+    "finish": "normal"
+  },
+  "36d3da9c-cb7a-4cea-b6e6-6722bd16c73c": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sundial of the Infinite",
+    "set": "m12",
+    "collector_number": "218",
+    "finish": "normal"
+  },
+  "dd3e42ee-ab13-460b-90fd-86e677abce4f": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sunforger",
+    "set": "cmr",
+    "collector_number": "473",
+    "finish": "normal"
+  },
+  "07a2e39d-037a-464e-9102-f06feebefaf9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Surveyor's Scope",
+    "set": "c13",
+    "collector_number": "262",
+    "finish": "normal"
+  },
+  "9d968dde-c406-48ef-a1ab-373aebc24693": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Swan Song",
+    "set": "c16",
+    "collector_number": "98",
+    "finish": "normal"
+  },
+  "6b3a3944-c3e6-4710-a509-7f970cd692a2": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sword of the Animist",
+    "set": "c17",
+    "collector_number": "227",
+    "finish": "normal"
+  },
+  "f3687c36-c0ae-4dba-9379-b420236bf529": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sword of the Animist",
+    "set": "ori",
+    "collector_number": "240",
+    "finish": "normal"
+  },
+  "2be8d24e-1370-4e85-90f2-66b6d6e9c4a4": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sword of Truth and Justice",
+    "set": "mh1",
+    "collector_number": "229",
+    "finish": "normal"
+  },
+  "b1a9682c-ecca-4caa-9e5a-17874167082b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Sylvan Library",
+    "set": "4ed",
+    "collector_number": "273",
+    "finish": "normal"
+  },
+  "1421115b-9a98-4ab2-bcb2-7d8899ce12db": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Tale's End",
+    "set": "m20",
+    "collector_number": "77",
+    "finish": "normal"
+  },
+  "cc25a254-edd2-4817-ab80-7373239da7d2": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Talisman of Resilience",
+    "set": "mh1",
+    "collector_number": "234",
+    "finish": "foil"
+  },
+  "9c0c61e3-9f3d-4e7f-9046-0ea336dd8a2d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Teferi, Master of Time",
+    "set": "m21",
+    "collector_number": "75",
+    "finish": "foil"
+  },
+  "2d1ff397-2445-459a-ae4e-7bf1cd48f490": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Teferi, Master of Time",
+    "set": "m21",
+    "collector_number": "275",
+    "finish": "normal"
+  },
+  "8c99cde3-8ba5-44bf-bbaa-1a12c6cac925": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Temple Bell",
+    "set": "m11",
+    "collector_number": "217",
+    "finish": "normal"
+  },
+  "2b9b0195-beda-403e-bc27-7ae3be9f318c": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Temple Garden",
+    "set": "grn",
+    "collector_number": "258",
+    "finish": "normal"
+  },
+  "ed6a3602-8e44-4df6-9607-ba5ce2d2e733": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Temple of Silence",
+    "set": "m21",
+    "collector_number": "390",
+    "finish": "foil"
+  },
+  "5c2e92a6-6e18-490c-a39c-327f0ea5efa5": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Temporal Mastery",
+    "set": "plst",
+    "collector_number": "MM3-54",
+    "finish": "normal"
+  },
+  "79248b68-4fab-46da-ab15-5c71c1f68d4b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Tempt with Discovery",
+    "set": "c19",
+    "collector_number": "183",
+    "finish": "normal"
+  },
+  "a159830a-698f-423c-9da0-a734b210ecab": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Tendershoot Dryad",
+    "set": "rix",
+    "collector_number": "147",
+    "finish": "normal"
+  },
+  "726e8b29-13e9-4138-b6a9-d2a0d8188d1c": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Thassa's Oracle",
+    "set": "thb",
+    "collector_number": "73",
+    "finish": "normal"
+  },
+  "27b52628-de05-4ec1-9978-e998cf17bb26": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Thassa, Deep-Dwelling",
+    "set": "thb",
+    "collector_number": "261",
+    "finish": "normal"
+  },
+  "c83ed3e0-82d0-4410-a6ca-b0f923eadf83": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Thassa, Deep-Dwelling",
+    "set": "thb",
+    "collector_number": "71",
+    "finish": "foil"
+  },
+  "46418186-c215-47c4-9d0a-d15a1d8ca613": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "The Black Gate",
+    "set": "ltc",
+    "collector_number": "80",
+    "finish": "normal"
+  },
+  "939b0bd0-24ea-45de-a2d3-37bbf6a3e6f9": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "There and Back Again",
+    "set": "ltr",
+    "collector_number": "151",
+    "finish": "normal"
+  },
+  "2b6ccfdc-acfb-4e73-a583-0c6964b86083": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Thousand-Year Elixir",
+    "set": "c13",
+    "collector_number": "266",
+    "finish": "normal"
+  },
+  "17260fff-b239-4af4-9306-3236ae3fa5a5": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Thundering Falls",
+    "set": "mkm",
+    "collector_number": "269",
+    "finish": "normal"
+  },
+  "f69d77d1-5980-436c-bf48-790939b069aa": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Torment of Hailfire",
+    "set": "hou",
+    "collector_number": "77",
+    "finish": "normal"
+  },
+  "953610f6-ea96-4e71-969f-50ecac09c091": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Torpor Orb",
+    "set": "nph",
+    "collector_number": "162",
+    "finish": "normal"
+  },
+  "564caf57-4ba5-4993-a35e-945699c94eb7": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Toxic Deluge",
+    "set": "c13",
+    "collector_number": "96",
+    "finish": "normal"
+  },
+  "e2cf16f8-6e69-46b3-8453-1d1a2a5670e2": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Training Grounds",
+    "set": "roe",
+    "collector_number": "91",
+    "finish": "normal"
+  },
+  "34ea44f2-cb2f-4b86-83fc-fe507f05bb9d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Trostani, Selesnya's Voice",
+    "set": "c19",
+    "collector_number": "204",
+    "finish": "normal"
+  },
+  "1eb34f51-0bd2-43c3-af95-2ce8dabcc7bb": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Twinflame Tyrant",
+    "set": "fdn",
+    "collector_number": "97",
+    "finish": "normal"
+  },
+  "309ff3bf-acd3-4bea-b518-6e25f6cfce61": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Tyrite Sanctum",
+    "set": "khm",
+    "collector_number": "272",
+    "finish": "foil"
+  },
+  "923cc143-3ef2-4e08-a5e3-41753f0f704c": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Tyrite Sanctum",
+    "set": "khm",
+    "collector_number": "372",
+    "finish": "normal"
+  },
+  "1bacda35-bb91-4537-a14d-846650fa85f6": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ugin, the Spirit Dragon",
+    "set": "m21",
+    "collector_number": "279",
+    "finish": "normal"
+  },
+  "1192f7a9-102e-4b3a-b154-18c8eb332217": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Ulamog, the Ceaseless Hunger",
+    "set": "bfz",
+    "collector_number": "15",
+    "finish": "normal"
+  },
+  "2b5801fb-2026-4f25-98bc-ebb2f99684b9": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Undercity Sewers",
+    "set": "mkm",
+    "collector_number": "270",
+    "finish": "normal"
+  },
+  "0e51d796-7279-4c06-87f0-37adbdaa41df": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Underworld Breach",
+    "set": "thb",
+    "collector_number": "161",
+    "finish": "normal"
+  },
+  "c3fd1a59-4ade-459f-90d2-1fc67d6d1384": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Unwinding Clock",
+    "set": "c18",
+    "collector_number": "228",
+    "finish": "normal"
+  },
+  "fa48b15c-7312-4f3f-b7aa-b2ad98234bf1": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Urborg, Tomb of Yawgmoth",
+    "set": "m15",
+    "collector_number": "248",
+    "finish": "normal"
+  },
+  "9e1a9e38-6ffc-490f-b0be-23ba4e8204c6": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Urborg, Tomb of Yawgmoth",
+    "set": "tsr",
+    "collector_number": "287",
+    "finish": "normal"
+  },
+  "94e10277-a935-4c78-b45f-52ab5ea0f95c": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Urza's Incubator",
+    "set": "cm2",
+    "collector_number": "228",
+    "finish": "normal"
+  },
+  "60b7a85f-3a30-4ece-9bbb-61f3c4b796b8": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Vanquisher's Banner",
+    "set": "xln",
+    "collector_number": "251",
+    "finish": "normal"
+  },
+  "178c71e6-a905-4050-b483-044462c4c1c5": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Vedalken Orrery",
+    "set": "cns",
+    "collector_number": "206",
+    "finish": "normal"
+  },
+  "3d48d62e-5c1f-464c-aa81-8a5d2690f48e": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Venser, the Sojourner",
+    "set": "som",
+    "collector_number": "135",
+    "finish": "normal"
+  },
+  "c7057b04-e22f-4e33-9f08-b9fbd2e54bf5": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Verdant Catacombs",
+    "set": "mh2",
+    "collector_number": "479",
+    "finish": "normal"
+  },
+  "504ebb84-7e7b-4119-a128-a9c183c5d9de": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Vivien, Monsters' Advocate",
+    "set": "iko",
+    "collector_number": "175",
+    "finish": "normal"
+  },
+  "0806adab-6a08-411b-b249-e1c58ade354b": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Vorinclex, Voice of Hunger",
+    "set": "nph",
+    "collector_number": "127",
+    "finish": "normal"
+  },
+  "b3e8f8bd-1c8b-4a7c-96c4-57a247ce9ccc": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Warleader's Call",
+    "set": "mkm",
+    "collector_number": "242",
+    "finish": "normal"
+  },
+  "7d4595f2-9297-40dc-b2dd-7144bbb401f7": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Watery Grave",
+    "set": "grn",
+    "collector_number": "259",
+    "finish": "normal"
+  },
+  "351e8b1b-4e4e-4ffc-a134-3cf0e2a1dd6d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Wayward Swordtooth",
+    "set": "rix",
+    "collector_number": "150",
+    "finish": "normal"
+  },
+  "b6c48195-074a-4236-a82d-603b5dd1aa66": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Whirlwind of Thought",
+    "set": "iko",
+    "collector_number": "348",
+    "finish": "normal"
+  },
+  "d83821b3-a6a6-4a15-9169-5c6d1942903d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Whispersilk Cloak",
+    "set": "m11",
+    "collector_number": "221",
+    "finish": "normal"
+  },
+  "915715f7-5487-47aa-ada5-de1bce282164": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Wight of the Reliquary",
+    "set": "mh3",
+    "collector_number": "460",
+    "finish": "foil"
+  },
+  "011beb9f-0780-4b38-81ac-f1a9a0970303": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Windfall",
+    "set": "cm2",
+    "collector_number": "55",
+    "finish": "normal"
+  },
+  "bd1d13f7-fd38-4f0b-a8e0-1eac78668117": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Windswept Heath",
+    "set": "mh3",
+    "collector_number": "235",
+    "finish": "normal"
+  },
+  "5dd13a6c-23d3-44ce-a628-cb1c19d777c4": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Winota, Joiner of Forces",
+    "set": "iko",
+    "collector_number": "216",
+    "finish": "normal"
+  },
+  "77759762-8684-4513-92c5-72c86d43b8bd": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Witch-king of Angmar",
+    "set": "ltr",
+    "collector_number": "423",
+    "finish": "normal"
+  },
+  "96593e24-8a6a-49a8-b1bc-773048f429d6": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Wonder",
+    "set": "c13",
+    "collector_number": "67",
+    "finish": "normal"
+  },
+  "44670666-9028-4b4a-a5af-a3bf35fc6a21": {
+    "quantity": 2,
+    "oracle_id": "",
+    "name": "Wonder",
+    "set": "jud",
+    "collector_number": "54",
+    "finish": "normal"
+  },
+  "a8503cca-7e7d-44c4-8587-81376b396398": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Wooded Foothills",
+    "set": "ktk",
+    "collector_number": "249",
+    "finish": "normal"
+  },
+  "4ab5195f-7cc3-4972-92f8-1b26fa3fb927": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Wurmcoil Engine",
+    "set": "cm2",
+    "collector_number": "231",
+    "finish": "normal"
+  },
+  "7c5ada8c-98f2-4f9c-bcb5-dfa4f804fbe6": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Wyleth, Soul of Steel",
+    "set": "cmr",
+    "collector_number": "362",
+    "finish": "foil"
+  },
+  "8690cbcc-f8fd-41f7-9e28-e61c12b04014": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Yawgmoth, Thran Physician",
+    "set": "mh1",
+    "collector_number": "116",
+    "finish": "normal"
+  },
+  "f809f970-25a7-4c34-b98f-1cb08012080d": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Zagoth Triome",
+    "set": "iko",
+    "collector_number": "313",
+    "finish": "normal"
+  },
+  "33f64032-1e87-4d22-a211-c37e11ffa247": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Zendikar Resurgent",
+    "set": "c17",
+    "collector_number": "160",
+    "finish": "normal"
+  },
+  "76c33402-a022-4d2f-9a83-4b8ddc04e971": {
+    "quantity": 1,
+    "oracle_id": "",
+    "name": "Zndrsplt, Eye of Wisdom",
+    "set": "bbd",
+    "collector_number": "5",
+    "finish": "normal"
   }
 }

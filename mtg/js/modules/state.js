@@ -12,12 +12,22 @@ let _changeLog = {
 let _hasUnsavedChanges = false;
 let _listeners = [];
 
+// --- Helpers ---
+
+// Extract the real Scryfall ID from a possibly-composite key (e.g. "id:foil" -> "id")
+export function getRealScryfallId(key) {
+    const colonIdx = key.indexOf(':');
+    return colonIdx !== -1 ? key.substring(0, colonIdx) : key;
+}
+
 // --- Getters ---
 
 export function getCollection() { return _collection; }
 export function getDecks() { return _decks; }
 export function getBinders() { return _binders; }
-export function getCardData(scryfallId) { return _cardCache[scryfallId] || null; }
+export function getCardData(key) {
+    return _cardCache[key] || _cardCache[getRealScryfallId(key)] || null;
+}
 export function getAllCardData() { return _cardCache; }
 export function hasUnsavedChanges() { return _hasUnsavedChanges; }
 export function getChangeLog() { return _changeLog; }

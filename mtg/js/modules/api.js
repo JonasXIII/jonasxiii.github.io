@@ -65,6 +65,7 @@ export function extractCardFields(card) {
         loyalty: card.loyalty,
         prices: {
             usd: card.prices?.usd || null,
+            usd_foil: card.prices?.usd_foil || null,
             eur: card.prices?.eur || null
         },
         legalities: card.legalities || {}

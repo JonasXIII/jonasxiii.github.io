@@ -1,6 +1,7 @@
 // main.js - MTG Collection Manager entry point
 
 import * as state from './modules/state.js';
+import { getRealScryfallId } from './modules/state.js';
 import * as api from './modules/api.js';
 import { downloadChangesJson } from './modules/export.js';
 import { showToast } from './modules/ui-components.js';
@@ -98,9 +99,9 @@ async function fetchJson(url) {
 function collectAllScryfallIds(collection, decks, binders) {
     const ids = new Set();
 
-    // From collection
-    for (const id of Object.keys(collection || {})) {
-        ids.add(id);
+    // From collection (strip composite key suffixes like ":foil")
+    for (const key of Object.keys(collection || {})) {
+        ids.add(getRealScryfallId(key));
     }
 
     // From decks
