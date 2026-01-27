@@ -1,7 +1,13 @@
 // Load and render blog posts from posts.json
+function getPostsRootPath() {
+  const depth = (window.location.pathname.match(/\//g) || []).length - 1;
+  return depth > 0 ? '../'.repeat(depth) : './';
+}
+
 async function loadPosts() {
   try {
-    const response = await fetch('posts.json');
+    const rootPath = getPostsRootPath();
+    const response = await fetch(rootPath + 'posts.json');
     const posts = await response.json();
     const timeline = document.querySelector('.about-timeline');
 
@@ -15,7 +21,7 @@ async function loadPosts() {
 
     // Render each post
     posts.forEach(post => {
-      const article = createPostCard(post);
+      const article = createPostCard(post, rootPath);
       timeline.appendChild(article);
     });
   } catch (error) {
@@ -23,7 +29,8 @@ async function loadPosts() {
   }
 }
 
-function createPostCard(post) {
+function createPostCard(post, rootPath) {
+  const image = post.image ? rootPath + post.image : '';
   const article = document.createElement('article');
   article.className = `post-card post-${post.layout}`;
 
@@ -40,7 +47,7 @@ function createPostCard(post) {
     // Image on left layout
     article.innerHTML = `
       <div class="post-image">
-        <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt)}">
+        <img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt)}">
         <p class="image-caption">${escapeHtml(post.caption)}</p>
       </div>
       <div class="post-content">
@@ -58,7 +65,7 @@ function createPostCard(post) {
         <p class="post-text">${escapeHtml(post.text)}</p>
       </div>
       <div class="post-image">
-        <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt)}">
+        <img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt)}">
         <p class="image-caption">${escapeHtml(post.caption)}</p>
       </div>
     `;
@@ -66,7 +73,7 @@ function createPostCard(post) {
     // Full-width layout
     article.innerHTML = `
       <div class="post-image">
-        <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt)}">
+        <img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt)}">
         <p class="image-caption">${escapeHtml(post.caption)}</p>
       </div>
       <div class="post-content">
