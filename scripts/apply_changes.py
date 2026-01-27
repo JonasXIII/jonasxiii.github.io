@@ -3,7 +3,7 @@
 apply_changes.py - Apply changes.json to MTG collection data files.
 
 Usage:
-    python apply_changes.py [changes.json] [--data-dir ./mtg/data]
+    python scripts/apply_changes.py [changes.json] [--data-dir ./mtg/data]
 
 Reads a changes.json file exported from the MTG Collection Manager web UI
 and applies the described modifications to collection.json, decks.json,
@@ -219,7 +219,7 @@ def main():
     # Check changes file exists
     if not os.path.exists(changes_path):
         print(f"Error: {changes_path} not found.")
-        print(f"Usage: python apply_changes.py [changes.json] [--data-dir ./mtg/data]")
+        print(f"Usage: python scripts/apply_changes.py [changes.json] [--data-dir ./mtg/data]")
         sys.exit(1)
 
     print(f"Loading changes from: {changes_path}")

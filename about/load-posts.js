@@ -1,13 +1,7 @@
 // Load and render blog posts from posts.json
-function getPostsRootPath() {
-  const depth = (window.location.pathname.match(/\//g) || []).length - 1;
-  return depth > 0 ? '../'.repeat(depth) : './';
-}
-
 async function loadPosts() {
   try {
-    const rootPath = getPostsRootPath();
-    const response = await fetch(rootPath + 'posts.json');
+    const response = await fetch('posts.json');
     const posts = await response.json();
     const timeline = document.querySelector('.about-timeline');
 
@@ -21,7 +15,7 @@ async function loadPosts() {
 
     // Render each post
     posts.forEach(post => {
-      const article = createPostCard(post, rootPath);
+      const article = createPostCard(post);
       timeline.appendChild(article);
     });
   } catch (error) {
@@ -29,13 +23,11 @@ async function loadPosts() {
   }
 }
 
-function createPostCard(post, rootPath) {
-  const image = post.image ? rootPath + post.image : '';
+function createPostCard(post) {
   const article = document.createElement('article');
   article.className = `post-card post-${post.layout}`;
 
   if (post.layout === 'text-only') {
-    // Text-only layout
     article.innerHTML = `
       <div class="post-content">
         <h2 class="post-title">${escapeHtml(post.title)}</h2>
@@ -44,10 +36,9 @@ function createPostCard(post, rootPath) {
       </div>
     `;
   } else if (post.layout === 'image-left') {
-    // Image on left layout
     article.innerHTML = `
       <div class="post-image">
-        <img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt)}">
+        <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt)}">
         <p class="image-caption">${escapeHtml(post.caption)}</p>
       </div>
       <div class="post-content">
@@ -57,7 +48,6 @@ function createPostCard(post, rootPath) {
       </div>
     `;
   } else if (post.layout === 'image-right') {
-    // Image on right layout
     article.innerHTML = `
       <div class="post-content">
         <h2 class="post-title">${escapeHtml(post.title)}</h2>
@@ -65,15 +55,14 @@ function createPostCard(post, rootPath) {
         <p class="post-text">${escapeHtml(post.text)}</p>
       </div>
       <div class="post-image">
-        <img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt)}">
+        <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt)}">
         <p class="image-caption">${escapeHtml(post.caption)}</p>
       </div>
     `;
   } else if (post.layout === 'full-width') {
-    // Full-width layout
     article.innerHTML = `
       <div class="post-image">
-        <img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt)}">
+        <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt)}">
         <p class="image-caption">${escapeHtml(post.caption)}</p>
       </div>
       <div class="post-content">
