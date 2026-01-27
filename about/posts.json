@@ -1,35 +1,29 @@
 [
   {
-    "layout": "image-left",
-    "title": "Nature's Hidden Wonders",
-    "date": "October 2024",
-    "image": "images/Mushroom_Goo.jpg",
-    "imageAlt": "A closeup of a gooey mushroom in a forest",
-    "caption": "A fascinating mushroom discovery during a forest hike",
-    "text": "During a recent nature walk, I stumbled upon this incredible mushroom formation. The intricate patterns and unique texture caught my eye immediately. It's moments like these that remind me how much beauty exists in the small details of nature that we often overlook. This discovery sparked my interest in mycology and the fascinating world of fungi."
+    "layout": "full-width",
+    "title": "Patterson Lake Cabins",
+    "date": "January 2026",
+    "image": "images/Frozen_Lake.jpg",
+    "imageAlt": "Cabins covered in snow seen from the surface of a frozen lake",
+    "caption": "",
+    "text": "My family stayed at the Sun Mountain Lodge cabins at Patterson Lake over the long weekend in January. We spent a wonderful time enjoying the winter wonderland. There wasn't much fresh snow, but the lake was completely frozen over allowing for endless fun on ice."
   },
   {
     "layout": "image-right",
-    "title": "Garden Delights",
-    "date": "September 2024",
+    "title": "Bean in the Sunshine",
+    "date": "December 2025",
     "image": "images/Bean_Curtain.jpg",
-    "imageAlt": "Fresh beans hanging in the garden",
-    "caption": "Harvest time in the backyard garden",
-    "text": "There's something deeply satisfying about growing your own food. These beans were the result of months of care and patience. Watching them grow from tiny seeds to this abundant harvest taught me valuable lessons about nurturing, patience, and the rewards of consistent effort. Fresh from the garden, they tasted unlike anything from a store."
+    "imageAlt": "My cat bean sitting between the curtains and the sunlit window casting an iconic cat shaped shadow.",
+    "caption": "",
+    "text": "Bean loves basking in the sunlight, even when theres no birds to watch."
   },
   {
-    "layout": "full-width",
-    "title": "Winter's Embrace",
-    "date": "January 2024",
-    "image": "images/Frozen_Lake.jpg",
-    "imageAlt": "Frozen lake covered in snow and ice",
-    "caption": "The serene beauty of a frozen lake in winter",
-    "text": "Winter transforms familiar landscapes into something magical. This frozen lake, which I had seen countless times during summer, became an entirely different world. The silence was profound, broken only by the occasional crack of ice settling. Standing there in the crisp cold air, I felt a deep sense of peace and connection to the natural cycle of seasons. It's a reminder that change, while sometimes harsh, can reveal unexpected beauty."
-  },
-  {
-    "layout": "text-only",
-    "title": "Reflections on Simple Joys",
-    "date": "November 2024",
-    "text": "Sometimes the best moments in life aren't the grand adventures or major milestones. They're the quiet mornings with a good cup of coffee, the unexpected conversation with a friend, or the satisfaction of completing a project you've been working on. I've been learning to appreciate these small victories and simple pleasures more. They add up to create a life that feels rich and meaningful, even in the ordinary days."
+    "layout": "image-left",
+    "title": "Ooey Gooey Mushroom",
+    "date": "October 2025",
+    "image": "images/Mushroom_Goo.jpg",
+    "imageAlt": "A closeup of a gooey mushroom in a forest",
+    "caption": "",
+    "text": "During a recent nature walk, I stumbled upon this funky msuhroom."
   }
 ]
