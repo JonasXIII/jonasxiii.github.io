@@ -114,9 +114,9 @@ function renderContent() {
     if (entries.length === 0) {
         const allEntries = collection.getCollectionWithData();
         if (allEntries.length === 0) {
-            renderEmptyState(content, 'No cards yet', 'Search Scryfall to add cards to your collection.', '+ Add Cards', () => openSearchModal());
+            renderEmptyState(content, 'No cards yet', 'Search Scryfall to add cards to the collection.', '+ Add Cards', () => openSearchModal());
         } else {
-            renderEmptyState(content, 'No matches', 'Try adjusting your filters.');
+            renderEmptyState(content, 'No matches', 'Try adjusting the filters.');
         }
         return;
     }
