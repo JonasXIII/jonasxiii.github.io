@@ -1168,12 +1168,36 @@
     border-radius: 50%;
 }
 
+/* Binder Spread */
+.mtg-binder-spread {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.mtg-binder-spread-single {
+    justify-content: center;
+}
+
+.mtg-binder-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mtg-binder-page-number {
+    font-size: 0.8em;
+    color: #999;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
 /* Binder Grid */
 .mtg-binder-page {
     display: grid;
     gap: 8px;
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 .mtg-binder-slot {

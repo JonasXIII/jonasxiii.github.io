@@ -10,7 +10,7 @@ import {
 } from './ui-components.js';
 
 let _selectedBinderId = null;
-let _currentPage = 0;
+let _currentSpread = 0;
 
 export function render() {
     renderSidebar();
@@ -37,7 +37,7 @@ function renderSidebar() {
         li.className = 'mtg-deck-list-item' + (binder.id === _selectedBinderId ? ' active' : '');
         li.addEventListener('click', () => {
             _selectedBinderId = binder.id;
-            _currentPage = 0;
+            _currentSpread = 0;
             render();
         });
 
@@ -215,119 +215,160 @@ function renderContent() {
     headerRow.appendChild(actions);
     content.appendChild(headerRow);
 
-    // Page grid
-    const pageData = binders.getBinderPage(_selectedBinderId, _currentPage);
-    // Use known layout presets, fallback to sqrt calculation
+    // Spread model: spread 0 = page 1 alone, spread 1 = pages 2-3, spread 2 = pages 4-5, etc.
+    // If total pages is even: last spread is also a pair. If odd: last spread is single page.
+    const totalPages = binder.pages;
+    const totalSpreads = totalPages <= 1 ? 1 : 1 + Math.ceil((totalPages - 1) / 2);
+
+    if (_currentSpread >= totalSpreads) _currentSpread = totalSpreads - 1;
+    if (_currentSpread < 0) _currentSpread = 0;
+
+    // Determine which pages are in the current spread
+    let spreadPages = [];
+    if (_currentSpread === 0) {
+        spreadPages = [0]; // First page alone (front cover)
+    } else {
+        const firstInSpread = 1 + (_currentSpread - 1) * 2;
+        spreadPages = [firstInSpread];
+        if (firstInSpread + 1 < totalPages) {
+            spreadPages.push(firstInSpread + 1);
+        }
+    }
+
     const layoutMap = { 9: 3, 12: 4, 16: 4 };
     const cols = layoutMap[binder.slots_per_page] || Math.round(Math.sqrt(binder.slots_per_page));
-    const rows = Math.ceil(binder.slots_per_page / cols);
+    const singlePageWidth = cols * 160 + (cols - 1) * 8;
 
-    const grid = document.createElement('div');
-    grid.className = 'mtg-binder-page';
-    grid.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
-    grid.style.maxWidth = (cols * 160 + (cols - 1) * 8) + 'px';
+    // Spread container
+    const spreadContainer = document.createElement('div');
+    spreadContainer.className = 'mtg-binder-spread';
+    if (spreadPages.length === 1) {
+        spreadContainer.classList.add('mtg-binder-spread-single');
+    }
 
-    for (let i = 0; i < binder.slots_per_page; i++) {
-        const slotData = pageData[i];
-        const absolutePosition = _currentPage * binder.slots_per_page + i;
+    for (const pageIdx of spreadPages) {
+        const pageData = binders.getBinderPage(_selectedBinderId, pageIdx);
 
-        const slot = document.createElement('div');
-        slot.className = 'mtg-binder-slot' + (slotData ? ' filled' : '');
+        const pageWrapper = document.createElement('div');
+        pageWrapper.className = 'mtg-binder-page-wrapper';
 
-        // Make all slots drop targets
-        slot.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            slot.classList.add('mtg-binder-slot-drop-target');
-        });
-        slot.addEventListener('dragleave', () => {
-            slot.classList.remove('mtg-binder-slot-drop-target');
-        });
-        slot.addEventListener('drop', (e) => {
-            e.preventDefault();
-            slot.classList.remove('mtg-binder-slot-drop-target');
-            try {
-                const data = JSON.parse(e.dataTransfer.getData('application/json'));
-                if (data.binderId === _selectedBinderId && data.fromPosition !== absolutePosition) {
-                    binders.moveCard(_selectedBinderId, data.fromPosition, absolutePosition);
-                    showToast('Card moved', 'success');
-                    render();
+        const pageNumLabel = document.createElement('div');
+        pageNumLabel.className = 'mtg-binder-page-number';
+        pageNumLabel.textContent = `Page ${pageIdx + 1}`;
+        pageWrapper.appendChild(pageNumLabel);
+
+        const grid = document.createElement('div');
+        grid.className = 'mtg-binder-page';
+        grid.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+        grid.style.maxWidth = singlePageWidth + 'px';
+
+        for (let i = 0; i < binder.slots_per_page; i++) {
+            const slotData = pageData[i];
+            const absolutePosition = pageIdx * binder.slots_per_page + i;
+
+            const slot = document.createElement('div');
+            slot.className = 'mtg-binder-slot' + (slotData ? ' filled' : '');
+
+            // Make all slots drop targets
+            slot.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                slot.classList.add('mtg-binder-slot-drop-target');
+            });
+            slot.addEventListener('dragleave', () => {
+                slot.classList.remove('mtg-binder-slot-drop-target');
+            });
+            slot.addEventListener('drop', (e) => {
+                e.preventDefault();
+                slot.classList.remove('mtg-binder-slot-drop-target');
+                try {
+                    const data = JSON.parse(e.dataTransfer.getData('application/json'));
+                    if (data.binderId === _selectedBinderId && data.fromPosition !== absolutePosition) {
+                        binders.moveCard(_selectedBinderId, data.fromPosition, absolutePosition);
+                        showToast('Card moved', 'success');
+                        render();
+                    }
+                } catch (err) {}
+            });
+
+            if (slotData && slotData.cardData) {
+                slot.draggable = true;
+                slot.addEventListener('dragstart', (e) => {
+                    e.dataTransfer.setData('application/json', JSON.stringify({
+                        binderId: _selectedBinderId,
+                        fromPosition: absolutePosition,
+                        scryfallId: slotData.scryfall_id
+                    }));
+                    e.dataTransfer.effectAllowed = 'move';
+                    slot.classList.add('mtg-binder-slot-dragging');
+                });
+                slot.addEventListener('dragend', () => {
+                    slot.classList.remove('mtg-binder-slot-dragging');
+                });
+
+                const imgUri = getCardImageUri(slotData.cardData, 'normal');
+                if (imgUri) {
+                    const img = document.createElement('img');
+                    img.src = imgUri;
+                    img.alt = slotData.cardData.name;
+                    img.loading = 'lazy';
+                    img.draggable = false;
+                    slot.appendChild(img);
                 }
-            } catch (err) {}
-        });
 
-        if (slotData && slotData.cardData) {
-            // Make filled slots draggable
-            slot.draggable = true;
-            slot.addEventListener('dragstart', (e) => {
-                e.dataTransfer.setData('application/json', JSON.stringify({
-                    binderId: _selectedBinderId,
-                    fromPosition: absolutePosition,
-                    scryfallId: slotData.scryfall_id
-                }));
-                e.dataTransfer.effectAllowed = 'move';
-                slot.classList.add('mtg-binder-slot-dragging');
-            });
-            slot.addEventListener('dragend', () => {
-                slot.classList.remove('mtg-binder-slot-dragging');
-            });
+                slot.addEventListener('click', () => {
+                    openSlotActionModal(binder.id, absolutePosition, slotData);
+                });
+            } else {
+                const addIcon = document.createElement('span');
+                addIcon.className = 'slot-add-icon';
+                addIcon.textContent = '+';
+                slot.appendChild(addIcon);
 
-            const imgUri = getCardImageUri(slotData.cardData, 'normal');
-            if (imgUri) {
-                const img = document.createElement('img');
-                img.src = imgUri;
-                img.alt = slotData.cardData.name;
-                img.loading = 'lazy';
-                img.draggable = false;
-                slot.appendChild(img);
+                slot.addEventListener('click', () => {
+                    openAddToSlotModal(binder.id, absolutePosition);
+                });
             }
 
-            // Click to view/remove
-            slot.addEventListener('click', () => {
-                openSlotActionModal(binder.id, absolutePosition, slotData);
-            });
-        } else {
-            // Empty slot
-            const addIcon = document.createElement('span');
-            addIcon.className = 'slot-add-icon';
-            addIcon.textContent = '+';
-            slot.appendChild(addIcon);
-
-            slot.addEventListener('click', () => {
-                openAddToSlotModal(binder.id, absolutePosition);
-            });
+            grid.appendChild(slot);
         }
 
-        grid.appendChild(slot);
+        pageWrapper.appendChild(grid);
+        spreadContainer.appendChild(pageWrapper);
     }
-    content.appendChild(grid);
+    content.appendChild(spreadContainer);
 
-    // Page navigation
+    // Spread navigation
     const nav = document.createElement('div');
     nav.className = 'mtg-binder-nav';
 
     const prevBtn = document.createElement('button');
     prevBtn.className = 'mtg-btn mtg-btn-secondary mtg-btn-sm';
-    prevBtn.textContent = 'Previous';
-    prevBtn.disabled = _currentPage <= 0;
+    prevBtn.textContent = '\u25C0 Previous';
+    prevBtn.disabled = _currentSpread <= 0;
     prevBtn.addEventListener('click', () => {
-        if (_currentPage > 0) {
-            _currentPage--;
+        if (_currentSpread > 0) {
+            _currentSpread--;
             renderContent();
         }
     });
     nav.appendChild(prevBtn);
 
+    // Spread label showing which pages are visible
     const pageLabel = document.createElement('span');
-    pageLabel.textContent = `Page ${_currentPage + 1} of ${binder.pages}`;
+    if (spreadPages.length === 2) {
+        pageLabel.textContent = `Pages ${spreadPages[0] + 1}\u2013${spreadPages[1] + 1} of ${totalPages}`;
+    } else {
+        pageLabel.textContent = `Page ${spreadPages[0] + 1} of ${totalPages}`;
+    }
     nav.appendChild(pageLabel);
 
     const nextBtn = document.createElement('button');
     nextBtn.className = 'mtg-btn mtg-btn-secondary mtg-btn-sm';
-    nextBtn.textContent = 'Next';
-    nextBtn.disabled = _currentPage >= binder.pages - 1;
+    nextBtn.textContent = 'Next \u25B6';
+    nextBtn.disabled = _currentSpread >= totalSpreads - 1;
     nextBtn.addEventListener('click', () => {
-        if (_currentPage < binder.pages - 1) {
-            _currentPage++;
+        if (_currentSpread < totalSpreads - 1) {
+            _currentSpread++;
             renderContent();
         }
     });
@@ -440,7 +481,7 @@ function openCreateBinderModal() {
                 selectedColor
             );
             _selectedBinderId = id;
-            _currentPage = 0;
+            _currentSpread = 0;
             closeModal();
             showToast(`Created binder "${name}"`, 'success');
             render();
@@ -545,6 +586,44 @@ function openSlotActionModal(binderId, position, slotData) {
 
         const actions = document.createElement('div');
         actions.style.cssText = 'display:flex;flex-direction:column;gap:8px;';
+
+        // Move to Page button
+        const binder = binders.getById(binderId);
+        if (binder && binder.pages > 1) {
+            const moveLabel = document.createElement('label');
+            moveLabel.textContent = 'Move to Page';
+            moveLabel.style.cssText = 'font-size:0.9em;color:#888;margin-bottom:4px;';
+            actions.appendChild(moveLabel);
+
+            const pageRow = document.createElement('div');
+            pageRow.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px;';
+
+            const currentPageIdx = Math.floor(position / binder.slots_per_page);
+            const grid = binders.getBinderGrid(binderId);
+
+            for (let p = 0; p < binder.pages; p++) {
+                if (p === currentPageIdx) continue;
+                const pageStart = p * binder.slots_per_page;
+                const pageSlots = grid.slice(pageStart, pageStart + binder.slots_per_page);
+                const emptyIdx = pageSlots.findIndex(s => s === null);
+                const hasEmpty = emptyIdx !== -1;
+
+                const pageBtn = document.createElement('button');
+                pageBtn.className = 'mtg-btn mtg-btn-secondary mtg-btn-sm';
+                pageBtn.textContent = `${p + 1}`;
+                pageBtn.title = hasEmpty ? `Move to page ${p + 1}` : `Page ${p + 1} is full`;
+                pageBtn.disabled = !hasEmpty;
+                pageBtn.addEventListener('click', () => {
+                    const targetPos = pageStart + emptyIdx;
+                    binders.moveCard(binderId, position, targetPos);
+                    closeModal();
+                    showToast(`Moved ${cardName} to page ${p + 1}`, 'success');
+                    render();
+                });
+                pageRow.appendChild(pageBtn);
+            }
+            actions.appendChild(pageRow);
+        }
 
         const removeBtn = document.createElement('button');
         removeBtn.className = 'mtg-btn mtg-btn-danger';
