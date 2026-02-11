@@ -22,7 +22,7 @@ let _filters = {
 
 let _sortBy = 'name';
 let _sortDir = 'asc';
-let _hideAllocated = false;
+let _availabilityFilter = 'all'; // 'all' | 'unassigned' | 'not-in-decks' | 'not-in-locked' | 'in-binders' | 'in-trade-binders'
 
 export function render() {
     renderSidebar();
@@ -83,16 +83,29 @@ function renderContent() {
     });
     topbar.appendChild(dirBtn);
 
-    // Available only toggle
-    const allocToggle = document.createElement('button');
-    allocToggle.className = 'mtg-btn mtg-btn-sm ' + (_hideAllocated ? 'mtg-filter-toggle-active' : 'mtg-btn-secondary');
-    allocToggle.textContent = _hideAllocated ? 'Available Only' : 'Show All';
-    allocToggle.title = 'Toggle to hide cards that are fully allocated to decks/binders';
-    allocToggle.addEventListener('click', () => {
-        _hideAllocated = !_hideAllocated;
+    // Availability filter dropdown
+    const availSelect = document.createElement('select');
+    availSelect.className = 'mtg-select';
+    const availOptions = [
+        { value: 'all', label: 'Show All' },
+        { value: 'unassigned', label: 'Unassigned Only' },
+        { value: 'not-in-decks', label: 'Not in Decks' },
+        { value: 'not-in-locked', label: 'Not in Locked' },
+        { value: 'in-binders', label: 'In Binders' },
+        { value: 'in-trade-binders', label: 'In Trade Binders' }
+    ];
+    for (const opt of availOptions) {
+        const o = document.createElement('option');
+        o.value = opt.value;
+        o.textContent = opt.label;
+        if (_availabilityFilter === opt.value) o.selected = true;
+        availSelect.appendChild(o);
+    }
+    availSelect.addEventListener('change', () => {
+        _availabilityFilter = availSelect.value;
         renderContent();
     });
-    topbar.appendChild(allocToggle);
+    topbar.appendChild(availSelect);
 
     // Spacer
     const spacer = document.createElement('div');
@@ -117,14 +130,49 @@ function renderContent() {
     // Sort
     entries = collection.sortCollection(entries, _sortBy, _sortDir);
 
-    // Hide fully allocated cards if toggle is on, reduce quantity to unassigned only
-    if (_hideAllocated) {
+    // Availability filter
+    if (_availabilityFilter !== 'all') {
         entries = entries.map(e => {
             const alloc = state.getCardAllocation(e.scryfallId);
-            if (alloc.unassigned < e.quantity) {
-                return { ...e, quantity: alloc.unassigned };
+            switch (_availabilityFilter) {
+                case 'unassigned': {
+                    // Only show copies not in any deck or binder
+                    return { ...e, quantity: Math.max(0, alloc.unassigned) };
+                }
+                case 'not-in-decks': {
+                    // Subtract all deck allocations, keep binder ones
+                    const deckUsed = alloc.decks.reduce((s, a) => s + a.quantity, 0);
+                    return { ...e, quantity: Math.max(0, e.quantity - deckUsed) };
+                }
+                case 'not-in-locked': {
+                    // Only subtract allocations from locked decks/binders
+                    let lockedUsed = 0;
+                    for (const a of alloc.decks) {
+                        const deck = state.getDeckById(a.deckId);
+                        if (deck && !deck.unlocked) lockedUsed += a.quantity;
+                    }
+                    for (const a of alloc.binders) {
+                        const binder = state.getBinderById(a.binderId);
+                        if (binder && !binder.unlocked) lockedUsed += a.quantity;
+                    }
+                    return { ...e, quantity: Math.max(0, e.quantity - lockedUsed) };
+                }
+                case 'in-binders': {
+                    // Only show cards that are in at least one binder, show binder qty
+                    const binderQty = alloc.binders.reduce((s, a) => s + a.quantity, 0);
+                    return { ...e, quantity: binderQty };
+                }
+                case 'in-trade-binders': {
+                    let tradeQty = 0;
+                    for (const a of alloc.binders) {
+                        const binder = state.getBinderById(a.binderId);
+                        if (binder && binder.trade) tradeQty += a.quantity;
+                    }
+                    return { ...e, quantity: tradeQty };
+                }
+                default:
+                    return e;
             }
-            return e;
         }).filter(e => e.quantity > 0);
     }
 

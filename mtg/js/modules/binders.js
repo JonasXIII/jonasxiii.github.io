@@ -36,6 +36,12 @@ export function setUnlocked(binderId, unlocked) {
     state.updateBinder(binderId, { ...binder, unlocked });
 }
 
+export function setTrade(binderId, trade) {
+    const binder = state.getBinderById(binderId);
+    if (!binder) return;
+    state.updateBinder(binderId, { ...binder, trade });
+}
+
 export function addCard(binderId, scryfallId, quantity, position) {
     const binder = state.getBinderById(binderId);
     if (!binder) return;

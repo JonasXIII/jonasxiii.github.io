@@ -181,6 +181,7 @@ export function createBinder(name, description, pages, slotsPerPage, color, unlo
         slots_per_page: slotsPerPage || 9,
         color: color || null,
         unlocked: unlocked || false,
+        trade: false,
         cards: []
     };
     _binders.push(binder);

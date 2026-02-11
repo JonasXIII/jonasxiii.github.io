@@ -1349,6 +1349,45 @@
     margin-left: 4px;
 }
 
+/* Trade Binder Button */
+.mtg-btn-trade-active {
+    background-color: #d69e2e;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: 600;
+    transition: background 0.15s ease;
+}
+
+.mtg-btn-trade-active:hover {
+    background-color: #b7791f;
+}
+
+.mtg-btn-trade-inactive {
+    background-color: #e2e8f0;
+    color: #4a5568;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: 600;
+    transition: background 0.15s ease;
+}
+
+.mtg-btn-trade-inactive:hover {
+    background-color: #cbd5e0;
+}
+
+/* Trade Icon in Sidebar */
+.mtg-trade-icon {
+    font-size: 0.75em;
+    margin-left: 4px;
+}
+
 /* Binder Layout Presets */
 .mtg-layout-presets {
     display: flex;

@@ -53,6 +53,14 @@ function renderSidebar() {
         name.style.flex = '1';
         li.appendChild(name);
 
+        if (binder.trade) {
+            const tradeIcon = document.createElement('span');
+            tradeIcon.className = 'mtg-trade-icon';
+            tradeIcon.textContent = '\u{1F4B0}';
+            tradeIcon.title = 'Trade binder';
+            li.appendChild(tradeIcon);
+        }
+
         if (binder.unlocked) {
             const unlockIcon = document.createElement('span');
             unlockIcon.className = 'mtg-unlock-icon';
@@ -163,6 +171,18 @@ function renderContent() {
         render();
     });
     actions.appendChild(lockBtn);
+
+    // Trade toggle
+    const tradeBtn = document.createElement('button');
+    tradeBtn.className = binder.trade ? 'mtg-btn-trade-active' : 'mtg-btn-trade-inactive';
+    tradeBtn.textContent = binder.trade ? '\u{1F4B0} Trade' : '\u{1F4B0} Not Trade';
+    tradeBtn.title = binder.trade ? 'Click to unmark as trade binder' : 'Click to mark as trade binder';
+    tradeBtn.addEventListener('click', () => {
+        binders.setTrade(_selectedBinderId, !binder.trade);
+        showToast(binder.trade ? `"${binder.name}" unmarked as trade binder` : `"${binder.name}" marked as trade binder`, 'info');
+        render();
+    });
+    actions.appendChild(tradeBtn);
 
     // Color change button
     const colorBtn = document.createElement('button');
