@@ -10,6 +10,8 @@ import {
 } from './ui-components.js';
 
 let _selectedDeckId = null;
+let _deckViewMode = 'piles'; // 'grid' | 'piles'
+let _deckGroupBy = 'type'; // 'type' | 'cmc' | 'color' | 'name'
 
 export function render() {
     renderSidebar();
@@ -202,6 +204,42 @@ function renderContent() {
     headerRow.appendChild(actions);
     content.appendChild(headerRow);
 
+    // View controls
+    const viewControls = document.createElement('div');
+    viewControls.style.cssText = 'display:flex;gap:8px;align-items:center;margin-bottom:12px;flex-wrap:wrap;';
+
+    for (const mode of ['piles', 'grid']) {
+        const btn = document.createElement('button');
+        btn.className = 'mtg-btn mtg-btn-sm ' + (_deckViewMode === mode ? 'mtg-btn-primary' : 'mtg-btn-secondary');
+        btn.textContent = mode.charAt(0).toUpperCase() + mode.slice(1);
+        btn.addEventListener('click', () => { _deckViewMode = mode; renderContent(); });
+        viewControls.appendChild(btn);
+    }
+
+    const groupLabel = document.createElement('span');
+    groupLabel.textContent = 'Group:';
+    groupLabel.style.cssText = 'margin-left:12px;font-size:0.85em;color:#888;';
+    viewControls.appendChild(groupLabel);
+
+    const groupSelect = document.createElement('select');
+    groupSelect.className = 'mtg-select';
+    for (const opt of [
+        { value: 'type', label: 'Type' },
+        { value: 'cmc', label: 'Mana Value' },
+        { value: 'color', label: 'Color' },
+        { value: 'name', label: 'Name (A-Z)' }
+    ]) {
+        const o = document.createElement('option');
+        o.value = opt.value;
+        o.textContent = opt.label;
+        if (_deckGroupBy === opt.value) o.selected = true;
+        groupSelect.appendChild(o);
+    }
+    groupSelect.addEventListener('change', () => { _deckGroupBy = groupSelect.value; renderContent(); });
+    viewControls.appendChild(groupSelect);
+
+    content.appendChild(viewControls);
+
     // Card lists by board
     const boards = decks.getCardsByBoard(_selectedDeckId);
 
@@ -216,83 +254,253 @@ function renderContent() {
         sectionHeader.textContent = `${boardName.charAt(0).toUpperCase() + boardName.slice(1)} (${totalInBoard})`;
         section.appendChild(sectionHeader);
 
+        // Make section header a drop zone for board changes
+        sectionHeader.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            sectionHeader.style.background = '#e8ecff';
+        });
+        sectionHeader.addEventListener('dragleave', () => { sectionHeader.style.background = ''; });
+        sectionHeader.addEventListener('drop', (e) => {
+            e.preventDefault();
+            sectionHeader.style.background = '';
+            try {
+                const data = JSON.parse(e.dataTransfer.getData('application/json'));
+                if (data.fromBoard !== boardName) {
+                    decks.removeCard(_selectedDeckId, data.scryfallId, data.fromBoard);
+                    decks.addCard(_selectedDeckId, data.scryfallId, data.quantity, boardName);
+                    showToast(`Moved to ${boardName}`, 'success');
+                    render();
+                }
+            } catch (err) {}
+        });
+
         if (cards.length === 0) {
             const empty = document.createElement('p');
             empty.style.cssText = 'color:#aaa;font-size:0.9em;font-style:italic;';
-            empty.textContent = 'No cards yet. Click "+ Add Card" to get started.';
+            empty.textContent = 'No cards yet. Click "+ Add Card" or drag cards here.';
             section.appendChild(empty);
+        } else if (_deckViewMode === 'piles') {
+            renderPileView(section, cards, boardName);
         } else {
-            const cardGrid = document.createElement('div');
-            cardGrid.className = 'mtg-card-grid';
-
-            for (const card of cards) {
-                const tile = document.createElement('div');
-                tile.className = 'mtg-card-tile';
-                tile.dataset.scryfallId = card.scryfall_id;
-
-                const imgUri = getCardImageUri(card.cardData, 'normal');
-                if (imgUri) {
-                    const img = document.createElement('img');
-                    img.src = imgUri;
-                    img.alt = card.cardData?.name || 'Card';
-                    img.loading = 'lazy';
-                    tile.appendChild(img);
-                } else {
-                    const ph = document.createElement('div');
-                    ph.className = 'mtg-card-placeholder';
-                    ph.textContent = card.cardData?.name || card.scryfall_id;
-                    tile.appendChild(ph);
-                }
-
-                // Quantity badge
-                if (card.quantity > 1) {
-                    const badge = document.createElement('div');
-                    badge.className = 'mtg-deck-qty-badge';
-                    badge.textContent = card.quantity + 'x';
-                    tile.appendChild(badge);
-                }
-
-                // Over-allocation warning
-                const alloc = state.getCardAllocation(card.scryfall_id);
-                if (alloc.overAllocated) {
-                    tile.style.boxShadow = '0 0 0 3px #f56565';
-                }
-
-                // Hover overlay with +/- buttons
-                const overlay = document.createElement('div');
-                overlay.className = 'mtg-card-overlay';
-
-                const plusBtn = document.createElement('button');
-                plusBtn.className = 'mtg-card-add-btn';
-                plusBtn.textContent = '+';
-                plusBtn.title = 'Add one more';
-                plusBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    decks.setCardQuantity(_selectedDeckId, card.scryfall_id, card.quantity + 1, boardName);
-                    render();
-                });
-                overlay.appendChild(plusBtn);
-
-                const minusBtn = document.createElement('button');
-                minusBtn.className = 'mtg-card-menu-btn';
-                minusBtn.textContent = '\u2212';
-                minusBtn.title = card.quantity === 1 ? 'Remove from deck' : 'Remove one';
-                minusBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    decks.setCardQuantity(_selectedDeckId, card.scryfall_id, card.quantity - 1, boardName);
-                    render();
-                });
-                overlay.appendChild(minusBtn);
-
-                tile.appendChild(overlay);
-                cardGrid.appendChild(tile);
-            }
-
-            section.appendChild(cardGrid);
+            renderGridView(section, cards, boardName);
         }
 
         content.appendChild(section);
     }
+}
+
+// --- Deck Tile Factory ---
+
+function createDeckTile(card, boardName) {
+    const tile = document.createElement('div');
+    tile.className = 'mtg-card-tile';
+    tile.dataset.scryfallId = card.scryfall_id;
+
+    // Foil detection
+    if (card.scryfall_id.includes(':foil')) {
+        tile.classList.add('mtg-card-foil');
+    }
+
+    const imgUri = getCardImageUri(card.cardData, 'normal');
+    if (imgUri) {
+        const img = document.createElement('img');
+        img.src = imgUri;
+        img.alt = card.cardData?.name || 'Card';
+        img.loading = 'lazy';
+        tile.appendChild(img);
+    } else {
+        const ph = document.createElement('div');
+        ph.className = 'mtg-card-placeholder';
+        ph.textContent = card.cardData?.name || card.scryfall_id;
+        tile.appendChild(ph);
+    }
+
+    // Quantity badge
+    if (card.quantity > 1) {
+        const badge = document.createElement('div');
+        badge.className = 'mtg-deck-qty-badge';
+        badge.textContent = card.quantity + 'x';
+        tile.appendChild(badge);
+    }
+
+    // Over-allocation warning
+    const alloc = state.getCardAllocation(card.scryfall_id);
+    if (alloc.overAllocated) {
+        tile.style.boxShadow = '0 0 0 3px #f56565';
+    }
+
+    // Hover overlay with +/- buttons
+    const overlay = document.createElement('div');
+    overlay.className = 'mtg-card-overlay';
+
+    const plusBtn = document.createElement('button');
+    plusBtn.className = 'mtg-card-add-btn';
+    plusBtn.textContent = '+';
+    plusBtn.title = 'Add one more';
+    plusBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        decks.setCardQuantity(_selectedDeckId, card.scryfall_id, card.quantity + 1, boardName);
+        render();
+    });
+    overlay.appendChild(plusBtn);
+
+    const minusBtn = document.createElement('button');
+    minusBtn.className = 'mtg-card-menu-btn';
+    minusBtn.textContent = '\u2212';
+    minusBtn.title = card.quantity === 1 ? 'Remove from deck' : 'Remove one';
+    minusBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        decks.setCardQuantity(_selectedDeckId, card.scryfall_id, card.quantity - 1, boardName);
+        render();
+    });
+    overlay.appendChild(minusBtn);
+
+    tile.appendChild(overlay);
+
+    // Drag support
+    tile.draggable = true;
+    tile.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('application/json', JSON.stringify({
+            scryfallId: card.scryfall_id,
+            fromBoard: boardName,
+            quantity: card.quantity
+        }));
+        e.dataTransfer.effectAllowed = 'move';
+        tile.classList.add('mtg-pile-dragging');
+    });
+    tile.addEventListener('dragend', () => {
+        tile.classList.remove('mtg-pile-dragging');
+        document.querySelectorAll('.mtg-pile-drag-over').forEach(el => el.classList.remove('mtg-pile-drag-over'));
+    });
+
+    return tile;
+}
+
+// --- Grid View ---
+
+function renderGridView(container, cards, boardName) {
+    // Sort cards
+    const sorted = sortCards([...cards], _deckGroupBy);
+    const cardGrid = document.createElement('div');
+    cardGrid.className = 'mtg-card-grid';
+
+    for (const card of sorted) {
+        const tile = createDeckTile(card, boardName);
+        cardGrid.appendChild(tile);
+    }
+    container.appendChild(cardGrid);
+}
+
+// --- Pile View ---
+
+function renderPileView(container, cards, boardName) {
+    const groups = groupCards(cards, _deckGroupBy);
+    const pileContainer = document.createElement('div');
+    pileContainer.className = 'mtg-pile-container';
+
+    for (const [groupName, groupCards] of Object.entries(groups)) {
+        if (groupCards.length === 0) continue;
+
+        const pile = document.createElement('div');
+        pile.className = 'mtg-pile';
+
+        const header = document.createElement('div');
+        header.className = 'mtg-pile-header';
+        const totalQty = groupCards.reduce((s, c) => s + c.quantity, 0);
+        header.textContent = `${groupName} (${totalQty})`;
+        pile.appendChild(header);
+
+        const stack = document.createElement('div');
+        stack.className = 'mtg-pile-stack';
+
+        // Sort within group by name
+        groupCards.sort((a, b) => (a.cardData?.name || '').localeCompare(b.cardData?.name || ''));
+
+        for (const card of groupCards) {
+            const tile = createDeckTile(card, boardName);
+            tile.classList.add('mtg-pile-card');
+            stack.appendChild(tile);
+        }
+
+        pile.appendChild(stack);
+        pileContainer.appendChild(pile);
+    }
+
+    container.appendChild(pileContainer);
+}
+
+// --- Card Grouping ---
+
+function groupCards(cards, groupBy) {
+    switch (groupBy) {
+        case 'type': return groupByType(cards);
+        case 'cmc': return groupByCmc(cards);
+        case 'color': return groupByColor(cards);
+        default: return { 'All Cards': [...cards] };
+    }
+}
+
+function groupByType(cards) {
+    const groups = {};
+    const typeOrder = ['Creatures', 'Instants', 'Sorceries', 'Enchantments', 'Artifacts', 'Planeswalkers', 'Lands', 'Other'];
+    for (const t of typeOrder) groups[t] = [];
+
+    for (const card of cards) {
+        const type = (card.cardData?.type_line || '').toLowerCase();
+        if (type.includes('creature')) groups['Creatures'].push(card);
+        else if (type.includes('instant')) groups['Instants'].push(card);
+        else if (type.includes('sorcery')) groups['Sorceries'].push(card);
+        else if (type.includes('enchantment')) groups['Enchantments'].push(card);
+        else if (type.includes('artifact')) groups['Artifacts'].push(card);
+        else if (type.includes('planeswalker')) groups['Planeswalkers'].push(card);
+        else if (type.includes('land')) groups['Lands'].push(card);
+        else groups['Other'].push(card);
+    }
+    return groups;
+}
+
+function groupByCmc(cards) {
+    const groups = {};
+    for (let i = 0; i <= 7; i++) groups[i === 7 ? '7+' : String(i)] = [];
+    for (const card of cards) {
+        const cmc = Math.min(Math.floor(card.cardData?.cmc || 0), 7);
+        const key = cmc === 7 ? '7+' : String(cmc);
+        groups[key].push(card);
+    }
+    return groups;
+}
+
+function groupByColor(cards) {
+    const groups = { 'White': [], 'Blue': [], 'Black': [], 'Red': [], 'Green': [], 'Multi': [], 'Colorless': [] };
+    for (const card of cards) {
+        const colors = card.cardData?.colors || [];
+        if (colors.length === 0) groups['Colorless'].push(card);
+        else if (colors.length > 1) groups['Multi'].push(card);
+        else {
+            const map = { W: 'White', U: 'Blue', B: 'Black', R: 'Red', G: 'Green' };
+            groups[map[colors[0]] || 'Colorless'].push(card);
+        }
+    }
+    return groups;
+}
+
+function sortCards(cards, sortBy) {
+    return cards.sort((a, b) => {
+        switch (sortBy) {
+            case 'cmc': return (a.cardData?.cmc || 0) - (b.cardData?.cmc || 0);
+            case 'color': {
+                const ca = (a.cardData?.colors || []).join('');
+                const cb = (b.cardData?.colors || []).join('');
+                return ca.localeCompare(cb) || (a.cardData?.name || '').localeCompare(b.cardData?.name || '');
+            }
+            case 'type': {
+                const ta = a.cardData?.type_line || '';
+                const tb = b.cardData?.type_line || '';
+                return ta.localeCompare(tb) || (a.cardData?.name || '').localeCompare(b.cardData?.name || '');
+            }
+            default: return (a.cardData?.name || '').localeCompare(b.cardData?.name || '');
+        }
+    });
 }
 
 function renderStats() {

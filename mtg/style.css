@@ -1637,6 +1637,89 @@
     color: white !important;
 }
 
+/* =============================================
+   PILE VIEW - Archidekt-style stacked cards
+   ============================================= */
+
+.mtg-pile-container {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    align-items: flex-start;
+}
+
+.mtg-pile {
+    flex: 0 0 auto;
+    width: 160px;
+    min-width: 140px;
+}
+
+.mtg-pile-header {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+    font-weight: 600;
+    padding: 4px 0;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 4px;
+    white-space: nowrap;
+}
+
+.mtg-pile-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stacked overlapping cards */
+.mtg-pile-card {
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: grab;
+    transition: margin-top 0.25s ease, transform 0.2s ease;
+    z-index: 1;
+}
+
+.mtg-pile-card + .mtg-pile-card {
+    margin-top: -80%;
+}
+
+/* Fan out on pile hover */
+.mtg-pile-stack:hover .mtg-pile-card + .mtg-pile-card {
+    margin-top: -60%;
+}
+
+/* Individual card hover - shift right and lift */
+.mtg-pile-card:hover {
+    transform: translateX(8px) scale(1.03);
+    z-index: 10;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Active grab cursor */
+.mtg-pile-card:active {
+    cursor: grabbing;
+}
+
+/* Dragging state */
+.mtg-pile-dragging {
+    opacity: 0.4;
+}
+
+/* Drop zone highlight */
+.mtg-pile-drag-over {
+    background: rgba(102, 126, 234, 0.08);
+    border-radius: 8px;
+}
+
+/* Board section header as drop target */
+.mtg-deck-section h3 {
+    transition: background 0.15s, padding 0.15s;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
 @media (max-width: 900px) {
     .mtg-layout {
         flex-direction: column;

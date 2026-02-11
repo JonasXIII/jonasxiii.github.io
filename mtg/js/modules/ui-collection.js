@@ -117,12 +117,15 @@ function renderContent() {
     // Sort
     entries = collection.sortCollection(entries, _sortBy, _sortDir);
 
-    // Hide fully allocated cards if toggle is on
+    // Hide fully allocated cards if toggle is on, reduce quantity to unassigned only
     if (_hideAllocated) {
-        entries = entries.filter(e => {
+        entries = entries.map(e => {
             const alloc = state.getCardAllocation(e.scryfallId);
-            return alloc.unassigned > 0;
-        });
+            if (alloc.unassigned < e.quantity) {
+                return { ...e, quantity: alloc.unassigned };
+            }
+            return e;
+        }).filter(e => e.quantity > 0);
     }
 
     // Compute filtered stats and update header
