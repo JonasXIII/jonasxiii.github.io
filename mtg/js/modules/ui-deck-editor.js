@@ -254,13 +254,17 @@ function renderContent() {
         sectionHeader.textContent = `${boardName.charAt(0).toUpperCase() + boardName.slice(1)} (${totalInBoard})`;
         section.appendChild(sectionHeader);
 
-        // Make section header a drop zone for board changes
-        sectionHeader.addEventListener('dragover', (e) => {
+        // Make entire section a drop zone for board changes
+        section.addEventListener('dragover', (e) => {
             e.preventDefault();
             sectionHeader.style.background = '#e8ecff';
         });
-        sectionHeader.addEventListener('dragleave', () => { sectionHeader.style.background = ''; });
-        sectionHeader.addEventListener('drop', (e) => {
+        section.addEventListener('dragleave', (e) => {
+            if (!section.contains(e.relatedTarget)) {
+                sectionHeader.style.background = '';
+            }
+        });
+        section.addEventListener('drop', (e) => {
             e.preventDefault();
             sectionHeader.style.background = '';
             try {
@@ -307,6 +311,7 @@ function createDeckTile(card, boardName) {
         img.src = imgUri;
         img.alt = card.cardData?.name || 'Card';
         img.loading = 'lazy';
+        img.draggable = false; // prevent native image drag
         tile.appendChild(img);
     } else {
         const ph = document.createElement('div');
