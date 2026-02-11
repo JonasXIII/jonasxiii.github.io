@@ -1677,13 +1677,14 @@
     border-radius: 8px;
     overflow: hidden;
     cursor: grab;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.3s ease;
     z-index: 1;
     position: relative;
+    will-change: transform;
 }
 
 .mtg-pile-card + .mtg-pile-card {
-    margin-top: -88%;
+    margin-top: -93%;
 }
 
 /* Hovered card: highlight it */
@@ -1694,8 +1695,8 @@
 
 /* All cards AFTER the hovered card slide down to reveal it fully */
 .mtg-pile-card:hover ~ .mtg-pile-card {
-    transform: translateY(140px);
-    transition: transform 0.2s ease;
+    transform: translateY(150px);
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 /* Active grab cursor */
