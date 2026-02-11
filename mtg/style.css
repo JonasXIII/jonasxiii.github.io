@@ -1651,8 +1651,8 @@
 
 .mtg-pile {
     flex: 0 0 auto;
-    width: 160px;
-    min-width: 140px;
+    width: 200px;
+    min-width: 180px;
 }
 
 .mtg-pile-header {
@@ -1684,7 +1684,7 @@
 }
 
 .mtg-pile-card + .mtg-pile-card {
-    margin-top: -93%;
+    margin-top: -112%;
 }
 
 /* Hovered card: highlight it */
@@ -1695,7 +1695,7 @@
 
 /* All cards AFTER the hovered card slide down to reveal it fully */
 .mtg-pile-card:hover ~ .mtg-pile-card {
-    transform: translateY(150px);
+    transform: translateY(224px);
     transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
