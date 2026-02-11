@@ -112,6 +112,96 @@ export function getTotalCards(deckId) {
     return deck.cards.reduce((sum, c) => sum + c.quantity, 0);
 }
 
+// --- Custom Pile Management ---
+
+export function getCustomPiles(deckId) {
+    const deck = state.getDeckById(deckId);
+    return deck?.custom_piles || [];
+}
+
+export function addCustomPile(deckId, name) {
+    const deck = state.getDeckById(deckId);
+    if (!deck) return;
+    if (!deck.custom_piles) deck.custom_piles = [];
+    const id = 'pile-' + Date.now();
+    deck.custom_piles.push({ id, name });
+    state.updateDeck(deckId, deck);
+    return id;
+}
+
+export function renameCustomPile(deckId, pileId, newName) {
+    const deck = state.getDeckById(deckId);
+    if (!deck) return;
+    const pile = (deck.custom_piles || []).find(p => p.id === pileId);
+    if (pile) {
+        pile.name = newName;
+        state.updateDeck(deckId, deck);
+    }
+}
+
+export function removeCustomPile(deckId, pileId) {
+    const deck = state.getDeckById(deckId);
+    if (!deck) return;
+    deck.custom_piles = (deck.custom_piles || []).filter(p => p.id !== pileId);
+    for (const card of deck.cards) {
+        if (card.custom_pile === pileId) card.custom_pile = null;
+    }
+    state.updateDeck(deckId, deck);
+}
+
+export function reorderCustomPiles(deckId, orderedPileIds) {
+    const deck = state.getDeckById(deckId);
+    if (!deck || !deck.custom_piles) return;
+    const pileMap = {};
+    for (const p of deck.custom_piles) pileMap[p.id] = p;
+    deck.custom_piles = orderedPileIds.map(id => pileMap[id]).filter(Boolean);
+    state.updateDeck(deckId, deck);
+}
+
+export function setCardCustomPile(deckId, scryfallId, board, pileId) {
+    const deck = state.getDeckById(deckId);
+    if (!deck) return;
+    const card = deck.cards.find(c => c.scryfall_id === scryfallId && c.board === board);
+    if (card) {
+        card.custom_pile = pileId || null;
+        state.updateDeck(deckId, deck);
+    }
+}
+
+export function setCustomPileSort(deckId, sortMode) {
+    const deck = state.getDeckById(deckId);
+    if (!deck) return;
+    deck.custom_pile_sort = sortMode;
+    state.updateDeck(deckId, deck);
+}
+
+export function reorderCardInPile(deckId, scryfallId, board, newIndex) {
+    const deck = state.getDeckById(deckId);
+    if (!deck) return;
+
+    const cardEntry = deck.cards.find(c => c.scryfall_id === scryfallId && c.board === board);
+    if (!cardEntry) return;
+    const pileId = cardEntry.custom_pile || null;
+
+    // Get all cards in this pile, sorted by current position
+    const pileCards = deck.cards
+        .filter(c => c.board === board && (c.custom_pile || null) === pileId)
+        .sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity));
+
+    const cardIdx = pileCards.findIndex(c => c.scryfall_id === scryfallId);
+    if (cardIdx === -1) return;
+    const [card] = pileCards.splice(cardIdx, 1);
+    pileCards.splice(newIndex, 0, card);
+
+    // Reassign positions
+    pileCards.forEach((c, i) => {
+        const dc = deck.cards.find(d => d.scryfall_id === c.scryfall_id && d.board === c.board);
+        if (dc) dc.position = i;
+    });
+
+    state.updateDeck(deckId, deck);
+}
+
 export function getDeckStats(deckId) {
     const deck = state.getDeckById(deckId);
     if (!deck) return null;

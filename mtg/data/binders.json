@@ -1,1 +1,49 @@
-[]
+[
+  {
+    "id": "binder-1770840125108",
+    "name": "Black Binder",
+    "description": "",
+    "pages": 20,
+    "slots_per_page": 12,
+    "color": "#2d3748",
+    "unlocked": true,
+    "trade": false,
+    "cards": [
+      {
+        "scryfall_id": "7a1cc51f-91bc-4c0a-8fee-84eef1479cd8",
+        "quantity": 1,
+        "position": 0
+      },
+      {
+        "scryfall_id": "609c34f9-9f53-4773-a02b-517209024fc2",
+        "quantity": 1,
+        "position": 1
+      },
+      {
+        "scryfall_id": "6296e928-6995-469f-a5fb-acb3e0989659",
+        "quantity": 1,
+        "position": 2
+      },
+      {
+        "scryfall_id": "77759762-8684-4513-92c5-72c86d43b8bd",
+        "quantity": 1,
+        "position": 3
+      },
+      {
+        "scryfall_id": "801b124d-3546-4882-a6e1-c9c353628a18",
+        "quantity": 1,
+        "position": 4
+      },
+      {
+        "scryfall_id": "8690cbcc-f8fd-41f7-9e28-e61c12b04014",
+        "quantity": 1,
+        "position": 5
+      },
+      {
+        "scryfall_id": "8d727b9b-6114-414d-9172-16b6e1db41cc",
+        "quantity": 1,
+        "position": 6
+      }
+    ]
+  }
+]

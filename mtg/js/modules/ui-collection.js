@@ -20,7 +20,7 @@ let _filters = {
     colorMode: 'include'
 };
 
-let _sortBy = 'name';
+let _sortCriteria = [{ field: 'name' }];
 let _sortDir = 'asc';
 let _availabilityFilter = 'all'; // 'all' | 'unassigned' | 'not-in-decks' | 'not-in-locked' | 'in-binders' | 'in-trade-binders'
 
@@ -47,41 +47,15 @@ function renderContent() {
     const topbar = document.createElement('div');
     topbar.className = 'mtg-collection-topbar';
 
-    // Sort dropdown
-    const sortSelect = document.createElement('select');
-    sortSelect.className = 'mtg-select';
-    const sortOptions = [
-        { value: 'name', label: 'Name' },
-        { value: 'cmc', label: 'Mana Value' },
-        { value: 'color', label: 'Color' },
-        { value: 'rarity', label: 'Rarity' },
-        { value: 'set', label: 'Set' },
-        { value: 'price', label: 'Price' },
-        { value: 'quantity', label: 'Quantity' }
-    ];
-    for (const opt of sortOptions) {
-        const o = document.createElement('option');
-        o.value = opt.value;
-        o.textContent = 'Sort: ' + opt.label;
-        if (_sortBy === opt.value) o.selected = true;
-        sortSelect.appendChild(o);
-    }
-    sortSelect.addEventListener('change', () => {
-        _sortBy = sortSelect.value;
+    // Multi-level sort builder
+    const sortBuilder = renderSortBuilder(_sortCriteria, _sortDir, (newCriteria) => {
+        _sortCriteria = newCriteria;
+        renderContent();
+    }, (newDir) => {
+        _sortDir = newDir;
         renderContent();
     });
-    topbar.appendChild(sortSelect);
-
-    // Sort direction toggle
-    const dirBtn = document.createElement('button');
-    dirBtn.className = 'mtg-btn mtg-btn-secondary mtg-btn-sm';
-    dirBtn.textContent = _sortDir === 'asc' ? 'Asc' : 'Desc';
-    dirBtn.addEventListener('click', () => {
-        _sortDir = _sortDir === 'asc' ? 'desc' : 'asc';
-        dirBtn.textContent = _sortDir === 'asc' ? 'Asc' : 'Desc';
-        renderContent();
-    });
-    topbar.appendChild(dirBtn);
+    topbar.appendChild(sortBuilder);
 
     // Availability filter dropdown
     const availSelect = document.createElement('select');
@@ -128,7 +102,7 @@ function renderContent() {
     entries = collection.filterCollection(entries, _filters);
 
     // Sort
-    entries = collection.sortCollection(entries, _sortBy, _sortDir);
+    entries = collection.sortCollection(entries, _sortCriteria, _sortDir);
 
     // Availability filter
     if (_availabilityFilter !== 'all') {
@@ -793,6 +767,89 @@ function openAllocationModal(scryfallId, cardData) {
         }
         body.appendChild(summary);
     });
+}
+
+// --- Sort Builder UI ---
+
+const SORT_FIELDS = [
+    { value: 'name', label: 'Name' },
+    { value: 'cmc', label: 'Mana Value' },
+    { value: 'color', label: 'Color' },
+    { value: 'rarity', label: 'Rarity' },
+    { value: 'set', label: 'Set' },
+    { value: 'price', label: 'Price' },
+    { value: 'quantity', label: 'Quantity' },
+    { value: 'type', label: 'Type' }
+];
+
+function renderSortBuilder(criteria, direction, onCriteriaChange, onDirectionChange) {
+    const wrap = document.createElement('div');
+    wrap.className = 'mtg-sort-builder';
+
+    for (let i = 0; i < criteria.length; i++) {
+        if (i > 0) {
+            const thenLabel = document.createElement('span');
+            thenLabel.className = 'mtg-sort-then';
+            thenLabel.textContent = 'then';
+            wrap.appendChild(thenLabel);
+        }
+
+        const select = document.createElement('select');
+        select.className = 'mtg-select';
+        const usedFields = criteria.map((c, idx) => idx !== i ? c.field : null).filter(Boolean);
+        for (const f of SORT_FIELDS) {
+            if (usedFields.includes(f.value)) continue;
+            const o = document.createElement('option');
+            o.value = f.value;
+            o.textContent = (i === 0 ? 'Sort: ' : '') + f.label;
+            if (criteria[i].field === f.value) o.selected = true;
+            select.appendChild(o);
+        }
+        const idx = i;
+        select.addEventListener('change', () => {
+            const newCriteria = [...criteria];
+            newCriteria[idx] = { field: select.value };
+            onCriteriaChange(newCriteria);
+        });
+        wrap.appendChild(select);
+
+        if (i > 0) {
+            const removeBtn = document.createElement('button');
+            removeBtn.className = 'mtg-btn mtg-btn-secondary mtg-btn-sm mtg-sort-remove';
+            removeBtn.textContent = '\u00d7';
+            removeBtn.title = 'Remove sort level';
+            const removeIdx = i;
+            removeBtn.addEventListener('click', () => {
+                onCriteriaChange(criteria.filter((_, j) => j !== removeIdx));
+            });
+            wrap.appendChild(removeBtn);
+        }
+    }
+
+    if (criteria.length < 3) {
+        const addBtn = document.createElement('button');
+        addBtn.className = 'mtg-btn mtg-btn-secondary mtg-btn-sm';
+        addBtn.textContent = '+ Sort';
+        addBtn.title = 'Add sort level';
+        addBtn.addEventListener('click', () => {
+            const usedFields = criteria.map(c => c.field);
+            const nextField = SORT_FIELDS.find(f => !usedFields.includes(f.value));
+            if (nextField) {
+                onCriteriaChange([...criteria, { field: nextField.value }]);
+            }
+        });
+        wrap.appendChild(addBtn);
+    }
+
+    const dirBtn = document.createElement('button');
+    dirBtn.className = 'mtg-btn mtg-btn-secondary mtg-btn-sm';
+    dirBtn.textContent = direction === 'asc' ? 'Asc' : 'Desc';
+    dirBtn.addEventListener('click', () => {
+        onDirectionChange(direction === 'asc' ? 'desc' : 'asc');
+    });
+    wrap.appendChild(dirBtn);
+
+    return wrap;
 }
 
 // Listen for state changes to re-render

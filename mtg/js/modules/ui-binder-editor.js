@@ -234,13 +234,50 @@ function renderContent() {
         const slot = document.createElement('div');
         slot.className = 'mtg-binder-slot' + (slotData ? ' filled' : '');
 
+        // Make all slots drop targets
+        slot.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            slot.classList.add('mtg-binder-slot-drop-target');
+        });
+        slot.addEventListener('dragleave', () => {
+            slot.classList.remove('mtg-binder-slot-drop-target');
+        });
+        slot.addEventListener('drop', (e) => {
+            e.preventDefault();
+            slot.classList.remove('mtg-binder-slot-drop-target');
+            try {
+                const data = JSON.parse(e.dataTransfer.getData('application/json'));
+                if (data.binderId === _selectedBinderId && data.fromPosition !== absolutePosition) {
+                    binders.moveCard(_selectedBinderId, data.fromPosition, absolutePosition);
+                    showToast('Card moved', 'success');
+                    render();
+                }
+            } catch (err) {}
+        });
+
         if (slotData && slotData.cardData) {
+            // Make filled slots draggable
+            slot.draggable = true;
+            slot.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('application/json', JSON.stringify({
+                    binderId: _selectedBinderId,
+                    fromPosition: absolutePosition,
+                    scryfallId: slotData.scryfall_id
+                }));
+                e.dataTransfer.effectAllowed = 'move';
+                slot.classList.add('mtg-binder-slot-dragging');
+            });
+            slot.addEventListener('dragend', () => {
+                slot.classList.remove('mtg-binder-slot-dragging');
+            });
+
             const imgUri = getCardImageUri(slotData.cardData, 'normal');
             if (imgUri) {
                 const img = document.createElement('img');
                 img.src = imgUri;
                 img.alt = slotData.cardData.name;
                 img.loading = 'lazy';
+                img.draggable = false;
                 slot.appendChild(img);
             }
 

@@ -112,48 +112,62 @@ export function filterCollection(entries, filters) {
     });
 }
 
-// Sort collection entries
-export function sortCollection(entries, sortBy = 'name', direction = 'asc') {
+// Compare two entries by a single field (reusable comparator)
+export function compareByField(a, b, field) {
+    const cdA = a.cardData || {};
+    const cdB = b.cardData || {};
+
+    switch (field) {
+        case 'name':
+            return (cdA.name || a.name || '').localeCompare(cdB.name || b.name || '');
+        case 'cmc':
+            return (cdA.cmc || 0) - (cdB.cmc || 0);
+        case 'color': {
+            const colorOrder = { W: 0, U: 1, B: 2, R: 3, G: 4 };
+            const ca = (cdA.colors || []).map(c => colorOrder[c] ?? 9);
+            const cb = (cdB.colors || []).map(c => colorOrder[c] ?? 9);
+            if (ca.length !== cb.length) return ca.length - cb.length;
+            for (let i = 0; i < Math.min(ca.length, cb.length); i++) {
+                if (ca[i] !== cb[i]) return ca[i] - cb[i];
+            }
+            return 0;
+        }
+        case 'set':
+            return (cdA.set || a.set || '').localeCompare(cdB.set || b.set || '');
+        case 'rarity': {
+            const rarityOrder = { mythic: 0, rare: 1, uncommon: 2, common: 3, special: 4, bonus: 5 };
+            return (rarityOrder[cdA.rarity] ?? 9) - (rarityOrder[cdB.rarity] ?? 9);
+        }
+        case 'price': {
+            const foilA = a.finish && a.finish !== 'normal';
+            const foilB = b.finish && b.finish !== 'normal';
+            const priceA = parseFloat(foilA ? (cdA.prices?.usd_foil || cdA.prices?.usd) : cdA.prices?.usd) || 0;
+            const priceB = parseFloat(foilB ? (cdB.prices?.usd_foil || cdB.prices?.usd) : cdB.prices?.usd) || 0;
+            return priceA - priceB;
+        }
+        case 'quantity':
+            return (a.quantity || 0) - (b.quantity || 0);
+        case 'type':
+            return (cdA.type_line || '').localeCompare(cdB.type_line || '');
+        default:
+            return 0;
+    }
+}
+
+// Sort collection entries (supports multi-level sorting)
+export function sortCollection(entries, sortCriteria = [{ field: 'name' }], direction = 'asc') {
+    // Backward compat: accept a string
+    if (typeof sortCriteria === 'string') {
+        sortCriteria = [{ field: sortCriteria }];
+    }
+
     const sorted = [...entries];
     sorted.sort((a, b) => {
-        const cdA = a.cardData || {};
-        const cdB = b.cardData || {};
-        let cmp = 0;
-
-        switch (sortBy) {
-            case 'name':
-                cmp = (cdA.name || a.name || '').localeCompare(cdB.name || b.name || '');
-                break;
-            case 'cmc':
-                cmp = (cdA.cmc || 0) - (cdB.cmc || 0);
-                break;
-            case 'color':
-                cmp = (cdA.colors || []).join('').localeCompare((cdB.colors || []).join(''));
-                break;
-            case 'set':
-                cmp = (cdA.set || a.set || '').localeCompare(cdB.set || b.set || '');
-                break;
-            case 'rarity': {
-                const rarityOrder = { mythic: 0, rare: 1, uncommon: 2, common: 3, special: 4, bonus: 5 };
-                cmp = (rarityOrder[cdA.rarity] ?? 9) - (rarityOrder[cdB.rarity] ?? 9);
-                break;
-            }
-            case 'price': {
-                const foilA = a.finish && a.finish !== 'normal';
-                const foilB = b.finish && b.finish !== 'normal';
-                const priceA = parseFloat(foilA ? (cdA.prices?.usd_foil || cdA.prices?.usd) : cdA.prices?.usd) || 0;
-                const priceB = parseFloat(foilB ? (cdB.prices?.usd_foil || cdB.prices?.usd) : cdB.prices?.usd) || 0;
-                cmp = priceA - priceB;
-                break;
-            }
-            case 'quantity':
-                cmp = (a.quantity || 0) - (b.quantity || 0);
-                break;
-            default:
-                cmp = 0;
+        for (const criterion of sortCriteria) {
+            const cmp = compareByField(a, b, criterion.field);
+            if (cmp !== 0) return direction === 'desc' ? -cmp : cmp;
         }
-
-        return direction === 'desc' ? -cmp : cmp;
+        return 0;
     });
     return sorted;
 }
