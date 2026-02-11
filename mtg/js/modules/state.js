@@ -20,6 +20,10 @@ export function getRealScryfallId(key) {
     return colonIdx !== -1 ? key.substring(0, colonIdx) : key;
 }
 
+// --- Constants ---
+
+export const MAX_UNLOCKED = 6;
+
 // --- Getters ---
 
 export function getCollection() { return _collection; }
@@ -136,9 +140,9 @@ export function removeFromCollection(scryfallId) {
 
 // --- Deck Mutations ---
 
-export function createDeck(name, format, description) {
+export function createDeck(name, format, description, color, unlocked) {
     const id = 'deck-' + Date.now();
-    const deck = { id, name, format: format || '', description: description || '', cards: [] };
+    const deck = { id, name, format: format || '', description: description || '', color: color || null, unlocked: unlocked || false, cards: [] };
     _decks.push(deck);
     _changeLog.deck_changes.push({ action: 'create', deck: structuredClone(deck) });
     markChanged();
@@ -168,13 +172,15 @@ export function getDeckById(deckId) {
 
 // --- Binder Mutations ---
 
-export function createBinder(name, description, pages, slotsPerPage) {
+export function createBinder(name, description, pages, slotsPerPage, color, unlocked) {
     const id = 'binder-' + Date.now();
     const binder = {
         id, name,
         description: description || '',
         pages: pages || 9,
         slots_per_page: slotsPerPage || 9,
+        color: color || null,
+        unlocked: unlocked || false,
         cards: []
     };
     _binders.push(binder);
@@ -239,6 +245,33 @@ export function getCardAllocation(scryfallId) {
         binders: binderAllocations,
         overAllocated: assigned > total
     };
+}
+
+// --- Unlocked Collections ---
+
+export function getUnlockedCollections() {
+    const unlockedDecks = _decks.filter(d => d.unlocked);
+    const unlockedBinders = _binders.filter(b => b.unlocked);
+    return [...unlockedDecks, ...unlockedBinders];
+}
+
+export function countUnlocked() {
+    return _decks.filter(d => d.unlocked).length + _binders.filter(b => b.unlocked).length;
+}
+
+export function getCollectionsForCard(scryfallId) {
+    const result = [];
+    for (const deck of _decks) {
+        if (deck.cards.some(c => c.scryfall_id === scryfallId)) {
+            result.push({ type: 'deck', id: deck.id, name: deck.name, color: deck.color });
+        }
+    }
+    for (const binder of _binders) {
+        if (binder.cards.some(c => c.scryfall_id === scryfallId)) {
+            result.push({ type: 'binder', id: binder.id, name: binder.name, color: binder.color });
+        }
+    }
+    return result;
 }
 
 // --- Reset ---

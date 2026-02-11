@@ -5,7 +5,8 @@ import * as binders from './binders.js';
 import * as collection from './collection.js';
 import { getCardImageUri } from './api.js';
 import {
-    showModal, closeModal, showToast, renderEmptyState, renderManaCost
+    showModal, closeModal, showToast, renderEmptyState, renderManaCost,
+    renderColorPicker
 } from './ui-components.js';
 
 let _selectedBinderId = null;
@@ -40,9 +41,25 @@ function renderSidebar() {
             render();
         });
 
+        if (binder.color) {
+            const colorDot = document.createElement('span');
+            colorDot.className = 'mtg-deck-color-dot';
+            colorDot.style.backgroundColor = binder.color;
+            li.appendChild(colorDot);
+        }
+
         const name = document.createElement('span');
         name.textContent = binder.name;
+        name.style.flex = '1';
         li.appendChild(name);
+
+        if (binder.unlocked) {
+            const unlockIcon = document.createElement('span');
+            unlockIcon.className = 'mtg-unlock-icon';
+            unlockIcon.textContent = '\u{1F513}';
+            unlockIcon.title = 'Unlocked for quick-add';
+            li.appendChild(unlockIcon);
+        }
 
         const count = document.createElement('span');
         count.className = 'deck-card-count';
@@ -107,11 +124,61 @@ function renderContent() {
     });
     titleArea.appendChild(title);
 
+    if (binder.color) {
+        const colorDot = document.createElement('span');
+        colorDot.className = 'mtg-deck-color-dot';
+        colorDot.style.backgroundColor = binder.color;
+        colorDot.style.width = '14px';
+        colorDot.style.height = '14px';
+        colorDot.style.marginLeft = '8px';
+        title.appendChild(colorDot);
+    }
+
     const meta = document.createElement('span');
     meta.style.cssText = 'font-size:0.85em;color:#888;';
     meta.textContent = `${binder.pages} pages, ${binder.slots_per_page} slots per page`;
     titleArea.appendChild(meta);
     headerRow.appendChild(titleArea);
+
+    const actions = document.createElement('div');
+    actions.style.cssText = 'display:flex;gap:8px;flex-wrap:wrap;';
+
+    // Lock/unlock toggle
+    const lockBtn = document.createElement('button');
+    lockBtn.className = binder.unlocked ? 'mtg-btn-lock-unlocked' : 'mtg-btn-lock-locked';
+    lockBtn.textContent = binder.unlocked ? '\u{1F513} Unlocked' : '\u{1F512} Locked';
+    lockBtn.title = binder.unlocked ? 'Click to lock (removes from quick-add)' : 'Click to unlock (adds to quick-add)';
+    lockBtn.addEventListener('click', () => {
+        if (binder.unlocked) {
+            binders.setUnlocked(_selectedBinderId, false);
+            showToast(`Locked "${binder.name}"`, 'info');
+        } else {
+            if (state.countUnlocked() >= state.MAX_UNLOCKED) {
+                showToast(`Maximum ${state.MAX_UNLOCKED} unlocked collections. Lock another first.`, 'error');
+                return;
+            }
+            binders.setUnlocked(_selectedBinderId, true);
+            showToast(`Unlocked "${binder.name}" for quick-add`, 'success');
+        }
+        render();
+    });
+    actions.appendChild(lockBtn);
+
+    // Color change button
+    const colorBtn = document.createElement('button');
+    colorBtn.className = 'mtg-btn mtg-btn-secondary mtg-btn-sm';
+    colorBtn.textContent = 'Color';
+    colorBtn.addEventListener('click', () => {
+        showModal('Binder Color', (body) => {
+            const picker = renderColorPicker(binder.color, (newColor) => {
+                binders.setColor(_selectedBinderId, newColor);
+                closeModal();
+                render();
+            });
+            body.appendChild(picker);
+        });
+    });
+    actions.appendChild(colorBtn);
 
     const deleteBtn = document.createElement('button');
     deleteBtn.className = 'mtg-btn mtg-btn-danger';
@@ -124,12 +191,15 @@ function renderContent() {
             render();
         }
     });
-    headerRow.appendChild(deleteBtn);
+    actions.appendChild(deleteBtn);
+    headerRow.appendChild(actions);
     content.appendChild(headerRow);
 
     // Page grid
     const pageData = binders.getBinderPage(_selectedBinderId, _currentPage);
-    const cols = Math.round(Math.sqrt(binder.slots_per_page));
+    // Use known layout presets, fallback to sqrt calculation
+    const layoutMap = { 9: 3, 12: 4, 16: 4 };
+    const cols = layoutMap[binder.slots_per_page] || Math.round(Math.sqrt(binder.slots_per_page));
     const rows = Math.ceil(binder.slots_per_page / cols);
 
     const grid = document.createElement('div');
@@ -225,37 +295,75 @@ function openCreateBinderModal() {
         descInput.placeholder = 'Description (optional)';
         form.appendChild(descInput);
 
-        const pagesRow = document.createElement('div');
-        pagesRow.style.cssText = 'display:flex;gap:12px;';
-
+        // Pages
+        const pagesLabel = document.createElement('label');
+        pagesLabel.textContent = 'Pages';
+        pagesLabel.style.cssText = 'display:flex;flex-direction:column;font-size:0.9em;color:#666;';
         const pagesInput = document.createElement('input');
         pagesInput.className = 'mtg-inline-input';
         pagesInput.type = 'number';
         pagesInput.min = '1';
         pagesInput.max = '100';
         pagesInput.value = '9';
-        pagesInput.placeholder = 'Pages';
-        pagesInput.style.flex = '1';
-        const pagesLabel = document.createElement('label');
-        pagesLabel.textContent = 'Pages';
-        pagesLabel.style.cssText = 'display:flex;flex-direction:column;flex:1;font-size:0.9em;color:#666;';
         pagesLabel.appendChild(pagesInput);
-        pagesRow.appendChild(pagesLabel);
+        form.appendChild(pagesLabel);
 
-        const slotsInput = document.createElement('input');
-        slotsInput.className = 'mtg-inline-input';
-        slotsInput.type = 'number';
-        slotsInput.min = '1';
-        slotsInput.max = '25';
-        slotsInput.value = '9';
-        slotsInput.placeholder = 'Slots per page';
-        const slotsLabel = document.createElement('label');
-        slotsLabel.textContent = 'Slots per page';
-        slotsLabel.style.cssText = 'display:flex;flex-direction:column;flex:1;font-size:0.9em;color:#666;';
-        slotsLabel.appendChild(slotsInput);
-        pagesRow.appendChild(slotsLabel);
+        // Layout presets
+        const layoutLabel = document.createElement('label');
+        layoutLabel.textContent = 'Page Layout';
+        layoutLabel.style.cssText = 'font-size:0.9em;color:#666;display:block;';
+        form.appendChild(layoutLabel);
 
-        form.appendChild(pagesRow);
+        const layoutPresets = [
+            { label: '3 x 3', cols: 3, rows: 3, slots: 9 },
+            { label: '4 x 3', cols: 4, rows: 3, slots: 12 },
+            { label: '4 x 4', cols: 4, rows: 4, slots: 16 },
+        ];
+        let selectedLayout = layoutPresets[0];
+
+        const layoutWrap = document.createElement('div');
+        layoutWrap.className = 'mtg-layout-presets';
+
+        for (const preset of layoutPresets) {
+            const presetBtn = document.createElement('button');
+            presetBtn.type = 'button';
+            presetBtn.className = 'mtg-layout-preset-btn' + (preset === selectedLayout ? ' active' : '');
+
+            const preview = document.createElement('div');
+            preview.className = 'mtg-layout-preview';
+            preview.style.gridTemplateColumns = `repeat(${preset.cols}, 1fr)`;
+            for (let i = 0; i < preset.slots; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'mtg-layout-preview-slot';
+                preview.appendChild(dot);
+            }
+            presetBtn.appendChild(preview);
+
+            const labelSpan = document.createElement('span');
+            labelSpan.textContent = `${preset.label} (${preset.slots})`;
+            presetBtn.appendChild(labelSpan);
+
+            presetBtn.addEventListener('click', () => {
+                selectedLayout = preset;
+                layoutWrap.querySelectorAll('.mtg-layout-preset-btn').forEach(b => b.classList.remove('active'));
+                presetBtn.classList.add('active');
+            });
+
+            layoutWrap.appendChild(presetBtn);
+        }
+        form.appendChild(layoutWrap);
+
+        // Color picker
+        const colorLabel = document.createElement('label');
+        colorLabel.textContent = 'Binder Color';
+        colorLabel.style.cssText = 'font-size:0.9em;color:#666;display:block;';
+        form.appendChild(colorLabel);
+
+        let selectedColor = null;
+        const colorPicker = renderColorPicker(null, (color) => {
+            selectedColor = color;
+        });
+        form.appendChild(colorPicker);
 
         const createBtn = document.createElement('button');
         createBtn.className = 'mtg-btn mtg-btn-primary';
@@ -271,7 +379,8 @@ function openCreateBinderModal() {
                 name,
                 descInput.value.trim(),
                 parseInt(pagesInput.value) || 9,
-                parseInt(slotsInput.value) || 9
+                selectedLayout.slots,
+                selectedColor
             );
             _selectedBinderId = id;
             _currentPage = 0;

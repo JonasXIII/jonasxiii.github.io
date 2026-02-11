@@ -6,7 +6,7 @@ import * as collection from './collection.js';
 import { getCardImageUri } from './api.js';
 import {
     renderManaCost, renderQuantityControl, showModal, closeModal,
-    showToast, renderEmptyState, renderCardTile
+    showToast, renderEmptyState, renderCardTile, renderColorPicker
 } from './ui-components.js';
 
 let _selectedDeckId = null;
@@ -40,9 +40,25 @@ function renderSidebar() {
             render();
         });
 
+        if (deck.color) {
+            const colorDot = document.createElement('span');
+            colorDot.className = 'mtg-deck-color-dot';
+            colorDot.style.backgroundColor = deck.color;
+            li.appendChild(colorDot);
+        }
+
         const name = document.createElement('span');
         name.textContent = deck.name;
+        name.style.flex = '1';
         li.appendChild(name);
+
+        if (deck.unlocked) {
+            const unlockIcon = document.createElement('span');
+            unlockIcon.className = 'mtg-unlock-icon';
+            unlockIcon.textContent = '\u{1F513}';
+            unlockIcon.title = 'Unlocked for quick-add';
+            li.appendChild(unlockIcon);
+        }
 
         const count = document.createElement('span');
         count.className = 'deck-card-count';
@@ -107,6 +123,16 @@ function renderContent() {
     });
     titleArea.appendChild(title);
 
+    if (deck.color) {
+        const colorDot = document.createElement('span');
+        colorDot.className = 'mtg-deck-color-dot';
+        colorDot.style.backgroundColor = deck.color;
+        colorDot.style.width = '14px';
+        colorDot.style.height = '14px';
+        colorDot.style.marginLeft = '8px';
+        title.appendChild(colorDot);
+    }
+
     if (deck.format) {
         const format = document.createElement('span');
         format.style.cssText = 'font-size:0.85em;color:#888;text-transform:uppercase;letter-spacing:0.5px;';
@@ -116,7 +142,44 @@ function renderContent() {
     headerRow.appendChild(titleArea);
 
     const actions = document.createElement('div');
-    actions.style.cssText = 'display:flex;gap:8px;';
+    actions.style.cssText = 'display:flex;gap:8px;flex-wrap:wrap;';
+
+    // Lock/unlock toggle
+    const lockBtn = document.createElement('button');
+    lockBtn.className = deck.unlocked ? 'mtg-btn-lock-unlocked' : 'mtg-btn-lock-locked';
+    lockBtn.textContent = deck.unlocked ? '\u{1F513} Unlocked' : '\u{1F512} Locked';
+    lockBtn.title = deck.unlocked ? 'Click to lock (removes from quick-add)' : 'Click to unlock (adds to quick-add)';
+    lockBtn.addEventListener('click', () => {
+        if (deck.unlocked) {
+            decks.setUnlocked(_selectedDeckId, false);
+            showToast(`Locked "${deck.name}"`, 'info');
+        } else {
+            if (state.countUnlocked() >= state.MAX_UNLOCKED) {
+                showToast(`Maximum ${state.MAX_UNLOCKED} unlocked collections. Lock another first.`, 'error');
+                return;
+            }
+            decks.setUnlocked(_selectedDeckId, true);
+            showToast(`Unlocked "${deck.name}" for quick-add`, 'success');
+        }
+        render();
+    });
+    actions.appendChild(lockBtn);
+
+    // Color change button
+    const colorBtn = document.createElement('button');
+    colorBtn.className = 'mtg-btn mtg-btn-secondary mtg-btn-sm';
+    colorBtn.textContent = 'Color';
+    colorBtn.addEventListener('click', () => {
+        showModal('Deck Color', (body) => {
+            const picker = renderColorPicker(deck.color, (newColor) => {
+                decks.setColor(_selectedDeckId, newColor);
+                closeModal();
+                render();
+            });
+            body.appendChild(picker);
+        });
+    });
+    actions.appendChild(colorBtn);
 
     const addCardBtn = document.createElement('button');
     addCardBtn.className = 'mtg-btn mtg-btn-primary';
@@ -343,6 +406,18 @@ function openCreateDeckModal() {
         descInput.placeholder = 'Description (optional)';
         form.appendChild(descInput);
 
+        // Color picker
+        const colorLabel = document.createElement('label');
+        colorLabel.textContent = 'Deck Color';
+        colorLabel.style.cssText = 'font-size:0.9em;color:#666;display:block;';
+        form.appendChild(colorLabel);
+
+        let selectedColor = null;
+        const colorPicker = renderColorPicker(null, (color) => {
+            selectedColor = color;
+        });
+        form.appendChild(colorPicker);
+
         const createBtn = document.createElement('button');
         createBtn.className = 'mtg-btn mtg-btn-primary';
         createBtn.textContent = 'Create Deck';
@@ -353,7 +428,7 @@ function openCreateDeckModal() {
                 showToast('Please enter a deck name', 'error');
                 return;
             }
-            const id = decks.create(name, formatSelect.value, descInput.value.trim());
+            const id = decks.create(name, formatSelect.value, descInput.value.trim(), selectedColor);
             _selectedDeckId = id;
             closeModal();
             showToast(`Created deck "${name}"`, 'success');

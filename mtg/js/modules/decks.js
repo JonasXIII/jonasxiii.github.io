@@ -2,8 +2,8 @@
 
 import * as state from './state.js';
 
-export function create(name, format, description) {
-    return state.createDeck(name, format || '', description || '');
+export function create(name, format, description, color, unlocked) {
+    return state.createDeck(name, format || '', description || '', color || null, unlocked || false);
 }
 
 export function remove(deckId) {
@@ -34,6 +34,18 @@ export function setDescription(deckId, description) {
     const deck = state.getDeckById(deckId);
     if (!deck) return;
     state.updateDeck(deckId, { ...deck, description });
+}
+
+export function setColor(deckId, color) {
+    const deck = state.getDeckById(deckId);
+    if (!deck) return;
+    state.updateDeck(deckId, { ...deck, color });
+}
+
+export function setUnlocked(deckId, unlocked) {
+    const deck = state.getDeckById(deckId);
+    if (!deck) return;
+    state.updateDeck(deckId, { ...deck, unlocked });
 }
 
 export function addCard(deckId, scryfallId, quantity, board = 'main') {

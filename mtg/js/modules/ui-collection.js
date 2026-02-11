@@ -2,10 +2,12 @@
 
 import * as state from './state.js';
 import * as collection from './collection.js';
+import * as decks from './decks.js';
+import * as binders from './binders.js';
 import { getCardImageUri, isMultiFaced } from './api.js';
 import {
     renderCardTile, renderCardGrid, renderQuantityControl,
-    renderFilterBar, renderManaCost, showModal, renderEmptyState, showToast
+    renderFilterBar, renderManaCost, showModal, closeModal, renderEmptyState, showToast
 } from './ui-components.js';
 import { openSearchModal } from './ui-search.js';
 
@@ -125,10 +127,17 @@ function renderContent() {
     const statsBar = renderStatsBar(filteredStats);
     content.appendChild(statsBar);
 
+    // Build allocation map for performance
+    const allocationMap = buildAllocationMap();
+
     // Render grid
     const grid = renderCardGrid(entries, 'collection-grid', {
         showSet: true,
-        onCardClick: (scryfallId, cardData) => openCardDetail(scryfallId)
+        onCardClick: (scryfallId, cardData) => openCardDetail(scryfallId),
+        showOverlay: true,
+        onQuickAdd: (scryfallId, cardData, triggerEl) => openRadialMenu(scryfallId, cardData, triggerEl),
+        onContextMenu: (scryfallId, cardData, triggerEl) => openContextMenu(scryfallId, cardData, triggerEl),
+        allocationMap
     });
     content.appendChild(grid);
 }
@@ -427,6 +436,254 @@ function openCardDetail(scryfallId) {
 
         detail.appendChild(info);
         body.appendChild(detail);
+    });
+}
+
+// --- Allocation Map (precomputed for performance) ---
+
+function buildAllocationMap() {
+    const map = {};
+    for (const deck of state.getDecks()) {
+        for (const card of deck.cards) {
+            if (!map[card.scryfall_id]) map[card.scryfall_id] = [];
+            map[card.scryfall_id].push({ type: 'deck', id: deck.id, name: deck.name, color: deck.color });
+        }
+    }
+    for (const binder of state.getBinders()) {
+        for (const card of binder.cards) {
+            if (!map[card.scryfall_id]) map[card.scryfall_id] = [];
+            map[card.scryfall_id].push({ type: 'binder', id: binder.id, name: binder.name, color: binder.color });
+        }
+    }
+    return map;
+}
+
+// --- Radial Quick-Add Menu ---
+
+function openRadialMenu(scryfallId, cardData, triggerEl) {
+    // Remove any existing menus
+    document.querySelectorAll('.mtg-radial-menu').forEach(m => m.remove());
+    document.querySelectorAll('.mtg-context-menu').forEach(m => m.remove());
+
+    const unlocked = state.getUnlockedCollections();
+    const menu = document.createElement('div');
+    menu.className = 'mtg-radial-menu';
+
+    if (unlocked.length === 0) {
+        const msg = document.createElement('div');
+        msg.className = 'mtg-radial-empty';
+        msg.textContent = 'No unlocked collections. Unlock a deck or binder first.';
+        menu.appendChild(msg);
+    } else {
+        const radius = 60;
+        const count = Math.min(unlocked.length, state.MAX_UNLOCKED);
+        const angleStep = (2 * Math.PI) / Math.max(count, 1);
+        const startAngle = -Math.PI / 2;
+
+        for (let i = 0; i < count; i++) {
+            const col = unlocked[i];
+            const angle = startAngle + i * angleStep;
+            const x = Math.cos(angle) * radius;
+            const y = Math.sin(angle) * radius;
+
+            const slot = document.createElement('button');
+            slot.className = 'mtg-radial-slot';
+            slot.style.backgroundColor = col.color || '#667eea';
+            slot.style.left = x + 'px';
+            slot.style.top = y + 'px';
+            slot.title = col.name;
+
+            const initial = document.createElement('span');
+            initial.textContent = col.name.charAt(0).toUpperCase();
+            slot.appendChild(initial);
+
+            const tooltip = document.createElement('div');
+            tooltip.className = 'mtg-radial-tooltip';
+            tooltip.textContent = col.name;
+            slot.appendChild(tooltip);
+
+            slot.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isDeck = col.id.startsWith('deck-');
+                if (isDeck) {
+                    decks.addCard(col.id, scryfallId, 1, 'main');
+                } else {
+                    const binderData = binders.getById(col.id);
+                    if (binderData) {
+                        const grid = binders.getBinderGrid(col.id);
+                        const emptySlot = grid.findIndex(s => s === null);
+                        if (emptySlot >= 0) {
+                            binders.addCard(col.id, scryfallId, 1, emptySlot);
+                        } else {
+                            showToast('No empty slots in this binder', 'error');
+                            menu.remove();
+                            return;
+                        }
+                    }
+                }
+                showToast(`Added ${cardData?.name || 'card'} to ${col.name}`, 'success');
+                menu.remove();
+            });
+
+            menu.appendChild(slot);
+        }
+    }
+
+    // Position relative to trigger element
+    const rect = triggerEl.getBoundingClientRect();
+    menu.style.left = (rect.left + rect.width / 2) + 'px';
+    menu.style.top = (rect.top + rect.height / 2) + 'px';
+
+    document.body.appendChild(menu);
+
+    // Close on click outside
+    const closeHandler = (e) => {
+        if (!menu.contains(e.target)) {
+            menu.remove();
+            document.removeEventListener('click', closeHandler);
+        }
+    };
+    setTimeout(() => document.addEventListener('click', closeHandler), 0);
+}
+
+// --- Context Menu (Hamburger) ---
+
+function openContextMenu(scryfallId, cardData, triggerEl) {
+    // Remove any existing menus
+    document.querySelectorAll('.mtg-context-menu').forEach(m => m.remove());
+    document.querySelectorAll('.mtg-radial-menu').forEach(m => m.remove());
+
+    const menu = document.createElement('div');
+    menu.className = 'mtg-context-menu';
+
+    // View Details
+    const viewItem = document.createElement('button');
+    viewItem.className = 'mtg-context-menu-item';
+    viewItem.innerHTML = '<span class="mtg-context-menu-icon">\u{1F50D}</span> View Details';
+    viewItem.addEventListener('click', (e) => {
+        e.stopPropagation();
+        menu.remove();
+        openCardDetail(scryfallId);
+    });
+    menu.appendChild(viewItem);
+
+    // Show Allocation
+    const allocItem = document.createElement('button');
+    allocItem.className = 'mtg-context-menu-item';
+    allocItem.innerHTML = '<span class="mtg-context-menu-icon">\u{1F4CA}</span> Show Allocation';
+    allocItem.addEventListener('click', (e) => {
+        e.stopPropagation();
+        menu.remove();
+        openAllocationModal(scryfallId, cardData);
+    });
+    menu.appendChild(allocItem);
+
+    // Quantity control
+    const entry = state.getCollection()[scryfallId];
+    if (entry) {
+        const qtyItem = document.createElement('div');
+        qtyItem.className = 'mtg-context-menu-item mtg-context-menu-qty';
+
+        const label = document.createElement('span');
+        label.textContent = 'Quantity';
+        qtyItem.appendChild(label);
+
+        const qtyControl = renderQuantityControl(entry.quantity, (newQty) => {
+            collection.setQuantity(scryfallId, newQty);
+            showToast(`Updated quantity to ${newQty}`, 'success');
+            menu.remove();
+        }, 0, 99);
+        qtyItem.appendChild(qtyControl);
+
+        menu.appendChild(qtyItem);
+    }
+
+    // Position below trigger
+    const rect = triggerEl.getBoundingClientRect();
+    menu.style.left = rect.left + 'px';
+    menu.style.top = (rect.bottom + 4) + 'px';
+
+    // Keep menu on screen
+    document.body.appendChild(menu);
+    const menuRect = menu.getBoundingClientRect();
+    if (menuRect.right > window.innerWidth) {
+        menu.style.left = (window.innerWidth - menuRect.width - 8) + 'px';
+    }
+    if (menuRect.bottom > window.innerHeight) {
+        menu.style.top = (rect.top - menuRect.height - 4) + 'px';
+    }
+
+    // Close on click outside
+    const closeHandler = (e) => {
+        if (!menu.contains(e.target)) {
+            menu.remove();
+            document.removeEventListener('click', closeHandler);
+        }
+    };
+    setTimeout(() => document.addEventListener('click', closeHandler), 0);
+}
+
+// --- Allocation Modal ---
+
+function openAllocationModal(scryfallId, cardData) {
+    const allocation = state.getCardAllocation(scryfallId);
+    showModal(`${cardData?.name || 'Card'} - Allocation`, (body) => {
+        if (allocation.decks.length === 0 && allocation.binders.length === 0) {
+            const empty = document.createElement('p');
+            empty.style.cssText = 'color:#aaa;text-align:center;';
+            empty.textContent = 'This card is not in any decks or binders.';
+            body.appendChild(empty);
+        } else {
+            const list = document.createElement('ul');
+            list.className = 'mtg-allocation-list';
+
+            for (const a of allocation.decks) {
+                const li = document.createElement('li');
+                const deck = state.getDeckById(a.deckId);
+                if (deck && deck.color) {
+                    const dot = document.createElement('span');
+                    dot.className = 'mtg-deck-color-dot';
+                    dot.style.backgroundColor = deck.color;
+                    li.appendChild(dot);
+                }
+                const text = document.createElement('span');
+                text.textContent = `${a.deckName} (${a.board})`;
+                li.appendChild(text);
+                const qty = document.createElement('span');
+                qty.textContent = `${a.quantity}x`;
+                li.appendChild(qty);
+                list.appendChild(li);
+            }
+
+            for (const a of allocation.binders) {
+                const li = document.createElement('li');
+                const binder = state.getBinderById(a.binderId);
+                if (binder && binder.color) {
+                    const dot = document.createElement('span');
+                    dot.className = 'mtg-deck-color-dot';
+                    dot.style.backgroundColor = binder.color;
+                    li.appendChild(dot);
+                }
+                const text = document.createElement('span');
+                text.textContent = a.binderName;
+                li.appendChild(text);
+                const qty = document.createElement('span');
+                qty.textContent = `${a.quantity}x`;
+                li.appendChild(qty);
+                list.appendChild(li);
+            }
+
+            body.appendChild(list);
+        }
+
+        const summary = document.createElement('p');
+        summary.style.cssText = 'margin-top:12px;font-size:0.9em;color:#666;';
+        summary.textContent = `${allocation.assigned} of ${allocation.total} copies assigned, ${allocation.unassigned} unassigned`;
+        if (allocation.overAllocated) {
+            summary.style.color = '#f56565';
+            summary.textContent = `Over-allocated! ${allocation.assigned} assigned but only ${allocation.total} owned.`;
+        }
+        body.appendChild(summary);
     });
 }
 

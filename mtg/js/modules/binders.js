@@ -2,8 +2,8 @@
 
 import * as state from './state.js';
 
-export function create(name, description, pages, slotsPerPage) {
-    return state.createBinder(name, description || '', pages || 9, slotsPerPage || 9);
+export function create(name, description, pages, slotsPerPage, color, unlocked) {
+    return state.createBinder(name, description || '', pages || 9, slotsPerPage || 9, color || null, unlocked || false);
 }
 
 export function remove(binderId) {
@@ -22,6 +22,18 @@ export function rename(binderId, newName) {
     const binder = state.getBinderById(binderId);
     if (!binder) return;
     state.updateBinder(binderId, { ...binder, name: newName });
+}
+
+export function setColor(binderId, color) {
+    const binder = state.getBinderById(binderId);
+    if (!binder) return;
+    state.updateBinder(binderId, { ...binder, color });
+}
+
+export function setUnlocked(binderId, unlocked) {
+    const binder = state.getBinderById(binderId);
+    if (!binder) return;
+    state.updateBinder(binderId, { ...binder, unlocked });
 }
 
 export function addCard(binderId, scryfallId, quantity, position) {

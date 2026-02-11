@@ -3,6 +3,50 @@
 import { getCardImageUri, isMultiFaced } from './api.js';
 import * as state from './state.js';
 
+// --- Color Presets ---
+
+export const COLOR_PRESETS = [
+    '#667eea', '#f56565', '#48bb78', '#ed8936',
+    '#9f7aea', '#38b2ac', '#e53e3e', '#3182ce',
+    '#d69e2e', '#e91e8c', '#2d3748', '#319795',
+];
+
+// --- Color Picker ---
+
+export function renderColorPicker(selectedColor, onChange) {
+    const wrap = document.createElement('div');
+    wrap.className = 'mtg-color-picker';
+
+    const noneBtn = document.createElement('button');
+    noneBtn.type = 'button';
+    noneBtn.className = 'mtg-color-picker-swatch' + (!selectedColor ? ' active' : '');
+    noneBtn.style.background = '#f0f0f0';
+    noneBtn.innerHTML = '&#x2715;';
+    noneBtn.title = 'No color';
+    noneBtn.addEventListener('click', () => {
+        wrap.querySelectorAll('.mtg-color-picker-swatch').forEach(s => s.classList.remove('active'));
+        noneBtn.classList.add('active');
+        onChange(null);
+    });
+    wrap.appendChild(noneBtn);
+
+    for (const color of COLOR_PRESETS) {
+        const swatch = document.createElement('button');
+        swatch.type = 'button';
+        swatch.className = 'mtg-color-picker-swatch' + (selectedColor === color ? ' active' : '');
+        swatch.style.backgroundColor = color;
+        swatch.title = color;
+        swatch.addEventListener('click', () => {
+            wrap.querySelectorAll('.mtg-color-picker-swatch').forEach(s => s.classList.remove('active'));
+            swatch.classList.add('active');
+            onChange(color);
+        });
+        wrap.appendChild(swatch);
+    }
+
+    return wrap;
+}
+
 // --- Card Tile ---
 
 export function renderCardTile(scryfallId, cardData, options = {}) {
@@ -49,7 +93,9 @@ export function renderCardTile(scryfallId, cardData, options = {}) {
     }
 
     // Flip button for double-faced cards
-    if (cardData && isMultiFaced(cardData)) {
+    const hasFlip = cardData && isMultiFaced(cardData);
+    if (hasFlip) {
+        el.classList.add('mtg-card-has-flip');
         const flipBtn = document.createElement('button');
         flipBtn.className = 'mtg-card-flip-btn';
         flipBtn.innerHTML = '&#x21BB;'; // ↻ rotation arrow
@@ -68,6 +114,53 @@ export function renderCardTile(scryfallId, cardData, options = {}) {
             }
         });
         el.appendChild(flipBtn);
+    }
+
+    // Hover overlay buttons (collection view only)
+    if (options.showOverlay) {
+        const overlay = document.createElement('div');
+        overlay.className = 'mtg-card-overlay';
+
+        const addBtn = document.createElement('button');
+        addBtn.className = 'mtg-card-add-btn';
+        addBtn.textContent = '+';
+        addBtn.title = 'Quick add to deck/binder';
+        addBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (options.onQuickAdd) options.onQuickAdd(scryfallId, cardData, addBtn);
+        });
+        overlay.appendChild(addBtn);
+
+        const menuBtn = document.createElement('button');
+        menuBtn.className = 'mtg-card-menu-btn';
+        menuBtn.innerHTML = '&#9776;';
+        menuBtn.title = 'Card options';
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (options.onContextMenu) options.onContextMenu(scryfallId, cardData, menuBtn);
+        });
+        overlay.appendChild(menuBtn);
+
+        el.appendChild(overlay);
+    }
+
+    // Allocation color border
+    if (options.allocationMap) {
+        const collections = options.allocationMap[scryfallId] || [];
+        const coloredCollections = collections.filter(c => c.color);
+
+        if (coloredCollections.length === 1) {
+            el.style.setProperty('--alloc-border', coloredCollections[0].color);
+            el.classList.add('mtg-card-allocated-single');
+        } else if (coloredCollections.length >= 2) {
+            const stops = coloredCollections.map((c, i) => {
+                const pct = (i / coloredCollections.length) * 360;
+                const pctEnd = ((i + 1) / coloredCollections.length) * 360;
+                return `${c.color} ${pct}deg ${pctEnd}deg`;
+            }).join(', ');
+            el.style.setProperty('--alloc-gradient', `conic-gradient(${stops})`);
+            el.classList.add('mtg-card-allocated-multi');
+        }
     }
 
     if (options.onClick) {
@@ -93,7 +186,11 @@ export function renderCardGrid(cards, containerId, options = {}) {
             const tile = renderCardTile(card.scryfallId, card.cardData, {
                 imageSize: options.imageSize,
                 onClick: options.onCardClick,
-                finish: card.finish
+                finish: card.finish,
+                showOverlay: options.showOverlay,
+                onQuickAdd: options.onQuickAdd,
+                onContextMenu: options.onContextMenu,
+                allocationMap: options.allocationMap
             });
             grid.appendChild(tile);
         }
