@@ -144,22 +144,25 @@ export function renderCardTile(scryfallId, cardData, options = {}) {
         el.appendChild(overlay);
     }
 
-    // Allocation color border
+    // Allocation color border (per-copy assignment)
     if (options.allocationMap) {
-        const collections = options.allocationMap[scryfallId] || [];
-        const coloredCollections = collections.filter(c => c.color);
+        const allocations = options.allocationMap[scryfallId] || [];
+        const copyIndex = options.copyIndex || 0;
 
-        if (coloredCollections.length === 1) {
-            el.style.setProperty('--alloc-border', coloredCollections[0].color);
+        // Walk through allocations to find which collection owns this copy
+        let remaining = copyIndex;
+        let assignedCollection = null;
+        for (const alloc of allocations) {
+            if (remaining < alloc.quantity) {
+                assignedCollection = alloc;
+                break;
+            }
+            remaining -= alloc.quantity;
+        }
+
+        if (assignedCollection && assignedCollection.color) {
+            el.style.setProperty('--alloc-border', assignedCollection.color);
             el.classList.add('mtg-card-allocated-single');
-        } else if (coloredCollections.length >= 2) {
-            const stops = coloredCollections.map((c, i) => {
-                const pct = (i / coloredCollections.length) * 360;
-                const pctEnd = ((i + 1) / coloredCollections.length) * 360;
-                return `${c.color} ${pct}deg ${pctEnd}deg`;
-            }).join(', ');
-            el.style.setProperty('--alloc-gradient', `conic-gradient(${stops})`);
-            el.classList.add('mtg-card-allocated-multi');
         }
     }
 
@@ -190,7 +193,8 @@ export function renderCardGrid(cards, containerId, options = {}) {
                 showOverlay: options.showOverlay,
                 onQuickAdd: options.onQuickAdd,
                 onContextMenu: options.onContextMenu,
-                allocationMap: options.allocationMap
+                allocationMap: options.allocationMap,
+                copyIndex: i
             });
             grid.appendChild(tile);
         }

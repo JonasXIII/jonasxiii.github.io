@@ -221,63 +221,74 @@ function renderContent() {
             empty.style.cssText = 'color:#aaa;font-size:0.9em;font-style:italic;';
             empty.textContent = 'No cards yet. Click "+ Add Card" to get started.';
             section.appendChild(empty);
-        }
+        } else {
+            const cardGrid = document.createElement('div');
+            cardGrid.className = 'mtg-card-grid';
 
-        for (const card of cards) {
-            const row = document.createElement('div');
-            row.className = 'mtg-deck-card-row';
+            for (const card of cards) {
+                const tile = document.createElement('div');
+                tile.className = 'mtg-card-tile';
+                tile.dataset.scryfallId = card.scryfall_id;
 
-            // Quantity
-            const qty = document.createElement('span');
-            qty.className = 'mtg-deck-card-qty';
-            qty.textContent = card.quantity + 'x';
-            row.appendChild(qty);
+                const imgUri = getCardImageUri(card.cardData, 'normal');
+                if (imgUri) {
+                    const img = document.createElement('img');
+                    img.src = imgUri;
+                    img.alt = card.cardData?.name || 'Card';
+                    img.loading = 'lazy';
+                    tile.appendChild(img);
+                } else {
+                    const ph = document.createElement('div');
+                    ph.className = 'mtg-card-placeholder';
+                    ph.textContent = card.cardData?.name || card.scryfall_id;
+                    tile.appendChild(ph);
+                }
 
-            // Name
-            const name = document.createElement('span');
-            name.className = 'mtg-deck-card-name';
-            name.textContent = card.cardData?.name || card.scryfall_id;
+                // Quantity badge
+                if (card.quantity > 1) {
+                    const badge = document.createElement('div');
+                    badge.className = 'mtg-deck-qty-badge';
+                    badge.textContent = card.quantity + 'x';
+                    tile.appendChild(badge);
+                }
 
-            // Allocation warning
-            const alloc = state.getCardAllocation(card.scryfall_id);
-            if (alloc.overAllocated) {
-                name.style.color = '#f56565';
-                name.title = `Over-allocated! Own ${alloc.total}, assigned ${alloc.assigned}`;
+                // Over-allocation warning
+                const alloc = state.getCardAllocation(card.scryfall_id);
+                if (alloc.overAllocated) {
+                    tile.style.boxShadow = '0 0 0 3px #f56565';
+                }
+
+                // Hover overlay with +/- buttons
+                const overlay = document.createElement('div');
+                overlay.className = 'mtg-card-overlay';
+
+                const plusBtn = document.createElement('button');
+                plusBtn.className = 'mtg-card-add-btn';
+                plusBtn.textContent = '+';
+                plusBtn.title = 'Add one more';
+                plusBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    decks.setCardQuantity(_selectedDeckId, card.scryfall_id, card.quantity + 1, boardName);
+                    render();
+                });
+                overlay.appendChild(plusBtn);
+
+                const minusBtn = document.createElement('button');
+                minusBtn.className = 'mtg-card-menu-btn';
+                minusBtn.textContent = '\u2212';
+                minusBtn.title = card.quantity === 1 ? 'Remove from deck' : 'Remove one';
+                minusBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    decks.setCardQuantity(_selectedDeckId, card.scryfall_id, card.quantity - 1, boardName);
+                    render();
+                });
+                overlay.appendChild(minusBtn);
+
+                tile.appendChild(overlay);
+                cardGrid.appendChild(tile);
             }
-            row.appendChild(name);
 
-            // Mana cost
-            const mana = document.createElement('span');
-            mana.className = 'mtg-deck-card-mana';
-            if (card.cardData?.mana_cost) {
-                mana.appendChild(renderManaCost(card.cardData.mana_cost));
-            }
-            row.appendChild(mana);
-
-            // Actions
-            const actionsDiv = document.createElement('div');
-            actionsDiv.className = 'mtg-deck-card-actions';
-
-            const plusBtn = document.createElement('button');
-            plusBtn.textContent = '+';
-            plusBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                decks.setCardQuantity(_selectedDeckId, card.scryfall_id, card.quantity + 1, boardName);
-                render();
-            });
-            actionsDiv.appendChild(plusBtn);
-
-            const minusBtn = document.createElement('button');
-            minusBtn.textContent = '-';
-            minusBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                decks.setCardQuantity(_selectedDeckId, card.scryfall_id, card.quantity - 1, boardName);
-                render();
-            });
-            actionsDiv.appendChild(minusBtn);
-
-            row.appendChild(actionsDiv);
-            section.appendChild(row);
+            section.appendChild(cardGrid);
         }
 
         content.appendChild(section);

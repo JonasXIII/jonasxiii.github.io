@@ -22,6 +22,7 @@ let _filters = {
 
 let _sortBy = 'name';
 let _sortDir = 'asc';
+let _hideAllocated = false;
 
 export function render() {
     renderSidebar();
@@ -82,6 +83,17 @@ function renderContent() {
     });
     topbar.appendChild(dirBtn);
 
+    // Available only toggle
+    const allocToggle = document.createElement('button');
+    allocToggle.className = 'mtg-btn mtg-btn-sm ' + (_hideAllocated ? 'mtg-filter-toggle-active' : 'mtg-btn-secondary');
+    allocToggle.textContent = _hideAllocated ? 'Available Only' : 'Show All';
+    allocToggle.title = 'Toggle to hide cards that are fully allocated to decks/binders';
+    allocToggle.addEventListener('click', () => {
+        _hideAllocated = !_hideAllocated;
+        renderContent();
+    });
+    topbar.appendChild(allocToggle);
+
     // Spacer
     const spacer = document.createElement('div');
     spacer.style.flex = '1';
@@ -104,6 +116,14 @@ function renderContent() {
 
     // Sort
     entries = collection.sortCollection(entries, _sortBy, _sortDir);
+
+    // Hide fully allocated cards if toggle is on
+    if (_hideAllocated) {
+        entries = entries.filter(e => {
+            const alloc = state.getCardAllocation(e.scryfallId);
+            return alloc.unassigned > 0;
+        });
+    }
 
     // Compute filtered stats and update header
     const filteredStats = collection.getFilteredStats(entries);
@@ -446,13 +466,13 @@ function buildAllocationMap() {
     for (const deck of state.getDecks()) {
         for (const card of deck.cards) {
             if (!map[card.scryfall_id]) map[card.scryfall_id] = [];
-            map[card.scryfall_id].push({ type: 'deck', id: deck.id, name: deck.name, color: deck.color });
+            map[card.scryfall_id].push({ type: 'deck', id: deck.id, name: deck.name, color: deck.color, quantity: card.quantity });
         }
     }
     for (const binder of state.getBinders()) {
         for (const card of binder.cards) {
             if (!map[card.scryfall_id]) map[card.scryfall_id] = [];
-            map[card.scryfall_id].push({ type: 'binder', id: binder.id, name: binder.name, color: binder.color });
+            map[card.scryfall_id].push({ type: 'binder', id: binder.id, name: binder.name, color: binder.color, quantity: card.quantity });
         }
     }
     return map;
@@ -486,42 +506,79 @@ function openRadialMenu(scryfallId, cardData, triggerEl) {
             const x = Math.cos(angle) * radius;
             const y = Math.sin(angle) * radius;
 
+            const isDeck = col.id.startsWith('deck-');
+            const isInThis = isDeck
+                ? state.getDeckById(col.id)?.cards.some(c => c.scryfall_id === scryfallId)
+                : state.getBinderById(col.id)?.cards.some(c => c.scryfall_id === scryfallId);
+
             const slot = document.createElement('button');
-            slot.className = 'mtg-radial-slot';
+            slot.className = 'mtg-radial-slot' + (isInThis ? ' mtg-radial-slot-active' : '');
             slot.style.backgroundColor = col.color || '#667eea';
             slot.style.left = x + 'px';
             slot.style.top = y + 'px';
             slot.title = col.name;
 
             const initial = document.createElement('span');
-            initial.textContent = col.name.charAt(0).toUpperCase();
+            initial.textContent = isInThis ? '\u2713' : col.name.charAt(0).toUpperCase();
             slot.appendChild(initial);
 
             const tooltip = document.createElement('div');
             tooltip.className = 'mtg-radial-tooltip';
-            tooltip.textContent = col.name;
+            tooltip.textContent = col.name + (isInThis ? ' (remove)' : '');
             slot.appendChild(tooltip);
 
             slot.addEventListener('click', (e) => {
                 e.stopPropagation();
-                const isDeck = col.id.startsWith('deck-');
-                if (isDeck) {
-                    decks.addCard(col.id, scryfallId, 1, 'main');
-                } else {
-                    const binderData = binders.getById(col.id);
-                    if (binderData) {
-                        const grid = binders.getBinderGrid(col.id);
-                        const emptySlot = grid.findIndex(s => s === null);
-                        if (emptySlot >= 0) {
-                            binders.addCard(col.id, scryfallId, 1, emptySlot);
-                        } else {
-                            showToast('No empty slots in this binder', 'error');
-                            menu.remove();
-                            return;
+
+                if (isInThis) {
+                    // Remove from this collection
+                    if (isDeck) {
+                        decks.removeCard(col.id, scryfallId, 'main');
+                    } else {
+                        const binderData = binders.getById(col.id);
+                        if (binderData) {
+                            const cardEntry = binderData.cards.find(c => c.scryfall_id === scryfallId);
+                            if (cardEntry) binders.removeCard(col.id, cardEntry.position);
                         }
                     }
+                    showToast(`Removed ${cardData?.name || 'card'} from ${col.name}`, 'info');
+                } else {
+                    // Remove from all other unlocked collections first
+                    for (const otherCol of unlocked) {
+                        if (otherCol.id === col.id) continue;
+                        const isOtherDeck = otherCol.id.startsWith('deck-');
+                        if (isOtherDeck) {
+                            const otherDeck = state.getDeckById(otherCol.id);
+                            if (otherDeck?.cards.some(c => c.scryfall_id === scryfallId)) {
+                                decks.removeCard(otherCol.id, scryfallId, 'main');
+                            }
+                        } else {
+                            const otherBinder = state.getBinderById(otherCol.id);
+                            if (otherBinder) {
+                                const cardEntry = otherBinder.cards.find(c => c.scryfall_id === scryfallId);
+                                if (cardEntry) binders.removeCard(otherCol.id, cardEntry.position);
+                            }
+                        }
+                    }
+                    // Add to this collection
+                    if (isDeck) {
+                        decks.addCard(col.id, scryfallId, 1, 'main');
+                    } else {
+                        const binderData = binders.getById(col.id);
+                        if (binderData) {
+                            const grid = binders.getBinderGrid(col.id);
+                            const emptySlot = grid.findIndex(s => s === null);
+                            if (emptySlot >= 0) {
+                                binders.addCard(col.id, scryfallId, 1, emptySlot);
+                            } else {
+                                showToast('No empty slots in this binder', 'error');
+                                menu.remove();
+                                return;
+                            }
+                        }
+                    }
+                    showToast(`Added ${cardData?.name || 'card'} to ${col.name}`, 'success');
                 }
-                showToast(`Added ${cardData?.name || 'card'} to ${col.name}`, 'success');
                 menu.remove();
             });
 
@@ -689,7 +746,7 @@ function openAllocationModal(scryfallId, cardData) {
 
 // Listen for state changes to re-render
 state.subscribe((eventType) => {
-    if (eventType === 'collection_changed' || eventType === 'init') {
+    if (eventType === 'collection_changed' || eventType === 'init' || eventType === 'decks_changed' || eventType === 'binders_changed') {
         const tab = document.getElementById('tab-collection');
         if (tab && tab.classList.contains('active')) {
             renderContent();
