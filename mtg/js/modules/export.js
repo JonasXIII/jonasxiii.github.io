@@ -10,7 +10,8 @@ export function generateChangesJson() {
         version: 1,
         collection_changes: changeLog.collection_changes,
         deck_changes: changeLog.deck_changes,
-        binder_changes: changeLog.binder_changes
+        binder_changes: changeLog.binder_changes,
+        box_changes: changeLog.box_changes
     };
 }
 

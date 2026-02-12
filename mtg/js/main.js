@@ -8,6 +8,7 @@ import { showToast } from './modules/ui-components.js';
 import { render as renderCollection } from './modules/ui-collection.js';
 import { render as renderDecks } from './modules/ui-deck-editor.js';
 import { render as renderBinders } from './modules/ui-binder-editor.js';
+import { render as renderBoxes } from './modules/ui-box-editor.js';
 
 let _activeTab = 'collection';
 
@@ -28,16 +29,17 @@ async function loadData() {
         loadingText.textContent = 'Loading collection data...';
         loadingProgress.style.width = '10%';
 
-        const [collectionData, decksData, bindersData] = await Promise.all([
+        const [collectionData, decksData, bindersData, boxesData] = await Promise.all([
             fetchJson('./data/collection.json'),
             fetchJson('./data/decks.json'),
-            fetchJson('./data/binders.json')
+            fetchJson('./data/binders.json'),
+            fetchJson('./data/boxes.json')
         ]);
 
         loadingProgress.style.width = '30%';
 
         // Initialize state
-        state.initState(collectionData, decksData, bindersData);
+        state.initState(collectionData, decksData, bindersData, boxesData);
 
         // Load localStorage cache
         loadingText.textContent = 'Loading card cache...';
@@ -45,7 +47,7 @@ async function loadData() {
         state.setCardCache(cachedCards);
 
         // Determine which IDs need fetching
-        const allIds = collectAllScryfallIds(collectionData, decksData, bindersData);
+        const allIds = collectAllScryfallIds(collectionData, decksData, bindersData, boxesData);
         const missingIds = allIds.filter(id => !cachedCards[id]);
 
         if (missingIds.length > 0) {
@@ -96,7 +98,7 @@ async function fetchJson(url) {
     }
 }
 
-function collectAllScryfallIds(collection, decks, binders) {
+function collectAllScryfallIds(collection, decks, binders, boxes) {
     const ids = new Set();
 
     // From collection (strip composite key suffixes like ":foil")
@@ -114,6 +116,13 @@ function collectAllScryfallIds(collection, decks, binders) {
     // From binders
     for (const binder of (binders || [])) {
         for (const card of (binder.cards || [])) {
+            ids.add(card.scryfall_id);
+        }
+    }
+
+    // From boxes
+    for (const box of (boxes || [])) {
+        for (const card of (box.cards || [])) {
             ids.add(card.scryfall_id);
         }
     }
@@ -156,6 +165,9 @@ function renderActiveTab() {
         case 'binders':
             renderBinders();
             break;
+        case 'boxes':
+            renderBoxes();
+            break;
     }
 }
 
@@ -173,7 +185,7 @@ function setupSaveButton() {
     // Show/hide based on unsaved changes
     state.subscribe((eventType) => {
         if (eventType === 'unsaved_changes' || eventType === 'collection_changed' ||
-            eventType === 'decks_changed' || eventType === 'binders_changed') {
+            eventType === 'decks_changed' || eventType === 'binders_changed' || eventType === 'boxes_changed') {
             saveBtn.style.display = state.hasUnsavedChanges() ? 'block' : 'none';
         }
     });

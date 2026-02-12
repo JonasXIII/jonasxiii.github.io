@@ -3,11 +3,13 @@
 let _collection = {};
 let _decks = [];
 let _binders = [];
+let _boxes = [];
 let _cardCache = {};
 let _changeLog = {
     collection_changes: [],
     deck_changes: [],
-    binder_changes: []
+    binder_changes: [],
+    box_changes: []
 };
 let _hasUnsavedChanges = false;
 let _listeners = [];
@@ -29,6 +31,7 @@ export const MAX_UNLOCKED = 6;
 export function getCollection() { return _collection; }
 export function getDecks() { return _decks; }
 export function getBinders() { return _binders; }
+export function getBoxes() { return _boxes; }
 export function getCardData(key) {
     return _cardCache[key] || _cardCache[getRealScryfallId(key)] || null;
 }
@@ -38,11 +41,12 @@ export function getChangeLog() { return _changeLog; }
 
 // --- Initialization ---
 
-export function initState(collection, decks, binders) {
+export function initState(collection, decks, binders, boxes) {
     _collection = collection || {};
     _decks = decks || [];
     _binders = binders || [];
-    _changeLog = { collection_changes: [], deck_changes: [], binder_changes: [] };
+    _boxes = boxes || [];
+    _changeLog = { collection_changes: [], deck_changes: [], binder_changes: [], box_changes: [] };
     _hasUnsavedChanges = false;
     notify('init');
 }
@@ -211,6 +215,44 @@ export function getBinderById(binderId) {
     return _binders.find(b => b.id === binderId) || null;
 }
 
+// --- Box Mutations ---
+
+export function createBox(name, description, color, unlocked) {
+    const id = 'box-' + Date.now();
+    const box = {
+        id, name,
+        description: description || '',
+        color: color || null,
+        unlocked: unlocked || false,
+        cards: []
+    };
+    _boxes.push(box);
+    _changeLog.box_changes.push({ action: 'create', box: structuredClone(box) });
+    markChanged();
+    notify('boxes_changed', { boxId: id });
+    return id;
+}
+
+export function updateBox(boxId, updatedBox) {
+    const idx = _boxes.findIndex(b => b.id === boxId);
+    if (idx === -1) return;
+    _boxes[idx] = { ...updatedBox, id: boxId };
+    _changeLog.box_changes.push({ action: 'update', box_id: boxId, box: structuredClone(_boxes[idx]) });
+    markChanged();
+    notify('boxes_changed', { boxId });
+}
+
+export function deleteBox(boxId) {
+    _boxes = _boxes.filter(b => b.id !== boxId);
+    _changeLog.box_changes.push({ action: 'delete', box_id: boxId });
+    markChanged();
+    notify('boxes_changed', { boxId });
+}
+
+export function getBoxById(boxId) {
+    return _boxes.find(b => b.id === boxId) || null;
+}
+
 // --- Derived Data ---
 
 export function getCardAllocation(scryfallId) {
@@ -235,8 +277,18 @@ export function getCardAllocation(scryfallId) {
         }
     }
 
+    const boxAllocations = [];
+    for (const box of _boxes) {
+        for (const card of box.cards) {
+            if (card.scryfall_id === scryfallId) {
+                boxAllocations.push({ boxId: box.id, boxName: box.name, quantity: card.quantity });
+            }
+        }
+    }
+
     const assigned = deckAllocations.reduce((sum, a) => sum + a.quantity, 0)
-        + binderAllocations.reduce((sum, a) => sum + a.quantity, 0);
+        + binderAllocations.reduce((sum, a) => sum + a.quantity, 0)
+        + boxAllocations.reduce((sum, a) => sum + a.quantity, 0);
 
     return {
         total,
@@ -244,6 +296,7 @@ export function getCardAllocation(scryfallId) {
         unassigned: Math.max(0, total - assigned),
         decks: deckAllocations,
         binders: binderAllocations,
+        boxes: boxAllocations,
         overAllocated: assigned > total
     };
 }
@@ -253,11 +306,12 @@ export function getCardAllocation(scryfallId) {
 export function getUnlockedCollections() {
     const unlockedDecks = _decks.filter(d => d.unlocked);
     const unlockedBinders = _binders.filter(b => b.unlocked);
-    return [...unlockedDecks, ...unlockedBinders];
+    const unlockedBoxes = _boxes.filter(b => b.unlocked);
+    return [...unlockedDecks, ...unlockedBinders, ...unlockedBoxes];
 }
 
 export function countUnlocked() {
-    return _decks.filter(d => d.unlocked).length + _binders.filter(b => b.unlocked).length;
+    return _decks.filter(d => d.unlocked).length + _binders.filter(b => b.unlocked).length + _boxes.filter(b => b.unlocked).length;
 }
 
 export function getCollectionsForCard(scryfallId) {
@@ -272,13 +326,18 @@ export function getCollectionsForCard(scryfallId) {
             result.push({ type: 'binder', id: binder.id, name: binder.name, color: binder.color });
         }
     }
+    for (const box of _boxes) {
+        if (box.cards.some(c => c.scryfall_id === scryfallId)) {
+            result.push({ type: 'box', id: box.id, name: box.name, color: box.color });
+        }
+    }
     return result;
 }
 
 // --- Reset ---
 
 export function resetChangeLog() {
-    _changeLog = { collection_changes: [], deck_changes: [], binder_changes: [] };
+    _changeLog = { collection_changes: [], deck_changes: [], binder_changes: [], box_changes: [] };
     _hasUnsavedChanges = false;
     notify('unsaved_changes');
 }
