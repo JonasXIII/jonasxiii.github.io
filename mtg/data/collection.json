@@ -2727,6 +2727,14 @@
     "quantity": 1,
     "set": "mh1"
   },
+  "bfd786c2-6a2b-4f43-ba68-cbe31eeb4904:foil": {
+    "collector_number": "",
+    "finish": "foil",
+    "name": "Heliod, the Radiant Dawn // Heliod, the Warped Eclipse",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mom"
+  },
   "c0c3b9a8-aa30-46fc-b2e0-8bab7f9b4648": {
     "collector_number": "73",
     "finish": "normal",

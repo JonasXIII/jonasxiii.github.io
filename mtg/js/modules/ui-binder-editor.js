@@ -633,6 +633,28 @@ function openSlotActionModal(binderId, position, slotData) {
             actions.appendChild(pageRow);
         }
 
+        // Foil toggle
+        const isFoil = slotData.scryfall_id.includes(':foil');
+        const foilRow = document.createElement('div');
+        foilRow.style.cssText = 'display:flex;align-items:center;gap:8px;margin-top:12px;';
+        const foilLabel = document.createElement('span');
+        foilLabel.textContent = 'Foil';
+        foilLabel.style.fontWeight = '600';
+        foilRow.appendChild(foilLabel);
+        const foilToggle = document.createElement('button');
+        foilToggle.className = isFoil ? 'mtg-btn mtg-btn-primary mtg-btn-sm' : 'mtg-btn mtg-btn-secondary mtg-btn-sm';
+        foilToggle.textContent = isFoil ? 'Yes' : 'No';
+        foilToggle.addEventListener('click', () => {
+            const realId = state.getRealScryfallId(slotData.scryfall_id);
+            const newId = isFoil ? realId : realId + ':foil';
+            binders.addCard(binderId, newId, 1, position);
+            closeModal();
+            showToast(isFoil ? 'Set to non-foil' : 'Set to foil', 'success');
+            render();
+        });
+        foilRow.appendChild(foilToggle);
+        actions.appendChild(foilRow);
+
         // Change Printing section
         const printLabel = document.createElement('h4');
         printLabel.textContent = 'Change Printing';
@@ -653,6 +675,7 @@ function openSlotActionModal(binderId, position, slotData) {
             const printings = result.data || [];
             for (const printing of printings) {
                 const currentId = state.getRealScryfallId(slotData.scryfall_id);
+                const isCurrentFoil = slotData.scryfall_id.includes(':foil');
                 const isSelected = printing.id === currentId;
                 const option = document.createElement('div');
                 option.className = 'mtg-printing-option' + (isSelected ? ' selected' : '');
@@ -680,7 +703,8 @@ function openSlotActionModal(binderId, position, slotData) {
 
                 if (!isSelected) {
                     option.addEventListener('click', () => {
-                        binders.addCard(binderId, printing.id, 1, position);
+                        const newId = isCurrentFoil ? printing.id + ':foil' : printing.id;
+                        binders.addCard(binderId, newId, 1, position);
                         state.setCardCache({ [printing.id]: printing });
                         closeModal();
                         showToast(`Switched to ${printing.set_name} printing`, 'success');
