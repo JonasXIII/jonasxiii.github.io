@@ -260,7 +260,7 @@ function renderContent() {
         const grid = document.createElement('div');
         grid.className = 'mtg-binder-page';
         grid.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
-        grid.style.maxWidth = singlePageWidth + 'px';
+        grid.style.width = singlePageWidth + 'px';
 
         for (let i = 0; i < binder.slots_per_page; i++) {
             const slotData = pageData[i];

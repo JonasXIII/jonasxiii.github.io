@@ -71,13 +71,13 @@
     "quantity": 1,
     "set": "con"
   },
-  "04ef8493-d986-45f8-a718-617b028f7ad4:foil": {
-    "collector_number": "237",
-    "finish": "foil",
-    "name": "Witch's Oven",
+  "03522b6b-31ec-4126-8885-5dbb2248688b": {
+    "collector_number": "256",
+    "finish": "normal",
+    "name": "Revitalizing Repast // Old-Growth Grove",
     "oracle_id": "",
     "quantity": 1,
-    "set": "eld"
+    "set": "mh3"
   },
   "0574d09f-5667-4ecf-bbbb-a1a0ed24068d:foil": {
     "collector_number": "12",
@@ -86,6 +86,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "p30a"
+  },
+  "061d765e-df27-406a-9ba0-b51b0cbb65da:foil": {
+    "collector_number": "258",
+    "finish": "foil",
+    "name": "Mirrormind Crown",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ecl"
   },
   "062fcd2b-7f63-47bf-83ba-88e33d397a6e": {
     "collector_number": "228p",
@@ -111,14 +119,6 @@
     "quantity": 1,
     "set": "dom"
   },
-  "07a6df7a-a080-4aef-9a76-5b08bbc4e762": {
-    "collector_number": "106",
-    "finish": "normal",
-    "name": "Swamp",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "acr"
-  },
   "07a6df7a-a080-4aef-9a76-5b08bbc4e762:foil": {
     "collector_number": "106",
     "finish": "foil",
@@ -126,6 +126,14 @@
     "oracle_id": "",
     "quantity": 2,
     "set": "acr"
+  },
+  "07aaa125-4ae8-47d9-8d22-194a9f84bad8": {
+    "collector_number": "ZNR-180",
+    "finish": "normal",
+    "name": "Bala Ged Recovery // Bala Ged Sanctuary",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "plst"
   },
   "07b06421-778a-4d23-862b-30fc5fa25928": {
     "collector_number": "53",
@@ -206,14 +214,6 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "dom"
-  },
-  "0be723d6-4ada-4c3f-b87b-8ab83a4bbb8f": {
-    "collector_number": "257",
-    "finish": "normal",
-    "name": "Mines of Moria",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "ltr"
   },
   "0d69fce2-3307-4518-a196-e0b8155dca73": {
     "collector_number": "314",
@@ -503,14 +503,6 @@
     "quantity": 1,
     "set": "mh2"
   },
-  "22c66095-ee5d-4258-8e24-78e81b64a519": {
-    "collector_number": "280",
-    "finish": "normal",
-    "name": "Temple of the False God",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "c19"
-  },
   "2378ac21-9912-40d7-972d-b1b71a8e4984": {
     "collector_number": "275",
     "finish": "normal",
@@ -543,6 +535,14 @@
     "quantity": 1,
     "set": "mh2"
   },
+  "244c06b3-532d-426e-8bee-ee9461d092a6": {
+    "collector_number": "271",
+    "finish": "normal",
+    "name": "Echoing Deeps",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "lci"
+  },
   "2456cf8e-06c3-408a-a182-fd10ec3aef64": {
     "collector_number": "NPH-118",
     "finish": "normal",
@@ -567,6 +567,14 @@
     "quantity": 1,
     "set": "cm2"
   },
+  "2744ac83-a79f-4042-8720-688b5adda382": {
+    "collector_number": "243",
+    "finish": "normal",
+    "name": "Nurturing Peatland",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh1"
+  },
   "275471e3-ded1-40ac-91ef-369dce5764d9": {
     "collector_number": "247",
     "finish": "normal",
@@ -590,6 +598,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "thb"
+  },
+  "27e4eef3-06a4-4d48-85f3-88fb33e9122a:foil": {
+    "collector_number": "180",
+    "finish": "foil",
+    "name": "Elvish Rejuvenator",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "pm19"
   },
   "29148d7e-b398-4e19-a29e-d9a660ad5016": {
     "collector_number": "165",
@@ -662,14 +678,6 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "c13"
-  },
-  "2ef42c3f-f22e-4e99-adb0-9e8f8d442347": {
-    "collector_number": "266",
-    "finish": "normal",
-    "name": "Baba Lysaga, Night Witch",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "clb"
   },
   "2f822f28-81c7-49dc-bdbe-b40671b0fa49:foil": {
     "collector_number": "187s",
@@ -823,6 +831,14 @@
     "quantity": 1,
     "set": "rtr"
   },
+  "3b3134b3-1bad-4b41-9e56-700125ff31fa": {
+    "collector_number": "319",
+    "finish": "normal",
+    "name": "Tree of Tales",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "dsc"
+  },
   "3b5349db-0e0a-4b15-886e-0db403ef49cb": {
     "collector_number": "175",
     "finish": "normal",
@@ -838,6 +854,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ptc"
+  },
+  "3ca3ef68-ea62-4098-bd43-4597ff0647d4": {
+    "collector_number": "269",
+    "finish": "normal",
+    "name": "Darkmoss Bridge",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "dsc"
   },
   "3d48d62e-5c1f-464c-aa81-8a5d2690f48e": {
     "collector_number": "135",
@@ -871,6 +895,14 @@
     "quantity": 1,
     "set": "2xm"
   },
+  "40c17aee-1e93-4db8-b491-cb2c10d0cc67": {
+    "collector_number": "404",
+    "finish": "normal",
+    "name": "Vesuva",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m3c"
+  },
   "41fd8502-52cb-4675-9c5a-cb39e2b10110": {
     "collector_number": "mj112",
     "finish": "normal",
@@ -878,14 +910,6 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ptc"
-  },
-  "4249cc64-f75b-4c76-a41a-5b25873c74bc": {
-    "collector_number": "161",
-    "finish": "normal",
-    "name": "Crop Rotation",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "2xm"
   },
   "42ce2d7f-5924-47c0-b5ed-dacf9f9617a0": {
     "collector_number": "137",
@@ -951,14 +975,6 @@
     "quantity": 2,
     "set": "m20"
   },
-  "472034a2-0ba9-4876-ab7a-aa7013d603bb": {
-    "collector_number": "286",
-    "finish": "normal",
-    "name": "Scrubland",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "3ed"
-  },
   "473d3633-6dc7-4026-a50e-3ea76b9e8c20": {
     "collector_number": "105",
     "finish": "normal",
@@ -983,6 +999,14 @@
     "quantity": 1,
     "set": "rtr"
   },
+  "492b368b-de32-45c1-8459-238aae54f9fc": {
+    "collector_number": "106",
+    "finish": "normal",
+    "name": "Unmarked Grave",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh2"
+  },
   "4ab5195f-7cc3-4972-92f8-1b26fa3fb927": {
     "collector_number": "231",
     "finish": "normal",
@@ -990,6 +1014,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cm2"
+  },
+  "4b8a22b8-368f-41e4-8d49-432c6c2ed11e": {
+    "collector_number": "181",
+    "finish": "normal",
+    "name": "Undergrowth Recon",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mkm"
   },
   "4b8eee4f-99e3-499d-9d6d-0bff023f6512": {
     "collector_number": "241",
@@ -1006,6 +1038,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "plst"
+  },
+  "4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8": {
+    "collector_number": "424",
+    "finish": "normal",
+    "name": "Woodland Cemetery",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "soc"
   },
   "4e8397e6-d13a-4996-8fde-b8a9895de287": {
     "collector_number": "476",
@@ -1063,14 +1103,6 @@
     "quantity": 1,
     "set": "cmr"
   },
-  "53515042-e729-4a7c-ac3b-36ef70dbbe8d": {
-    "collector_number": "131",
-    "finish": "normal",
-    "name": "Walking Atlas",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "wwk"
-  },
   "54ced5cf-b51a-4dab-97f7-50fb18e5c463": {
     "collector_number": "475",
     "finish": "normal",
@@ -1094,22 +1126,6 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "mkm"
-  },
-  "56058359-3c0b-49db-a0ce-9ded4c3f4372": {
-    "collector_number": "282",
-    "finish": "normal",
-    "name": "Badlands",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "3ed"
-  },
-  "56355ff3-2232-4a11-b868-aec9a50b9ee5": {
-    "collector_number": "283",
-    "finish": "normal",
-    "name": "Bayou",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "3ed"
   },
   "564caf57-4ba5-4993-a35e-945699c94eb7": {
     "collector_number": "96",
@@ -1231,14 +1247,6 @@
     "quantity": 1,
     "set": "iko"
   },
-  "5de73629-b44b-4f9c-8d7f-d9cf342ef95b": {
-    "collector_number": "18",
-    "finish": "normal",
-    "name": "Cauldron Familiar",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "sch"
-  },
   "5dfd8d35-3f73-4181-80a3-d4d69badcc47": {
     "collector_number": "319",
     "finish": "normal",
@@ -1316,7 +1324,7 @@
     "finish": "normal",
     "name": "Mountain",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "2xm"
   },
   "64bdc503-2e67-4ae5-9d59-1c5af25eb486": {
@@ -1334,6 +1342,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cmr"
+  },
+  "65ff914e-3f3e-4b7a-b69d-73575b68fb8e": {
+    "collector_number": "271",
+    "finish": "normal",
+    "name": "Valgavoth's Lair",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "dsk"
   },
   "66605fe1-9a20-4c95-b53e-1249cedb978b": {
     "collector_number": "218",
@@ -1399,14 +1415,6 @@
     "quantity": 1,
     "set": "c17"
   },
-  "6ba2edc7-dbc0-4948-9f37-a27a91bdf7b9": {
-    "collector_number": "371",
-    "finish": "normal",
-    "name": "Bleachbone Verge",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "dft"
-  },
   "6bbdd169-958f-42df-812d-f75fbed9576f": {
     "collector_number": "34",
     "finish": "normal",
@@ -1422,14 +1430,6 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "pip"
-  },
-  "6ef11b54-205a-48e9-92d0-5d416be869ef": {
-    "collector_number": "171",
-    "finish": "normal",
-    "name": "Hissing Quagmire",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "ogw"
   },
   "6f07a7f2-5221-45ef-b8d6-d9d18c882806": {
     "collector_number": "ULG-14",
@@ -1454,6 +1454,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "a25"
+  },
+  "70d9ab99-ec8a-402e-ba1d-ffa6c4c84a3f": {
+    "collector_number": "270",
+    "finish": "normal",
+    "name": "World Map",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "fin"
   },
   "72507835-d27b-48e3-a602-b5b6c876557f": {
     "collector_number": "3",
@@ -1486,6 +1494,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "pm20"
+  },
+  "73866487-33f4-4f64-b100-2c4ddadcd74e": {
+    "collector_number": "286",
+    "finish": "normal",
+    "name": "Vault of Whispers",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mrd"
   },
   "75c219bc-a140-4ecd-953a-eef2cc552d58": {
     "collector_number": "104",
@@ -1564,7 +1580,7 @@
     "finish": "normal",
     "name": "Snow-Covered Plains",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "mh1"
   },
   "7af082fa-86a3-4f7b-966d-2be1f1d0c0bc": {
@@ -1599,14 +1615,6 @@
     "quantity": 1,
     "set": "ltr"
   },
-  "7c274595-94e2-4587-9cef-b38639d6429a": {
-    "collector_number": "15",
-    "finish": "normal",
-    "name": "Guardian Sunmare",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "dft"
-  },
   "7c5ada8c-98f2-4f9c-bcb5-dfa4f804fbe6:foil": {
     "collector_number": "362",
     "finish": "foil",
@@ -1614,14 +1622,6 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cmr"
-  },
-  "7c63114c-0324-4bca-8d7d-0f83f3b5c0eb": {
-    "collector_number": "262",
-    "finish": "normal",
-    "name": "Myriad Landscape",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "c17"
   },
   "7d4595f2-9297-40dc-b2dd-7144bbb401f7": {
     "collector_number": "259",
@@ -1638,6 +1638,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "mh2"
+  },
+  "7d751566-7246-4580-9a12-0fd1d6c8b5e8": {
+    "collector_number": "54",
+    "finish": "normal",
+    "name": "Swords to Plowshares",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cst"
   },
   "7e798845-4d8a-46ea-8507-41edcb6c1f80": {
     "collector_number": "265",
@@ -1718,14 +1726,6 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "rav"
-  },
-  "82eea1f3-b8b3-4369-964e-32c3917be90c": {
-    "collector_number": "34",
-    "finish": "normal",
-    "name": "Tainted Field",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "ddk"
   },
   "834b27a0-dfd7-4f96-8cde-cacac4b24acc": {
     "collector_number": "223",
@@ -1855,14 +1855,6 @@
     "quantity": 1,
     "set": "ktk"
   },
-  "8c8ae40b-1c7f-4025-8d25-b09a2d1a29f6": {
-    "collector_number": "220",
-    "finish": "normal",
-    "name": "Spine of Ish Sah",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "cm2"
-  },
   "8c99cde3-8ba5-44bf-bbaa-1a12c6cac925": {
     "collector_number": "217",
     "finish": "normal",
@@ -1900,7 +1892,7 @@
     "finish": "normal",
     "name": "Swamp",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "2xm"
   },
   "8f41e281-fcbb-450b-8a67-7b072c55c6f0": {
@@ -1950,6 +1942,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "khm"
+  },
+  "926916ed-2f22-4ba9-9427-194886ad6c1e": {
+    "collector_number": "234",
+    "finish": "normal",
+    "name": "Urza's Cave",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh3"
   },
   "939b0bd0-24ea-45de-a2d3-37bbf6a3e6f9": {
     "collector_number": "151",
@@ -2191,14 +2191,6 @@
     "quantity": 1,
     "set": "c17"
   },
-  "a14afed6-ca42-442d-ba86-621179e6957c": {
-    "collector_number": "206",
-    "finish": "normal",
-    "name": "Acolyte of Affliction",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "thb"
-  },
   "a14ecd13-325a-4555-b1dd-d0d0d0826031": {
     "collector_number": "145",
     "finish": "normal",
@@ -2422,6 +2414,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "dsk"
+  },
+  "b330c216-4c1f-4318-8add-20b766afd94c": {
+    "collector_number": "525",
+    "finish": "normal",
+    "name": "Baba Lysaga, Night Witch",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "clb"
   },
   "b3e8f8bd-1c8b-4a7c-96c4-57a247ce9ccc": {
     "collector_number": "242",
@@ -2724,8 +2724,16 @@
     "finish": "normal",
     "name": "Bala Ged Recovery // Bala Ged Sanctuary",
     "oracle_id": "",
-    "quantity": 3,
+    "quantity": 2,
     "set": "znr"
+  },
+  "c5d0e808-d67b-4ea3-9c04-d20269fe692c": {
+    "collector_number": "164",
+    "finish": "normal",
+    "name": "Darksteel Citadel",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "dst"
   },
   "c654737d-34ac-42ff-ae27-3a3bbb930fc1": {
     "collector_number": "199",
@@ -2743,14 +2751,6 @@
     "quantity": 1,
     "set": "ltc"
   },
-  "c6ae9cff-8646-4069-8761-df734e067beb": {
-    "collector_number": "284",
-    "finish": "normal",
-    "name": "Plateau",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "3ed"
-  },
   "c7057b04-e22f-4e33-9f08-b9fbd2e54bf5": {
     "collector_number": "479",
     "finish": "normal",
@@ -2759,20 +2759,12 @@
     "quantity": 1,
     "set": "mh2"
   },
-  "c8026d80-2e91-46f9-ae97-1f137848236c": {
-    "collector_number": "170",
-    "finish": "normal",
-    "name": "Llanowar Scout",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "dom"
-  },
   "c835f235-4196-4281-9788-13e5d54a92d0": {
     "collector_number": "252",
     "finish": "normal",
     "name": "Snow-Covered Swamp",
     "oracle_id": "",
-    "quantity": 4,
+    "quantity": 5,
     "set": "mh1"
   },
   "c83ed3e0-82d0-4410-a6ca-b0f923eadf83:foil": {
@@ -2798,6 +2790,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "rix"
+  },
+  "c925965e-3788-4abb-b671-1b61ece27895": {
+    "collector_number": "99",
+    "finish": "normal",
+    "name": "Thornbite Staff",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mb2"
   },
   "c96ac326-de44-470b-a592-a4c2a052c091:foil": {
     "collector_number": "95",
@@ -2836,7 +2836,7 @@
     "finish": "normal",
     "name": "Plains",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "2xm"
   },
   "cc6686e6-4535-49be-b0b3-e76464656cd2": {
@@ -2854,6 +2854,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "rna"
+  },
+  "ccf9b2cc-b362-4488-93ef-e98398ff73ea": {
+    "collector_number": "304",
+    "finish": "normal",
+    "name": "Instill Energy",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "5ed"
   },
   "ccff131c-2a66-4ebf-97f1-774c9f41b222": {
     "collector_number": "215",
@@ -2948,7 +2956,7 @@
     "finish": "normal",
     "name": "Snow-Covered Mountain",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "mh1"
   },
   "d423365c-a32c-4060-b178-3221e3200387": {
@@ -2967,6 +2975,14 @@
     "quantity": 1,
     "set": "m21"
   },
+  "d5d50e02-80c8-4b7d-9f51-7f1d79f9f263": {
+    "collector_number": "51",
+    "finish": "normal",
+    "name": "Crop Rotation",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "soa"
+  },
   "d5e1a75e-1369-4f28-bb7d-e7ea2e6087e9": {
     "collector_number": "92",
     "finish": "normal",
@@ -2974,6 +2990,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "chr"
+  },
+  "d5f11a08-8324-461a-8dbd-ecef0e511dee": {
+    "collector_number": "248",
+    "finish": "normal",
+    "name": "Sylvan Scrying",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m3c"
   },
   "d6c04d8d-f552-4af3-b014-efb7a1c577f8": {
     "collector_number": "531",
@@ -2991,14 +3015,6 @@
     "quantity": 1,
     "set": "uma"
   },
-  "d75ebba8-34ca-47a0-bf13-8318ad73b343": {
-    "collector_number": "97",
-    "finish": "normal",
-    "name": "Liliana, Dreadhorde General",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "war"
-  },
   "d80823f7-565a-4d0d-9fd1-24a8b8efcc24": {
     "collector_number": "289",
     "finish": "normal",
@@ -3006,6 +3022,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "c15"
+  },
+  "d81f685a-3149-4326-b900-4973a2029415": {
+    "collector_number": "187p",
+    "finish": "normal",
+    "name": "Assassin's Trophy",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "pmkm"
   },
   "d83821b3-a6a6-4a15-9169-5c6d1942903d": {
     "collector_number": "221",
@@ -3038,14 +3062,6 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "mom"
-  },
-  "d8d4eaeb-6546-44d8-a96f-7270e23014d1": {
-    "collector_number": "76",
-    "finish": "normal",
-    "name": "Swords to Plowshares",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "c17"
   },
   "da397007-e9a8-4228-a35d-a606e93e37be": {
     "collector_number": "164",
@@ -3087,6 +3103,14 @@
     "quantity": 1,
     "set": "mh1"
   },
+  "dcde5f27-e2f0-4d2a-afa3-f300896ec4b1:foil": {
+    "collector_number": "88",
+    "finish": "foil",
+    "name": "Archenemy's Charm",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "eoe"
+  },
   "dd3e42ee-ab13-460b-90fd-86e677abce4f": {
     "collector_number": "473",
     "finish": "normal",
@@ -3095,13 +3119,13 @@
     "quantity": 1,
     "set": "cmr"
   },
-  "def90432-6d13-4d28-aa27-f75dd26456bb": {
-    "collector_number": "95",
+  "de039992-631b-4feb-a522-acdb0a6d1f26": {
+    "collector_number": "267",
     "finish": "normal",
-    "name": "Assassin's Trophy",
+    "name": "Scene of the Crime",
     "oracle_id": "",
     "quantity": 1,
-    "set": "acr"
+    "set": "mkm"
   },
   "df9da428-3af7-4027-b3f0-9138d953c37b:foil": {
     "collector_number": "288",
@@ -3167,9 +3191,9 @@
     "quantity": 1,
     "set": "c19"
   },
-  "e37da81e-be12-45a2-9128-376f1ad7b3e8": {
+  "e37da81e-be12-45a2-9128-376f1ad7b3e8:foil": {
     "collector_number": "244",
-    "finish": "normal",
+    "finish": "foil",
     "name": "Prismatic Vista",
     "oracle_id": "",
     "quantity": 1,
@@ -3263,6 +3287,14 @@
     "quantity": 1,
     "set": "dom"
   },
+  "ebef3db0-2b58-4581-a79c-fbca9a059e63:foil": {
+    "collector_number": "249",
+    "finish": "foil",
+    "name": "Bridgeworks Battle // Tanglespan Bridgeworks",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh3"
+  },
   "ec50c1c3-885e-47d3-ada7-cc0edbf09df1": {
     "collector_number": "145",
     "finish": "normal",
@@ -3275,6 +3307,14 @@
     "collector_number": "258",
     "finish": "normal",
     "name": "Llanowar Wastes",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c19"
+  },
+  "edf4a131-5f29-46c0-9c73-719d1112d57a": {
+    "collector_number": "157",
+    "finish": "normal",
+    "name": "Beast Within",
     "oracle_id": "",
     "quantity": 1,
     "set": "c19"
@@ -3311,6 +3351,14 @@
     "quantity": 1,
     "set": "bng"
   },
+  "f1e5cafb-b0e6-4ee5-8c58-6f8e5ef2b9da": {
+    "collector_number": "115",
+    "finish": "normal",
+    "name": "Virtue of Persistence // Locthwain Scorn",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "woe"
+  },
   "f25d56f9-aa54-4657-9ac9-e93fbba3e715": {
     "collector_number": "37",
     "finish": "normal",
@@ -3318,6 +3366,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "znr"
+  },
+  "f260bd08-68b6-44f4-ace9-e298cb13d82e": {
+    "collector_number": "147",
+    "finish": "normal",
+    "name": "Collective Resistance",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh3"
   },
   "f29f3415-971c-4a5d-aae9-3893f4bdab1e": {
     "collector_number": "247",

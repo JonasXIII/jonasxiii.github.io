@@ -43,7 +43,18 @@ function renderSidebar() {
             render();
         });
 
-        if (deck.color) {
+        if (deck.cover_card) {
+            const coverData = state.getCardData(deck.cover_card);
+            const coverUri = getCardImageUri(coverData, 'art_crop');
+            if (coverUri) {
+                const coverImg = document.createElement('img');
+                coverImg.src = coverUri;
+                coverImg.className = 'mtg-deck-cover-thumb';
+                li.appendChild(coverImg);
+            }
+        }
+
+        if (deck.color && !deck.cover_card) {
             const colorDot = document.createElement('span');
             colorDot.className = 'mtg-deck-color-dot';
             colorDot.style.backgroundColor = deck.color;
