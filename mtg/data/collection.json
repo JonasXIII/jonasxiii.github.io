@@ -311,6 +311,14 @@
     "quantity": 1,
     "set": "m20"
   },
+  "14fb947c-563e-4811-98de-e25bd141a6e5": {
+    "collector_number": "179",
+    "finish": "normal",
+    "name": "Orcish Lumberjack",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "vma"
+  },
   "15856326-d943-476a-9d31-898b9f990bb6": {
     "collector_number": "226",
     "finish": "normal",
@@ -887,6 +895,14 @@
     "quantity": 1,
     "set": "brc"
   },
+  "400382a4-aea2-4827-b06a-1b0b3745908b": {
+    "collector_number": "177",
+    "finish": "normal",
+    "name": "Noble Hierarch",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "2xm"
+  },
   "401f7042-24fd-42a0-ae7c-e6b7de1aa446": {
     "collector_number": "152",
     "finish": "normal",
@@ -1159,6 +1175,14 @@
     "quantity": 1,
     "set": "dtk"
   },
+  "57877b1c-e91d-4941-81bd-008dff1272ed": {
+    "collector_number": "203",
+    "finish": "normal",
+    "name": "Door to Nothingness",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m13"
+  },
   "5865c39e-847e-4dc6-8e6c-a4200124f21f": {
     "collector_number": "545",
     "finish": "normal",
@@ -1190,6 +1214,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ulg"
+  },
+  "5ad36fb2-c44e-4085-ba0d-54277841ad3a": {
+    "collector_number": "226",
+    "finish": "normal",
+    "name": "Lurrus of the Dream-Den",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "iko"
   },
   "5adcb500-8c77-4925-8e2c-1243502827d1": {
     "collector_number": "60",
@@ -2310,6 +2342,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "znr"
+  },
+  "a7113c93-6c6d-410f-aeec-abc5ee121cdf": {
+    "collector_number": "17",
+    "finish": "normal",
+    "name": "Heliod, the Radiant Dawn // Heliod, the Warped Eclipse",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mom"
   },
   "a8503cca-7e7d-44c4-8587-81376b396398": {
     "collector_number": "249",
