@@ -109,21 +109,21 @@ function collectAllScryfallIds(collection, decks, binders, boxes) {
     // From decks
     for (const deck of (decks || [])) {
         for (const card of (deck.cards || [])) {
-            ids.add(card.scryfall_id);
+            ids.add(getRealScryfallId(card.scryfall_id));
         }
     }
 
     // From binders
     for (const binder of (binders || [])) {
         for (const card of (binder.cards || [])) {
-            ids.add(card.scryfall_id);
+            ids.add(getRealScryfallId(card.scryfall_id));
         }
     }
 
     // From boxes
     for (const box of (boxes || [])) {
         for (const card of (box.cards || [])) {
-            ids.add(card.scryfall_id);
+            ids.add(getRealScryfallId(card.scryfall_id));
         }
     }
 
