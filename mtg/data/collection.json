@@ -79,6 +79,14 @@
     "quantity": 1,
     "set": "mh3"
   },
+  "03e36028-43cb-4c99-a3a8-c0a69d28b983": {
+    "collector_number": "129",
+    "finish": "normal",
+    "name": "Avenger of Zendikar",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c18"
+  },
   "0574d09f-5667-4ecf-bbbb-a1a0ed24068d:foil": {
     "collector_number": "12",
     "finish": "foil",
@@ -903,6 +911,14 @@
     "quantity": 1,
     "set": "m3c"
   },
+  "41b9e955-a348-4ab5-bc61-69e56cfc3985": {
+    "collector_number": "286",
+    "finish": "normal",
+    "name": "Sculpting Steel",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "2xm"
+  },
   "41fd8502-52cb-4675-9c5a-cb39e2b10110": {
     "collector_number": "mj112",
     "finish": "normal",
@@ -1391,6 +1407,14 @@
     "quantity": 1,
     "set": "mh3"
   },
+  "68ce4c64-9f82-4be1-aa3b-ba885b2d4307": {
+    "collector_number": "145",
+    "finish": "normal",
+    "name": "Grave Titan",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c14"
+  },
   "69c1b656-1d67-499c-bf0f-417682a86c7d": {
     "collector_number": "268",
     "finish": "normal",
@@ -1751,6 +1775,14 @@
     "quantity": 1,
     "set": "cmr"
   },
+  "83c01c91-ea01-46c7-b94c-97777b968459": {
+    "collector_number": "268",
+    "finish": "normal",
+    "name": "Sensei's Divining Top",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "chk"
+  },
   "8683a978-1bef-4b01-9361-56b1fc157d26:foil": {
     "collector_number": "164",
     "finish": "foil",
@@ -1942,6 +1974,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "khm"
+  },
+  "924a24e7-91b8-4f44-8571-68973afba7ce": {
+    "collector_number": "233",
+    "finish": "normal",
+    "name": "Mystic Forge",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m20"
   },
   "926916ed-2f22-4ba9-9427-194886ad6c1e": {
     "collector_number": "234",
@@ -2375,6 +2415,14 @@
     "quantity": 1,
     "set": "4ed"
   },
+  "b016df54-5c39-4b18-ab62-3d511c4c5f8f": {
+    "collector_number": "111",
+    "finish": "normal",
+    "name": "Bloodghast",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mic"
+  },
   "b0d88239-43dc-46b8-8d46-626e2f8f1070": {
     "collector_number": "81",
     "finish": "normal",
@@ -2527,6 +2575,14 @@
     "quantity": 1,
     "set": "grn"
   },
+  "b8f4dbc1-373e-4c47-802b-3f8230393e27": {
+    "collector_number": "231",
+    "finish": "normal",
+    "name": "Exquisite Blood",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "jmp"
+  },
   "b9d895af-7e8c-419f-bc5d-5596083fbfb6": {
     "collector_number": "248",
     "finish": "normal",
@@ -2630,6 +2686,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "mh1"
+  },
+  "c0c3b9a8-aa30-46fc-b2e0-8bab7f9b4648": {
+    "collector_number": "73",
+    "finish": "normal",
+    "name": "Sheoldred, Whispering One",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "nph"
   },
   "c0f9c733-0818-4a03-8f0c-a163d09e0fff": {
     "collector_number": "250",
@@ -3151,6 +3215,14 @@
     "quantity": 1,
     "set": "cm2"
   },
+  "e0649e8e-61a8-4524-b5fc-0e8be9438f8e": {
+    "collector_number": "114",
+    "finish": "normal",
+    "name": "Massacre Wurm",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m21"
+  },
   "e0b52b9c-7278-46b4-9f3c-3a7fc0c7e526": {
     "collector_number": "239",
     "finish": "normal",
@@ -3247,6 +3319,14 @@
     "quantity": 1,
     "set": "thb"
   },
+  "e8b9141e-b024-4f0f-b3a8-1e8e8baf7f7e": {
+    "collector_number": "100",
+    "finish": "normal",
+    "name": "Nazgul",
+    "oracle_id": "",
+    "quantity": 6,
+    "set": "ltr"
+  },
   "e91f9a1e-809b-4bc0-afca-c0c3755d130f:foil": {
     "collector_number": "378",
     "finish": "foil",
@@ -3311,6 +3391,14 @@
     "quantity": 1,
     "set": "c19"
   },
+  "ecde6070-a754-42f6-859d-3a341c5a8e0e": {
+    "collector_number": "122",
+    "finish": "normal",
+    "name": "Vilis, Broker of Blood",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m20"
+  },
   "edf4a131-5f29-46c0-9c73-719d1112d57a": {
     "collector_number": "157",
     "finish": "normal",
@@ -3334,6 +3422,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "3ed"
+  },
+  "ef740769-1179-4a4f-b321-2b16270cfe0d": {
+    "collector_number": "202",
+    "finish": "normal",
+    "name": "Clock of Omens",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m13"
   },
   "eff1f52c-5c43-4260-aaa0-6920846a191c": {
     "collector_number": "253",
