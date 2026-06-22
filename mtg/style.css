@@ -1201,6 +1201,7 @@
 }
 
 .mtg-binder-slot {
+    position: relative;
     aspect-ratio: 488 / 680;
     border: 2px dashed #ccc;
     border-radius: 8px;

@@ -3,7 +3,7 @@
 import * as state from './state.js';
 import * as binders from './binders.js';
 import * as collection from './collection.js';
-import { getCardImageUri } from './api.js';
+import { getCardImageUri, fetchPrintings } from './api.js';
 import {
     showModal, closeModal, showToast, renderEmptyState, renderManaCost,
     renderColorPicker
@@ -313,6 +313,14 @@ function renderContent() {
                     img.loading = 'lazy';
                     img.draggable = false;
                     slot.appendChild(img);
+                }
+
+                const price = slotData.cardData.prices?.usd || slotData.cardData.prices?.usd_foil;
+                if (price) {
+                    const priceEl = document.createElement('div');
+                    priceEl.className = 'mtg-card-price-overlay';
+                    priceEl.textContent = '$' + price;
+                    slot.appendChild(priceEl);
                 }
 
                 slot.addEventListener('click', () => {
@@ -625,10 +633,71 @@ function openSlotActionModal(binderId, position, slotData) {
             actions.appendChild(pageRow);
         }
 
+        // Change Printing section
+        const printLabel = document.createElement('h4');
+        printLabel.textContent = 'Change Printing';
+        printLabel.style.cssText = 'margin:16px 0 8px;font-size:0.95em;';
+        actions.appendChild(printLabel);
+
+        const printingsGrid = document.createElement('div');
+        printingsGrid.className = 'mtg-printings-grid';
+        actions.appendChild(printingsGrid);
+
+        const loadingPrintings = document.createElement('p');
+        loadingPrintings.style.cssText = 'font-size:0.85em;color:#999;';
+        loadingPrintings.textContent = 'Loading printings...';
+        actions.appendChild(loadingPrintings);
+
+        fetchPrintings(cardName).then(result => {
+            loadingPrintings.remove();
+            const printings = result.data || [];
+            for (const printing of printings) {
+                const currentId = state.getRealScryfallId(slotData.scryfall_id);
+                const isSelected = printing.id === currentId;
+                const option = document.createElement('div');
+                option.className = 'mtg-printing-option' + (isSelected ? ' selected' : '');
+
+                const imgUri = getCardImageUri(printing, 'small');
+                if (imgUri) {
+                    const img = document.createElement('img');
+                    img.src = imgUri;
+                    img.alt = printing.set_name || printing.set;
+                    img.loading = 'lazy';
+                    option.appendChild(img);
+                }
+
+                const setLbl = document.createElement('div');
+                setLbl.className = 'mtg-printing-set';
+                setLbl.textContent = (printing.set || '').toUpperCase() + ' #' + (printing.collector_number || '');
+                option.appendChild(setLbl);
+
+                if (printing.prices?.usd) {
+                    const priceLbl = document.createElement('div');
+                    priceLbl.className = 'mtg-printing-price';
+                    priceLbl.textContent = '$' + printing.prices.usd;
+                    option.appendChild(priceLbl);
+                }
+
+                if (!isSelected) {
+                    option.addEventListener('click', () => {
+                        binders.addCard(binderId, printing.id, 1, position);
+                        state.setCardCache({ [printing.id]: printing });
+                        closeModal();
+                        showToast(`Switched to ${printing.set_name} printing`, 'success');
+                        render();
+                    });
+                }
+
+                printingsGrid.appendChild(option);
+            }
+        }).catch(() => {
+            loadingPrintings.textContent = 'Could not load printings.';
+        });
+
         const removeBtn = document.createElement('button');
         removeBtn.className = 'mtg-btn mtg-btn-danger';
         removeBtn.textContent = 'Remove from Slot';
-        removeBtn.style.width = '100%';
+        removeBtn.style.cssText = 'width:100%;margin-top:16px;';
         removeBtn.addEventListener('click', () => {
             binders.removeCard(binderId, position);
             closeModal();
