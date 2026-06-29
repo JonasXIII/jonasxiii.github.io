@@ -559,6 +559,14 @@
     "quantity": 1,
     "set": "soi"
   },
+  "23924d21-8271-446b-a896-3241fb3085c1": {
+    "collector_number": "173",
+    "finish": "normal",
+    "name": "Stifle",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mb2"
+  },
   "23ac45cf-4dc8-47b9-8ca8-e72464f745d6": {
     "collector_number": "430",
     "finish": "normal",
@@ -606,6 +614,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "m12"
+  },
+  "25f05814-a5a5-460f-9d29-0ab03efecf4c": {
+    "collector_number": "31",
+    "finish": "normal",
+    "name": "Disallow",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "aer"
   },
   "264ea67b-c796-4ecd-a71b-85d67b980056": {
     "collector_number": "20",
@@ -678,6 +694,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "m20"
+  },
+  "29df5ef7-d679-4543-bdb7-3984155c87e0": {
+    "collector_number": "35",
+    "finish": "normal",
+    "name": "Forbid",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "exo"
   },
   "2b5801fb-2026-4f25-98bc-ebb2f99684b9": {
     "collector_number": "270",
@@ -766,6 +790,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "khm"
+  },
+  "30f6fca9-003b-4f6b-9d6e-1e88adda4155": {
+    "collector_number": "48",
+    "finish": "normal",
+    "name": "Cryptic Command",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ima"
   },
   "3159553d-ab09-4970-8c68-613a9cd56a2d": {
     "collector_number": "540",
@@ -879,6 +911,14 @@
     "quantity": 1,
     "set": "m12"
   },
+  "371090f6-9114-4bb1-890e-8270ad6619ae": {
+    "collector_number": "86",
+    "finish": "normal",
+    "name": "Whir of Invention",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "spg"
+  },
   "3795a4e7-646f-4bb7-b154-2610eb740e8d": {
     "collector_number": "61",
     "finish": "normal",
@@ -918,6 +958,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ptc"
+  },
+  "3ca1e1de-b916-445f-b3b2-0f4d0cc7ceeb": {
+    "collector_number": "71",
+    "finish": "normal",
+    "name": "Stern Scolding",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltr"
   },
   "3ca3ef68-ea62-4098-bd43-4597ff0647d4": {
     "collector_number": "269",
@@ -1031,6 +1079,14 @@
     "quantity": 2,
     "set": "jud"
   },
+  "44fe86de-c131-41b2-a06a-827b4d374a6d": {
+    "collector_number": "8",
+    "finish": "normal",
+    "name": "Archmage's Charm",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "otp"
+  },
   "45524a5f-253e-4fd7-a359-be6df50c0f53:foil": {
     "collector_number": "TSP-171",
     "finish": "foil",
@@ -1126,6 +1182,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ema"
+  },
+  "4c9522ec-840d-49e7-b895-90b0d2083742": {
+    "collector_number": "29",
+    "finish": "normal",
+    "name": "Jace Beleren",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mb2"
   },
   "4ccd8394-cbc9-4346-9b48-f6be447b3e08": {
     "collector_number": "MM2-79",
@@ -1254,6 +1318,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "m13"
+  },
+  "57b852b6-4388-4a41-a5c0-bba37a5c1451": {
+    "collector_number": "40",
+    "finish": "normal",
+    "name": "Archmage's Charm",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh1"
   },
   "5865c39e-847e-4dc6-8e6c-a4200124f21f": {
     "collector_number": "545",
@@ -1391,6 +1463,14 @@
     "quantity": 1,
     "set": "iko"
   },
+  "5eb843ef-b223-40d0-a461-54b16d188d0e": {
+    "collector_number": "147",
+    "finish": "normal",
+    "name": "Arcane Denial",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "msc"
+  },
   "5f8b022e-3e7a-40e6-99a0-53e5adbdafc5": {
     "collector_number": "31",
     "finish": "normal",
@@ -1454,6 +1534,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "war"
+  },
+  "639bdbb5-8c2d-439d-bcea-dc54da9686ea": {
+    "collector_number": "61",
+    "finish": "normal",
+    "name": "Essence Flux",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "soi"
   },
   "6418bc71-de29-410c-baf3-f63f5615eee2": {
     "collector_number": "379",
@@ -1559,6 +1647,14 @@
     "quantity": 1,
     "set": "c17"
   },
+  "6b5c6ed5-0fb9-40d4-bdce-bcaff40ef9a6": {
+    "collector_number": "126",
+    "finish": "normal",
+    "name": "Rapid Hybridization",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c21"
+  },
   "6bbdd169-958f-42df-812d-f75fbed9576f": {
     "collector_number": "34",
     "finish": "normal",
@@ -1630,6 +1726,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "dgm"
+  },
+  "729cdea3-59ca-4b32-9a8a-9b0cdb4b3aaf": {
+    "collector_number": "54",
+    "finish": "normal",
+    "name": "Temporal Mastery",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mm3"
   },
   "72c6d541-e2cb-4d6e-acac-90a8f53b7006": {
     "collector_number": "260",
@@ -1814,6 +1918,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cst"
+  },
+  "7e0cc18d-c6b8-4db1-ac07-0f17ae6d6c95": {
+    "collector_number": "184",
+    "finish": "normal",
+    "name": "Arcane Denial",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltc"
   },
   "7e798845-4d8a-46ea-8507-41edcb6c1f80": {
     "collector_number": "265",
@@ -2046,6 +2158,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ktk"
+  },
+  "8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5": {
+    "collector_number": "61",
+    "finish": "normal",
+    "name": "Narset, Parter of Veils",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "war"
   },
   "8c99cde3-8ba5-44bf-bbaa-1a12c6cac925": {
     "collector_number": "217",
@@ -2311,6 +2431,14 @@
     "quantity": 1,
     "set": "iko"
   },
+  "9c0c61e3-9f3d-4e7f-9046-0ea336dd8a2d": {
+    "collector_number": "75",
+    "finish": "normal",
+    "name": "Teferi, Master of Time",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m21"
+  },
   "9c0c61e3-9f3d-4e7f-9046-0ea336dd8a2d:foil": {
     "collector_number": "75",
     "finish": "foil",
@@ -2326,6 +2454,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "sok"
+  },
+  "9d3f1b57-3353-4b88-abe9-98a3234a25f3": {
+    "collector_number": "32",
+    "finish": "normal",
+    "name": "Blue Sun's Zenith",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cma"
   },
   "9d914868-9000-4df2-a818-0ef8a7f636ae": {
     "collector_number": "139",
@@ -2430,6 +2566,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "rix"
+  },
+  "a16a6555-2e3a-4587-aacd-0307d696b26c": {
+    "collector_number": "51",
+    "finish": "normal",
+    "name": "Consult the Star Charts",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "eoe"
   },
   "a1d95d37-5dbe-4a25-bc80-a4db08f3c63a": {
     "collector_number": "241",
@@ -3127,6 +3271,14 @@
     "quantity": 1,
     "set": "blb"
   },
+  "c9a96e38-413f-49cd-90fa-178a91a406ba": {
+    "collector_number": "91",
+    "finish": "normal",
+    "name": "Reality Shift",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c17"
+  },
   "c9eee658-29e8-4ab5-8a0e-31f2f28a9a92": {
     "collector_number": "198",
     "finish": "normal",
@@ -3206,6 +3358,14 @@
     "oracle_id": "",
     "quantity": 2,
     "set": "c17"
+  },
+  "cd3cc172-5609-4bc8-9d84-50680fed6df9": {
+    "collector_number": "58",
+    "finish": "normal",
+    "name": "Mathemagics",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "sos"
   },
   "ce01ff8f-a037-484f-9148-c847ffaabc5a:foil": {
     "collector_number": "213",
@@ -3310,6 +3470,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "mh3"
+  },
+  "d4f96980-c40a-4ec0-adc5-116a8eb07fcb": {
+    "collector_number": "2",
+    "finish": "normal",
+    "name": "Fortune's Favor",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "f17"
   },
   "d51bacdd-040e-45f7-9256-85f93801a10e": {
     "collector_number": "314",
@@ -3574,6 +3742,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "2xm"
+  },
+  "e5e12371-f05c-41cf-92ca-7cb17c2f7f1a": {
+    "collector_number": "79",
+    "finish": "normal",
+    "name": "Tezzeret, Artifice Master",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m19"
   },
   "e680e1a4-e67a-43c0-9314-c3aa7ddc971b:foil": {
     "collector_number": "40★",
