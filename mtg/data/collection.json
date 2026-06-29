@@ -1775,6 +1775,14 @@
     "quantity": 1,
     "set": "cmr"
   },
+  "7c6d47b0-4c19-4c19-9e21-54cd87a5e34d:foil": {
+    "collector_number": "24",
+    "finish": "foil",
+    "name": "Sram's Expertise",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "aer"
+  },
   "7d3e97d8-92c7-43c4-bdaf-7b0a6ce7cb5f": {
     "collector_number": "214",
     "finish": "normal",
@@ -1919,6 +1927,14 @@
     "quantity": 1,
     "set": "chk"
   },
+  "863ed552-dc6d-4910-b188-3cefc3ebf0ed": {
+    "collector_number": "12",
+    "finish": "normal",
+    "name": "The Gaffer",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltc"
+  },
   "8683a978-1bef-4b01-9361-56b1fc157d26:foil": {
     "collector_number": "164",
     "finish": "foil",
@@ -1998,6 +2014,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ltc"
+  },
+  "8a72ad43-0723-4344-9e5a-43e6313b9876": {
+    "collector_number": "37",
+    "finish": "normal",
+    "name": "Sun Titan",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cm2"
   },
   "8a8e0464-3f05-4719-ad42-577954751da8:foil": {
     "collector_number": "CSP-78",
@@ -2214,6 +2238,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "fdn"
+  },
+  "96fe8889-0ec8-421a-83a4-5d00ab4804db": {
+    "collector_number": "35",
+    "finish": "normal",
+    "name": "Timeless Dragon",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh2"
   },
   "97622209-9357-4347-8961-f77f8d2389d8": {
     "collector_number": "416",
@@ -2575,6 +2607,14 @@
     "quantity": 1,
     "set": "blb"
   },
+  "aecdc315-95e5-450c-bedc-998eea46cf8c": {
+    "collector_number": "9",
+    "finish": "normal",
+    "name": "Brought Back",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m20"
+  },
   "aff8d4f1-eaad-4afb-9097-2afab133f707": {
     "collector_number": "361",
     "finish": "normal",
@@ -2670,6 +2710,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "c21"
+  },
+  "b6297104-b73c-439c-ac0c-b7fac01d49dc": {
+    "collector_number": "337",
+    "finish": "normal",
+    "name": "Delney, Streetwise Lookout",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mkm"
   },
   "b65ec6ad-80d8-4c76-8b69-fc401a8f1ce8": {
     "collector_number": "379",
@@ -2887,6 +2935,14 @@
     "quantity": 1,
     "set": "mom"
   },
+  "c0bdd07d-9fb9-4ee4-80db-494ee0cba58d": {
+    "collector_number": "2",
+    "finish": "normal",
+    "name": "Akroma, Vision of Ixidor",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cmr"
+  },
   "c0c3b9a8-aa30-46fc-b2e0-8bab7f9b4648": {
     "collector_number": "73",
     "finish": "normal",
@@ -3095,6 +3151,14 @@
     "quantity": 1,
     "set": "c13"
   },
+  "cbb97027-d6bc-4529-960d-6b0ab2af9c50": {
+    "collector_number": "62",
+    "finish": "normal",
+    "name": "Divine Reckoning",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c19"
+  },
   "cc3db531-3f21-49a2-8aeb-d98b7db94397": {
     "collector_number": "373",
     "finish": "normal",
@@ -3230,6 +3294,14 @@
     "oracle_id": "",
     "quantity": 2,
     "set": "mh1"
+  },
+  "d243055f-892e-4042-9694-13d5e99e3550": {
+    "collector_number": "4",
+    "finish": "normal",
+    "name": "Mandate of Peace",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c19"
   },
   "d423365c-a32c-4060-b178-3221e3200387": {
     "collector_number": "292",
@@ -3487,6 +3559,14 @@
     "quantity": 1,
     "set": "dgm"
   },
+  "e45300aa-02c4-4d4d-bf6d-e5d9342b471a": {
+    "collector_number": "288",
+    "finish": "normal",
+    "name": "Katilda, Dawnhart Martyr // Katilda's Rising Dawn",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "dbl"
+  },
   "e514b13d-2d22-4d9e-a501-b0667f02edac": {
     "collector_number": "206",
     "finish": "normal",
@@ -3663,6 +3743,14 @@
     "quantity": 1,
     "set": "grn"
   },
+  "f06edd53-f3ac-44b0-a087-5670ba8f0fa5": {
+    "collector_number": "24",
+    "finish": "normal",
+    "name": "Idyllic Tutor",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "thb"
+  },
   "f15cd233-e27b-4cfd-aa4e-18040d1de22f": {
     "collector_number": "68",
     "finish": "normal",
@@ -3766,6 +3854,14 @@
     "oracle_id": "",
     "quantity": 2,
     "set": "ice"
+  },
+  "f6601ab1-3862-4aff-82be-be15493fe4b0": {
+    "collector_number": "59",
+    "finish": "normal",
+    "name": "Weathered Wayfarer",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ons"
   },
   "f69d77d1-5980-436c-bf48-790939b069aa": {
     "collector_number": "77",
