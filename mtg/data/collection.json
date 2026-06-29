@@ -295,6 +295,14 @@
     "quantity": 1,
     "set": "ltc"
   },
+  "125b8be1-76b9-434e-a505-5099d950767c": {
+    "collector_number": "228",
+    "finish": "normal",
+    "name": "Staggering Insight",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "thb"
+  },
   "12de1008-9c1b-4072-8678-befce9a81cc7": {
     "collector_number": "239",
     "finish": "normal",
@@ -398,6 +406,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cmd"
+  },
+  "1b33df4a-151a-43ab-a72c-e163d8cadf12": {
+    "collector_number": "5",
+    "finish": "normal",
+    "name": "Prophet of Kruphix",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cp1"
   },
   "1b59533a-3e38-495d-873e-2f89fbd08494": {
     "collector_number": "259",
@@ -582,6 +598,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cm2"
+  },
+  "27427233-da58-45af-ade8-e0727929efaa": {
+    "collector_number": "152",
+    "finish": "normal",
+    "name": "Kruphix, God of Horizons",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "jou"
   },
   "2744ac83-a79f-4042-8720-688b5adda382": {
     "collector_number": "243",
@@ -935,6 +959,14 @@
     "quantity": 1,
     "set": "2xm"
   },
+  "41e58eb8-e5b9-4ef6-be1f-00e28cebb998": {
+    "collector_number": "356",
+    "finish": "normal",
+    "name": "Flubs, the Fool",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "blc"
+  },
   "41fd8502-52cb-4675-9c5a-cb39e2b10110": {
     "collector_number": "mj112",
     "finish": "normal",
@@ -1207,6 +1239,14 @@
     "quantity": 1,
     "set": "dsk"
   },
+  "598f6fd1-51a3-4bb3-9696-911cd45367f9": {
+    "collector_number": "59",
+    "finish": "normal",
+    "name": "Void Rend",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "otp"
+  },
   "59e256c2-38df-4012-9308-ce17dd889e5f": {
     "collector_number": "110",
     "finish": "normal",
@@ -1214,6 +1254,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ulg"
+  },
+  "5a7329cd-95af-4d71-984f-f5f28982520c": {
+    "collector_number": "226",
+    "finish": "normal",
+    "name": "Urza, Prince of Kroog",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "bro"
   },
   "5ad36fb2-c44e-4085-ba0d-54277841ad3a": {
     "collector_number": "226",
@@ -1678,6 +1726,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cmr"
+  },
+  "7d3e97d8-92c7-43c4-bdaf-7b0a6ce7cb5f": {
+    "collector_number": "214",
+    "finish": "normal",
+    "name": "Dream Trawler",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "thb"
   },
   "7d4595f2-9297-40dc-b2dd-7144bbb401f7": {
     "collector_number": "259",
@@ -2223,6 +2279,14 @@
     "quantity": 1,
     "set": "tsr"
   },
+  "9e449e38-6f03-4316-8ebc-d0faf79d6bc7": {
+    "collector_number": "447",
+    "finish": "normal",
+    "name": "Slimefoot and Squee",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "moc"
+  },
   "9f06db70-95f9-41eb-8e5f-8bc56fd34c09": {
     "collector_number": "65",
     "finish": "normal",
@@ -2254,6 +2318,14 @@
     "oracle_id": "",
     "quantity": 5,
     "set": "fdn"
+  },
+  "9fe237b8-c02c-41ea-9fc4-b771b91d2157": {
+    "collector_number": "1",
+    "finish": "normal",
+    "name": "Dina, Essence Brewer",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "soc"
   },
   "9fe88f96-fd3a-44e5-aa05-3bc63581e33d": {
     "collector_number": "1",
@@ -2407,6 +2479,14 @@
     "quantity": 1,
     "set": "onc"
   },
+  "acfde780-899a-4c5b-a39b-f4a3ff129103": {
+    "collector_number": "230",
+    "finish": "normal",
+    "name": "Ral, Crackling Wit",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "blb"
+  },
   "ad590bea-b872-4af7-a612-c8e8759d59df": {
     "collector_number": "169",
     "finish": "normal",
@@ -2486,6 +2566,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "4ed"
+  },
+  "b2e330dd-7cd3-445d-9c05-56e4a57526e9": {
+    "collector_number": "10",
+    "finish": "normal",
+    "name": "Atraxa, Praetors' Voice",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cm2"
   },
   "b2e330dd-7cd3-445d-9c05-56e4a57526e9:foil": {
     "collector_number": "10",
@@ -3439,6 +3527,14 @@
     "quantity": 1,
     "set": "c19"
   },
+  "ec9ce307-8ec3-4db6-a4a3-49f92ebcc783": {
+    "collector_number": "150",
+    "finish": "normal",
+    "name": "Kiora's Follower",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "bng"
+  },
   "ecde6070-a754-42f6-859d-3a341c5a8e0e": {
     "collector_number": "122",
     "finish": "normal",
@@ -3446,6 +3542,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "m20"
+  },
+  "edb8dc2a-ddce-48fa-b57e-0e57c87c6671": {
+    "collector_number": "229",
+    "finish": "normal",
+    "name": "Space-Time Anomaly",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "eoe"
   },
   "edf4a131-5f29-46c0-9c73-719d1112d57a": {
     "collector_number": "157",
@@ -3643,6 +3747,14 @@
     "collector_number": "217",
     "finish": "normal",
     "name": "Sol Ring",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cm2"
+  },
+  "f9f3869d-dbc1-42bb-aa43-8e4c2e79cfc1": {
+    "collector_number": "2",
+    "finish": "normal",
+    "name": "Damia, Sage of Stone",
     "oracle_id": "",
     "quantity": 1,
     "set": "cm2"
