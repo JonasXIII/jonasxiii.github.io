@@ -1,4 +1,12 @@
 {
+  "00f40514-d37d-423f-aa0c-1875300f43a8": {
+    "collector_number": "57",
+    "finish": "normal",
+    "name": "Grima, Saruman's Footman",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltc"
+  },
   "01115986-1963-45c6-b706-2faee6c71e8f": {
     "collector_number": "C16-94",
     "finish": "normal",
@@ -222,6 +230,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "dom"
+  },
+  "0d6901de-65b9-47f5-bcb6-ffab7fe06d51": {
+    "collector_number": "179",
+    "finish": "normal",
+    "name": "Merciless Eviction",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c17"
   },
   "0d69fce2-3307-4518-a196-e0b8155dca73": {
     "collector_number": "314",
@@ -735,6 +751,14 @@
     "quantity": 1,
     "set": "roe"
   },
+  "307543ca-8e17-433f-9758-4c77da6c0870": {
+    "collector_number": "205",
+    "finish": "normal",
+    "name": "Thief of Sanity",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "grn"
+  },
   "309ff3bf-acd3-4bea-b518-6e25f6cfce61:foil": {
     "collector_number": "272",
     "finish": "foil",
@@ -983,6 +1007,14 @@
     "quantity": 1,
     "set": "fdn"
   },
+  "43675ed7-ece1-4414-965e-9ebadcbf3dfb": {
+    "collector_number": "142",
+    "finish": "normal",
+    "name": "Assemble the Legion",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "gtc"
+  },
   "43b5d46e-7054-44f8-9a14-b412f2f0ab86": {
     "collector_number": "128",
     "finish": "normal",
@@ -1110,6 +1142,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "soc"
+  },
+  "4d747889-04db-4e7a-ad4c-3e42b008b58e": {
+    "collector_number": "268",
+    "finish": "normal",
+    "name": "Klothys, God of Destiny",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "thb"
   },
   "4e8397e6-d13a-4996-8fde-b8a9895de287": {
     "collector_number": "476",
@@ -1582,6 +1622,14 @@
     "oracle_id": "",
     "quantity": 2,
     "set": "thb"
+  },
+  "728e660b-ad8b-49d2-a7e5-6588e496519b": {
+    "collector_number": "88",
+    "finish": "normal",
+    "name": "Notion Thief",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "dgm"
   },
   "72c6d541-e2cb-4d6e-acac-90a8f53b7006": {
     "collector_number": "260",
@@ -2607,6 +2655,14 @@
     "quantity": 1,
     "set": "mkm"
   },
+  "b50f7d5f-8b4d-46d4-86ce-92fbc475c039": {
+    "collector_number": "49",
+    "finish": "normal",
+    "name": "Dimir Cutpurse",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ddh"
+  },
   "b53a112c-671c-4312-af56-53fdb735829b": {
     "collector_number": "284",
     "finish": "normal",
@@ -2662,6 +2718,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cm2"
+  },
+  "b7f99fd5-5298-4b27-923d-9d31203c931a": {
+    "collector_number": "242",
+    "finish": "normal",
+    "name": "Zoraline, Cosmos Caller",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "blb"
   },
   "b87891cd-b457-4dff-8d18-a7eaf6748fc6": {
     "collector_number": "249",
@@ -3046,6 +3110,14 @@
     "oracle_id": "",
     "quantity": 2,
     "set": "m20"
+  },
+  "cc7be939-2202-40fe-8899-a05682d76190": {
+    "collector_number": "239",
+    "finish": "normal",
+    "name": "Vial Smasher the Fierce",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "dsc"
   },
   "ccad6ce0-ddf0-458d-bdae-3d7805fdc775": {
     "collector_number": "130",
