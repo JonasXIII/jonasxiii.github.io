@@ -10,21 +10,6 @@
     "trade": false,
     "cards": [
       {
-        "scryfall_id": "ccff131c-2a66-4ebf-97f1-774c9f41b222",
-        "quantity": 1,
-        "position": 226
-      },
-      {
-        "scryfall_id": "babe91f2-06be-4501-a95b-20968e906e1b",
-        "quantity": 1,
-        "position": 227
-      },
-      {
-        "scryfall_id": "554a8769-c840-4c9d-9959-b075c174457b",
-        "quantity": 1,
-        "position": 287
-      },
-      {
         "scryfall_id": "dd3e42ee-ab13-460b-90fd-86e677abce4f",
         "quantity": 1,
         "position": 0
@@ -40,7 +25,7 @@
         "position": 2
       },
       {
-        "scryfall_id": "1fa48620-4c3d-4f75-be1f-c12c4aa59f51",
+        "scryfall_id": "737122cb-b8f4-4d51-80c4-83be6e8dfc86",
         "quantity": 1,
         "position": 3
       },
@@ -100,7 +85,7 @@
         "position": 14
       },
       {
-        "scryfall_id": "b2e330dd-7cd3-445d-9c05-56e4a57526e9",
+        "scryfall_id": "b2e330dd-7cd3-445d-9c05-56e4a57526e9:foil",
         "quantity": 1,
         "position": 15
       },
@@ -125,7 +110,7 @@
         "position": 19
       },
       {
-        "scryfall_id": "f9f3869d-dbc1-42bb-aa43-8e4c2e79cfc1",
+        "scryfall_id": "f9f3869d-dbc1-42bb-aa43-8e4c2e79cfc1:foil",
         "quantity": 1,
         "position": 20
       },
@@ -190,7 +175,7 @@
         "position": 32
       },
       {
-        "scryfall_id": "1b33df4a-151a-43ab-a72c-e163d8cadf12",
+        "scryfall_id": "1b33df4a-151a-43ab-a72c-e163d8cadf12:foil",
         "quantity": 1,
         "position": 33
       },
@@ -275,7 +260,7 @@
         "position": 50
       },
       {
-        "scryfall_id": "4d747889-04db-4e7a-ad4c-3e42b008b58e",
+        "scryfall_id": "4d747889-04db-4e7a-ad4c-7549514b5112",
         "quantity": 1,
         "position": 51
       },
@@ -300,7 +285,7 @@
         "position": 55
       },
       {
-        "scryfall_id": "3159553d-ab09-4970-8c68-613a9cd56a2d",
+        "scryfall_id": "3159553d-ab09-4970-8c68-613a9cd56a2d:foil",
         "quantity": 1,
         "position": 56
       },
@@ -320,7 +305,7 @@
         "position": 60
       },
       {
-        "scryfall_id": "e45300aa-02c4-4d4d-bf6d-e5d9342b471a",
+        "scryfall_id": "e45300aa-02c4-4d4d-bf6d-e5d9342b471a:foil",
         "quantity": 1,
         "position": 62
       },
@@ -485,7 +470,7 @@
         "position": 105
       },
       {
-        "scryfall_id": "5eb843ef-b223-40d0-a461-54b16d188d0e",
+        "scryfall_id": "415a3104-90e6-4235-b67f-69337c7fe714",
         "quantity": 1,
         "position": 106
       },
@@ -530,7 +515,7 @@
         "position": 114
       },
       {
-        "scryfall_id": "9d3f1b57-3353-4b88-abe9-98a3234a25f3",
+        "scryfall_id": "1ed91aab-9009-4cab-9dd8-b595648df011",
         "quantity": 1,
         "position": 116
       },
@@ -570,7 +555,7 @@
         "position": 123
       },
       {
-        "scryfall_id": "9c0c61e3-9f3d-4e7f-9046-0ea336dd8a2d",
+        "scryfall_id": "9c0c61e3-9f3d-4e7f-9046-0ea336dd8a2d:foil",
         "quantity": 1,
         "position": 124
       },
@@ -660,7 +645,7 @@
         "position": 141
       },
       {
-        "scryfall_id": "bb5385d2-ca5d-4fb9-934b-b7cc8b38ac89",
+        "scryfall_id": "d4133ceb-6176-411a-9eb8-51721c1bb435",
         "quantity": 1,
         "position": 142
       },
@@ -765,7 +750,7 @@
         "position": 164
       },
       {
-        "scryfall_id": "5903aac6-171c-48b7-984a-f074c176d179",
+        "scryfall_id": "85e45d14-a501-40b9-af0a-720ecd20dad7",
         "quantity": 1,
         "position": 165
       },
@@ -785,57 +770,57 @@
         "position": 168
       },
       {
-        "scryfall_id": "726e8b29-13e9-4138-b6a9-d2a0d8188d1c",
+        "scryfall_id": "69e615d8-1b79-4a82-ba9f-ee211d67dc95",
         "quantity": 1,
         "position": 169
       },
       {
         "scryfall_id": "27b52628-de05-4ec1-9978-e998cf17bb26",
         "quantity": 1,
-        "position": 170
+        "position": 171
       },
       {
         "scryfall_id": "f2f7218a-511a-4ca8-899d-ae78a935f7a0:foil",
         "quantity": 1,
-        "position": 171
+        "position": 172
       },
       {
         "scryfall_id": "cc6686e6-4535-49be-b0b3-e76464656cd2",
         "quantity": 1,
-        "position": 172
+        "position": 173
       },
       {
         "scryfall_id": "bb8a103c-b776-4501-9441-a45b90391045",
         "quantity": 1,
-        "position": 173
+        "position": 174
       },
       {
         "scryfall_id": "f9cff40b-9cae-47d0-8df4-c287a17a33e4",
         "quantity": 1,
-        "position": 174
+        "position": 175
       },
       {
         "scryfall_id": "c6202e82-e159-482f-9224-292cb533171c",
         "quantity": 1,
-        "position": 175
+        "position": 176
       },
       {
         "scryfall_id": "deca0b2a-e7f3-444a-883d-7c41dd62c9cc",
         "quantity": 1,
-        "position": 176
+        "position": 177
       },
       {
         "scryfall_id": "597a8a8f-84ff-4041-9c99-938454a47951",
         "quantity": 1,
-        "position": 177
+        "position": 178
       },
       {
         "scryfall_id": "8cb55caf-fc95-40dc-80af-5144f94333ee",
         "quantity": 1,
-        "position": 178
+        "position": 179
       },
       {
-        "scryfall_id": "608567fd-9f94-4058-831a-77cb6019ef02",
+        "scryfall_id": "809205f3-acf5-4244-b360-09ce4ba76795",
         "quantity": 1,
         "position": 180
       },
@@ -875,7 +860,7 @@
         "position": 187
       },
       {
-        "scryfall_id": "d01fe6e9-49ee-4708-833e-75cd5a9f167c",
+        "scryfall_id": "d01fe6e9-49ee-4708-833e-75cd5a9f167c:foil",
         "quantity": 1,
         "position": 190
       },
@@ -900,7 +885,7 @@
         "position": 194
       },
       {
-        "scryfall_id": "b63fa88b-a177-49b7-a583-a0a041313f77:foil",
+        "scryfall_id": "e680e1a4-e67a-43c0-9314-c3aa7ddc971b:foil",
         "quantity": 1,
         "position": 195
       },
@@ -945,7 +930,7 @@
         "position": 203
       },
       {
-        "scryfall_id": "9b911653-7b96-4cf3-a907-13c5c53a14f7",
+        "scryfall_id": "d16af289-c74d-4b1f-a6cf-8aed30fa961c",
         "quantity": 1,
         "position": 204
       },
@@ -1000,7 +985,7 @@
         "position": 214
       },
       {
-        "scryfall_id": "7740ff55-67bb-409e-90f7-2c2c8b8c770a",
+        "scryfall_id": "0a44bbbf-2c38-4ecb-99a0-b944983f7e51",
         "quantity": 1,
         "position": 215
       },
@@ -1017,42 +1002,42 @@
       {
         "scryfall_id": "a92a2c5a-e450-494a-b23b-7ac0a6c50535",
         "quantity": 1,
-        "position": 218
+        "position": 219
       },
       {
         "scryfall_id": "5e9c9901-c329-4a68-96ab-f33d7c12aefe",
         "quantity": 1,
-        "position": 219
+        "position": 220
       },
       {
         "scryfall_id": "bf96c268-c86b-4d5e-bf04-200c427e5fa5",
         "quantity": 1,
-        "position": 220
+        "position": 221
       },
       {
         "scryfall_id": "4023a6de-3ac7-488a-b1a9-b1e26681d9bc",
         "quantity": 1,
-        "position": 221
+        "position": 222
       },
       {
         "scryfall_id": "9e5ec47c-47a2-4eda-b81a-4a07f04e5989",
         "quantity": 1,
-        "position": 222
+        "position": 223
       },
       {
         "scryfall_id": "e0a5630d-325f-4f7a-9885-b249c6480023",
         "quantity": 1,
-        "position": 223
+        "position": 225
       },
       {
         "scryfall_id": "ce65226a-12cd-416a-bb60-12e9b35f609b",
         "quantity": 1,
-        "position": 224
+        "position": 226
       },
       {
         "scryfall_id": "5330e6b7-eca3-46a4-8905-8f1de16f76af",
         "quantity": 1,
-        "position": 225
+        "position": 227
       },
       {
         "scryfall_id": "9a6b4431-7f2f-4dea-ba90-ea80d56b39bd",
@@ -1345,7 +1330,7 @@
         "position": 285
       },
       {
-        "scryfall_id": "8dbb2112-85b9-49cf-9ed5-9273829c34f1:foil",
+        "scryfall_id": "bb2d43eb-a72f-4721-82b5-121a7c4d2ffa:foil",
         "quantity": 1,
         "position": 286
       },
@@ -1505,7 +1490,7 @@
         "position": 330
       },
       {
-        "scryfall_id": "3af78d76-ad5c-44ba-880d-b834bcde5398",
+        "scryfall_id": "062fcd2b-7f63-47bf-83ba-88e33d397a6e",
         "quantity": 1,
         "position": 331
       },
@@ -1633,11 +1618,6 @@
         "scryfall_id": "8c99cde3-8ba5-44bf-bbaa-1a12c6cac925",
         "quantity": 1,
         "position": 356
-      },
-      {
-        "scryfall_id": "1d70f9ec-fdc1-4219-b89b-c030d712c1fc",
-        "quantity": 1,
-        "position": 357
       },
       {
         "scryfall_id": "36d3da9c-cb7a-4cea-b6e6-6722bd16c73c",
@@ -1915,7 +1895,7 @@
         "position": 412
       },
       {
-        "scryfall_id": "22e343b5-37d6-44f6-be24-66313f18c246",
+        "scryfall_id": "22e343b5-37d6-44f6-be24-66313f18c246:foil",
         "quantity": 1,
         "position": 413
       },
@@ -2173,6 +2153,31 @@
         "scryfall_id": "5b8170dc-6a90-46fc-9989-7575f3d402b5",
         "quantity": 1,
         "position": 476
+      },
+      {
+        "scryfall_id": "726e8b29-13e9-4138-b6a9-d2a0d8188d1c",
+        "quantity": 1,
+        "position": 170
+      },
+      {
+        "scryfall_id": "3f16e3fe-cc9f-414e-8643-3f66c0ab2536",
+        "quantity": 1,
+        "position": 218
+      },
+      {
+        "scryfall_id": "e0a5630d-325f-4f7a-9885-b249c6480023",
+        "quantity": 1,
+        "position": 224
+      },
+      {
+        "scryfall_id": "8683a978-1bef-4b01-9361-56b1fc157d26:foil",
+        "quantity": 1,
+        "position": 287
+      },
+      {
+        "scryfall_id": "07a2e39d-037a-464e-9102-f06feebefaf9",
+        "quantity": 1,
+        "position": 357
       }
     ]
   }
