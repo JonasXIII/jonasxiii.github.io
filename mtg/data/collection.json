@@ -215,6 +215,14 @@
     "quantity": 1,
     "set": "dft"
   },
+  "0b0d8543-78c9-4d7f-b45e-44ecf023d276": {
+    "collector_number": "175",
+    "finish": "normal",
+    "name": "Syphon Mind",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ons"
+  },
   "0b461cce-02c7-4c93-afaa-32400ff82942": {
     "collector_number": "181",
     "finish": "normal",
@@ -847,6 +855,14 @@
     "quantity": 1,
     "set": "cn2"
   },
+  "33961d8a-e2a3-4eee-9ff4-11455f262c66": {
+    "collector_number": "TMP-151",
+    "finish": "normal",
+    "name": "Reanimate",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "plst"
+  },
   "33a33b4c-2f3c-4f74-aa5b-ec6eb73ee4e7": {
     "collector_number": "89",
     "finish": "normal",
@@ -943,6 +959,14 @@
     "quantity": 1,
     "set": "rtr"
   },
+  "37e34017-0aeb-4a93-9edf-596bf3597a0e": {
+    "collector_number": "78",
+    "finish": "normal",
+    "name": "Call of the Death-Dweller",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "iko"
+  },
   "3b3134b3-1bad-4b41-9e56-700125ff31fa": {
     "collector_number": "319",
     "finish": "normal",
@@ -1014,6 +1038,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "dgm"
+  },
+  "4023a6de-3ac7-488a-b1a9-b1e26681d9bc": {
+    "collector_number": "339",
+    "finish": "normal",
+    "name": "Nazgûl",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltr"
   },
   "40b7a6db-e0a3-45f7-9ef7-e4fd5490adb7": {
     "collector_number": "62",
@@ -1279,6 +1311,14 @@
     "quantity": 1,
     "set": "cmr"
   },
+  "5330e6b7-eca3-46a4-8905-8f1de16f76af": {
+    "collector_number": "11",
+    "finish": "normal",
+    "name": "Ayara's Oathsworn",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mat"
+  },
   "54ced5cf-b51a-4dab-97f7-50fb18e5c463": {
     "collector_number": "475",
     "finish": "normal",
@@ -1487,6 +1527,14 @@
     "quantity": 1,
     "set": "iko"
   },
+  "5e9c9901-c329-4a68-96ab-f33d7c12aefe": {
+    "collector_number": "334",
+    "finish": "normal",
+    "name": "Nazgûl",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltr"
+  },
   "5eb843ef-b223-40d0-a461-54b16d188d0e": {
     "collector_number": "147",
     "finish": "normal",
@@ -1510,6 +1558,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "rna"
+  },
+  "608567fd-9f94-4058-831a-77cb6019ef02": {
+    "collector_number": "61",
+    "finish": "normal",
+    "name": "Laboratory Maniac",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "uma"
   },
   "609c34f9-9f53-4773-a02b-517209024fc2": {
     "collector_number": "18",
@@ -1815,6 +1871,14 @@
     "quantity": 1,
     "set": "bbd"
   },
+  "7740ff55-67bb-409e-90f7-2c2c8b8c770a": {
+    "collector_number": "120",
+    "finish": "normal",
+    "name": "Valgavoth, Terror Eater",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "dsk"
+  },
   "7770e48e-72e1-4475-a4b5-c1c561a1beaa": {
     "collector_number": "237",
     "finish": "normal",
@@ -1910,6 +1974,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "tmp"
+  },
+  "7bb7a9e7-8ed9-415e-abe2-f1e1a362d569": {
+    "collector_number": "156",
+    "finish": "normal",
+    "name": "Bitter Triumph",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "soa"
   },
   "7bea6dea-d767-4092-a285-305d9997357a": {
     "collector_number": "161",
@@ -2078,6 +2150,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "mb2"
+  },
+  "833936c6-9381-4c0b-a81c-4a938be95040": {
+    "collector_number": "100",
+    "finish": "normal",
+    "name": "Nazgûl",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltr"
   },
   "834b27a0-dfd7-4f96-8cde-cacac4b24acc": {
     "collector_number": "223",
@@ -2511,6 +2591,14 @@
     "quantity": 1,
     "set": "akh"
   },
+  "9b911653-7b96-4cf3-a907-13c5c53a14f7": {
+    "collector_number": "113",
+    "finish": "normal",
+    "name": "Overlord of the Balemurk",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "dsk"
+  },
   "9bf2b208-79c6-4c4c-bf66-871352ed600f": {
     "collector_number": "309",
     "finish": "normal",
@@ -2598,6 +2686,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "moc"
+  },
+  "9e5ec47c-47a2-4eda-b81a-4a07f04e5989": {
+    "collector_number": "110",
+    "finish": "normal",
+    "name": "Whip of Erebos",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ths"
   },
   "9f06db70-95f9-41eb-8e5f-8bc56fd34c09": {
     "collector_number": "65",
@@ -2758,6 +2854,22 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ktk"
+  },
+  "a92a2c5a-e450-494a-b23b-7ac0a6c50535": {
+    "collector_number": "79",
+    "finish": "normal",
+    "name": "Call of the Ring",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltr"
+  },
+  "a92d5a03-a4c9-4432-b3bb-f5bb21f65db0": {
+    "collector_number": "336",
+    "finish": "normal",
+    "name": "Nazgûl",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltr"
   },
   "a9a159f6-fecf-4bdd-b2f8-a9665a5cc32d": {
     "collector_number": "46",
@@ -2999,6 +3111,14 @@
     "quantity": 1,
     "set": "mkm"
   },
+  "b63fa88b-a177-49b7-a583-a0a041313f77:foil": {
+    "collector_number": "40",
+    "finish": "foil",
+    "name": "Mandate of Abaddon",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "40k"
+  },
   "b65ec6ad-80d8-4c76-8b69-fc401a8f1ce8": {
     "collector_number": "379",
     "finish": "normal",
@@ -3222,6 +3342,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "dst"
+  },
+  "bf96c268-c86b-4d5e-bf04-200c427e5fa5": {
+    "collector_number": "338",
+    "finish": "normal",
+    "name": "Nazgûl",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltr"
   },
   "bfb5d83f-2b7c-4c22-ac37-938e7cd1654a": {
     "collector_number": "240",
@@ -3567,6 +3695,22 @@
     "quantity": 1,
     "set": "2xm"
   },
+  "ce65226a-12cd-416a-bb60-12e9b35f609b": {
+    "collector_number": "332",
+    "finish": "normal",
+    "name": "Nazgûl",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltr"
+  },
+  "ce860ed4-a5bd-4347-9eab-dd716ea84db1": {
+    "collector_number": "58",
+    "finish": "normal",
+    "name": "Bloodthirsty Conqueror",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "fdn"
+  },
   "ced4c824-2dfc-42ae-84e6-09f8e3f51b5b": {
     "collector_number": "248",
     "finish": "normal",
@@ -3598,6 +3742,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ltc"
+  },
+  "d01fe6e9-49ee-4708-833e-75cd5a9f167c": {
+    "collector_number": "120",
+    "finish": "normal",
+    "name": "Improvisation Capstone",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "sos"
   },
   "d022b7d7-e9f5-4f58-8010-331baaa4e3c4": {
     "collector_number": "16",
@@ -3791,6 +3943,14 @@
     "quantity": 1,
     "set": "otj"
   },
+  "dc988247-1072-4e47-a656-8c5b1391dfca": {
+    "collector_number": "209",
+    "finish": "normal",
+    "name": "Toxic Deluge",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltc"
+  },
   "dcd05b01-dc73-4dd2-970a-32ec6e153c86": {
     "collector_number": "226",
     "finish": "normal",
@@ -3862,6 +4022,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "m21"
+  },
+  "e0a5630d-325f-4f7a-9885-b249c6480023": {
+    "collector_number": "337",
+    "finish": "normal",
+    "name": "Nazgûl",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltr"
   },
   "e0b52b9c-7278-46b4-9f3c-3a7fc0c7e526": {
     "collector_number": "239",
@@ -4111,6 +4279,14 @@
     "quantity": 1,
     "set": "3ed"
   },
+  "eee48ed0-3965-4bcc-8eee-bcd8f1607808": {
+    "collector_number": "206",
+    "finish": "normal",
+    "name": "Reanimate",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltc"
+  },
   "ef740769-1179-4a4f-b321-2b16270cfe0d": {
     "collector_number": "202",
     "finish": "normal",
@@ -4214,6 +4390,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "fdn"
+  },
+  "f40fc56b-84ae-4797-95bf-4bdd2bc5bf75": {
+    "collector_number": "86",
+    "finish": "normal",
+    "name": "Preordain",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "soa"
   },
   "f4cfcecf-621f-4664-9b1f-65ce4f0f8ab0": {
     "collector_number": "CHK-10",
