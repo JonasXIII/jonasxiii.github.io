@@ -46,9 +46,15 @@ async function loadData() {
         const cachedCards = api.loadCacheFromStorage();
         state.setCardCache(cachedCards);
 
-        // Determine which IDs need fetching
+        // Determine which IDs need fetching (missing from cache, or cached but prices are null)
         const allIds = collectAllScryfallIds(collectionData, decksData, bindersData, boxesData);
-        const missingIds = allIds.filter(id => !cachedCards[id]);
+        const missingIds = allIds.filter(id => {
+            const cached = cachedCards[id];
+            if (!cached) return true;
+            // Re-fetch if both price fields are null (stale cache entry)
+            if (cached.prices?.usd == null && cached.prices?.usd_foil == null) return true;
+            return false;
+        });
 
         if (missingIds.length > 0) {
             loadingText.textContent = `Fetching ${missingIds.length} cards from Scryfall...`;
