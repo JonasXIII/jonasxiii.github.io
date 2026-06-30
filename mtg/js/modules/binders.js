@@ -65,6 +65,16 @@ export function removeCard(binderId, position) {
     state.updateBinder(binderId, binder);
 }
 
+export function setCardQuantity(binderId, position, quantity) {
+    const binder = state.getBinderById(binderId);
+    if (!binder) return;
+    const card = binder.cards.find(c => c.position === position);
+    if (card) {
+        card.quantity = Math.max(1, Math.min(4, quantity));
+        state.updateBinder(binderId, binder);
+    }
+}
+
 export function moveCard(binderId, fromPosition, toPosition) {
     const binder = state.getBinderById(binderId);
     if (!binder) return;

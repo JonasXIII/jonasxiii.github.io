@@ -291,6 +291,9 @@ function renderContent() {
             });
 
             if (slotData && slotData.cardData) {
+                const isFoil = slotData.scryfall_id.includes(':foil');
+                const qty = slotData.quantity || 1;
+
                 slot.draggable = true;
                 slot.addEventListener('dragstart', (e) => {
                     e.dataTransfer.setData('application/json', JSON.stringify({
@@ -305,6 +308,19 @@ function renderContent() {
                     slot.classList.remove('mtg-binder-slot-dragging');
                 });
 
+                // Stack shadow cards behind for multiples
+                for (let s = Math.min(qty, 4) - 1; s >= 1; s--) {
+                    const shadow = document.createElement('div');
+                    shadow.className = 'mtg-binder-stack-shadow';
+                    shadow.style.top = `-${s * 3}px`;
+                    shadow.style.left = `-${s * 3}px`;
+                    slot.appendChild(shadow);
+                }
+
+                // Card image wrapper (sits above shadows)
+                const cardWrap = document.createElement('div');
+                cardWrap.className = 'mtg-binder-card-wrap' + (isFoil ? ' mtg-card-foil' : '');
+
                 const imgUri = getCardImageUri(slotData.cardData, 'normal');
                 if (imgUri) {
                     const img = document.createElement('img');
@@ -312,16 +328,62 @@ function renderContent() {
                     img.alt = slotData.cardData.name;
                     img.loading = 'lazy';
                     img.draggable = false;
-                    slot.appendChild(img);
+                    cardWrap.appendChild(img);
                 }
+                slot.appendChild(cardWrap);
 
-                const price = slotData.cardData.prices?.usd || slotData.cardData.prices?.usd_foil;
+                // Price — use foil price for foil cards
+                const price = isFoil
+                    ? (slotData.cardData.prices?.usd_foil || slotData.cardData.prices?.usd)
+                    : (slotData.cardData.prices?.usd || slotData.cardData.prices?.usd_foil);
                 if (price) {
                     const priceEl = document.createElement('div');
                     priceEl.className = 'mtg-card-price-overlay';
                     priceEl.textContent = '$' + price;
                     slot.appendChild(priceEl);
                 }
+
+                // Quantity controls (only show on hover via CSS)
+                const qtyControls = document.createElement('div');
+                qtyControls.className = 'mtg-binder-qty-controls';
+                qtyControls.addEventListener('click', (e) => e.stopPropagation());
+
+                const minusBtn = document.createElement('button');
+                minusBtn.className = 'mtg-binder-qty-btn';
+                minusBtn.textContent = '−';
+                minusBtn.title = 'Remove one copy';
+                minusBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const newQty = qty - 1;
+                    if (newQty <= 0) {
+                        binders.removeCard(binder.id, absolutePosition);
+                    } else {
+                        binders.setCardQuantity(binder.id, absolutePosition, newQty);
+                    }
+                    renderContent();
+                });
+
+                const qtyDisplay = document.createElement('span');
+                qtyDisplay.className = 'mtg-binder-qty-display';
+                qtyDisplay.textContent = qty;
+
+                const plusBtn = document.createElement('button');
+                plusBtn.className = 'mtg-binder-qty-btn';
+                plusBtn.textContent = '+';
+                plusBtn.title = 'Add one copy';
+                plusBtn.disabled = qty >= 4;
+                plusBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (qty < 4) {
+                        binders.setCardQuantity(binder.id, absolutePosition, qty + 1);
+                        renderContent();
+                    }
+                });
+
+                qtyControls.appendChild(minusBtn);
+                qtyControls.appendChild(qtyDisplay);
+                qtyControls.appendChild(plusBtn);
+                slot.appendChild(qtyControls);
 
                 slot.addEventListener('click', () => {
                     openSlotActionModal(binder.id, absolutePosition, slotData);
