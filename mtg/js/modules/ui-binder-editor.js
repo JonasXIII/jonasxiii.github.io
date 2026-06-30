@@ -330,9 +330,8 @@ function renderContent() {
                     img.draggable = false;
                     cardWrap.appendChild(img);
                 }
-                slot.appendChild(cardWrap);
 
-                // Price — use foil price for foil cards
+                // Price inside cardWrap so it sits above the image
                 const price = isFoil
                     ? (slotData.cardData.prices?.usd_foil || slotData.cardData.prices?.usd)
                     : (slotData.cardData.prices?.usd || slotData.cardData.prices?.usd_foil);
@@ -340,8 +339,10 @@ function renderContent() {
                     const priceEl = document.createElement('div');
                     priceEl.className = 'mtg-card-price-overlay';
                     priceEl.textContent = '$' + price;
-                    slot.appendChild(priceEl);
+                    cardWrap.appendChild(priceEl);
                 }
+
+                slot.appendChild(cardWrap);
 
                 // Quantity controls (only show on hover via CSS)
                 const qtyControls = document.createElement('div');
