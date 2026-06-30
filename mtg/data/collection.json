@@ -95,6 +95,14 @@
     "quantity": 1,
     "set": "c18"
   },
+  "04c6e42d-991d-4e6b-a900-38480931f79e": {
+    "collector_number": "86",
+    "finish": "normal",
+    "name": "Dreadhorde Invasion",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "war"
+  },
   "0574d09f-5667-4ecf-bbbb-a1a0ed24068d:foil": {
     "collector_number": "12",
     "finish": "foil",
@@ -174,6 +182,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "dde"
+  },
+  "086fc7fb-efcf-4676-8455-39b63edaec6a": {
+    "collector_number": "118",
+    "finish": "normal",
+    "name": "Nullpriest of Oblivion",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "znr"
   },
   "08bf0e79-efb8-4348-9b73-90293ac8f306": {
     "collector_number": "CLB-332",
@@ -286,6 +302,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "m21"
+  },
+  "0ff35166-1bd9-43f8-88b7-4543a1881908": {
+    "collector_number": "178",
+    "finish": "normal",
+    "name": "Subterranean Tremors",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "soa"
   },
   "10a79733-702c-4611-b073-71db7f1158b2": {
     "collector_number": "67",
@@ -495,6 +519,14 @@
     "quantity": 3,
     "set": "mh1"
   },
+  "1c603751-1e2b-4c8e-a8d2-5c0876e7254f": {
+    "collector_number": "90",
+    "finish": "normal",
+    "name": "Darkstar Augur",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "blb"
+  },
   "1d65d20c-09e5-4139-838b-7e0e48eb2b2b": {
     "collector_number": "217",
     "finish": "normal",
@@ -630,6 +662,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "m12"
+  },
+  "25c13a34-9be3-4ff4-996d-f61c6db2e990": {
+    "collector_number": "33",
+    "finish": "normal",
+    "name": "Port Razer",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "spg"
   },
   "25f05814-a5a5-460f-9d29-0ab03efecf4c": {
     "collector_number": "31",
@@ -918,6 +958,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "rix"
+  },
+  "354356c1-7b25-4d27-8887-ef9fe68bb76b": {
+    "collector_number": "JOU-65",
+    "finish": "normal",
+    "name": "Dictate of Erebos",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "plst"
   },
   "35e3a516-2989-4cac-892f-deb3d754ba7d:foil": {
     "collector_number": "288",
@@ -1319,6 +1367,14 @@
     "quantity": 1,
     "set": "mat"
   },
+  "542370dc-0166-45b9-84bb-000cd97e80b9": {
+    "collector_number": "152",
+    "finish": "normal",
+    "name": "Phyrexian Arena",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "9ed"
+  },
   "54ced5cf-b51a-4dab-97f7-50fb18e5c463": {
     "collector_number": "475",
     "finish": "normal",
@@ -1591,6 +1647,14 @@
     "quantity": 1,
     "set": "plst"
   },
+  "61248b5d-3f4b-4329-a1af-7252443883a0": {
+    "collector_number": "208",
+    "finish": "normal",
+    "name": "Sanguine Bond",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltc"
+  },
   "61f42823-8a48-4b81-a037-664ba1c69f29": {
     "collector_number": "203",
     "finish": "normal",
@@ -1727,6 +1791,14 @@
     "quantity": 1,
     "set": "cmr"
   },
+  "6a1c710b-bd67-4174-ab02-6ae98a7575ac": {
+    "collector_number": "76",
+    "finish": "normal",
+    "name": "Gutterbones",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "rna"
+  },
   "6b3a3944-c3e6-4710-a509-7f970cd692a2": {
     "collector_number": "227",
     "finish": "normal",
@@ -1742,6 +1814,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "c21"
+  },
+  "6b7eb857-6617-4672-85e4-f1f5e661db50:foil": {
+    "collector_number": "333",
+    "finish": "foil",
+    "name": "Flashback",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "sos"
   },
   "6bbdd169-958f-42df-812d-f75fbed9576f": {
     "collector_number": "34",
@@ -2071,6 +2151,14 @@
     "quantity": 1,
     "set": "ltr"
   },
+  "7eb9e83d-515d-4911-a06b-9982200277b2": {
+    "collector_number": "80",
+    "finish": "normal",
+    "name": "Emeritus of Woe",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "sos"
+  },
   "7f430794-0d86-4f6a-97e0-4bbb6716d613": {
     "collector_number": "230",
     "finish": "normal",
@@ -2174,6 +2262,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ths"
+  },
+  "837d710a-652f-4c60-a52d-d786231160a4": {
+    "collector_number": "113",
+    "finish": "normal",
+    "name": "Requiem Monolith",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "eoe"
   },
   "838ffc87-517a-4d94-8ce0-bc9ed01ecc52": {
     "collector_number": "335",
@@ -2303,6 +2399,14 @@
     "quantity": 1,
     "set": "3ed"
   },
+  "8b1e10e8-ea14-4761-910b-4072e2a18456": {
+    "collector_number": "85",
+    "finish": "normal",
+    "name": "Grave Researcher",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "sos"
+  },
   "8c2996d9-3287-4480-8c04-7a378e37e3cf": {
     "collector_number": "233",
     "finish": "normal",
@@ -2335,6 +2439,14 @@
     "quantity": 1,
     "set": "jou"
   },
+  "8ce8891f-b44c-4be4-878e-9fc45a9dc9cb": {
+    "collector_number": "80",
+    "finish": "normal",
+    "name": "Pain Seer",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "bng"
+  },
   "8d27e717-8bda-44dc-90b9-a6f7029c7b93": {
     "collector_number": "11",
     "finish": "normal",
@@ -2350,6 +2462,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ice"
+  },
+  "8dbb2112-85b9-49cf-9ed5-9273829c34f1:foil": {
+    "collector_number": "122",
+    "finish": "foil",
+    "name": "Eidolon of Blossoms",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "jou"
   },
   "8e5eef83-a3d4-44c7-a6cb-7f6803825b9e": {
     "collector_number": "377",
@@ -2591,6 +2711,14 @@
     "quantity": 1,
     "set": "akh"
   },
+  "9a6b4431-7f2f-4dea-ba90-ea80d56b39bd": {
+    "collector_number": "44",
+    "finish": "normal",
+    "name": "Leyline of the Void",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mb2"
+  },
   "9b911653-7b96-4cf3-a907-13c5c53a14f7": {
     "collector_number": "113",
     "finish": "normal",
@@ -2742,6 +2870,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "c17"
+  },
+  "a058f1a6-318c-4bba-981e-ace079ada806": {
+    "collector_number": "168",
+    "finish": "normal",
+    "name": "Weapons Manufacturing",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "eoe"
   },
   "a14ecd13-325a-4555-b1dd-d0d0d0826031": {
     "collector_number": "145",
@@ -3447,6 +3583,14 @@
     "quantity": 1,
     "set": "mh1"
   },
+  "c38dfb08-ab41-4759-9967-b5a25f18518a": {
+    "collector_number": "81",
+    "finish": "normal",
+    "name": "Thrull Parasite",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "gtc"
+  },
   "c3fd1a59-4ade-459f-90d2-1fc67d6d1384": {
     "collector_number": "228",
     "finish": "normal",
@@ -4086,6 +4230,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "dgm"
+  },
+  "e4507ef5-0d30-42ca-b305-f99c6e10432b:foil": {
+    "collector_number": "46",
+    "finish": "foil",
+    "name": "Pyretic Ritual",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "soa"
   },
   "e45300aa-02c4-4d4d-bf6d-e5d9342b471a": {
     "collector_number": "288",
