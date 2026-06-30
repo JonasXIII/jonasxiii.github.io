@@ -535,6 +535,14 @@
     "quantity": 3,
     "set": "dom"
   },
+  "1d7bb58c-304a-4fb4-9ae6-bc98126cca4e:foil": {
+    "collector_number": "73",
+    "finish": "foil",
+    "name": "Open the Way",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mat"
+  },
   "1e30c6a4-62c4-444a-8c4c-a73d8f59b276": {
     "collector_number": "MM2-1",
     "finish": "normal",
@@ -655,6 +663,14 @@
     "quantity": 1,
     "set": "plst"
   },
+  "251fc3c5-b2f0-4be3-aa65-bc6ef8112252": {
+    "collector_number": "241",
+    "finish": "normal",
+    "name": "Darksteel Ingot",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c13"
+  },
   "2540ec6b-9ffa-4ab0-bbd3-ddf1efd2db60:foil": {
     "collector_number": "138",
     "finish": "foil",
@@ -686,6 +702,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cm2"
+  },
+  "26a7c62c-12ed-493c-ba95-0f55fec83686": {
+    "collector_number": "155",
+    "finish": "normal",
+    "name": "Sylvan Library",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "spg"
   },
   "27427233-da58-45af-ade8-e0727929efaa": {
     "collector_number": "152",
@@ -895,6 +919,14 @@
     "quantity": 1,
     "set": "cn2"
   },
+  "33704052-aeb1-4798-a64d-778e1879eeb9": {
+    "collector_number": "206",
+    "finish": "normal",
+    "name": "Gilded Lotus",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m13"
+  },
   "33961d8a-e2a3-4eee-9ff4-11455f262c66": {
     "collector_number": "TMP-151",
     "finish": "normal",
@@ -1014,6 +1046,22 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "iko"
+  },
+  "3826a901-7219-46d1-acae-07a981877149": {
+    "collector_number": "205",
+    "finish": "normal",
+    "name": "Elvish Reclaimer",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mb2"
+  },
+  "3af78d76-ad5c-44ba-880d-b834bcde5398": {
+    "collector_number": "228",
+    "finish": "normal",
+    "name": "Chromatic Orrery",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m21"
   },
   "3b3134b3-1bad-4b41-9e56-700125ff31fa": {
     "collector_number": "319",
@@ -1831,6 +1879,22 @@
     "quantity": 1,
     "set": "m10"
   },
+  "6cb74e91-f7e5-49dd-8aa8-83a679f88a21:foil": {
+    "collector_number": "202",
+    "finish": "foil",
+    "name": "Perennial Behemoth",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "bro"
+  },
+  "6d4a1712-d19e-4475-9614-a0b1af4da610:foil": {
+    "collector_number": "255",
+    "finish": "foil",
+    "name": "Bender's Waterskin",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "tla"
+  },
   "6ea2451e-ad6e-4f76-ac76-0b8f4fabd0a9": {
     "collector_number": "213",
     "finish": "normal",
@@ -1846,6 +1910,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "plst"
+  },
+  "7054a0d7-396f-40b4-ab24-db591c3b08f0": {
+    "collector_number": "107",
+    "finish": "normal",
+    "name": "Mossborn Hydra",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "fdn"
   },
   "7062e2f3-bf4a-4a9a-962c-b45718a464bc": {
     "collector_number": "152",
@@ -1990,6 +2062,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "plst"
+  },
+  "783f1b9f-9866-4ead-96cf-88babf459ce2": {
+    "collector_number": "238",
+    "finish": "normal",
+    "name": "Thelon of Havenwood",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "tsr"
   },
   "79248b68-4fab-46da-ab15-5c71c1f68d4b": {
     "collector_number": "183",
@@ -2262,6 +2342,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "ths"
+  },
+  "83731884-cd1a-4c12-8b1c-9a1c7b34ef12": {
+    "collector_number": "358",
+    "finish": "normal",
+    "name": "The Legend of Kyoshi // Avatar Kyoshi",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "tla"
   },
   "837d710a-652f-4c60-a52d-d786231160a4": {
     "collector_number": "113",
@@ -2695,6 +2783,14 @@
     "quantity": 2,
     "set": "znr"
   },
+  "995938ee-3ba7-42c9-9e0f-76b4a105f55e": {
+    "collector_number": "262",
+    "finish": "normal",
+    "name": "Tireless Provisioner",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltc"
+  },
   "99c56bf0-ad9f-4419-902c-f3a3880c716c": {
     "collector_number": "19",
     "finish": "normal",
@@ -2983,6 +3079,14 @@
     "quantity": 1,
     "set": "mom"
   },
+  "a77850b2-6478-449e-bdb9-5b92650e3504": {
+    "collector_number": "296",
+    "finish": "normal",
+    "name": "Sapphire Medallion",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh3"
+  },
   "a8503cca-7e7d-44c4-8587-81376b396398": {
     "collector_number": "249",
     "finish": "normal",
@@ -3014,6 +3118,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "fdn"
+  },
+  "aa686c34-1c11-469f-93c2-f9891aea521f": {
+    "collector_number": "198",
+    "finish": "normal",
+    "name": "Veil of Summer",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m20"
   },
   "aaeb5981-7e6a-4ffd-bb02-4757b2e92f08": {
     "collector_number": "72",
@@ -3134,6 +3246,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "m20"
+  },
+  "af5105ee-09e2-4344-ab39-00f0e9034c47": {
+    "collector_number": "239",
+    "finish": "normal",
+    "name": "Kodama of the East Tree",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cmr"
   },
   "aff8d4f1-eaad-4afb-9097-2afab133f707": {
     "collector_number": "361",
@@ -4359,6 +4479,22 @@
     "quantity": 1,
     "set": "mh3"
   },
+  "ec0ebb6b-d35a-47db-8071-7fef2a46c17b": {
+    "collector_number": "237",
+    "finish": "normal",
+    "name": "Firemind Vessel",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "war"
+  },
+  "ec275844-6ed6-4d05-9c02-b5a566a7fd5d": {
+    "collector_number": "71",
+    "finish": "normal",
+    "name": "Once Upon a Time",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mb2"
+  },
   "ec50c1c3-885e-47d3-ada7-cc0edbf09df1": {
     "collector_number": "145",
     "finish": "normal",
@@ -4551,6 +4687,14 @@
     "quantity": 1,
     "set": "soa"
   },
+  "f41a69ae-a0c4-4053-a795-940d76226e08": {
+    "collector_number": "203",
+    "finish": "normal",
+    "name": "Collected Company",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mb2"
+  },
   "f4cfcecf-621f-4664-9b1f-65ce4f0f8ab0": {
     "collector_number": "CHK-10",
     "finish": "normal",
@@ -4663,6 +4807,14 @@
     "quantity": 1,
     "set": "cm2"
   },
+  "fa2fb74a-d235-4ba6-bd7e-d439478dce44": {
+    "collector_number": "377",
+    "finish": "normal",
+    "name": "Skyclave Relic",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "znr"
+  },
   "fa48b15c-7312-4f3f-b7aa-b2ad98234bf1": {
     "collector_number": "248",
     "finish": "normal",
@@ -4750,6 +4902,22 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "2xm"
+  },
+  "ff09be4d-bbcc-4c25-9df2-b3df07fca955": {
+    "collector_number": "242",
+    "finish": "normal",
+    "name": "Essence Warden",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ltc"
+  },
+  "ff27694e-0381-4ac9-ba20-d631d468f275": {
+    "collector_number": "217",
+    "finish": "normal",
+    "name": "Basalt Monolith",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mb2"
   },
   "ffc70b2d-5a3a-49ea-97db-175a62248302": {
     "collector_number": "215",
