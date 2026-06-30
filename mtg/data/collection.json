@@ -463,6 +463,14 @@
     "quantity": 1,
     "set": "plst"
   },
+  "193db964-feea-4b66-bf31-67a92772b792": {
+    "collector_number": "et112",
+    "finish": "normal",
+    "name": "City of Brass",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ptc"
+  },
   "19a11a3f-ca98-4e82-897f-9ee0bbbef6fe": {
     "collector_number": "26",
     "finish": "normal",
@@ -534,6 +542,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "plst"
+  },
+  "1c20b8a0-55b3-4974-9b80-5a80a53de144": {
+    "collector_number": "199",
+    "finish": "normal",
+    "name": "Loxodon Warhammer",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cm2"
   },
   "1c59fc48-704b-4187-b9d3-2a2cff6dd54b": {
     "collector_number": "254",
@@ -639,6 +655,14 @@
     "quantity": 1,
     "set": "mh2"
   },
+  "22e343b5-37d6-44f6-be24-66313f18c246": {
+    "collector_number": "62",
+    "finish": "normal",
+    "name": "Archfiend of Depravity",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "frf"
+  },
   "2378ac21-9912-40d7-972d-b1b71a8e4984": {
     "collector_number": "275",
     "finish": "normal",
@@ -694,6 +718,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "plst"
+  },
+  "250d4c03-b350-4cd0-9e52-d5fcdd228ed3": {
+    "collector_number": "218",
+    "finish": "normal",
+    "name": "Solemn Simulacrum",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cm2"
   },
   "251fc3c5-b2f0-4be3-aa65-bc6ef8112252": {
     "collector_number": "241",
@@ -918,6 +950,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "khm"
+  },
+  "30a73816-1f33-4798-a9d6-5f0410d19625": {
+    "collector_number": "244",
+    "finish": "normal",
+    "name": "Shambling Vent",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "bfz"
   },
   "30f6fca9-003b-4f6b-9d6e-1e88adda4155": {
     "collector_number": "48",
@@ -1247,6 +1287,14 @@
     "quantity": 1,
     "set": "fdn"
   },
+  "42dfc4d1-7043-4859-b177-8ad4027ef835": {
+    "collector_number": "FUT-173",
+    "finish": "normal",
+    "name": "Tolaria West",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "plst"
+  },
   "43675ed7-ece1-4414-965e-9ebadcbf3dfb": {
     "collector_number": "142",
     "finish": "normal",
@@ -1358,6 +1406,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cm2"
+  },
+  "4abe142e-7e87-464b-be2a-ad2fc7aebd51": {
+    "collector_number": "43",
+    "finish": "normal",
+    "name": "Daxos the Returned",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c15"
   },
   "4b8a22b8-368f-41e4-8d49-432c6c2ed11e": {
     "collector_number": "181",
@@ -1527,6 +1583,30 @@
     "quantity": 1,
     "set": "mkm"
   },
+  "55fcf1f3-f823-4017-ac43-4f76d4ad2e2a": {
+    "collector_number": "174",
+    "finish": "normal",
+    "name": "Blade of Selves",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "cm2"
+  },
+  "56058359-3c0b-49db-a0ce-9ded4c3f4372": {
+    "collector_number": "282",
+    "finish": "normal",
+    "name": "Badlands",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "3ed"
+  },
+  "56355ff3-2232-4a11-b868-aec9a50b9ee5": {
+    "collector_number": "283",
+    "finish": "normal",
+    "name": "Bayou",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "3ed"
+  },
   "564caf57-4ba5-4993-a35e-945699c94eb7": {
     "collector_number": "96",
     "finish": "normal",
@@ -1550,6 +1630,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "m13"
+  },
+  "579743fe-f71e-4cb2-8629-d6b02ed1591d": {
+    "collector_number": "216",
+    "finish": "normal",
+    "name": "Bloodstained Mire",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh3"
   },
   "57b852b6-4388-4a41-a5c0-bba37a5c1451": {
     "collector_number": "40",
@@ -1663,6 +1751,14 @@
     "quantity": 1,
     "set": "plst"
   },
+  "5b8170dc-6a90-46fc-9989-7575f3d402b5": {
+    "collector_number": "261",
+    "finish": "normal",
+    "name": "Watery Grave",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "eoe"
+  },
   "5c2e92a6-6e18-490c-a39c-327f0ea5efa5": {
     "collector_number": "MM3-54",
     "finish": "normal",
@@ -1702,6 +1798,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "fdn"
+  },
+  "5db15c5f-80b7-4f7f-985a-9bbec3199ad9:foil": {
+    "collector_number": "99",
+    "finish": "foil",
+    "name": "Endless Ranks of the Dead",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "isd"
   },
   "5dd13a6c-23d3-44ce-a628-cb1c19d777c4": {
     "collector_number": "216",
@@ -1799,6 +1903,14 @@
     "quantity": 1,
     "set": "ltc"
   },
+  "6133355c-3dcf-466a-b771-fe6c44d4fa4d": {
+    "collector_number": "238",
+    "finish": "normal",
+    "name": "Dawnsire, Sunstar Dreadnought",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "eoe"
+  },
   "61f42823-8a48-4b81-a037-664ba1c69f29": {
     "collector_number": "203",
     "finish": "normal",
@@ -1862,6 +1974,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cmr"
+  },
+  "652236c2-84ef-45e4-b5fc-ed6170bc3d6c": {
+    "collector_number": "264",
+    "finish": "normal",
+    "name": "Meticulous Archive",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mkm"
   },
   "65ff914e-3f3e-4b7a-b69d-73575b68fb8e": {
     "collector_number": "271",
@@ -2038,6 +2158,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "a25"
+  },
+  "70afb856-6697-411b-b1aa-e9290a0bfd68": {
+    "collector_number": "221",
+    "finish": "normal",
+    "name": "Alhammarret's Archive",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ori"
   },
   "70d9ab99-ec8a-402e-ba1d-ffa6c4c84a3f": {
     "collector_number": "270",
@@ -2230,6 +2358,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "rna"
+  },
+  "7b003521-3da3-41bf-9765-36630653f902": {
+    "collector_number": "2",
+    "finish": "normal",
+    "name": "Ugin, the Ineffable",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "war"
   },
   "7b633ac2-bf98-42bd-8c26-8737a7d8edc7": {
     "collector_number": "322",
@@ -2607,6 +2743,14 @@
     "quantity": 1,
     "set": "sos"
   },
+  "8b4e2642-3c87-4708-b9b4-2e7f7359ac7d": {
+    "collector_number": "256",
+    "finish": "normal",
+    "name": "Sacred Foundry",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "eoe"
+  },
   "8c2996d9-3287-4480-8c04-7a378e37e3cf": {
     "collector_number": "233",
     "finish": "normal",
@@ -2646,6 +2790,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "bng"
+  },
+  "8cf01688-7046-4242-8647-d1c226ae53f7": {
+    "collector_number": "46",
+    "finish": "normal",
+    "name": "Karlov of the Ghost Council",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c15"
   },
   "8d27e717-8bda-44dc-90b9-a6f7029c7b93": {
     "collector_number": "11",
@@ -2878,6 +3030,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cmr"
+  },
+  "97b4d936-a7d6-4d43-87b5-0378f57e9e61": {
+    "collector_number": "43",
+    "finish": "normal",
+    "name": "Terrain Generator",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "eos"
   },
   "97c8e1ed-b3ab-4a08-9336-e513f23d45b3": {
     "collector_number": "240",
@@ -3182,6 +3342,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "snc"
+  },
+  "a3aab13c-9d9d-4507-ae5d-da979990ae1b": {
+    "collector_number": "238",
+    "finish": "normal",
+    "name": "Fiery Islet",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh1"
   },
   "a40cb9ff-9f85-44e0-90b4-574814868a25:foil": {
     "collector_number": "424",
@@ -3615,6 +3783,14 @@
     "quantity": 1,
     "set": "cm2"
   },
+  "b7f22249-579f-433d-9422-29d4e82ddc49": {
+    "collector_number": "50",
+    "finish": "normal",
+    "name": "Bloodforged Battle-Axe",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c17"
+  },
   "b7f99fd5-5298-4b27-923d-9d31203c931a": {
     "collector_number": "242",
     "finish": "normal",
@@ -3622,6 +3798,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "blb"
+  },
+  "b841bfa8-7c17-4df2-8466-780ab9a4a53a": {
+    "collector_number": "244",
+    "finish": "normal",
+    "name": "Fabled Passage",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "eld"
   },
   "b87891cd-b457-4dff-8d18-a7eaf6748fc6": {
     "collector_number": "249",
@@ -3975,6 +4159,14 @@
     "quantity": 1,
     "set": "ltc"
   },
+  "c6ae9cff-8646-4069-8761-df734e067beb": {
+    "collector_number": "284",
+    "finish": "normal",
+    "name": "Plateau",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "3ed"
+  },
   "c7057b04-e22f-4e33-9f08-b9fbd2e54bf5": {
     "collector_number": "479",
     "finish": "normal",
@@ -4062,6 +4254,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "cn2"
+  },
+  "cb39d0c3-ba52-4662-b190-929b9ab9911f": {
+    "collector_number": "20",
+    "finish": "normal",
+    "name": "Mother of Runes",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "ddo"
   },
   "cb9b492f-a404-400f-be70-8b4901d2d82b": {
     "collector_number": "137",
@@ -4263,6 +4463,22 @@
     "quantity": 1,
     "set": "c19"
   },
+  "d2d72bc2-92c4-4525-b89f-25aa236fade8": {
+    "collector_number": "202",
+    "finish": "normal",
+    "name": "Argentum Armor",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "c17"
+  },
+  "d313d051-7295-4884-8cbf-f2f835fd45f4": {
+    "collector_number": "246",
+    "finish": "normal",
+    "name": "Fabled Passage",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m21"
+  },
   "d423365c-a32c-4060-b178-3221e3200387": {
     "collector_number": "292",
     "finish": "normal",
@@ -4390,6 +4606,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "c19"
+  },
+  "db6c6b15-40f3-4556-978f-878bedb13762": {
+    "collector_number": "222",
+    "finish": "normal",
+    "name": "Worldslayer",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "m12"
   },
   "db6cdee9-dc3a-450c-a5a6-b34f021939ca": {
     "collector_number": "ELD-331",
@@ -4750,6 +4974,14 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "c19"
+  },
+  "ee243dbe-83ee-40af-8e26-c1528166ef5a": {
+    "collector_number": "3",
+    "finish": "normal",
+    "name": "Karn, the Great Creator",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mb2"
   },
   "ee28e147-6622-4399-a314-c14a5c912dd0": {
     "collector_number": "156",
