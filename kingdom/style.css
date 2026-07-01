@@ -140,11 +140,19 @@
   margin-bottom: 2.5rem;
 }
 
-/* ---- Card grids ----
-   minmax(max(18%, 150px), 1fr): min track size is 18% of the content
-   area, so auto-fill always yields ~5 columns regardless of screen
-   width. Falls back to the 150px floor on narrow screens (3→2 cols). */
-#kingdom-cards,
+/* ---- Kingdom card grid ----
+   Columns: minmax(max(18%,150px),1fr) always yields ~5 cols at any width.
+   Rows: each row is half of (viewport height minus all the chrome above) —
+   nav ~3.5rem + main padding 1rem + header ~10.5rem + section title ~3rem
+   + row gap 1rem = ~19rem total overhead. 22rem gives a safe buffer. */
+#kingdom-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(18%, 150px), 1fr));
+  grid-auto-rows: calc((100vh - 22rem) / 2);
+  gap: 1rem;
+}
+
+/* ---- Bonus card grids — same columns, natural row height ---- */
 .bonus-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(max(18%, 150px), 1fr));
@@ -152,11 +160,11 @@
 }
 
 /* ---- Card base ----
-   width: 100% fills the grid cell.
-   aspect-ratio keeps the portrait proportion without fixed height. */
+   width: 100% fills the grid column; height is driven by grid-auto-rows
+   on the parent. object-fit: cover on the img handles any crop. */
 .card {
   width: 100%;
-  aspect-ratio: 5 / 8;
+  height: 100%;
   border-radius: 10px;
   overflow: hidden;
   background: #f0f0f0;
