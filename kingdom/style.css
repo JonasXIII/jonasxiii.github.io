@@ -149,10 +149,10 @@
   gap: 1rem;
 }
 
-/* ---- Bonus cards (flex wrap) ---- */
+/* ---- Bonus cards — same grid as kingdom cards ---- */
 .bonus-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 1rem;
 }
 
@@ -183,11 +183,11 @@
   display: block;
 }
 
-/* Landscape / sideways cards for bonus section */
+/* Landscape / sideways cards span 2 columns so they're ~same height as portrait */
 .card.sideways {
-  width: 220px;
+  width: 100%;
   aspect-ratio: 8 / 5;
-  flex-shrink: 0;
+  grid-column: span 2;
 }
 
 /* ---- Card overlay (click to show) ---- */
@@ -304,6 +304,6 @@
   }
 
   .card.sideways {
-    width: 160px;
+    grid-column: span 2;
   }
 }
