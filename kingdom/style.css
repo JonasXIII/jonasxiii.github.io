@@ -140,19 +140,13 @@
   margin-bottom: 2.5rem;
 }
 
-/* ---- Kingdom card grid ----
-   auto-fill + minmax means columns form naturally at any width.
-   On a 1000px content area this gives ~5 cols; narrower = fewer. */
-#kingdom-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1rem;
-}
-
-/* ---- Bonus cards — same grid as kingdom cards ---- */
+/* ---- Card grids ----
+   Fixed 5-column layout so the grid always fills the same width as the
+   section title underline. Kingdom = exactly 2 rows × 5 cols. */
+#kingdom-cards,
 .bonus-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 }
 
@@ -292,18 +286,23 @@
   }
 }
 
-/* Small screens: tighter gaps, smaller text */
+/* Tablet: fewer columns when sidebar collapses */
+@media (max-width: 900px) {
+  #kingdom-cards,
+  .bonus-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile portrait: 2 columns × 5 rows */
 @media (max-width: 480px) {
   .kingdom-main {
     padding: 0.75rem;
   }
 
-  #kingdom-cards {
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  #kingdom-cards,
+  .bonus-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.6rem;
-  }
-
-  .card.sideways {
-    grid-column: span 2;
   }
 }
