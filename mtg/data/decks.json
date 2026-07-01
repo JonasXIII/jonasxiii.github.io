@@ -586,7 +586,7 @@
       {
         "scryfall_id": "3ca3ef68-ea62-4098-bd43-4597ff0647d4",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "c5d0e808-d67b-4ea3-9c04-d20269fe692c",
@@ -611,7 +611,7 @@
       {
         "scryfall_id": "244c06b3-532d-426e-8bee-ee9461d092a6",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "7bea6dea-d767-4092-a285-305d9997357a",
@@ -721,7 +721,7 @@
       {
         "scryfall_id": "ccf9b2cc-b362-4488-93ef-e98398ff73ea",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "01926862-bf2d-4a2b-af94-1ea5e4dd7444",
@@ -771,7 +771,7 @@
       {
         "scryfall_id": "2744ac83-a79f-4042-8720-688b5adda382",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "7f89a173-0b2f-4a6a-b706-9aed8dbcabec",
@@ -846,7 +846,7 @@
       {
         "scryfall_id": "de039992-631b-4feb-a522-acdb0a6d1f26",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "ab56119b-1e13-44d4-b73b-991488c039f1",
@@ -886,7 +886,7 @@
       {
         "scryfall_id": "d5f11a08-8324-461a-8dbd-ecef0e511dee",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "79248b68-4fab-46da-ab15-5c71c1f68d4b",
@@ -931,7 +931,7 @@
       {
         "scryfall_id": "3b3134b3-1bad-4b41-9e56-700125ff31fa",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "66605fe1-9a20-4c95-b53e-1249cedb978b",
@@ -946,7 +946,7 @@
       {
         "scryfall_id": "4b8a22b8-368f-41e4-8d49-432c6c2ed11e",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "492b368b-de32-45c1-8459-238aae54f9fc",
@@ -966,7 +966,7 @@
       {
         "scryfall_id": "65ff914e-3f3e-4b7a-b69d-73575b68fb8e",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "73866487-33f4-4f64-b100-2c4ddadcd74e",
@@ -981,7 +981,7 @@
       {
         "scryfall_id": "40c17aee-1e93-4db8-b491-cb2c10d0cc67",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "d890ae71-da2b-44fa-8cfa-9c3016c9f696",
@@ -1011,12 +1011,12 @@
       {
         "scryfall_id": "4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       },
       {
         "scryfall_id": "70d9ab99-ec8a-402e-ba1d-ffa6c4c84a3f",
         "quantity": 1,
-        "board": "main"
+        "board": "sideboard"
       }
     ],
     "cover_card": "b330c216-4c1f-4318-8add-20b766afd94c"

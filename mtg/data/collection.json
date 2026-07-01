@@ -60,7 +60,7 @@
     "finish": "normal",
     "name": "Detection Tower",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "m19"
   },
   "03066fa1-ea16-4a87-9218-120efa976909": {
@@ -68,7 +68,7 @@
     "finish": "normal",
     "name": "Kor Spiritdancer",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "roe"
   },
   "0348247d-0a70-4961-8590-9de41386c69b": {
@@ -148,7 +148,7 @@
     "finish": "normal",
     "name": "Herald's Horn",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "c17"
   },
   "0806adab-6a08-411b-b249-e1c58ade354b": {
@@ -268,7 +268,7 @@
     "finish": "normal",
     "name": "Maddening Cacophony",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "znr"
   },
   "112eb5ce-4fe5-45b3-b810-79fef74b07f9": {
@@ -436,7 +436,7 @@
     "finish": "normal",
     "name": "Helm of the Host",
     "oracle_id": "",
-    "quantity": 3,
+    "quantity": 2,
     "set": "dom"
   },
   "1d7bb58c-304a-4fb4-9ae6-bc98126cca4e:foil": {
@@ -668,7 +668,7 @@
     "finish": "normal",
     "name": "Undercity Sewers",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 3,
     "set": "mkm"
   },
   "2b6ccfdc-acfb-4e73-a583-0c6964b86083": {
@@ -692,7 +692,7 @@
     "finish": "normal",
     "name": "Temple Garden",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 4,
     "set": "grn"
   },
   "2be8d24e-1370-4e85-90f2-66b6d6e9c4a4": {
@@ -756,7 +756,7 @@
     "finish": "normal",
     "name": "Phyrexian Crusader",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "mbs"
   },
   "32cd847e-a247-4f6e-95ea-316e7535e6fb": {
@@ -764,7 +764,7 @@
     "finish": "normal",
     "name": "Mana Geyser",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "cns"
   },
   "331013f6-976a-4dac-9939-1006e474e108": {
@@ -884,7 +884,7 @@
     "finish": "normal",
     "name": "Crypt Ghast",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "gtc"
   },
   "37c2b1d1-faa0-40fd-82f4-216604ce7635": {
@@ -1004,7 +1004,7 @@
     "finish": "normal",
     "name": "Wonder",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "jud"
   },
   "45524a5f-253e-4fd7-a359-be6df50c0f53:foil": {
@@ -1244,7 +1244,7 @@
     "finish": "normal",
     "name": "Bloodstained Mire",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "mh3"
   },
   "5865c39e-847e-4dc6-8e6c-a4200124f21f": {
@@ -1260,7 +1260,7 @@
     "finish": "normal",
     "name": "Mystic Remora",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "ice"
   },
   "594df270-02d0-438b-a758-c32d71e8d4ff:foil": {
@@ -1324,7 +1324,7 @@
     "finish": "normal",
     "name": "Kami of Whispered Hopes",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "mom"
   },
   "5caae5ae-845f-42c2-b1ae-956df2739433": {
@@ -1340,7 +1340,7 @@
     "finish": "normal",
     "name": "Conspicuous Snoop",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "m21"
   },
   "5dabdea9-2015-49b9-853d-4f7e1262eab3": {
@@ -1524,7 +1524,7 @@
     "finish": "normal",
     "name": "Lithoform Engine",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "znr"
   },
   "68924203-c3d9-41ce-8ca8-c6dd491eb3ca:foil": {
@@ -1644,7 +1644,7 @@
     "finish": "normal",
     "name": "Thassa's Oracle",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "thb"
   },
   "729cdea3-59ca-4b32-9a8a-9b0cdb4b3aaf": {
@@ -1732,7 +1732,7 @@
     "finish": "normal",
     "name": "Tempt with Discovery",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "c19"
   },
   "797b30b0-bc82-43fd-a842-d5879e2441bd": {
@@ -1788,7 +1788,7 @@
     "finish": "normal",
     "name": "Elves of Deep Shadow",
     "oracle_id": "",
-    "quantity": 3,
+    "quantity": 2,
     "set": "rav"
   },
   "7c024bae-5631-4e20-ac69-df392ac9e109": {
@@ -1812,7 +1812,7 @@
     "finish": "normal",
     "name": "Watery Grave",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "grn"
   },
   "7d54f0dd-5d27-483b-8af9-92a1c5a785f2": {
@@ -2988,7 +2988,7 @@
     "finish": "normal",
     "name": "Windswept Heath",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "mh3"
   },
   "bee3dad4-88d8-424c-b3f8-d089b6891fb8": {
@@ -3140,7 +3140,7 @@
     "finish": "normal",
     "name": "Bala Ged Recovery // Bala Ged Sanctuary",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "znr"
   },
   "c5d0e808-d67b-4ea3-9c04-d20269fe692c": {
@@ -3276,7 +3276,7 @@
     "finish": "normal",
     "name": "Agent of Treachery",
     "oracle_id": "",
-    "quantity": 2,
+    "quantity": 1,
     "set": "m20"
   },
   "cc7be939-2202-40fe-8899-a05682d76190": {
@@ -3364,7 +3364,7 @@
     "finish": "normal",
     "name": "Godless Shrine",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "rna"
   },
   "cf3e09ff-c917-4c0c-8ddb-e152b4b0b82c": {
@@ -3444,7 +3444,7 @@
     "finish": "normal",
     "name": "Jet Medallion",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "mh3"
   },
   "d51bacdd-040e-45f7-9256-85f93801a10e": {
@@ -3644,7 +3644,7 @@
     "finish": "normal",
     "name": "Nazgûl",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "ltr"
   },
   "e0b52b9c-7278-46b4-9f3c-3a7fc0c7e526": {
@@ -3852,7 +3852,7 @@
     "finish": "normal",
     "name": "Overgrown Tomb",
     "oracle_id": "",
-    "quantity": 1,
+    "quantity": 2,
     "set": "grn"
   },
   "f06edd53-f3ac-44b0-a087-5670ba8f0fa5": {
@@ -4134,5 +4134,157 @@
     "oracle_id": "",
     "quantity": 1,
     "set": "blb"
+  },
+  "7b76dafa-46ed-4b22-908a-8932505d4f4c": {
+    "collector_number": "9",
+    "finish": "nonfoil",
+    "name": "Lurrus of the Dream-Den",
+    "oracle_id": "3bc757c1-3adb-4321-8832-8e1cc9e687f7",
+    "quantity": 1,
+    "set": "q06"
+  },
+  "af8b5322-bfd9-4e37-90b8-3d507ab687de": {
+    "collector_number": "151",
+    "finish": "nonfoil",
+    "name": "Noble Hierarch",
+    "oracle_id": "98aa9424-5912-4bd6-9300-b3972a31d8af",
+    "quantity": 1,
+    "set": "mm2"
+  },
+  "1b33df4a-151a-43ab-a72c-e163d8cadf12:foil": {
+    "collector_number": "5",
+    "finish": "foil",
+    "name": "Prophet of Kruphix",
+    "oracle_id": "372351fd-58f7-4cb8-8644-5fbc94ccb145",
+    "quantity": 1,
+    "set": "cp1"
+  },
+  "4d747889-04db-4e7a-ad4c-7549514b5112": {
+    "collector_number": "268",
+    "finish": "nonfoil",
+    "name": "Klothys, God of Destiny",
+    "oracle_id": "e8473969-195f-41ee-a84d-463cc8c0ef02",
+    "quantity": 1,
+    "set": "thb"
+  },
+  "3159553d-ab09-4970-8c68-613a9cd56a2d:foil": {
+    "collector_number": "540",
+    "finish": "foil",
+    "name": "Skullbriar, the Walking Grave",
+    "oracle_id": "088ac883-6f44-4046-bf19-81c7fd952e55",
+    "quantity": 1,
+    "set": "2x2"
+  },
+  "e45300aa-02c4-4d4d-bf6d-e5d9342b471a:foil": {
+    "collector_number": "288",
+    "finish": "foil",
+    "name": "Katilda, Dawnhart Martyr // Katilda's Rising Dawn",
+    "oracle_id": "493b2820-c250-48bd-9f3c-e1b5639ee101",
+    "quantity": 1,
+    "set": "dbl"
+  },
+  "1b88b198-60e1-43fe-8551-32bce30b2aab": {
+    "collector_number": "ONS-59",
+    "finish": "nonfoil",
+    "name": "Weathered Wayfarer",
+    "oracle_id": "1093fdb6-bd4f-46a8-92e3-5aa46b52bb4f",
+    "quantity": 1,
+    "set": "plst"
+  },
+  "415a3104-90e6-4235-b67f-69337c7fe714": {
+    "collector_number": "22b",
+    "finish": "nonfoil",
+    "name": "Arcane Denial",
+    "oracle_id": "ab1cc360-b9de-48d9-9983-4dfe4a7d2a37",
+    "quantity": 1,
+    "set": "all"
+  },
+  "1ed91aab-9009-4cab-9dd8-b595648df011": {
+    "collector_number": "32",
+    "finish": "nonfoil",
+    "name": "Blue Sun's Zenith",
+    "oracle_id": "613a41b8-0b4f-4995-bf1e-ca41f96e6438",
+    "quantity": 1,
+    "set": "c13"
+  },
+  "d4133ceb-6176-411a-9eb8-51721c1bb435": {
+    "collector_number": "33",
+    "finish": "nonfoil",
+    "name": "Merchant Scroll",
+    "oracle_id": "86cebe2a-95e7-4f22-99cc-e805aeaf347e",
+    "quantity": 1,
+    "set": "hml"
+  },
+  "69e615d8-1b79-4a82-ba9f-ee211d67dc95": {
+    "collector_number": "175",
+    "finish": "nonfoil",
+    "name": "Thassa's Oracle",
+    "oracle_id": "1de1b591-a73f-4974-b507-8c63e07a0868",
+    "quantity": 1,
+    "set": "mb2"
+  },
+  "d01fe6e9-49ee-4708-833e-75cd5a9f167c:foil": {
+    "collector_number": "120",
+    "finish": "foil",
+    "name": "Improvisation Capstone",
+    "oracle_id": "fd4f0315-567a-4cc5-bc7e-88a9d2cee910",
+    "quantity": 1,
+    "set": "sos"
+  },
+  "d16af289-c74d-4b1f-a6cf-8aed30fa961c": {
+    "collector_number": "113p",
+    "finish": "nonfoil",
+    "name": "Overlord of the Balemurk",
+    "oracle_id": "652e87af-7cf0-407f-9fb7-1a630fb8dd47",
+    "quantity": 1,
+    "set": "pdsk"
+  },
+  "0a44bbbf-2c38-4ecb-99a0-b944983f7e51": {
+    "collector_number": "120p",
+    "finish": "nonfoil",
+    "name": "Valgavoth, Terror Eater",
+    "oracle_id": "cae3ec72-436d-4086-9dcb-17b3d92ad5c4",
+    "quantity": 1,
+    "set": "pdsk"
+  },
+  "8dbe32c7-180f-4b9e-b260-0ff1d9017e28": {
+    "collector_number": "221",
+    "finish": "nonfoil",
+    "name": "Mishra's Bauble",
+    "oracle_id": "63afc3d1-7653-476e-838f-fc18d4a62a21",
+    "quantity": 1,
+    "set": "ima"
+  },
+  "22e343b5-37d6-44f6-be24-66313f18c246:foil": {
+    "collector_number": "62",
+    "finish": "foil",
+    "name": "Archfiend of Depravity",
+    "oracle_id": "af247e2f-b271-4f5b-ab98-4579d2c17c21",
+    "quantity": 1,
+    "set": "frf"
+  },
+  "3f16e3fe-cc9f-414e-8643-3f66c0ab2536": {
+    "collector_number": "335",
+    "finish": "nonfoil",
+    "name": "Nazgûl",
+    "oracle_id": "48a62778-7c11-486f-a0e1-020c283a7ef9",
+    "quantity": 1,
+    "set": "ltr"
+  },
+  "8683a978-1bef-4b01-9361-56b1fc157d26": {
+    "collector_number": "164",
+    "finish": "nonfoil",
+    "name": "Courser of Kruphix",
+    "oracle_id": "46779609-4fa7-4fd2-b5b4-7d4d749339e6",
+    "quantity": 1,
+    "set": "a25"
+  },
+  "f0fbee02-b6cc-4cd1-a702-cf4f89c17921": {
+    "collector_number": "196",
+    "finish": "nonfoil",
+    "name": "Lightning Greaves",
+    "oracle_id": "ca204b66-8d0c-431a-8d34-282f7c2d17da",
+    "quantity": 2,
+    "set": "cm2"
   }
 }
