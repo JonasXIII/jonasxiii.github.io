@@ -334,6 +334,62 @@ export function getCollectionsForCard(scryfallId) {
     return result;
 }
 
+// --- Foil/Finish Toggle ---
+
+export function changeCardFinish(oldId) {
+    const entry = _collection[oldId];
+    if (!entry) return;
+
+    const newId = oldId.endsWith(':foil') ? getRealScryfallId(oldId) : (oldId + ':foil');
+    const newFinish = oldId.endsWith(':foil') ? 'nonfoil' : 'foil';
+
+    if (_collection[newId]) {
+        _collection[newId].quantity += entry.quantity;
+    } else {
+        _collection[newId] = { ...entry, finish: newFinish };
+    }
+    delete _collection[oldId];
+
+    for (const deck of _decks) {
+        let changed = false;
+        for (const card of deck.cards) {
+            if (card.scryfall_id === oldId) { card.scryfall_id = newId; changed = true; }
+        }
+        if (changed) {
+            _changeLog.deck_changes.push({ action: 'update', deck_id: deck.id, deck: structuredClone(deck) });
+        }
+    }
+    for (const binder of _binders) {
+        let changed = false;
+        for (const card of binder.cards) {
+            if (card.scryfall_id === oldId) { card.scryfall_id = newId; changed = true; }
+        }
+        if (changed) {
+            _changeLog.binder_changes.push({ action: 'update', binder_id: binder.id, binder: structuredClone(binder) });
+        }
+    }
+    for (const box of _boxes) {
+        let changed = false;
+        for (const card of box.cards) {
+            if (card.scryfall_id === oldId) { card.scryfall_id = newId; changed = true; }
+        }
+        if (changed) {
+            _changeLog.box_changes.push({ action: 'update', box_id: box.id, box: structuredClone(box) });
+        }
+    }
+
+    _changeLog.collection_changes.push({ action: 'change_finish', old_id: oldId, new_id: newId });
+    markChanged();
+    notify('collection_changed', { scryfallId: oldId, newScryfallId: newId });
+    notify('decks_changed');
+    notify('binders_changed');
+    notify('boxes_changed');
+}
+
+export function getDecktopBox() {
+    return _boxes.find(b => b.is_decktop) || null;
+}
+
 // --- Reset ---
 
 export function resetChangeLog() {

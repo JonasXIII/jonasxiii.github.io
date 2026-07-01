@@ -415,6 +415,28 @@ function openCardDetail(scryfallId) {
         }
         info.appendChild(meta);
 
+        // Finish (foil) toggle
+        const currentFinish = entry.finish || (scryfallId.endsWith(':foil') ? 'foil' : 'nonfoil');
+        const finishRow = document.createElement('div');
+        finishRow.style.cssText = 'display:flex;align-items:center;gap:12px;margin-top:12px;';
+        const finishLbl = document.createElement('span');
+        finishLbl.textContent = 'Finish:';
+        finishLbl.style.cssText = 'font-weight:600;min-width:48px;';
+        finishRow.appendChild(finishLbl);
+        const finishBtn = document.createElement('button');
+        finishBtn.className = currentFinish === 'foil'
+            ? 'mtg-btn mtg-btn-primary mtg-btn-sm'
+            : 'mtg-btn mtg-btn-secondary mtg-btn-sm';
+        finishBtn.textContent = currentFinish === 'foil' ? 'Foil ✶' : 'Non-Foil';
+        finishBtn.addEventListener('click', () => {
+            state.changeCardFinish(scryfallId);
+            closeModal();
+            render();
+            showToast(`Changed ${cardData.name} to ${currentFinish === 'foil' ? 'non-foil' : 'foil'}`, 'success');
+        });
+        finishRow.appendChild(finishBtn);
+        info.appendChild(finishRow);
+
         // Quantity control
         const qtyLabel = document.createElement('h4');
         qtyLabel.textContent = 'Owned Quantity';

@@ -2,6 +2,7 @@
 
 import * as state from './state.js';
 import * as binders from './binders.js';
+import * as boxes from './boxes.js';
 import * as collection from './collection.js';
 import { getCardImageUri, fetchPrintings } from './api.js';
 import {
@@ -565,10 +566,17 @@ function openCreateBinderModal() {
 }
 
 function openAddToSlotModal(binderId, position) {
+    const decktop = state.getDecktopBox();
+
     showModal('Add Card to Slot', (body) => {
+        if (!decktop || decktop.cards.length === 0) {
+            body.innerHTML = '<p style="color:#aaa;text-align:center;padding:20px;">Decktop is empty.<br>Add cards to your collection first — they land here.</p>';
+            return;
+        }
+
         const searchInput = document.createElement('input');
         searchInput.className = 'mtg-inline-input';
-        searchInput.placeholder = 'Filter collection by name...';
+        searchInput.placeholder = 'Filter Decktop by name...';
         searchInput.style.marginBottom = '12px';
         body.appendChild(searchInput);
 
@@ -578,24 +586,23 @@ function openAddToSlotModal(binderId, position) {
 
         const renderList = () => {
             listContainer.innerHTML = '';
-            let entries = collection.getCollectionWithData();
+            let entries = decktop.cards
+                .filter(c => c.quantity > 0)
+                .map(c => ({
+                    scryfallId: c.scryfall_id,
+                    quantity: c.quantity,
+                    cardData: state.getCardData(c.scryfall_id)
+                }));
 
             const filter = searchInput.value.trim().toLowerCase();
             if (filter) {
-                entries = entries.filter(e => {
-                    const name = (e.cardData?.name || e.name || '').toLowerCase();
-                    return name.includes(filter);
-                });
+                entries = entries.filter(e => (e.cardData?.name || '').toLowerCase().includes(filter));
             }
 
-            entries.sort((a, b) => {
-                const nameA = a.cardData?.name || a.name || '';
-                const nameB = b.cardData?.name || b.name || '';
-                return nameA.localeCompare(nameB);
-            });
+            entries.sort((a, b) => (a.cardData?.name || '').localeCompare(b.cardData?.name || ''));
 
             if (entries.length === 0) {
-                listContainer.innerHTML = '<p style="color:#aaa;text-align:center;">No matching cards.</p>';
+                listContainer.innerHTML = '<p style="color:#aaa;text-align:center;">No matching cards in Decktop.</p>';
                 return;
             }
 
@@ -604,25 +611,25 @@ function openAddToSlotModal(binderId, position) {
                 row.className = 'mtg-deck-card-row';
                 row.style.cursor = 'pointer';
 
-                const alloc = state.getCardAllocation(entry.scryfallId);
-
                 const name = document.createElement('span');
                 name.className = 'mtg-deck-card-name';
-                name.textContent = entry.cardData?.name || entry.name;
+                name.textContent = entry.cardData?.name || entry.scryfallId;
                 row.appendChild(name);
 
                 const setInfo = document.createElement('span');
                 setInfo.style.cssText = 'font-size:0.8em;color:#888;';
-                setInfo.textContent = (entry.cardData?.set || entry.set || '').toUpperCase();
+                setInfo.textContent = (entry.cardData?.set || '').toUpperCase();
+                if (entry.scryfallId.endsWith(':foil')) setInfo.textContent += ' ✶';
                 row.appendChild(setInfo);
 
                 const avail = document.createElement('span');
-                avail.style.cssText = 'font-size:0.8em;color:#888;min-width:60px;text-align:right;';
-                avail.textContent = `${alloc.unassigned}/${alloc.total}`;
-                if (alloc.unassigned <= 0) avail.style.color = '#f56565';
+                avail.style.cssText = 'font-size:0.8em;color:#888;min-width:40px;text-align:right;';
+                avail.textContent = `${entry.quantity}x`;
                 row.appendChild(avail);
 
                 row.addEventListener('click', () => {
+                    const existing = decktop.cards.find(c => c.scryfall_id === entry.scryfallId);
+                    if (existing) boxes.setCardQuantity(decktop.id, entry.scryfallId, existing.quantity - 1);
                     binders.addCard(binderId, entry.scryfallId, 1, position);
                     closeModal();
                     showToast(`Added ${entry.cardData?.name || 'card'} to slot`, 'success');
@@ -696,7 +703,7 @@ function openSlotActionModal(binderId, position, slotData) {
             actions.appendChild(pageRow);
         }
 
-        // Foil toggle
+        // Foil toggle (redirects to collection — foil is managed there)
         const isFoil = slotData.scryfall_id.includes(':foil');
         const foilRow = document.createElement('div');
         foilRow.style.cssText = 'display:flex;align-items:center;gap:8px;margin-top:12px;';
@@ -707,6 +714,8 @@ function openSlotActionModal(binderId, position, slotData) {
         const foilToggle = document.createElement('button');
         foilToggle.className = isFoil ? 'mtg-btn mtg-btn-primary mtg-btn-sm' : 'mtg-btn mtg-btn-secondary mtg-btn-sm';
         foilToggle.textContent = isFoil ? 'Yes' : 'No';
+        foilToggle.title = 'Change finish in the Collection tab';
+        foilToggle.disabled = true;
         foilToggle.addEventListener('click', () => {
             const realId = state.getRealScryfallId(slotData.scryfall_id);
             const newId = isFoil ? realId : realId + ':foil';
@@ -786,9 +795,11 @@ function openSlotActionModal(binderId, position, slotData) {
         removeBtn.textContent = 'Remove from Slot';
         removeBtn.style.cssText = 'width:100%;margin-top:16px;';
         removeBtn.addEventListener('click', () => {
+            const decktop = state.getDecktopBox();
+            if (decktop) boxes.addCard(decktop.id, slotData.scryfall_id, slotData.quantity || 1);
             binders.removeCard(binderId, position);
             closeModal();
-            showToast(`Removed ${cardName} from slot`, 'info');
+            showToast(`Removed ${cardName} from slot — returned to Decktop`, 'info');
             render();
         });
         actions.appendChild(removeBtn);

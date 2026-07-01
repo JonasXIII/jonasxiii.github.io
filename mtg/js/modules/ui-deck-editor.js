@@ -3,6 +3,7 @@
 import * as state from './state.js';
 import * as decks from './decks.js';
 import * as collection from './collection.js';
+import * as boxes from './boxes.js';
 import { compareByField } from './collection.js';
 import { getCardImageUri } from './api.js';
 import {
@@ -370,10 +371,27 @@ function createDeckTile(card, boardName) {
     minusBtn.title = card.quantity === 1 ? 'Remove from deck' : 'Remove one';
     minusBtn.addEventListener('click', (e) => {
         e.stopPropagation();
+        if (card.quantity === 1) {
+            const decktop = state.getDecktopBox();
+            if (decktop) boxes.addCard(decktop.id, card.scryfall_id, 1);
+        }
         decks.setCardQuantity(_selectedDeckId, card.scryfall_id, card.quantity - 1, boardName);
         render();
     });
     overlay.appendChild(minusBtn);
+
+    const foilBtn = document.createElement('button');
+    const isTileFoil = card.scryfall_id.includes(':foil');
+    foilBtn.className = 'mtg-card-menu-btn';
+    foilBtn.title = isTileFoil ? 'Set non-foil' : 'Set foil';
+    foilBtn.textContent = '\u2736';
+    foilBtn.style.color = isTileFoil ? '#ecc94b' : '#555';
+    foilBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        state.changeCardFinish(card.scryfall_id);
+        render();
+    });
+    overlay.appendChild(foilBtn);
 
     tile.appendChild(overlay);
 
@@ -962,10 +980,17 @@ function openCreateDeckModal() {
 }
 
 function openAddToDeckModal(deckId) {
+    const decktop = state.getDecktopBox();
+
     showModal('Add Card to Deck', (body) => {
+        if (!decktop || decktop.cards.length === 0) {
+            body.innerHTML = '<p style="color:#aaa;text-align:center;padding:20px;">Decktop is empty.<br>Add cards to your collection first — they land here.</p>';
+            return;
+        }
+
         const searchInput = document.createElement('input');
         searchInput.className = 'mtg-inline-input';
-        searchInput.placeholder = 'Filter collection by name...';
+        searchInput.placeholder = 'Filter Decktop by name...';
         searchInput.style.marginBottom = '12px';
         body.appendChild(searchInput);
 
@@ -986,24 +1011,23 @@ function openAddToDeckModal(deckId) {
 
         const renderList = () => {
             listContainer.innerHTML = '';
-            let entries = collection.getCollectionWithData();
+            let entries = decktop.cards
+                .filter(c => c.quantity > 0)
+                .map(c => ({
+                    scryfallId: c.scryfall_id,
+                    quantity: c.quantity,
+                    cardData: state.getCardData(c.scryfall_id)
+                }));
 
             const filter = searchInput.value.trim().toLowerCase();
             if (filter) {
-                entries = entries.filter(e => {
-                    const name = (e.cardData?.name || e.name || '').toLowerCase();
-                    return name.includes(filter);
-                });
+                entries = entries.filter(e => (e.cardData?.name || '').toLowerCase().includes(filter));
             }
 
-            entries.sort((a, b) => {
-                const nameA = a.cardData?.name || a.name || '';
-                const nameB = b.cardData?.name || b.name || '';
-                return nameA.localeCompare(nameB);
-            });
+            entries.sort((a, b) => (a.cardData?.name || '').localeCompare(b.cardData?.name || ''));
 
             if (entries.length === 0) {
-                listContainer.innerHTML = '<p style="color:#aaa;text-align:center;">No matching cards in collection.</p>';
+                listContainer.innerHTML = '<p style="color:#aaa;text-align:center;">No matching cards in Decktop.</p>';
                 return;
             }
 
@@ -1012,11 +1036,9 @@ function openAddToDeckModal(deckId) {
                 row.className = 'mtg-deck-card-row';
                 row.style.cursor = 'pointer';
 
-                const alloc = state.getCardAllocation(entry.scryfallId);
-
                 const name = document.createElement('span');
                 name.className = 'mtg-deck-card-name';
-                name.textContent = entry.cardData?.name || entry.name;
+                name.textContent = entry.cardData?.name || entry.scryfallId;
                 row.appendChild(name);
 
                 const mana = document.createElement('span');
@@ -1027,18 +1049,21 @@ function openAddToDeckModal(deckId) {
                 row.appendChild(mana);
 
                 const avail = document.createElement('span');
-                avail.style.cssText = 'font-size:0.8em;color:#888;min-width:60px;text-align:right;';
-                avail.textContent = `${alloc.unassigned}/${alloc.total} avail`;
-                if (alloc.unassigned <= 0) {
-                    avail.style.color = '#f56565';
+                avail.style.cssText = 'font-size:0.8em;color:#888;min-width:40px;text-align:right;';
+                avail.textContent = `${entry.quantity}x`;
+                if (entry.scryfallId.endsWith(':foil')) {
+                    avail.textContent += ' ✶';
+                    avail.style.color = '#b7791f';
                 }
                 row.appendChild(avail);
 
                 row.addEventListener('click', () => {
+                    const existing = decktop.cards.find(c => c.scryfall_id === entry.scryfallId);
+                    if (existing) boxes.setCardQuantity(decktop.id, entry.scryfallId, existing.quantity - 1);
                     decks.addCard(deckId, entry.scryfallId, 1, boardSelect.value);
                     showToast(`Added ${entry.cardData?.name || 'card'} to ${boardSelect.value}`, 'success');
                     render();
-                    renderList(); // Refresh available counts
+                    renderList();
                 });
 
                 listContainer.appendChild(row);
@@ -1047,7 +1072,6 @@ function openAddToDeckModal(deckId) {
 
         searchInput.addEventListener('input', renderList);
         renderList();
-
         setTimeout(() => searchInput.focus(), 100);
     });
 }

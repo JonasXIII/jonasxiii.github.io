@@ -3687,14 +3687,6 @@
     "quantity": 1,
     "set": "c19"
   },
-  "e37da81e-be12-45a2-9128-376f1ad7b3e8:foil": {
-    "collector_number": "244",
-    "finish": "foil",
-    "name": "Prismatic Vista",
-    "oracle_id": "",
-    "quantity": 1,
-    "set": "mh1"
-  },
   "e4507ef5-0d30-42ca-b305-f99c6e10432b:foil": {
     "collector_number": "46",
     "finish": "foil",
@@ -4286,5 +4278,13 @@
     "oracle_id": "ca204b66-8d0c-431a-8d34-282f7c2d17da",
     "quantity": 2,
     "set": "cm2"
+  },
+  "e37da81e-be12-45a2-9128-376f1ad7b3e8": {
+    "collector_number": "244",
+    "finish": "nonfoil",
+    "name": "Prismatic Vista",
+    "oracle_id": "",
+    "quantity": 1,
+    "set": "mh1"
   }
 }

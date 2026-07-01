@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": "box-decktop",
+    "name": "Decktop",
+    "description": "Cards not yet placed in a deck or binder",
+    "is_decktop": true,
+    "color": "#4a5568",
+    "unlocked": false,
+    "cards": []
+  }
+]

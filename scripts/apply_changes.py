@@ -34,28 +34,40 @@ def save_json(filepath, data, sort_keys=True):
         f.write('\n')
 
 
-def apply_collection_changes(collection, changes):
+def apply_collection_changes(collection, changes, boxes):
     """Apply collection_changes to the collection dict."""
+    decktop = next((b for b in boxes if b.get('is_decktop')), None)
+
     for change in changes:
         action = change.get('action')
         sid = change.get('scryfall_id')
 
         if action == 'add':
+            qty = change.get('quantity', 1)
             if sid in collection:
-                # Card already exists, increase quantity
-                collection[sid]['quantity'] += change.get('quantity', 1)
+                collection[sid]['quantity'] += qty
                 print(f"  + Updated quantity of {change.get('name', sid)}: "
                       f"now {collection[sid]['quantity']}")
             else:
                 collection[sid] = {
-                    'quantity': change.get('quantity', 1),
+                    'quantity': qty,
                     'oracle_id': change.get('oracle_id', ''),
                     'name': change.get('name', ''),
                     'set': change.get('set', ''),
-                    'collector_number': change.get('collector_number', '')
+                    'collector_number': change.get('collector_number', ''),
+                    'finish': 'foil' if ':foil' in sid else 'nonfoil'
                 }
                 print(f"  + Added {change.get('name', sid)} "
-                      f"({change.get('set', '').upper()}) x{change.get('quantity', 1)}")
+                      f"({change.get('set', '').upper()}) x{qty}")
+            # New cards land in Decktop
+            if decktop is not None:
+                decktop_cards = decktop.setdefault('cards', [])
+                existing = next((c for c in decktop_cards if c['scryfall_id'] == sid), None)
+                if existing:
+                    existing['quantity'] += qty
+                else:
+                    decktop_cards.append({'scryfall_id': sid, 'quantity': qty})
+                print(f"    -> Added to Decktop")
 
         elif action == 'update_quantity':
             new_qty = change.get('new_quantity', 0)
@@ -75,6 +87,20 @@ def apply_collection_changes(collection, changes):
                 print(f"  - Removed {name}")
             else:
                 print(f"  ! Warning: Cannot remove {sid} (not in collection)")
+
+        elif action == 'change_finish':
+            old_id = change.get('old_id')
+            new_id = change.get('new_id')
+            if old_id and old_id in collection:
+                entry = collection.pop(old_id)
+                entry['finish'] = 'foil' if ':foil' in new_id else 'nonfoil'
+                collection[new_id] = entry
+                print(f"  ~ Changed finish: {old_id} -> {new_id}")
+            # Update Decktop references
+            if decktop is not None:
+                for card in decktop.get('cards', []):
+                    if card.get('scryfall_id') == old_id:
+                        card['scryfall_id'] = new_id
 
         else:
             print(f"  ! Unknown collection action: {action}")
@@ -231,6 +257,7 @@ def main():
     collection = load_json(os.path.join(data_dir, 'collection.json'))
     decks = load_json(os.path.join(data_dir, 'decks.json'))
     binders = load_json(os.path.join(data_dir, 'binders.json'))
+    boxes = load_json(os.path.join(data_dir, 'boxes.json'))
 
     print(f"Changes timestamp: {changes.get('timestamp', 'unknown')}")
     print()
@@ -239,7 +266,7 @@ def main():
     cc = changes.get('collection_changes', [])
     if cc:
         print(f"Applying {len(cc)} collection change(s):")
-        apply_collection_changes(collection, cc)
+        apply_collection_changes(collection, cc, boxes)
         print()
 
     # Apply deck changes
@@ -266,6 +293,7 @@ def main():
     save_json(os.path.join(data_dir, 'collection.json'), collection)
     save_json(os.path.join(data_dir, 'decks.json'), decks, sort_keys=False)
     save_json(os.path.join(data_dir, 'binders.json'), binders, sort_keys=False)
+    save_json(os.path.join(data_dir, 'boxes.json'), boxes, sort_keys=False)
 
     print("Data files updated successfully.")
 
