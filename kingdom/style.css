@@ -160,11 +160,11 @@
 }
 
 /* ---- Card base ----
-   width: 100% fills the grid column; height is driven by grid-auto-rows
-   on the parent. object-fit: cover on the img handles any crop. */
+   width: 100% fills the column; aspect-ratio derives the height.
+   Used for bonus grids where rows are content-sized. */
 .card {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 5 / 8;
   border-radius: 10px;
   overflow: hidden;
   background: #f0f0f0;
@@ -184,6 +184,17 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* Kingdom cards: height fills the viewport-sized row, width derives from
+   aspect-ratio (5:8) so the full card is always visible, never cropped.
+   justify-self centers the card if the column is wider than the card. */
+#kingdom-cards .card {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  justify-self: center;
+  aspect-ratio: 5 / 8;
 }
 
 /* Landscape / sideways cards span 2 columns so they're ~same height as portrait */
