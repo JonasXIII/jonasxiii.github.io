@@ -4,12 +4,17 @@
    No fixed pixel widths on cards — everything scales naturally.
    ============================================================ */
 
-/* ---- Page wrapper ---- */
+/* ---- Page wrapper ----
+   Override the global `main { padding: 3em 1.5em }` which shrinks
+   every page. Kingdom needs its own tighter padding so cards can
+   use the full available viewport width. */
 .kingdom-main {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 1.25rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem 1.25rem;
   box-sizing: border-box;
+  text-align: left; /* override global main { text-align: center } */
 }
 
 /* ---- Header banner ---- */
