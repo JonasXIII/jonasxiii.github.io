@@ -141,13 +141,13 @@
 }
 
 /* ---- Card grids ----
-   auto-fill + minmax: columns form based on available space after the
-   sidebar takes its 260px. On a ~1440px screen this yields ~5 cols;
-   narrower = fewer. No breakpoints needed for column count. */
+   minmax(max(18%, 150px), 1fr): min track size is 18% of the content
+   area, so auto-fill always yields ~5 columns regardless of screen
+   width. Falls back to the 150px floor on narrow screens (3→2 cols). */
 #kingdom-cards,
 .bonus-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(max(18%, 150px), 1fr));
   gap: 1rem;
 }
 
