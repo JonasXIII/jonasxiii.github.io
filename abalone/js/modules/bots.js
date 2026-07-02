@@ -1,6 +1,7 @@
-// bots.js - 5 hidden difficulty presets and the localStorage-backed unlock ladder.
-// Bot internals are deliberately not exposed while playing; results.js/main.js
-// reveals a level's actual settings only after a match against it ends.
+// bots.js - 5 difficulty presets. All are available from the start (no
+// unlock gate) and their settings are shown to the user up front - this is a
+// teaching tool, not a mystery box. localStorage just tracks a simple
+// win/loss record per level for context, purely informational.
 import { getLegalMoves } from './engine.js';
 import { defaultHeuristicConfig } from './heuristics.js';
 import { findBestMove } from './ai.js';
@@ -103,35 +104,39 @@ export function getBotMove(board, color, level, plyIndex, transpositionTable = n
   return result;
 }
 
-const STORAGE_KEY = 'abalone-unlocked-level-v1';
+const STORAGE_KEY = 'abalone-bot-records-v1';
 
 function hasStorage() {
   return typeof localStorage !== 'undefined';
 }
 
-export function getUnlockedLevel() {
-  if (!hasStorage()) return 1;
+function readRecords() {
+  if (!hasStorage()) return {};
   try {
-    const raw = parseInt(localStorage.getItem(STORAGE_KEY) || '1', 10);
-    return Math.min(5, Math.max(1, Number.isNaN(raw) ? 1 : raw));
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
   } catch {
-    return 1;
+    return {};
   }
 }
 
-export function recordWin(levelBeaten) {
+export function getBotRecord(level) {
+  const records = readRecords();
+  return records[level] || { wins: 0, losses: 0 };
+}
+
+export function recordGameResult(level, won) {
   if (!hasStorage()) return;
-  const current = getUnlockedLevel();
-  if (levelBeaten >= current && current < 5) {
-    try {
-      localStorage.setItem(STORAGE_KEY, String(current + 1));
-    } catch {
-      // ignore (private browsing, storage disabled, etc.)
-    }
+  const records = readRecords();
+  const current = records[level] || { wins: 0, losses: 0 };
+  records[level] = won ? { ...current, wins: current.wins + 1 } : { ...current, losses: current.losses + 1 };
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
+  } catch {
+    // ignore (private browsing, storage disabled, etc.)
   }
 }
 
-export function resetProgress() {
+export function resetBotRecords() {
   if (!hasStorage()) return;
   try {
     localStorage.removeItem(STORAGE_KEY);

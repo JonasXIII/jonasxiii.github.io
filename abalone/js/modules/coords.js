@@ -66,7 +66,7 @@ export function distanceFromCenter(cell) {
 }
 
 // Pixel geometry for a pointy-top hex grid (Red Blob Games conventions).
-export const HEX_SIZE = 26;
+export const HEX_SIZE = 32;
 
 export function axialToPixel(q, r, size = HEX_SIZE) {
   return {

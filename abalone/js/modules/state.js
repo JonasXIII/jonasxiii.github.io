@@ -77,28 +77,6 @@ export function setAiConfig(partial) {
   notify('ai-config-changed', { aiConfig: _aiConfig });
 }
 
-export function setHeuristicConfig(heuristicKey, partial) {
-  _aiConfig = {
-    ..._aiConfig,
-    heuristics: {
-      ..._aiConfig.heuristics,
-      [heuristicKey]: { ..._aiConfig.heuristics[heuristicKey], ...partial },
-    },
-  };
-  notify('ai-config-changed', { aiConfig: _aiConfig });
-}
-
-export function resetAiConfig() {
-  _aiConfig = {
-    lookahead: 3,
-    alphaBeta: true,
-    caching: true,
-    openingBook: true,
-    heuristics: defaultHeuristicConfig(),
-  };
-  notify('ai-config-changed', { aiConfig: _aiConfig });
-}
-
 export function setSelection(cells) {
   _selection = cells;
   notify('selection-changed', { selection: _selection });

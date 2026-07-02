@@ -1,14 +1,14 @@
 /* ============================================================
-   Abalone AI Playground — layout, board, and control styles.
-   Reuses several existing global classes (.chess-panel-section,
-   .difficulty-btn, .move-pair/#move-history, .captured-pieces,
-   .status-normal/.status-gameover) rather than duplicating them.
+   Abalone AI Playground — layout, board, modal, and batch-run styles.
+   Reuses a few existing global classes (.chess-panel-section,
+   .move-pair/#move-history, .status-normal/.status-gameover) rather than
+   duplicating them.
    ============================================================ */
 
 .abalone-main {
   width: 100%;
-  max-width: 100%;
-  margin: 0;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 1rem 1.25rem;
   box-sizing: border-box;
   text-align: left;
@@ -16,25 +16,41 @@
 
 .abalone-header {
   text-align: center;
-  padding: 2.5rem 1.5rem;
+  padding: 1.75rem 1.5rem;
   background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
   color: white;
   border-radius: 12px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .abalone-header h1 {
-  margin: 0 0 0.5rem;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.4rem, 3.5vw, 2.1rem);
   font-weight: 700;
 }
 
 .abalone-intro {
-  font-size: clamp(0.9rem, 2vw, 1.05rem);
-  margin: 0 auto;
-  max-width: 700px;
-  opacity: 0.92;
+  font-size: clamp(0.85rem, 1.8vw, 0.98rem);
+  margin: 0 auto 0.9rem;
+  max-width: 640px;
+  opacity: 0.9;
+}
+
+.learn-link {
+  display: inline-block;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.learn-link:hover {
+  background: rgba(255, 255, 255, 0.28);
+  text-decoration: none;
 }
 
 .abalone-note {
@@ -43,108 +59,237 @@
   margin: 0.25rem 0 0.75rem;
 }
 
-/* ---- Sidebar control groups ----
-   NOTE: .controls is only styled inside kingdom/style.css, not the shared
-   styles.css, so it must be defined here too rather than assumed global. */
-.controls {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+/* ============================================================
+   Big, obvious controls: mode switcher + action bar
+   ============================================================ */
+.mode-switcher {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   margin-bottom: 1.25rem;
 }
 
-.controls label {
+.mode-btn {
+  padding: 1.1rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.6;
+  background: #fff;
+  color: #2c5364;
+  border: 2px solid #dfe9ee;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.15s ease;
+}
+
+.mode-btn:hover {
+  border-color: #2c5364;
+  transform: translateY(-2px);
+}
+
+.mode-btn.active {
+  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(44, 83, 100, 0.4);
+}
+
+.action-bar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.6rem;
-  padding: 0.35rem 0.4rem;
+  gap: 0.75rem;
+  background: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  margin-bottom: 1.5rem;
+}
+
+/* The `display: flex` above otherwise beats the browser's default
+   `[hidden] { display: none }` rule in the cascade (equal specificity,
+   author wins over UA) - so hidden action bars would still render. */
+.action-bar[hidden] {
+  display: none;
+}
+
+.action-btn {
+  padding: 0.75rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: #eef3f5;
+  color: #2c5364;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.action-btn:hover {
+  background: #dfe9ee;
+}
+
+.primary-btn {
+  margin-left: auto;
+  padding: 0.9rem 1.75rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(44, 83, 100, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 16px rgba(44, 83, 100, 0.45);
+}
+
+.danger-btn {
+  padding: 0.75rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: #fde8e8;
+  color: #b23434;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.danger-btn:hover {
+  background: #fbd4d4;
+}
+
+.segmented {
+  display: inline-flex;
+  background: #eef3f5;
+  border-radius: 8px;
+  padding: 0.25rem;
+  gap: 0.25rem;
+}
+
+.segmented-btn {
+  padding: 0.55rem 0.9rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: transparent;
+  color: #2c5364;
+  border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 0.88rem;
-  color: #333;
 }
 
-.controls label:hover {
-  background: #f3f3f3;
+.segmented-btn.active {
+  background: #2c5364;
+  color: #fff;
 }
 
-.controls input[type="checkbox"] {
-  width: 1rem;
-  height: 1rem;
-  accent-color: #2c5364;
-  cursor: pointer;
-  flex-shrink: 0;
+.games-count-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #2c5364;
+  font-size: 0.9rem;
 }
 
-/* ---- Sidebar + content layout ---- */
-#abalone-layout {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 1.5rem;
-  align-items: start;
+.games-count-label input {
+  width: 4.5rem;
+  padding: 0.5rem;
+  border: 1px solid #dfe9ee;
+  border-radius: 6px;
+  font-size: 0.95rem;
 }
 
-#abalone-sidebar {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
-  position: sticky;
-  top: 1rem;
-  max-height: calc(100vh - 2rem);
+/* ============================================================
+   Modals
+   ============================================================ */
+dialog {
+  border: none;
+  border-radius: 14px;
+  padding: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  max-width: 560px;
+  width: 92vw;
+  max-height: 85vh;
+}
+
+dialog::backdrop {
+  background: rgba(15, 32, 39, 0.55);
+}
+
+dialog h2 {
+  margin: 0;
+  padding: 1.25rem 1.5rem 0.75rem;
+  color: #2c5364;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #eef3f5;
+}
+
+dialog .abalone-note {
+  padding: 0 1.5rem;
+}
+
+.modal-body {
+  padding: 1rem 1.5rem;
+  max-height: 55vh;
   overflow-y: auto;
 }
 
-#abalone-sidebar h2 {
+.modal-body label {
+  display: block;
+  font-weight: 600;
   color: #2c5364;
-  font-size: 1.1rem;
-  border-bottom: 2px solid #2c5364;
-  padding-bottom: 0.5rem;
-  margin: 1.25rem 0 0.75rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
 }
 
-#abalone-sidebar h2:first-child {
-  margin-top: 0;
+.modal-body input[type="range"] {
+  width: 100%;
 }
 
-#abalone-content {
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-  min-width: 0;
+.modal-toggle {
+  display: flex !important;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 500 !important;
+  padding: 0.4rem 0;
+  cursor: pointer;
 }
 
-/* ---- Bot level picker ---- */
-#bot-level-picker {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  margin-bottom: 1.25rem;
+.modal-toggle input {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: #2c5364;
+  cursor: pointer;
 }
 
-.bot-level-btn {
-  text-align: left;
-  background-color: #6c757d;
+.modal-body h3 {
+  margin: 1.25rem 0 0.5rem;
+  color: #2c5364;
+  font-size: 1rem;
+  border-top: 1px solid #eef3f5;
+  padding-top: 1rem;
 }
 
-.bot-level-btn.active {
-  background-color: #2c5364;
+#ai-settings-modal > .primary-btn {
+  display: block;
+  width: calc(100% - 3rem);
+  margin: 0.5rem 1.5rem 1.5rem;
 }
 
-.bot-level-btn.locked {
-  background-color: #ccc;
-  cursor: not-allowed;
-  color: #888;
-}
-
-/* ---- Heuristic weight rows ---- */
+/* ---- Heuristic weight rows (inside the AI Settings modal) ---- */
 .heuristic-row {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  padding: 0.5rem;
+  padding: 0.6rem 0.7rem;
   border-radius: 6px;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
   background: #f7fafc;
   border-left: 3px solid #2c5364;
 }
@@ -153,65 +298,124 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
+  color: #333;
 }
 
 .heuristic-row .heuristic-desc {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   color: #718096;
   margin: 0;
+  font-weight: 400;
 }
 
 .heuristic-row input[type="range"] {
-  margin: 0.15rem 0 0;
+  margin: 0.2rem 0 0;
 }
 
-#ai-buttons {
+/* ---- Opponent picker cards ---- */
+#opponent-list {
+  padding: 0 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  gap: 0.75rem;
+  max-height: 55vh;
+  overflow-y: auto;
 }
 
-#ai-buttons button {
-  background-color: #6c757d;
-  font-size: 0.85rem;
-  padding: 0.5rem;
-}
-
-#new-game-btn {
-  width: 100%;
-  padding: 0.8rem;
-  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
-  color: #fff;
-  border: none;
+.opponent-card {
+  background: #f7fafc;
+  border-left: 4px solid #2c5364;
   border-radius: 8px;
-  font-size: 1rem;
+  padding: 0.85rem 1rem;
+}
+
+.opponent-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.opponent-card-head strong {
+  color: #2c5364;
+}
+
+.opponent-record {
+  font-size: 0.8rem;
+  color: #718096;
   font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 3px 12px rgba(44, 83, 100, 0.35);
 }
 
-#new-game-btn:hover {
-  opacity: 0.93;
+.opponent-desc {
+  font-size: 0.82rem;
+  color: #555;
+  margin: 0 0 0.6rem;
+  line-height: 1.5;
 }
 
-/* ---- Board area ---- */
+.opponent-select-btn {
+  width: 100%;
+}
+
+#opponent-modal > .primary-btn {
+  display: block;
+  width: calc(100% - 3rem);
+  margin: 0.5rem 1.5rem 1.5rem;
+}
+
+/* ============================================================
+   Watch / Play board view
+   ============================================================ */
+#abalone-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  min-width: 0;
+}
+
 #abalone-board-area {
   flex: 1 1 auto;
   min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+#game-status {
+  font-size: 1.1rem;
+}
+
+#captured-inline {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.6rem;
+}
+
+.captured-chip {
+  font-size: 0.82rem;
+  color: #52514e;
+  background: #f7fafc;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+.captured-chip strong {
+  color: #2c5364;
 }
 
 #board {
   width: 100%;
-  max-width: 640px;
+  max-width: 680px;
   height: auto;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   user-select: none;
 }
 
@@ -291,24 +495,267 @@
   word-break: break-word;
 }
 
-#reveal-panel {
+#thinking-details {
+  margin-top: 0.6rem;
+  border-top: 1px solid #eef3f5;
+  padding-top: 0.5rem;
+}
+
+#thinking-details summary {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #718096;
+  cursor: pointer;
+  list-style: none;
+}
+
+#thinking-details summary::-webkit-details-marker {
+  display: none;
+}
+
+#thinking-details summary::before {
+  content: '▸ ';
+}
+
+#thinking-details[open] summary::before {
+  content: '▾ ';
+}
+
+#thinking-panel-advanced {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
   font-size: 0.85rem;
-  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+#thinking-panel-advanced div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+#thinking-panel-advanced span {
+  font-weight: 600;
+  color: #2c5364;
+  text-align: right;
+  word-break: break-word;
+}
+
+/* ============================================================
+   Batch Run view
+   ============================================================ */
+#batch-progress {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#batch-progress-text {
+  margin: 0 0 0.6rem;
+  font-weight: 600;
+  color: #2c5364;
+}
+
+.progress-bar-track {
+  height: 12px;
+  background: #eef3f5;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+  transition: width 0.2s ease;
+}
+
+#batch-results {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  margin-bottom: 1.5rem;
+}
+
+#batch-results h2 {
+  margin: 0 0 1rem;
+  color: #2c5364;
+  font-size: 1.2rem;
+}
+
+#batch-stat-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-tile {
+  background: #f7fafc;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: #718096;
+  margin-bottom: 0.3rem;
+}
+
+.stat-value {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2c5364;
+}
+
+#batch-chart-container {
+  overflow-x: auto;
+}
+
+/* Chart tokens per the site's dataviz reference palette (light mode) */
+.viz-root {
+  --surface-1: #fcfcfb;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --series-a: #2a78d6;
+  --series-b: #1baf7a;
+  --series-timeout: #898781;
+}
+
+.batch-bar-chart {
+  width: 100%;
+  max-width: 480px;
+  font-family: inherit;
+}
+
+.batch-bar-chart .viz-track {
+  fill: #eef3f5;
+}
+
+.batch-bar-chart .viz-cat-label {
+  font-size: 12px;
+  fill: var(--text-secondary);
+}
+
+.batch-bar-chart .viz-value-label {
+  font-size: 13px;
+  font-weight: 600;
+  fill: var(--text-primary);
+}
+
+#batch-history-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.batch-history-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.batch-history-head h2 {
+  margin: 0;
+  color: #2c5364;
+  font-size: 1.2rem;
+}
+
+#batch-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.batch-history-row {
+  padding: 0.7rem 0.9rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-left: 3px solid #2c5364;
+}
+
+.batch-history-row:hover {
+  background: #eef3f5;
+}
+
+.batch-history-row div:first-child {
+  margin-bottom: 0.2rem;
+  color: #2c5364;
+}
+
+/* ============================================================
+   Learn page
+   ============================================================ */
+.learn-main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+}
+
+.learn-back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #2c5364;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.learn-back:hover {
+  text-decoration: underline;
+}
+
+.learn-section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.learn-section h2 {
+  color: #2c5364;
+  margin-top: 0;
+}
+
+.learn-section p,
+.learn-section li {
+  line-height: 1.7;
+  color: #333;
+}
+
+.learn-example {
+  background: #f7fafc;
+  border-left: 4px solid #2c5364;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  margin: 1rem 0;
+  font-size: 0.92rem;
+}
+
+.learn-try {
+  background: #eef8f0;
+  border-left: 4px solid #1baf7a;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  margin: 0.6rem 0;
+  font-size: 0.92rem;
 }
 
 /* ============================================================
    Responsive breakpoints
    ============================================================ */
 @media (max-width: 1000px) {
-  #abalone-layout {
-    grid-template-columns: 1fr;
-  }
-
-  #abalone-sidebar {
-    position: static;
-    max-height: none;
-  }
-
   #abalone-content {
     flex-direction: column;
   }
@@ -316,6 +763,21 @@
   #abalone-side-panel {
     flex: 1 1 auto;
     width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .mode-switcher {
+    grid-template-columns: 1fr;
+  }
+
+  .action-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary-btn {
+    margin-left: 0;
   }
 }
 

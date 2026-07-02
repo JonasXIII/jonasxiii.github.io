@@ -14,75 +14,67 @@
   <main class="abalone-main">
     <div class="abalone-header">
       <h1>Abalone AI Playground</h1>
-      <p class="abalone-intro">Configure how an AI thinks - how far ahead it looks, whether it prunes, what it values in a position - then set it loose against five hidden bots, or play them yourself.</p>
+      <p class="abalone-intro">Configure how an AI thinks, then watch it play, play it yourself, or run it through dozens of games at once.</p>
+      <a href="learn.html" class="learn-link">📖 Learn how this AI thinks</a>
     </div>
 
-    <div id="abalone-layout">
-      <aside id="abalone-sidebar">
-        <h2>Mode</h2>
-        <div class="controls" id="mode-controls">
-          <label><input type="radio" name="mode" value="watch" checked> Watch my AI play a bot</label>
-          <label><input type="radio" name="mode" value="play"> Play a bot myself</label>
-        </div>
+    <div class="mode-switcher" id="mode-switcher">
+      <button type="button" class="mode-btn" data-mode="watch">👀<br>Watch AI vs Bot</button>
+      <button type="button" class="mode-btn" data-mode="play">🎮<br>Play vs Bot</button>
+      <button type="button" class="mode-btn" data-mode="batch">📊<br>Batch Run</button>
+    </div>
 
-        <h2>Opponent</h2>
-        <div id="bot-level-picker"></div>
+    <div class="action-bar" id="watch-play-actions">
+      <button type="button" id="ai-settings-btn" class="action-btn">⚙️ AI Settings</button>
+      <button type="button" id="opponent-btn" class="action-btn">🤖 Opponent: <span id="opponent-label">Novice</span></button>
+      <button type="button" id="new-game-btn" class="primary-btn">▶ New Game</button>
+    </div>
 
-        <h2>How your AI thinks</h2>
-        <div class="controls" id="ai-basic-controls">
-          <label for="lookahead-slider">
-            Lookahead depth: <span id="lookahead-value">3</span> plies
-          </label>
-          <input type="range" id="lookahead-slider" min="1" max="4" value="3" step="1">
-          <p id="lookahead-note" class="abalone-note"></p>
+    <div class="action-bar" id="batch-actions" hidden>
+      <div class="segmented" id="batch-opponent-type">
+        <button type="button" class="segmented-btn active" data-value="bot">vs a Bot</button>
+        <button type="button" class="segmented-btn" data-value="custom">vs another AI</button>
+      </div>
+      <button type="button" id="ai-a-settings-btn" class="action-btn">⚙️ Configure AI A</button>
+      <button type="button" id="batch-opponent-btn" class="action-btn">🤖 Bot: <span id="batch-bot-label">Novice</span></button>
+      <button type="button" id="ai-b-settings-btn" class="action-btn" hidden>⚙️ Configure AI B</button>
+      <label class="games-count-label">Games
+        <input type="number" id="num-games-input" min="1" max="100" value="10">
+      </label>
+      <button type="button" id="run-batch-btn" class="primary-btn">▶ Run Batch</button>
+      <button type="button" id="cancel-batch-btn" class="danger-btn" hidden>■ Cancel</button>
+    </div>
 
-          <label><input type="checkbox" id="alpha-beta-toggle" checked> Alpha-beta pruning</label>
-          <label><input type="checkbox" id="caching-toggle" checked> Cache seen positions</label>
-          <label><input type="checkbox" id="opening-book-toggle" checked> Use opening principles for first moves</label>
-        </div>
-
-        <h2>What it values</h2>
-        <div id="heuristics-controls" class="controls"></div>
-
-        <div id="ai-buttons">
-          <button id="reset-ai-btn" type="button">Reset AI to defaults</button>
-          <button id="reset-progress-btn" type="button">Reset bot progress</button>
-        </div>
-
-        <button id="new-game-btn" type="button">🔄 New Game</button>
-      </aside>
-
+    <div id="game-view">
       <div id="abalone-content">
         <div id="abalone-board-area">
-          <div id="game-status" class="status-normal">Set up a game and press New Game.</div>
-          <svg id="board" viewBox="-260 -230 520 460"></svg>
+          <div id="game-status" class="status-normal">Press New Game to begin.</div>
+          <div id="captured-inline">
+            <span class="captured-chip">⚫ Black lost <strong id="marbles-lost-black">0</strong></span>
+            <span class="captured-chip">⚪ White lost <strong id="marbles-lost-white">0</strong></span>
+          </div>
+          <svg id="board" viewBox="-262 -232 524 464"></svg>
         </div>
 
         <aside id="abalone-side-panel">
-          <div class="chess-panel-section" id="captured-section">
-            <h3>Marbles lost</h3>
-            <div>Black: <span class="captured-pieces" id="captured-black"></span></div>
-            <div>White: <span class="captured-pieces" id="captured-white"></span></div>
-          </div>
-
           <div class="chess-panel-section" id="thinking-section">
             <h3>Thinking</h3>
             <div id="thinking-panel">
               <div>Turn: <span id="thinking-turn">-</span></div>
               <div>Time to think: <span id="thinking-time">-</span></div>
-              <div>Positions searched: <span id="thinking-nodes">-</span></div>
-              <div>Cache hits: <span id="thinking-cache">-</span></div>
-              <div>Cache size: <span id="thinking-cache-size">-</span></div>
               <div>Score: <span id="thinking-score">-</span></div>
-              <div>Search depth: <span id="thinking-depth">-</span></div>
               <div>Move source: <span id="thinking-source">-</span></div>
-              <div>Best line found: <span id="thinking-pv">-</span></div>
             </div>
-          </div>
-
-          <div class="chess-panel-section" id="reveal-section" hidden>
-            <h3>Opponent revealed</h3>
-            <div id="reveal-panel"></div>
+            <details id="thinking-details">
+              <summary>Show search details</summary>
+              <div id="thinking-panel-advanced">
+                <div>Positions searched: <span id="thinking-nodes">-</span></div>
+                <div>Cache hits: <span id="thinking-cache">-</span></div>
+                <div>Cache size: <span id="thinking-cache-size">-</span></div>
+                <div>Search depth: <span id="thinking-depth">-</span></div>
+                <div>Best line found: <span id="thinking-pv">-</span></div>
+              </div>
+            </details>
           </div>
 
           <div class="chess-panel-section" id="history-section">
@@ -92,9 +84,58 @@
         </aside>
       </div>
     </div>
+
+    <div id="batch-view" hidden>
+      <div id="batch-progress" hidden>
+        <p id="batch-progress-text">Game 0 of 0…</p>
+        <div class="progress-bar-track"><div class="progress-bar-fill" id="batch-progress-fill"></div></div>
+      </div>
+
+      <div id="batch-results" hidden>
+        <h2>Latest run</h2>
+        <div id="batch-stat-tiles"></div>
+        <div id="batch-chart-container"></div>
+      </div>
+
+      <div id="batch-history-section">
+        <div class="batch-history-head">
+          <h2>Past runs</h2>
+          <button type="button" id="clear-batch-history-btn" class="danger-btn">Clear history</button>
+        </div>
+        <div id="batch-history-list"><div class="history-empty">No batch runs yet</div></div>
+      </div>
+    </div>
   </main>
 
   <div id="footer-container"></div>
+
+  <!-- AI Settings modal: retargeted at runtime to edit "your AI", or AI A / AI B in batch mode -->
+  <dialog id="ai-settings-modal" class="ai-modal">
+    <h2 id="ai-settings-modal-title">AI Settings</h2>
+    <div class="modal-body">
+      <label for="modal-lookahead-slider">Lookahead depth: <span id="modal-lookahead-value">3</span> plies</label>
+      <input type="range" id="modal-lookahead-slider" min="1" max="4" value="3" step="1">
+      <p id="modal-lookahead-note" class="abalone-note"></p>
+
+      <label class="modal-toggle"><input type="checkbox" id="modal-alpha-beta-toggle"> Alpha-beta pruning</label>
+      <label class="modal-toggle"><input type="checkbox" id="modal-caching-toggle"> Cache seen positions</label>
+      <label class="modal-toggle"><input type="checkbox" id="modal-opening-book-toggle"> Use opening principles for first moves</label>
+
+      <h3>What it values</h3>
+      <div id="modal-heuristics-controls"></div>
+
+      <button type="button" id="modal-reset-ai-btn" class="action-btn">Reset to defaults</button>
+    </div>
+    <button type="button" id="modal-close-btn" class="primary-btn">Done</button>
+  </dialog>
+
+  <!-- Opponent picker modal: reused for watch/play's single opponent and batch mode's bot opponent -->
+  <dialog id="opponent-modal">
+    <h2>Choose Opponent</h2>
+    <p class="abalone-note">Every bot's real settings are shown here - nothing is hidden.</p>
+    <div id="opponent-list"></div>
+    <button type="button" id="opponent-modal-close-btn" class="primary-btn">Close</button>
+  </dialog>
 
   <script src="../load-header-footer.js"></script>
   <script type="module" src="js/main.js"></script>
