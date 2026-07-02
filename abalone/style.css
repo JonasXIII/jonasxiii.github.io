@@ -1,0 +1,326 @@
+/* ============================================================
+   Abalone AI Playground — layout, board, and control styles.
+   Reuses several existing global classes (.chess-panel-section,
+   .difficulty-btn, .move-pair/#move-history, .captured-pieces,
+   .status-normal/.status-gameover) rather than duplicating them.
+   ============================================================ */
+
+.abalone-main {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.abalone-header {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.abalone-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+}
+
+.abalone-intro {
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  margin: 0 auto;
+  max-width: 700px;
+  opacity: 0.92;
+}
+
+.abalone-note {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0.25rem 0 0.75rem;
+}
+
+/* ---- Sidebar control groups ----
+   NOTE: .controls is only styled inside kingdom/style.css, not the shared
+   styles.css, so it must be defined here too rather than assumed global. */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: #333;
+}
+
+.controls label:hover {
+  background: #f3f3f3;
+}
+
+.controls input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #2c5364;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* ---- Sidebar + content layout ---- */
+#abalone-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+#abalone-sidebar {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+
+#abalone-sidebar h2 {
+  color: #2c5364;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #2c5364;
+  padding-bottom: 0.5rem;
+  margin: 1.25rem 0 0.75rem;
+}
+
+#abalone-sidebar h2:first-child {
+  margin-top: 0;
+}
+
+#abalone-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+/* ---- Bot level picker ---- */
+#bot-level-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.bot-level-btn {
+  text-align: left;
+  background-color: #6c757d;
+}
+
+.bot-level-btn.active {
+  background-color: #2c5364;
+}
+
+.bot-level-btn.locked {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #888;
+}
+
+/* ---- Heuristic weight rows ---- */
+.heuristic-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 0.4rem;
+  background: #f7fafc;
+  border-left: 3px solid #2c5364;
+}
+
+.heuristic-row .heuristic-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.heuristic-row .heuristic-desc {
+  font-size: 0.75rem;
+  color: #718096;
+  margin: 0;
+}
+
+.heuristic-row input[type="range"] {
+  margin: 0.15rem 0 0;
+}
+
+#ai-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#ai-buttons button {
+  background-color: #6c757d;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+}
+
+#new-game-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(44, 83, 100, 0.35);
+}
+
+#new-game-btn:hover {
+  opacity: 0.93;
+}
+
+/* ---- Board area ---- */
+#abalone-board-area {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#board {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin-top: 1rem;
+  user-select: none;
+}
+
+.hex-cell {
+  fill: #dfe9ee;
+  stroke: #9fb3bd;
+  stroke-width: 1.5;
+  cursor: default;
+}
+
+.hex-cell.selectable {
+  cursor: pointer;
+}
+
+.hex-cell.selectable:hover {
+  fill: #cfe0e8;
+}
+
+.hex-cell.selected {
+  fill: #ffe58a;
+}
+
+.hex-cell.legal-move {
+  fill: #b7f0b1;
+  cursor: pointer;
+}
+
+.hex-cell.legal-move:hover {
+  fill: #93e58c;
+}
+
+.hex-cell.last-move {
+  fill: #ffd699;
+}
+
+.marble {
+  pointer-events: none;
+}
+
+.marble-black {
+  fill: #2b2b2b;
+  stroke: #000;
+  stroke-width: 1;
+}
+
+.marble-white {
+  fill: #f5f0e6;
+  stroke: #999;
+  stroke-width: 1;
+}
+
+/* ---- Side panel ---- */
+#abalone-side-panel {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#thinking-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.88rem;
+}
+
+#thinking-panel div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+#thinking-panel span {
+  font-weight: 600;
+  color: #2c5364;
+  text-align: right;
+  word-break: break-word;
+}
+
+#reveal-panel {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   Responsive breakpoints
+   ============================================================ */
+@media (max-width: 1000px) {
+  #abalone-layout {
+    grid-template-columns: 1fr;
+  }
+
+  #abalone-sidebar {
+    position: static;
+    max-height: none;
+  }
+
+  #abalone-content {
+    flex-direction: column;
+  }
+
+  #abalone-side-panel {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .abalone-main {
+    padding: 0.75rem;
+  }
+}

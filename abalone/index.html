@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abalone AI Playground</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <main class="abalone-main">
+    <div class="abalone-header">
+      <h1>Abalone AI Playground</h1>
+      <p class="abalone-intro">Configure how an AI thinks - how far ahead it looks, whether it prunes, what it values in a position - then set it loose against five hidden bots, or play them yourself.</p>
+    </div>
+
+    <div id="abalone-layout">
+      <aside id="abalone-sidebar">
+        <h2>Mode</h2>
+        <div class="controls" id="mode-controls">
+          <label><input type="radio" name="mode" value="watch" checked> Watch my AI play a bot</label>
+          <label><input type="radio" name="mode" value="play"> Play a bot myself</label>
+        </div>
+
+        <h2>Opponent</h2>
+        <div id="bot-level-picker"></div>
+
+        <h2>How your AI thinks</h2>
+        <div class="controls" id="ai-basic-controls">
+          <label for="lookahead-slider">
+            Lookahead depth: <span id="lookahead-value">3</span> plies
+          </label>
+          <input type="range" id="lookahead-slider" min="1" max="4" value="3" step="1">
+          <p id="lookahead-note" class="abalone-note"></p>
+
+          <label><input type="checkbox" id="alpha-beta-toggle" checked> Alpha-beta pruning</label>
+          <label><input type="checkbox" id="caching-toggle" checked> Cache seen positions</label>
+          <label><input type="checkbox" id="opening-book-toggle" checked> Use opening principles for first moves</label>
+        </div>
+
+        <h2>What it values</h2>
+        <div id="heuristics-controls" class="controls"></div>
+
+        <div id="ai-buttons">
+          <button id="reset-ai-btn" type="button">Reset AI to defaults</button>
+          <button id="reset-progress-btn" type="button">Reset bot progress</button>
+        </div>
+
+        <button id="new-game-btn" type="button">🔄 New Game</button>
+      </aside>
+
+      <div id="abalone-content">
+        <div id="abalone-board-area">
+          <div id="game-status" class="status-normal">Set up a game and press New Game.</div>
+          <svg id="board" viewBox="-260 -230 520 460"></svg>
+        </div>
+
+        <aside id="abalone-side-panel">
+          <div class="chess-panel-section" id="captured-section">
+            <h3>Marbles lost</h3>
+            <div>Black: <span class="captured-pieces" id="captured-black"></span></div>
+            <div>White: <span class="captured-pieces" id="captured-white"></span></div>
+          </div>
+
+          <div class="chess-panel-section" id="thinking-section">
+            <h3>Thinking</h3>
+            <div id="thinking-panel">
+              <div>Turn: <span id="thinking-turn">-</span></div>
+              <div>Time to think: <span id="thinking-time">-</span></div>
+              <div>Positions searched: <span id="thinking-nodes">-</span></div>
+              <div>Cache hits: <span id="thinking-cache">-</span></div>
+              <div>Cache size: <span id="thinking-cache-size">-</span></div>
+              <div>Score: <span id="thinking-score">-</span></div>
+              <div>Search depth: <span id="thinking-depth">-</span></div>
+              <div>Move source: <span id="thinking-source">-</span></div>
+              <div>Best line found: <span id="thinking-pv">-</span></div>
+            </div>
+          </div>
+
+          <div class="chess-panel-section" id="reveal-section" hidden>
+            <h3>Opponent revealed</h3>
+            <div id="reveal-panel"></div>
+          </div>
+
+          <div class="chess-panel-section" id="history-section">
+            <h3>Move history</h3>
+            <div id="move-history"><div class="history-empty">No moves yet</div></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="../load-header-footer.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
