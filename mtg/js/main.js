@@ -3,7 +3,7 @@
 import * as state from './modules/state.js';
 import { getRealScryfallId } from './modules/state.js';
 import * as api from './modules/api.js';
-import { downloadChangesJson } from './modules/export.js';
+import * as auth from './modules/auth.js';
 import { showToast } from './modules/ui-components.js';
 import { render as renderCollection } from './modules/ui-collection.js';
 import { render as renderDecks } from './modules/ui-deck-editor.js';
@@ -14,8 +14,7 @@ let _activeTab = 'collection';
 
 document.addEventListener('DOMContentLoaded', async () => {
     setupTabs();
-    setupSaveButton();
-    setupBeforeUnload();
+    setupAuthUI();
     await loadData();
 });
 
@@ -25,21 +24,13 @@ async function loadData() {
     const loadingProgress = document.getElementById('loading-progress');
 
     try {
-        // Load JSON data files in parallel
+        // Load collection/decks/binders/boxes from Firestore
         loadingText.textContent = 'Loading collection data...';
         loadingProgress.style.width = '10%';
 
-        const [collectionData, decksData, bindersData, boxesData] = await Promise.all([
-            fetchJson('./data/collection.json'),
-            fetchJson('./data/decks.json'),
-            fetchJson('./data/binders.json'),
-            fetchJson('./data/boxes.json')
-        ]);
+        await state.loadFromFirestore();
 
         loadingProgress.style.width = '30%';
-
-        // Initialize state
-        state.initState(collectionData, decksData, bindersData, boxesData);
 
         // Load localStorage cache
         loadingText.textContent = 'Loading card cache...';
@@ -47,7 +38,7 @@ async function loadData() {
         state.setCardCache(cachedCards);
 
         // Determine which IDs need fetching (missing from cache, or cached but prices are null)
-        const allIds = collectAllScryfallIds(collectionData, decksData, bindersData, boxesData);
+        const allIds = collectAllScryfallIds(state.getCollection(), state.getDecks(), state.getBinders(), state.getBoxes());
         const missingIds = allIds.filter(id => {
             const cached = cachedCards[id];
             if (!cached) return true;
@@ -87,20 +78,6 @@ async function loadData() {
         console.error('Failed to load data:', err);
         if (loadingText) loadingText.textContent = 'Error loading data. Check console for details.';
         if (loadingProgress) loadingProgress.style.backgroundColor = '#f56565';
-    }
-}
-
-async function fetchJson(url) {
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            console.warn(`Failed to load ${url} (${response.status}), using default`);
-            return url.includes('collection') ? {} : [];
-        }
-        return await response.json();
-    } catch (err) {
-        console.warn(`Error loading ${url}:`, err);
-        return url.includes('collection') ? {} : [];
     }
 }
 
@@ -177,33 +154,43 @@ function renderActiveTab() {
     }
 }
 
-// --- Save Button ---
+// --- Auth UI ---
+// Edits write straight to Firestore now (see state.js), so there's no more
+// "unsaved changes" concept or export/apply-script loop - just sign in or out.
 
-function setupSaveButton() {
-    const saveBtn = document.getElementById('save-changes-btn');
-    if (!saveBtn) return;
+function setupAuthUI() {
+    const signInBtn = document.getElementById('sign-in-btn');
+    const signOutBtn = document.getElementById('sign-out-btn');
+    const userLabel = document.getElementById('auth-user-label');
+    if (!signInBtn || !signOutBtn) return;
 
-    saveBtn.addEventListener('click', () => {
-        const changes = downloadChangesJson();
-        showToast('changes.json downloaded. Run apply_changes.py to apply.', 'success', 5000);
-    });
-
-    // Show/hide based on unsaved changes
-    state.subscribe((eventType) => {
-        if (eventType === 'unsaved_changes' || eventType === 'collection_changed' ||
-            eventType === 'decks_changed' || eventType === 'binders_changed' || eventType === 'boxes_changed') {
-            saveBtn.style.display = state.hasUnsavedChanges() ? 'block' : 'none';
+    signInBtn.addEventListener('click', async () => {
+        try {
+            await auth.signInWithGoogle();
+        } catch (err) {
+            console.error('Sign-in failed:', err);
+            showToast('Sign-in failed. Try again.', 'error', 3000);
         }
     });
-}
 
-// --- Unsaved Changes Warning ---
+    signOutBtn.addEventListener('click', async () => {
+        try {
+            await auth.signOutUser();
+        } catch (err) {
+            console.error('Sign-out failed:', err);
+        }
+    });
 
-function setupBeforeUnload() {
-    window.addEventListener('beforeunload', (e) => {
-        if (state.hasUnsavedChanges()) {
-            e.preventDefault();
-            e.returnValue = '';
+    auth.onAuthChange((user) => {
+        signInBtn.style.display = user ? 'none' : 'inline-block';
+        signOutBtn.style.display = user ? 'inline-block' : 'none';
+        if (!userLabel) return;
+        if (!user) {
+            userLabel.textContent = '';
+        } else if (auth.isOwner()) {
+            userLabel.textContent = `Signed in as ${user.displayName || user.email}`;
+        } else {
+            userLabel.textContent = `Signed in as ${user.displayName || user.email} (view only)`;
         }
     });
 }

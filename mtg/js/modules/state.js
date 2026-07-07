@@ -1,17 +1,28 @@
-// state.js - Central state management with change tracking
+// state.js - Central state management, backed by Firestore.
+//
+// Every mutation here keeps its old synchronous signature (no caller anywhere
+// else in the app had to change) - it updates the in-memory state instantly
+// (optimistic UI), then fires off a Firestore write in the background,
+// catching failures with a toast rather than losing the edit silently.
+// Firestore's own offline queue (see firebase.js) handles the "made a change
+// with no wifi" case automatically.
+import {
+  collection as fsCollection,
+  doc,
+  setDoc,
+  deleteDoc,
+  getDocs,
+  writeBatch,
+} from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js';
+import { db, OWNER_UID } from './firebase.js';
+import { isOwner } from './auth.js';
+import { showToast } from './ui-components.js';
 
 let _collection = {};
 let _decks = [];
 let _binders = [];
 let _boxes = [];
 let _cardCache = {};
-let _changeLog = {
-    collection_changes: [],
-    deck_changes: [],
-    binder_changes: [],
-    box_changes: []
-};
-let _hasUnsavedChanges = false;
 let _listeners = [];
 
 // --- Helpers ---
@@ -36,8 +47,6 @@ export function getCardData(key) {
     return _cardCache[key] || _cardCache[getRealScryfallId(key)] || null;
 }
 export function getAllCardData() { return _cardCache; }
-export function hasUnsavedChanges() { return _hasUnsavedChanges; }
-export function getChangeLog() { return _changeLog; }
 
 // --- Initialization ---
 
@@ -46,9 +55,25 @@ export function initState(collection, decks, binders, boxes) {
     _decks = decks || [];
     _binders = binders || [];
     _boxes = boxes || [];
-    _changeLog = { collection_changes: [], deck_changes: [], binder_changes: [], box_changes: [] };
-    _hasUnsavedChanges = false;
     notify('init');
+}
+
+// Reads the owner's collection/decks/binders/boxes from Firestore and seeds
+// state from them - this is the direct replacement for the old
+// fetch('./data/*.json') + initState() flow.
+export async function loadFromFirestore() {
+    const [cardsSnap, decksSnap, bindersSnap, boxesSnap] = await Promise.all([
+        getDocs(collectionCardsRef()),
+        getDocs(decksRef()),
+        getDocs(bindersRef()),
+        getDocs(boxesRef()),
+    ]);
+    const collection = {};
+    cardsSnap.forEach((d) => { collection[d.id] = d.data(); });
+    const decks = decksSnap.docs.map((d) => ({ ...d.data(), id: d.id }));
+    const binders = bindersSnap.docs.map((d) => ({ ...d.data(), id: d.id }));
+    const boxes = boxesSnap.docs.map((d) => ({ ...d.data(), id: d.id }));
+    initState(collection, decks, binders, boxes);
 }
 
 export function setCardCache(cardsMap) {
@@ -78,21 +103,57 @@ function notify(eventType, data) {
     }
 }
 
-function markChanged() {
-    _hasUnsavedChanges = true;
-    notify('unsaved_changes');
+// --- Firestore write-through (fire-and-forget from the mutators below) ---
+
+function collectionCardsRef() { return fsCollection(db, 'users', OWNER_UID, 'collectionCards'); }
+function decksRef() { return fsCollection(db, 'users', OWNER_UID, 'decks'); }
+function bindersRef() { return fsCollection(db, 'users', OWNER_UID, 'binders'); }
+function boxesRef() { return fsCollection(db, 'users', OWNER_UID, 'boxes'); }
+
+function requireOwner() {
+    if (!isOwner()) {
+        showToast('Sign in to make changes.', 'error', 3000);
+        return false;
+    }
+    return true;
+}
+
+function reportSyncFailure(err) {
+    console.error('Firestore sync failed:', err);
+    showToast("Couldn't reach the database - your change will sync once you're back online.", 'error', 4000);
+}
+
+function syncCollectionCard(scryfallId, entry) {
+    setDoc(doc(collectionCardsRef(), scryfallId), entry).catch(reportSyncFailure);
+}
+function syncDeleteCollectionCard(scryfallId) {
+    deleteDoc(doc(collectionCardsRef(), scryfallId)).catch(reportSyncFailure);
+}
+function syncDeck(deck) {
+    setDoc(doc(decksRef(), deck.id), deck).catch(reportSyncFailure);
+}
+function syncDeleteDeck(deckId) {
+    deleteDoc(doc(decksRef(), deckId)).catch(reportSyncFailure);
+}
+function syncBinder(binder) {
+    setDoc(doc(bindersRef(), binder.id), binder).catch(reportSyncFailure);
+}
+function syncDeleteBinder(binderId) {
+    deleteDoc(doc(bindersRef(), binderId)).catch(reportSyncFailure);
+}
+function syncBox(box) {
+    setDoc(doc(boxesRef(), box.id), box).catch(reportSyncFailure);
+}
+function syncDeleteBox(boxId) {
+    deleteDoc(doc(boxesRef(), boxId)).catch(reportSyncFailure);
 }
 
 // --- Collection Mutations ---
 
 export function addToCollection(scryfallId, quantity, cardInfo) {
+    if (!requireOwner()) return;
     if (_collection[scryfallId]) {
         _collection[scryfallId].quantity += quantity;
-        _changeLog.collection_changes.push({
-            action: 'update_quantity',
-            scryfall_id: scryfallId,
-            new_quantity: _collection[scryfallId].quantity
-        });
     } else {
         _collection[scryfallId] = {
             quantity,
@@ -101,18 +162,9 @@ export function addToCollection(scryfallId, quantity, cardInfo) {
             set: cardInfo.set,
             collector_number: cardInfo.collector_number
         };
-        _changeLog.collection_changes.push({
-            action: 'add',
-            scryfall_id: scryfallId,
-            quantity,
-            oracle_id: cardInfo.oracle_id,
-            name: cardInfo.name,
-            set: cardInfo.set,
-            collector_number: cardInfo.collector_number
-        });
     }
-    markChanged();
     notify('collection_changed', { scryfallId });
+    syncCollectionCard(scryfallId, _collection[scryfallId]);
 }
 
 export function updateCollectionQuantity(scryfallId, newQuantity) {
@@ -121,53 +173,46 @@ export function updateCollectionQuantity(scryfallId, newQuantity) {
         removeFromCollection(scryfallId);
         return;
     }
+    if (!requireOwner()) return;
     _collection[scryfallId].quantity = newQuantity;
-    _changeLog.collection_changes.push({
-        action: 'update_quantity',
-        scryfall_id: scryfallId,
-        new_quantity: newQuantity
-    });
-    markChanged();
     notify('collection_changed', { scryfallId });
+    syncCollectionCard(scryfallId, _collection[scryfallId]);
 }
 
 export function removeFromCollection(scryfallId) {
     if (!_collection[scryfallId]) return;
+    if (!requireOwner()) return;
     delete _collection[scryfallId];
-    _changeLog.collection_changes.push({
-        action: 'remove',
-        scryfall_id: scryfallId
-    });
-    markChanged();
     notify('collection_changed', { scryfallId });
+    syncDeleteCollectionCard(scryfallId);
 }
 
 // --- Deck Mutations ---
 
 export function createDeck(name, format, description, color, unlocked) {
+    if (!requireOwner()) return;
     const id = 'deck-' + Date.now();
     const deck = { id, name, format: format || '', description: description || '', color: color || null, unlocked: unlocked || false, cards: [] };
     _decks.push(deck);
-    _changeLog.deck_changes.push({ action: 'create', deck: structuredClone(deck) });
-    markChanged();
     notify('decks_changed', { deckId: id });
+    syncDeck(deck);
     return id;
 }
 
 export function updateDeck(deckId, updatedDeck) {
     const idx = _decks.findIndex(d => d.id === deckId);
     if (idx === -1) return;
+    if (!requireOwner()) return;
     _decks[idx] = { ...updatedDeck, id: deckId };
-    _changeLog.deck_changes.push({ action: 'update', deck_id: deckId, deck: structuredClone(_decks[idx]) });
-    markChanged();
     notify('decks_changed', { deckId });
+    syncDeck(_decks[idx]);
 }
 
 export function deleteDeck(deckId) {
+    if (!requireOwner()) return;
     _decks = _decks.filter(d => d.id !== deckId);
-    _changeLog.deck_changes.push({ action: 'delete', deck_id: deckId });
-    markChanged();
     notify('decks_changed', { deckId });
+    syncDeleteDeck(deckId);
 }
 
 export function getDeckById(deckId) {
@@ -177,6 +222,7 @@ export function getDeckById(deckId) {
 // --- Binder Mutations ---
 
 export function createBinder(name, description, pages, slotsPerPage, color, unlocked) {
+    if (!requireOwner()) return;
     const id = 'binder-' + Date.now();
     const binder = {
         id, name,
@@ -189,26 +235,25 @@ export function createBinder(name, description, pages, slotsPerPage, color, unlo
         cards: []
     };
     _binders.push(binder);
-    _changeLog.binder_changes.push({ action: 'create', binder: structuredClone(binder) });
-    markChanged();
     notify('binders_changed', { binderId: id });
+    syncBinder(binder);
     return id;
 }
 
 export function updateBinder(binderId, updatedBinder) {
     const idx = _binders.findIndex(b => b.id === binderId);
     if (idx === -1) return;
+    if (!requireOwner()) return;
     _binders[idx] = { ...updatedBinder, id: binderId };
-    _changeLog.binder_changes.push({ action: 'update', binder_id: binderId, binder: structuredClone(_binders[idx]) });
-    markChanged();
     notify('binders_changed', { binderId });
+    syncBinder(_binders[idx]);
 }
 
 export function deleteBinder(binderId) {
+    if (!requireOwner()) return;
     _binders = _binders.filter(b => b.id !== binderId);
-    _changeLog.binder_changes.push({ action: 'delete', binder_id: binderId });
-    markChanged();
     notify('binders_changed', { binderId });
+    syncDeleteBinder(binderId);
 }
 
 export function getBinderById(binderId) {
@@ -218,6 +263,7 @@ export function getBinderById(binderId) {
 // --- Box Mutations ---
 
 export function createBox(name, description, color, unlocked) {
+    if (!requireOwner()) return;
     const id = 'box-' + Date.now();
     const box = {
         id, name,
@@ -227,26 +273,25 @@ export function createBox(name, description, color, unlocked) {
         cards: []
     };
     _boxes.push(box);
-    _changeLog.box_changes.push({ action: 'create', box: structuredClone(box) });
-    markChanged();
     notify('boxes_changed', { boxId: id });
+    syncBox(box);
     return id;
 }
 
 export function updateBox(boxId, updatedBox) {
     const idx = _boxes.findIndex(b => b.id === boxId);
     if (idx === -1) return;
+    if (!requireOwner()) return;
     _boxes[idx] = { ...updatedBox, id: boxId };
-    _changeLog.box_changes.push({ action: 'update', box_id: boxId, box: structuredClone(_boxes[idx]) });
-    markChanged();
     notify('boxes_changed', { boxId });
+    syncBox(_boxes[idx]);
 }
 
 export function deleteBox(boxId) {
+    if (!requireOwner()) return;
     _boxes = _boxes.filter(b => b.id !== boxId);
-    _changeLog.box_changes.push({ action: 'delete', box_id: boxId });
-    markChanged();
     notify('boxes_changed', { boxId });
+    syncDeleteBox(boxId);
 }
 
 export function getBoxById(boxId) {
@@ -339,6 +384,7 @@ export function getCollectionsForCard(scryfallId) {
 export function changeCardFinish(oldId) {
     const entry = _collection[oldId];
     if (!entry) return;
+    if (!requireOwner()) return;
 
     const newId = oldId.endsWith(':foil') ? getRealScryfallId(oldId) : (oldId + ':foil');
     const newFinish = oldId.endsWith(':foil') ? 'nonfoil' : 'foil';
@@ -350,50 +396,51 @@ export function changeCardFinish(oldId) {
     }
     delete _collection[oldId];
 
+    const changedDecks = [];
     for (const deck of _decks) {
         let changed = false;
         for (const card of deck.cards) {
             if (card.scryfall_id === oldId) { card.scryfall_id = newId; changed = true; }
         }
-        if (changed) {
-            _changeLog.deck_changes.push({ action: 'update', deck_id: deck.id, deck: structuredClone(deck) });
-        }
+        if (changed) changedDecks.push(deck);
     }
+    const changedBinders = [];
     for (const binder of _binders) {
         let changed = false;
         for (const card of binder.cards) {
             if (card.scryfall_id === oldId) { card.scryfall_id = newId; changed = true; }
         }
-        if (changed) {
-            _changeLog.binder_changes.push({ action: 'update', binder_id: binder.id, binder: structuredClone(binder) });
-        }
+        if (changed) changedBinders.push(binder);
     }
+    const changedBoxes = [];
     for (const box of _boxes) {
         let changed = false;
         for (const card of box.cards) {
             if (card.scryfall_id === oldId) { card.scryfall_id = newId; changed = true; }
         }
-        if (changed) {
-            _changeLog.box_changes.push({ action: 'update', box_id: box.id, box: structuredClone(box) });
-        }
+        if (changed) changedBoxes.push(box);
     }
 
-    _changeLog.collection_changes.push({ action: 'change_finish', old_id: oldId, new_id: newId });
-    markChanged();
     notify('collection_changed', { scryfallId: oldId, newScryfallId: newId });
     notify('decks_changed');
     notify('binders_changed');
     notify('boxes_changed');
+
+    syncFinishChangeBatch(oldId, newId, _collection[newId], changedDecks, changedBinders, changedBoxes);
+}
+
+// One batched write so the finish change and every deck/binder/box reference
+// rewrite land together (or fail together) rather than partially applying.
+function syncFinishChangeBatch(oldId, newId, newEntry, changedDecks, changedBinders, changedBoxes) {
+    const batch = writeBatch(db);
+    batch.delete(doc(collectionCardsRef(), oldId));
+    batch.set(doc(collectionCardsRef(), newId), newEntry);
+    for (const deck of changedDecks) batch.set(doc(decksRef(), deck.id), deck);
+    for (const binder of changedBinders) batch.set(doc(bindersRef(), binder.id), binder);
+    for (const box of changedBoxes) batch.set(doc(boxesRef(), box.id), box);
+    batch.commit().catch(reportSyncFailure);
 }
 
 export function getDecktopBox() {
     return _boxes.find(b => b.is_decktop) || null;
-}
-
-// --- Reset ---
-
-export function resetChangeLog() {
-    _changeLog = { collection_changes: [], deck_changes: [], binder_changes: [], box_changes: [] };
-    _hasUnsavedChanges = false;
-    notify('unsaved_changes');
 }

@@ -71,6 +71,11 @@
     align-items: center;
 }
 
+.mtg-auth-label {
+    font-size: 0.85em;
+    color: #718096;
+}
+
 /* Buttons */
 .mtg-btn {
     padding: 8px 18px;
