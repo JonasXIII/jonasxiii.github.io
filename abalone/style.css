@@ -205,6 +205,12 @@
   font-size: 0.95rem;
 }
 
+/* Same cascade gotcha as .action-bar[hidden] - display:flex above otherwise
+   beats the browser's default [hidden] rule. */
+.games-count-label[hidden] {
+  display: none;
+}
+
 /* ============================================================
    Modals
    ============================================================ */
@@ -646,6 +652,152 @@ dialog .abalone-note {
   font-size: 13px;
   font-weight: 600;
   fill: var(--text-primary);
+}
+
+/* ---- Optimize ("Find best settings") results ---- */
+#optimize-results {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  margin-bottom: 1.5rem;
+}
+
+#optimize-results h2 {
+  margin: 0 0 1rem;
+  color: #2c5364;
+  font-size: 1.2rem;
+}
+
+#optimize-results h3 {
+  margin: 1.5rem 0 0.3rem;
+  color: #2c5364;
+  font-size: 1.05rem;
+}
+
+#optimize-stat-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#use-best-config-btn {
+  background: #eef8f0;
+  color: #0f7a3d;
+  font-weight: 700;
+}
+
+#use-best-config-btn:hover {
+  background: #dcf3e2;
+}
+
+.insight-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eef3f5;
+}
+
+.insight-label {
+  flex: 0 0 160px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2c5364;
+}
+
+.insight-bars {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.insight-bar-line {
+  display: grid;
+  grid-template-columns: 70px 1fr 40px;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: #718096;
+}
+
+.insight-track {
+  height: 8px;
+  background: #eef3f5;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.insight-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.insight-fill.on {
+  background: var(--series-a, #2a78d6);
+}
+
+.insight-fill.off {
+  background: var(--series-timeout, #898781);
+}
+
+.insight-bar-line strong {
+  color: #2c5364;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+#optimize-ranked-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 420px;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+}
+
+.ranked-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: #f7fafc;
+  border-left: 3px solid #dfe9ee;
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem;
+}
+
+.ranked-row.best {
+  border-left-color: #eda100;
+  background: #fff8e8;
+}
+
+.ranked-rank {
+  flex: 0 0 auto;
+  font-weight: 700;
+  color: #718096;
+  min-width: 2rem;
+}
+
+.ranked-row.best .ranked-rank {
+  font-size: 1.1rem;
+}
+
+.ranked-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: #2c5364;
+}
+
+.ranked-desc {
+  font-size: 0.78rem;
+  color: #718096;
+  margin: 0.2rem 0 0;
+  line-height: 1.5;
 }
 
 #batch-history-section {

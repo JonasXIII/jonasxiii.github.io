@@ -34,12 +34,23 @@
       <div class="segmented" id="batch-opponent-type">
         <button type="button" class="segmented-btn active" data-value="bot">vs a Bot</button>
         <button type="button" class="segmented-btn" data-value="custom">vs another AI</button>
+        <button type="button" class="segmented-btn" data-value="optimize">🔬 Find best settings</button>
       </div>
       <button type="button" id="ai-a-settings-btn" class="action-btn">⚙️ Configure AI A</button>
+      <button type="button" id="ai-baseline-settings-btn" class="action-btn" hidden>⚙️ Configure baseline</button>
       <button type="button" id="batch-opponent-btn" class="action-btn">🤖 Bot: <span id="batch-bot-label">Novice</span></button>
       <button type="button" id="ai-b-settings-btn" class="action-btn" hidden>⚙️ Configure AI B</button>
-      <label class="games-count-label">Games
+      <label class="games-count-label" id="num-games-label">Games
         <input type="number" id="num-games-input" min="1" max="100" value="10">
+      </label>
+      <label class="games-count-label optimizer-only" hidden>Rounds
+        <input type="number" id="optimizer-rounds-input" min="1" max="15" value="5">
+      </label>
+      <label class="games-count-label optimizer-only" hidden>Candidates/round
+        <input type="number" id="optimizer-candidates-input" min="1" max="8" value="4">
+      </label>
+      <label class="games-count-label optimizer-only" hidden>Games/candidate
+        <input type="number" id="optimizer-games-input" min="1" max="20" value="6">
       </label>
       <button type="button" id="run-batch-btn" class="primary-btn">▶ Run Batch</button>
       <button type="button" id="cancel-batch-btn" class="danger-btn" hidden>■ Cancel</button>
@@ -95,6 +106,19 @@
         <h2>Latest run</h2>
         <div id="batch-stat-tiles"></div>
         <div id="batch-chart-container"></div>
+      </div>
+
+      <div id="optimize-results" hidden>
+        <h2>Best settings found</h2>
+        <div id="optimize-stat-tiles"></div>
+        <button type="button" id="use-best-config-btn" class="action-btn">✓ Use this as my AI Settings</button>
+
+        <h3>What mattered</h3>
+        <p class="abalone-note">Average win rate across every config tested, grouped by whether that setting was on or off. A bigger gap means that setting mattered more against this opponent.</p>
+        <div id="optimize-insights"></div>
+
+        <h3>Every config tried, ranked</h3>
+        <div id="optimize-ranked-list"></div>
       </div>
 
       <div id="batch-history-section">

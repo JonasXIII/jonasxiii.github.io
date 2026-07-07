@@ -8,7 +8,12 @@ export function createTranspositionTable(maxEntries = 200000) {
       return map.get(k);
     },
     set(k, entry) {
-      if (!map.has(k) && map.size >= maxEntries) {
+      // Depth-preferred replacement: a deeper search result is strictly more
+      // valuable (it's cheaper to recompute a shallow one than a deep one),
+      // so don't let a shallow re-visit evict a deeper entry already there.
+      const existing = map.get(k);
+      if (existing && existing.depth > entry.depth) return;
+      if (!existing && map.size >= maxEntries) {
         map.delete(map.keys().next().value); // evict oldest insertion
       }
       map.set(k, entry);

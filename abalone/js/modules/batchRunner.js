@@ -1,8 +1,12 @@
 // batchRunner.js - plays N full games with no board animation, for the
 // "Batch Run" teaching mode: configure how two AIs think, then see the
-// aggregate result instead of watching one game at a time.
+// aggregate result instead of watching one game at a time. Independent games
+// run concurrently across the worker pool (see workerClient.js) - each
+// concurrent "slot" plays its games one at a time on its own dedicated
+// worker, so the pool as a whole processes several games in parallel while
+// each individual game still benefits from a warm per-config cache.
 import { createInitialBoard, applyMove, checkWin, opponent } from './engine.js';
-import { askWorker } from './workerClient.js';
+import { askWorkerOn, getPoolSize } from './workerClient.js';
 
 const MAX_PLIES = 400; // safety net: two weak/noisy bots could otherwise shuffle forever
 
@@ -11,11 +15,10 @@ function avg(arr) {
   return arr.reduce((a, b) => a + b, 0) / arr.length;
 }
 
-async function playOneGame({ mode, botLevel, aiConfigA, aiConfigB, colorOfA, plyOffsetForBook }) {
+async function playOneGame({ mode, botLevel, aiConfigA, aiConfigB, colorOfA, workerSlot }) {
   let board = createInitialBoard();
   let turn = 'b';
   let plyIndex = 0;
-  const colorOfB = opponent(colorOfA);
   const timeA = [];
   const timeB = [];
   let nodesA = 0;
@@ -29,10 +32,10 @@ async function playOneGame({ mode, botLevel, aiConfigA, aiConfigB, colorOfA, ply
     const isA = mover === colorOfA;
     let result;
     if (mode === 'bot' && !isA) {
-      result = await askWorker({ type: 'bot-move', board, color: mover, level: botLevel, plyIndex });
+      result = await askWorkerOn(workerSlot, { type: 'bot-move', board, color: mover, level: botLevel, plyIndex });
     } else {
       const aiConfig = isA ? aiConfigA : aiConfigB;
-      result = await askWorker({ type: 'find-move', board, color: mover, aiConfig, plyIndex });
+      result = await askWorkerOn(workerSlot, { type: 'find-move', board, color: mover, aiConfig, plyIndex });
     }
     if (!result.move) break; // no legal moves - treat as a stalled game
 
@@ -67,27 +70,34 @@ export async function runBatch({ mode, botLevel, aiConfigA, aiConfigB, numGames,
   let winsA = 0;
   let winsB = 0;
   let timeouts = 0;
+  let nextGameIndex = 0;
+  let completed = 0;
 
-  for (let i = 0; i < numGames; i++) {
-    if (isCancelled && isCancelled()) break;
-
-    // Alternate who plays black (first-move seat) so it cancels out across the batch.
-    const colorOfA = i % 2 === 0 ? 'b' : 'w';
-    const game = await playOneGame({ mode, botLevel, aiConfigA, aiConfigB, colorOfA });
-    perGame.push(game);
-    if (game.winnerSide === 'A') winsA += 1;
-    else if (game.winnerSide === 'B') winsB += 1;
-    else timeouts += 1;
-
-    if (onProgress) onProgress(i + 1, numGames, game);
+  async function runSlot(slot) {
+    while (true) {
+      if (isCancelled && isCancelled()) return;
+      const i = nextGameIndex++;
+      if (i >= numGames) return;
+      // Alternate who plays black (first-move seat) so it cancels out across the batch.
+      const colorOfA = i % 2 === 0 ? 'b' : 'w';
+      const game = await playOneGame({ mode, botLevel, aiConfigA, aiConfigB, colorOfA, workerSlot: slot });
+      perGame.push(game);
+      if (game.winnerSide === 'A') winsA += 1;
+      else if (game.winnerSide === 'B') winsB += 1;
+      else timeouts += 1;
+      completed += 1;
+      if (onProgress) onProgress(completed, numGames, game);
+    }
   }
 
-  const completed = perGame.length;
+  const slots = Math.max(1, Math.min(getPoolSize(), numGames));
+  await Promise.all(Array.from({ length: slots }, (_, slot) => runSlot(slot)));
+
   return {
     mode,
     botLevel,
     numGamesRequested: numGames,
-    numGamesCompleted: completed,
+    numGamesCompleted: perGame.length,
     winsA,
     winsB,
     timeouts,

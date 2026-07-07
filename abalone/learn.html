@@ -53,6 +53,21 @@
       <h2>Caching: never solve the same position twice</h2>
       <p>Different move sequences can arrive at the exact same board position (e.g. move A then B can land on the same board as move B then A). Re-searching a position the AI has already fully analyzed is wasted work. A <strong>transposition table</strong> remembers "I already searched this exact position to this depth, and here's what I found" - so if it comes up again, the AI reuses the answer instead of recomputing it.</p>
       <p>The "Cache hits" and "Cache size" numbers in the Thinking panel show this happening live. In Batch Run mode, later games in a batch often think noticeably faster than the first one - the cache built up during earlier games is still warm and gets reused.</p>
+      <p>When a new result would replace an old cached one, the cache keeps whichever came from a <em>deeper</em> search - a shallow re-visit never evicts a more valuable deep one, since the deep result took far more work to produce.</p>
+    </section>
+
+    <section class="learn-section">
+      <h2>Cutting the branches, not just the clock</h2>
+      <p>There are two ways to make a search faster: make each position cheaper to evaluate, or look at fewer positions in the first place. The second is almost always the bigger win, because the search tree grows <em>exponentially</em> with depth - cutting the number of branches explored at each level compounds, while speeding up one evaluation only ever saves a constant amount of time per position. When alpha-beta pruning and caching are both on, three extra techniques team up specifically to cut branches:</p>
+      <ul>
+        <li><strong>Iterative deepening</strong> - instead of searching straight to the target depth, the AI searches depth 1, then 2, then 3, and so on up to the target. That sounds like wasted work (redoing shallow searches), but each shallow pass tells the AI roughly which move is best <em>before</em> it starts the next, deeper pass - and searching the actually-best move first is exactly what lets alpha-beta prune the most.</li>
+        <li><strong>Killer moves</strong> - if a particular move caused a cutoff (proved a branch not worth exploring further) somewhere in the tree, that same move is tried early the next time the AI is choosing at that same depth elsewhere in the tree. The same tactical shape - a strong push, a good defensive shift - often recurs in unrelated branches.</li>
+        <li><strong>Principal variation search</strong> - once the first move at a position is searched properly, every move after it is first given a cheap "prove you're not better than what I already have" check with an artificially narrow window, and only gets a full, expensive re-search on the rare occasion it actually passes that check.</li>
+      </ul>
+      <div class="learn-example">
+        <strong>Real numbers from this project:</strong> searching the opening position to depth 4 with default settings visited 88,283 positions with plain alpha-beta ordering. With iterative deepening, killer moves, and principal variation search added on top, the same search - same final score, same move - visited only 9,277 positions: about <strong>90% fewer</strong>, for the identical answer.
+      </div>
+      <p>None of this changes what move the AI ends up making - only alpha-beta pruning itself can safely skip branches without changing the answer, and these three techniques exist purely to help it find the cutoffs faster. That's why they're only active when both alpha-beta <em>and</em> caching are on: turn either off and the AI falls back to a plain, unembellished search, which is there deliberately so you always have a clean baseline to compare against.</p>
     </section>
 
     <section class="learn-section">
@@ -75,6 +90,18 @@
         <li>How strong is each built-in bot, really? Run your default-configured AI against each level and see where the win rate crosses 50%.</li>
       </ul>
       <p>Every batch result is saved locally so you can build up a small experiment log over time.</p>
+    </section>
+
+    <section class="learn-section">
+      <h2>Automating the search: "Find best settings"</h2>
+      <p>Manually running batches for every combination of settings doesn't scale - lookahead alone has 4 values, and with 6 heuristics that can each be on or off, the full space is thousands of combinations. Testing all of them exhaustively (a "grid search") would take far too many games to be practical.</p>
+      <p>Instead, the "🔬 Find best settings" option in Batch Run mode uses a much cheaper strategy called <strong>hill climbing</strong>: start from a baseline configuration, randomly change one or two things about it (nudge the lookahead, flip a toggle, reweight a heuristic) to produce a handful of candidates, play each candidate against your chosen bot for a few games, and keep whichever one won the most - baseline included. The next round mutates <em>that</em> winner instead of the original baseline, so the search is biased toward whatever has already proven itself rather than wandering randomly forever. Repeat for several rounds and the configuration tends to climb toward stronger settings, the same way water finds its way downhill by always stepping toward lower ground.</p>
+      <div class="learn-example">
+        This is a simplified, single-solution version of an <strong>evolutionary search</strong> (specifically "(1+λ) elitist hill climbing" if you want the formal name) - a common, cheap way to tune settings when the space is too big to search exhaustively and each individual test (a batch of games) is relatively expensive.
+      </div>
+      <p>It's not guaranteed to find the single best configuration possible - like any hill-climbing search it can settle on a "local peak" that a very different starting point might have beaten - and win-rate estimates from just a handful of games are noisy, especially against a bot with some randomness of its own. Treat the result as a strong, evidence-backed starting point to keep experimenting from, not a mathematically proven optimum.</p>
+      <p>Every tested configuration is kept, not just the winner, so the results page can also show a plain "what mattered" breakdown - the average win rate across every config tried, split by whether each individual setting was on or off. A setting with a big gap between its "on" and "off" averages is one that's actually driving the outcome against that particular opponent; a small gap means it probably doesn't matter much here.</p>
+      <p class="learn-try">Try this: run "Find best settings" against a couple of different bot levels with the same baseline and compare the winning configurations. A setting that matters against Novice's shallow, mostly-random play might matter far less against Master's deeper, more deliberate search - "the best AI" is relative to who it's playing.</p>
     </section>
   </main>
 

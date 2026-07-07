@@ -1,4 +1,11 @@
 .claude*
+
+# Firebase service-account keys (used only by scripts/migrate_to_firestore.mjs,
+# never committed - these grant full admin access to the Firestore project)
+serviceAccountKey*.json
+*-firebase-adminsdk-*.json
+node_modules/
+__pycache__/
 mtg/binder_images/page_01.jpg
 mtg/binder_images/page_02.jpg
 mtg/binder_images/page_03.jpg

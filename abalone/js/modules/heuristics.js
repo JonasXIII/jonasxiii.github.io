@@ -1,47 +1,54 @@
 // heuristics.js - individual position-scoring components. Each is independently
 // toggleable and weighted from the UI so the user can see how each idea affects play.
+//
+// Performance note: evaluate() runs at every leaf node of the search, so it's
+// the dominant per-move cost. Five of the six heuristics (all but mobility)
+// are fused into one board scan (computeRawHeuristics) instead of each doing
+// its own full pass - same numbers, far fewer board reads. The two expensive
+// per-cell checks (same-color neighbors for cohesion, forward-axis triples)
+// are only done when those specific heuristics are enabled.
 import { ALL_CELLS, DIRECTIONS, RADIUS, distanceFromCenter } from './coords.js';
-import { getAt, countColor, opponent, getLegalMoves } from './engine.js';
+import { getAt, opponent, getLegalMoves } from './engine.js';
 
 const CANONICAL_AXES = DIRECTIONS.slice(0, 3); // E, NE, NW - same convention as engine.js
 
-function sumInverseDistance(board, color) {
-  let s = 0;
-  for (const c of ALL_CELLS) if (getAt(board, c) === color) s += RADIUS - distanceFromCenter(c);
-  return s;
-}
+// Raw (non-differential, non-weighted) per-color totals for both sides in a
+// single pass. { b: {marbleDiff, centerControl, cohesion, edgeExposure, tripleFormation}, w: {...} }
+// (the "Diff"/"Exposure"/"Formation" names match HEURISTICS keys but hold raw
+// per-side counts here - evaluate() turns them into own-minus-opponent below.)
+export function computeRawHeuristics(board, { needCohesion = true, needTriples = true } = {}) {
+  const raw = {
+    b: { marbleDiff: 0, centerControl: 0, cohesion: 0, edgeExposure: 0, tripleFormation: 0 },
+    w: { marbleDiff: 0, centerControl: 0, cohesion: 0, edgeExposure: 0, tripleFormation: 0 },
+  };
 
-function sumFriendlyNeighbors(board, color) {
-  let s = 0;
-  for (const c of ALL_CELLS) {
-    if (getAt(board, c) !== color) continue;
-    for (const d of DIRECTIONS) {
-      if (getAt(board, { q: c.q + d.q, r: c.r + d.r }) === color) s++;
-    }
-  }
-  return s;
-}
-
-function countOnEdge(board, color) {
-  let n = 0;
-  for (const c of ALL_CELLS) if (getAt(board, c) === color && distanceFromCenter(c) === RADIUS) n++;
-  return n;
-}
-
-// Lighter-weight than engine.getGroups() (no group-object allocation, no dedup
-// set) since this only needs to count, and it runs at every evaluated leaf.
-function countTriples(board, color) {
-  let count = 0;
   for (const cell of ALL_CELLS) {
-    if (getAt(board, cell) !== color) continue;
-    for (const axis of CANONICAL_AXES) {
-      const c1 = { q: cell.q + axis.q, r: cell.r + axis.r };
-      if (getAt(board, c1) !== color) continue;
-      const c2 = { q: c1.q + axis.q, r: c1.r + axis.r };
-      if (getAt(board, c2) === color) count++;
+    const color = getAt(board, cell);
+    if (color !== 'b' && color !== 'w') continue;
+    const side = raw[color];
+    const dist = distanceFromCenter(cell);
+
+    side.marbleDiff += 1;
+    side.centerControl += RADIUS - dist;
+    if (dist === RADIUS) side.edgeExposure += 1;
+
+    if (needCohesion) {
+      for (const d of DIRECTIONS) {
+        if (getAt(board, { q: cell.q + d.q, r: cell.r + d.r }) === color) side.cohesion += 1;
+      }
+    }
+
+    if (needTriples) {
+      for (const axis of CANONICAL_AXES) {
+        const c1 = { q: cell.q + axis.q, r: cell.r + axis.r };
+        if (getAt(board, c1) !== color) continue;
+        const c2 = { q: c1.q + axis.q, r: c1.r + axis.r };
+        if (getAt(board, c2) === color) side.tripleFormation += 1;
+      }
     }
   }
-  return count;
+
+  return raw;
 }
 
 export const HEURISTICS = {
@@ -51,7 +58,6 @@ export const HEURISTICS = {
     description: 'Own marbles remaining minus opponent marbles remaining - the most direct proxy for the win condition.',
     defaultWeight: 100,
     defaultEnabled: true,
-    compute: (board, color) => countColor(board, color) - countColor(board, opponent(color)),
   },
   centerControl: {
     key: 'centerControl',
@@ -59,7 +65,6 @@ export const HEURISTICS = {
     description: 'Rewards keeping marbles close to the center, where they are harder to push off and threaten more directions.',
     defaultWeight: 6,
     defaultEnabled: true,
-    compute: (board, color) => sumInverseDistance(board, color) - sumInverseDistance(board, opponent(color)),
   },
   cohesion: {
     key: 'cohesion',
@@ -67,7 +72,6 @@ export const HEURISTICS = {
     description: 'Rewards marbles staying grouped with same-color neighbors; isolated marbles are easy sumito targets.',
     defaultWeight: 4,
     defaultEnabled: true,
-    compute: (board, color) => sumFriendlyNeighbors(board, color) - sumFriendlyNeighbors(board, opponent(color)),
   },
   mobility: {
     key: 'mobility',
@@ -75,7 +79,6 @@ export const HEURISTICS = {
     description: 'Rewards having more legal moves available. The most expensive heuristic to compute - toggling it off noticeably speeds up deep searches.',
     defaultWeight: 2,
     defaultEnabled: false,
-    compute: (board, color) => getLegalMoves(board, color).length - getLegalMoves(board, opponent(color)).length,
   },
   edgeExposure: {
     key: 'edgeExposure',
@@ -83,7 +86,6 @@ export const HEURISTICS = {
     description: 'Penalizes marbles sitting on the outer ring, where a single push can send them off the board.',
     defaultWeight: 5,
     defaultEnabled: true,
-    compute: (board, color) => -(countOnEdge(board, color) - countOnEdge(board, opponent(color))),
   },
   tripleFormation: {
     key: 'tripleFormation',
@@ -91,7 +93,6 @@ export const HEURISTICS = {
     description: 'Rewards having 3-in-a-row groups, the strongest possible pushing formation (3v1 / 3v2 sumito).',
     defaultWeight: 3,
     defaultEnabled: true,
-    compute: (board, color) => countTriples(board, color) - countTriples(board, opponent(color)),
   },
 };
 
@@ -104,11 +105,28 @@ export function defaultHeuristicConfig() {
 }
 
 export function evaluate(board, color, aiConfig) {
+  const h = aiConfig.heuristics;
+  const opp = opponent(color);
   let score = 0;
-  for (const h of Object.values(HEURISTICS)) {
-    const cfg = aiConfig.heuristics[h.key];
-    if (!cfg || !cfg.enabled) continue;
-    score += cfg.weight * h.compute(board, color);
+
+  const needCohesion = !!h.cohesion?.enabled;
+  const needTriples = !!h.tripleFormation?.enabled;
+  const needScan = h.marbleDiff?.enabled || h.centerControl?.enabled || h.edgeExposure?.enabled || needCohesion || needTriples;
+
+  if (needScan) {
+    const raw = computeRawHeuristics(board, { needCohesion, needTriples });
+    const own = raw[color];
+    const rival = raw[opp];
+    if (h.marbleDiff?.enabled) score += h.marbleDiff.weight * (own.marbleDiff - rival.marbleDiff);
+    if (h.centerControl?.enabled) score += h.centerControl.weight * (own.centerControl - rival.centerControl);
+    if (needCohesion) score += h.cohesion.weight * (own.cohesion - rival.cohesion);
+    if (h.edgeExposure?.enabled) score += h.edgeExposure.weight * -(own.edgeExposure - rival.edgeExposure);
+    if (needTriples) score += h.tripleFormation.weight * (own.tripleFormation - rival.tripleFormation);
   }
+
+  if (h.mobility?.enabled) {
+    score += h.mobility.weight * (getLegalMoves(board, color).length - getLegalMoves(board, opp).length);
+  }
+
   return score;
 }

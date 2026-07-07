@@ -10,6 +10,7 @@ import { key as cellKey } from './modules/coords.js';
 import { MAX_LOOKAHEAD_WITH_PRUNING, MAX_LOOKAHEAD_WITHOUT_PRUNING } from './modules/ai.js';
 import { askWorker, resetWorker } from './modules/workerClient.js';
 import { runBatch } from './modules/batchRunner.js';
+import { runOptimizer } from './modules/optimizer.js';
 import { saveBatchResult, getBatchHistory, clearBatchHistory } from './modules/batchHistory.js';
 
 function makeDefaultAiConfig() {
@@ -442,10 +443,11 @@ function renderHistory() {
 // ======================================================================
 // Batch Run mode
 // ======================================================================
-let batchOpponentType = 'bot'; // 'bot' | 'custom'
+let batchOpponentType = 'bot'; // 'bot' | 'custom' | 'optimize'
 let batchBotLevel = 1;
 let batchAiConfigA = makeDefaultAiConfig();
 let batchAiConfigB = makeDefaultAiConfig();
+let optimizerBaselineConfig = makeDefaultAiConfig();
 let batchRunning = false;
 let batchCancelRequested = false;
 
@@ -458,8 +460,13 @@ function wireBatchControls() {
     btn.addEventListener('click', () => {
       batchOpponentType = btn.dataset.value;
       dom.batchOpponentType.querySelectorAll('.segmented-btn').forEach((b) => b.classList.toggle('active', b === btn));
-      dom.batchOpponentBtn.hidden = batchOpponentType !== 'bot';
+      dom.aiASettingsBtn.hidden = batchOpponentType === 'optimize';
+      dom.aiBaselineSettingsBtn.hidden = batchOpponentType !== 'optimize';
+      dom.batchOpponentBtn.hidden = batchOpponentType === 'custom';
       dom.aiBSettingsBtn.hidden = batchOpponentType !== 'custom';
+      dom.numGamesLabel.hidden = batchOpponentType === 'optimize';
+      dom.optimizerOnlyInputs.forEach((el) => (el.hidden = batchOpponentType !== 'optimize'));
+      dom.runBatchBtn.textContent = batchOpponentType === 'optimize' ? '🔬 Find Best AI' : '▶ Run Batch';
     });
   });
 
@@ -473,6 +480,11 @@ function wireBatchControls() {
       batchAiConfigB = { ...batchAiConfigB, ...partial };
     });
   });
+  dom.aiBaselineSettingsBtn.addEventListener('click', () => {
+    openAiSettingsModal('Configure baseline', () => optimizerBaselineConfig, (partial) => {
+      optimizerBaselineConfig = { ...optimizerBaselineConfig, ...partial };
+    });
+  });
   dom.batchOpponentBtn.addEventListener('click', () => {
     openOpponentModal((level) => {
       batchBotLevel = level;
@@ -480,13 +492,23 @@ function wireBatchControls() {
     });
   });
 
-  dom.runBatchBtn.addEventListener('click', startBatchRun);
+  dom.runBatchBtn.addEventListener('click', () => {
+    if (batchOpponentType === 'optimize') startOptimizerRun();
+    else startBatchRun();
+  });
   dom.cancelBatchBtn.addEventListener('click', () => {
     batchCancelRequested = true;
   });
   dom.clearBatchHistoryBtn.addEventListener('click', () => {
     clearBatchHistory();
     renderBatchHistory();
+  });
+  dom.useBestConfigBtn.addEventListener('click', () => {
+    if (lastOptimizerResult) {
+      state.setAiConfig(lastOptimizerResult.bestConfig);
+      dom.useBestConfigBtn.textContent = '✓ Applied to your AI Settings';
+      setTimeout(() => (dom.useBestConfigBtn.textContent = '✓ Use this as my AI Settings'), 2000);
+    }
   });
 }
 
@@ -524,14 +546,85 @@ async function startBatchRun() {
     for (const g of summary.perGame) recordGameResult(batchBotLevel, g.winnerSide === 'A');
   }
 
-  const saved = saveBatchResult({ ...summary, labelA, labelB, descA: describeAiConfig(batchAiConfigA), descB: batchOpponentType === 'bot' ? describeAiConfig(getBot(batchBotLevel).aiConfig) : describeAiConfig(batchAiConfigB) });
+  const saved = saveBatchResult({
+    ...summary,
+    type: 'batch',
+    labelA,
+    labelB,
+    descA: describeAiConfig(batchAiConfigA),
+    descB: batchOpponentType === 'bot' ? describeAiConfig(getBot(batchBotLevel).aiConfig) : describeAiConfig(batchAiConfigB),
+  });
 
   batchRunning = false;
   dom.runBatchBtn.hidden = false;
   dom.cancelBatchBtn.hidden = true;
   dom.batchProgress.hidden = true;
 
+  dom.optimizeResults.hidden = true;
   renderBatchResults(saved);
+  renderBatchHistory();
+}
+
+let lastOptimizerResult = null;
+
+async function startOptimizerRun() {
+  if (batchRunning) return;
+  const rounds = Math.max(1, Math.min(15, Number(dom.optimizerRoundsInput.value) || 5));
+  const candidatesPerRound = Math.max(1, Math.min(8, Number(dom.optimizerCandidatesInput.value) || 4));
+  const gamesPerCandidate = Math.max(1, Math.min(20, Number(dom.optimizerGamesInput.value) || 6));
+  const totalConfigs = 1 + rounds * candidatesPerRound;
+
+  batchRunning = true;
+  batchCancelRequested = false;
+  resetWorker();
+
+  dom.runBatchBtn.hidden = true;
+  dom.cancelBatchBtn.hidden = false;
+  dom.batchProgress.hidden = false;
+  dom.batchResults.hidden = true;
+  dom.optimizeResults.hidden = true;
+  dom.batchProgressFill.style.width = '0%';
+  dom.batchProgressText.textContent = `Testing baseline…`;
+
+  let configsTested = 0;
+  const result = await runOptimizer({
+    baselineConfig: optimizerBaselineConfig,
+    botLevel: batchBotLevel,
+    rounds,
+    candidatesPerRound,
+    gamesPerCandidate,
+    onProgress: ({ round, rounds: totalRounds, candidateIndex, candidatesPerRound: perRound, current }) => {
+      configsTested += 1;
+      dom.batchProgressText.textContent =
+        round === 0
+          ? `Baseline: ${Math.round(current.winRate * 100)}% win rate`
+          : `Round ${round}/${totalRounds}, candidate ${candidateIndex}/${perRound} — best so far ${Math.round(current.winRate * 100)}%`;
+      dom.batchProgressFill.style.width = `${(configsTested / totalConfigs) * 100}%`;
+    },
+    isCancelled: () => batchCancelRequested,
+  });
+
+  lastOptimizerResult = result;
+  const saved = saveBatchResult({
+    type: 'optimize',
+    labelA: 'Baseline',
+    labelB: `Bot: ${getBot(batchBotLevel).name}`,
+    botLevel: batchBotLevel,
+    bestConfig: result.bestConfig,
+    bestWinRate: result.bestWinRate,
+    bestLabel: result.bestLabel,
+    numGamesCompleted: result.history.reduce((sum, h) => sum + h.gamesPlayed, 0),
+    configsTested: result.history.length,
+    history: result.history,
+    insights: result.insights,
+  });
+
+  batchRunning = false;
+  dom.runBatchBtn.hidden = false;
+  dom.cancelBatchBtn.hidden = true;
+  dom.batchProgress.hidden = true;
+
+  renderOptimizeResults(saved);
   renderBatchHistory();
 }
 
@@ -594,6 +687,56 @@ function renderWinBarChart(container, summary) {
   `;
 }
 
+// --- Optimize results: stat tiles + insights bars + ranked config list ---
+function insightBar(label, stat) {
+  const onPct = Math.round(stat.onAvg * 100);
+  const offPct = Math.round(stat.offAvg * 100);
+  return `
+    <div class="insight-row">
+      <div class="insight-label">${label}</div>
+      <div class="insight-bars">
+        <div class="insight-bar-line"><span>On (${stat.onCount})</span><div class="insight-track"><div class="insight-fill on" style="width:${onPct}%"></div></div><strong>${onPct}%</strong></div>
+        <div class="insight-bar-line"><span>Off (${stat.offCount})</span><div class="insight-track"><div class="insight-fill off" style="width:${offPct}%"></div></div><strong>${offPct}%</strong></div>
+      </div>
+    </div>
+  `;
+}
+
+function renderOptimizeResults(run) {
+  dom.batchResults.hidden = true;
+  dom.optimizeResults.hidden = false;
+
+  dom.optimizeStatTiles.innerHTML = [
+    statTile('Best win rate', `${Math.round(run.bestWinRate * 100)}%`),
+    statTile('Configs tested', run.configsTested),
+    statTile('Total games played', run.numGamesCompleted),
+    statTile('Best config found in', run.bestLabel || '-'),
+  ].join('');
+
+  const insights = run.insights;
+  dom.optimizeInsights.innerHTML = [
+    insightBar('Alpha-beta pruning', insights.alphaBeta),
+    insightBar('Caching', insights.caching),
+    insightBar('Opening principles', insights.openingBook),
+    ...Object.entries(insights.heuristics).map(([key, stat]) => insightBar(HEURISTICS[key]?.label || key, stat)),
+  ].join('');
+
+  const ranked = [...run.history].sort((a, b) => b.winRate - a.winRate);
+  dom.optimizeRankedList.innerHTML = ranked
+    .map(
+      (entry, i) => `
+      <div class="ranked-row ${i === 0 ? 'best' : ''}">
+        <div class="ranked-rank">${i === 0 ? '🏆' : `#${i + 1}`}</div>
+        <div class="ranked-body">
+          <div class="ranked-head"><strong>${Math.round(entry.winRate * 100)}% win rate</strong><span>${entry.label}</span></div>
+          <p class="ranked-desc">${describeAiConfig(entry.config)}</p>
+        </div>
+      </div>
+    `
+    )
+    .join('');
+}
+
 function renderBatchHistory() {
   const history = getBatchHistory();
   if (history.length === 0) {
@@ -602,9 +745,17 @@ function renderBatchHistory() {
   }
   dom.batchHistoryList.innerHTML = history
     .map((run) => {
+      const date = new Date(run.timestamp).toLocaleString();
+      if (run.type === 'optimize') {
+        return `
+          <div class="batch-history-row" data-id="${run.id}">
+            <div><strong>${date}</strong> — 🔬 Find best settings vs ${run.labelB}</div>
+            <div>${run.configsTested} configs tested · best ${Math.round(run.bestWinRate * 100)}% win rate</div>
+          </div>
+        `;
+      }
       const total = run.numGamesCompleted || 1;
       const winRateA = Math.round((run.winsA / total) * 100);
-      const date = new Date(run.timestamp).toLocaleString();
       const opponent = run.mode === 'bot' ? run.labelB : `${run.labelA} vs ${run.labelB}`;
       return `
         <div class="batch-history-row" data-id="${run.id}">
@@ -617,7 +768,14 @@ function renderBatchHistory() {
   dom.batchHistoryList.querySelectorAll('.batch-history-row').forEach((row) => {
     row.addEventListener('click', () => {
       const run = history.find((r) => r.id === row.dataset.id);
-      if (run) renderBatchResults(run);
+      if (!run) return;
+      if (run.type === 'optimize') {
+        lastOptimizerResult = { bestConfig: run.bestConfig };
+        renderOptimizeResults(run);
+      } else {
+        dom.optimizeResults.hidden = true;
+        renderBatchResults(run);
+      }
     });
   });
 }
@@ -666,9 +824,15 @@ document.addEventListener('DOMContentLoaded', () => {
     batchOpponentType: document.getElementById('batch-opponent-type'),
     aiASettingsBtn: document.getElementById('ai-a-settings-btn'),
     aiBSettingsBtn: document.getElementById('ai-b-settings-btn'),
+    aiBaselineSettingsBtn: document.getElementById('ai-baseline-settings-btn'),
     batchOpponentBtn: document.getElementById('batch-opponent-btn'),
     batchBotLabel: document.getElementById('batch-bot-label'),
+    numGamesLabel: document.getElementById('num-games-label'),
     numGamesInput: document.getElementById('num-games-input'),
+    optimizerOnlyInputs: document.querySelectorAll('.optimizer-only'),
+    optimizerRoundsInput: document.getElementById('optimizer-rounds-input'),
+    optimizerCandidatesInput: document.getElementById('optimizer-candidates-input'),
+    optimizerGamesInput: document.getElementById('optimizer-games-input'),
     runBatchBtn: document.getElementById('run-batch-btn'),
     cancelBatchBtn: document.getElementById('cancel-batch-btn'),
 
@@ -693,6 +857,11 @@ document.addEventListener('DOMContentLoaded', () => {
     batchResults: document.getElementById('batch-results'),
     batchStatTiles: document.getElementById('batch-stat-tiles'),
     batchChartContainer: document.getElementById('batch-chart-container'),
+    optimizeResults: document.getElementById('optimize-results'),
+    optimizeStatTiles: document.getElementById('optimize-stat-tiles'),
+    optimizeInsights: document.getElementById('optimize-insights'),
+    optimizeRankedList: document.getElementById('optimize-ranked-list'),
+    useBestConfigBtn: document.getElementById('use-best-config-btn'),
     batchHistoryList: document.getElementById('batch-history-list'),
     clearBatchHistoryBtn: document.getElementById('clear-batch-history-btn'),
 

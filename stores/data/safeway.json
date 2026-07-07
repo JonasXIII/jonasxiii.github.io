@@ -1,0 +1,3953 @@
+[
+ {
+  "id": 158170307,
+  "name": "Safeway",
+  "lat": 33.4884996,
+  "lon": -112.0815495,
+  "address": "520 West Osborn Road",
+  "city": "Phoenix",
+  "state": "AZ"
+ },
+ {
+  "id": 293632937,
+  "name": "Safeway",
+  "lat": 37.7767776,
+  "lon": -122.3940709,
+  "address": "298 King Street",
+  "city": "San Francisco",
+  "state": "CA"
+ },
+ {
+  "id": 452446228,
+  "name": "Safeway",
+  "lat": 39.0208174,
+  "lon": -76.9760134,
+  "address": "10101 New Hampshire Avenue",
+  "city": "Silver Spring",
+  "state": "MD"
+ },
+ {
+  "id": 453736983,
+  "name": "Safeway",
+  "lat": 36.9794556,
+  "lon": -121.9085613,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 453738678,
+  "name": "Safeway",
+  "lat": 36.9785814,
+  "lon": -121.9086088,
+  "address": "16 Rancho Del Mar",
+  "city": "Aptos",
+  "state": "CA"
+ },
+ {
+  "id": 467816190,
+  "name": "Safeway",
+  "lat": 39.3641393,
+  "lon": -104.8609596,
+  "address": "700 South Perry Street",
+  "city": "Castle Rock",
+  "state": "CO"
+ },
+ {
+  "id": 470780580,
+  "name": "Safeway",
+  "lat": 37.7574333,
+  "lon": -122.2507884,
+  "address": "2227 South Shore Center",
+  "city": "Alameda",
+  "state": "CA"
+ },
+ {
+  "id": 506858684,
+  "name": "Safeway",
+  "lat": 47.1804182,
+  "lon": -122.552025,
+  "address": "8611 Steilacoom Boulevard Southwest",
+  "city": "Lakewood",
+  "state": "WA"
+ },
+ {
+  "id": 508028351,
+  "name": "Safeway",
+  "lat": 39.0166704,
+  "lon": -77.2084779,
+  "address": "10104 River Road",
+  "city": "Potomac",
+  "state": "MD"
+ },
+ {
+  "id": 535451345,
+  "name": "Safeway",
+  "lat": 40.5248415,
+  "lon": -105.052191,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 535561862,
+  "name": "Safeway",
+  "lat": 40.554382,
+  "lon": -105.116658,
+  "address": "2160 West Drake Road",
+  "city": "Fort Collins",
+  "state": "CO"
+ },
+ {
+  "id": 566881965,
+  "name": "Safeway",
+  "lat": 39.8724434,
+  "lon": -104.9759327,
+  "address": "771 Thornton Parkway",
+  "city": "Thornton",
+  "state": "CO"
+ },
+ {
+  "id": 583493597,
+  "name": "Safeway",
+  "lat": 47.6129585,
+  "lon": -122.2004639,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 594195419,
+  "name": "Safeway",
+  "lat": 39.5635109,
+  "lon": -105.1076746,
+  "address": "8434 South Kipling Parkway",
+  "city": "Littleton",
+  "state": "CO"
+ },
+ {
+  "id": 602365274,
+  "name": "Safeway",
+  "lat": 39.5748722,
+  "lon": -104.9918813,
+  "address": "181 West Mineral Avenue",
+  "city": "Littleton",
+  "state": "CO"
+ },
+ {
+  "id": 626289378,
+  "name": "Safeway",
+  "lat": 38.8450915,
+  "lon": -77.2740449,
+  "address": "9622 Main Street",
+  "city": "Fairfax",
+  "state": "VA"
+ },
+ {
+  "id": 636178731,
+  "name": "Safeway",
+  "lat": 39.6255259,
+  "lon": -105.1113069,
+  "address": "5025 South Kipling Street",
+  "city": "Lakewood",
+  "state": "CO"
+ },
+ {
+  "id": 640508565,
+  "name": "Safeway",
+  "lat": 39.7489053,
+  "lon": -104.9775238,
+  "address": "757 East 20th Avenue",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 651032325,
+  "name": "Safeway",
+  "lat": 38.545656,
+  "lon": -76.5902391,
+  "address": "80 West Dares Beach Road",
+  "city": "Prince Frederick",
+  "state": "MD"
+ },
+ {
+  "id": 672990484,
+  "name": "Safeway",
+  "lat": 32.9938537,
+  "lon": -111.521636,
+  "address": "1449 North Arizona Boulevard",
+  "city": "Coolidge",
+  "state": "AZ"
+ },
+ {
+  "id": 698082170,
+  "name": "Safeway",
+  "lat": 38.0547702,
+  "lon": -122.15572,
+  "address": "50 Solano Square",
+  "city": "Benicia",
+  "state": "CA"
+ },
+ {
+  "id": 711335258,
+  "name": "Safeway",
+  "lat": 39.6983736,
+  "lon": -105.1458638,
+  "address": "13111 West Alameda Parkway",
+  "city": "Lakewood",
+  "state": "CO"
+ },
+ {
+  "id": 711335915,
+  "name": "Safeway",
+  "lat": 39.6982219,
+  "lon": -105.1446514,
+  "address": "13107 West Alameda Parkway",
+  "city": "Lakewood",
+  "state": "CO"
+ },
+ {
+  "id": 724832035,
+  "name": "Safeway",
+  "lat": 46.2138661,
+  "lon": -119.192693,
+  "address": "5204 West Clearwater Avenue",
+  "city": "Kennewick",
+  "state": "WA"
+ },
+ {
+  "id": 735126568,
+  "name": "Safeway",
+  "lat": 38.8933254,
+  "lon": -76.9477203,
+  "address": "322 40th Street Northeast",
+  "city": "Washington",
+  "state": "DC"
+ },
+ {
+  "id": 736007273,
+  "name": "Safeway",
+  "lat": 39.5378276,
+  "lon": -104.883304,
+  "address": "9229 East Lincoln Avenue",
+  "city": "Lone Tree",
+  "state": "CO"
+ },
+ {
+  "id": 765387961,
+  "name": "Safeway",
+  "lat": 21.3773052,
+  "lon": -157.729279,
+  "address": "1060 Keolu Drive",
+  "city": "Kailua",
+  "state": "HI"
+ },
+ {
+  "id": 768234549,
+  "name": "Safeway",
+  "lat": 44.0407335,
+  "lon": -123.090631,
+  "address": "145 East 18th Avenue",
+  "city": "Eugene",
+  "state": "OR"
+ },
+ {
+  "id": 810531455,
+  "name": "Safeway",
+  "lat": 38.9035899,
+  "lon": -77.0187533,
+  "address": "490 L Street Northwest",
+  "city": "Washington",
+  "state": "DC"
+ },
+ {
+  "id": 825409609,
+  "name": "Safeway",
+  "lat": 39.755637,
+  "lon": -105.0243375,
+  "address": "2660 Federal Boulevard",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 825409610,
+  "name": "Safeway",
+  "lat": 39.7551343,
+  "lon": -105.0248557,
+  "address": "2660 Federal Boulevard",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 876672214,
+  "name": "Safeway",
+  "lat": 46.6025338,
+  "lon": -120.5323251,
+  "address": "1610 West Lincoln Avenue",
+  "city": "Yakima",
+  "state": "WA"
+ },
+ {
+  "id": 903327798,
+  "name": "Safeway",
+  "lat": 33.51122,
+  "lon": -112.0147691,
+  "address": "3132 East Camelback Road",
+  "city": "Phoenix",
+  "state": "AZ"
+ },
+ {
+  "id": 903715740,
+  "name": "Safeway",
+  "lat": 47.7159752,
+  "lon": -117.4244906,
+  "address": "902 West Francis Avenue",
+  "city": "Spokane",
+  "state": "WA"
+ },
+ {
+  "id": 955162001,
+  "name": "Safeway",
+  "lat": 40.3801386,
+  "lon": -105.51692,
+  "address": "451 East Wonderview Avenue",
+  "city": "Estes Park",
+  "state": "CO"
+ },
+ {
+  "id": 988411830,
+  "name": "Safeway",
+  "lat": 38.6744363,
+  "lon": -76.8725445,
+  "address": "15916 South Crain Highway",
+  "city": "Brandywine",
+  "state": "MD"
+ },
+ {
+  "id": 1011602426,
+  "name": "Safeway",
+  "lat": 32.3724178,
+  "lon": -111.136735,
+  "address": "9100 North Silverbell Road",
+  "city": "Tucson",
+  "state": "AZ"
+ },
+ {
+  "id": 1014926606,
+  "name": "Safeway",
+  "lat": 38.9840694,
+  "lon": -105.0460399,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1014926697,
+  "name": "Safeway",
+  "lat": 38.9826622,
+  "lon": -105.0467735,
+  "address": "1101 East US Highway 24",
+  "city": "Woodland Park",
+  "state": "CO"
+ },
+ {
+  "id": 1015296861,
+  "name": "Safeway",
+  "lat": 47.8392559,
+  "lon": -122.1253388,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1015296863,
+  "name": "Safeway",
+  "lat": 47.8387529,
+  "lon": -122.125109,
+  "address": "17520 State Route 9 Southeast",
+  "city": "Snohomish",
+  "state": "WA"
+ },
+ {
+  "id": 1057602419,
+  "name": "Safeway",
+  "lat": 38.922556,
+  "lon": -77.2021967,
+  "address": "1688 Anderson Road",
+  "city": "Mclean",
+  "state": "VA"
+ },
+ {
+  "id": 1154628080,
+  "name": "Safeway",
+  "lat": 44.5516487,
+  "lon": -123.3083561,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1170060321,
+  "name": "Safeway",
+  "lat": 38.9700252,
+  "lon": -76.5228827,
+  "address": "1781 Forest Drive",
+  "city": "Annapolis",
+  "state": "MD"
+ },
+ {
+  "id": 1237980112,
+  "name": "Safeway Fuel Station",
+  "lat": 32.4256341,
+  "lon": -110.9604797,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1237980126,
+  "name": "Safeway",
+  "lat": 32.426801,
+  "lon": -110.9595436,
+  "address": "12122 North Rancho Vistoso Boulevard",
+  "city": "Oro Valley",
+  "state": "AZ"
+ },
+ {
+  "id": 1241037959,
+  "name": "Safeway",
+  "lat": 20.7527419,
+  "lon": -156.448529,
+  "address": "277 Pi'Ikea Avenue",
+  "city": "Kihei",
+  "state": "HI"
+ },
+ {
+  "id": 1271583342,
+  "name": "Safeway",
+  "lat": 39.6512816,
+  "lon": -104.769609,
+  "address": "18730 East Hampden Avenue",
+  "city": "Aurora",
+  "state": "CO"
+ },
+ {
+  "id": 1426720581,
+  "name": "Safeway",
+  "lat": 38.5437179,
+  "lon": -106.92991,
+  "address": "112 South Spruce Street",
+  "city": "Gunnison",
+  "state": "CO"
+ },
+ {
+  "id": 1427597204,
+  "name": "Safeway",
+  "lat": 21.4232602,
+  "lon": -157.7480847,
+  "address": "25 Kaneohe Bay Drive",
+  "city": "Kailua",
+  "state": "HI"
+ },
+ {
+  "id": 1427599933,
+  "name": "Safeway",
+  "lat": 21.3016561,
+  "lon": -157.84208,
+  "address": "1234 South Beretania Street",
+  "city": "Honolulu",
+  "state": "HI"
+ },
+ {
+  "id": 1427600742,
+  "name": "Safeway",
+  "lat": 21.3443472,
+  "lon": -157.9139354,
+  "address": "848 Ala Lilikoi Street",
+  "city": "Honolulu",
+  "state": "HI"
+ },
+ {
+  "id": 1427603362,
+  "name": "Safeway",
+  "lat": 20.8867601,
+  "lon": -156.6840788,
+  "address": "1221 Honoapiilani Highway",
+  "city": "Lahaina",
+  "state": "HI"
+ },
+ {
+  "id": 1433688861,
+  "name": "Safeway Fuel Station",
+  "lat": 39.5290128,
+  "lon": -105.303771,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1448533373,
+  "name": "Safeway",
+  "lat": 46.3987378,
+  "lon": -116.9977851,
+  "address": "2330 Nez Perce Drive",
+  "city": "",
+  "state": "ID"
+ },
+ {
+  "id": 1490656756,
+  "name": "Safeway",
+  "lat": 39.9982586,
+  "lon": -105.234236,
+  "address": "4800 Baseline Road",
+  "city": "Boulder",
+  "state": "CO"
+ },
+ {
+  "id": 1543994835,
+  "name": "Safeway",
+  "lat": 39.6248082,
+  "lon": -105.1106833,
+  "address": "5015 South Kipling Street",
+  "city": "Lakewood",
+  "state": "CO"
+ },
+ {
+  "id": 1554852464,
+  "name": "Safeway",
+  "lat": 21.2838153,
+  "lon": -157.814795,
+  "address": "888 Kapahulu Avenue",
+  "city": "Honolulu",
+  "state": "HI"
+ },
+ {
+  "id": 1564779223,
+  "name": "Safeway",
+  "lat": 39.6814936,
+  "lon": -105.122759,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1592076838,
+  "name": "Safeway",
+  "lat": 38.9933627,
+  "lon": -77.024375,
+  "address": "909 Thayer Avenue",
+  "city": "Silver Spring",
+  "state": "MD"
+ },
+ {
+  "id": 1595623437,
+  "name": "Safeway",
+  "lat": 36.7294984,
+  "lon": -108.216937,
+  "address": "730 West Main Street",
+  "city": "Farmington",
+  "state": "NM"
+ },
+ {
+  "id": 1618343910,
+  "name": "Safeway",
+  "lat": 40.1189982,
+  "lon": -104.939879,
+  "address": "8134 Colorado Boulevard",
+  "city": "Firestone",
+  "state": "CO"
+ },
+ {
+  "id": 1643851282,
+  "name": "Safeway",
+  "lat": 37.7377092,
+  "lon": -122.239576,
+  "address": "867 Island Drive",
+  "city": "Alameda",
+  "state": "CA"
+ },
+ {
+  "id": 1656066472,
+  "name": "Safeway",
+  "lat": 39.1130554,
+  "lon": -77.1718179,
+  "address": "403 Redland Boulevard",
+  "city": "Rockville",
+  "state": "MD"
+ },
+ {
+  "id": 1683739590,
+  "name": "Safeway",
+  "lat": 39.0977217,
+  "lon": -77.1922562,
+  "address": "14939 Shady Grove Road",
+  "city": "Rockville",
+  "state": "MD"
+ },
+ {
+  "id": 1707643304,
+  "name": "Safeway",
+  "lat": 33.865149,
+  "lon": -112.138994,
+  "address": "3655 West Anthem Way",
+  "city": "Anthem",
+  "state": "AZ"
+ },
+ {
+  "id": 1725777695,
+  "name": "Safeway",
+  "lat": 45.4555105,
+  "lon": -123.845165,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1745905867,
+  "name": "Safeway",
+  "lat": 38.9651149,
+  "lon": -76.7892784,
+  "address": "12410 Fairwood Parkway",
+  "city": "Bowie",
+  "state": "MD"
+ },
+ {
+  "id": 1832737280,
+  "name": "Safeway",
+  "lat": 39.6457021,
+  "lon": -105.340169,
+  "address": "3851 South Highway 74",
+  "city": "Evergreen",
+  "state": "CO"
+ },
+ {
+  "id": 1887103831,
+  "name": "Safeway",
+  "lat": 44.6523392,
+  "lon": -124.0519781,
+  "address": "2220 North Coast Highway",
+  "city": "Newport",
+  "state": "OR"
+ },
+ {
+  "id": 1995762077,
+  "name": "Safeway",
+  "lat": 34.5615068,
+  "lon": -112.4844601,
+  "address": "1044 Willow Creek Road",
+  "city": "Prescott",
+  "state": "AZ"
+ },
+ {
+  "id": 2001677596,
+  "name": "Safeway Fuel Station",
+  "lat": 39.3608491,
+  "lon": -104.608753,
+  "address": "110 Elizabeth Street",
+  "city": "Elizabeth",
+  "state": "CO"
+ },
+ {
+  "id": 2025924788,
+  "name": "Safeway",
+  "lat": 39.6860812,
+  "lon": -104.8663708,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2026110886,
+  "name": "Safeway",
+  "lat": 39.6864917,
+  "lon": -104.868598,
+  "address": "1677 South Havana Street",
+  "city": "Aurora",
+  "state": "CO"
+ },
+ {
+  "id": 2043189385,
+  "name": "Safeway",
+  "lat": 38.8774173,
+  "lon": -77.0172181,
+  "address": "1100 4th Street Southwest",
+  "city": "Washington",
+  "state": "DC"
+ },
+ {
+  "id": 2102155082,
+  "name": "Safeway",
+  "lat": 47.8222949,
+  "lon": -122.3165966,
+  "address": "19500 Highway 99",
+  "city": "Lynnwood",
+  "state": "WA"
+ },
+ {
+  "id": 2122999055,
+  "name": "Safeway",
+  "lat": 38.8045385,
+  "lon": -76.9856752,
+  "address": "6235 Oxon Hill Road",
+  "city": "Oxon Hill",
+  "state": "MD"
+ },
+ {
+  "id": 2146098127,
+  "name": "Safeway",
+  "lat": 35.1894734,
+  "lon": -111.6637192,
+  "address": "1201 South Plaza Way",
+  "city": "Flagstaff",
+  "state": "AZ"
+ },
+ {
+  "id": 2172279233,
+  "name": "Safeway",
+  "lat": 34.5872351,
+  "lon": -112.3299008,
+  "address": "7720 East Highway 69",
+  "city": "Prescott Valley",
+  "state": "AZ"
+ },
+ {
+  "id": 2262313564,
+  "name": "Safeway",
+  "lat": 44.0779389,
+  "lon": -123.0704432,
+  "address": "1500 Cal Young Road",
+  "city": "Eugene",
+  "state": "OR"
+ },
+ {
+  "id": 2262313568,
+  "name": "Safeway",
+  "lat": 44.0779399,
+  "lon": -123.0701786,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2291914196,
+  "name": "Safeway",
+  "lat": 33.3039271,
+  "lon": -111.863269,
+  "address": "1159 West Chandler Boulevard",
+  "city": "Chandler",
+  "state": "AZ"
+ },
+ {
+  "id": 2322748580,
+  "name": "Safeway",
+  "lat": 39.3619815,
+  "lon": -104.86054,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2378610945,
+  "name": "Safeway",
+  "lat": 38.7188592,
+  "lon": -76.6624071,
+  "address": "10276 Southern Maryland Boulevard",
+  "city": "Dunkirk",
+  "state": "MD"
+ },
+ {
+  "id": 2404261635,
+  "name": "Safeway Fuel Station",
+  "lat": 38.8709946,
+  "lon": -77.2625726,
+  "address": "3043 Nutley Street",
+  "city": "fairfax",
+  "state": "VA"
+ },
+ {
+  "id": 2405786242,
+  "name": "Safeway",
+  "lat": 33.3922237,
+  "lon": -112.0479977,
+  "address": "1533 East Southern Avenue",
+  "city": "Phoenix",
+  "state": "AZ"
+ },
+ {
+  "id": 2411501173,
+  "name": "Safeway",
+  "lat": 47.7396711,
+  "lon": -117.4881562,
+  "address": "9001 North Indian Trail Road",
+  "city": "Spokane",
+  "state": "WA"
+ },
+ {
+  "id": 2424916532,
+  "name": "Safeway",
+  "lat": 39.6664191,
+  "lon": -104.914882,
+  "address": "6440 East Yale Avenue",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 2424916593,
+  "name": "Safeway Fuel Station",
+  "lat": 39.6665815,
+  "lon": -104.913294,
+  "address": "2797 South Monaco Parkway",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 2469618737,
+  "name": "Safeway Fuel Station",
+  "lat": 38.9222196,
+  "lon": -77.2010181,
+  "address": "1698 Anderson Road",
+  "city": "Tysons Corner",
+  "state": "VA"
+ },
+ {
+  "id": 2474781737,
+  "name": "Safeway",
+  "lat": 45.1515829,
+  "lon": -122.6037741,
+  "address": "1525 West Main Street",
+  "city": "Molalla",
+  "state": "OR"
+ },
+ {
+  "id": 2474782340,
+  "name": "Safeway",
+  "lat": 44.5271544,
+  "lon": -122.9066223,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2487652502,
+  "name": "Safeway",
+  "lat": 37.8506081,
+  "lon": -122.25203,
+  "address": "6310 College Avenue",
+  "city": "Oakland",
+  "state": "CA"
+ },
+ {
+  "id": 2497994372,
+  "name": "Safeway",
+  "lat": 47.4098478,
+  "lon": -122.2997402,
+  "address": "21401 Pacific Highway South",
+  "city": "Des Moines",
+  "state": "WA"
+ },
+ {
+  "id": 2610440001,
+  "name": "Safeway",
+  "lat": 44.0652483,
+  "lon": -103.2311116,
+  "address": "2120 Mount Rushmore Road",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2663518448,
+  "name": "Safeway",
+  "lat": 38.7187706,
+  "lon": -76.6624614,
+  "address": "10276 Southern Maryland Boulevard",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2686022034,
+  "name": "Safeway Fuel Station",
+  "lat": 32.8960175,
+  "lon": -111.740482,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2695164093,
+  "name": "Safeway",
+  "lat": 39.4388117,
+  "lon": -77.5256503,
+  "address": "815 East Main Street",
+  "city": "Middletown",
+  "state": "MD"
+ },
+ {
+  "id": 2745833681,
+  "name": "Safeway",
+  "lat": 46.9721877,
+  "lon": -123.818338,
+  "address": "221 West Heron Street",
+  "city": "Aberdeen",
+  "state": ""
+ },
+ {
+  "id": 2812799554,
+  "name": "Safeway",
+  "lat": 39.7203421,
+  "lon": -104.9011962,
+  "address": "200 North Quebec Street",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 2816518571,
+  "name": "Safeway",
+  "lat": 39.7207021,
+  "lon": -104.9012585,
+  "address": "200 North Quebec Street",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 2856527717,
+  "name": "Safeway",
+  "lat": 37.336179,
+  "lon": -122.0347351,
+  "address": "20620 West Homestead Road",
+  "city": "Cupertino",
+  "state": "CA"
+ },
+ {
+  "id": 2857441206,
+  "name": "Safeway",
+  "lat": 38.2489174,
+  "lon": -122.6219218,
+  "address": "389 South McDowell Boulevard",
+  "city": "Petaluma",
+  "state": "CA"
+ },
+ {
+  "id": 2865675235,
+  "name": "Safeway",
+  "lat": 39.6777191,
+  "lon": -104.972116,
+  "address": "2150 South Downing Street",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2882822522,
+  "name": "Safeway",
+  "lat": 34.9034004,
+  "lon": -110.1672798,
+  "address": "702 West Hopi Drive",
+  "city": "Holbrook",
+  "state": "AZ"
+ },
+ {
+  "id": 2928619001,
+  "name": "Safeway",
+  "lat": 48.399217,
+  "lon": -114.336602,
+  "address": "6580 Highway 93 South",
+  "city": "Whitefish",
+  "state": "MT"
+ },
+ {
+  "id": 2933417901,
+  "name": "Safeway Fuel Station",
+  "lat": 37.7055,
+  "lon": -121.926441,
+  "address": "7499 Dublin Boulevard",
+  "city": "Dublin",
+  "state": ""
+ },
+ {
+  "id": 2948730233,
+  "name": "Safeway",
+  "lat": 44.52727,
+  "lon": -122.905398,
+  "address": "1983 South Main Street",
+  "city": "Lebanon",
+  "state": "OR"
+ },
+ {
+  "id": 2951662335,
+  "name": "Safeway",
+  "lat": 38.9383724,
+  "lon": -77.0249103,
+  "address": "3830 Georgia Avenue Northwest",
+  "city": "Washington",
+  "state": "DC"
+ },
+ {
+  "id": 2954473497,
+  "name": "Safeway Fuel Station",
+  "lat": 48.4001575,
+  "lon": -114.3369884,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2961919820,
+  "name": "Safeway",
+  "lat": 44.5003287,
+  "lon": -103.857752,
+  "address": "1606 North Avenue",
+  "city": "Spearfish",
+  "state": ""
+ },
+ {
+  "id": 2989445855,
+  "name": "Safeway",
+  "lat": 38.9006574,
+  "lon": -76.9798838,
+  "address": "1601 Maryland Avenue Northeast",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3008733033,
+  "name": "Safeway Fuel Station",
+  "lat": 42.8372762,
+  "lon": -108.74556,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3021408756,
+  "name": "Safeway",
+  "lat": 48.7743772,
+  "lon": -122.458564,
+  "address": "1275 East Sunset Drive",
+  "city": "Bellingham",
+  "state": "WA"
+ },
+ {
+  "id": 3023413743,
+  "name": "Safeway",
+  "lat": 39.4137034,
+  "lon": -76.4605431,
+  "address": "9645 Belair Road",
+  "city": "Perry Hall",
+  "state": "MD"
+ },
+ {
+  "id": 3061269367,
+  "name": "Safeway",
+  "lat": 37.9872526,
+  "lon": -103.5478906,
+  "address": "315 West 2nd Street",
+  "city": "La Junta",
+  "state": "CO"
+ },
+ {
+  "id": 3076156978,
+  "name": "Safeway Fuel Station",
+  "lat": 39.7398379,
+  "lon": -105.099483,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3093928259,
+  "name": "Safeway",
+  "lat": 33.6406864,
+  "lon": -112.1333598,
+  "address": "3450 West Bell Road",
+  "city": "Phoenix",
+  "state": "AZ"
+ },
+ {
+  "id": 3104950131,
+  "name": "Safeway Fuel Station",
+  "lat": 33.5651879,
+  "lon": -112.289207,
+  "address": "10671 West Olive Avenue",
+  "city": "Peoria",
+  "state": "AZ"
+ },
+ {
+  "id": 3106265282,
+  "name": "Safeway",
+  "lat": 40.1879657,
+  "lon": -105.129521,
+  "address": "1632 Hover Road",
+  "city": "Longmont",
+  "state": "CO"
+ },
+ {
+  "id": 3158796084,
+  "name": "Safeway",
+  "lat": 32.8953136,
+  "lon": -111.7415564,
+  "address": "1637 North Trekell Road",
+  "city": "Casa Grande",
+  "state": "AZ"
+ },
+ {
+  "id": 3362600090,
+  "name": "Safeway",
+  "lat": 40.3802303,
+  "lon": -105.513623,
+  "address": "621 Big Thompson Road",
+  "city": "Estes Park",
+  "state": "CO"
+ },
+ {
+  "id": 3399307618,
+  "name": "Safeway",
+  "lat": 33.625655,
+  "lon": -111.9773132,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3399360528,
+  "name": "Safeway",
+  "lat": 37.520731,
+  "lon": -122.3376671,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3409765671,
+  "name": "Safeway",
+  "lat": 39.6812895,
+  "lon": -105.1225536,
+  "address": "11088 West Jewell",
+  "city": "Lakewood",
+  "state": "CO"
+ },
+ {
+  "id": 3441680643,
+  "name": "Safeway",
+  "lat": 37.9737519,
+  "lon": -120.3620445,
+  "address": "1291 Sanguinetti Road",
+  "city": "Sonora",
+  "state": "CA"
+ },
+ {
+  "id": 3489819457,
+  "name": "Safeway",
+  "lat": 39.0388892,
+  "lon": -77.0506057,
+  "address": "11201 Georgia Avenue",
+  "city": "Silver Spring",
+  "state": "MD"
+ },
+ {
+  "id": 3518095803,
+  "name": "Safeway",
+  "lat": 47.8078772,
+  "lon": -122.290716,
+  "address": "4301 212th Street Southwest",
+  "city": "Mountlake Terrace",
+  "state": "WA"
+ },
+ {
+  "id": 3562526725,
+  "name": "Safeway",
+  "lat": 39.3272672,
+  "lon": -120.206545,
+  "address": "11290 Donner Pass Road",
+  "city": "Truckee",
+  "state": "CA"
+ },
+ {
+  "id": 3570556006,
+  "name": "Safeway",
+  "lat": 38.6270768,
+  "lon": -76.9170736,
+  "address": "3051 Waldorf Market Place",
+  "city": "Waldorf",
+  "state": "MD"
+ },
+ {
+  "id": 3597603086,
+  "name": "Safeway",
+  "lat": 38.6027883,
+  "lon": -76.9013399,
+  "address": "10 King Street",
+  "city": "Waldorf",
+  "state": "MD"
+ },
+ {
+  "id": 3611808417,
+  "name": "Safeway",
+  "lat": 39.6947981,
+  "lon": -104.788895,
+  "address": "1200 South Buckley Road",
+  "city": "Aurora",
+  "state": "CO"
+ },
+ {
+  "id": 3637947904,
+  "name": "Safeway",
+  "lat": 47.3805783,
+  "lon": -122.2464142,
+  "address": "210 Washington Avenue South",
+  "city": "Kent",
+  "state": "WA"
+ },
+ {
+  "id": 3660478289,
+  "name": "Safeway",
+  "lat": 45.152315,
+  "lon": -122.6052127,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3660689953,
+  "name": "Safeway",
+  "lat": 34.7274248,
+  "lon": -112.007822,
+  "address": "1635 East Cottonwood Lane",
+  "city": "Cottonwood",
+  "state": "AZ"
+ },
+ {
+  "id": 3722074025,
+  "name": "Safeway",
+  "lat": 47.7531132,
+  "lon": -122.280166,
+  "address": "17171 Bothell Way Northeast",
+  "city": "Lake Forest Park",
+  "state": "WA"
+ },
+ {
+  "id": 3798785780,
+  "name": "Safeway",
+  "lat": 32.3723194,
+  "lon": -111.136509,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3870310063,
+  "name": "Safeway",
+  "lat": 46.7150241,
+  "lon": -117.1787414,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3880926786,
+  "name": "Safeway",
+  "lat": 31.5530091,
+  "lon": -110.2758681,
+  "address": "2190 East Fry Boulevard",
+  "city": "Sierra Vista",
+  "state": "AZ"
+ },
+ {
+  "id": 3899384349,
+  "name": "Safeway",
+  "lat": 39.7554718,
+  "lon": -105.024523,
+  "address": "2660 Federal Boulevard",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 4017401388,
+  "name": "Safeway",
+  "lat": 45.4658136,
+  "lon": -122.6988188,
+  "address": "8145 Southwest Barbur Boulevard",
+  "city": "Portland",
+  "state": ""
+ },
+ {
+  "id": 4033539931,
+  "name": "Safeway",
+  "lat": 45.5157313,
+  "lon": -122.684991,
+  "address": "1010 Southwest Jefferson Street",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 4062458382,
+  "name": "Safeway",
+  "lat": 46.1059383,
+  "lon": -123.2075608,
+  "address": "401 West Columbia River Highway",
+  "city": "Clatskanie",
+  "state": "OR"
+ },
+ {
+  "id": 4080964146,
+  "name": "Safeway",
+  "lat": 45.5280008,
+  "lon": -122.8141433,
+  "address": "13485 Northwest Cornell Road",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 4080982191,
+  "name": "Safeway",
+  "lat": 45.5118501,
+  "lon": -122.6377811,
+  "address": "2800 Southeast Hawthorne Boulevard",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 4096188321,
+  "name": "Safeway",
+  "lat": 38.9670494,
+  "lon": -76.9515119,
+  "address": "3702 East-West Highway",
+  "city": "Hyattsville",
+  "state": "MD"
+ },
+ {
+  "id": 4119551714,
+  "name": "Safeway",
+  "lat": 45.5658316,
+  "lon": -122.6600404,
+  "address": "5920 Northeast Martin Luther King Junior Boulevard",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 4139214490,
+  "name": "Safeway",
+  "lat": 47.6817136,
+  "lon": -122.3168826,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4141875797,
+  "name": "Safeway",
+  "lat": 39.6515087,
+  "lon": -104.769965,
+  "address": "18730 East Hampden Avenue",
+  "city": "Aurora",
+  "state": "CO"
+ },
+ {
+  "id": 4151710217,
+  "name": "Safeway",
+  "lat": 45.2270799,
+  "lon": -123.172926,
+  "address": "2490 Northeast Highway 99W",
+  "city": "McMinnville",
+  "state": "OR"
+ },
+ {
+  "id": 4166728248,
+  "name": "Safeway",
+  "lat": 39.5738179,
+  "lon": -104.9915945,
+  "address": "West Mineral Avenue",
+  "city": "Littleton",
+  "state": "CO"
+ },
+ {
+  "id": 4166728268,
+  "name": "Safeway",
+  "lat": 39.573882,
+  "lon": -104.9917957,
+  "address": "West Mineral Avenue",
+  "city": "Littleton",
+  "state": "CO"
+ },
+ {
+  "id": 4170769845,
+  "name": "Safeway",
+  "lat": 45.398289,
+  "lon": -122.7415865,
+  "address": "17779 Lower Boones Ferry Road",
+  "city": "Lake Oswego",
+  "state": "OR"
+ },
+ {
+  "id": 4172417490,
+  "name": "Safeway",
+  "lat": 45.8496888,
+  "lon": -122.832525,
+  "address": "795 South Columbia River Highway",
+  "city": "Saint Helens",
+  "state": "OR"
+ },
+ {
+  "id": 4172543691,
+  "name": "Safeway",
+  "lat": 45.5303892,
+  "lon": -122.6847507,
+  "address": "1303 Northwest Lovejoy Street",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 4181662888,
+  "name": "Safeway Fuel Station",
+  "lat": 38.7522033,
+  "lon": -108.052393,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4184748289,
+  "name": "Safeway",
+  "lat": 47.2728215,
+  "lon": -122.227384,
+  "address": "4010 A Street",
+  "city": "Auburn",
+  "state": "WA"
+ },
+ {
+  "id": 4199843589,
+  "name": "Safeway",
+  "lat": 39.4850076,
+  "lon": -105.073805,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4211444417,
+  "name": "Safeway",
+  "lat": 45.4968112,
+  "lon": -122.6218374,
+  "address": "3940 Southeast Powell Boulevard",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 4264550885,
+  "name": "Safeway",
+  "lat": 39.7895655,
+  "lon": -104.9917965,
+  "address": "5151 Bannock Street",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 4274234762,
+  "name": "Safeway",
+  "lat": 45.6707138,
+  "lon": -122.5076365,
+  "address": "6700 Northeast 162nd Avenue",
+  "city": "Vancouver",
+  "state": "WA"
+ },
+ {
+  "id": 4318501461,
+  "name": "Safeway",
+  "lat": 37.7853945,
+  "lon": -122.28022,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4322683319,
+  "name": "Safeway",
+  "lat": 45.9127193,
+  "lon": -122.74865,
+  "address": "1725 Pacific Avenue",
+  "city": "Woodland",
+  "state": "WA"
+ },
+ {
+  "id": 4335719649,
+  "name": "Safeway",
+  "lat": 31.4012044,
+  "lon": -109.9173271,
+  "address": "101 Naco Road",
+  "city": "Bisbee",
+  "state": "AZ"
+ },
+ {
+  "id": 4345253389,
+  "name": "Safeway",
+  "lat": 47.306322,
+  "lon": -122.22781,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4358042489,
+  "name": "Safeway",
+  "lat": 47.6130141,
+  "lon": -122.200834,
+  "address": "300 Bellevue Way Northeast",
+  "city": "Bellevue",
+  "state": "WA"
+ },
+ {
+  "id": 4358178738,
+  "name": "Safeway Fuel Station",
+  "lat": 38.9453045,
+  "lon": -119.968388,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4384913899,
+  "name": "Safeway",
+  "lat": 45.4011012,
+  "lon": -122.2761962,
+  "address": "37601 Southeast Highway 26",
+  "city": "Sandy",
+  "state": "OR"
+ },
+ {
+  "id": 4396696433,
+  "name": "Safeway",
+  "lat": 47.7410668,
+  "lon": -122.343323,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4431190809,
+  "name": "Safeway",
+  "lat": 39.1884452,
+  "lon": -77.1850194,
+  "address": "20211 Goshen Road",
+  "city": "Gaithersburg",
+  "state": "MD"
+ },
+ {
+  "id": 4432119609,
+  "name": "Safeway",
+  "lat": 37.8172373,
+  "lon": -122.245835,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4450802908,
+  "name": "Safeway",
+  "lat": 38.9873003,
+  "lon": -76.5553226,
+  "address": "2635 Housley Road",
+  "city": "Annapolis",
+  "state": "MD"
+ },
+ {
+  "id": 4509832765,
+  "name": "Safeway Pharmacy",
+  "lat": 45.3084555,
+  "lon": -122.9456031,
+  "address": "1140 North Springbrook Road",
+  "city": "Newberg",
+  "state": "OR"
+ },
+ {
+  "id": 4520234940,
+  "name": "Safeway",
+  "lat": 45.1502948,
+  "lon": -122.8293825,
+  "address": "1550 North Pacific Highway",
+  "city": "Woodburn",
+  "state": "OR"
+ },
+ {
+  "id": 4539916798,
+  "name": "Safeway",
+  "lat": 45.5790861,
+  "lon": -122.3342734,
+  "address": "3307 Evergreen Way",
+  "city": "Washougal",
+  "state": "WA"
+ },
+ {
+  "id": 4542274584,
+  "name": "Safeway",
+  "lat": 45.6483537,
+  "lon": -122.6665216,
+  "address": "3707 Main Street",
+  "city": "Vancouver",
+  "state": "WA"
+ },
+ {
+  "id": 4543462853,
+  "name": "Safeway",
+  "lat": 45.6663352,
+  "lon": -122.6037664,
+  "address": "6711 Northeast 63rd Street",
+  "city": "Vancouver",
+  "state": "WA"
+ },
+ {
+  "id": 4544020086,
+  "name": "Safeway",
+  "lat": 45.6261235,
+  "lon": -122.6026123,
+  "address": "6701 East Mill Plain Boulevard",
+  "city": "Vancouver",
+  "state": "WA"
+ },
+ {
+  "id": 4545743701,
+  "name": "Safeway",
+  "lat": 45.3700072,
+  "lon": -122.8453687,
+  "address": "20685 Southwest Roy Rogers Road",
+  "city": "Sherwood",
+  "state": "OR"
+ },
+ {
+  "id": 4555317222,
+  "name": "Safeway",
+  "lat": 45.4799813,
+  "lon": -122.61569,
+  "address": "4515 Southeast Woodstock Boulevard",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 4555862465,
+  "name": "Safeway",
+  "lat": 38.0161167,
+  "lon": -121.943476,
+  "address": "660 Bailey Road",
+  "city": "Pittsburg",
+  "state": "CA"
+ },
+ {
+  "id": 4556521734,
+  "name": "Safeway",
+  "lat": 45.4469282,
+  "lon": -122.6185488,
+  "address": "4320 Southeast King Road",
+  "city": "Milwaukie",
+  "state": "OR"
+ },
+ {
+  "id": 4574346433,
+  "name": "Safeway",
+  "lat": 45.4155258,
+  "lon": -122.5906253,
+  "address": "14840 Southeast Webster Road",
+  "city": "Milwaukie",
+  "state": "OR"
+ },
+ {
+  "id": 4585885367,
+  "name": "Safeway",
+  "lat": 45.4892721,
+  "lon": -122.4769835,
+  "address": "1001 Southwest Highland Drive",
+  "city": "Gresham",
+  "state": "OR"
+ },
+ {
+  "id": 4586276911,
+  "name": "Safeway",
+  "lat": 45.5057761,
+  "lon": -122.417299,
+  "address": "1455 Northeast Division Street",
+  "city": "Gresham",
+  "state": "OR"
+ },
+ {
+  "id": 4604331784,
+  "name": "Safeway",
+  "lat": 20.879094,
+  "lon": -156.4445356,
+  "address": "1090 Ho'okele Street",
+  "city": "Kahului",
+  "state": "HI"
+ },
+ {
+  "id": 4611235501,
+  "name": "Safeway",
+  "lat": 37.8347336,
+  "lon": -122.248783,
+  "address": "5100 Broadway",
+  "city": "Oakland",
+  "state": "CA"
+ },
+ {
+  "id": 4633575018,
+  "name": "Safeway",
+  "lat": 45.6818774,
+  "lon": -122.668554,
+  "address": "408 Northeast 81st Street",
+  "city": "Vancouver",
+  "state": "WA"
+ },
+ {
+  "id": 4678794666,
+  "name": "Safeway",
+  "lat": 34.2238379,
+  "lon": -77.9016654,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4682685590,
+  "name": "Safeway",
+  "lat": 39.6518885,
+  "lon": -104.984644,
+  "address": "201 East Jefferson Avenue",
+  "city": "Englewood",
+  "state": "CO"
+ },
+ {
+  "id": 4714747788,
+  "name": "Safeway",
+  "lat": 37.3059439,
+  "lon": -121.8906989,
+  "address": "1489 Bird Avenue",
+  "city": "San Jose",
+  "state": "CA"
+ },
+ {
+  "id": 4715829476,
+  "name": "Safeway",
+  "lat": 40.4083458,
+  "lon": -105.0979102,
+  "address": "1451 West Eisenhower Boulevard",
+  "city": "Loveland",
+  "state": "CO"
+ },
+ {
+  "id": 4743651637,
+  "name": "Safeway",
+  "lat": 45.4070335,
+  "lon": -122.7925683,
+  "address": "15570 Southwest Pacific Highway",
+  "city": "Tigard",
+  "state": "OR"
+ },
+ {
+  "id": 4745695835,
+  "name": "Safeway",
+  "lat": 42.362491,
+  "lon": -122.8585173,
+  "address": "3169 Crater Lake Highway",
+  "city": "Medford",
+  "state": "OR"
+ },
+ {
+  "id": 4756702582,
+  "name": "Safeway",
+  "lat": 45.442384,
+  "lon": -122.8266113,
+  "address": "14555 Southwest Teal Boulevard",
+  "city": "Beaverton",
+  "state": "OR"
+ },
+ {
+  "id": 4757411522,
+  "name": "Safeway",
+  "lat": 45.5058999,
+  "lon": -122.9540758,
+  "address": "2525 Southeast Tualatin Valley Highway",
+  "city": "Hillsboro",
+  "state": "OR"
+ },
+ {
+  "id": 4773234637,
+  "name": "Safeway",
+  "lat": 39.7764902,
+  "lon": -105.0349287,
+  "address": "3600 West 44th Avenue",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 4773256538,
+  "name": "Safeway",
+  "lat": 39.776215,
+  "lon": -105.0369437,
+  "address": "3800 West 44th Avenue",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 4774950255,
+  "name": "Safeway",
+  "lat": 39.7763492,
+  "lon": -105.036768,
+  "address": "3800 West 44th Avenue",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 4774951499,
+  "name": "Safeway",
+  "lat": 39.7763399,
+  "lon": -105.034927,
+  "address": "3600 West 44th Avenue",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 4827836627,
+  "name": "Safeway",
+  "lat": 45.4749678,
+  "lon": -122.825412,
+  "address": "6194 Southwest Murray Boulevard",
+  "city": "Beaverton",
+  "state": "OR"
+ },
+ {
+  "id": 4837902855,
+  "name": "Safeway",
+  "lat": 45.3644109,
+  "lon": -122.6479688,
+  "address": "22000 Salamo Road",
+  "city": "West Linn",
+  "state": "OR"
+ },
+ {
+  "id": 4846485245,
+  "name": "Safeway",
+  "lat": 20.752492,
+  "lon": -156.4486144,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4888323986,
+  "name": "Safeway",
+  "lat": 33.3629712,
+  "lon": -111.860155,
+  "address": "1225 West Guadalupe Road",
+  "city": "Mesa",
+  "state": "AZ"
+ },
+ {
+  "id": 4890716175,
+  "name": "Safeway",
+  "lat": 47.881038,
+  "lon": -122.280755,
+  "address": "12811 Beverly Park Road",
+  "city": "Lynnwood",
+  "state": "WA"
+ },
+ {
+  "id": 4902962165,
+  "name": "Safeway",
+  "lat": 45.496449,
+  "lon": -122.5394601,
+  "address": "3527 Southeast 122nd Avenue",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 4903266698,
+  "name": "Safeway",
+  "lat": 45.5475365,
+  "lon": -122.5929044,
+  "address": "6901 Northeast Sandy Boulevard",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 4917923064,
+  "name": "Safeway",
+  "lat": 45.3343545,
+  "lon": -122.5906393,
+  "address": "13434 Colton Place",
+  "city": "Oregon City",
+  "state": "OR"
+ },
+ {
+  "id": 4927801128,
+  "name": "Safeway",
+  "lat": 47.3603409,
+  "lon": -122.0181137,
+  "address": "26916 Maple Valley-Black Diamond Road Southeast",
+  "city": "Maple Valley",
+  "state": "WA"
+ },
+ {
+  "id": 4929728921,
+  "name": "Safeway",
+  "lat": 44.0563278,
+  "lon": -121.3010547,
+  "address": "642 Northeast 3rd Street",
+  "city": "Bend",
+  "state": "OR"
+ },
+ {
+  "id": 4943121025,
+  "name": "Safeway",
+  "lat": 44.0468665,
+  "lon": -121.3293144,
+  "address": "320 Southwest Century Drive",
+  "city": "Bend",
+  "state": "OR"
+ },
+ {
+  "id": 4945025799,
+  "name": "Safeway",
+  "lat": 44.0579932,
+  "lon": -121.2644452,
+  "address": "2650 Northeast Highway 20",
+  "city": "Bend",
+  "state": "OR"
+ },
+ {
+  "id": 4981284421,
+  "name": "Safeway",
+  "lat": 47.3564068,
+  "lon": -122.115029,
+  "address": "17023 Southeast 272nd Street",
+  "city": "Covington",
+  "state": "WA"
+ },
+ {
+  "id": 5029034387,
+  "name": "Safeway",
+  "lat": 40.1535416,
+  "lon": -105.1094201,
+  "address": "1050 Ken Pratt Boulevard",
+  "city": "Longmont",
+  "state": "CO"
+ },
+ {
+  "id": 5072866537,
+  "name": "Safeway",
+  "lat": 33.6095076,
+  "lon": -111.727707,
+  "address": "13733 North Fountain Hills Boulevard",
+  "city": "Fountain Hills",
+  "state": "AZ"
+ },
+ {
+  "id": 5104316731,
+  "name": "Safeway",
+  "lat": 31.3644261,
+  "lon": -110.940515,
+  "address": "465 West Mariposa Road",
+  "city": "Nogales",
+  "state": "AZ"
+ },
+ {
+  "id": 5110357106,
+  "name": "Safeway",
+  "lat": 37.411191,
+  "lon": -122.0944654,
+  "address": "580 North Rengstorff Avenue",
+  "city": "Mountain View",
+  "state": "CA"
+ },
+ {
+  "id": 5153772161,
+  "name": "Safeway",
+  "lat": 37.9222203,
+  "lon": -122.3154601,
+  "address": "11450 San Pablo Avenue",
+  "city": "El Cerrito",
+  "state": "CA"
+ },
+ {
+  "id": 5177367025,
+  "name": "Safeway",
+  "lat": 47.4151366,
+  "lon": -122.195327,
+  "address": "20830 108th Avenue Southeast",
+  "city": "Kent",
+  "state": "WA"
+ },
+ {
+  "id": 5196952321,
+  "name": "Safeway",
+  "lat": 47.1980306,
+  "lon": -121.979956,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5207151461,
+  "name": "Safeway",
+  "lat": 44.063609,
+  "lon": -123.024211,
+  "address": "1891 Q Street",
+  "city": "Springfield",
+  "state": "OR"
+ },
+ {
+  "id": 5274653227,
+  "name": "Safeway",
+  "lat": 46.9724158,
+  "lon": -123.818916,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5303551866,
+  "name": "Safeway",
+  "lat": 21.3902717,
+  "lon": -157.951636,
+  "address": "98-1277 Kaahumanu Street",
+  "city": "Aiea",
+  "state": "HI"
+ },
+ {
+  "id": 5549668543,
+  "name": "Safeway",
+  "lat": 39.7250235,
+  "lon": -104.9734599,
+  "address": "560 Corona Street",
+  "city": "Denver",
+  "state": "CO"
+ },
+ {
+  "id": 5748227109,
+  "name": "Safeway",
+  "lat": 35.1895574,
+  "lon": -111.66385,
+  "address": "1201 South Plaza Way",
+  "city": "Flagstaff",
+  "state": "AZ"
+ },
+ {
+  "id": 5752746699,
+  "name": "Safeway",
+  "lat": 45.4188639,
+  "lon": -122.4563384,
+  "address": "20151 Southeast Highway 212",
+  "city": "Damascus",
+  "state": "OR"
+ },
+ {
+  "id": 5895538479,
+  "name": "Safeway",
+  "lat": 39.7623124,
+  "lon": -121.8226255,
+  "address": "1366 East Avenue",
+  "city": "Chico",
+  "state": "CA"
+ },
+ {
+  "id": 5911009788,
+  "name": "Safeway",
+  "lat": 37.9272435,
+  "lon": -122.0184678,
+  "address": "2800 Ygnacio Valley Road",
+  "city": "Walnut Creek",
+  "state": "CA"
+ },
+ {
+  "id": 5984401537,
+  "name": "Safeway",
+  "lat": 47.018924,
+  "lon": -122.8975581,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6020580657,
+  "name": "Safeway",
+  "lat": 34.154662,
+  "lon": -114.2757939,
+  "address": "121 Riverside Drive",
+  "city": "Parker",
+  "state": "AZ"
+ },
+ {
+  "id": 6039540813,
+  "name": "Safeway",
+  "lat": 33.3482015,
+  "lon": -111.913872,
+  "address": "1515 East Elliot Road",
+  "city": "Tempe",
+  "state": "AZ"
+ },
+ {
+  "id": 6218070991,
+  "name": "Safeway",
+  "lat": 37.3229625,
+  "lon": -121.911749,
+  "address": "408 West San Carlos Street",
+  "city": "San Jose",
+  "state": "CA"
+ },
+ {
+  "id": 6260984970,
+  "name": "Safeway",
+  "lat": 33.56366,
+  "lon": -112.288789,
+  "address": "10641 West Olive Avenue",
+  "city": "Peoria",
+  "state": "AZ"
+ },
+ {
+  "id": 6300538033,
+  "name": "Safeway Bakery",
+  "lat": 37.3231992,
+  "lon": -121.9118362,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6320042884,
+  "name": "Safeway",
+  "lat": 37.9358665,
+  "lon": -121.6991427,
+  "address": "1125 2nd Street",
+  "city": "Brentwood",
+  "state": "CA"
+ },
+ {
+  "id": 6397531247,
+  "name": "Safeway",
+  "lat": 40.0351743,
+  "lon": -105.2600849,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6415387458,
+  "name": "Safeway",
+  "lat": 33.5077119,
+  "lon": -112.235934,
+  "address": "4811 North 83rd Avenue",
+  "city": "Phoenix",
+  "state": "AZ"
+ },
+ {
+  "id": 6426851292,
+  "name": "Safeway Fuel Station",
+  "lat": 46.6027172,
+  "lon": -120.531382,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6572875855,
+  "name": "Safeway",
+  "lat": 38.7498912,
+  "lon": -77.5711725,
+  "address": "12821 Braemar Village Plaza",
+  "city": "Bristow",
+  "state": "VA"
+ },
+ {
+  "id": 6579221380,
+  "name": "Safeway",
+  "lat": 38.7863781,
+  "lon": -76.794074,
+  "address": "7605 Crain Highway",
+  "city": "Upper Marlboro",
+  "state": "MD"
+ },
+ {
+  "id": 6591689637,
+  "name": "Safeway",
+  "lat": 43.4054157,
+  "lon": -124.2355909,
+  "address": "1735 Virginia Avenue",
+  "city": "North Bend",
+  "state": "OR"
+ },
+ {
+  "id": 6612379047,
+  "name": "Safeway",
+  "lat": 45.7089134,
+  "lon": -121.5346937,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6625305331,
+  "name": "Safeway",
+  "lat": 37.231425,
+  "lon": -121.9790836,
+  "address": "470 North Santa Cruz Avenue",
+  "city": "Los Gatos",
+  "state": "CA"
+ },
+ {
+  "id": 6641689944,
+  "name": "Safeway",
+  "lat": 47.6875576,
+  "lon": -114.1235808,
+  "address": "146 South Shore Route",
+  "city": "Polson",
+  "state": "MT"
+ },
+ {
+  "id": 6678059576,
+  "name": "Safeway",
+  "lat": 38.5007237,
+  "lon": -123.0010534,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6725758428,
+  "name": "Safeway",
+  "lat": 38.4463273,
+  "lon": -122.7414687,
+  "address": "1211 West College Avenue",
+  "city": "Santa Rosa",
+  "state": "CA"
+ },
+ {
+  "id": 6750621520,
+  "name": "Safeway",
+  "lat": 33.3029414,
+  "lon": -111.9965723,
+  "address": "4005 East Chandler Boulevard",
+  "city": "Phoenix",
+  "state": "AZ"
+ },
+ {
+  "id": 6796221782,
+  "name": "Safeway",
+  "lat": 44.9974939,
+  "lon": -124.006345,
+  "address": "4101 Northwest Logan Road",
+  "city": "Lincoln City",
+  "state": "OR"
+ },
+ {
+  "id": 7137694169,
+  "name": "Safeway",
+  "lat": 47.7844484,
+  "lon": -122.3440243,
+  "address": "23632 Highway 99",
+  "city": "Edmonds",
+  "state": "WA"
+ },
+ {
+  "id": 7146642671,
+  "name": "Safeway",
+  "lat": 38.9322898,
+  "lon": -104.7389491,
+  "address": "7055 Austin Bluffs Parkway",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7151973233,
+  "name": "Safeway",
+  "lat": 46.7222088,
+  "lon": -116.9826831,
+  "address": "1320 South Blaine Street",
+  "city": "Moscow",
+  "state": "ID"
+ },
+ {
+  "id": 7154788332,
+  "name": "Safeway",
+  "lat": 38.9591228,
+  "lon": -104.7668491,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7204418556,
+  "name": "Safeway",
+  "lat": 47.5211913,
+  "lon": -122.2683558,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7237662742,
+  "name": "Safeway Fuel Station",
+  "lat": 37.7586491,
+  "lon": -122.2508108,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7254569719,
+  "name": "Safeway",
+  "lat": 45.3817953,
+  "lon": -122.5821262,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7260052993,
+  "name": "Safeway",
+  "lat": 47.5416879,
+  "lon": -122.0482903,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7266159090,
+  "name": "Safeway",
+  "lat": 40.5728757,
+  "lon": -122.3510041,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7273609386,
+  "name": "Safeway",
+  "lat": 46.1365864,
+  "lon": -122.9391083,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7273610677,
+  "name": "Safeway",
+  "lat": 46.1410957,
+  "lon": -122.9018123,
+  "address": "411 Three Rivers Drive",
+  "city": "Kelso",
+  "state": "WA"
+ },
+ {
+  "id": 7282809922,
+  "name": "Safeway",
+  "lat": 38.2716862,
+  "lon": -122.0526624,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7286972296,
+  "name": "Safeway",
+  "lat": 38.1644813,
+  "lon": -122.2550885,
+  "address": "103 West American Canyon Road",
+  "city": "American Canyon",
+  "state": "CA"
+ },
+ {
+  "id": 7286983732,
+  "name": "Safeway",
+  "lat": 38.3213005,
+  "lon": -122.3016229,
+  "address": "3375 Jefferson Street",
+  "city": "Napa",
+  "state": "CA"
+ },
+ {
+  "id": 7290318943,
+  "name": "Safeway",
+  "lat": 38.1035623,
+  "lon": -122.5716354,
+  "address": "900 Diablo Avenue",
+  "city": "Novato",
+  "state": "CA"
+ },
+ {
+  "id": 7294902426,
+  "name": "Safeway",
+  "lat": 38.4570439,
+  "lon": -121.8392534,
+  "address": "1235 Stratford Avenue",
+  "city": "Dixon",
+  "state": "CA"
+ },
+ {
+  "id": 7314163018,
+  "name": "Safeway",
+  "lat": 38.5456197,
+  "lon": -76.5902162,
+  "address": "80 West Dares Beach Road",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7329415996,
+  "name": "Safeway",
+  "lat": 48.1058813,
+  "lon": -123.3800855,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7332966380,
+  "name": "Safeway",
+  "lat": 48.1159232,
+  "lon": -123.4349086,
+  "address": "110 East 3rd Street",
+  "city": "Port Angeles",
+  "state": "WA"
+ },
+ {
+  "id": 7351371785,
+  "name": "Safeway",
+  "lat": 38.8781342,
+  "lon": -77.1234263,
+  "address": "5101 Wilson Boulevard",
+  "city": "Arlington",
+  "state": "VA"
+ },
+ {
+  "id": 7353344564,
+  "name": "Safeway",
+  "lat": 43.2293101,
+  "lon": -123.3494159,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7361412393,
+  "name": "Safeway",
+  "lat": 47.0391846,
+  "lon": -122.7995814,
+  "address": "6200 Pacific Avenue Southeast",
+  "city": "Lacey",
+  "state": "WA"
+ },
+ {
+  "id": 7361485096,
+  "name": "Safeway",
+  "lat": 47.0583894,
+  "lon": -122.766623,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7361485099,
+  "name": "Twin Star Credit Union & ATM",
+  "lat": 47.0581272,
+  "lon": -122.7667931,
+  "address": "1243 Marvin Road Northeast",
+  "city": "Lacey",
+  "state": ""
+ },
+ {
+  "id": 7374262801,
+  "name": "Safeway",
+  "lat": 40.4779686,
+  "lon": -104.9280571,
+  "address": "1535 Main Street",
+  "city": "Windsor",
+  "state": "CO"
+ },
+ {
+  "id": 7388665101,
+  "name": "Safeway",
+  "lat": 41.7561911,
+  "lon": -124.1933953,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7400329466,
+  "name": "Safeway",
+  "lat": 47.7565324,
+  "lon": -122.0805356,
+  "address": "19150 st Woodinville Duvall Road",
+  "city": "Woodinville",
+  "state": "WA"
+ },
+ {
+  "id": 7491663883,
+  "name": "Safeway",
+  "lat": 21.2852143,
+  "lon": -157.706854,
+  "address": "377 Keahole Street",
+  "city": "Honolulu",
+  "state": "HI"
+ },
+ {
+  "id": 7526430506,
+  "name": "Safeway",
+  "lat": 38.8699868,
+  "lon": -77.1446783,
+  "address": "6118 Arlington Boulevard",
+  "city": "Falls Church",
+  "state": "VA"
+ },
+ {
+  "id": 7555534480,
+  "name": "Safeway",
+  "lat": 33.3483527,
+  "lon": -111.757472,
+  "address": "90 South Val Vista Drive",
+  "city": "Gilbert",
+  "state": "AZ"
+ },
+ {
+  "id": 7560933095,
+  "name": "Safeway",
+  "lat": 33.3954707,
+  "lon": -111.752253,
+  "address": "3622 East Southern Avenue",
+  "city": "Mesa",
+  "state": "AZ"
+ },
+ {
+  "id": 7590312762,
+  "name": "Safeway",
+  "lat": 38.950041,
+  "lon": -77.1193803,
+  "address": "4701 Sangamore Road",
+  "city": "Bethesda",
+  "state": "MD"
+ },
+ {
+  "id": 7618794991,
+  "name": "Safeway Fuel Station",
+  "lat": 40.4789286,
+  "lon": -104.92942,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7633553542,
+  "name": "Safeway",
+  "lat": 45.7248881,
+  "lon": -122.653205,
+  "address": "14300 Northeast 20th Avenue",
+  "city": "Vancouver",
+  "state": "WA"
+ },
+ {
+  "id": 7672095328,
+  "name": "Safeway",
+  "lat": 33.3223743,
+  "lon": -111.822277,
+  "address": "1060 East Ray Road",
+  "city": "Chandler",
+  "state": "AZ"
+ },
+ {
+  "id": 7695644759,
+  "name": "Safeway",
+  "lat": 45.709034,
+  "lon": -121.5350849,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7738672281,
+  "name": "Safeway",
+  "lat": 19.7009368,
+  "lon": -155.060846,
+  "address": "381 East Maka\u02bbala Street",
+  "city": "Hilo",
+  "state": "HI"
+ },
+ {
+  "id": 7799637292,
+  "name": "Safeway",
+  "lat": 33.3373604,
+  "lon": -111.6030744,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7817504813,
+  "name": "Safeway",
+  "lat": 47.6723941,
+  "lon": -117.395074,
+  "address": "933 East Mission Avenue",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7818321083,
+  "name": "Safeway",
+  "lat": 33.5844506,
+  "lon": -111.9255546,
+  "address": "10773 North Scottsdale Road",
+  "city": "Scottsdale",
+  "state": "AZ"
+ },
+ {
+  "id": 7823986780,
+  "name": "Safeway",
+  "lat": 33.3774147,
+  "lon": -111.7241901,
+  "address": "5137 East Baseline Road",
+  "city": "Gilbert",
+  "state": "AZ"
+ },
+ {
+  "id": 7830627042,
+  "name": "Safeway",
+  "lat": 48.0809963,
+  "lon": -123.1171856,
+  "address": "680 West Washington Street",
+  "city": "Sequim",
+  "state": "WA"
+ },
+ {
+  "id": 7857289381,
+  "name": "Safeway",
+  "lat": 33.7407892,
+  "lon": -112.3205674,
+  "address": "28455 North Vistancia Boulevard",
+  "city": "Peoria",
+  "state": "AZ"
+ },
+ {
+  "id": 7956150256,
+  "name": "Safeway",
+  "lat": 38.7700207,
+  "lon": -77.1413998,
+  "address": "5980 Kingstowne Towne Center",
+  "city": "Alexandria",
+  "state": "VA"
+ },
+ {
+  "id": 7962402527,
+  "name": "Safeway",
+  "lat": 39.9979153,
+  "lon": -105.234552,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7978979664,
+  "name": "Safeway",
+  "lat": 38.8750067,
+  "lon": -77.198692,
+  "address": "7397 Route 29",
+  "city": "Falls Church",
+  "state": "VA"
+ },
+ {
+  "id": 8105802741,
+  "name": "Safeway",
+  "lat": 40.0133848,
+  "lon": -105.25971,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8117537806,
+  "name": "Safeway",
+  "lat": 37.829343,
+  "lon": -122.279834,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8285332041,
+  "name": "Safeway",
+  "lat": 19.6440265,
+  "lon": -155.9910928,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8285332079,
+  "name": "Safeway",
+  "lat": 19.6438675,
+  "lon": -155.9909555,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8320365988,
+  "name": "Safeway",
+  "lat": 38.8949219,
+  "lon": -104.850186,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8321897590,
+  "name": "Safeway",
+  "lat": 38.8064385,
+  "lon": -104.8236776,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8321897598,
+  "name": "Safeway",
+  "lat": 38.8125426,
+  "lon": -104.7465641,
+  "address": "1425 south",
+  "city": "Colorado Springs",
+  "state": "CO"
+ },
+ {
+  "id": 8321897601,
+  "name": "Safeway",
+  "lat": 38.8483495,
+  "lon": -104.7725322,
+  "address": "1121 North Circle Drive",
+  "city": "Colorado Springs",
+  "state": "CO"
+ },
+ {
+  "id": 8321897609,
+  "name": "Safeway",
+  "lat": 38.9037309,
+  "lon": -104.7774517,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8335787312,
+  "name": "Safeway",
+  "lat": 21.3133373,
+  "lon": -157.8578155,
+  "address": "1360 Pali Highway",
+  "city": "Honolulu",
+  "state": "HI"
+ },
+ {
+  "id": 8336010383,
+  "name": "Safeway",
+  "lat": 42.3334181,
+  "lon": -122.8634475,
+  "address": "1003 Medford Ctr",
+  "city": "Medford",
+  "state": ""
+ },
+ {
+  "id": 8353944245,
+  "name": "Safeway",
+  "lat": 45.5304555,
+  "lon": -122.68475,
+  "address": "1303 Northwest Lovejoy Street",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 8366092942,
+  "name": "Safeway",
+  "lat": 38.0085575,
+  "lon": -122.548221,
+  "address": "950 Las Gallinas Avenue",
+  "city": "San Rafael",
+  "state": "CA"
+ },
+ {
+  "id": 8379899061,
+  "name": "Safeway",
+  "lat": 44.9966166,
+  "lon": -123.0243396,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8397880529,
+  "name": "Safeway",
+  "lat": 37.4845678,
+  "lon": -122.2303301,
+  "address": "1071 West El Camino Real",
+  "city": "Redwood City",
+  "state": "CA"
+ },
+ {
+  "id": 8415974019,
+  "name": "Safeway",
+  "lat": 37.3314612,
+  "lon": -121.8109238,
+  "address": "2980 East Capitol Expressway",
+  "city": "San Jose",
+  "state": "CA"
+ },
+ {
+  "id": 8439080024,
+  "name": "Safeway",
+  "lat": 38.8165428,
+  "lon": -77.2752917,
+  "address": "9525 Braddock Road",
+  "city": "Fairfax",
+  "state": "VA"
+ },
+ {
+  "id": 8477053776,
+  "name": "Safeway",
+  "lat": 48.4180969,
+  "lon": -119.5108701,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8495354049,
+  "name": "Safeway",
+  "lat": 45.6798798,
+  "lon": -111.0616743,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8588221739,
+  "name": "Safeway",
+  "lat": 33.4500576,
+  "lon": -111.681823,
+  "address": "1855 North Power Road",
+  "city": "Mesa",
+  "state": "AZ"
+ },
+ {
+  "id": 8654314927,
+  "name": "Safeway",
+  "lat": 33.5965626,
+  "lon": -112.239738,
+  "address": "12320 North 83rd Avenue",
+  "city": "Peoria",
+  "state": "AZ"
+ },
+ {
+  "id": 8715367042,
+  "name": "Safeway",
+  "lat": 37.3704508,
+  "lon": -121.8815992,
+  "address": "2558 Berryessa Road",
+  "city": "San Jose",
+  "state": "CA"
+ },
+ {
+  "id": 8846532401,
+  "name": "Safeway",
+  "lat": 38.5352339,
+  "lon": -118.6304718,
+  "address": "1095 Veterans Memorial Highway",
+  "city": "Hawthorne",
+  "state": "NV"
+ },
+ {
+  "id": 8855966896,
+  "name": "Safeway",
+  "lat": 44.9409359,
+  "lon": -123.0241533,
+  "address": "1265 Center Street Northeast",
+  "city": "Salem",
+  "state": "OR"
+ },
+ {
+  "id": 8861225034,
+  "name": "Safeway",
+  "lat": 38.6751471,
+  "lon": -121.028389,
+  "address": "3383 Bass Lake Road",
+  "city": "El Dorado Hills",
+  "state": "CA"
+ },
+ {
+  "id": 8889372682,
+  "name": "Safeway",
+  "lat": 42.4386111,
+  "lon": -123.324897,
+  "address": "115 East 7th Street",
+  "city": "Grants Pass",
+  "state": "OR"
+ },
+ {
+  "id": 8986289394,
+  "name": "Safeway",
+  "lat": 60.4841932,
+  "lon": -151.0712459,
+  "address": "44428 Sterling Highway",
+  "city": "Soldotna",
+  "state": "AK"
+ },
+ {
+  "id": 9024220375,
+  "name": "Safeway",
+  "lat": 39.6468802,
+  "lon": -105.3400686,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9117976198,
+  "name": "Safeway",
+  "lat": 39.3395778,
+  "lon": -76.5714431,
+  "address": "4401 Harford Road",
+  "city": "Baltimore",
+  "state": "MD"
+ },
+ {
+  "id": 9166423996,
+  "name": "Safeway",
+  "lat": 41.1450948,
+  "lon": -102.9892703,
+  "address": "1944 Illinois Street",
+  "city": "Sidney",
+  "state": "NE"
+ },
+ {
+  "id": 9166548327,
+  "name": "Safeway",
+  "lat": 41.1298919,
+  "lon": -101.7198803,
+  "address": "611 North Spruce Street",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9270405720,
+  "name": "Safeway",
+  "lat": 47.180336,
+  "lon": -122.5523441,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9321280974,
+  "name": "Safeway",
+  "lat": 36.8384479,
+  "lon": -121.39204,
+  "address": "591 Tres Pinos Road",
+  "city": "Hollister",
+  "state": "CA"
+ },
+ {
+  "id": 9336692723,
+  "name": "Safeway",
+  "lat": 34.4746014,
+  "lon": -114.3419402,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9463786927,
+  "name": "Safeway",
+  "lat": 37.9714879,
+  "lon": -122.0631898,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9485113720,
+  "name": "Safeway",
+  "lat": 38.5408513,
+  "lon": -121.4837573,
+  "address": "3680 Crocker Drive",
+  "city": "Sacramento",
+  "state": "CA"
+ },
+ {
+  "id": 9488657857,
+  "name": "Safeway",
+  "lat": 33.4138235,
+  "lon": -111.579416,
+  "address": "3185 West Apache Trail",
+  "city": "Apache Junction",
+  "state": "AZ"
+ },
+ {
+  "id": 9553145926,
+  "name": "Safeway Fuel Station",
+  "lat": 39.2886233,
+  "lon": -77.2047252,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9571479402,
+  "name": "Safeway",
+  "lat": 21.4420098,
+  "lon": -158.0225805,
+  "address": "780 Meheula Parkway",
+  "city": "Mililani",
+  "state": "HI"
+ },
+ {
+  "id": 9601706396,
+  "name": "Safeway",
+  "lat": 47.6815425,
+  "lon": -117.2857057,
+  "address": "8851 East Trent Avenue",
+  "city": "Spokane",
+  "state": "WA"
+ },
+ {
+  "id": 9657426339,
+  "name": "Safeway",
+  "lat": 39.4115291,
+  "lon": -76.6085482,
+  "address": "1017 York Road",
+  "city": "Towson",
+  "state": "MD"
+ },
+ {
+  "id": 9760694603,
+  "name": "Safeway",
+  "lat": 32.0503511,
+  "lon": -110.7087093,
+  "address": "13380 East Mary Ann Cleveland Way",
+  "city": "Vail",
+  "state": "AZ"
+ },
+ {
+  "id": 9893535845,
+  "name": "Safeway",
+  "lat": 38.8970336,
+  "lon": -77.1060001,
+  "address": "3713 Langston Boulevard",
+  "city": "Arlington",
+  "state": "VA"
+ },
+ {
+  "id": 9940948682,
+  "name": "Safeway",
+  "lat": 41.1107775,
+  "lon": -104.8023743,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9957019213,
+  "name": "Safeway",
+  "lat": 39.1521815,
+  "lon": -76.7220843,
+  "address": "7643 Arundel Mills Boulevard",
+  "city": "Hanover",
+  "state": "MD"
+ },
+ {
+  "id": 9996630093,
+  "name": "Safeway",
+  "lat": 21.3992943,
+  "lon": -158.007816,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10009475342,
+  "name": "Safeway",
+  "lat": 61.1312458,
+  "lon": -146.3491136,
+  "address": "1313 Meals Avenue",
+  "city": "Valdez",
+  "state": "AK"
+ },
+ {
+  "id": 10059608692,
+  "name": "Safeway",
+  "lat": 43.798727,
+  "lon": -123.052275,
+  "address": "1500 East Main Street",
+  "city": "Cottage Grove",
+  "state": "OR"
+ },
+ {
+  "id": 10091245942,
+  "name": "Safeway",
+  "lat": 38.2697049,
+  "lon": -122.6389113,
+  "address": "701 Sonoma Mountain Parkway",
+  "city": "Petaluma",
+  "state": "CA"
+ },
+ {
+  "id": 10096708603,
+  "name": "Safeway",
+  "lat": 33.6548545,
+  "lon": -112.350052,
+  "address": "13503 West Camino Del Sol",
+  "city": "Sun City West",
+  "state": "AZ"
+ },
+ {
+  "id": 10127341925,
+  "name": "Safeway",
+  "lat": 44.2293057,
+  "lon": -123.207057,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10147147482,
+  "name": "Safeway",
+  "lat": 38.9700027,
+  "lon": -76.5230197,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10167871749,
+  "name": "Safeway",
+  "lat": 47.6808007,
+  "lon": -117.4365247,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10174598980,
+  "name": "Safeway",
+  "lat": 38.6566414,
+  "lon": -120.9711073,
+  "address": "3380 Coach Lane",
+  "city": "Cameron Park",
+  "state": "CA"
+ },
+ {
+  "id": 10311776854,
+  "name": "Safeway",
+  "lat": 37.7746125,
+  "lon": -122.465134,
+  "address": "735 7th Avenue",
+  "city": "San Francisco",
+  "state": "CA"
+ },
+ {
+  "id": 10573884394,
+  "name": "Safeway",
+  "lat": 37.4349953,
+  "lon": -121.8979205,
+  "address": "555 Town Center Drive",
+  "city": "Milpitas",
+  "state": "CA"
+ },
+ {
+  "id": 10585495171,
+  "name": "Safeway",
+  "lat": 48.7746395,
+  "lon": -122.458531,
+  "address": "1275 East Sunset Drive",
+  "city": "Bellingham",
+  "state": "WA"
+ },
+ {
+  "id": 10702320197,
+  "name": "Safeway",
+  "lat": 39.0275528,
+  "lon": -77.0750011,
+  "address": "10541 Connecticut Avenue",
+  "city": "Kensington",
+  "state": "MD"
+ },
+ {
+  "id": 10710077876,
+  "name": "Safeway",
+  "lat": 38.9460614,
+  "lon": -76.7371475,
+  "address": "4101 Northview Drive",
+  "city": "Bowie",
+  "state": "MD"
+ },
+ {
+  "id": 10718003368,
+  "name": "Safeway",
+  "lat": 38.7689258,
+  "lon": -76.8894671,
+  "address": "8785 Branch Avenue",
+  "city": "Clinton",
+  "state": "MD"
+ },
+ {
+  "id": 10731328245,
+  "name": "Safeway",
+  "lat": 47.6324859,
+  "lon": -122.1401516,
+  "address": "15000 Northeast 24th Street",
+  "city": "Redmond",
+  "state": "WA"
+ },
+ {
+  "id": 10857351054,
+  "name": "Safeway",
+  "lat": 33.6190985,
+  "lon": -111.8752657,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10904438878,
+  "name": "Safeway",
+  "lat": 33.6371635,
+  "lon": -112.425367,
+  "address": "17049 West Bell Road",
+  "city": "Surprise",
+  "state": "AZ"
+ },
+ {
+  "id": 10933057842,
+  "name": "Safeway",
+  "lat": 64.5008321,
+  "lon": -165.4079999,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10944673815,
+  "name": "Safeway",
+  "lat": 45.5346178,
+  "lon": -122.6541269,
+  "address": "1100 Northeast Broadway",
+  "city": "Portland",
+  "state": "OR"
+ },
+ {
+  "id": 10944680877,
+  "name": "Safeway",
+  "lat": 45.5202652,
+  "lon": -122.4002634,
+  "address": "25691 Southeast Stark Street",
+  "city": "Troutdale",
+  "state": "OR"
+ },
+ {
+  "id": 10969094790,
+  "name": "Safeway",
+  "lat": 32.1902283,
+  "lon": -110.8560379,
+  "address": "6360 East Golf Links Road",
+  "city": "Tucson",
+  "state": "AZ"
+ },
+ {
+  "id": 10985404962,
+  "name": "Safeway",
+  "lat": 33.4512303,
+  "lon": -112.394702,
+  "address": "440 North Estrella Parkway",
+  "city": "Goodyear",
+  "state": "AZ"
+ },
+ {
+  "id": 11021353304,
+  "name": "Safeway",
+  "lat": 47.1957521,
+  "lon": -120.953308,
+  "address": "804 West 1st Street",
+  "city": "Cle Elum",
+  "state": ""
+ },
+ {
+  "id": 11047500475,
+  "name": "Safeway Fuel Station",
+  "lat": 33.5823033,
+  "lon": -112.427573,
+  "address": "17320 West Peoria Avenue",
+  "city": "Surprise",
+  "state": "AZ"
+ },
+ {
+  "id": 11064120613,
+  "name": "Safeway",
+  "lat": 39.4070427,
+  "lon": -76.9492467,
+  "address": "1313 Londontown Boulevard",
+  "city": "Eldersburg",
+  "state": "MD"
+ },
+ {
+  "id": 11064507175,
+  "name": "Safeway",
+  "lat": 37.7969036,
+  "lon": -122.3985422,
+  "address": "145 Jackson Street",
+  "city": "San Francisco",
+  "state": "CA"
+ },
+ {
+  "id": 11095386769,
+  "name": "Safeway",
+  "lat": 45.7151486,
+  "lon": -122.6493031,
+  "address": "13023 Northeast Highway 99",
+  "city": "Vancouver",
+  "state": "WA"
+ },
+ {
+  "id": 11096679997,
+  "name": "Safeway",
+  "lat": 42.4210548,
+  "lon": -123.336309,
+  "address": "1640 Williams Highway",
+  "city": "Grants Pass",
+  "state": "OR"
+ },
+ {
+  "id": 11128945053,
+  "name": "Safeway",
+  "lat": 32.190357,
+  "lon": -110.7910475,
+  "address": "9460 East Golf Links Road",
+  "city": "Tucson",
+  "state": "AZ"
+ },
+ {
+  "id": 11137309081,
+  "name": "Safeway",
+  "lat": 39.2594247,
+  "lon": -106.2932814,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11162300038,
+  "name": "Safeway",
+  "lat": 33.6696028,
+  "lon": -112.200032,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11167615078,
+  "name": "Safeway",
+  "lat": 40.4528535,
+  "lon": -122.288318,
+  "address": "2601 Balls Ferry Road",
+  "city": "Anderson",
+  "state": "CA"
+ },
+ {
+  "id": 11168347727,
+  "name": "Safeway",
+  "lat": 40.4528195,
+  "lon": -122.2882473,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11168352638,
+  "name": "Safeway Fuel Station",
+  "lat": 40.4536456,
+  "lon": -122.2899577,
+  "address": "2520 Balls Ferry Road",
+  "city": "Anderson",
+  "state": "CA"
+ },
+ {
+  "id": 11363330409,
+  "name": "Safeway",
+  "lat": 37.6609627,
+  "lon": -122.4778321,
+  "address": "709 Hickey Boulevard",
+  "city": "Pacifica",
+  "state": "CA"
+ },
+ {
+  "id": 11371705082,
+  "name": "Safeway",
+  "lat": 46.1923525,
+  "lon": -123.8086186,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11374468087,
+  "name": "Safeway",
+  "lat": 33.3578774,
+  "lon": -112.4284926,
+  "address": "9890 South Estrella Parkway",
+  "city": "Goodyear",
+  "state": "AZ"
+ },
+ {
+  "id": 11374468107,
+  "name": "Safeway",
+  "lat": 33.4840344,
+  "lon": -112.3643563,
+  "address": "14175 West Indian School Road",
+  "city": "Goodyear",
+  "state": "AZ"
+ },
+ {
+  "id": 11375648406,
+  "name": "Safeway",
+  "lat": 33.6104825,
+  "lon": -112.3577954,
+  "address": "13828 West Waddell Road",
+  "city": "Surprise",
+  "state": "AZ"
+ },
+ {
+  "id": 11380167519,
+  "name": "Safeway",
+  "lat": 35.1218582,
+  "lon": -114.5881659,
+  "address": "1751 AZ 95",
+  "city": "Bullhead City",
+  "state": "AZ"
+ },
+ {
+  "id": 11390850799,
+  "name": "Safeway",
+  "lat": 38.8838325,
+  "lon": -76.9858314,
+  "address": "415 14th Street Southeast",
+  "city": "Washington",
+  "state": "DC"
+ },
+ {
+  "id": 11464538716,
+  "name": "Safeway",
+  "lat": 37.4329585,
+  "lon": -122.127382,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11595494905,
+  "name": "Safeway",
+  "lat": 37.3009318,
+  "lon": -121.9518383,
+  "address": "1305 South Winchester Boulevard",
+  "city": "San Jose",
+  "state": "CA"
+ },
+ {
+  "id": 11625258364,
+  "name": "Safeway Fuel Station",
+  "lat": 48.1836459,
+  "lon": -117.041689,
+  "address": "121 West Walnut Street",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11648313285,
+  "name": "Safeway",
+  "lat": 37.2932065,
+  "lon": -121.9666878,
+  "address": "950 West Hamilton Avenue",
+  "city": "Campbell",
+  "state": "CA"
+ },
+ {
+  "id": 11689059689,
+  "name": "Safeway",
+  "lat": 47.6642137,
+  "lon": -122.3140056,
+  "address": "4732 Brooklyn Avenue Northeast",
+  "city": "Seattle",
+  "state": "WA"
+ },
+ {
+  "id": 11876198698,
+  "name": "Safeway",
+  "lat": 32.2519625,
+  "lon": -110.8390676,
+  "address": "7177 East Tanque Verde Road",
+  "city": "Tucson",
+  "state": "AZ"
+ },
+ {
+  "id": 11876198705,
+  "name": "Safeway",
+  "lat": 33.7144047,
+  "lon": -112.1410901,
+  "address": "3800 West Happy Valley Road",
+  "city": "Glendale",
+  "state": "AZ"
+ },
+ {
+  "id": 11876198711,
+  "name": "Safeway",
+  "lat": 33.6088995,
+  "lon": -112.0669533,
+  "address": "13440 North 7th Street",
+  "city": "Phoenix",
+  "state": "AZ"
+ },
+ {
+  "id": 11899195792,
+  "name": "Safeway",
+  "lat": 37.4684023,
+  "lon": -105.8764283,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11899246407,
+  "name": "Safeway",
+  "lat": 37.468318,
+  "lon": -105.8759771,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11954818533,
+  "name": "Safeway",
+  "lat": 37.7747387,
+  "lon": -121.9217519,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11980099644,
+  "name": "Safeway",
+  "lat": 47.8766097,
+  "lon": -122.1871291,
+  "address": "3322 132nd Street Southeast",
+  "city": "Mill Creek",
+  "state": "WA"
+ },
+ {
+  "id": 12013039629,
+  "name": "Safeway",
+  "lat": 38.7514423,
+  "lon": -108.0509815,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12026116499,
+  "name": "Safeway",
+  "lat": 38.9440488,
+  "lon": -119.9674009,
+  "address": "1020 Johnson Boulevard",
+  "city": "South Lake Tahoe",
+  "state": "CA"
+ },
+ {
+  "id": 12026312330,
+  "name": "Safeway",
+  "lat": 38.9440977,
+  "lon": -119.9673771,
+  "address": "1020 Johnson Boulevard",
+  "city": "South Lake Tahoe",
+  "state": "CA"
+ },
+ {
+  "id": 12051453550,
+  "name": "Safeway",
+  "lat": 39.4180906,
+  "lon": -76.7765974,
+  "address": "10335 Reisterstown Road",
+  "city": "Owings Mills",
+  "state": "MD"
+ },
+ {
+  "id": 12070809074,
+  "name": "Safeway",
+  "lat": 32.9884516,
+  "lon": -96.9914662,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12074318972,
+  "name": "Safeway",
+  "lat": 33.7809327,
+  "lon": -111.9247596,
+  "address": "32515 North Scottsdale Road",
+  "city": "Scottsdale",
+  "state": "AZ"
+ },
+ {
+  "id": 12114166832,
+  "name": "Safeway",
+  "lat": 47.6682028,
+  "lon": -122.3740067,
+  "address": "1423 Northwest Market Street",
+  "city": "Seattle",
+  "state": "WA"
+ },
+ {
+  "id": 12171617032,
+  "name": "Safeway",
+  "lat": 39.9294609,
+  "lon": -122.1977116,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12177556819,
+  "name": "Safeway",
+  "lat": 47.5973863,
+  "lon": -120.645095,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12244693802,
+  "name": "Safeway",
+  "lat": 37.2463392,
+  "lon": -121.8031771,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12334543864,
+  "name": "Safeway",
+  "lat": 39.5633683,
+  "lon": -105.1076803,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12335225420,
+  "name": "Safeway",
+  "lat": 39.5790992,
+  "lon": -105.1350959,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12347147486,
+  "name": "Safeway",
+  "lat": 47.6376825,
+  "lon": -122.3565031,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12442069240,
+  "name": "Safeway",
+  "lat": 48.4377225,
+  "lon": -122.3372498,
+  "address": "315 East College Way",
+  "city": "Mount Vernon",
+  "state": "WA"
+ },
+ {
+  "id": 12572790145,
+  "name": "Safeway",
+  "lat": 35.0168246,
+  "lon": -114.5993678,
+  "address": "4823 AZ 95",
+  "city": "Fort Mohave",
+  "state": "AZ"
+ },
+ {
+  "id": 12670912964,
+  "name": "Safeway",
+  "lat": 48.1081618,
+  "lon": -122.7826718,
+  "address": "442 West Sims Way",
+  "city": "Port Townsend",
+  "state": "WA"
+ },
+ {
+  "id": 12784612504,
+  "name": "Safeway",
+  "lat": 38.8125877,
+  "lon": -104.7463136,
+  "address": "1425 South Murray Boulevard",
+  "city": "Colorado Springs",
+  "state": "CO"
+ },
+ {
+  "id": 12784728583,
+  "name": "Safeway",
+  "lat": 38.848534,
+  "lon": -104.7724274,
+  "address": "1121 North Circle Drive",
+  "city": "Colorado Springs",
+  "state": "CO"
+ },
+ {
+  "id": 12813151010,
+  "name": "Safeway",
+  "lat": 46.6030934,
+  "lon": -120.517241,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12871227702,
+  "name": "Safeway",
+  "lat": 34.1304391,
+  "lon": -109.2895294,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12977916203,
+  "name": "Safeway",
+  "lat": 47.7325803,
+  "lon": -122.1742897,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12997345457,
+  "name": "Safeway",
+  "lat": 33.3486281,
+  "lon": -111.7572921,
+  "address": "90 South Val Vista Drive",
+  "city": "Gilbert",
+  "state": "AZ"
+ },
+ {
+  "id": 13000933261,
+  "name": "Safeway",
+  "lat": 38.3923914,
+  "lon": -121.4190044,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13018108140,
+  "name": "Safeway",
+  "lat": 47.4557011,
+  "lon": -122.2825902,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13042419764,
+  "name": "Safeway",
+  "lat": 39.2807326,
+  "lon": -76.5791539,
+  "address": "2610 Boston Street",
+  "city": "Baltimore",
+  "state": "MD"
+ },
+ {
+  "id": 13146107401,
+  "name": "Safeway",
+  "lat": 35.218503,
+  "lon": -111.6216424,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13228586046,
+  "name": "Safeway",
+  "lat": 35.0168359,
+  "lon": -114.5991511,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13253545138,
+  "name": "Safeway",
+  "lat": 45.3337389,
+  "lon": -122.590172,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13253545140,
+  "name": "Safeway",
+  "lat": 45.3353142,
+  "lon": -122.5900191,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13298181800,
+  "name": "Safeway",
+  "lat": 47.4804451,
+  "lon": -122.214375,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13342007681,
+  "name": "Safeway",
+  "lat": 35.2421372,
+  "lon": -101.8302415,
+  "address": "2650 Dumas Drive",
+  "city": "Amarillo",
+  "state": "TX"
+ },
+ {
+  "id": 13350625358,
+  "name": "Safeway",
+  "lat": 35.0367891,
+  "lon": -110.6996512,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13384715317,
+  "name": "Safeway Fuel Station",
+  "lat": 33.7103104,
+  "lon": -112.2312258,
+  "address": "7970 West Happy Valley Road",
+  "city": "Peoria",
+  "state": "AZ"
+ },
+ {
+  "id": 13428082732,
+  "name": "Safeway",
+  "lat": 39.5477215,
+  "lon": -104.9939429,
+  "address": "9255 South Broadway",
+  "city": "Highlands Ranch",
+  "state": "CO"
+ },
+ {
+  "id": 13651420667,
+  "name": "Safeway",
+  "lat": 33.2645127,
+  "lon": -111.6842705,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13660287377,
+  "name": "Safeway",
+  "lat": 38.7864781,
+  "lon": -76.7941777,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13743908581,
+  "name": "Safeway",
+  "lat": 33.3952293,
+  "lon": -111.752256,
+  "address": "3622 East Southern Avenue",
+  "city": "Mesa",
+  "state": "AZ"
+ },
+ {
+  "id": 13763685962,
+  "name": "Safeway",
+  "lat": 33.2337493,
+  "lon": -111.8604637,
+  "address": "4970 South Alma School Road",
+  "city": "Chandler",
+  "state": "AZ"
+ },
+ {
+  "id": 13764581464,
+  "name": "Safeway Fuel Station",
+  "lat": 38.0085173,
+  "lon": -121.3200801,
+  "address": "6445 Pacific Avenue",
+  "city": "Stockton",
+  "state": "CA"
+ },
+ {
+  "id": 13809628771,
+  "name": "Safeway",
+  "lat": 45.52026,
+  "lon": -123.0950939,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13822377230,
+  "name": "Safeway",
+  "lat": 61.1310772,
+  "lon": -146.3489773,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13833289201,
+  "name": "Safeway",
+  "lat": 39.168021,
+  "lon": -120.1459804,
+  "address": "100 West River Road",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13917417721,
+  "name": "Safeway",
+  "lat": 38.7674146,
+  "lon": -121.3571787,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13917437480,
+  "name": "Safeway Gas station",
+  "lat": 38.7667602,
+  "lon": -121.3580437,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13918491159,
+  "name": "Safeway Fuel Station",
+  "lat": 19.6994669,
+  "lon": -155.0611436,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13979055928,
+  "name": "Safeway",
+  "lat": 47.5413291,
+  "lon": -122.0196056,
+  "address": "",
+  "city": "",
+  "state": ""
+ }
+]

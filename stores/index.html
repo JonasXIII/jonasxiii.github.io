@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chain Store Map</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <main class="stores-main">
+    <div class="stores-header">
+      <h1>Chain Store Map</h1>
+      <p class="stores-intro">Where major US retail/restaurant chains actually are - built after realizing Aldi somehow skips the entire Pacific Northwest. Real locations from OpenStreetMap, clustered like a real store locator.</p>
+    </div>
+
+    <div id="stores-layout">
+      <aside id="stores-sidebar">
+        <div class="stores-sidebar-actions">
+          <button type="button" id="select-all-btn" class="action-btn">All</button>
+          <button type="button" id="select-none-btn" class="action-btn">None</button>
+        </div>
+        <div id="chain-toggle-list"></div>
+        <p class="stores-note">Locations sourced from OpenStreetMap community data - coverage varies by chain. Run <code>scripts/fetch_store_locations.py</code> to refresh.</p>
+      </aside>
+
+      <div id="map"></div>
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="../load-header-footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -69,7 +69,7 @@ export const BOTS = [
       // Deliberately skips the (very expensive) mobility heuristic - at this
       // depth it would push move times well past what's playable. Depth is
       // Master's edge over Expert instead.
-      lookahead: 4,
+      lookahead: 5,
       alphaBeta: true,
       caching: true,
       openingBook: true,

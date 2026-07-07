@@ -1,0 +1,8147 @@
+[
+ {
+  "id": 256658654,
+  "name": "Harpers Point Kroger",
+  "lat": 39.2715172,
+  "lon": -84.3259551,
+  "address": "11390 Montgomery Road",
+  "city": "Cincinnati",
+  "state": "OH"
+ },
+ {
+  "id": 257874034,
+  "name": "Kroger Food & Drug",
+  "lat": 39.2382034,
+  "lon": -84.3506518,
+  "address": "9939 Montgomery Road",
+  "city": "Montgomery",
+  "state": "OH"
+ },
+ {
+  "id": 258513434,
+  "name": "Kroger Food & Drug",
+  "lat": 39.2272708,
+  "lon": -84.3978257,
+  "address": "4100 Hunt Road",
+  "city": "Blue Ash",
+  "state": "OH"
+ },
+ {
+  "id": 311091014,
+  "name": "Kroger",
+  "lat": 35.8937063,
+  "lon": -86.8808919,
+  "address": "3054 Columbia Avenue",
+  "city": "Franklin",
+  "state": "TN"
+ },
+ {
+  "id": 311091666,
+  "name": "Kroger",
+  "lat": 35.8940817,
+  "lon": -86.8773471,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 313098690,
+  "name": "Kroger",
+  "lat": 37.9705618,
+  "lon": -84.4986918,
+  "address": "4101 Tates Creek Centre Drive",
+  "city": "Lexington",
+  "state": "KY"
+ },
+ {
+  "id": 333329404,
+  "name": "Kroger",
+  "lat": 42.6957868,
+  "lon": -83.093339,
+  "address": "2056 25 Mile Road",
+  "city": "Shelby Charter Twp",
+  "state": "MI"
+ },
+ {
+  "id": 361165359,
+  "name": "Kroger",
+  "lat": 35.2929459,
+  "lon": -89.6739107,
+  "address": "11635 Highway 70",
+  "city": "Arlington",
+  "state": "TN"
+ },
+ {
+  "id": 366065100,
+  "name": "Kroger Pharmacy",
+  "lat": 39.2611646,
+  "lon": -84.2730712,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 370483624,
+  "name": "Kroger Pharmacy",
+  "lat": 39.2720012,
+  "lon": -84.3259145,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 454627430,
+  "name": "Kroger",
+  "lat": 42.49902,
+  "lon": -83.4186494,
+  "address": "37550 West 12 Mile Road",
+  "city": "Farmington Hills",
+  "state": "MI"
+ },
+ {
+  "id": 470063817,
+  "name": "Kroger",
+  "lat": 34.252524,
+  "lon": -84.3581277,
+  "address": "8020 Cumming Highway",
+  "city": "Canton",
+  "state": "GA"
+ },
+ {
+  "id": 477441498,
+  "name": "Kroger",
+  "lat": 34.0261044,
+  "lon": -84.4222814,
+  "address": "3162 Johnson Ferry Road",
+  "city": "Marietta",
+  "state": "GA"
+ },
+ {
+  "id": 483206094,
+  "name": "Kroger",
+  "lat": 32.2852421,
+  "lon": -90.0374279,
+  "address": "1811 West Government Street",
+  "city": "Brandon",
+  "state": "MS"
+ },
+ {
+  "id": 483206231,
+  "name": "Kroger Pharmacy",
+  "lat": 32.2851985,
+  "lon": -90.0380187,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 483444810,
+  "name": "Kroger",
+  "lat": 42.7385299,
+  "lon": -84.5072412,
+  "address": "443 Mall Court",
+  "city": "Lansing",
+  "state": "MI"
+ },
+ {
+  "id": 492014699,
+  "name": "Kroger",
+  "lat": 33.8041964,
+  "lon": -84.3363892,
+  "address": "1799 Briarcliff Road Northeast",
+  "city": "Atlanta",
+  "state": "GA"
+ },
+ {
+  "id": 501826433,
+  "name": "Kroger",
+  "lat": 35.9508016,
+  "lon": -86.816765,
+  "address": "2020 Mallory Lane",
+  "city": "Franklin",
+  "state": "TN"
+ },
+ {
+  "id": 532172484,
+  "name": "Kroger",
+  "lat": 34.0040611,
+  "lon": -84.3896219,
+  "address": "900 Marietta Highway",
+  "city": "Roswell",
+  "state": "GA"
+ },
+ {
+  "id": 533725690,
+  "name": "Kroger",
+  "lat": 33.9084559,
+  "lon": -84.6031124,
+  "address": "1690 Powder Springs Road Southwest",
+  "city": "Marietta",
+  "state": "GA"
+ },
+ {
+  "id": 550112809,
+  "name": "Kroger Fuel Center",
+  "lat": 40.0026306,
+  "lon": -83.1548227,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 550284929,
+  "name": "Kroger",
+  "lat": 33.7608748,
+  "lon": -78.9664852,
+  "address": "3735 Renee Drive",
+  "city": "Myrtle Beach",
+  "state": "SC"
+ },
+ {
+  "id": 555085205,
+  "name": "Kroger",
+  "lat": 33.7918894,
+  "lon": -84.2734511,
+  "address": "2875 North Decatur Road",
+  "city": "Decatur",
+  "state": "GA"
+ },
+ {
+  "id": 555085206,
+  "name": "Kroger",
+  "lat": 33.7926218,
+  "lon": -84.2748887,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 561182516,
+  "name": "Kroger",
+  "lat": 36.2102066,
+  "lon": -86.7317836,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 600240644,
+  "name": "Kroger",
+  "lat": 33.8429239,
+  "lon": -84.1321574,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 603167394,
+  "name": "Kroger Pharmacy",
+  "lat": 33.8409752,
+  "lon": -84.1326075,
+  "address": "1227 Rockbridge Road Southwest",
+  "city": "Stone Mountain",
+  "state": "GA"
+ },
+ {
+  "id": 612013914,
+  "name": "Kroger",
+  "lat": 40.1029665,
+  "lon": -83.1642895,
+  "address": "7100 Hospital Drive",
+  "city": "Dublin",
+  "state": "OH"
+ },
+ {
+  "id": 612014909,
+  "name": "Kroger",
+  "lat": 40.0978921,
+  "lon": -83.1225112,
+  "address": "299 West Bridge Street",
+  "city": "Dublin",
+  "state": "OH"
+ },
+ {
+  "id": 612898490,
+  "name": "Kroger",
+  "lat": 35.0500258,
+  "lon": -89.7980497,
+  "address": "7942 Winchester Road",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 669842737,
+  "name": "Kroger",
+  "lat": 37.8655422,
+  "lon": -84.5807768,
+  "address": "995 South Main Street",
+  "city": "Nicholasville",
+  "state": "KY"
+ },
+ {
+  "id": 670105759,
+  "name": "Kroger",
+  "lat": 38.2259839,
+  "lon": -85.5762533,
+  "address": "9812 Linn Station Road",
+  "city": "Louisville",
+  "state": "KY"
+ },
+ {
+  "id": 677133836,
+  "name": "Kroger",
+  "lat": 39.6508904,
+  "lon": -79.9413753,
+  "address": "500 Suncrest Town Centre Drive",
+  "city": "Morgantown",
+  "state": "WV"
+ },
+ {
+  "id": 691724920,
+  "name": "Kroger",
+  "lat": 41.0766146,
+  "lon": -85.2761499,
+  "address": "10230 Chestnut Plaza Drive",
+  "city": "Fort Wayne",
+  "state": "IN"
+ },
+ {
+  "id": 699260880,
+  "name": "Kroger",
+  "lat": 41.8092856,
+  "lon": -89.7010159,
+  "address": "2301 Locust Street",
+  "city": "Sterling",
+  "state": "IL"
+ },
+ {
+  "id": 721192039,
+  "name": "Kroger",
+  "lat": 33.6791792,
+  "lon": -84.2285433,
+  "address": "4919 Flat Shoals Parkway",
+  "city": "Decatur",
+  "state": "GA"
+ },
+ {
+  "id": 761485449,
+  "name": "Kroger",
+  "lat": 39.9550482,
+  "lon": -85.9960687,
+  "address": "9799 East 116th Street",
+  "city": "Fishers",
+  "state": "IN"
+ },
+ {
+  "id": 765043732,
+  "name": "Kroger",
+  "lat": 41.6881208,
+  "lon": -83.7248997,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 767576652,
+  "name": "Kroger",
+  "lat": 37.8286777,
+  "lon": -85.4644171,
+  "address": "102 West John Rowan Boulevard",
+  "city": "Bardstown",
+  "state": "KY"
+ },
+ {
+  "id": 767576653,
+  "name": "Kroger gas",
+  "lat": 37.8277201,
+  "lon": -85.4651681,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 779187546,
+  "name": "Kroger",
+  "lat": 33.8564522,
+  "lon": -84.3446211,
+  "address": "3871 Peachtree Road Northeast",
+  "city": "Brookhaven",
+  "state": "GA"
+ },
+ {
+  "id": 786435845,
+  "name": "Kroger",
+  "lat": 30.1242711,
+  "lon": -95.4073828,
+  "address": "2301 Rayford Road",
+  "city": "Spring",
+  "state": "TX"
+ },
+ {
+  "id": 809969851,
+  "name": "Kroger",
+  "lat": 40.4010087,
+  "lon": -82.4591221,
+  "address": "855 Coshocton Avenue",
+  "city": "Mount Vernon",
+  "state": "OH"
+ },
+ {
+  "id": 843347793,
+  "name": "Kroger",
+  "lat": 37.7507093,
+  "lon": -81.1365428,
+  "address": "151 North Beaver Lane",
+  "city": "Beaver",
+  "state": "WV"
+ },
+ {
+  "id": 864724846,
+  "name": "Kroger",
+  "lat": 41.6812632,
+  "lon": -86.1957932,
+  "address": "2330 Hickory Road",
+  "city": "Mishawaka",
+  "state": "IN"
+ },
+ {
+  "id": 867843191,
+  "name": "Kroger",
+  "lat": 33.4493839,
+  "lon": -88.8426096,
+  "address": "826 Highway 12 West",
+  "city": "Starkville",
+  "state": "MS"
+ },
+ {
+  "id": 869556964,
+  "name": "Kroger",
+  "lat": 41.3580562,
+  "lon": -86.3135467,
+  "address": "2001 North Michigan Street",
+  "city": "Plymouth",
+  "state": "IN"
+ },
+ {
+  "id": 899817522,
+  "name": "Kroger",
+  "lat": 40.0259096,
+  "lon": -82.4450863,
+  "address": "910 Hebron Road",
+  "city": "Newark",
+  "state": "OH"
+ },
+ {
+  "id": 904639979,
+  "name": "Kroger",
+  "lat": 38.0656852,
+  "lon": -78.8885064,
+  "address": "245 Arch Avenue",
+  "city": "Waynesboro",
+  "state": "VA"
+ },
+ {
+  "id": 937022488,
+  "name": "Kroger",
+  "lat": 37.2157818,
+  "lon": -80.4013172,
+  "address": "1356 South Main Street",
+  "city": "Blacksburg",
+  "state": "VA"
+ },
+ {
+  "id": 955189054,
+  "name": "Kroger",
+  "lat": 41.1000011,
+  "lon": -85.0590604,
+  "address": "6310 East State Boulevard",
+  "city": "Fort Wayne",
+  "state": "IN"
+ },
+ {
+  "id": 968657775,
+  "name": "Kroger",
+  "lat": 39.7646127,
+  "lon": -86.4016116,
+  "address": "108 North Avon Avenue",
+  "city": "Avon",
+  "state": "IN"
+ },
+ {
+  "id": 999988695,
+  "name": "Kroger",
+  "lat": 39.1876066,
+  "lon": -86.53979,
+  "address": "1825 Kinser Pike",
+  "city": "Bloomington",
+  "state": "IN"
+ },
+ {
+  "id": 1015281074,
+  "name": "Kroger",
+  "lat": 35.9427866,
+  "lon": -84.0933505,
+  "address": "9161 Middlebrook Pike",
+  "city": "Knoxville",
+  "state": "TN"
+ },
+ {
+  "id": 1044286171,
+  "name": "Kroger",
+  "lat": 33.8411461,
+  "lon": -84.1329626,
+  "address": "",
+  "city": "Stone Mountain",
+  "state": "GA"
+ },
+ {
+  "id": 1062375004,
+  "name": "Kroger",
+  "lat": 33.9552087,
+  "lon": -84.6562559,
+  "address": "3600 Dallas Highway Southwest",
+  "city": "Marietta",
+  "state": "GA"
+ },
+ {
+  "id": 1069244106,
+  "name": "Kroger",
+  "lat": 33.9957924,
+  "lon": -84.7046571,
+  "address": "1720 Mars Hill Road",
+  "city": "Acworth",
+  "state": "GA"
+ },
+ {
+  "id": 1124059000,
+  "name": "Kroger",
+  "lat": 40.1217727,
+  "lon": -83.0922646,
+  "address": "7625 Sawmill Road",
+  "city": "Dublin",
+  "state": "OH"
+ },
+ {
+  "id": 1140293230,
+  "name": "Kroger",
+  "lat": 33.7521271,
+  "lon": -84.2695837,
+  "address": "3479 Memorial Drive",
+  "city": "Decatur",
+  "state": "GA"
+ },
+ {
+  "id": 1160472635,
+  "name": "Kroger Pharmacy",
+  "lat": 43.4374779,
+  "lon": -84.0089761,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1160473194,
+  "name": "Kroger",
+  "lat": 43.4372598,
+  "lon": -84.0076457,
+  "address": "4672 State Street",
+  "city": "Saginaw",
+  "state": "MI"
+ },
+ {
+  "id": 1215311204,
+  "name": "Kroger",
+  "lat": 33.9650923,
+  "lon": -84.4091661,
+  "address": "4880 Lower Roswell Road",
+  "city": "Marietta",
+  "state": "GA"
+ },
+ {
+  "id": 1234733370,
+  "name": "Kroger",
+  "lat": 39.5844349,
+  "lon": -86.1024647,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1259091114,
+  "name": "Kroger",
+  "lat": 33.8018104,
+  "lon": -84.4125016,
+  "address": "1715 Howell Mill Road Northwest",
+  "city": "Atlanta",
+  "state": "GA"
+ },
+ {
+  "id": 1260097828,
+  "name": "Kroger",
+  "lat": 42.9922559,
+  "lon": -84.548753,
+  "address": "900 South Old US 27",
+  "city": "St. Johns",
+  "state": "MI"
+ },
+ {
+  "id": 1278852075,
+  "name": "Kroger",
+  "lat": 39.984451,
+  "lon": -82.8161623,
+  "address": "7000 East Broad Street",
+  "city": "Columbus",
+  "state": "OH"
+ },
+ {
+  "id": 1285915287,
+  "name": "Kroger",
+  "lat": 39.3772617,
+  "lon": -84.3760786,
+  "address": "",
+  "city": "Liberty Township",
+  "state": "OH"
+ },
+ {
+  "id": 1287065632,
+  "name": "Kroger",
+  "lat": 39.3606812,
+  "lon": -84.2788539,
+  "address": "5210 State Route 741",
+  "city": "Mason",
+  "state": "OH"
+ },
+ {
+  "id": 1289645448,
+  "name": "Kroger",
+  "lat": 38.4275417,
+  "lon": -81.7865033,
+  "address": "5450 Big Tyler Road",
+  "city": "Charleston",
+  "state": "WV"
+ },
+ {
+  "id": 1313732812,
+  "name": "Kroger",
+  "lat": 35.1707775,
+  "lon": -89.7951434,
+  "address": "1675 North Germantown Parkway",
+  "city": "Cordova",
+  "state": "TN"
+ },
+ {
+  "id": 1313791933,
+  "name": "Kroger Pharmacy",
+  "lat": 37.2718309,
+  "lon": -79.886771,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1313791934,
+  "name": "Kroger",
+  "lat": 37.2718056,
+  "lon": -79.8870186,
+  "address": "915 Hardy Road",
+  "city": "Vinton",
+  "state": "VA"
+ },
+ {
+  "id": 1375314517,
+  "name": "Kroger",
+  "lat": 40.5688653,
+  "lon": -89.6284955,
+  "address": "1607 Broadway Street",
+  "city": "Pekin",
+  "state": "IL"
+ },
+ {
+  "id": 1432363738,
+  "name": "Kroger",
+  "lat": 41.6297381,
+  "lon": -86.2312771,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1432363739,
+  "name": "Kroger",
+  "lat": 41.6305082,
+  "lon": -86.2320387,
+  "address": "1217 East Ireland Road",
+  "city": "South Bend",
+  "state": "IN"
+ },
+ {
+  "id": 1518942750,
+  "name": "Kroger",
+  "lat": 37.1418456,
+  "lon": -80.5806373,
+  "address": "7480 Lee Highway",
+  "city": "Radford",
+  "state": "VA"
+ },
+ {
+  "id": 1536809904,
+  "name": "Kroger Fuel",
+  "lat": 40.022319,
+  "lon": -86.1644438,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1536809917,
+  "name": "Kroger",
+  "lat": 40.0220489,
+  "lon": -86.1614542,
+  "address": "150 West 161st Street",
+  "city": "Westfield",
+  "state": "IN"
+ },
+ {
+  "id": 1661923643,
+  "name": "Fry\u2019s",
+  "lat": 33.5250689,
+  "lon": -112.204369,
+  "address": "6110 West Bethany Home Road",
+  "city": "Glendale",
+  "state": "AZ"
+ },
+ {
+  "id": 1666287488,
+  "name": "Kroger",
+  "lat": 36.1706942,
+  "lon": -86.6787276,
+  "address": "143 McGavock Pike",
+  "city": "Nashville",
+  "state": "TN"
+ },
+ {
+  "id": 1666303615,
+  "name": "Kroger",
+  "lat": 36.1711197,
+  "lon": -86.6799404,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1668790253,
+  "name": "Kroger",
+  "lat": 35.1004603,
+  "lon": -89.8410198,
+  "address": "6660 Poplar Avenue",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 1672125193,
+  "name": "Kroger",
+  "lat": 42.6950376,
+  "lon": -84.5652652,
+  "address": "921 West Holmes Street",
+  "city": "Lansing",
+  "state": "MI"
+ },
+ {
+  "id": 1675261595,
+  "name": "Kroger",
+  "lat": 39.312266,
+  "lon": -85.2150157,
+  "address": "1034 State Road 229",
+  "city": "Batesville",
+  "state": "IN"
+ },
+ {
+  "id": 1707454588,
+  "name": "Kroger",
+  "lat": 39.9507941,
+  "lon": -86.2768249,
+  "address": "5 Boone Village",
+  "city": "Zionsville",
+  "state": "IN"
+ },
+ {
+  "id": 1715657087,
+  "name": "Kroger",
+  "lat": 37.9843712,
+  "lon": -84.5895659,
+  "address": "170 Bellerive Boulevard",
+  "city": "Nicholasville",
+  "state": "KY"
+ },
+ {
+  "id": 1727290121,
+  "name": "Kroger",
+  "lat": 40.0847517,
+  "lon": -82.8967531,
+  "address": "5991 South Sunbury Road",
+  "city": "Westerville",
+  "state": "OH"
+ },
+ {
+  "id": 1744686842,
+  "name": "Kroger",
+  "lat": 36.0731105,
+  "lon": -86.9194867,
+  "address": "7087 Memphis-Bristol Highway",
+  "city": "Nashville",
+  "state": "TN"
+ },
+ {
+  "id": 1770008391,
+  "name": "Kroger",
+  "lat": 39.7995092,
+  "lon": -86.2641573,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1840735365,
+  "name": "Kroger",
+  "lat": 33.8836069,
+  "lon": -84.2484495,
+  "address": "3559 Chamblee Tucker Road",
+  "city": "Atlanta",
+  "state": "GA"
+ },
+ {
+  "id": 1855132875,
+  "name": "Kroger",
+  "lat": 35.9418214,
+  "lon": -84.0931332,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1898239055,
+  "name": "Kroger",
+  "lat": 41.6805966,
+  "lon": -86.194656,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1913008983,
+  "name": "Kroger Pharmacy",
+  "lat": 34.0010759,
+  "lon": -83.9062866,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1913009162,
+  "name": "Kroger",
+  "lat": 34.0012224,
+  "lon": -83.9058246,
+  "address": "505 Dacula Road",
+  "city": "Dacula",
+  "state": "GA"
+ },
+ {
+  "id": 1923649242,
+  "name": "Kroger",
+  "lat": 34.0049215,
+  "lon": -83.9862906,
+  "address": "3300 Hamilton Mill Road",
+  "city": "Buford",
+  "state": "GA"
+ },
+ {
+  "id": 1931415595,
+  "name": "Kroger",
+  "lat": 38.0535319,
+  "lon": -78.5006204,
+  "address": "1159 Emmet Street North",
+  "city": "Charlottesville",
+  "state": "VA"
+ },
+ {
+  "id": 1943094616,
+  "name": "Kroger Pharmacy",
+  "lat": 37.6515711,
+  "lon": -77.4018662,
+  "address": "9351 Atlee Road",
+  "city": "",
+  "state": "VA"
+ },
+ {
+  "id": 1959959531,
+  "name": "Kroger",
+  "lat": 37.365768,
+  "lon": -78.8444808,
+  "address": "7789 Richmond Highway",
+  "city": "Appomattox",
+  "state": "VA"
+ },
+ {
+  "id": 1962179601,
+  "name": "Kroger",
+  "lat": 36.123772,
+  "lon": -86.8503093,
+  "address": "4560 Harding Pike",
+  "city": "Nashville",
+  "state": "TN"
+ },
+ {
+  "id": 1966289426,
+  "name": "Kroger",
+  "lat": 34.9602934,
+  "lon": -89.8576764,
+  "address": "7427 Goodman Road",
+  "city": "Olive Branch",
+  "state": "MS"
+ },
+ {
+  "id": 1966289767,
+  "name": "Kroger Pharmacy",
+  "lat": 34.9601967,
+  "lon": -89.8576818,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 1999262387,
+  "name": "Kroger",
+  "lat": 41.7065014,
+  "lon": -83.4994304,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2075692628,
+  "name": "Kroger Pharmacy",
+  "lat": 33.2317775,
+  "lon": -97.1372477,
+  "address": "500 West University Drive",
+  "city": "Denton",
+  "state": "TX"
+ },
+ {
+  "id": 2104959349,
+  "name": "Kroger",
+  "lat": 38.4776684,
+  "lon": -82.649723,
+  "address": "711 Martin Luther King Junior Boulevard",
+  "city": "Ashland",
+  "state": "KY"
+ },
+ {
+  "id": 2126415919,
+  "name": "Kroger",
+  "lat": 42.4622198,
+  "lon": -83.8309282,
+  "address": "9700 Chilson Commons",
+  "city": "Pinckney",
+  "state": "MI"
+ },
+ {
+  "id": 2149915211,
+  "name": "Kroger",
+  "lat": 35.4406896,
+  "lon": -89.7906259,
+  "address": "11630 Highway 51 South",
+  "city": "Atoka",
+  "state": "TN"
+ },
+ {
+  "id": 2171717411,
+  "name": "Kroger",
+  "lat": 32.4749108,
+  "lon": -90.1419449,
+  "address": "115 Colony Crossing Way",
+  "city": "Madison",
+  "state": "MS"
+ },
+ {
+  "id": 2197696038,
+  "name": "Kroger Pharmacy",
+  "lat": 39.2493572,
+  "lon": -81.5574015,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2250671107,
+  "name": "Kroger",
+  "lat": 38.2454502,
+  "lon": -85.5212694,
+  "address": "12501 Shelbyville Road",
+  "city": "Middletown",
+  "state": "KY"
+ },
+ {
+  "id": 2256263584,
+  "name": "Kroger Pharmacy",
+  "lat": 40.1402616,
+  "lon": -82.990646,
+  "address": "1177 Polaris Parkway",
+  "city": "Columbus",
+  "state": ""
+ },
+ {
+  "id": 2256263585,
+  "name": "Kroger",
+  "lat": 40.1401683,
+  "lon": -82.9900362,
+  "address": "1177 Polaris Parkway",
+  "city": "Columbus",
+  "state": "OH"
+ },
+ {
+  "id": 2294940819,
+  "name": "Kroger",
+  "lat": 37.7542956,
+  "lon": -87.150648,
+  "address": "1670 Starlite Drive",
+  "city": "Owensboro",
+  "state": "KY"
+ },
+ {
+  "id": 2298852654,
+  "name": "Kroger",
+  "lat": 33.9605553,
+  "lon": -84.3011685,
+  "address": "2090 Dunwoody Club Drive",
+  "city": "Atlanta",
+  "state": "GA"
+ },
+ {
+  "id": 2300116360,
+  "name": "Kroger",
+  "lat": 40.0213704,
+  "lon": -86.902491,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2321303069,
+  "name": "Kroger",
+  "lat": 42.4394393,
+  "lon": -83.3817526,
+  "address": "33523 8 Mile Road",
+  "city": "Livonia",
+  "state": "MI"
+ },
+ {
+  "id": 2328892558,
+  "name": "Kroger",
+  "lat": 37.2559544,
+  "lon": -79.9563826,
+  "address": "614 Brandon Avenue Southwest",
+  "city": "Roanoke",
+  "state": "VA"
+ },
+ {
+  "id": 2329871967,
+  "name": "Kroger Pharmacy",
+  "lat": 38.3110411,
+  "lon": -81.5656814,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2343223463,
+  "name": "Kroger",
+  "lat": 43.6246701,
+  "lon": -84.2281854,
+  "address": "2808 Ashman Street",
+  "city": "Midland",
+  "state": "MI"
+ },
+ {
+  "id": 2348254538,
+  "name": "Kroger",
+  "lat": 40.0218816,
+  "lon": -86.9010305,
+  "address": "1660 Crawfordsville Square Drive",
+  "city": "Crawfordsville",
+  "state": "IN"
+ },
+ {
+  "id": 2349707354,
+  "name": "Kroger",
+  "lat": 37.9546527,
+  "lon": -84.536268,
+  "address": "200 East Brannon Road",
+  "city": "Nicholasville",
+  "state": "KY"
+ },
+ {
+  "id": 2349708315,
+  "name": "Kroger",
+  "lat": 37.9556664,
+  "lon": -84.5365123,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2350189079,
+  "name": "Kroger Pharmacy",
+  "lat": 39.54601,
+  "lon": -82.433891,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2351373202,
+  "name": "Kroger",
+  "lat": 35.1427555,
+  "lon": -89.7941425,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2351373211,
+  "name": "Kroger",
+  "lat": 35.143396,
+  "lon": -89.7928604,
+  "address": "676 North Germantown Parkway",
+  "city": "Cordova",
+  "state": "TN"
+ },
+ {
+  "id": 2352859060,
+  "name": "Kroger",
+  "lat": 42.3045371,
+  "lon": -83.7089245,
+  "address": "2641 Plymouth Road",
+  "city": "Ann Arbor",
+  "state": "MI"
+ },
+ {
+  "id": 2364331538,
+  "name": "Kroger",
+  "lat": 41.4529593,
+  "lon": -85.2716146,
+  "address": "310 West North Street",
+  "city": "Kendallville",
+  "state": "IN"
+ },
+ {
+  "id": 2368813086,
+  "name": "Kroger",
+  "lat": 37.345499,
+  "lon": -79.954597,
+  "address": "7223 Williamson Road",
+  "city": "Roanoke",
+  "state": "VA"
+ },
+ {
+  "id": 2368815571,
+  "name": "Kroger Pharmacy",
+  "lat": 37.345293,
+  "lon": -79.9549768,
+  "address": "7223 Williamson Road",
+  "city": "Roanoke",
+  "state": "VA"
+ },
+ {
+  "id": 2370784288,
+  "name": "Kroger",
+  "lat": 37.2561676,
+  "lon": -79.9586178,
+  "address": "698 Brandon Avenue Southwest",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2372851429,
+  "name": "Kroger",
+  "lat": 39.2600753,
+  "lon": -84.4712447,
+  "address": "10595 Springfield Pike",
+  "city": "Cincinnati",
+  "state": "OH"
+ },
+ {
+  "id": 2383237294,
+  "name": "Kroger",
+  "lat": 37.788405,
+  "lon": -89.029591,
+  "address": "1609 South Park Avenue",
+  "city": "Herrin",
+  "state": "IL"
+ },
+ {
+  "id": 2383238894,
+  "name": "Kroger Fuel Center",
+  "lat": 37.788476,
+  "lon": -89.028237,
+  "address": "1609 South Park Avenue",
+  "city": "Herrin",
+  "state": ""
+ },
+ {
+  "id": 2387746515,
+  "name": "Kroger",
+  "lat": 42.6349382,
+  "lon": -83.7542035,
+  "address": "10059 East Highland Road",
+  "city": "Howell",
+  "state": "MI"
+ },
+ {
+  "id": 2399877583,
+  "name": "Kroger",
+  "lat": 41.2393476,
+  "lon": -85.8267528,
+  "address": "2211 East Center Street",
+  "city": "Warsaw",
+  "state": "IN"
+ },
+ {
+  "id": 2404154467,
+  "name": "Kroger",
+  "lat": 38.3119932,
+  "lon": -81.5656995,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2406057241,
+  "name": "Kroger",
+  "lat": 35.8728183,
+  "lon": -86.3523218,
+  "address": "2050 Lascassas Pike",
+  "city": "Murfreesboro",
+  "state": "TN"
+ },
+ {
+  "id": 2410245864,
+  "name": "Kroger",
+  "lat": 42.5930168,
+  "lon": -83.1482562,
+  "address": "31 East Long Lake Road",
+  "city": "Troy",
+  "state": "MI"
+ },
+ {
+  "id": 2411322182,
+  "name": "Kroger",
+  "lat": 42.621102,
+  "lon": -83.1720733,
+  "address": "2105 West South Boulevard",
+  "city": "Troy",
+  "state": "MI"
+ },
+ {
+  "id": 2411324140,
+  "name": "Kroger",
+  "lat": 42.6216837,
+  "lon": -83.1707607,
+  "address": "2105 West South Boulevard",
+  "city": "Troy",
+  "state": "MI"
+ },
+ {
+  "id": 2423614753,
+  "name": "Kroger",
+  "lat": 41.6715225,
+  "lon": -86.3111668,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2429341683,
+  "name": "Kroger Pharmacy",
+  "lat": 37.3750504,
+  "lon": -79.1839341,
+  "address": "2012 Wards Road",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2437971946,
+  "name": "Kroger",
+  "lat": 33.6435038,
+  "lon": -84.0155492,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2440393606,
+  "name": "Kroger",
+  "lat": 37.1180725,
+  "lon": -79.7190008,
+  "address": "80 Westlake Road",
+  "city": "Hardy",
+  "state": "VA"
+ },
+ {
+  "id": 2443373402,
+  "name": "Kroger",
+  "lat": 32.467397,
+  "lon": -83.7413861,
+  "address": "1367 Sam Nunn Boulevard",
+  "city": "Perry",
+  "state": "GA"
+ },
+ {
+  "id": 2445256028,
+  "name": "Kroger",
+  "lat": 33.5492222,
+  "lon": -84.015417,
+  "address": "5341 Highway 20 South",
+  "city": "Covington",
+  "state": "GA"
+ },
+ {
+  "id": 2445256030,
+  "name": "Kroger",
+  "lat": 33.5493872,
+  "lon": -84.0167095,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2456810799,
+  "name": "Kroger",
+  "lat": 40.6203876,
+  "lon": -89.4674064,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2480503314,
+  "name": "Kroger",
+  "lat": 39.712021,
+  "lon": -86.3755499,
+  "address": "1930 East Main Street",
+  "city": "Plainfield",
+  "state": "IN"
+ },
+ {
+  "id": 2496135615,
+  "name": "Kroger",
+  "lat": 37.9791425,
+  "lon": -84.5500216,
+  "address": "3650 Boston Road",
+  "city": "Lexington",
+  "state": "KY"
+ },
+ {
+  "id": 2496175091,
+  "name": "Kroger",
+  "lat": 38.2907516,
+  "lon": -85.5085397,
+  "address": "12450 La Grange Road",
+  "city": "Louisville",
+  "state": "KY"
+ },
+ {
+  "id": 2501738296,
+  "name": "Kroger",
+  "lat": 36.0496432,
+  "lon": -86.6471429,
+  "address": "5319 Mount View Road",
+  "city": "Antioch",
+  "state": "TN"
+ },
+ {
+  "id": 2502569406,
+  "name": "Kroger",
+  "lat": 39.912585,
+  "lon": -86.2050547,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2502972759,
+  "name": "Kroger",
+  "lat": 39.913798,
+  "lon": -86.205519,
+  "address": "2550 Lake Circle Drive",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 2504322461,
+  "name": "Kroger",
+  "lat": 36.1754414,
+  "lon": -86.7932605,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2508346043,
+  "name": "Kroger",
+  "lat": 38.6255768,
+  "lon": -83.7911139,
+  "address": "381 Market Square Drive",
+  "city": "Maysville",
+  "state": "KY"
+ },
+ {
+  "id": 2512391616,
+  "name": "Kroger Pharmacy",
+  "lat": 33.5532918,
+  "lon": -85.0743569,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2583092094,
+  "name": "Kroger Pharmacy",
+  "lat": 37.7349292,
+  "lon": -85.8881117,
+  "address": "111 Towne Drive",
+  "city": "Elizabethtown",
+  "state": "KY"
+ },
+ {
+  "id": 2613023483,
+  "name": "Kroger Pharmacy",
+  "lat": 39.2899567,
+  "lon": -84.5244989,
+  "address": "1212 West Kemper Road",
+  "city": "Forest Park",
+  "state": "OH"
+ },
+ {
+  "id": 2613030988,
+  "name": "Kroger",
+  "lat": 39.2899869,
+  "lon": -84.5250195,
+  "address": "1212 West Kemper Road",
+  "city": "Cincinnati",
+  "state": "OH"
+ },
+ {
+  "id": 2628903478,
+  "name": "Kroger",
+  "lat": 37.1074356,
+  "lon": -84.0892725,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2631550908,
+  "name": "Kroger",
+  "lat": 35.7413459,
+  "lon": -86.8918587,
+  "address": "4900 Port Royal Road",
+  "city": "Spring Hill",
+  "state": "TN"
+ },
+ {
+  "id": 2636158769,
+  "name": "Kroger Fuel Center",
+  "lat": 38.0372263,
+  "lon": -84.5515866,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2639357947,
+  "name": "Kroger",
+  "lat": 38.9186683,
+  "lon": -79.843823,
+  "address": "450 11th Street",
+  "city": "Elkins",
+  "state": "WV"
+ },
+ {
+  "id": 2639357948,
+  "name": "Kroger Gas",
+  "lat": 38.917713,
+  "lon": -79.8434354,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2645962380,
+  "name": "Kroger",
+  "lat": 37.7682688,
+  "lon": -80.467048,
+  "address": "178 Red Oaks Shopping Center",
+  "city": "Ronceverte",
+  "state": "WV"
+ },
+ {
+  "id": 2653007053,
+  "name": "Kroger",
+  "lat": 36.7147888,
+  "lon": -76.2374897,
+  "address": "237 Battlefield Boulevard South",
+  "city": "Chesapeake",
+  "state": "VA"
+ },
+ {
+  "id": 2657195976,
+  "name": "Kroger",
+  "lat": 39.958549,
+  "lon": -86.0372942,
+  "address": "7272 Fishers Crossing Drive",
+  "city": "Fishers",
+  "state": "IN"
+ },
+ {
+  "id": 2669936787,
+  "name": "Kroger",
+  "lat": 33.9033062,
+  "lon": -84.675167,
+  "address": "4150 Macland Road",
+  "city": "Powder Springs",
+  "state": "GA"
+ },
+ {
+  "id": 2694725153,
+  "name": "Kroger",
+  "lat": 35.9399369,
+  "lon": -83.9848834,
+  "address": "4918 Kingston Pike",
+  "city": "Knoxville",
+  "state": "TN"
+ },
+ {
+  "id": 2696977527,
+  "name": "Kroger",
+  "lat": 42.483635,
+  "lon": -83.337303,
+  "address": "25780 Middlebelt Road",
+  "city": "Farmington Hills",
+  "state": "MI"
+ },
+ {
+  "id": 2699368507,
+  "name": "Kroger",
+  "lat": 29.7896319,
+  "lon": -95.4112065,
+  "address": "1035 North Shepherd Drive",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 2738855850,
+  "name": "Kroger",
+  "lat": 39.8751703,
+  "lon": -86.1193017,
+  "address": "2629 East 65th Street",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 2753103110,
+  "name": "Kroger",
+  "lat": 40.0121613,
+  "lon": -82.8648777,
+  "address": "300 South Hamiltion Road",
+  "city": "Gahanna",
+  "state": "OH"
+ },
+ {
+  "id": 2766965442,
+  "name": "Kroger",
+  "lat": 39.1030344,
+  "lon": -84.2712275,
+  "address": "4530 Eastgate Boulevard",
+  "city": "Cincinnati",
+  "state": "OH"
+ },
+ {
+  "id": 2766999415,
+  "name": "Kroger",
+  "lat": 37.9619052,
+  "lon": -84.4795334,
+  "address": "4750 Hartland Parkway",
+  "city": "Lexington",
+  "state": "KY"
+ },
+ {
+  "id": 2796596190,
+  "name": "Kroger",
+  "lat": 35.1452795,
+  "lon": -90.0147635,
+  "address": "1366 Poplar Avenue",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 2796618674,
+  "name": "Kroger",
+  "lat": 35.0934645,
+  "lon": -90.0571154,
+  "address": "1977 South Third Street",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 2796647077,
+  "name": "Kroger Gas (Shell)",
+  "lat": 35.1315482,
+  "lon": -89.9483383,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2809305840,
+  "name": "Kroger",
+  "lat": 30.0218444,
+  "lon": -95.4340646,
+  "address": "360 Cypress Creek Parkway",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 2814709689,
+  "name": "Kroger",
+  "lat": 32.6105188,
+  "lon": -85.4634465,
+  "address": "300 North Dean Road",
+  "city": "Auburn",
+  "state": "AL"
+ },
+ {
+  "id": 2884368057,
+  "name": "Kroger",
+  "lat": 36.7862562,
+  "lon": -90.4289034,
+  "address": "2770 North Westwood Boulevard",
+  "city": "Poplar Bluff",
+  "state": "MO"
+ },
+ {
+  "id": 2887695925,
+  "name": "Kroger",
+  "lat": 37.317744,
+  "lon": -79.9640916,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2887695926,
+  "name": "Kroger",
+  "lat": 37.3171642,
+  "lon": -79.9651956,
+  "address": "5150 Rutgers Avenue Northwest",
+  "city": "Roanoke",
+  "state": "VA"
+ },
+ {
+  "id": 2887726761,
+  "name": "Kroger Pharmacy",
+  "lat": 37.3179778,
+  "lon": -79.9653855,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2887922970,
+  "name": "Kroger Fuel",
+  "lat": 37.3241092,
+  "lon": -79.9935948,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2894912680,
+  "name": "Kroger",
+  "lat": 42.6542961,
+  "lon": -84.5342209,
+  "address": "2495 Cedar Street",
+  "city": "Holt",
+  "state": "MI"
+ },
+ {
+  "id": 2911618936,
+  "name": "Kroger Gas Station",
+  "lat": 42.6544273,
+  "lon": -84.5332062,
+  "address": "2495 Cedar Street",
+  "city": "Holt",
+  "state": "MI"
+ },
+ {
+  "id": 2915431601,
+  "name": "Kroger",
+  "lat": 32.878193,
+  "lon": -83.760293,
+  "address": "5928 Zebulon Road",
+  "city": "Macon",
+  "state": "GA"
+ },
+ {
+  "id": 2916801286,
+  "name": "Kroger",
+  "lat": 42.4326871,
+  "lon": -83.6474364,
+  "address": "20730 Pontiac Trail",
+  "city": "South Lyon",
+  "state": "MI"
+ },
+ {
+  "id": 2931564708,
+  "name": "Kroger",
+  "lat": 35.7905856,
+  "lon": -86.4022332,
+  "address": "2946 south Church Street",
+  "city": "Murfreesboro",
+  "state": "TN"
+ },
+ {
+  "id": 2932412106,
+  "name": "Kroger",
+  "lat": 38.5014685,
+  "lon": -82.6816586,
+  "address": "370 Diederich Boulevard",
+  "city": "Ashland",
+  "state": "KY"
+ },
+ {
+  "id": 2938250533,
+  "name": "Kroger",
+  "lat": 34.0961549,
+  "lon": -84.2779746,
+  "address": "12870 Highway 9 North",
+  "city": "Alpharetta",
+  "state": "GA"
+ },
+ {
+  "id": 2944855432,
+  "name": "Kroger Liquor",
+  "lat": 39.0266734,
+  "lon": -84.4521189,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2953470048,
+  "name": "Kroger",
+  "lat": 37.3127633,
+  "lon": -79.8817371,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 2953470049,
+  "name": "Kroger",
+  "lat": 37.3130598,
+  "lon": -79.8803043,
+  "address": "3970 Valley Gateway Boulevard",
+  "city": "Roanoke",
+  "state": "VA"
+ },
+ {
+  "id": 2967602041,
+  "name": "Kroger",
+  "lat": 42.4321329,
+  "lon": -83.6472825,
+  "address": "20730 Pontiac Trail",
+  "city": "South Lyon",
+  "state": "MI"
+ },
+ {
+  "id": 2977982831,
+  "name": "Kroger",
+  "lat": 37.2330829,
+  "lon": -79.9763684,
+  "address": "4488 Electric Road",
+  "city": "Roanoke",
+  "state": "VA"
+ },
+ {
+  "id": 2983969985,
+  "name": "Kroger",
+  "lat": 35.878013,
+  "lon": -83.7738807,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3002763903,
+  "name": "Kroger",
+  "lat": 35.886503,
+  "lon": -86.384533,
+  "address": "2325 Memorial Boulevard",
+  "city": "Murfreesboro",
+  "state": "TN"
+ },
+ {
+  "id": 3023100919,
+  "name": "Kroger",
+  "lat": 33.8181431,
+  "lon": -84.8138921,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3023108613,
+  "name": "Kroger",
+  "lat": 33.8190523,
+  "lon": -84.8124866,
+  "address": "4815 Ridge Road",
+  "city": "Douglasville",
+  "state": "GA"
+ },
+ {
+  "id": 3023695318,
+  "name": "Kroger",
+  "lat": 37.5801603,
+  "lon": -77.499168,
+  "address": "1601 Willow Lawn Drive",
+  "city": "Richmond",
+  "state": "VA"
+ },
+ {
+  "id": 3075917448,
+  "name": "Kroger",
+  "lat": 37.2728312,
+  "lon": -79.8875019,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3085304630,
+  "name": "Kroger Pharmacy",
+  "lat": 37.5259764,
+  "lon": -77.609048,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3085345634,
+  "name": "Kroger Pharmacy",
+  "lat": 37.6063478,
+  "lon": -77.5921193,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3085403881,
+  "name": "Kroger Pharmacy",
+  "lat": 37.3516905,
+  "lon": -77.4143997,
+  "address": "12726 Route 1",
+  "city": "Chester",
+  "state": "VA"
+ },
+ {
+  "id": 3086513690,
+  "name": "Kroger Pharmacy",
+  "lat": 37.5198213,
+  "lon": -77.3523255,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3086590105,
+  "name": "Kroger Pharmacy",
+  "lat": 37.4618656,
+  "lon": -77.5489372,
+  "address": "2821 Hicks Road",
+  "city": "Richmond",
+  "state": "VA"
+ },
+ {
+  "id": 3086752608,
+  "name": "Kroger",
+  "lat": 37.3647831,
+  "lon": -78.8444201,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3086769543,
+  "name": "Kroger",
+  "lat": 38.0891307,
+  "lon": -78.4740429,
+  "address": "1980 Rio Hill Center",
+  "city": "Charlottesville",
+  "state": "VA"
+ },
+ {
+  "id": 3086769545,
+  "name": "Kroger",
+  "lat": 38.0882949,
+  "lon": -78.4731596,
+  "address": "1994 Rio Hill Center",
+  "city": "",
+  "state": "VA"
+ },
+ {
+  "id": 3090780796,
+  "name": "Kroger",
+  "lat": 34.1077064,
+  "lon": -83.8740074,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3095904513,
+  "name": "Kroger Pharmacy",
+  "lat": 41.0221705,
+  "lon": -83.6488305,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3128685275,
+  "name": "Kroger",
+  "lat": 42.4391889,
+  "lon": -82.9069973,
+  "address": "20422 Mack Avenue",
+  "city": "Grosse Pointe Woods",
+  "state": "MI"
+ },
+ {
+  "id": 3128700531,
+  "name": "Kroger",
+  "lat": 37.0129027,
+  "lon": -79.8666616,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3128700555,
+  "name": "Kroger",
+  "lat": 37.0114678,
+  "lon": -79.8658263,
+  "address": "400 Old Franklin Turnpike",
+  "city": "Rocky Mount",
+  "state": "VA"
+ },
+ {
+  "id": 3136306513,
+  "name": "Kroger",
+  "lat": 32.3340068,
+  "lon": -90.3242174,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3139499047,
+  "name": "Kroger",
+  "lat": 39.3111632,
+  "lon": -84.2748941,
+  "address": "2900 West US Highway 22 and 3",
+  "city": "Maineville",
+  "state": "OH"
+ },
+ {
+  "id": 3157336520,
+  "name": "Kroger",
+  "lat": 36.7164598,
+  "lon": -76.1879244,
+  "address": "1464 Mount Pleasant Road",
+  "city": "Chesapeake",
+  "state": "VA"
+ },
+ {
+  "id": 3160051908,
+  "name": "Kroger",
+  "lat": 38.1390955,
+  "lon": -79.0674369,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3169626288,
+  "name": "Kroger",
+  "lat": 37.8455524,
+  "lon": -83.8619303,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3203992082,
+  "name": "Kroger",
+  "lat": 30.1145981,
+  "lon": -95.55271,
+  "address": "24350 Kuykendahl Road",
+  "city": "Tomball",
+  "state": "TX"
+ },
+ {
+  "id": 3204058605,
+  "name": "Kroger",
+  "lat": 29.7711432,
+  "lon": -95.599194,
+  "address": "14344 Memorial Drive",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 3204079719,
+  "name": "Kroger",
+  "lat": 30.1852759,
+  "lon": -95.4903374,
+  "address": "4747 Research Forest Drive",
+  "city": "The Woodlands",
+  "state": "TX"
+ },
+ {
+  "id": 3212409742,
+  "name": "Kroger",
+  "lat": 42.3396979,
+  "lon": -83.3321149,
+  "address": "7135 Middlebelt Road",
+  "city": "Garden City",
+  "state": "MI"
+ },
+ {
+  "id": 3221148132,
+  "name": "Kroger",
+  "lat": 38.4264728,
+  "lon": -81.7854187,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3221151676,
+  "name": "Kroger",
+  "lat": 43.5944432,
+  "lon": -83.8463234,
+  "address": "2910 Center Avenue",
+  "city": "Essexveille",
+  "state": "MI"
+ },
+ {
+  "id": 3236942261,
+  "name": "Kroger",
+  "lat": 30.422306,
+  "lon": -95.494508,
+  "address": "12605 Interstate 45 North",
+  "city": "Willis",
+  "state": "TX"
+ },
+ {
+  "id": 3236971449,
+  "name": "Kroger",
+  "lat": 35.8773729,
+  "lon": -83.7743017,
+  "address": "10721 Chapman Highway",
+  "city": "Seymour",
+  "state": "TN"
+ },
+ {
+  "id": 3245378144,
+  "name": "Kroger",
+  "lat": 39.9076163,
+  "lon": -82.7778619,
+  "address": "Hill Road North",
+  "city": "Pickerington",
+  "state": "OH"
+ },
+ {
+  "id": 3333341197,
+  "name": "Kroger",
+  "lat": 40.6517634,
+  "lon": -83.5933278,
+  "address": "981 East Columbus Street",
+  "city": "Kenton",
+  "state": "OH"
+ },
+ {
+  "id": 3344105840,
+  "name": "Kroger Pharmacy",
+  "lat": 42.6590311,
+  "lon": -83.3866995,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3364316701,
+  "name": "Kroger",
+  "lat": 34.3632882,
+  "lon": -89.5038007,
+  "address": "2013 University Avenue",
+  "city": "Oxford",
+  "state": "MS"
+ },
+ {
+  "id": 3377390832,
+  "name": "Kroger",
+  "lat": 33.6868738,
+  "lon": -84.4878879,
+  "address": "3030 Headland Drive Southwest",
+  "city": "Atlanta",
+  "state": "GA"
+ },
+ {
+  "id": 3381000558,
+  "name": "Kroger",
+  "lat": 33.7773645,
+  "lon": -78.7919628,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3390498259,
+  "name": "Kroger",
+  "lat": 29.558593,
+  "lon": -95.1247749,
+  "address": "16400 El Camino Real",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 3395426167,
+  "name": "Kroger",
+  "lat": 38.3399963,
+  "lon": -85.6216335,
+  "address": "5929 Timber Ridge Drive",
+  "city": "Prospect",
+  "state": "KY"
+ },
+ {
+  "id": 3402773378,
+  "name": "Kroger",
+  "lat": 41.6867107,
+  "lon": -83.7242649,
+  "address": "7545 Sylvania Avenue",
+  "city": "Sylvania",
+  "state": "OH"
+ },
+ {
+  "id": 3411435737,
+  "name": "Kroger",
+  "lat": 38.226351,
+  "lon": -85.7305826,
+  "address": "1247 Goss Avenue",
+  "city": "Louisville",
+  "state": "KY"
+ },
+ {
+  "id": 3429583962,
+  "name": "Kroger Pharmacy",
+  "lat": 40.1090372,
+  "lon": -83.0182873,
+  "address": "60 North High Street",
+  "city": "Worthington",
+  "state": ""
+ },
+ {
+  "id": 3442311720,
+  "name": "Kroger",
+  "lat": 38.2585321,
+  "lon": -85.6369239,
+  "address": "291 North Hubbards Lane",
+  "city": "St Matthews",
+  "state": "KY"
+ },
+ {
+  "id": 3446758839,
+  "name": "Kroger",
+  "lat": 38.2126492,
+  "lon": -85.5919225,
+  "address": "9080 Taylorsville Road",
+  "city": "Jeffersontown",
+  "state": "KY"
+ },
+ {
+  "id": 3447726996,
+  "name": "Kroger",
+  "lat": 38.2174414,
+  "lon": -85.6265396,
+  "address": "3039 Breckenridge Lane",
+  "city": "Louisville",
+  "state": "KY"
+ },
+ {
+  "id": 3452858045,
+  "name": "Kroger",
+  "lat": 38.1397641,
+  "lon": -85.6788921,
+  "address": "4501 Outer Loop",
+  "city": "Louisville",
+  "state": "KY"
+ },
+ {
+  "id": 3499562037,
+  "name": "Kroger",
+  "lat": 29.9014563,
+  "lon": -95.6315771,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3508846046,
+  "name": "Kroger",
+  "lat": 41.58869,
+  "lon": -85.8448913,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3514805140,
+  "name": "Kroger",
+  "lat": 41.5875258,
+  "lon": -85.8445746,
+  "address": "209 North Chicago Avenue",
+  "city": "Goshen",
+  "state": "IN"
+ },
+ {
+  "id": 3599609181,
+  "name": "Kroger",
+  "lat": 42.4994622,
+  "lon": -83.0832872,
+  "address": "28250 Dequindre Road",
+  "city": "Warren",
+  "state": "MI"
+ },
+ {
+  "id": 3647264494,
+  "name": "Kroger",
+  "lat": 40.1034623,
+  "lon": -83.7200891,
+  "address": "1637 East US Highway 36",
+  "city": "Urbana",
+  "state": "OH"
+ },
+ {
+  "id": 3686242869,
+  "name": "Kroger",
+  "lat": 36.1059094,
+  "lon": -86.8187064,
+  "address": "2131 Abbott Martin Road",
+  "city": "Nashville",
+  "state": "TN"
+ },
+ {
+  "id": 3736556928,
+  "name": "Kroger",
+  "lat": 33.5031643,
+  "lon": -84.2441819,
+  "address": "1750 Hudson Bridge Road",
+  "city": "Stockbridge",
+  "state": "GA"
+ },
+ {
+  "id": 3755266369,
+  "name": "Kroger",
+  "lat": 29.5779758,
+  "lon": -95.1205712,
+  "address": "1950 El Dorado Boulevard",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 3760438915,
+  "name": "Kroger",
+  "lat": 34.0932345,
+  "lon": -83.9376013,
+  "address": "3300 Hamilton Mill Road",
+  "city": "Buford",
+  "state": "GA"
+ },
+ {
+  "id": 3760671571,
+  "name": "Kroger",
+  "lat": 33.4392654,
+  "lon": -84.5884403,
+  "address": "1017 North Peachtree Parkway",
+  "city": "Peachtree City",
+  "state": "GA"
+ },
+ {
+  "id": 3761012366,
+  "name": "Kroger",
+  "lat": 41.3655583,
+  "lon": -85.0728535,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3761012368,
+  "name": "Kroger",
+  "lat": 41.3645701,
+  "lon": -85.072416,
+  "address": "1005 West 7th Street",
+  "city": "Auburn",
+  "state": "IN"
+ },
+ {
+  "id": 3789379512,
+  "name": "Fry's Fuel",
+  "lat": 32.4246564,
+  "lon": -111.0443544,
+  "address": "",
+  "city": "Oro Valley",
+  "state": ""
+ },
+ {
+  "id": 3814424823,
+  "name": "Fry's",
+  "lat": 32.3495761,
+  "lon": -111.100893,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3903671109,
+  "name": "Kroger",
+  "lat": 30.0666789,
+  "lon": -95.1871315,
+  "address": "3410 Northpark Drive",
+  "city": "Kingwood",
+  "state": "TX"
+ },
+ {
+  "id": 3906572119,
+  "name": "Kroger",
+  "lat": 34.0903165,
+  "lon": -84.5852735,
+  "address": "6199 Alabama Road",
+  "city": "Acworth",
+  "state": "GA"
+ },
+ {
+  "id": 3925626773,
+  "name": "Kroger",
+  "lat": 34.3141848,
+  "lon": -83.7968765,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 3925626774,
+  "name": "Kroger",
+  "lat": 34.3153941,
+  "lon": -83.7982006,
+  "address": "1931 Jesse Jewell Parkway",
+  "city": "Gainesville",
+  "state": "GA"
+ },
+ {
+  "id": 3975070139,
+  "name": "Kroger",
+  "lat": 39.248633,
+  "lon": -81.5543796,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4008637330,
+  "name": "Kroger",
+  "lat": 33.8973767,
+  "lon": -83.9619281,
+  "address": "1911 Grayson Highway",
+  "city": "Grayson",
+  "state": "GA"
+ },
+ {
+  "id": 4053865636,
+  "name": "Kroger",
+  "lat": 38.0654867,
+  "lon": -84.5270464,
+  "address": "1600 Leestown Road",
+  "city": "Lexington",
+  "state": "KY"
+ },
+ {
+  "id": 4057698151,
+  "name": "Kroger",
+  "lat": 37.9968015,
+  "lon": -84.4788801,
+  "address": "1060 Chinoe Road",
+  "city": "Lexington",
+  "state": "KY"
+ },
+ {
+  "id": 4060824829,
+  "name": "Kroger Pharmacy",
+  "lat": 37.9704257,
+  "lon": -84.4987357,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4225680474,
+  "name": "Kroger",
+  "lat": 42.5005475,
+  "lon": -83.2407354,
+  "address": "19855 West 12 Mile Road",
+  "city": "Southfield",
+  "state": "MI"
+ },
+ {
+  "id": 4227549173,
+  "name": "Kroger",
+  "lat": 29.5636313,
+  "lon": -95.5655009,
+  "address": "6200 Alvin Sugarland Road",
+  "city": "Missouri City",
+  "state": "TX"
+ },
+ {
+  "id": 4245392553,
+  "name": "Kroger Pharmacy",
+  "lat": 39.9926803,
+  "lon": -83.0428878,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4265507958,
+  "name": "Kroger Fuel Center",
+  "lat": 32.8979763,
+  "lon": -83.6899232,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4300023989,
+  "name": "Kroger Fuel Center",
+  "lat": 32.5934238,
+  "lon": -83.6255976,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4300023992,
+  "name": "Kroger",
+  "lat": 32.5922232,
+  "lon": -83.6256032,
+  "address": "115 Russell Parkway",
+  "city": "Warner Robins",
+  "state": "GA"
+ },
+ {
+  "id": 4334632490,
+  "name": "Kroger",
+  "lat": 40.3744023,
+  "lon": -80.7038629,
+  "address": "858 Main Street",
+  "city": "Wintersville",
+  "state": "OH"
+ },
+ {
+  "id": 4367120391,
+  "name": "Kroger",
+  "lat": 34.1966707,
+  "lon": -83.8574129,
+  "address": "4025 Winder Highway",
+  "city": "Flowery Branch",
+  "state": "GA"
+ },
+ {
+  "id": 4381096302,
+  "name": "Kroger",
+  "lat": 39.5077469,
+  "lon": -87.3839953,
+  "address": "2140 Fort Harrison Road",
+  "city": "Terre Haute",
+  "state": "IN"
+ },
+ {
+  "id": 4417072023,
+  "name": "Kroger",
+  "lat": 32.2843912,
+  "lon": -90.0380086,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4463770310,
+  "name": "Kroger",
+  "lat": 42.5740658,
+  "lon": -83.3610431,
+  "address": "4395 Orchard Lake Road",
+  "city": "West Bloomfield Township",
+  "state": "MI"
+ },
+ {
+  "id": 4484885116,
+  "name": "Kroger",
+  "lat": 29.6535678,
+  "lon": -95.0321936,
+  "address": "1300 West Fairmont Parkway",
+  "city": "La Porte",
+  "state": "TX"
+ },
+ {
+  "id": 4493293173,
+  "name": "Kroger",
+  "lat": 29.6526747,
+  "lon": -95.0320005,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4509836012,
+  "name": "Kroger",
+  "lat": 42.4629695,
+  "lon": -83.8340459,
+  "address": "9700 Chilson Commerce Circle",
+  "city": "Pickney",
+  "state": "MI"
+ },
+ {
+  "id": 4526911128,
+  "name": "Kroger gas station",
+  "lat": 37.7325756,
+  "lon": -84.275202,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4527398296,
+  "name": "Kroger",
+  "lat": 34.005503,
+  "lon": -84.1732337,
+  "address": "3455 Peachtree Industrial Boulevard",
+  "city": "Duluth",
+  "state": "GA"
+ },
+ {
+  "id": 4540572947,
+  "name": "Kroger",
+  "lat": 38.4317309,
+  "lon": -78.8408745,
+  "address": "1790 East Market Street",
+  "city": "Harrisonburg",
+  "state": "VA"
+ },
+ {
+  "id": 4545126035,
+  "name": "Kroger",
+  "lat": 29.4501012,
+  "lon": -95.0795849,
+  "address": "3410 Gulf Freeway",
+  "city": "Dickinson",
+  "state": "TX"
+ },
+ {
+  "id": 4572131092,
+  "name": "Kroger",
+  "lat": 32.0451836,
+  "lon": -81.0668899,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4635167146,
+  "name": "Kroger",
+  "lat": 40.7204059,
+  "lon": -85.1673081,
+  "address": "1555 South Harrison Plaza",
+  "city": "Bluffton",
+  "state": "IN"
+ },
+ {
+  "id": 4635983236,
+  "name": "Kroger",
+  "lat": 36.0328712,
+  "lon": -83.9316857,
+  "address": "5201 North Broadway",
+  "city": "Knoxville",
+  "state": "TN"
+ },
+ {
+  "id": 4635993176,
+  "name": "Kroger",
+  "lat": 35.3852501,
+  "lon": -86.2359576,
+  "address": "1905 North Jackson Street",
+  "city": "Tullahoma",
+  "state": "TN"
+ },
+ {
+  "id": 4641413262,
+  "name": "Kroger",
+  "lat": 36.088452,
+  "lon": -86.6475744,
+  "address": "2284 Murfreesboro Pike",
+  "city": "Nashville",
+  "state": "TN"
+ },
+ {
+  "id": 4641552437,
+  "name": "Kroger",
+  "lat": 32.9085961,
+  "lon": -96.960643,
+  "address": "7505 North MacArthur Boulevard",
+  "city": "Irving",
+  "state": "TX"
+ },
+ {
+  "id": 4670342289,
+  "name": "Kroger",
+  "lat": 36.4884931,
+  "lon": -86.8633422,
+  "address": "2600 Memorial Boulevard",
+  "city": "Springfield",
+  "state": "TN"
+ },
+ {
+  "id": 4688969860,
+  "name": "Kroger",
+  "lat": 33.8898971,
+  "lon": -84.3832706,
+  "address": "4920 Roswell Road",
+  "city": "Sandy Springs",
+  "state": "GA"
+ },
+ {
+  "id": 4691554184,
+  "name": "Kroger",
+  "lat": 32.3423016,
+  "lon": -90.0637889,
+  "address": "110 Old Fannin Road",
+  "city": "Flowood",
+  "state": "MS"
+ },
+ {
+  "id": 4715762561,
+  "name": "Kroger",
+  "lat": 36.9439066,
+  "lon": -86.4232453,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4728028973,
+  "name": "Kroger",
+  "lat": 34.7079161,
+  "lon": -86.7482143,
+  "address": "4579 Wall Triana Highway",
+  "city": "Madison",
+  "state": "AL"
+ },
+ {
+  "id": 4754133547,
+  "name": "Kroger",
+  "lat": 40.3967435,
+  "lon": -80.5539847,
+  "address": "100 Saint Thomas Drive",
+  "city": "Weirton",
+  "state": "WV"
+ },
+ {
+  "id": 4763273021,
+  "name": "Metro Market",
+  "lat": 44.5067988,
+  "lon": -88.0757309,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 4770754651,
+  "name": "Kroger",
+  "lat": 34.5601703,
+  "lon": -86.9765593,
+  "address": "1101 Beltline Road Southeast",
+  "city": "Decatur",
+  "state": "AL"
+ },
+ {
+  "id": 4773652572,
+  "name": "Kroger Pharmacy",
+  "lat": 38.0305413,
+  "lon": -84.4931413,
+  "address": "704 Euclid Avenue",
+  "city": "Lexington",
+  "state": "KY"
+ },
+ {
+  "id": 4773968865,
+  "name": "Kroger",
+  "lat": 39.8292647,
+  "lon": -84.8507498,
+  "address": "3701 National Road East",
+  "city": "Richmond",
+  "state": "IN"
+ },
+ {
+  "id": 4775066033,
+  "name": "Kroger",
+  "lat": 41.1153242,
+  "lon": -85.129282,
+  "address": "4120 North Clinton Street",
+  "city": "Fort Wayne",
+  "state": "IN"
+ },
+ {
+  "id": 4794262321,
+  "name": "Kroger",
+  "lat": 37.1728432,
+  "lon": -76.4727553,
+  "address": "6500 George Washington Memorial Highway",
+  "city": "Yorktown",
+  "state": "VA"
+ },
+ {
+  "id": 4816594785,
+  "name": "Kroger",
+  "lat": 36.1484613,
+  "lon": -86.8607635,
+  "address": "5705 Charlotte Pike",
+  "city": "Nashville",
+  "state": "TN"
+ },
+ {
+  "id": 4818272937,
+  "name": "Kroger Pharmacy",
+  "lat": 40.5473635,
+  "lon": -82.8463526,
+  "address": "555 West Marion Street",
+  "city": "Mount Gilead",
+  "state": "OH"
+ },
+ {
+  "id": 4884242944,
+  "name": "Kroger Pharmacy",
+  "lat": 36.7782782,
+  "lon": -76.2543533,
+  "address": "1653 Sentinel Drive",
+  "city": "Chesapeake",
+  "state": "VA"
+ },
+ {
+  "id": 4916832695,
+  "name": "Kroger Pharmacy",
+  "lat": 39.9623208,
+  "lon": -86.1255352,
+  "address": "1217 South Range Line Road",
+  "city": "Carmel",
+  "state": "IN"
+ },
+ {
+  "id": 4952638672,
+  "name": "Kroger",
+  "lat": 32.6514413,
+  "lon": -97.3666174,
+  "address": "3510 Altamesa Boulevard",
+  "city": "Fort Worth",
+  "state": "TX"
+ },
+ {
+  "id": 4995729035,
+  "name": "Kroger",
+  "lat": 39.7757343,
+  "lon": -85.9814891,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5046853522,
+  "name": "Kroger",
+  "lat": 40.0738422,
+  "lon": -80.6995616,
+  "address": "200 Mount DeChantal Road",
+  "city": "Wheeling",
+  "state": "WV"
+ },
+ {
+  "id": 5072122218,
+  "name": "Kroger",
+  "lat": 30.3361865,
+  "lon": -95.4770186,
+  "address": "2222 Interstate 45 North",
+  "city": "Conroe",
+  "state": "TX"
+ },
+ {
+  "id": 5126397556,
+  "name": "Kroger Gas Station",
+  "lat": 42.6173347,
+  "lon": -82.550949,
+  "address": "2600 Pointe Tremble Road",
+  "city": "Algonac",
+  "state": "MI"
+ },
+ {
+  "id": 5136078921,
+  "name": "Kroger Pharmacy",
+  "lat": 32.9560713,
+  "lon": -97.2805247,
+  "address": "12600 North Beach Street",
+  "city": "Fort Worth",
+  "state": ""
+ },
+ {
+  "id": 5162909921,
+  "name": "Kroger",
+  "lat": 31.835866,
+  "lon": -81.5975256,
+  "address": "555 West Oglethorpe Highway",
+  "city": "Hinesville",
+  "state": "GA"
+ },
+ {
+  "id": 5200129387,
+  "name": "Kroger Pharmacy",
+  "lat": 34.7570028,
+  "lon": -86.7124643,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5216696258,
+  "name": "Kroger",
+  "lat": 39.6201548,
+  "lon": -86.1589595,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5216696260,
+  "name": "Kroger",
+  "lat": 39.6185591,
+  "lon": -86.1600135,
+  "address": "3100 Meridian Parke Drive",
+  "city": "Greenwood",
+  "state": "IN"
+ },
+ {
+  "id": 5246526486,
+  "name": "Kroger",
+  "lat": 42.7234934,
+  "lon": -84.4128352,
+  "address": "4884 Marsh Road",
+  "city": "Okemos",
+  "state": "MI"
+ },
+ {
+  "id": 5246578669,
+  "name": "Kroger",
+  "lat": 29.8126507,
+  "lon": -95.7701896,
+  "address": "2700 West Grand Parkway North",
+  "city": "Katy",
+  "state": "TX"
+ },
+ {
+  "id": 5251176803,
+  "name": "Kroger",
+  "lat": 30.1314081,
+  "lon": -95.2360602,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5252819275,
+  "name": "Kroger",
+  "lat": 33.4311732,
+  "lon": -84.4582261,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5252819302,
+  "name": "Kroger",
+  "lat": 33.4330426,
+  "lon": -84.4586162,
+  "address": "805 Glynn Street South",
+  "city": "Fayetteville",
+  "state": "GA"
+ },
+ {
+  "id": 5261320231,
+  "name": "Kroger",
+  "lat": 42.9201178,
+  "lon": -83.6188416,
+  "address": "12731 South Saginaw Road",
+  "city": "Grand Blanc",
+  "state": "MI"
+ },
+ {
+  "id": 5268930624,
+  "name": "Kroger",
+  "lat": 35.0184289,
+  "lon": -89.8290772,
+  "address": "4770 Riverdale Road",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 5297757278,
+  "name": "Kroger Pharmacy",
+  "lat": 32.838144,
+  "lon": -96.7706251,
+  "address": "5665 East Mockingbird Lane",
+  "city": "Dallas",
+  "state": "TX"
+ },
+ {
+  "id": 5353109235,
+  "name": "Kroger Pharmacy",
+  "lat": 40.5829889,
+  "lon": -83.0861798,
+  "address": "1608 Marion-Mt Gilead Road",
+  "city": "Marion",
+  "state": "OH"
+ },
+ {
+  "id": 5371280683,
+  "name": "Kroger Pharmacy",
+  "lat": 41.1332465,
+  "lon": -85.0644903,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5414984054,
+  "name": "Kroger",
+  "lat": 39.5602825,
+  "lon": -89.2942766,
+  "address": "201 East Bidwell Street",
+  "city": "Taylorville",
+  "state": "IL"
+ },
+ {
+  "id": 5435591758,
+  "name": "Kroger",
+  "lat": 39.9114304,
+  "lon": -86.1379693,
+  "address": "1365 East 86th Street",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 5438530472,
+  "name": "Kroger",
+  "lat": 33.8313461,
+  "lon": -83.8842393,
+  "address": "4753 Atlanta Highway",
+  "city": "Loganville",
+  "state": "GA"
+ },
+ {
+  "id": 5449778360,
+  "name": "Kroger Marketplace",
+  "lat": 30.1185241,
+  "lon": -95.3816679,
+  "address": "3731 Riley Fuzzel Road",
+  "city": "Spring",
+  "state": "TX"
+ },
+ {
+  "id": 5541417880,
+  "name": "Kroger Pharmacy",
+  "lat": 33.1703861,
+  "lon": -96.8920309,
+  "address": "Little Elm Parkway",
+  "city": "Little Elm",
+  "state": "TX"
+ },
+ {
+  "id": 5554796222,
+  "name": "Kroger",
+  "lat": 42.733883,
+  "lon": -83.3051542,
+  "address": "3097 S. Baldwin Road",
+  "city": "Orion",
+  "state": "MI"
+ },
+ {
+  "id": 5554831024,
+  "name": "Kroger Pharmacy",
+  "lat": 42.7342227,
+  "lon": -83.3051476,
+  "address": "3097 South Baldwin Road",
+  "city": "",
+  "state": "MI"
+ },
+ {
+  "id": 5561121872,
+  "name": "Kroger",
+  "lat": 39.7645921,
+  "lon": -86.3051023,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5562475588,
+  "name": "Kroger",
+  "lat": 40.7064178,
+  "lon": -89.4469181,
+  "address": "20 Cherry Tree Shopping Center",
+  "city": "Washington",
+  "state": "IL"
+ },
+ {
+  "id": 5569792777,
+  "name": "Kroger",
+  "lat": 39.3811219,
+  "lon": -84.5474242,
+  "address": "1450 South Erie Highway",
+  "city": "Hamilton",
+  "state": "OH"
+ },
+ {
+  "id": 5586730180,
+  "name": "Kroger",
+  "lat": 41.0688165,
+  "lon": -85.0412366,
+  "address": "821 West Lincoln Hwy;Lincoln Highway West",
+  "city": "New Haven",
+  "state": "IN"
+ },
+ {
+  "id": 5587045485,
+  "name": "Kroger",
+  "lat": 41.036438,
+  "lon": -85.1343737,
+  "address": "218 East Pettit Avenue",
+  "city": "Fort Wayne",
+  "state": "IN"
+ },
+ {
+  "id": 5593584733,
+  "name": "Kroger",
+  "lat": 38.0512696,
+  "lon": -84.7120613,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5595299790,
+  "name": "Kroger Pharmacy",
+  "lat": 38.0526755,
+  "lon": -84.7106414,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5600825123,
+  "name": "Kroger",
+  "lat": 39.8828146,
+  "lon": -83.0686903,
+  "address": "2474 Stringtown Road",
+  "city": "Grove City",
+  "state": "OH"
+ },
+ {
+  "id": 5635192004,
+  "name": "Kroger Pharmacy",
+  "lat": 39.9495638,
+  "lon": -83.0017256,
+  "address": "150 Sycamore Street",
+  "city": "Columbus",
+  "state": "OH"
+ },
+ {
+  "id": 5640366908,
+  "name": "Kroger Pharmacy",
+  "lat": 33.0828469,
+  "lon": -96.6438063,
+  "address": "1212 East Bethany Drive",
+  "city": "Allen",
+  "state": "TX"
+ },
+ {
+  "id": 5640629238,
+  "name": "Kroger Pharmacy",
+  "lat": 34.3634077,
+  "lon": -89.5041684,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5648071319,
+  "name": "Kroger",
+  "lat": 39.8771681,
+  "lon": -88.954659,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5648633094,
+  "name": "Kroger",
+  "lat": 39.94335,
+  "lon": -86.2364168,
+  "address": "10679 North Michigan Road",
+  "city": "Zionsville",
+  "state": "IN"
+ },
+ {
+  "id": 5688310196,
+  "name": "Kroger",
+  "lat": 39.9311546,
+  "lon": -83.0540335,
+  "address": "2161 Eakin Road",
+  "city": "Columbus",
+  "state": "OH"
+ },
+ {
+  "id": 5692005017,
+  "name": "Kroger",
+  "lat": 43.0605039,
+  "lon": -83.8185114,
+  "address": "1467 East Pierson Road",
+  "city": "Flushing",
+  "state": "MI"
+ },
+ {
+  "id": 5695749028,
+  "name": "Kroger",
+  "lat": 35.1433671,
+  "lon": -90.0133063,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5716494761,
+  "name": "Kroger",
+  "lat": 35.1098869,
+  "lon": -89.894219,
+  "address": "799 Truse Parkway",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 5716500713,
+  "name": "Kroger",
+  "lat": 35.1112771,
+  "lon": -89.8937438,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5746202333,
+  "name": "Kroger Pharmacy",
+  "lat": 34.0866719,
+  "lon": -84.485943,
+  "address": "12050 GA-92",
+  "city": "Woodstock",
+  "state": "GA"
+ },
+ {
+  "id": 5778272541,
+  "name": "Kroger Pharmacy",
+  "lat": 41.5446325,
+  "lon": -83.5987817,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5791172552,
+  "name": "Kroger",
+  "lat": 37.778722,
+  "lon": -87.0807725,
+  "address": "2308 Highway 144",
+  "city": "Owensboro",
+  "state": "KY"
+ },
+ {
+  "id": 5817150922,
+  "name": "Kroger",
+  "lat": 40.757003,
+  "lon": -86.7667036,
+  "address": "916 North Main Street",
+  "city": "Monticello",
+  "state": "IN"
+ },
+ {
+  "id": 5854489816,
+  "name": "Kroger Gas",
+  "lat": 39.9072263,
+  "lon": -82.7345806,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 5931713072,
+  "name": "Kroger",
+  "lat": 41.171537,
+  "lon": -85.4819353,
+  "address": "621 Country Side Drive",
+  "city": "Columbia City",
+  "state": "IN"
+ },
+ {
+  "id": 5955689924,
+  "name": "Kroger",
+  "lat": 42.1865955,
+  "lon": -83.1874499,
+  "address": "16765 Fort Street",
+  "city": "Southgate",
+  "state": "MI"
+ },
+ {
+  "id": 6001676930,
+  "name": "Kroger",
+  "lat": 42.2545467,
+  "lon": -83.1941313,
+  "address": "2060 Dix Highway",
+  "city": "Lincoln Park",
+  "state": "MI"
+ },
+ {
+  "id": 6090012658,
+  "name": "Kroger",
+  "lat": 42.446648,
+  "lon": -83.1604108,
+  "address": "8920 8 Mile Road",
+  "city": "Royal Oak Charter Township",
+  "state": "MI"
+ },
+ {
+  "id": 6144344994,
+  "name": "Kroger",
+  "lat": 37.1068673,
+  "lon": -84.0902749,
+  "address": "1732 Highway 192 West",
+  "city": "London",
+  "state": "KY"
+ },
+ {
+  "id": 6146626221,
+  "name": "Kroger Pharmacy",
+  "lat": 39.3357713,
+  "lon": -82.0687049,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6150166453,
+  "name": "Kroger",
+  "lat": 33.8351525,
+  "lon": -84.5744362,
+  "address": "4875 Floyd Road Southwest",
+  "city": "Mableton",
+  "state": "GA"
+ },
+ {
+  "id": 6193543699,
+  "name": "Kroger Pharmacy",
+  "lat": 30.1331334,
+  "lon": -95.2372066,
+  "address": "22030 Market Place Drive",
+  "city": "New Caney",
+  "state": "TX"
+ },
+ {
+  "id": 6202557852,
+  "name": "Kroger",
+  "lat": 37.2938823,
+  "lon": -76.5115628,
+  "address": "7254 George Washington Memorial Highway",
+  "city": "Hayes",
+  "state": "VA"
+ },
+ {
+  "id": 6221908775,
+  "name": "Kroger",
+  "lat": 33.0347056,
+  "lon": -97.0721316,
+  "address": "2709 Cross Timbers Road",
+  "city": "Flower Mound",
+  "state": "TX"
+ },
+ {
+  "id": 6238196928,
+  "name": "Kroger",
+  "lat": 36.30765,
+  "lon": -86.6008292,
+  "address": "237 East Main Street",
+  "city": "Hendersonville",
+  "state": "TN"
+ },
+ {
+  "id": 6238285851,
+  "name": "Kroger",
+  "lat": 36.3334728,
+  "lon": -86.6211838,
+  "address": "1010 Glenbrook Way",
+  "city": "Hendersonville",
+  "state": "TN"
+ },
+ {
+  "id": 6238285852,
+  "name": "Kroger",
+  "lat": 36.3331023,
+  "lon": -86.6205353,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6252667381,
+  "name": "Kroger",
+  "lat": 29.8045727,
+  "lon": -95.4004585,
+  "address": "239 West 20th Street",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 6285249528,
+  "name": "Kroger",
+  "lat": 40.3310158,
+  "lon": -83.7603434,
+  "address": "2129 South Main Street",
+  "city": "Bellefontaine",
+  "state": "OH"
+ },
+ {
+  "id": 6296269871,
+  "name": "Kroger",
+  "lat": 37.290575,
+  "lon": -80.0830469,
+  "address": "1477 West Main Street",
+  "city": "Salem",
+  "state": "VA"
+ },
+ {
+  "id": 6297876199,
+  "name": "Kroger",
+  "lat": 43.4377351,
+  "lon": -84.0091233,
+  "address": "4672 State Street",
+  "city": "Saginaw",
+  "state": "MI"
+ },
+ {
+  "id": 6298772241,
+  "name": "Kroger Pharmacy",
+  "lat": 41.4315058,
+  "lon": -82.6953615,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6299354185,
+  "name": "Kroger",
+  "lat": 29.7968241,
+  "lon": -95.4864439,
+  "address": "1505 Wirt Road",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 6310949066,
+  "name": "Kroger",
+  "lat": 34.7567967,
+  "lon": -92.3248568,
+  "address": "614 Beechwood Street",
+  "city": "Little Rock",
+  "state": "AR"
+ },
+ {
+  "id": 6319929105,
+  "name": "Kroger",
+  "lat": 40.2417078,
+  "lon": -83.3946433,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6322136984,
+  "name": "Kroger",
+  "lat": 32.2746566,
+  "lon": -80.9143189,
+  "address": "115 Innovation Drive",
+  "city": "Town of Bluffton",
+  "state": "SC"
+ },
+ {
+  "id": 6341005870,
+  "name": "Kroger",
+  "lat": 35.6883422,
+  "lon": -88.8581635,
+  "address": "41 Stonebrook Place",
+  "city": "Jackson",
+  "state": "TN"
+ },
+ {
+  "id": 6376407594,
+  "name": "Kroger",
+  "lat": 39.9121967,
+  "lon": -86.1368781,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6377780600,
+  "name": "Kroger Pharmacy",
+  "lat": 40.7742365,
+  "lon": -82.4762457,
+  "address": "1060 Ashland Road",
+  "city": "Mansfield",
+  "state": "OH"
+ },
+ {
+  "id": 6377780601,
+  "name": "Kroger Bakery",
+  "lat": 40.7742216,
+  "lon": -82.4758495,
+  "address": "1060 Ashland Road",
+  "city": "Mansfield",
+  "state": "OH"
+ },
+ {
+  "id": 6391860013,
+  "name": "Kroger",
+  "lat": 38.2839738,
+  "lon": -85.6320204,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6391860106,
+  "name": "Kroger",
+  "lat": 38.2837757,
+  "lon": -85.6305837,
+  "address": "2219 Holiday Manor Center",
+  "city": "Louisville",
+  "state": "KY"
+ },
+ {
+  "id": 6409086182,
+  "name": "Kroger",
+  "lat": 34.0697322,
+  "lon": -84.1669812,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6419282253,
+  "name": "Kroger",
+  "lat": 35.8436043,
+  "lon": -86.491714,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6487610148,
+  "name": "Kroger Pharmacy",
+  "lat": 40.7607324,
+  "lon": -82.5605547,
+  "address": "1240 Park Avenue West",
+  "city": "Mansfield",
+  "state": "OH"
+ },
+ {
+  "id": 6504565359,
+  "name": "Kroger Liquor",
+  "lat": 39.2716523,
+  "lon": -84.326404,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6507859915,
+  "name": "Kroger",
+  "lat": 37.119482,
+  "lon": -79.7196963,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6517278005,
+  "name": "Kroger",
+  "lat": 39.7740543,
+  "lon": -86.1623753,
+  "address": "227 West Michigan Street",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 6541975266,
+  "name": "Kroger Pharmacy",
+  "lat": 40.7182792,
+  "lon": -82.5493274,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6550030314,
+  "name": "Kroger",
+  "lat": 36.3444363,
+  "lon": -82.3793054,
+  "address": "112 Sunset Drive",
+  "city": "Johnson City",
+  "state": "TN"
+ },
+ {
+  "id": 6584957691,
+  "name": "Kroger Pharmacy",
+  "lat": 33.6042227,
+  "lon": -83.859097,
+  "address": "3139 Highway 278 Northeast",
+  "city": "Covington",
+  "state": "GA"
+ },
+ {
+  "id": 6606203933,
+  "name": "Kroger",
+  "lat": 36.1109403,
+  "lon": -86.7246287,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6629513925,
+  "name": "Kroger",
+  "lat": 43.6145641,
+  "lon": -83.9164269,
+  "address": "945 North Euclid Avenue",
+  "city": "Bay City",
+  "state": "MI"
+ },
+ {
+  "id": 6655625789,
+  "name": "Kroger",
+  "lat": 29.5516946,
+  "lon": -95.5843055,
+  "address": "18861 University Boulevard",
+  "city": "Sugar Land",
+  "state": "TX"
+ },
+ {
+  "id": 6781731288,
+  "name": "Kroger",
+  "lat": 39.0195435,
+  "lon": -84.5881457,
+  "address": "3071 Dixie Highway",
+  "city": "Erlanger",
+  "state": "KY"
+ },
+ {
+  "id": 6784190476,
+  "name": "Kroger Pharmacy",
+  "lat": 32.0455428,
+  "lon": -81.0679641,
+  "address": "1900 East Victory Drive",
+  "city": "Savannah",
+  "state": "GA"
+ },
+ {
+  "id": 6823722624,
+  "name": "On the Rhine Eatery",
+  "lat": 39.1070428,
+  "lon": -84.5124583,
+  "address": "100 East Court Street",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6832149484,
+  "name": "Kroger",
+  "lat": 39.4725784,
+  "lon": -87.3771107,
+  "address": "2650 Wabash Avenue",
+  "city": "Terre Haute",
+  "state": "IN"
+ },
+ {
+  "id": 6856250865,
+  "name": "Kroger Pharmacy",
+  "lat": 39.7740569,
+  "lon": -86.1624507,
+  "address": "",
+  "city": "Indianapolis",
+  "state": ""
+ },
+ {
+  "id": 6868130114,
+  "name": "Kroger Pharmacy",
+  "lat": 39.6621777,
+  "lon": -84.1028406,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6872646889,
+  "name": "Kroger Pharmacy",
+  "lat": 39.8846047,
+  "lon": -86.0685352,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6903317462,
+  "name": "Kroger",
+  "lat": 33.7224029,
+  "lon": -84.3476572,
+  "address": "1160 Moreland Avenue Southeast",
+  "city": "Atlanta",
+  "state": "GA"
+ },
+ {
+  "id": 6903317464,
+  "name": "Kroger",
+  "lat": 33.7221106,
+  "lon": -84.3479022,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6914127273,
+  "name": "Kroger Fuel",
+  "lat": 34.112239,
+  "lon": -84.5540609,
+  "address": "2295 Towne Lake Parkway",
+  "city": "Woodstock",
+  "state": "GA"
+ },
+ {
+  "id": 6928627202,
+  "name": "Kroger",
+  "lat": 39.5610357,
+  "lon": -84.2581823,
+  "address": "625 West Central Avenue",
+  "city": "Springboro",
+  "state": "OH"
+ },
+ {
+  "id": 6928695989,
+  "name": "Kroger",
+  "lat": 39.9201698,
+  "lon": -83.121373,
+  "address": "1585 Georgesville Square Drive",
+  "city": "Columbus",
+  "state": "OH"
+ },
+ {
+  "id": 6934970966,
+  "name": "Kroger",
+  "lat": 42.6802719,
+  "lon": -83.1514895,
+  "address": "65 South Livernois Road",
+  "city": "Rochester Hills",
+  "state": "MI"
+ },
+ {
+  "id": 6965397385,
+  "name": "Kroger",
+  "lat": 39.9567329,
+  "lon": -83.0969042,
+  "address": "3600 Soldano Boulevard",
+  "city": "Columbus",
+  "state": "OH"
+ },
+ {
+  "id": 6965397390,
+  "name": "Kroger",
+  "lat": 39.955932,
+  "lon": -83.0945944,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6974620222,
+  "name": "Kroger",
+  "lat": 29.8802787,
+  "lon": -95.684879,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6978362041,
+  "name": "Kroger",
+  "lat": 40.122799,
+  "lon": -82.9794176,
+  "address": "1425 Worthington Centre Drive",
+  "city": "Worthington",
+  "state": "OH"
+ },
+ {
+  "id": 6978719828,
+  "name": "Kroger Pharmacy",
+  "lat": 40.7459808,
+  "lon": -86.0960811,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6981324744,
+  "name": "Kroger",
+  "lat": 40.0889726,
+  "lon": -82.8258187,
+  "address": "5161 Hampsted Village Center Way",
+  "city": "Columbus",
+  "state": "OH"
+ },
+ {
+  "id": 6981586169,
+  "name": "Kroger",
+  "lat": 39.9565654,
+  "lon": -82.7721547,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 6986728464,
+  "name": "Kroger Pharmacy",
+  "lat": 32.8721888,
+  "lon": -97.3396078,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7003622611,
+  "name": "Kroger",
+  "lat": 34.1929786,
+  "lon": -84.5072779,
+  "address": "4045 Marietta Highway",
+  "city": "Canton",
+  "state": "GA"
+ },
+ {
+  "id": 7020555245,
+  "name": "Kroger",
+  "lat": 36.0456828,
+  "lon": -86.7145106,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7022457523,
+  "name": "Kroger Pharmacy",
+  "lat": 42.7425459,
+  "lon": -84.6446633,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7030800028,
+  "name": "Kroger",
+  "lat": 33.9033518,
+  "lon": -84.6732396,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7040912066,
+  "name": "Kroger",
+  "lat": 36.0772619,
+  "lon": -87.3715591,
+  "address": "143 Henslee Drive",
+  "city": "Dickson",
+  "state": "TN"
+ },
+ {
+  "id": 7044470269,
+  "name": "Kroger",
+  "lat": 34.1233312,
+  "lon": -84.1705366,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7045331030,
+  "name": "Kroger",
+  "lat": 43.0245963,
+  "lon": -82.4543419,
+  "address": "2907 Krafft Road",
+  "city": "Port Huron",
+  "state": "MI"
+ },
+ {
+  "id": 7045331035,
+  "name": "Kroger",
+  "lat": 43.0237525,
+  "lon": -82.453819,
+  "address": "2925 Krafft Road",
+  "city": "Port Huron",
+  "state": "MI"
+ },
+ {
+  "id": 7046026418,
+  "name": "Kroger",
+  "lat": 33.9999372,
+  "lon": -83.906557,
+  "address": "505 Dacula Road",
+  "city": "Dacula",
+  "state": "GA"
+ },
+ {
+  "id": 7047751349,
+  "name": "Kroger",
+  "lat": 42.9702171,
+  "lon": -82.4534481,
+  "address": "1215 24th Street",
+  "city": "Port Huron",
+  "state": "MI"
+ },
+ {
+  "id": 7052538658,
+  "name": "Kroger",
+  "lat": 32.7080501,
+  "lon": -97.1334623,
+  "address": "2210 South Fielder Road",
+  "city": "Arlington",
+  "state": "TX"
+ },
+ {
+  "id": 7053367574,
+  "name": "Kroger",
+  "lat": 43.0116634,
+  "lon": -83.0710995,
+  "address": "1821 South Cedar Street",
+  "city": "Imlay City",
+  "state": "MI"
+ },
+ {
+  "id": 7055734716,
+  "name": "Kroger",
+  "lat": 43.0507764,
+  "lon": -83.6362251,
+  "address": "3838 Richfield Road",
+  "city": "Flint",
+  "state": "MI"
+ },
+ {
+  "id": 7057471059,
+  "name": "Kroger",
+  "lat": 43.0027617,
+  "lon": -83.7454873,
+  "address": "G3288 Corunna Road",
+  "city": "Flint",
+  "state": "MI"
+ },
+ {
+  "id": 7057471060,
+  "name": "Kroger",
+  "lat": 43.0028023,
+  "lon": -83.7444274,
+  "address": "G3288 Corunna Road",
+  "city": "Flint",
+  "state": "MI"
+ },
+ {
+  "id": 7058131708,
+  "name": "Kroger",
+  "lat": 43.1101565,
+  "lon": -83.6938949,
+  "address": "7188 North Saginaw Road",
+  "city": "Mount Morris",
+  "state": "MI"
+ },
+ {
+  "id": 7058131709,
+  "name": "Kroger",
+  "lat": 43.1100958,
+  "lon": -83.6926342,
+  "address": "7188 North Saginaw Road",
+  "city": "Mount Morris",
+  "state": "MI"
+ },
+ {
+  "id": 7065174706,
+  "name": "Kroger",
+  "lat": 37.3968201,
+  "lon": -79.9112441,
+  "address": "72 Kingston Drive",
+  "city": "Daleville",
+  "state": "VA"
+ },
+ {
+  "id": 7089160957,
+  "name": "Kroger Fuel",
+  "lat": 35.2056237,
+  "lon": -89.8385779,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7120545722,
+  "name": "Kroger Pharmacy",
+  "lat": 36.0770821,
+  "lon": -87.3712945,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7141889250,
+  "name": "Kroger Pharmacy",
+  "lat": 39.2282061,
+  "lon": -85.9012243,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7143831101,
+  "name": "Kroger",
+  "lat": 36.1853596,
+  "lon": -86.7472629,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7157064977,
+  "name": "Kroger",
+  "lat": 33.8391521,
+  "lon": -84.4822259,
+  "address": "4715 South Atlanta Road",
+  "city": "Smyrna",
+  "state": "GA"
+ },
+ {
+  "id": 7178265742,
+  "name": "Kroger",
+  "lat": 42.9738472,
+  "lon": -83.6857003,
+  "address": "1204 East Bristol Road",
+  "city": "Burton",
+  "state": "MI"
+ },
+ {
+  "id": 7179151318,
+  "name": "Kroger",
+  "lat": 43.3533937,
+  "lon": -83.8723197,
+  "address": "6370 Dixie Highway",
+  "city": "Bridgeport",
+  "state": "MI"
+ },
+ {
+  "id": 7179151319,
+  "name": "Kroger",
+  "lat": 43.3530446,
+  "lon": -83.871161,
+  "address": "6370 Dixie Highway",
+  "city": "Bridgeport",
+  "state": "MI"
+ },
+ {
+  "id": 7182285048,
+  "name": "Kroger",
+  "lat": 33.5602254,
+  "lon": -84.4160982,
+  "address": "7125 Highway 85",
+  "city": "Riverdale",
+  "state": "GA"
+ },
+ {
+  "id": 7196452590,
+  "name": "Kroger",
+  "lat": 34.9609009,
+  "lon": -89.9347129,
+  "address": "3095 Goodman Road East",
+  "city": "Southaven",
+  "state": "MS"
+ },
+ {
+  "id": 7198978977,
+  "name": "Kroger",
+  "lat": 43.5929579,
+  "lon": -83.8462978,
+  "address": "2910 Center Avenue",
+  "city": "Essexveille",
+  "state": "MI"
+ },
+ {
+  "id": 7199020426,
+  "name": "Kroger",
+  "lat": 43.6142148,
+  "lon": -83.915192,
+  "address": "945 North Euclid Avenue",
+  "city": "Bay City",
+  "state": "MI"
+ },
+ {
+  "id": 7238003362,
+  "name": "Kroger",
+  "lat": 42.9982082,
+  "lon": -84.147593,
+  "address": "1315 East Main Street",
+  "city": "Owosso",
+  "state": "MI"
+ },
+ {
+  "id": 7241566054,
+  "name": "Kroger",
+  "lat": 42.7744708,
+  "lon": -83.2385509,
+  "address": "605 South Lapeer Road",
+  "city": "Lake Orion",
+  "state": "MI"
+ },
+ {
+  "id": 7264955908,
+  "name": "Kroger",
+  "lat": 42.4627525,
+  "lon": -83.1053008,
+  "address": "23101 John R Road",
+  "city": "Hazel Park",
+  "state": "MI"
+ },
+ {
+  "id": 7323181765,
+  "name": "Kroger",
+  "lat": 42.0949028,
+  "lon": -83.2344988,
+  "address": "20645 Gibraltar Road",
+  "city": "Brownstown Township",
+  "state": "MI"
+ },
+ {
+  "id": 7329833271,
+  "name": "Kroger Pharmacy",
+  "lat": 33.14623,
+  "lon": -97.1021216,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7329842134,
+  "name": "Kroger Pharmacy",
+  "lat": 33.1950856,
+  "lon": -97.0961928,
+  "address": "1592 South Loop 288",
+  "city": "Denton",
+  "state": "TX"
+ },
+ {
+  "id": 7363631833,
+  "name": "Kroger",
+  "lat": 33.9667509,
+  "lon": -84.0335718,
+  "address": "2100 Riverside Parkway",
+  "city": "Lawrenceville",
+  "state": "GA"
+ },
+ {
+  "id": 7380637787,
+  "name": "Kroger",
+  "lat": 42.5463616,
+  "lon": -83.262497,
+  "address": "3600 West Maple Road",
+  "city": "Bloomfield Hills",
+  "state": "MI"
+ },
+ {
+  "id": 7387952704,
+  "name": "Kroger",
+  "lat": 35.9164399,
+  "lon": -86.8322721,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7504549966,
+  "name": "Kroger",
+  "lat": 33.0507209,
+  "lon": -85.0218209,
+  "address": "203 Commerce Avenue",
+  "city": "LaGrange",
+  "state": "GA"
+ },
+ {
+  "id": 7505048692,
+  "name": "Kroger Pharmacy",
+  "lat": 34.1215725,
+  "lon": -83.6066636,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7511665060,
+  "name": "Kroger",
+  "lat": 36.5963473,
+  "lon": -82.2152102,
+  "address": "130 Stateline Center",
+  "city": "Bristol",
+  "state": "VA"
+ },
+ {
+  "id": 7581004333,
+  "name": "Kroger",
+  "lat": 34.350155,
+  "lon": -84.0534139,
+  "address": "378 Marketplace Parkway",
+  "city": "Dawsonville",
+  "state": "GA"
+ },
+ {
+  "id": 7599070215,
+  "name": "Kroger",
+  "lat": 42.0889176,
+  "lon": -83.6979135,
+  "address": "521 West Main Street",
+  "city": "Milan",
+  "state": "MI"
+ },
+ {
+  "id": 7599070246,
+  "name": "Kroger",
+  "lat": 42.0898347,
+  "lon": -83.6975742,
+  "address": "531 West Main Street",
+  "city": "Milan",
+  "state": "MI"
+ },
+ {
+  "id": 7604103057,
+  "name": "Kroger",
+  "lat": 35.3465307,
+  "lon": -89.9069284,
+  "address": "8039 US Highway 51 North",
+  "city": "Millington",
+  "state": "TN"
+ },
+ {
+  "id": 7604103060,
+  "name": "Kroger",
+  "lat": 35.3454799,
+  "lon": -89.9064683,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7608047302,
+  "name": "Kroger",
+  "lat": 34.0386957,
+  "lon": -84.5306486,
+  "address": "3595 Canton Road",
+  "city": "Marietta",
+  "state": "GA"
+ },
+ {
+  "id": 7630118281,
+  "name": "Kroger",
+  "lat": 38.0663659,
+  "lon": -78.8887158,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7695314801,
+  "name": "Kroger",
+  "lat": 40.4914803,
+  "lon": -86.166841,
+  "address": "605 North Dixon Road",
+  "city": "Kokomo",
+  "state": "IN"
+ },
+ {
+  "id": 7732259994,
+  "name": "Kroger",
+  "lat": 34.7950914,
+  "lon": -92.2727776,
+  "address": "4401 Camp Robinson Road",
+  "city": "North Little Rock",
+  "state": "AR"
+ },
+ {
+  "id": 7732259995,
+  "name": "Kroger",
+  "lat": 34.7951152,
+  "lon": -92.2716338,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7807461661,
+  "name": "Kroger",
+  "lat": 42.7706439,
+  "lon": -83.0162196,
+  "address": "64660 Van Dyke Road",
+  "city": "Romeo",
+  "state": "MI"
+ },
+ {
+  "id": 7807461666,
+  "name": "Kroger",
+  "lat": 42.7704849,
+  "lon": -83.017779,
+  "address": "64660 Van Dyke Road",
+  "city": "Romeo",
+  "state": "MI"
+ },
+ {
+  "id": 7831163735,
+  "name": "Kroger",
+  "lat": 37.966508,
+  "lon": -80.7748448,
+  "address": "406 John Raine Drive",
+  "city": "Rainelle",
+  "state": "WV"
+ },
+ {
+  "id": 7837160738,
+  "name": "Kroger",
+  "lat": 33.8345605,
+  "lon": -84.5754018,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7866328518,
+  "name": "Kroger",
+  "lat": 33.9873234,
+  "lon": -84.2691968,
+  "address": "8465 Holcomb Bridge Road",
+  "city": "Johns Creek",
+  "state": "GA"
+ },
+ {
+  "id": 7872570734,
+  "name": "Kroger",
+  "lat": 38.3931362,
+  "lon": -85.3673306,
+  "address": "2034 South Highway 53",
+  "city": "La Grange",
+  "state": "KY"
+ },
+ {
+  "id": 7873980328,
+  "name": "Kroger",
+  "lat": 38.1652825,
+  "lon": -84.8955604,
+  "address": "1389 US Highway 127 South",
+  "city": "Frankfort",
+  "state": "KY"
+ },
+ {
+  "id": 7882272138,
+  "name": "Kroger Pharmacy",
+  "lat": 41.6876369,
+  "lon": -83.6216206,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 7995521916,
+  "name": "Kroger",
+  "lat": 29.5298455,
+  "lon": -95.5108212,
+  "address": "10250 Highway 6",
+  "city": "Missouri City",
+  "state": "TX"
+ },
+ {
+  "id": 8019872282,
+  "name": "Kroger",
+  "lat": 43.3404763,
+  "lon": -83.7365861,
+  "address": "435 North Main Street",
+  "city": "Frankenmuth",
+  "state": "MI"
+ },
+ {
+  "id": 8019872283,
+  "name": "Kroger",
+  "lat": 43.341831,
+  "lon": -83.7377259,
+  "address": "435 North Main Street",
+  "city": "Frankenmuth",
+  "state": "MI"
+ },
+ {
+  "id": 8033157476,
+  "name": "Kroger",
+  "lat": 37.617633,
+  "lon": -84.7835192,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8040174807,
+  "name": "Kroger Pharmacy",
+  "lat": 39.9894595,
+  "lon": -83.0052307,
+  "address": "1350 North High Street",
+  "city": "Columbus",
+  "state": "OH"
+ },
+ {
+  "id": 8060809821,
+  "name": "Kroger",
+  "lat": 38.3400659,
+  "lon": -81.6775433,
+  "address": "1100 Fledderjohn Road",
+  "city": "Charleston",
+  "state": "WV"
+ },
+ {
+  "id": 8144940715,
+  "name": "Kroger",
+  "lat": 43.0015361,
+  "lon": -83.7821098,
+  "address": "5253 Corunna Road",
+  "city": "Flint",
+  "state": "MI"
+ },
+ {
+  "id": 8178105925,
+  "name": "Kroger",
+  "lat": 42.9924582,
+  "lon": -84.5477101,
+  "address": "908 South Old US 27",
+  "city": "St. Johns",
+  "state": "MI"
+ },
+ {
+  "id": 8214144794,
+  "name": "Kroger",
+  "lat": 39.2764346,
+  "lon": -80.2802962,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8243437769,
+  "name": "Kroger",
+  "lat": 35.0717484,
+  "lon": -89.844417,
+  "address": "2835 Kirby Parkway",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 8243437778,
+  "name": "Kroger",
+  "lat": 35.0716896,
+  "lon": -89.8430292,
+  "address": "2835 Kirby Parkway",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 8269305257,
+  "name": "Kroger Pharmacy",
+  "lat": 42.722614,
+  "lon": -83.3763868,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8273105225,
+  "name": "Kroger Pharmacy",
+  "lat": 42.7166835,
+  "lon": -83.4156579,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8284572685,
+  "name": "Kroger",
+  "lat": 33.883843,
+  "lon": -84.2468658,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8288296811,
+  "name": "Kroger",
+  "lat": 42.5211651,
+  "lon": -83.7624237,
+  "address": "9968 East Grand River Avenue",
+  "city": "Brighton",
+  "state": "MI"
+ },
+ {
+  "id": 8306411498,
+  "name": "Kroger Fuel Station",
+  "lat": 42.6238063,
+  "lon": -83.9264394,
+  "address": "106 West Highland Road",
+  "city": "Howell",
+  "state": "MI"
+ },
+ {
+  "id": 8326262083,
+  "name": "Kroger",
+  "lat": 42.2634967,
+  "lon": -84.4268069,
+  "address": "1100 West Argyle Street",
+  "city": "Jackson",
+  "state": "MI"
+ },
+ {
+  "id": 8326262084,
+  "name": "Kroger Fuel Station",
+  "lat": 42.2623682,
+  "lon": -84.4263442,
+  "address": "1100 West Argyle Street",
+  "city": "Jackson",
+  "state": "MI"
+ },
+ {
+  "id": 8326775227,
+  "name": "Kroger",
+  "lat": 39.7577966,
+  "lon": -86.1148039,
+  "address": "680 Twin Aire Drive",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 8389289058,
+  "name": "Kroger",
+  "lat": 35.1681193,
+  "lon": -90.1920318,
+  "address": "300 West Service Road",
+  "city": "West Memphis",
+  "state": "AR"
+ },
+ {
+  "id": 8395420353,
+  "name": "Kroger",
+  "lat": 39.7145415,
+  "lon": -86.2352253,
+  "address": "3361 Kentucky Avenue",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 8410250060,
+  "name": "Kroger",
+  "lat": 41.9326829,
+  "lon": -84.6419241,
+  "address": "290 West Carleton Road",
+  "city": "Hillsdale",
+  "state": "MI"
+ },
+ {
+  "id": 8410250073,
+  "name": "Kroger",
+  "lat": 41.932281,
+  "lon": -84.643204,
+  "address": "290 West Carleton Road",
+  "city": "Hillsdale",
+  "state": "MI"
+ },
+ {
+  "id": 8418606119,
+  "name": "Kroger Pharmacy",
+  "lat": 33.0191581,
+  "lon": -96.9133113,
+  "address": "4038 Old Denton Road",
+  "city": "Carrollton",
+  "state": "TX"
+ },
+ {
+  "id": 8419735652,
+  "name": "Kroger",
+  "lat": 41.749562,
+  "lon": -83.6261715,
+  "address": "7405 Secor Road",
+  "city": "Lambertville",
+  "state": "MI"
+ },
+ {
+  "id": 8419735653,
+  "name": "Kroger",
+  "lat": 41.7494779,
+  "lon": -83.6261762,
+  "address": "7405 Secor Road",
+  "city": "Lambertville",
+  "state": "MI"
+ },
+ {
+  "id": 8439710063,
+  "name": "Kroger",
+  "lat": 42.2421571,
+  "lon": -83.6808129,
+  "address": "3200 Carpenter Road",
+  "city": "Ypsilanti",
+  "state": "MI"
+ },
+ {
+  "id": 8443231299,
+  "name": "Kroger",
+  "lat": 42.7933203,
+  "lon": -82.7368905,
+  "address": "66900 Gratiot Avenue",
+  "city": "Richmond",
+  "state": "MI"
+ },
+ {
+  "id": 8453619005,
+  "name": "Kroger",
+  "lat": 42.6754984,
+  "lon": -82.7566946,
+  "address": "35010 23 Mile Road",
+  "city": "New Baltimore",
+  "state": "MI"
+ },
+ {
+  "id": 8453619007,
+  "name": "Kroger",
+  "lat": 42.6746209,
+  "lon": -82.758159,
+  "address": "35000 23 Mile Road",
+  "city": "New Baltimore",
+  "state": "MI"
+ },
+ {
+  "id": 8462066078,
+  "name": "Kroger",
+  "lat": 42.5254804,
+  "lon": -82.9094182,
+  "address": "20705 East 13 Mile Road",
+  "city": "Roseville",
+  "state": "MI"
+ },
+ {
+  "id": 8462066079,
+  "name": "Kroger",
+  "lat": 42.525259,
+  "lon": -82.9094464,
+  "address": "20705 East 13 Mile Road",
+  "city": "Roseville",
+  "state": "MI"
+ },
+ {
+  "id": 8462066101,
+  "name": "Kroger",
+  "lat": 42.5261278,
+  "lon": -82.9052246,
+  "address": "20891 East 13 Mile Road",
+  "city": "Roseville",
+  "state": "MI"
+ },
+ {
+  "id": 8462083006,
+  "name": "Kroger Gas Station",
+  "lat": 42.4882426,
+  "lon": -82.9418367,
+  "address": "26130 Gratiot Avenue",
+  "city": "Roseville",
+  "state": "MI"
+ },
+ {
+  "id": 8462083030,
+  "name": "Kroger",
+  "lat": 42.4881161,
+  "lon": -82.9404983,
+  "address": "26130 Gratiot Avenue",
+  "city": "Roseville",
+  "state": "MI"
+ },
+ {
+  "id": 8462083166,
+  "name": "Kroger",
+  "lat": 42.5190152,
+  "lon": -82.9215311,
+  "address": "30200 Gratiot Avenue",
+  "city": "Roseville",
+  "state": "MI"
+ },
+ {
+  "id": 8465121877,
+  "name": "Kroger",
+  "lat": 42.6739451,
+  "lon": -82.9757172,
+  "address": "51341 Hayes Road",
+  "city": "Shelby Township",
+  "state": "MI"
+ },
+ {
+  "id": 8465121936,
+  "name": "Kroger",
+  "lat": 42.7116795,
+  "lon": -83.0358018,
+  "address": "56743 Van Dyke Avenue",
+  "city": "Shelby Township",
+  "state": "MI"
+ },
+ {
+  "id": 8465121941,
+  "name": "Kroger",
+  "lat": 42.710814,
+  "lon": -83.0379112,
+  "address": "7644 26 Mile Road",
+  "city": "Shelby Township",
+  "state": "MI"
+ },
+ {
+  "id": 8474069278,
+  "name": "Kroger",
+  "lat": 42.6442322,
+  "lon": -82.9007958,
+  "address": "21555 21 Mile Road",
+  "city": "Macomb",
+  "state": "MI"
+ },
+ {
+  "id": 8474069279,
+  "name": "Kroger",
+  "lat": 42.6440795,
+  "lon": -82.9007893,
+  "address": "21555 21 Mile Road",
+  "city": "Macomb",
+  "state": "MI"
+ },
+ {
+  "id": 8474069342,
+  "name": "Kroger",
+  "lat": 42.715338,
+  "lon": -82.9638011,
+  "address": "16450 Twenty Six Mile Road",
+  "city": "Macomb",
+  "state": "MI"
+ },
+ {
+  "id": 8484269051,
+  "name": "Kroger",
+  "lat": 42.4653462,
+  "lon": -82.8862064,
+  "address": "23717 Jefferson Avenue",
+  "city": "Saint Clair Shores",
+  "state": "MI"
+ },
+ {
+  "id": 8484269052,
+  "name": "Kroger",
+  "lat": 42.4653264,
+  "lon": -82.8859033,
+  "address": "23717 Jefferson Avenue",
+  "city": "Saint Clair Shores",
+  "state": "MI"
+ },
+ {
+  "id": 8484269119,
+  "name": "Kroger",
+  "lat": 42.4601052,
+  "lon": -82.8836236,
+  "address": "23191 Marter Road",
+  "city": "Saint Clair Shores",
+  "state": "MI"
+ },
+ {
+  "id": 8484269244,
+  "name": "Kroger",
+  "lat": 42.4497962,
+  "lon": -82.9158568,
+  "address": "20903 Harper Avenue",
+  "city": "Harper Woods",
+  "state": "MI"
+ },
+ {
+  "id": 8484269321,
+  "name": "Kroger",
+  "lat": 42.5236707,
+  "lon": -82.899195,
+  "address": "31145 Harper Avenue",
+  "city": "Saint Clair Shores",
+  "state": "MI"
+ },
+ {
+  "id": 8490566074,
+  "name": "Kroger",
+  "lat": 42.6159943,
+  "lon": -82.9917701,
+  "address": "43632 Schoenherr Road",
+  "city": "Sterling Heights",
+  "state": "MI"
+ },
+ {
+  "id": 8490595809,
+  "name": "Kroger",
+  "lat": 42.5935622,
+  "lon": -83.0856594,
+  "address": "2375 18 Mile Road",
+  "city": "Sterling Heights",
+  "state": "MI"
+ },
+ {
+  "id": 8490596177,
+  "name": "Kroger Marketplace",
+  "lat": 42.594689,
+  "lon": -83.08863,
+  "address": "2051 18 Mile Road",
+  "city": "Sterling Heights",
+  "state": "MI"
+ },
+ {
+  "id": 8492122942,
+  "name": "Kroger",
+  "lat": 42.6049683,
+  "lon": -82.9546094,
+  "address": "41941 Garfield Road",
+  "city": "Clinton Township",
+  "state": "MI"
+ },
+ {
+  "id": 8495369479,
+  "name": "Kroger",
+  "lat": 42.4996996,
+  "lon": -83.0847274,
+  "address": "28250 Dequindre Road",
+  "city": "Warren",
+  "state": "MI"
+ },
+ {
+  "id": 8495369605,
+  "name": "Kroger",
+  "lat": 42.4818784,
+  "lon": -83.0067891,
+  "address": "11555 Engleman Road",
+  "city": "Warren",
+  "state": "MI"
+ },
+ {
+  "id": 8510822120,
+  "name": "Kroger",
+  "lat": 42.7558486,
+  "lon": -83.4811968,
+  "address": "9657 Dixie Highway",
+  "city": "Clarkston",
+  "state": "MI"
+ },
+ {
+  "id": 8530604968,
+  "name": "Kroger",
+  "lat": 42.7745287,
+  "lon": -83.238312,
+  "address": "605 South Lapeer Road",
+  "city": "Lake Orion",
+  "state": "MI"
+ },
+ {
+  "id": 8538650746,
+  "name": "Kroger",
+  "lat": 35.8434793,
+  "lon": -86.4418748,
+  "address": "2449 Old Fort Parkway",
+  "city": "Murfreesboro",
+  "state": "TN"
+ },
+ {
+  "id": 8543674397,
+  "name": "Kroger",
+  "lat": 31.7194287,
+  "lon": -89.1504281,
+  "address": "2340 Highway 15 North",
+  "city": "Laurel",
+  "state": "MS"
+ },
+ {
+  "id": 8543674398,
+  "name": "Kroger",
+  "lat": 31.7196306,
+  "lon": -89.1491935,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8570222548,
+  "name": "Kroger",
+  "lat": 42.5904325,
+  "lon": -83.1294183,
+  "address": "4889 Rochester Road",
+  "city": "Troy",
+  "state": "MI"
+ },
+ {
+  "id": 8570222549,
+  "name": "Kroger",
+  "lat": 42.5904206,
+  "lon": -83.1298193,
+  "address": "4889 Rochester Road",
+  "city": "Troy",
+  "state": "MI"
+ },
+ {
+  "id": 8583523676,
+  "name": "Kroger",
+  "lat": 42.6590194,
+  "lon": -83.3847445,
+  "address": "4941 Highland Road",
+  "city": "Waterford",
+  "state": "MI"
+ },
+ {
+  "id": 8583523677,
+  "name": "Kroger",
+  "lat": 42.6592403,
+  "lon": -83.3847673,
+  "address": "4941 Highland Road",
+  "city": "Waterford",
+  "state": "MI"
+ },
+ {
+  "id": 8613833339,
+  "name": "Kroger",
+  "lat": 42.2572615,
+  "lon": -83.2530199,
+  "address": "7020 Monroe Boulevard",
+  "city": "Taylor",
+  "state": "MI"
+ },
+ {
+  "id": 8615236961,
+  "name": "Kroger",
+  "lat": 35.6933805,
+  "lon": -85.7475484,
+  "address": "1410 Sparta Street",
+  "city": "McMinnville",
+  "state": "TN"
+ },
+ {
+  "id": 8618149854,
+  "name": "Kroger",
+  "lat": 42.3090726,
+  "lon": -83.3501749,
+  "address": "200 South Merriman Road",
+  "city": "Westland",
+  "state": "MI"
+ },
+ {
+  "id": 8620147304,
+  "name": "Kroger",
+  "lat": 42.3581668,
+  "lon": -83.4797397,
+  "address": "44421 Ann Arbor Road",
+  "city": "Plymouth",
+  "state": "MI"
+ },
+ {
+  "id": 8635718691,
+  "name": "Kroger",
+  "lat": 42.4399117,
+  "lon": -83.3807594,
+  "address": "33797 8 Mile Road",
+  "city": "Livonia",
+  "state": "MI"
+ },
+ {
+  "id": 8641318764,
+  "name": "Kroger",
+  "lat": 42.3899448,
+  "lon": -82.9175144,
+  "address": "16919 Kercheval Avenue",
+  "city": "Grosse Pointe Park",
+  "state": "MI"
+ },
+ {
+  "id": 8641635722,
+  "name": "Kroger Pharmacy",
+  "lat": 39.9344778,
+  "lon": -82.9851301,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8662376007,
+  "name": "Kroger",
+  "lat": 39.8807115,
+  "lon": -86.2460514,
+  "address": "5025 West 71st Street",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 8662376008,
+  "name": "Kroger",
+  "lat": 39.8815218,
+  "lon": -86.2461881,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8766157952,
+  "name": "Kroger",
+  "lat": 34.0349556,
+  "lon": -84.4665121,
+  "address": "2960 Shallowford Road",
+  "city": "Marietta",
+  "state": "GA"
+ },
+ {
+  "id": 8774121365,
+  "name": "Kroger",
+  "lat": 36.7495786,
+  "lon": -76.5855132,
+  "address": "1401 Main Street",
+  "city": "Suffolk",
+  "state": "VA"
+ },
+ {
+  "id": 8882810737,
+  "name": "Kroger",
+  "lat": 29.7823174,
+  "lon": -95.5221864,
+  "address": "9325 Katy Freeway",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 8889095741,
+  "name": "Kroger",
+  "lat": 39.7793464,
+  "lon": -86.0936415,
+  "address": "4445 East 10th Street",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 8889095742,
+  "name": "Kroger",
+  "lat": 39.7803065,
+  "lon": -86.0938769,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 8895949753,
+  "name": "Kroger",
+  "lat": 33.9226317,
+  "lon": -84.3158085,
+  "address": "4498 Chamblee Dunwoody Road",
+  "city": "Dunwoody",
+  "state": "GA"
+ },
+ {
+  "id": 8942913600,
+  "name": "Kroger",
+  "lat": 39.6882753,
+  "lon": -84.1621613,
+  "address": "530 East Stroop Road",
+  "city": "Kettering",
+  "state": "OH"
+ },
+ {
+  "id": 8977728598,
+  "name": "Kroger",
+  "lat": 32.8987127,
+  "lon": -83.6913971,
+  "address": "220 Tom Hill Sr Boulevard",
+  "city": "Macon",
+  "state": "GA"
+ },
+ {
+  "id": 8986478871,
+  "name": "Kroger",
+  "lat": 39.7755491,
+  "lon": -86.2046451,
+  "address": "2630 West Michigan Street",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 8994409242,
+  "name": "Kroger",
+  "lat": 35.8864969,
+  "lon": -86.3830302,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9001592266,
+  "name": "Kroger",
+  "lat": 33.8434032,
+  "lon": -84.2558397,
+  "address": "3959 Lavista Road",
+  "city": "Tucker",
+  "state": "GA"
+ },
+ {
+  "id": 9004494264,
+  "name": "Kroger",
+  "lat": 35.7896511,
+  "lon": -86.4014882,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9029218886,
+  "name": "Kroger",
+  "lat": 40.0498871,
+  "lon": -86.0197701,
+  "address": "172 West Logan Street",
+  "city": "Noblesville",
+  "state": "IN"
+ },
+ {
+  "id": 9049363878,
+  "name": "Kroger",
+  "lat": 32.9148297,
+  "lon": -96.6497022,
+  "address": "1406 West Walnut Street",
+  "city": "Garland",
+  "state": "TX"
+ },
+ {
+  "id": 9067281090,
+  "name": "Kroger",
+  "lat": 36.3440818,
+  "lon": -82.3778927,
+  "address": "112 Sunset Drive",
+  "city": "Johnson City",
+  "state": "TN"
+ },
+ {
+  "id": 9084174963,
+  "name": "Kroger",
+  "lat": 34.0248806,
+  "lon": -85.2484336,
+  "address": "730 North Main Street",
+  "city": "Cedartown",
+  "state": "GA"
+ },
+ {
+  "id": 9098903911,
+  "name": "Kroger Pharmacy",
+  "lat": 34.248592,
+  "lon": -85.1627255,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9101307415,
+  "name": "Kroger",
+  "lat": 35.8447817,
+  "lon": -86.4415019,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9140756641,
+  "name": "Kroger Gas Station",
+  "lat": 41.3653022,
+  "lon": -83.1343371,
+  "address": "1700 Cedar Street",
+  "city": "Fremont",
+  "state": "OH"
+ },
+ {
+  "id": 9170307382,
+  "name": "Kroger Pharmacy",
+  "lat": 34.1718402,
+  "lon": -84.7761367,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9174387117,
+  "name": "Kroger",
+  "lat": 39.960016,
+  "lon": -82.4758571,
+  "address": "600 East Main Street",
+  "city": "Hebron",
+  "state": "OH"
+ },
+ {
+  "id": 9174483782,
+  "name": "Kroger",
+  "lat": 34.036325,
+  "lon": -84.6770073,
+  "address": "3330 Cobb Parkway Northwest",
+  "city": "Acworth",
+  "state": "GA"
+ },
+ {
+  "id": 9174483784,
+  "name": "Kroger Pharmacy",
+  "lat": 34.0363453,
+  "lon": -84.6768273,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9176612265,
+  "name": "Kroger",
+  "lat": 33.6827544,
+  "lon": -84.4091398,
+  "address": "2685 Metropolitan Parkway Southwest",
+  "city": "Atlanta",
+  "state": "GA"
+ },
+ {
+  "id": 9201118639,
+  "name": "Kroger Pharmacy",
+  "lat": 37.7425234,
+  "lon": -88.9452267,
+  "address": "1704 West Deyoung Street",
+  "city": "Marion",
+  "state": "IL"
+ },
+ {
+  "id": 9228882761,
+  "name": "Kroger",
+  "lat": 35.2620543,
+  "lon": -87.3224793,
+  "address": "1700 North Locust Avenue",
+  "city": "Lawrenceburg",
+  "state": "TN"
+ },
+ {
+  "id": 9230568470,
+  "name": "Kroger",
+  "lat": 36.4692055,
+  "lon": -86.6665426,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9230568471,
+  "name": "Kroger",
+  "lat": 36.4702901,
+  "lon": -86.6660611,
+  "address": "510 Highway 76",
+  "city": "White House",
+  "state": "TN"
+ },
+ {
+  "id": 9231289623,
+  "name": "Kroger",
+  "lat": 36.2294451,
+  "lon": -86.516245,
+  "address": "4120 North Mount Juliet Road",
+  "city": "Mt Juliet",
+  "state": "TN"
+ },
+ {
+  "id": 9234467821,
+  "name": "Kroger Pharmacy",
+  "lat": 41.1631719,
+  "lon": -83.4159307,
+  "address": "126 West High Street",
+  "city": "Fostoria",
+  "state": "OH"
+ },
+ {
+  "id": 9237779521,
+  "name": "Kroger",
+  "lat": 36.9557688,
+  "lon": -76.6034078,
+  "address": "1282 Smithfield Plaza",
+  "city": "Smithfield",
+  "state": "VA"
+ },
+ {
+  "id": 9245877208,
+  "name": "Kroger Pharmacy",
+  "lat": 36.9557041,
+  "lon": -76.6033687,
+  "address": "1282 Smithfield Plaza",
+  "city": "Smithfield",
+  "state": "VA"
+ },
+ {
+  "id": 9319655249,
+  "name": "Kroger",
+  "lat": 34.1150778,
+  "lon": -80.882332,
+  "address": "10136 Two Notch Road",
+  "city": "Columbia",
+  "state": "SC"
+ },
+ {
+  "id": 9325595398,
+  "name": "Kroger",
+  "lat": 41.6903127,
+  "lon": -83.6236482,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9336119196,
+  "name": "Kroger",
+  "lat": 37.1383903,
+  "lon": -84.0997303,
+  "address": "1805 North Main Street",
+  "city": "London",
+  "state": "KY"
+ },
+ {
+  "id": 9346162957,
+  "name": "Kroger",
+  "lat": 39.0414529,
+  "lon": -84.5091105,
+  "address": "4303 Winston Avenue",
+  "city": "Covington",
+  "state": "KY"
+ },
+ {
+  "id": 9347652429,
+  "name": "Kroger",
+  "lat": 38.9578842,
+  "lon": -84.624947,
+  "address": "9950 Berberich Drive",
+  "city": "Florence",
+  "state": "KY"
+ },
+ {
+  "id": 9349082883,
+  "name": "Kroger",
+  "lat": 38.0611298,
+  "lon": -83.9537379,
+  "address": "810 Indian Mound Drive",
+  "city": "Mount Sterling",
+  "state": "KY"
+ },
+ {
+  "id": 9354575231,
+  "name": "Kroger",
+  "lat": 38.0035857,
+  "lon": -84.4441795,
+  "address": "3101 Richmond Road",
+  "city": "Lexington",
+  "state": "KY"
+ },
+ {
+  "id": 9362708063,
+  "name": "Kroger",
+  "lat": 38.1646319,
+  "lon": -84.8962672,
+  "address": "1389 US Highway 127 South",
+  "city": "Frankfort",
+  "state": "KY"
+ },
+ {
+  "id": 9364112228,
+  "name": "Kroger",
+  "lat": 38.0884846,
+  "lon": -85.6705633,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9364112234,
+  "name": "Kroger",
+  "lat": 38.0892129,
+  "lon": -85.6703997,
+  "address": "5001 Mud Lane",
+  "city": "Louisville",
+  "state": "KY"
+ },
+ {
+  "id": 9364492314,
+  "name": "Kroger",
+  "lat": 38.1424929,
+  "lon": -85.8703905,
+  "address": "7509 Terry Road",
+  "city": "Louisville",
+  "state": "KY"
+ },
+ {
+  "id": 9368499726,
+  "name": "Kroger",
+  "lat": 33.8465879,
+  "lon": -84.6993045,
+  "address": "4400 Brownsville Road",
+  "city": "Powder Springs",
+  "state": "GA"
+ },
+ {
+  "id": 9368671497,
+  "name": "Kroger",
+  "lat": 35.2046783,
+  "lon": -86.0933213,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9368671512,
+  "name": "Kroger",
+  "lat": 35.2047022,
+  "lon": -86.0917066,
+  "address": "1840 Decherd Boulevard",
+  "city": "Decherd",
+  "state": "TN"
+ },
+ {
+  "id": 9380220681,
+  "name": "Kroger Pharmacy",
+  "lat": 39.6458297,
+  "lon": -86.8475235,
+  "address": "821 Indianapolis Rd",
+  "city": "Greencastle",
+  "state": "IN"
+ },
+ {
+  "id": 9392998810,
+  "name": "Kroger Pharmacy",
+  "lat": 42.1367705,
+  "lon": -83.2638275,
+  "address": "23849 West Road",
+  "city": "Brownstown Charter Township",
+  "state": "MI"
+ },
+ {
+  "id": 9402649690,
+  "name": "Kroger Pharmacy",
+  "lat": 35.0905909,
+  "lon": -92.4281229,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9416726563,
+  "name": "Kroger Pharmacy",
+  "lat": 39.6220952,
+  "lon": -79.9247544,
+  "address": "",
+  "city": "Morgantown",
+  "state": "WV"
+ },
+ {
+  "id": 9434107849,
+  "name": "Kroger",
+  "lat": 33.9047616,
+  "lon": -84.1211965,
+  "address": "4155 Lawrenceville Highway Northwest",
+  "city": "Lilburn",
+  "state": "GA"
+ },
+ {
+  "id": 9434695835,
+  "name": "Kroger Pharmacy",
+  "lat": 39.9831079,
+  "lon": -82.0216,
+  "address": "3387 Maple Avenue",
+  "city": "Zanesville",
+  "state": "OH"
+ },
+ {
+  "id": 9435527787,
+  "name": "Kroger",
+  "lat": 33.8831515,
+  "lon": -84.0081946,
+  "address": "1670 Scenic Highway North",
+  "city": "Snellville",
+  "state": "GA"
+ },
+ {
+  "id": 9438788556,
+  "name": "Kroger",
+  "lat": 33.9133203,
+  "lon": -83.4462562,
+  "address": "1720 Epps Bridge Parkway",
+  "city": "Athens",
+  "state": "GA"
+ },
+ {
+  "id": 9457084999,
+  "name": "Kroger",
+  "lat": 33.8845183,
+  "lon": -84.0606458,
+  "address": "3050 Five Forks Trickum Road Southwest",
+  "city": "Lilburn",
+  "state": "GA"
+ },
+ {
+  "id": 9457732919,
+  "name": "Kroger",
+  "lat": 34.1451772,
+  "lon": -84.2498892,
+  "address": "5665 Atlanta Highway",
+  "city": "Alpharetta",
+  "state": "GA"
+ },
+ {
+  "id": 9460536618,
+  "name": "Kroger",
+  "lat": 31.9568555,
+  "lon": -81.0983682,
+  "address": "7 Diamond Causeway",
+  "city": "Savannah",
+  "state": "GA"
+ },
+ {
+  "id": 9483138693,
+  "name": "Kroger",
+  "lat": 33.8593501,
+  "lon": -83.9545908,
+  "address": "910 Athens Highway",
+  "city": "Loganville",
+  "state": "GA"
+ },
+ {
+  "id": 9495037124,
+  "name": "Kroger",
+  "lat": 39.0848669,
+  "lon": -84.8779196,
+  "address": "880 West Eads Parkway",
+  "city": "Lawrenceburg",
+  "state": "IN"
+ },
+ {
+  "id": 9499247814,
+  "name": "Kroger",
+  "lat": 39.6729307,
+  "lon": -85.1344239,
+  "address": "516 West 30th Street",
+  "city": "Connersville",
+  "state": "IN"
+ },
+ {
+  "id": 9512244532,
+  "name": "Kroger",
+  "lat": 39.7814064,
+  "lon": -86.0428293,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9576823426,
+  "name": "Kroger",
+  "lat": 41.0523984,
+  "lon": -86.2209284,
+  "address": "2040 Peace Tree Village",
+  "city": "Rochester",
+  "state": "IN"
+ },
+ {
+  "id": 9589968968,
+  "name": "Kroger",
+  "lat": 39.8061158,
+  "lon": -85.7668674,
+  "address": "1571 North State Street",
+  "city": "Greenfield",
+  "state": "IN"
+ },
+ {
+  "id": 9612049027,
+  "name": "Kroger",
+  "lat": 39.6965038,
+  "lon": -86.0776876,
+  "address": "5350 East Thompson Road",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 9612083234,
+  "name": "Kroger",
+  "lat": 39.7055692,
+  "lon": -86.1505104,
+  "address": "4202 South East Street",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 9625327813,
+  "name": "Kroger",
+  "lat": 33.2450874,
+  "lon": -84.2941681,
+  "address": "1524 Highway 16 West",
+  "city": "Griffin",
+  "state": "GA"
+ },
+ {
+  "id": 9644680785,
+  "name": "Kroger",
+  "lat": 34.99027,
+  "lon": -89.9974562,
+  "address": "465 Stateline Road West",
+  "city": "Southaven",
+  "state": "MS"
+ },
+ {
+  "id": 9670731446,
+  "name": "Kroger",
+  "lat": 40.5628635,
+  "lon": -83.1174034,
+  "address": "1428 Marion Waldo Road",
+  "city": "Marion",
+  "state": "OH"
+ },
+ {
+  "id": 9688817072,
+  "name": "Kroger",
+  "lat": 37.4433881,
+  "lon": -79.2032241,
+  "address": "4115 Boonsboro Road",
+  "city": "Lynchburg",
+  "state": "VA"
+ },
+ {
+  "id": 9769915383,
+  "name": "Kroger",
+  "lat": 36.9966642,
+  "lon": -86.4249779,
+  "address": "350 US 31W Bypass",
+  "city": "Bowling Green",
+  "state": "KY"
+ },
+ {
+  "id": 9769915386,
+  "name": "Kroger Pharmacy",
+  "lat": 36.9960097,
+  "lon": -86.4248214,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9773872861,
+  "name": "Kroger",
+  "lat": 40.1432339,
+  "lon": -84.2648866,
+  "address": "1510 Covington Avenue",
+  "city": "Piqua",
+  "state": "OH"
+ },
+ {
+  "id": 9795032378,
+  "name": "Kroger",
+  "lat": 29.603198,
+  "lon": -95.2149315,
+  "address": "11701 South Sam Houston Parkway East",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 9847056613,
+  "name": "Kroger Fuel Center",
+  "lat": 35.0487551,
+  "lon": -89.6884796,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9862744917,
+  "name": "Kroger",
+  "lat": 34.6566457,
+  "lon": -86.5712642,
+  "address": "8404 Memorial Parkway Southwest",
+  "city": "Huntsville",
+  "state": "AL"
+ },
+ {
+  "id": 9866040327,
+  "name": "Kroger",
+  "lat": 29.6748622,
+  "lon": -95.2910328,
+  "address": "6322 Telephone Road",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 9883922042,
+  "name": "Kroger",
+  "lat": 29.7923441,
+  "lon": -94.9829718,
+  "address": "6315 Garth Road",
+  "city": "Baytown",
+  "state": "TX"
+ },
+ {
+  "id": 9884048056,
+  "name": "Kroger",
+  "lat": 29.7896563,
+  "lon": -95.2009461,
+  "address": "12620 Woodforest Boulevard",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 9884048062,
+  "name": "Kroger Pharmacy",
+  "lat": 29.7896459,
+  "lon": -95.2012496,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9906854649,
+  "name": "Kroger Pharmacy",
+  "lat": 40.8156967,
+  "lon": -85.8340158,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 9925816401,
+  "name": "Kroger",
+  "lat": 32.7256014,
+  "lon": -96.8328063,
+  "address": "752 Wynnewood Village Shp Center",
+  "city": "Dallas",
+  "state": "TX"
+ },
+ {
+  "id": 10033610163,
+  "name": "Kroger Pharmacy",
+  "lat": 40.3124177,
+  "lon": -83.1100604,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10040425756,
+  "name": "Kroger Pharmacy",
+  "lat": 39.310866,
+  "lon": -84.2750668,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10083451199,
+  "name": "Kroger",
+  "lat": 32.5457451,
+  "lon": -82.9376665,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10083666419,
+  "name": "Kroger",
+  "lat": 32.8734592,
+  "lon": -83.7099366,
+  "address": "4650 Forsyth Road",
+  "city": "Macon",
+  "state": "GA"
+ },
+ {
+  "id": 10089669239,
+  "name": "Kroger",
+  "lat": 34.0046216,
+  "lon": -83.9877304,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10089669262,
+  "name": "Kroger",
+  "lat": 33.938905,
+  "lon": -83.9827096,
+  "address": "455 Grayson Highway",
+  "city": "Lawrenceville",
+  "state": "GA"
+ },
+ {
+  "id": 10090325225,
+  "name": "Kroger",
+  "lat": 33.6437688,
+  "lon": -84.0170483,
+  "address": "1745 Highway 138 Southeast",
+  "city": "Conyers",
+  "state": "GA"
+ },
+ {
+  "id": 10097655047,
+  "name": "Kroger",
+  "lat": 32.8192467,
+  "lon": -83.7111897,
+  "address": "4628 Presidential Parkway",
+  "city": "Macon",
+  "state": "GA"
+ },
+ {
+  "id": 10146905296,
+  "name": "Kroger",
+  "lat": 32.0271711,
+  "lon": -81.225811,
+  "address": "5720 Ogeechee Road",
+  "city": "Savannah",
+  "state": "GA"
+ },
+ {
+  "id": 10186485323,
+  "name": "Kroger Pharmacy",
+  "lat": 33.0348501,
+  "lon": -97.0722449,
+  "address": "2709 Cross Timbers Road",
+  "city": "Flower Mound",
+  "state": "TX"
+ },
+ {
+  "id": 10198471723,
+  "name": "Kroger Pharmacy",
+  "lat": 32.7446332,
+  "lon": -96.5533581,
+  "address": "1919 Faithon P Lucas Senior Boulevard",
+  "city": "Mesquite",
+  "state": "TX"
+ },
+ {
+  "id": 10200863872,
+  "name": "Kroger",
+  "lat": 40.3968708,
+  "lon": -80.5536497,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10201052564,
+  "name": "Kroger",
+  "lat": 40.0412354,
+  "lon": -86.1058087,
+  "address": "17447 Carey Road",
+  "city": "Westfield",
+  "state": "IN"
+ },
+ {
+  "id": 10208402154,
+  "name": "Kroger Pharmacy",
+  "lat": 33.0979772,
+  "lon": -96.8935293,
+  "address": "6805 Main Street",
+  "city": "The Colony",
+  "state": "TX"
+ },
+ {
+  "id": 10213020705,
+  "name": "Kroger Pharmacy",
+  "lat": 33.1175418,
+  "lon": -96.8413147,
+  "address": "4851 Legacy Drive",
+  "city": "",
+  "state": "TX"
+ },
+ {
+  "id": 10213056008,
+  "name": "Kroger Pharmacy",
+  "lat": 33.1777262,
+  "lon": -96.7351657,
+  "address": "12221 Custer Road",
+  "city": "Frisco",
+  "state": "TX"
+ },
+ {
+  "id": 10213324982,
+  "name": "Kroger",
+  "lat": 39.5076312,
+  "lon": -84.7502912,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10218193918,
+  "name": "Kroger Pharmacy",
+  "lat": 33.1154497,
+  "lon": -96.6499425,
+  "address": "1210 North Greenville Avenue",
+  "city": "Allen",
+  "state": "TX"
+ },
+ {
+  "id": 10218261051,
+  "name": "Kroger Pharmacy",
+  "lat": 32.7715475,
+  "lon": -96.6003907,
+  "address": "525 North Galloway Avenue",
+  "city": "Mesquite",
+  "state": "TX"
+ },
+ {
+  "id": 10218261069,
+  "name": "Kroger Pharmacy",
+  "lat": 32.720227,
+  "lon": -96.6206145,
+  "address": "11925 Elam Road",
+  "city": "Balch Springs",
+  "state": "TX"
+ },
+ {
+  "id": 10220099410,
+  "name": "Kroger Pharmacy",
+  "lat": 32.6078206,
+  "lon": -97.1177942,
+  "address": "3001 Matlock Road",
+  "city": "Mansfield",
+  "state": "TX"
+ },
+ {
+  "id": 10220470234,
+  "name": "Kroger Pharmacy",
+  "lat": 32.6611658,
+  "lon": -97.1359018,
+  "address": "5330 South Cooper Street",
+  "city": "Arlington",
+  "state": "TX"
+ },
+ {
+  "id": 10222150757,
+  "name": "Kroger Pharmacy",
+  "lat": 33.0732439,
+  "lon": -96.7486417,
+  "address": "7100 Independence Parkway",
+  "city": "Plano",
+  "state": "TX"
+ },
+ {
+  "id": 10223779336,
+  "name": "Kroger Pharmacy",
+  "lat": 33.015255,
+  "lon": -96.6552287,
+  "address": "4017 14th Street",
+  "city": "Plano",
+  "state": "TX"
+ },
+ {
+  "id": 10224122556,
+  "name": "Kroger Pharmacy",
+  "lat": 33.0087171,
+  "lon": -96.575831,
+  "address": "2608 West FM 544",
+  "city": "Wylie",
+  "state": "TX"
+ },
+ {
+  "id": 10224361669,
+  "name": "Kroger Pharmacy",
+  "lat": 32.9082666,
+  "lon": -96.7445567,
+  "address": "9140 Forest Lane",
+  "city": "Dallas",
+  "state": "TX"
+ },
+ {
+  "id": 10224558444,
+  "name": "Kroger Pharmacy",
+  "lat": 32.8130882,
+  "lon": -96.812139,
+  "address": "4142 Cedar Springs Road",
+  "city": "Dallas",
+  "state": "TX"
+ },
+ {
+  "id": 10226568390,
+  "name": "Kroger Pharmacy",
+  "lat": 32.6609276,
+  "lon": -96.9090351,
+  "address": "200 West Camp Wisdom Road",
+  "city": "Duncanville",
+  "state": "TX"
+ },
+ {
+  "id": 10233787821,
+  "name": "Kroger Pharmacy",
+  "lat": 32.7046957,
+  "lon": -97.3613012,
+  "address": "3120 South University Drive",
+  "city": "Fort Worth",
+  "state": "TX"
+ },
+ {
+  "id": 10239316970,
+  "name": "Kroger Pharmacy",
+  "lat": 32.9117478,
+  "lon": -97.3099583,
+  "address": "3300 Texas Sage Trail",
+  "city": "Fort Worth",
+  "state": "TX"
+ },
+ {
+  "id": 10241234241,
+  "name": "Kroger Pharmacy",
+  "lat": 32.9429199,
+  "lon": -97.1222064,
+  "address": "2110 East Southlake Boulevard",
+  "city": "Southlake",
+  "state": "TX"
+ },
+ {
+  "id": 10241355764,
+  "name": "Kroger",
+  "lat": 39.7995036,
+  "lon": -86.2614635,
+  "address": "5718 Crawfordsville Road",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 10244731304,
+  "name": "Kroger Pharmacy",
+  "lat": 32.7747781,
+  "lon": -97.0818043,
+  "address": "2475 Ascension Boulevard",
+  "city": "Arlington",
+  "state": "TX"
+ },
+ {
+  "id": 10245375422,
+  "name": "Kroger Pharmacy",
+  "lat": 32.8513875,
+  "lon": -97.0808119,
+  "address": "1060 North Main Street",
+  "city": "Euless",
+  "state": "TX"
+ },
+ {
+  "id": 10245678429,
+  "name": "Kroger Pharmacy",
+  "lat": 32.9083703,
+  "lon": -96.9607366,
+  "address": "7505 North MacArthur Boulevard",
+  "city": "Irving",
+  "state": "TX"
+ },
+ {
+  "id": 10245696274,
+  "name": "Kroger Pharmacy",
+  "lat": 32.8546259,
+  "lon": -96.9910367,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10252208855,
+  "name": "Kroger Pharmacy",
+  "lat": 32.9507146,
+  "lon": -96.8530762,
+  "address": "3770 Belt Line Road",
+  "city": "Addison",
+  "state": "TX"
+ },
+ {
+  "id": 10253478690,
+  "name": "Kroger Pharmacy",
+  "lat": 32.7257257,
+  "lon": -97.4774463,
+  "address": "9114 Camp Bowie West Boulevard",
+  "city": "Fort Worth",
+  "state": "TX"
+ },
+ {
+  "id": 10276971526,
+  "name": "Kroger Pharmacy",
+  "lat": 32.5630021,
+  "lon": -97.353594,
+  "address": "1004 South Crowley Road",
+  "city": "Crowley",
+  "state": "TX"
+ },
+ {
+  "id": 10287878927,
+  "name": "Kroger Pharmacy",
+  "lat": 32.8534636,
+  "lon": -97.1335499,
+  "address": "2109 Harwood Road",
+  "city": "Bedford",
+  "state": "TX"
+ },
+ {
+  "id": 10287905162,
+  "name": "Kroger",
+  "lat": 32.8547018,
+  "lon": -97.1903561,
+  "address": "9135 Boulevard 26",
+  "city": "North Richland Hills",
+  "state": "TX"
+ },
+ {
+  "id": 10294249122,
+  "name": "Kroger Pharmacy",
+  "lat": 32.6736448,
+  "lon": -97.0428679,
+  "address": "2525 West Interstate 20",
+  "city": "Grand Prairie",
+  "state": "TX"
+ },
+ {
+  "id": 10294283088,
+  "name": "Kroger Pharmacy",
+  "lat": 32.6593841,
+  "lon": -97.0658901,
+  "address": "2350 Southeast Green Oaks Boulevard",
+  "city": "Arlington",
+  "state": "TX"
+ },
+ {
+  "id": 10314960223,
+  "name": "Kroger Pharmacy",
+  "lat": 33.1508516,
+  "lon": -96.8623128,
+  "address": "3205 Main Street",
+  "city": "Frisco",
+  "state": "TX"
+ },
+ {
+  "id": 10315241588,
+  "name": "Kroger Pharmacy",
+  "lat": 33.2207402,
+  "lon": -96.8769772,
+  "address": "4650 University Drive",
+  "city": "Prosper",
+  "state": "TX"
+ },
+ {
+  "id": 10315278168,
+  "name": "Kroger Pharmacy",
+  "lat": 33.2501806,
+  "lon": -96.7824043,
+  "address": "1250 North Preston Road",
+  "city": "Prosper",
+  "state": "TX"
+ },
+ {
+  "id": 10542150032,
+  "name": "Kroger Pharmacy",
+  "lat": 32.8825087,
+  "lon": -97.3947617,
+  "address": "4750 West Bailey Boswell Road",
+  "city": "Fort Worth",
+  "state": "TX"
+ },
+ {
+  "id": 10553144456,
+  "name": "Kroger Pharmacy",
+  "lat": 33.0752909,
+  "lon": -97.1306071,
+  "address": "FM 407 East",
+  "city": "Bartonville",
+  "state": ""
+ },
+ {
+  "id": 10553305216,
+  "name": "Kroger Pharmacy",
+  "lat": 32.7046575,
+  "lon": -97.0647463,
+  "address": "2580 East Arkansas Lane",
+  "city": "Arlington",
+  "state": "TX"
+ },
+ {
+  "id": 10568559467,
+  "name": "Kroger Pharmacy",
+  "lat": 32.6513462,
+  "lon": -97.366382,
+  "address": "3510 Altamesa Boulevard",
+  "city": "Fort Worth",
+  "state": "TX"
+ },
+ {
+  "id": 10571974973,
+  "name": "Kroger Pharmacy",
+  "lat": 32.9501631,
+  "lon": -96.4605108,
+  "address": "1950 North Goliad Street",
+  "city": "Rockwall",
+  "state": "TX"
+ },
+ {
+  "id": 10571976995,
+  "name": "Kroger Pharmacy",
+  "lat": 32.8884258,
+  "lon": -96.4715052,
+  "address": "2935 Ridge Road",
+  "city": "Rockwall",
+  "state": "TX"
+ },
+ {
+  "id": 10571976996,
+  "name": "Kroger",
+  "lat": 32.8887501,
+  "lon": -96.4710733,
+  "address": "2935 Ridge Road",
+  "city": "Rockwall",
+  "state": "TX"
+ },
+ {
+  "id": 10589870246,
+  "name": "Kroger Pharmacy",
+  "lat": 33.874846,
+  "lon": -84.5332216,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10608692585,
+  "name": "Kroger Pharmacy",
+  "lat": 32.9529653,
+  "lon": -96.7673931,
+  "address": "160 North Coit Road",
+  "city": "Richardson",
+  "state": "TX"
+ },
+ {
+  "id": 10657425770,
+  "name": "Kroger Pharmacy",
+  "lat": 39.95218,
+  "lon": -83.156376,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10671402632,
+  "name": "Kroger",
+  "lat": 40.902743,
+  "lon": -89.495438,
+  "address": "603 South 4th Street",
+  "city": "Chillicothe",
+  "state": "IL"
+ },
+ {
+  "id": 10678941166,
+  "name": "Kroger Pharmacy",
+  "lat": 36.0087266,
+  "lon": -84.0236101,
+  "address": "6702 Clinton Highway",
+  "city": "Knoxville",
+  "state": "TN"
+ },
+ {
+  "id": 10686687988,
+  "name": "Kroger Pharmacy",
+  "lat": 32.9983657,
+  "lon": -96.846486,
+  "address": "3939 Frankford Road",
+  "city": "Dallas",
+  "state": "TX"
+ },
+ {
+  "id": 10693954421,
+  "name": "Kroger Pharmacy",
+  "lat": 32.9770309,
+  "lon": -96.6640127,
+  "address": "6850 North Shiloh Road",
+  "city": "Garland",
+  "state": "TX"
+ },
+ {
+  "id": 10709274105,
+  "name": "Kroger",
+  "lat": 33.8750968,
+  "lon": -84.5324442,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10717923105,
+  "name": "Kroger",
+  "lat": 35.9327999,
+  "lon": -83.9061909,
+  "address": "4409 Chapman Highway",
+  "city": "Knoxville",
+  "state": "TN"
+ },
+ {
+  "id": 10749499902,
+  "name": "Kroger Pharmacy",
+  "lat": 32.8654276,
+  "lon": -96.7013893,
+  "address": "10677 East Northwest Highway",
+  "city": "Dallas",
+  "state": "TX"
+ },
+ {
+  "id": 10756202507,
+  "name": "Kroger",
+  "lat": 33.4723023,
+  "lon": -84.3385206,
+  "address": "10375 Tara Boulevard",
+  "city": "Jonesboro",
+  "state": "GA"
+ },
+ {
+  "id": 10771304448,
+  "name": "Kroger",
+  "lat": 32.9081277,
+  "lon": -96.959352,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10789906168,
+  "name": "Kroger Pharmacy",
+  "lat": 37.293935,
+  "lon": -76.5113812,
+  "address": "7254 Hayes Shopping Court",
+  "city": "Hayes",
+  "state": "VA"
+ },
+ {
+  "id": 10866476244,
+  "name": "Kroger",
+  "lat": 39.7591591,
+  "lon": -84.1218338,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10872810140,
+  "name": "Kroger",
+  "lat": 34.9643372,
+  "lon": -90.0057081,
+  "address": "7251 Interstate Drive",
+  "city": "Horn Lake",
+  "state": "MS"
+ },
+ {
+  "id": 10881686548,
+  "name": "Kroger",
+  "lat": 37.7501741,
+  "lon": -87.1139552,
+  "address": "2630 Frederica Street",
+  "city": "Owensboro",
+  "state": "KY"
+ },
+ {
+  "id": 10881697258,
+  "name": "Kroger",
+  "lat": 33.5168547,
+  "lon": -88.4363297,
+  "address": "1829 Highway 45 North",
+  "city": "Columbus",
+  "state": "MS"
+ },
+ {
+  "id": 10882358777,
+  "name": "Kroger Pharmacy",
+  "lat": 33.0094655,
+  "lon": -97.0466511,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10942761427,
+  "name": "Kroger",
+  "lat": 39.9829269,
+  "lon": -82.0214462,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 10947838615,
+  "name": "Kroger",
+  "lat": 32.8557103,
+  "lon": -85.1909374,
+  "address": "1401 South Gilmer Avenue",
+  "city": "Lanett",
+  "state": "AL"
+ },
+ {
+  "id": 11005133253,
+  "name": "Kroger Gas",
+  "lat": 36.8514084,
+  "lon": -76.0279086,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11043185764,
+  "name": "Kroger",
+  "lat": 31.9564707,
+  "lon": -81.319654,
+  "address": "53 Exchange Street",
+  "city": "Richmond Hill",
+  "state": "GA"
+ },
+ {
+  "id": 11100823344,
+  "name": "Kroger Pharmacy",
+  "lat": 39.3540675,
+  "lon": -82.9743251,
+  "address": "887 North Bridge Street",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11100865241,
+  "name": "Kroger",
+  "lat": 39.354473,
+  "lon": -82.9743426,
+  "address": "887 North Bridge Street",
+  "city": "Chillicothe",
+  "state": "OH"
+ },
+ {
+  "id": 11114948060,
+  "name": "Kroger Fuel Center",
+  "lat": 33.035817,
+  "lon": -97.0719981,
+  "address": "2709 Cross Timbers Road",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11126032083,
+  "name": "Kroger Pharmacy",
+  "lat": 39.8533414,
+  "lon": -82.8996825,
+  "address": "6011 Groveport Road",
+  "city": "Groveport",
+  "state": "OH"
+ },
+ {
+  "id": 11126583079,
+  "name": "Kroger Pharmacy",
+  "lat": 39.8415484,
+  "lon": -83.0744992,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11131973990,
+  "name": "Kroger",
+  "lat": 40.086634,
+  "lon": -80.73331,
+  "address": "400 Aetna Street",
+  "city": "Martins Ferry",
+  "state": "OH"
+ },
+ {
+  "id": 11147125505,
+  "name": "Kroger",
+  "lat": 39.9563229,
+  "lon": -82.8219131,
+  "address": "6580 East Main Street",
+  "city": "Reynoldsburg",
+  "state": "OH"
+ },
+ {
+  "id": 11172793037,
+  "name": "Kroger Gas",
+  "lat": 36.9293104,
+  "lon": -84.1045032,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11176857126,
+  "name": "Kroger",
+  "lat": 42.2868823,
+  "lon": -83.3485529,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11183067634,
+  "name": "Kroger",
+  "lat": 33.94039,
+  "lon": -84.0830135,
+  "address": "950 Herrington Road",
+  "city": "Lawrenceville",
+  "state": "GA"
+ },
+ {
+  "id": 11193008903,
+  "name": "Kroger",
+  "lat": 36.6974692,
+  "lon": -79.876067,
+  "address": "240 Commonwealth Boulevard West",
+  "city": "Martinsville",
+  "state": "VA"
+ },
+ {
+  "id": 11214922017,
+  "name": "Kroger",
+  "lat": 42.9185725,
+  "lon": -89.2430201,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11215356356,
+  "name": "Kroger",
+  "lat": 36.1053135,
+  "lon": -86.8176978,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11237334170,
+  "name": "Kroger",
+  "lat": 29.488508,
+  "lon": -95.113496,
+  "address": "1920 West League City Parkway",
+  "city": "League City",
+  "state": "TX"
+ },
+ {
+  "id": 11240292344,
+  "name": "Kroger",
+  "lat": 39.5595964,
+  "lon": -89.293922,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11247036305,
+  "name": "Kroger",
+  "lat": 37.9992323,
+  "lon": -84.5804082,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11247150194,
+  "name": "Kroger",
+  "lat": 34.2384319,
+  "lon": -84.193193,
+  "address": "2325 Bethelview Road",
+  "city": "Cumming",
+  "state": "GA"
+ },
+ {
+  "id": 11270515438,
+  "name": "Kroger",
+  "lat": 39.9663327,
+  "lon": -83.7867443,
+  "address": "2989 Derr Road",
+  "city": "Springfield",
+  "state": "OH"
+ },
+ {
+  "id": 11282526658,
+  "name": "Kroger",
+  "lat": 39.9371971,
+  "lon": -83.8358304,
+  "address": "965 North Bechtle Avenue",
+  "city": "Springfield",
+  "state": "OH"
+ },
+ {
+  "id": 11283500931,
+  "name": "Kroger",
+  "lat": 36.3782526,
+  "lon": -86.4655251,
+  "address": "845 Nashville Pike",
+  "city": "Gallatin",
+  "state": "TN"
+ },
+ {
+  "id": 11283500932,
+  "name": "Kroger",
+  "lat": 36.3782948,
+  "lon": -86.4663262,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11296204526,
+  "name": "Kroger",
+  "lat": 35.9332723,
+  "lon": -83.9051981,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11305975628,
+  "name": "Kroger",
+  "lat": 29.1837098,
+  "lon": -95.4312895,
+  "address": "1804 North Velasco Street",
+  "city": "Angleton",
+  "state": "TX"
+ },
+ {
+  "id": 11342589569,
+  "name": "Kroger Pharmacy",
+  "lat": 31.6140493,
+  "lon": -94.6539514,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11361380563,
+  "name": "Kroger",
+  "lat": 36.2158313,
+  "lon": -86.3305395,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11361380564,
+  "name": "Kroger",
+  "lat": 36.2144436,
+  "lon": -86.330875,
+  "address": "1418 West Main Street",
+  "city": "Lebanon",
+  "state": "TN"
+ },
+ {
+  "id": 11367208742,
+  "name": "Kroger",
+  "lat": 36.8402902,
+  "lon": -87.476571,
+  "address": "1213 Skyline Drive",
+  "city": "Hopkinsville",
+  "state": "KY"
+ },
+ {
+  "id": 11367208743,
+  "name": "Kroger",
+  "lat": 36.8413211,
+  "lon": -87.4775141,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11388401844,
+  "name": "Kroger",
+  "lat": 36.6974195,
+  "lon": -79.880508,
+  "address": "280 West Commonwealth Boulevard",
+  "city": "Martinsville",
+  "state": "VA"
+ },
+ {
+  "id": 11392261786,
+  "name": "Kroger",
+  "lat": 39.126525,
+  "lon": -84.5973387,
+  "address": "2310 Ferguson Road",
+  "city": "Cincinnati",
+  "state": "OH"
+ },
+ {
+  "id": 11392261787,
+  "name": "Kroger Pharmacy",
+  "lat": 39.1263024,
+  "lon": -84.5974191,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11394309190,
+  "name": "Kroger Pharmacy",
+  "lat": 35.8922531,
+  "lon": -84.5504117,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11396342035,
+  "name": "Kroger",
+  "lat": 39.1421549,
+  "lon": -84.620776,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11396342061,
+  "name": "Kroger",
+  "lat": 39.1767693,
+  "lon": -84.6413796,
+  "address": "5910 Harrison Avenue",
+  "city": "Cincinnati",
+  "state": "OH"
+ },
+ {
+  "id": 11398453139,
+  "name": "Kroger Pharmacy",
+  "lat": 37.1068736,
+  "lon": -84.0899469,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11455734149,
+  "name": "Kroger Pharmacy",
+  "lat": 37.9966611,
+  "lon": -84.4787796,
+  "address": "1060 Chinoe Road",
+  "city": "Lexington",
+  "state": "KY"
+ },
+ {
+  "id": 11460561620,
+  "name": "Kroger",
+  "lat": 36.0320022,
+  "lon": -83.9307083,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11469124633,
+  "name": "Kroger",
+  "lat": 34.7445411,
+  "lon": -86.7846719,
+  "address": "8855 Highway 72 West",
+  "city": "Madison",
+  "state": "AL"
+ },
+ {
+  "id": 11469194221,
+  "name": "Kroger",
+  "lat": 34.7470081,
+  "lon": -86.7836474,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11539340062,
+  "name": "Kroger",
+  "lat": 39.4424327,
+  "lon": -84.3780113,
+  "address": "3033 Heritage Green Drive",
+  "city": "Monroe",
+  "state": "OH"
+ },
+ {
+  "id": 11540367040,
+  "name": "Kroger Pharmacy",
+  "lat": 39.412138,
+  "lon": -81.4289291,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11610032258,
+  "name": "Kroger",
+  "lat": 39.3360386,
+  "lon": -84.5625278,
+  "address": "560 Wessel Drive",
+  "city": "Fairfield",
+  "state": "OH"
+ },
+ {
+  "id": 11610032259,
+  "name": "Kroger",
+  "lat": 39.35916,
+  "lon": -84.4582975,
+  "address": "8000 Princeton Glendale Road",
+  "city": "West Chester",
+  "state": "OH"
+ },
+ {
+  "id": 11610032260,
+  "name": "Kroger",
+  "lat": 39.7641466,
+  "lon": -84.6386664,
+  "address": "1603 North Barron Street",
+  "city": "Eaton",
+  "state": "OH"
+ },
+ {
+  "id": 11610032262,
+  "name": "Kroger",
+  "lat": 40.8998797,
+  "lon": -85.5080633,
+  "address": "2718 Guilford Street",
+  "city": "Huntington",
+  "state": "IN"
+ },
+ {
+  "id": 11610032266,
+  "name": "Kroger",
+  "lat": 41.6616147,
+  "lon": -85.9662824,
+  "address": "130 West Hively Avenue",
+  "city": "Elkhart",
+  "state": "IN"
+ },
+ {
+  "id": 11610099269,
+  "name": "Kroger",
+  "lat": 42.5701231,
+  "lon": -82.8506123,
+  "address": "26300 Crocker Boulevard",
+  "city": "Harrison Township",
+  "state": "MI"
+ },
+ {
+  "id": 11610099270,
+  "name": "Kroger",
+  "lat": 42.5237143,
+  "lon": -82.9227329,
+  "address": "30851 Gratiot Avenue",
+  "city": "Roseville",
+  "state": "MI"
+ },
+ {
+  "id": 11610099274,
+  "name": "Kroger",
+  "lat": 41.2836332,
+  "lon": -84.3282258,
+  "address": "1890 East 2nd Street",
+  "city": "Defiance",
+  "state": "OH"
+ },
+ {
+  "id": 11610099281,
+  "name": "Kroger Marketplace",
+  "lat": 40.0308714,
+  "lon": -84.2213619,
+  "address": "731 West Market Street",
+  "city": "Troy",
+  "state": "OH"
+ },
+ {
+  "id": 11610099283,
+  "name": "Kroger",
+  "lat": 39.7969576,
+  "lon": -84.2458795,
+  "address": "3520 West Siebenthaler Avenue",
+  "city": "Dayton",
+  "state": "OH"
+ },
+ {
+  "id": 11610099284,
+  "name": "Kroger",
+  "lat": 39.00629,
+  "lon": -84.420587,
+  "address": "",
+  "city": "Cold Spring",
+  "state": "KY"
+ },
+ {
+  "id": 11617197091,
+  "name": "Kroger",
+  "lat": 34.3735783,
+  "lon": -83.8698763,
+  "address": "3630 Thompson Bridge Road",
+  "city": "Gainesville",
+  "state": "GA"
+ },
+ {
+  "id": 11617197096,
+  "name": "Kroger",
+  "lat": 34.0855824,
+  "lon": -84.3568489,
+  "address": "12460 Crabapple Road",
+  "city": "Alpharetta",
+  "state": "GA"
+ },
+ {
+  "id": 11617197105,
+  "name": "Kroger",
+  "lat": 33.960518,
+  "lon": -84.1436282,
+  "address": "3093 Steve Reynolds Boulevard",
+  "city": "Duluth",
+  "state": "GA"
+ },
+ {
+  "id": 11617197106,
+  "name": "Kroger",
+  "lat": 33.9034653,
+  "lon": -84.1997553,
+  "address": "6050 Singleton Road",
+  "city": "Norcross",
+  "state": "GA"
+ },
+ {
+  "id": 11617197108,
+  "name": "Kroger",
+  "lat": 33.8249844,
+  "lon": -84.0331882,
+  "address": "3035 Scenic Highway South",
+  "city": "Snellville",
+  "state": "GA"
+ },
+ {
+  "id": 11617197110,
+  "name": "Kroger",
+  "lat": 33.5941221,
+  "lon": -83.968384,
+  "address": "3700 Salem Road",
+  "city": "Covington",
+  "state": "GA"
+ },
+ {
+  "id": 11617197113,
+  "name": "Kroger",
+  "lat": 33.506317,
+  "lon": -84.1434661,
+  "address": "5900 East Lake Parkway",
+  "city": "McDonough",
+  "state": "GA"
+ },
+ {
+  "id": 11617197115,
+  "name": "Kroger",
+  "lat": 33.6193593,
+  "lon": -84.2389871,
+  "address": "101 Fairview Road",
+  "city": "Ellenwood",
+  "state": "GA"
+ },
+ {
+  "id": 11617197116,
+  "name": "Kroger",
+  "lat": 33.6002589,
+  "lon": -84.3370693,
+  "address": "5664 Jonesboro Road",
+  "city": "Lake City",
+  "state": "GA"
+ },
+ {
+  "id": 11617197117,
+  "name": "Kroger",
+  "lat": 33.5342703,
+  "lon": -84.3663541,
+  "address": "8059 Tara Boulevard",
+  "city": "Jonesboro",
+  "state": "GA"
+ },
+ {
+  "id": 11617197121,
+  "name": "Kroger",
+  "lat": 33.5658171,
+  "lon": -84.53677,
+  "address": "4550 Jonesboro Road",
+  "city": "Union City",
+  "state": "GA"
+ },
+ {
+  "id": 11617197122,
+  "name": "Kroger",
+  "lat": 33.5901055,
+  "lon": -84.4704273,
+  "address": "6055 Old National Highway",
+  "city": "College Park",
+  "state": "GA"
+ },
+ {
+  "id": 11617197126,
+  "name": "Kroger",
+  "lat": 33.9676622,
+  "lon": -84.488087,
+  "address": "2100 Roswell Road",
+  "city": "Marietta",
+  "state": "GA"
+ },
+ {
+  "id": 11625087986,
+  "name": "Kroger",
+  "lat": 41.1492454,
+  "lon": -88.8336059,
+  "address": "2399 North Bloomington Street",
+  "city": "Streator",
+  "state": "IL"
+ },
+ {
+  "id": 11648968560,
+  "name": "Kroger",
+  "lat": 37.2643375,
+  "lon": -80.0350184,
+  "address": "1925 Electric Road",
+  "city": "Salem",
+  "state": "VA"
+ },
+ {
+  "id": 11648968567,
+  "name": "Kroger",
+  "lat": 40.0755323,
+  "lon": -80.8727107,
+  "address": "50789 Valley Plaza Drive",
+  "city": "Saint Clairsville",
+  "state": "OH"
+ },
+ {
+  "id": 11648995969,
+  "name": "Kroger",
+  "lat": 40.0114957,
+  "lon": -80.7474207,
+  "address": "400 28th Street",
+  "city": "Bellaire",
+  "state": "OH"
+ },
+ {
+  "id": 11648995970,
+  "name": "Kroger",
+  "lat": 40.1141514,
+  "lon": -80.6996156,
+  "address": "1241 Warwood Avenue",
+  "city": "Wheeling",
+  "state": "WV"
+ },
+ {
+  "id": 11651005421,
+  "name": "Kroger",
+  "lat": 36.021983,
+  "lon": -86.5761689,
+  "address": "5145 Murfreesboro Road",
+  "city": "La Vergne",
+  "state": "TN"
+ },
+ {
+  "id": 11651005424,
+  "name": "Kroger",
+  "lat": 36.1198937,
+  "lon": -86.7772775,
+  "address": "2615 8th Avenue South",
+  "city": "Nashville",
+  "state": "TN"
+ },
+ {
+  "id": 11651005427,
+  "name": "Kroger",
+  "lat": 36.0317088,
+  "lon": -86.787643,
+  "address": "210 Franklin Road",
+  "city": "Brentwood",
+  "state": "TN"
+ },
+ {
+  "id": 11651005432,
+  "name": "Kroger",
+  "lat": 35.601457,
+  "lon": -87.0622778,
+  "address": "1202 South James M Campbell Boulevard",
+  "city": "Columbia",
+  "state": "TN"
+ },
+ {
+  "id": 11651005437,
+  "name": "Kroger",
+  "lat": 34.4395711,
+  "lon": -86.9427948,
+  "address": "241 Highway 31 Southwest",
+  "city": "Hartselle",
+  "state": "AL"
+ },
+ {
+  "id": 11651005462,
+  "name": "Kroger",
+  "lat": 34.1124993,
+  "lon": -84.5554575,
+  "address": "2295 Towne Lake Parkway",
+  "city": "Woodstock",
+  "state": "GA"
+ },
+ {
+  "id": 11652908762,
+  "name": "The Little Clinic",
+  "lat": 33.3765344,
+  "lon": -84.5646587,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11653033005,
+  "name": "Kroger",
+  "lat": 36.7392776,
+  "lon": -84.4739834,
+  "address": "1187 North Highway 27",
+  "city": "Whitley City",
+  "state": "KY"
+ },
+ {
+  "id": 11656087860,
+  "name": "Kroger",
+  "lat": 31.7630636,
+  "lon": -95.6277509,
+  "address": "325 East Spring Street",
+  "city": "Palestine",
+  "state": "TX"
+ },
+ {
+  "id": 11656096575,
+  "name": "Kroger",
+  "lat": 32.6071611,
+  "lon": -96.8252387,
+  "address": "",
+  "city": "Desoto",
+  "state": "TX"
+ },
+ {
+  "id": 11656096579,
+  "name": "Kroger",
+  "lat": 32.8249319,
+  "lon": -97.2276705,
+  "address": "7201 Boulevard 26",
+  "city": "North Richland Hills",
+  "state": "TX"
+ },
+ {
+  "id": 11656096585,
+  "name": "Kroger",
+  "lat": 32.8294759,
+  "lon": -96.9747318,
+  "address": "2201 West Grauwyler Road",
+  "city": "Irving",
+  "state": "TX"
+ },
+ {
+  "id": 11796305334,
+  "name": "Kroger",
+  "lat": 30.1057221,
+  "lon": -93.7464361,
+  "address": "1600 North 16th Street",
+  "city": "Orange",
+  "state": "TX"
+ },
+ {
+  "id": 11796305335,
+  "name": "Kroger",
+  "lat": 30.0831801,
+  "lon": -94.142254,
+  "address": "3845 Phelan Boulevard",
+  "city": "Beaumont",
+  "state": "TX"
+ },
+ {
+  "id": 11796305336,
+  "name": "Kroger",
+  "lat": 29.7402016,
+  "lon": -94.9520568,
+  "address": "1700 North Alexander Drive",
+  "city": "Baytown",
+  "state": "TX"
+ },
+ {
+  "id": 11796305337,
+  "name": "Kroger",
+  "lat": 29.3983525,
+  "lon": -95.2493295,
+  "address": "",
+  "city": "Alvin",
+  "state": "TX"
+ },
+ {
+  "id": 11796305338,
+  "name": "Kroger",
+  "lat": 29.5193785,
+  "lon": -95.0753165,
+  "address": "250 South Egret Bay Boulevard",
+  "city": "League City",
+  "state": "TX"
+ },
+ {
+  "id": 11796305339,
+  "name": "Kroger",
+  "lat": 29.5208856,
+  "lon": -95.1600336,
+  "address": "3135 East FM 528 Road",
+  "city": "Friendswood",
+  "state": "TX"
+ },
+ {
+  "id": 11796305340,
+  "name": "Kroger",
+  "lat": 29.6654233,
+  "lon": -95.1352796,
+  "address": "6767 Spencer Highway",
+  "city": "Pasadena",
+  "state": "TX"
+ },
+ {
+  "id": 11796305341,
+  "name": "Kroger",
+  "lat": 29.6634041,
+  "lon": -95.1895964,
+  "address": "3550 Spencer Highway",
+  "city": "Pasadena",
+  "state": "TX"
+ },
+ {
+  "id": 11796305342,
+  "name": "Kroger",
+  "lat": 29.6966036,
+  "lon": -95.1737224,
+  "address": "2619 Red Bluff Road",
+  "city": "Pasadena",
+  "state": "TX"
+ },
+ {
+  "id": 11796305344,
+  "name": "Kroger",
+  "lat": 29.5606099,
+  "lon": -95.2715022,
+  "address": "3245 Broadway Street",
+  "city": "Pearland",
+  "state": "TX"
+ },
+ {
+  "id": 11796305346,
+  "name": "Kroger",
+  "lat": 30.0457619,
+  "lon": -95.34811,
+  "address": "5671 Treaschwig Road",
+  "city": "Spring",
+  "state": "TX"
+ },
+ {
+  "id": 11802566364,
+  "name": "Kroger",
+  "lat": 34.3111181,
+  "lon": -89.9282841,
+  "address": "110 Keating Road",
+  "city": "Batesville",
+  "state": "MS"
+ },
+ {
+  "id": 11802569669,
+  "name": "Kroger",
+  "lat": 35.1504701,
+  "lon": -89.9184469,
+  "address": "4264 Summer Avenue",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 11802569670,
+  "name": "Kroger",
+  "lat": 35.2226893,
+  "lon": -89.9767774,
+  "address": "2632 Frayser Boulevard",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 11802569671,
+  "name": "Kroger",
+  "lat": 35.2311122,
+  "lon": -89.8953313,
+  "address": "3860 Austin Peay Highway",
+  "city": "Memphis",
+  "state": "TN"
+ },
+ {
+  "id": 11802569672,
+  "name": "Kroger",
+  "lat": 35.2025118,
+  "lon": -89.8628432,
+  "address": "5995 Stage Road",
+  "city": "Bartlett",
+  "state": "TN"
+ },
+ {
+  "id": 11802569673,
+  "name": "Kroger",
+  "lat": 35.229631,
+  "lon": -89.808114,
+  "address": "7615 US Highway 70",
+  "city": "Bartlett",
+  "state": "TN"
+ },
+ {
+  "id": 11802569675,
+  "name": "Kroger",
+  "lat": 35.697373,
+  "lon": -88.831186,
+  "address": "35 West University Parkway",
+  "city": "Jackson",
+  "state": "TN"
+ },
+ {
+  "id": 11802569688,
+  "name": "Kroger",
+  "lat": 37.2329598,
+  "lon": -87.1609475,
+  "address": "100 Copper Creek Drive",
+  "city": "Powderly",
+  "state": "KY"
+ },
+ {
+  "id": 11802569691,
+  "name": "Kroger",
+  "lat": 36.5211629,
+  "lon": -87.3300169,
+  "address": "1489 Madison Street",
+  "city": "Clarksville",
+  "state": "TN"
+ },
+ {
+  "id": 11802569696,
+  "name": "Kroger Pharmacy",
+  "lat": 36.008639,
+  "lon": -84.885558,
+  "address": "126 Stonehenge Drive",
+  "city": "Crossville",
+  "state": "TN"
+ },
+ {
+  "id": 11802569699,
+  "name": "Kroger",
+  "lat": 36.9597657,
+  "lon": -86.4666655,
+  "address": "711 Campbell Lane",
+  "city": "Bowling Green",
+  "state": "KY"
+ },
+ {
+  "id": 11802569706,
+  "name": "Kroger",
+  "lat": 36.043359,
+  "lon": -86.956547,
+  "address": "",
+  "city": "Bellevue",
+  "state": "TN"
+ },
+ {
+  "id": 11806932142,
+  "name": "Kroger",
+  "lat": 39.5177121,
+  "lon": -85.7545916,
+  "address": "1601 East Michigan Road",
+  "city": "Shelbyville",
+  "state": "IN"
+ },
+ {
+  "id": 11806932146,
+  "name": "Kroger",
+  "lat": 36.9592084,
+  "lon": -84.0752841,
+  "address": "14889 North US Highway 25 East",
+  "city": "Corbin",
+  "state": "KY"
+ },
+ {
+  "id": 11806932149,
+  "name": "Kroger",
+  "lat": 38.0170723,
+  "lon": -84.9102055,
+  "address": "1300 Anderson Crossing Drive",
+  "city": "Lawrenceburg",
+  "state": "KY"
+ },
+ {
+  "id": 11806932150,
+  "name": "Kroger",
+  "lat": 37.9821953,
+  "lon": -86.1628622,
+  "address": "568 Bypass Road",
+  "city": "Brandenburg",
+  "state": "KY"
+ },
+ {
+  "id": 11806932152,
+  "name": "Kroger",
+  "lat": 38.7815374,
+  "lon": -85.3789826,
+  "address": "525 East Clifty Drive",
+  "city": "Madison",
+  "state": "IN"
+ },
+ {
+  "id": 11806932153,
+  "name": "Kroger",
+  "lat": 38.6576786,
+  "lon": -85.1312397,
+  "address": "2549 US Highway 227",
+  "city": "Carrollton",
+  "state": "KY"
+ },
+ {
+  "id": 11835129794,
+  "name": "Fry's Fuel",
+  "lat": 32.4006686,
+  "lon": -110.9567075,
+  "address": "10590 North 1st Avenue",
+  "city": "Oro Valley",
+  "state": "AZ"
+ },
+ {
+  "id": 11838227748,
+  "name": "Kroger",
+  "lat": 37.75467,
+  "lon": -87.1516518,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11851118266,
+  "name": "Kroger",
+  "lat": 39.5177935,
+  "lon": -85.7545942,
+  "address": "1601 East Michigan Road",
+  "city": "Shelbyville",
+  "state": "IN"
+ },
+ {
+  "id": 11877157367,
+  "name": "Kroger",
+  "lat": 32.2681971,
+  "lon": -80.8583504,
+  "address": "125 Towne Drive",
+  "city": "Bluffton",
+  "state": "SC"
+ },
+ {
+  "id": 11882214937,
+  "name": "Kroger",
+  "lat": 33.749269,
+  "lon": -84.7323434,
+  "address": "8501 Hospital Drive",
+  "city": "Douglasville",
+  "state": "GA"
+ },
+ {
+  "id": 11954171559,
+  "name": "Kroger Pharmacy",
+  "lat": 42.5937747,
+  "lon": -83.6043091,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 11975131073,
+  "name": "Kroger",
+  "lat": 39.6803674,
+  "lon": -86.129457,
+  "address": "5911 Madison Avenue",
+  "city": "Indianapolis",
+  "state": "IN"
+ },
+ {
+  "id": 11990759053,
+  "name": "Kroger",
+  "lat": 40.7414064,
+  "lon": -89.6042446,
+  "address": "801 West Lake Avenue",
+  "city": "Peoria",
+  "state": "IL"
+ },
+ {
+  "id": 11990759065,
+  "name": "Kroger",
+  "lat": 40.6209482,
+  "lon": -89.4705277,
+  "address": "1001 West Jackson Street",
+  "city": "Morton",
+  "state": "IL"
+ },
+ {
+  "id": 11993377643,
+  "name": "Kroger",
+  "lat": 34.478283,
+  "lon": -84.9373691,
+  "address": "136 West Belmont Drive",
+  "city": "Calhoun",
+  "state": "GA"
+ },
+ {
+  "id": 11993401891,
+  "name": "Kroger",
+  "lat": 34.4789878,
+  "lon": -84.93743,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12011182504,
+  "name": "Kroger Pharmacy",
+  "lat": 37.2559351,
+  "lon": -79.9564619,
+  "address": "614 Brandon Avenue Southwest",
+  "city": "Roanoke",
+  "state": "VA"
+ },
+ {
+  "id": 12016019044,
+  "name": "Kroger Pharmacy",
+  "lat": 37.2644603,
+  "lon": -80.0349348,
+  "address": "1925 Electric Road",
+  "city": "Roanoke",
+  "state": "VA"
+ },
+ {
+  "id": 12016020803,
+  "name": "Kroger Pharmacy",
+  "lat": 37.2330144,
+  "lon": -79.9764471,
+  "address": "4488 Electric Road",
+  "city": "Roanoke",
+  "state": "VA"
+ },
+ {
+  "id": 12016052402,
+  "name": "Kroger Pharmacy",
+  "lat": 37.233001,
+  "lon": -80.0089674,
+  "address": "3971 Brambleton Avenue",
+  "city": "Roanoke",
+  "state": "VA"
+ },
+ {
+  "id": 12034059533,
+  "name": "Kroger",
+  "lat": 37.8458167,
+  "lon": -82.0138043,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12051506128,
+  "name": "Kroger Pharmacy",
+  "lat": 38.2023314,
+  "lon": -85.7617673,
+  "address": "3165 South 2nd Street",
+  "city": "Louisville",
+  "state": "KY"
+ },
+ {
+  "id": 12054347826,
+  "name": "Kroger",
+  "lat": 39.2147333,
+  "lon": -84.2849215,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12079642583,
+  "name": "Kroger",
+  "lat": 30.1171759,
+  "lon": -94.1692474,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12119195727,
+  "name": "Kroger on the Rhine",
+  "lat": 39.1067651,
+  "lon": -84.5125374,
+  "address": "100 East Court Street",
+  "city": "Cincinnati",
+  "state": "OH"
+ },
+ {
+  "id": 12125764483,
+  "name": "Kroger Pharmacy",
+  "lat": 35.0894586,
+  "lon": -92.4719432,
+  "address": "855 Salem Road",
+  "city": "Conway",
+  "state": "AR"
+ },
+ {
+  "id": 12219196340,
+  "name": "Kroger Pharmacy",
+  "lat": 42.991904,
+  "lon": -84.5481361,
+  "address": "900 South Whittmore Street",
+  "city": "St. Johns",
+  "state": "MI"
+ },
+ {
+  "id": 12219376719,
+  "name": "Kroger Marketplace",
+  "lat": 33.5046177,
+  "lon": -84.1393614,
+  "address": "2000 GA-155 N",
+  "city": "McDonough",
+  "state": "GA"
+ },
+ {
+  "id": 12249201667,
+  "name": "Kroger Pharmacy",
+  "lat": 36.7061098,
+  "lon": -81.9743033,
+  "address": "466 Cummings Street",
+  "city": "Abingdon",
+  "state": "VA"
+ },
+ {
+  "id": 12265043698,
+  "name": "Kroger Fuel",
+  "lat": 38.0176537,
+  "lon": -84.9084873,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12278505691,
+  "name": "Kroger Fuel Center",
+  "lat": 38.9731631,
+  "lon": -80.2298865,
+  "address": "480 WV-20",
+  "city": "Buckhannon",
+  "state": "WV"
+ },
+ {
+  "id": 12290749899,
+  "name": "Kroger Fuel Center",
+  "lat": 29.6782343,
+  "lon": -95.6429413,
+  "address": "9311 Highway 6 South",
+  "city": "Houston",
+  "state": "TX"
+ },
+ {
+  "id": 12349703901,
+  "name": "Kroger",
+  "lat": 37.2645187,
+  "lon": -80.0336476,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12388409072,
+  "name": "Kroger",
+  "lat": 37.3239138,
+  "lon": -79.9933748,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12403377114,
+  "name": "Kroger",
+  "lat": 40.5680725,
+  "lon": -89.6282704,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12434736571,
+  "name": "Kroger",
+  "lat": 34.1223001,
+  "lon": -84.1689447,
+  "address": "1595 Peachtree Parkway",
+  "city": "Cumming",
+  "state": "GA"
+ },
+ {
+  "id": 12463746138,
+  "name": "Kroger",
+  "lat": 39.6417561,
+  "lon": -84.2651997,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12499155349,
+  "name": "Kroger Pharmacy",
+  "lat": 37.5548027,
+  "lon": -77.4882849,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12517715307,
+  "name": "Kroger Pharmacy",
+  "lat": 30.0919426,
+  "lon": -95.6338053,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12602908944,
+  "name": "Kroger Pharmacy",
+  "lat": 40.5686152,
+  "lon": -89.6282739,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12697608577,
+  "name": "Kroger",
+  "lat": 29.9248572,
+  "lon": -95.2020489,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12717486848,
+  "name": "Kroger Pharmacy",
+  "lat": 41.1126162,
+  "lon": -83.2086581,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12739642557,
+  "name": "Kroger",
+  "lat": 39.8749381,
+  "lon": -86.1215739,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12784277053,
+  "name": "Kroger",
+  "lat": 34.0049205,
+  "lon": -84.1722518,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 12947498051,
+  "name": "Kroger",
+  "lat": 34.0514405,
+  "lon": -83.9301623,
+  "address": "2700 Braselton Highway",
+  "city": "Dacula",
+  "state": "GA"
+ },
+ {
+  "id": 12981335564,
+  "name": "Kroger",
+  "lat": 29.6490744,
+  "lon": -95.6505292,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13012079581,
+  "name": "Kroger",
+  "lat": 42.2484664,
+  "lon": -83.5752703,
+  "address": "1771 East Michigan Avenue",
+  "city": "Ypsilanti",
+  "state": "MI"
+ },
+ {
+  "id": 13018306702,
+  "name": "Kroger",
+  "lat": 38.0828597,
+  "lon": -84.4890012,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13035293279,
+  "name": "Kroger Fuel Center",
+  "lat": 39.672971,
+  "lon": -85.1360558,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13068289191,
+  "name": "Kroger Pharmacy",
+  "lat": 38.0378689,
+  "lon": -84.5505783,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13068345310,
+  "name": "Kroger Pharmacy",
+  "lat": 37.9789769,
+  "lon": -84.5499642,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13068594966,
+  "name": "Kroger Pharmacy",
+  "lat": 33.4091963,
+  "lon": -84.6797556,
+  "address": "3150",
+  "city": "Newnan",
+  "state": "GA"
+ },
+ {
+  "id": 13068602180,
+  "name": "Kroger Pharmacy",
+  "lat": 30.0324626,
+  "lon": -95.5526371,
+  "address": "8745 Spring Cypress Road",
+  "city": "Spring",
+  "state": "TX"
+ },
+ {
+  "id": 13068607941,
+  "name": "Kroger Pharmacy",
+  "lat": 41.6868668,
+  "lon": -83.7236399,
+  "address": "7545 Sylvania Avenue",
+  "city": "Sylvania",
+  "state": "OH"
+ },
+ {
+  "id": 13068609961,
+  "name": "Kroger Pharmacy",
+  "lat": 40.0584978,
+  "lon": -82.9723561,
+  "address": "1745 Morse Road",
+  "city": "Columbus",
+  "state": "OH"
+ },
+ {
+  "id": 13068611519,
+  "name": "Kroger Pharmacy",
+  "lat": 41.6302941,
+  "lon": -86.232251,
+  "address": "1217 East Ireland Road",
+  "city": "South Bend",
+  "state": "IN"
+ },
+ {
+  "id": 13068613771,
+  "name": "Kroger Pharmacy",
+  "lat": 38.3343344,
+  "lon": -85.7121335,
+  "address": "1027 Jeffersonville Commons Drive",
+  "city": "Jeffersonville",
+  "state": "IN"
+ },
+ {
+  "id": 13068615625,
+  "name": "Kroger Pharmacy",
+  "lat": 36.3783651,
+  "lon": -86.4652408,
+  "address": "845 Nashville Pike",
+  "city": "Gallatin",
+  "state": "TN"
+ },
+ {
+  "id": 13068616095,
+  "name": "Kroger Pharmacy",
+  "lat": 30.2105748,
+  "lon": -95.5282562,
+  "address": "8000 Research Forest Drive",
+  "city": "The Woodlands",
+  "state": "TX"
+ },
+ {
+  "id": 13072295570,
+  "name": "Kroger",
+  "lat": 34.0845709,
+  "lon": -84.3577951,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13072316938,
+  "name": "Kroger",
+  "lat": 34.7573583,
+  "lon": -86.7136361,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13072345919,
+  "name": "Kroger",
+  "lat": 39.0188005,
+  "lon": -84.6952452,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13121932121,
+  "name": "Kroger Pharmacy",
+  "lat": 36.9283471,
+  "lon": -84.1054712,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13265457650,
+  "name": "Kroger",
+  "lat": 37.7673319,
+  "lon": -87.0589584,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13319618782,
+  "name": "Kroger Pharmacy",
+  "lat": 42.6951484,
+  "lon": -84.5650139,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13370341391,
+  "name": "Kroger",
+  "lat": 35.936904,
+  "lon": -89.909877,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13383692449,
+  "name": "Kroger",
+  "lat": 30.2272649,
+  "lon": -93.3595954,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13383692450,
+  "name": "Kroger Pharmacy",
+  "lat": 30.2267484,
+  "lon": -93.360703,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13408730983,
+  "name": "Kroger",
+  "lat": 34.0910322,
+  "lon": -83.7582774,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13470990904,
+  "name": "Kroger",
+  "lat": 37.7452094,
+  "lon": -88.5256541,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13505532392,
+  "name": "Kroger",
+  "lat": 29.7969847,
+  "lon": -95.485259,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13507699975,
+  "name": "Kroger",
+  "lat": 30.0841134,
+  "lon": -94.1423011,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13588015563,
+  "name": "Kroger",
+  "lat": 41.239006,
+  "lon": -85.8275146,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13641000456,
+  "name": "Kroger Marketplace",
+  "lat": 38.1197619,
+  "lon": -85.6124099,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13645680454,
+  "name": "Kroger",
+  "lat": 40.0007899,
+  "lon": -86.0669154,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13649320559,
+  "name": "Kroger",
+  "lat": 33.5105469,
+  "lon": -82.0294047,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13691133902,
+  "name": "Kroger",
+  "lat": 41.1709375,
+  "lon": -85.4816875,
+  "address": "631 Countryside Drive",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13711863934,
+  "name": "Kroger Pharmacy",
+  "lat": 42.6170531,
+  "lon": -82.9943654,
+  "address": "43893 Schoenherr Road",
+  "city": "Sterling Heights",
+  "state": "MI"
+ },
+ {
+  "id": 13714861018,
+  "name": "Kroger",
+  "lat": 33.9214469,
+  "lon": -83.3429034,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13717414717,
+  "name": "Kroger Pharmacy",
+  "lat": 37.6525771,
+  "lon": -77.6253498,
+  "address": "11895 West Broad Street",
+  "city": "Henrico",
+  "state": "VA"
+ },
+ {
+  "id": 13776998006,
+  "name": "Kroger",
+  "lat": 37.7155632,
+  "lon": -85.9033697,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13812711501,
+  "name": "Kroger Pharmacy",
+  "lat": 30.0011553,
+  "lon": -95.1611585,
+  "address": "19300 West Lake Houston Parkway",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13894626892,
+  "name": "Kroger Pharmacy",
+  "lat": 38.3809816,
+  "lon": -85.4267999,
+  "address": "2835 Highway 393",
+  "city": "La Grange",
+  "state": "KY"
+ },
+ {
+  "id": 13894870079,
+  "name": "Kroger",
+  "lat": 37.4637273,
+  "lon": -89.2305672,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13903120978,
+  "name": "Kroger",
+  "lat": 32.4993395,
+  "lon": -94.7490734,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13923902368,
+  "name": "Kroger Marketplace",
+  "lat": 32.3937605,
+  "lon": -93.7291342,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13938789426,
+  "name": "Kroger Marketplace",
+  "lat": 39.3447664,
+  "lon": -84.2161122,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13951003262,
+  "name": "Kroger",
+  "lat": 32.4992324,
+  "lon": -94.7490262,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13954857247,
+  "name": "Kroger",
+  "lat": 42.5032173,
+  "lon": -83.118602,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13954857263,
+  "name": "Kroger",
+  "lat": 42.5016539,
+  "lon": -83.1193965,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13955334666,
+  "name": "Kroger Pharmacy",
+  "lat": 43.1105417,
+  "lon": -83.6927012,
+  "address": "",
+  "city": "",
+  "state": ""
+ },
+ {
+  "id": 13969415280,
+  "name": "Kroger",
+  "lat": 32.0060525,
+  "lon": -81.11308,
+  "address": "318 Mall Boulevard",
+  "city": "Savannah",
+  "state": "GA"
+ },
+ {
+  "id": 13978845362,
+  "name": "Kroger Pharmacy",
+  "lat": 32.0163146,
+  "lon": -80.97653,
+  "address": "495 Johnny Mercer Boulevard",
+  "city": "Savannah",
+  "state": "GA"
+ },
+ {
+  "id": 13991349973,
+  "name": "Kroger",
+  "lat": 42.8032325,
+  "lon": -83.7359914,
+  "address": "15100 Silver Parkway",
+  "city": "Fenton",
+  "state": "MI"
+ }
+]
