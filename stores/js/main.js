@@ -92,9 +92,25 @@ function toGeoJson(records) {
     features: records.map((r) => ({
       type: 'Feature',
       geometry: { type: 'Point', coordinates: [r.lon, r.lat] },
-      properties: { name: r.name, address: r.address, city: r.city, state: r.state },
+      properties: {
+        name: r.name,
+        address: r.address,
+        city: r.city,
+        state: r.state,
+        // GeoJSON properties can't hold arrays, so this is stored as a
+        // comma-joined string and split back apart when read.
+        sources: (r.sources || []).join(','),
+      },
     })),
   };
+}
+
+function sourceLabel(sourcesCsv) {
+  const sources = (sourcesCsv || '').split(',').filter(Boolean);
+  if (sources.length >= 2) return 'Confirmed by 2 sources (OSM + Overture)';
+  if (sources[0] === 'overture') return 'Source: Overture Maps only';
+  if (sources[0] === 'osm') return 'Source: OpenStreetMap only';
+  return '';
 }
 
 function addChainLayers(chain, geojson) {
@@ -158,14 +174,19 @@ function addChainLayers(chain, geojson) {
     map.easeTo({ center: features[0].geometry.coordinates, zoom });
   });
 
-  // Click an individual store -> popup with its name/address.
+  // Click an individual store -> popup with its name/address/source confidence.
   map.on('click', pointLayerId(chain.slug), (e) => {
     const feature = e.features[0];
-    const { name, address, city, state } = feature.properties;
+    const { name, address, city, state, sources } = feature.properties;
     const line2 = [address, [city, state].filter(Boolean).join(', ')].filter(Boolean).join(', ');
+    const sourceLine = sourceLabel(sources);
     new maplibregl.Popup()
       .setLngLat(feature.geometry.coordinates)
-      .setHTML(`<div class="stores-popup"><strong>${escapeHtml(name)}</strong>${escapeHtml(line2)}</div>`)
+      .setHTML(
+        `<div class="stores-popup"><strong>${escapeHtml(name)}</strong>${escapeHtml(line2)}${
+          sourceLine ? `<div class="stores-popup-source">${escapeHtml(sourceLine)}</div>` : ''
+        }</div>`
+      )
       .addTo(map);
   });
 

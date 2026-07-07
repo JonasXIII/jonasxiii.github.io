@@ -1,60 +1,61 @@
 #!/usr/bin/env python3
-"""fetch_store_locations.py - builds stores/data/<chain>.json from real,
-freely-licensed OpenStreetMap data (via the public Overpass API), for the
-chain-store map page.
+"""fetch_store_locations.py - builds stores/data/<chain>.json from two real,
+freely-licensed sources: OpenStreetMap (via the public Overpass API) and
+Overture Maps (via its public S3-hosted Parquet places data, queried with
+DuckDB) - then merges and deduplicates them, for the chain-store map page.
+
+Two sources instead of one because either alone has real gaps: a location
+you know about might not be mapped in OSM yet, and OSM sometimes tags an
+in-store pharmacy/vision-center counter as its own point right next to the
+main store, which would otherwise show as two separate markers for one
+physical location.
 
 Run this locally (not from any sandboxed/CI environment - some environments
-block outbound calls to Overpass's /api/interpreter at the network level):
+block outbound calls to Overpass's /api/interpreter, and cloud storage
+access, at the network level):
 
     python scripts/fetch_store_locations.py
+
+Requires the standard library for the OSM half. The Overture half needs:
+
+    pip install duckdb
+
+...and is skipped gracefully (with a clear message) if duckdb isn't
+installed - the script still produces useful OSM-only data either way. Force
+OSM-only explicitly with --osm-only.
 
 Optional: fetch just one chain while testing:
 
     python scripts/fetch_store_locations.py --only walmart
-
-This uses only the Python standard library (no pip install needed). It is
-polite to the free public Overpass instance: one query per chain, a delay
-between chains, and retries with backoff on timeout/rate-limit responses.
-Data completeness depends on how thoroughly OpenStreetMap contributors have
-tagged that brand - the per-chain counts printed at the end make gaps visible
-rather than silent. Re-run any time to refresh the data.
 """
 import argparse
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
 import urllib.request
 
+from chain_config import CHAINS, US_BOUNDS
+from geo_utils import dedupe_nearby
+
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 USER_AGENT = "MySite-ChainStoreMap/1.0 (personal hobby project; static site data refresh)"
+
+# Overture publishes a new dated release roughly monthly - if this one 404s,
+# check https://docs.overturemaps.org/release/latest/ for the current one.
+OVERTURE_RELEASE = "2026-06-17.0"
+OVERTURE_MIN_CONFIDENCE = 0.6
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(SCRIPT_DIR, "..", "stores", "data")
 
-# slug -> { display, names } - "names" covers common tagging variants (brand
-# tag AND plain name tag, since not every mapped location has the brand tag
-# set even when it clearly is that chain).
-CHAINS = {
-    "target": {"display": "Target", "names": ["Target"]},
-    "walmart": {"display": "Walmart", "names": ["Walmart", "Walmart Supercenter", "Walmart Neighborhood Market"]},
-    "aldi": {"display": "Aldi", "names": ["Aldi", "ALDI"]},
-    "trader-joes": {"display": "Trader Joe's", "names": ["Trader Joe's", "Trader Joes"]},
-    "mcdonalds": {"display": "McDonald's", "names": ["McDonald's", "McDonalds"]},
-    "jimmy-johns": {"display": "Jimmy John's", "names": ["Jimmy John's", "Jimmy Johns"]},
-    "kroger": {"display": "Kroger", "names": ["Kroger"]},
-    "safeway": {"display": "Safeway", "names": ["Safeway"]},
-    "burger-king": {"display": "Burger King", "names": ["Burger King"]},
-    "red-robin": {"display": "Red Robin", "names": ["Red Robin", "Red Robin Gourmet Burgers"]},
-}
 
-# Rough US bounding box (contiguous + AK/HI generous margin) to filter out
-# any stray mis-tagged nodes that would otherwise render as wild outliers.
-US_BOUNDS = {"lat_min": 17.5, "lat_max": 71.5, "lon_min": -179.5, "lon_max": -65.0}
-
-
-def build_query(names):
+# ---------------------------------------------------------------------------
+# Source 1: OpenStreetMap via Overpass
+# ---------------------------------------------------------------------------
+def build_overpass_query(names):
     clauses = []
     for n in names:
         esc = n.replace('"', '\\"')
@@ -69,7 +70,7 @@ def build_query(names):
     )
 
 
-def run_query(query, retries=3):
+def run_overpass_query(query, retries=3):
     data = query.encode("utf-8")
     for attempt in range(1, retries + 1):
         req = urllib.request.Request(
@@ -98,7 +99,11 @@ def run_query(query, retries=3):
     return None
 
 
-def extract_records(overpass_json, display_name):
+def in_us_bounds(lat, lon):
+    return US_BOUNDS["lat_min"] <= lat <= US_BOUNDS["lat_max"] and US_BOUNDS["lon_min"] <= lon <= US_BOUNDS["lon_max"]
+
+
+def extract_osm_records(overpass_json, display_name):
     records = []
     seen_ids = set()
     for el in overpass_json.get("elements", []):
@@ -107,31 +112,101 @@ def extract_records(overpass_json, display_name):
         if el["id"] in seen_ids:
             continue
         lat, lon = el.get("lat"), el.get("lon")
-        if lat is None or lon is None:
-            continue
-        if not (US_BOUNDS["lat_min"] <= lat <= US_BOUNDS["lat_max"] and US_BOUNDS["lon_min"] <= lon <= US_BOUNDS["lon_max"]):
+        if lat is None or lon is None or not in_us_bounds(lat, lon):
             continue
         seen_ids.add(el["id"])
         tags = el.get("tags", {})
         street_bits = " ".join(filter(None, [tags.get("addr:housenumber"), tags.get("addr:street")]))
         records.append(
             {
-                "id": el["id"],
                 "name": tags.get("name", display_name),
                 "lat": lat,
                 "lon": lon,
                 "address": street_bits,
                 "city": tags.get("addr:city", ""),
                 "state": tags.get("addr:state", ""),
+                "sources": ["osm"],
             }
         )
     return records
 
 
+def fetch_osm_chain(chain):
+    query = build_overpass_query(chain["osm_names"])
+    result = run_overpass_query(query)
+    return extract_osm_records(result, chain["display"])
+
+
+# ---------------------------------------------------------------------------
+# Source 2: Overture Maps via DuckDB (optional - needs `pip install duckdb`)
+# ---------------------------------------------------------------------------
+_duckdb_con = None
+
+
+def get_duckdb_connection():
+    global _duckdb_con
+    if _duckdb_con is None:
+        import duckdb
+
+        con = duckdb.connect()
+        con.execute("INSTALL spatial; LOAD spatial;")
+        con.execute("INSTALL httpfs; LOAD httpfs;")
+        con.execute("SET s3_region='us-west-2';")
+        _duckdb_con = con
+    return _duckdb_con
+
+
+def fetch_overture_chain(chain):
+    con = get_duckdb_connection()
+    brand = chain["overture_brand"].replace("'", "''")
+    query = f"""
+        SELECT
+            names.primary AS name,
+            ST_X(geometry) AS lon,
+            ST_Y(geometry) AS lat,
+            addresses[1].freeform AS address,
+            addresses[1].locality AS city,
+            addresses[1].region AS state
+        FROM read_parquet(
+            's3://overturemaps-us-west-2/release/{OVERTURE_RELEASE}/theme=places/type=place/*',
+            filename=true, hive_partitioning=1
+        )
+        WHERE brand.names.primary ILIKE '{brand}'
+          AND confidence >= {OVERTURE_MIN_CONFIDENCE}
+          AND (operating_status IS NULL OR operating_status = 'open')
+          AND bbox.xmin BETWEEN {US_BOUNDS['lon_min']} AND {US_BOUNDS['lon_max']}
+          AND bbox.ymin BETWEEN {US_BOUNDS['lat_min']} AND {US_BOUNDS['lat_max']}
+    """
+    rows = con.execute(query).fetchall()
+    columns = [d[0] for d in con.description]
+    records = []
+    for row in rows:
+        rec = dict(zip(columns, row))
+        if rec["lat"] is None or rec["lon"] is None or not in_us_bounds(rec["lat"], rec["lon"]):
+            continue
+        records.append(
+            {
+                "name": rec["name"] or chain["display"],
+                "lat": rec["lat"],
+                "lon": rec["lon"],
+                "address": rec.get("address") or "",
+                "city": rec.get("city") or "",
+                "state": rec.get("state") or "",
+                "sources": ["overture"],
+            }
+        )
+    return records
+
+
+# ---------------------------------------------------------------------------
+# Orchestration
+# ---------------------------------------------------------------------------
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--only", help="fetch just this one chain slug (see CHAINS in this file)")
-    parser.add_argument("--delay", type=float, default=8.0, help="seconds to wait between chain queries")
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--only", help="fetch just this one chain slug (see CHAINS in chain_config.py)")
+    parser.add_argument("--delay", type=float, default=8.0, help="seconds to wait between OSM chain queries")
+    parser.add_argument("--osm-only", action="store_true", help="skip Overture even if duckdb is installed")
+    parser.add_argument("--dedup-threshold", type=float, default=120.0, help="merge distance in meters (default 120)")
     args = parser.parse_args()
 
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -142,34 +217,71 @@ def main():
         print(f"Unknown chain slug(s): {unknown}. Known: {list(CHAINS.keys())}")
         sys.exit(1)
 
-    summary = {}
+    use_overture = not args.osm_only
+    if use_overture:
+        try:
+            get_duckdb_connection()
+        except ImportError:
+            print("duckdb not installed - skipping Overture Maps (OSM-only run). Install with: pip install duckdb\n")
+            use_overture = False
+        except Exception as e:
+            print(f"Could not initialize Overture/DuckDB access ({e}) - continuing OSM-only.\n")
+            use_overture = False
+
+    summary = []
     for i, slug in enumerate(slugs):
         chain = CHAINS[slug]
-        print(f"[{i + 1}/{len(slugs)}] Fetching {chain['display']}...")
-        query = build_query(chain["names"])
-        try:
-            result = run_query(query)
-        except Exception as e:
-            print(f"  FAILED: {e}")
-            summary[chain["display"]] = "FAILED"
-            continue
+        print(f"[{i + 1}/{len(slugs)}] {chain['display']}")
 
-        records = extract_records(result, chain["display"])
+        print("  Fetching OpenStreetMap...")
+        try:
+            osm_records = fetch_osm_chain(chain)
+        except Exception as e:
+            print(f"    OSM FAILED: {e}")
+            osm_records = []
+        print(f"    {len(osm_records)} OSM locations")
+
+        overture_records = []
+        if use_overture:
+            print("  Fetching Overture Maps...")
+            try:
+                overture_records = fetch_overture_chain(chain)
+                print(f"    {len(overture_records)} Overture locations")
+            except Exception as e:
+                print(f"    Overture FAILED: {e}")
+
+        combined = osm_records + overture_records
+        merged = dedupe_nearby(combined, threshold_m=args.dedup_threshold)
+        both_sources = sum(1 for r in merged if len(r["sources"]) > 1)
+
         out_path = os.path.join(DATA_DIR, f"{slug}.json")
+        # id is assigned fresh here (post-merge) rather than carried from either
+        # source, since a merged record may not correspond to a single source id.
+        for idx, r in enumerate(merged):
+            r["id"] = idx
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(records, f, indent=1)
-        print(f"  {len(records)} locations -> {os.path.relpath(out_path, os.path.join(SCRIPT_DIR, ''))}")
-        summary[chain["display"]] = len(records)
+            json.dump(merged, f, indent=1)
+
+        print(
+            f"  -> {len(merged)} final locations "
+            f"({len(osm_records)} OSM + {len(overture_records)} Overture -> "
+            f"{len(combined) - len(merged)} duplicates merged, {both_sources} confirmed by both sources)"
+        )
+        summary.append((chain["display"], len(osm_records), len(overture_records), len(merged)))
 
         if i < len(slugs) - 1:
             time.sleep(args.delay)
 
     print("\n--- Summary ---")
-    for name, count in summary.items():
-        print(f"  {name}: {count}")
+    print(f"{'Chain':<16}{'OSM':>8}{'Overture':>10}{'Final':>8}")
+    for name, osm_n, ov_n, final_n in summary:
+        print(f"{name:<16}{osm_n:>8}{ov_n:>10}{final_n:>8}")
     print(
-        "\nCounts reflect OpenStreetMap's current coverage for each brand - sanity-check "
-        "against each chain's known approximate store count before trusting the map."
+        "\nCounts reflect each source's current coverage for that brand - sanity-check "
+        "against each chain's known approximate store count before trusting the map. "
+        "Missing a location you know about? It likely isn't in either source yet - "
+        "the most direct fix is adding it to OpenStreetMap yourself at openstreetmap.org, "
+        "which will show up next time you re-run this script."
     )
 
 

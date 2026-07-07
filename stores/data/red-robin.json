@@ -1,1064 +1,1418 @@
 [
  {
-  "id": 245483414,
   "name": "Red Robin",
   "lat": 40.2486279,
   "lon": -77.0313307,
   "address": "6560 Carlisle Pike",
   "city": "Mechanicsburg",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 0
  },
  {
-  "id": 415414886,
   "name": "Red Robin",
   "lat": 44.7238558,
   "lon": -93.2169151,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 1
  },
  {
-  "id": 416183982,
   "name": "Red Robin",
   "lat": 37.2898221,
   "lon": -121.99048,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 2
  },
  {
-  "id": 491515331,
   "name": "Red Robin",
   "lat": 34.8250632,
   "lon": -82.2958724,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 3
  },
  {
-  "id": 535562154,
   "name": "Red Robin",
   "lat": 40.5229943,
   "lon": -105.0648283,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 4
  },
  {
-  "id": 557126904,
   "name": "Red Robin",
   "lat": 41.6596465,
   "lon": -73.9309591,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 5
  },
  {
-  "id": 653830141,
   "name": "Red Robin",
   "lat": 41.6956793,
   "lon": -83.6351459,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 6
  },
  {
-  "id": 697833088,
   "name": "Red Robin",
   "lat": 40.4174021,
   "lon": -104.9913799,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 7
  },
  {
-  "id": 830883515,
   "name": "Red Robin",
   "lat": 45.3025068,
   "lon": -122.7635543,
   "address": "8403 Southwest Main Street",
   "city": "Wilsonville",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 8
  },
  {
-  "id": 865118925,
   "name": "Red Robin",
   "lat": 34.7187255,
   "lon": -86.674142,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 9
  },
  {
-  "id": 976102230,
   "name": "Red Robin",
   "lat": 33.5257099,
   "lon": -117.1525942,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 10
  },
  {
-  "id": 1080657112,
   "name": "Red Robin",
   "lat": 36.2548681,
   "lon": -120.2477068,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 11
  },
  {
-  "id": 1127253844,
   "name": "Red Robin",
   "lat": 36.334358,
   "lon": -94.1776051,
   "address": "4300 West Walnut Street",
   "city": "Rogers",
-  "state": "AR"
+  "state": "AR",
+  "sources": [
+   "osm"
+  ],
+  "id": 12
  },
  {
-  "id": 1158746048,
   "name": "Red Robin",
   "lat": 34.1059572,
   "lon": -117.537839,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 13
  },
  {
-  "id": 1420511011,
   "name": "Red Robin",
   "lat": 33.9155686,
   "lon": -117.8853137,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 14
  },
  {
-  "id": 1545346498,
   "name": "Red Robin",
   "lat": 42.8597001,
   "lon": -73.7659556,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 15
  },
  {
-  "id": 1700615702,
   "name": "Red Robin",
   "lat": 39.4123571,
   "lon": -104.8628788,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 16
  },
  {
-  "id": 1732554212,
   "name": "Red Robin",
   "lat": 43.0342866,
   "lon": -76.0190821,
   "address": "610 Towne Drive",
   "city": "Fayetteville",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm"
+  ],
+  "id": 17
  },
  {
-  "id": 1767538739,
   "name": "Red Robin",
   "lat": 40.4391953,
   "lon": -80.1481518,
   "address": "1230 Settlers Ridge Center Drive",
   "city": "Pittsburgh",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm"
+  ],
+  "id": 18
  },
  {
-  "id": 1777283090,
   "name": "Red Robin",
   "lat": 47.5753039,
   "lon": -122.1714826,
   "address": "3909 Factoria Boulevard Southeast",
   "city": "Bellevue",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 19
  },
  {
-  "id": 1805114899,
   "name": "Red Robin",
   "lat": 42.1736035,
   "lon": -72.6418862,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 20
  },
  {
-  "id": 1943250671,
   "name": "Red Robin",
   "lat": 41.1166344,
   "lon": -85.137753,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 21
  },
  {
-  "id": 2056858293,
   "name": "Red Robin",
   "lat": 39.2451789,
   "lon": -94.4502733,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 22
  },
  {
-  "id": 2104423144,
   "name": "Red Robin",
   "lat": 40.4238516,
   "lon": -74.3817144,
   "address": "755 State Highway 18",
   "city": "East Brunswick",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm"
+  ],
+  "id": 23
  },
  {
-  "id": 2278597623,
   "name": "Red Robin",
   "lat": 28.0168399,
   "lon": -82.734414,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 24
  },
  {
-  "id": 2316633549,
   "name": "Red Robin",
   "lat": 44.4800755,
   "lon": -88.0710941,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 25
  },
  {
-  "id": 2325527780,
   "name": "Red Robin",
   "lat": 40.6847955,
   "lon": -80.0793563,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 26
  },
  {
-  "id": 2328395993,
   "name": "Red Robin",
   "lat": 40.6322761,
   "lon": -111.881234,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 27
  },
  {
-  "id": 2333199050,
   "name": "Red Robin",
   "lat": 40.6925463,
   "lon": -111.955835,
   "address": "3601 South Constitution Boulevard",
   "city": "West Valley City",
-  "state": "UT"
+  "state": "UT",
+  "sources": [
+   "osm"
+  ],
+  "id": 28
  },
  {
-  "id": 2347569384,
   "name": "Red Robin",
   "lat": 42.4449316,
   "lon": -96.3435215,
   "address": "4900 Sergeant Road",
   "city": "Sioux City",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 29
  },
  {
-  "id": 2358054649,
   "name": "Red Robin",
   "lat": 47.056188,
   "lon": -122.7688583,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 30
  },
  {
-  "id": 2436118692,
   "name": "Red Robin",
   "lat": 42.8831972,
   "lon": -85.7559521,
   "address": "3722 Potomac Circle Southwest",
   "city": "Grandville",
-  "state": "MI"
+  "state": "MI",
+  "sources": [
+   "osm"
+  ],
+  "id": 31
  },
  {
-  "id": 2446568266,
   "name": "Red Robin",
   "lat": 38.6717844,
   "lon": -121.1700157,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 32
  },
  {
-  "id": 2447648771,
   "name": "Red Robin",
   "lat": 27.7935202,
   "lon": -82.7319819,
   "address": "2468 Tyrone Boulevard North",
   "city": "Saint Petersburg",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm"
+  ],
+  "id": 33
  },
  {
-  "id": 2468396900,
   "name": "Red Robin",
   "lat": 34.2672483,
   "lon": -119.2490618,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 34
  },
  {
-  "id": 2500235296,
   "name": "Red Robin",
   "lat": 40.3427928,
   "lon": -80.0549923,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 35
  },
  {
-  "id": 2662738355,
   "name": "Red Robin",
   "lat": 29.1093913,
   "lon": -81.0318704,
   "address": "5537 South Williamson Boulevard",
   "city": "Port Orange",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm"
+  ],
+  "id": 36
  },
  {
-  "id": 2687503256,
   "name": "Red Robin",
   "lat": 39.0320744,
   "lon": -76.6852743,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 37
  },
  {
-  "id": 2725170656,
   "name": "Biryani Grill",
   "lat": 39.0106981,
   "lon": -77.4937668,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 38
  },
  {
-  "id": 2865600216,
   "name": "Red Robin",
   "lat": 38.6707242,
   "lon": -121.7262971,
   "address": "2031 Bronze Star Drive",
   "city": "Woodland",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 39
  },
  {
-  "id": 2867489102,
   "name": "Red Robin",
   "lat": 47.7041354,
   "lon": -122.325154,
   "address": "401 Northeast Northgate Way",
   "city": "Seattle",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 40
  },
  {
-  "id": 3371279094,
   "name": "Red Robin",
   "lat": 40.3926891,
   "lon": -104.7515332,
   "address": "4514 Centerplace Drive",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 41
  },
  {
-  "id": 3479570345,
   "name": "Red Robin",
   "lat": 34.1333367,
   "lon": -118.0524605,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 42
  },
  {
-  "id": 3522604514,
   "name": "Red Robin",
   "lat": 33.8511521,
   "lon": -118.1410615,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 43
  },
  {
-  "id": 3536735193,
   "name": "Red Robin",
   "lat": 40.217719,
   "lon": -111.662638,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 44
  },
  {
-  "id": 3605902847,
   "name": "Red Robin",
   "lat": 47.4484481,
   "lon": -122.2620341,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 45
  },
  {
-  "id": 3618359558,
   "name": "Red Robin",
   "lat": 34.0707045,
   "lon": -117.206662,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 46
  },
  {
-  "id": 3708389135,
   "name": "Red Robin",
   "lat": 39.989877,
   "lon": -76.6717866,
   "address": "1500 Mount Zion Road",
   "city": "York",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm"
+  ],
+  "id": 47
  },
  {
-  "id": 3748214176,
   "name": "Red Robin",
   "lat": 47.1713144,
   "lon": -122.1735528,
   "address": "9419 192nd Avenue East",
   "city": "Bonney Lake",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm"
+  ],
+  "id": 48
  },
  {
-  "id": 3807721025,
   "name": "Red Robin",
   "lat": 34.1911874,
   "lon": -118.6045049,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 49
  },
  {
-  "id": 3831593067,
   "name": "Red Robin",
   "lat": 45.6190737,
   "lon": -122.646629,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 50
  },
  {
-  "id": 3866300406,
   "name": "Red Robin",
   "lat": 40.5605633,
   "lon": -75.4099689,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 51
  },
  {
-  "id": 4110154032,
   "name": "Red Robin",
   "lat": 44.914887,
   "lon": -89.6500406,
   "address": "4650 Rib Mountain Drive",
   "city": "Wausau",
-  "state": "WI"
+  "state": "WI",
+  "sources": [
+   "osm"
+  ],
+  "id": 52
  },
  {
-  "id": 4282152934,
   "name": "Red Robin",
   "lat": 47.1029907,
   "lon": -122.2941133,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 53
  },
  {
-  "id": 4305375506,
   "name": "Red Robin",
   "lat": 32.6785245,
   "lon": -97.3971341,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 54
  },
  {
-  "id": 4460957385,
   "name": "Red Robin",
   "lat": 38.6508972,
   "lon": -121.1201651,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 55
  },
  {
-  "id": 4601394507,
   "name": "Red Robin",
   "lat": 39.6680691,
   "lon": -75.6665811,
   "address": "101 West Main Street",
   "city": "Newark",
-  "state": "DE"
+  "state": "DE",
+  "sources": [
+   "osm"
+  ],
+  "id": 56
  },
  {
-  "id": 4689693467,
   "name": "Red Robin",
   "lat": 41.3808768,
   "lon": -73.4812513,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 57
  },
  {
-  "id": 4730889443,
   "name": "Red Robin",
   "lat": 40.561206,
   "lon": -76.0054258,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 58
  },
  {
-  "id": 4739330605,
   "name": "Red Robin",
   "lat": 47.6587206,
   "lon": -117.4232947,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 59
  },
  {
-  "id": 4740300080,
   "name": "Red Robin",
   "lat": 34.4716207,
   "lon": -114.344203,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 60
  },
  {
-  "id": 4923076645,
   "name": "Red Robin",
   "lat": 43.5118527,
   "lon": -96.7742571,
   "address": "5000 West Empire Place",
   "city": "Sioux Falls",
-  "state": "SD"
+  "state": "SD",
+  "sources": [
+   "osm"
+  ],
+  "id": 61
  },
  {
-  "id": 5067325688,
   "name": "Red Robin",
   "lat": 43.0330366,
   "lon": -88.1085783,
   "address": "95 North Moorland Road",
   "city": "Brookfield",
-  "state": "WI"
+  "state": "WI",
+  "sources": [
+   "osm"
+  ],
+  "id": 62
  },
  {
-  "id": 5071453322,
   "name": "Red Robin",
   "lat": 26.7231623,
   "lon": -80.0864428,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 63
  },
  {
-  "id": 5270967140,
   "name": "Red Robin",
   "lat": 40.2173899,
   "lon": -75.1388584,
   "address": "281 Easton Road",
   "city": "Warrington Township",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm"
+  ],
+  "id": 64
  },
  {
-  "id": 5368489754,
   "name": "Red Robin",
   "lat": 34.0776673,
   "lon": -81.1567391,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 65
  },
  {
-  "id": 5415863767,
   "name": "Red Robin",
   "lat": 43.2074332,
   "lon": -77.6880502,
   "address": "104 Greece Ridge Center Drive",
   "city": "Rochester",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm"
+  ],
+  "id": 66
  },
  {
-  "id": 5486896686,
   "name": "Red Robin",
   "lat": 39.5771406,
   "lon": -119.739876,
   "address": "4712 Galleria Parkway",
   "city": "Sparks",
-  "state": "NV"
+  "state": "NV",
+  "sources": [
+   "osm"
+  ],
+  "id": 67
  },
  {
-  "id": 5623311697,
   "name": "Red Robin",
   "lat": 33.6950816,
   "lon": -117.8876916,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 68
  },
  {
-  "id": 5649226222,
   "name": "Red Robin",
   "lat": 39.8318633,
   "lon": -75.0988228,
   "address": "1750 Deptford Center Road",
   "city": "Deptford",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm"
+  ],
+  "id": 69
  },
  {
-  "id": 5711833579,
   "name": "Red Robin",
   "lat": 40.165475,
   "lon": -75.4815467,
   "address": "220 Plaza Drive",
   "city": "Collegeville",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm"
+  ],
+  "id": 70
  },
  {
-  "id": 5840598385,
   "name": "Red Robin",
   "lat": 40.7779041,
   "lon": -73.5597663,
   "address": "",
   "city": "Westbury",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm"
+  ],
+  "id": 71
  },
  {
-  "id": 6003249493,
   "name": "Red Robin",
   "lat": 30.2210191,
   "lon": -85.8695299,
   "address": "100 Bluefish Drive",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 72
  },
  {
-  "id": 6003759988,
   "name": "Red Robin",
   "lat": 47.9121301,
   "lon": -122.2154088,
   "address": "1305 Southeast Everett Mall Way",
   "city": "Everett",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm"
+  ],
+  "id": 73
  },
  {
-  "id": 6474291964,
   "name": "Red Robin",
   "lat": 39.5259531,
   "lon": -76.3566859,
   "address": "606 Baltimore Pike",
   "city": "Bel Air",
-  "state": "MD"
+  "state": "MD",
+  "sources": [
+   "osm"
+  ],
+  "id": 74
  },
  {
-  "id": 6501081710,
   "name": "Red Robin",
   "lat": 39.7669724,
   "lon": -89.7074036,
   "address": "2881 South Veterans Parkway",
   "city": "Springfield",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm"
+  ],
+  "id": 75
  },
  {
-  "id": 6530568342,
   "name": "Red Robin",
   "lat": 33.9088871,
   "lon": -117.4569897,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 76
  },
  {
-  "id": 6555422794,
   "name": "Red Robin",
   "lat": 37.5084333,
   "lon": -77.6095285,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 77
  },
  {
-  "id": 6859149502,
   "name": "Red Robin",
   "lat": 37.3940305,
   "lon": -121.9457535,
   "address": "3906 Rivermark Plaza",
   "city": "Santa Clara",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 78
  },
  {
-  "id": 7043112622,
   "name": "Red Robin",
   "lat": 29.785333,
   "lon": -95.4635849,
   "address": "7620 Katy Freeway",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 79
  },
  {
-  "id": 7079132092,
   "name": "Red Robin",
   "lat": 32.6544473,
   "lon": -117.0659163,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 80
  },
  {
-  "id": 7132006689,
   "name": "Red Robin",
   "lat": 34.2841444,
   "lon": -118.768644,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 81
  },
  {
-  "id": 7435012347,
   "name": "Red Robin",
   "lat": 37.7120104,
   "lon": -120.954839,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 82
  },
  {
-  "id": 7456841257,
   "name": "Red Robin",
   "lat": 41.9570854,
   "lon": -87.8083475,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 83
  },
  {
-  "id": 7641144335,
   "name": "Red Robin",
   "lat": 35.7462286,
   "lon": -78.8836775,
   "address": "1431 Creekside Landing Drive",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 84
  },
  {
-  "id": 7851487557,
   "name": "Red Robin",
   "lat": 45.7852398,
   "lon": -108.5559725,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 85
  },
  {
-  "id": 7911325521,
   "name": "Red Robin",
   "lat": 35.3168116,
   "lon": -80.7717169,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 86
  },
  {
-  "id": 8014613557,
   "name": "Red Robin",
   "lat": 34.2408906,
   "lon": -118.5556914,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 87
  },
  {
-  "id": 8091964213,
   "name": "Red Robin",
   "lat": 42.1153763,
   "lon": -75.9562526,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 88
  },
  {
-  "id": 8553643365,
   "name": "Red Robin",
   "lat": 35.8583633,
   "lon": -86.4293643,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 89
  },
  {
-  "id": 8819396236,
   "name": "Red Robin",
   "lat": 44.9416664,
   "lon": -122.984756,
   "address": "831 Lancaster Drive Northeast",
   "city": "Salem",
-  "state": "OR"
+  "state": "OR",
+  "sources": [
+   "osm"
+  ],
+  "id": 90
  },
  {
-  "id": 9033522117,
   "name": "Red Robin",
   "lat": 34.6041793,
   "lon": -118.152751,
   "address": "1233 Suite 30 Rancho Vista Boulevard",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 91
  },
  {
-  "id": 9314789409,
   "name": "Red Robin",
   "lat": 28.0685057,
   "lon": -82.5764599,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 92
  },
  {
-  "id": 9435489419,
   "name": "Red Robin",
   "lat": 30.2687913,
   "lon": -89.7603952,
   "address": "700 Town Center Parkway",
   "city": "Slidell",
-  "state": "LA"
+  "state": "LA",
+  "sources": [
+   "osm"
+  ],
+  "id": 93
  },
  {
-  "id": 9459401467,
   "name": "Red Robin",
   "lat": 33.8719516,
   "lon": -118.354435,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 94
  },
  {
-  "id": 9723920976,
   "name": "Red Robin",
   "lat": 29.5468932,
   "lon": -95.1502915,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 95
  },
  {
-  "id": 9872497209,
   "name": "Red Robin",
   "lat": 42.5966442,
   "lon": -83.1707954,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 96
  },
  {
-  "id": 10067602706,
   "name": "Red Robin",
   "lat": 38.9445829,
   "lon": -76.732922,
   "address": "15650",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 97
  },
  {
-  "id": 10742403725,
   "name": "Red Robin",
   "lat": 36.0668182,
   "lon": -115.041589,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 98
  },
  {
-  "id": 10815608061,
   "name": "Red Robin",
   "lat": 34.9508289,
   "lon": -120.434964,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 99
  },
  {
-  "id": 10979316464,
   "name": "Red Robin",
   "lat": 42.3292282,
   "lon": -83.2224109,
   "address": "18650 Ford Road",
   "city": "Detroit",
-  "state": "MI"
+  "state": "MI",
+  "sources": [
+   "osm"
+  ],
+  "id": 100
  },
  {
-  "id": 11096750229,
   "name": "Red Robin",
   "lat": 42.4208986,
   "lon": -123.3510865,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 101
  },
  {
-  "id": 11139863881,
   "name": "Red Robin",
   "lat": 40.5570808,
   "lon": -74.3009114,
   "address": "264 Woodbridge Center Drive",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 102
  },
  {
-  "id": 11257846166,
   "name": "Red Robin",
   "lat": 39.5954009,
   "lon": -104.8892992,
   "address": "8585 East Arapahoe Road",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 103
  },
  {
-  "id": 11264710224,
   "name": "Red Robin",
   "lat": 42.0929433,
   "lon": -71.2654652,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 104
  },
  {
-  "id": 11302065553,
   "name": "Red Robin",
   "lat": 43.0554991,
   "lon": -76.2704685,
   "address": "160 Township Boulevard",
   "city": "Camillus",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm"
+  ],
+  "id": 105
  },
  {
-  "id": 11306019844,
   "name": "Red Robin",
   "lat": 37.9665141,
   "lon": -122.0601126,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 106
  },
  {
-  "id": 11393120270,
   "name": "Red Robin",
   "lat": 42.906556,
   "lon": -112.4666219,
   "address": "4021 Pole Line Road",
   "city": "Pocatello",
-  "state": "ID"
+  "state": "ID",
+  "sources": [
+   "osm"
+  ],
+  "id": 107
  },
  {
-  "id": 11393317131,
   "name": "Red Robin",
   "lat": 30.0800533,
   "lon": -95.5190855,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 108
  },
  {
-  "id": 11403480468,
   "name": "Red Robin",
   "lat": 42.0731671,
   "lon": -88.1909748,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 109
  },
  {
-  "id": 11868156395,
   "name": "Red Robin",
   "lat": 36.8477937,
   "lon": -119.7920505,
   "address": "7675 North Blackstone Avenue",
   "city": "Fresno",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 110
  },
  {
-  "id": 12030067144,
   "name": "Red Robin",
   "lat": 40.7165999,
   "lon": -75.2852424,
   "address": "3716 Nazareth Road",
   "city": "Easton",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm"
+  ],
+  "id": 111
  },
  {
-  "id": 12088154932,
   "name": "Red Robin",
   "lat": 42.199229,
   "lon": -71.7773053,
   "address": "70 Worcester-Providence Turnpike",
   "city": "Millbury",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm"
+  ],
+  "id": 112
  },
  {
-  "id": 12117490428,
   "name": "Red Robin",
   "lat": 48.4648884,
   "lon": -122.3362898,
   "address": "1075 South Burlington Boulevard",
   "city": "Burlington",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm"
+  ],
+  "id": 113
  },
  {
-  "id": 12125709021,
   "name": "Red Robin",
   "lat": 37.3257583,
   "lon": -121.8125984,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 114
  },
  {
-  "id": 12864274644,
   "name": "Red Robin",
   "lat": 36.8080068,
   "lon": -119.853226,
   "address": "3385 West Shaw Avenue",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 115
  },
  {
-  "id": 13027475641,
   "name": "Red Robin",
   "lat": 39.6253337,
   "lon": -77.7697791,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 116
  },
  {
-  "id": 13270020915,
   "name": "Red Robin",
   "lat": 34.4728968,
   "lon": -117.3481867,
   "address": "14400 Bear Valley Road",
   "city": "Victorville",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 117
  }
 ]

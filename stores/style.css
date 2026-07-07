@@ -165,6 +165,13 @@
   color: #1b4332;
 }
 
+.stores-popup-source {
+  margin-top: 0.4rem;
+  font-size: 0.72rem;
+  color: #888;
+  font-style: italic;
+}
+
 /* ============================================================
    Responsive breakpoints
    ============================================================ */
