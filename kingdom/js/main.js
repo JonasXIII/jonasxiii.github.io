@@ -1,6 +1,7 @@
 // js/main.js - Main application logic with lock and reroll support
 import { loadCards, loadCardLists, getSmartKingdom, rerollSingleCard, getBonusCards } from './modules/kingdom.js';
 import { renderKingdom } from './modules/display.js';
+import { initIntro } from './modules/intro.js';
 
 // Global state for the current kingdom and card data
 let currentState = {
@@ -174,6 +175,8 @@ window.dominionHandlers = {
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
+  initIntro();
+
   const accsBox = document.getElementById('accs');
   const drawBox = document.getElementById('draw');
   const attackBox = document.getElementById('attack');
