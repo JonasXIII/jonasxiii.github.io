@@ -44,8 +44,9 @@ OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 USER_AGENT = "MySite-ChainStoreMap/1.0 (personal hobby project; static site data refresh)"
 
 # Overture publishes a new dated release roughly monthly - if this one 404s,
-# check https://docs.overturemaps.org/release/latest/ for the current one.
-OVERTURE_RELEASE = "2026-06-17.0"
+# check https://labs.overturemaps.org/data/releases.json for the current one
+# ("latest" key; docs.overturemaps.org/release/latest/ no longer resolves).
+OVERTURE_RELEASE = "2026-07-22.0"
 OVERTURE_MIN_CONFIDENCE = 0.6
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))

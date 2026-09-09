@@ -27,9 +27,9 @@
   "name": "Red Robin",
   "lat": 37.2898221,
   "lon": -121.99048,
-  "address": "",
-  "city": "",
-  "state": "",
+  "address": "1000 El Paseo de Saratoga",
+  "city": "San Jose",
+  "state": "CA",
   "sources": [
    "osm"
   ],
@@ -265,18 +265,6 @@
  },
  {
   "name": "Red Robin",
-  "lat": 39.2451789,
-  "lon": -94.4502733,
-  "address": "",
-  "city": "",
-  "state": "",
-  "sources": [
-   "osm"
-  ],
-  "id": 22
- },
- {
-  "name": "Red Robin",
   "lat": 40.4238516,
   "lon": -74.3817144,
   "address": "755 State Highway 18",
@@ -285,7 +273,7 @@
   "sources": [
    "osm"
   ],
-  "id": 23
+  "id": 22
  },
  {
   "name": "Red Robin",
@@ -297,7 +285,7 @@
   "sources": [
    "osm"
   ],
-  "id": 24
+  "id": 23
  },
  {
   "name": "Red Robin",
@@ -309,7 +297,7 @@
   "sources": [
    "osm"
   ],
-  "id": 25
+  "id": 24
  },
  {
   "name": "Red Robin",
@@ -321,7 +309,7 @@
   "sources": [
    "osm"
   ],
-  "id": 26
+  "id": 25
  },
  {
   "name": "Red Robin",
@@ -333,19 +321,19 @@
   "sources": [
    "osm"
   ],
-  "id": 27
+  "id": 26
  },
  {
   "name": "Red Robin",
-  "lat": 40.6925463,
-  "lon": -111.955835,
+  "lat": 40.6925814,
+  "lon": -111.9558357,
   "address": "3601 South Constitution Boulevard",
   "city": "West Valley City",
   "state": "UT",
   "sources": [
    "osm"
   ],
-  "id": 28
+  "id": 27
  },
  {
   "name": "Red Robin",
@@ -357,7 +345,7 @@
   "sources": [
    "osm"
   ],
-  "id": 29
+  "id": 28
  },
  {
   "name": "Red Robin",
@@ -369,7 +357,7 @@
   "sources": [
    "osm"
   ],
-  "id": 30
+  "id": 29
  },
  {
   "name": "Red Robin",
@@ -381,7 +369,7 @@
   "sources": [
    "osm"
   ],
-  "id": 31
+  "id": 30
  },
  {
   "name": "Red Robin",
@@ -393,7 +381,7 @@
   "sources": [
    "osm"
   ],
-  "id": 32
+  "id": 31
  },
  {
   "name": "Red Robin",
@@ -405,7 +393,7 @@
   "sources": [
    "osm"
   ],
-  "id": 33
+  "id": 32
  },
  {
   "name": "Red Robin",
@@ -417,7 +405,7 @@
   "sources": [
    "osm"
   ],
-  "id": 34
+  "id": 33
  },
  {
   "name": "Red Robin",
@@ -429,7 +417,7 @@
   "sources": [
    "osm"
   ],
-  "id": 35
+  "id": 34
  },
  {
   "name": "Red Robin",
@@ -441,19 +429,7 @@
   "sources": [
    "osm"
   ],
-  "id": 36
- },
- {
-  "name": "Red Robin",
-  "lat": 39.0320744,
-  "lon": -76.6852743,
-  "address": "",
-  "city": "",
-  "state": "",
-  "sources": [
-   "osm"
-  ],
-  "id": 37
+  "id": 35
  },
  {
   "name": "Biryani Grill",
@@ -465,7 +441,7 @@
   "sources": [
    "osm"
   ],
-  "id": 38
+  "id": 36
  },
  {
   "name": "Red Robin",
@@ -477,7 +453,7 @@
   "sources": [
    "osm"
   ],
-  "id": 39
+  "id": 37
  },
  {
   "name": "Red Robin",
@@ -489,7 +465,7 @@
   "sources": [
    "osm"
   ],
-  "id": 40
+  "id": 38
  },
  {
   "name": "Red Robin",
@@ -501,7 +477,7 @@
   "sources": [
    "osm"
   ],
-  "id": 41
+  "id": 39
  },
  {
   "name": "Red Robin",
@@ -513,7 +489,7 @@
   "sources": [
    "osm"
   ],
-  "id": 42
+  "id": 40
  },
  {
   "name": "Red Robin",
@@ -525,7 +501,7 @@
   "sources": [
    "osm"
   ],
-  "id": 43
+  "id": 41
  },
  {
   "name": "Red Robin",
@@ -537,7 +513,7 @@
   "sources": [
    "osm"
   ],
-  "id": 44
+  "id": 42
  },
  {
   "name": "Red Robin",
@@ -549,7 +525,7 @@
   "sources": [
    "osm"
   ],
-  "id": 45
+  "id": 43
  },
  {
   "name": "Red Robin",
@@ -561,7 +537,7 @@
   "sources": [
    "osm"
   ],
-  "id": 46
+  "id": 44
  },
  {
   "name": "Red Robin",
@@ -573,7 +549,7 @@
   "sources": [
    "osm"
   ],
-  "id": 47
+  "id": 45
  },
  {
   "name": "Red Robin",
@@ -585,7 +561,7 @@
   "sources": [
    "osm"
   ],
-  "id": 48
+  "id": 46
  },
  {
   "name": "Red Robin",
@@ -597,7 +573,7 @@
   "sources": [
    "osm"
   ],
-  "id": 49
+  "id": 47
  },
  {
   "name": "Red Robin",
@@ -609,7 +585,7 @@
   "sources": [
    "osm"
   ],
-  "id": 50
+  "id": 48
  },
  {
   "name": "Red Robin",
@@ -621,7 +597,7 @@
   "sources": [
    "osm"
   ],
-  "id": 51
+  "id": 49
  },
  {
   "name": "Red Robin",
@@ -633,7 +609,7 @@
   "sources": [
    "osm"
   ],
-  "id": 52
+  "id": 50
  },
  {
   "name": "Red Robin",
@@ -645,7 +621,7 @@
   "sources": [
    "osm"
   ],
-  "id": 53
+  "id": 51
  },
  {
   "name": "Red Robin",
@@ -657,7 +633,7 @@
   "sources": [
    "osm"
   ],
-  "id": 54
+  "id": 52
  },
  {
   "name": "Red Robin",
@@ -669,7 +645,7 @@
   "sources": [
    "osm"
   ],
-  "id": 55
+  "id": 53
  },
  {
   "name": "Red Robin",
@@ -681,19 +657,7 @@
   "sources": [
    "osm"
   ],
-  "id": 56
- },
- {
-  "name": "Red Robin",
-  "lat": 41.3808768,
-  "lon": -73.4812513,
-  "address": "",
-  "city": "",
-  "state": "",
-  "sources": [
-   "osm"
-  ],
-  "id": 57
+  "id": 54
  },
  {
   "name": "Red Robin",
@@ -705,7 +669,7 @@
   "sources": [
    "osm"
   ],
-  "id": 58
+  "id": 55
  },
  {
   "name": "Red Robin",
@@ -717,7 +681,7 @@
   "sources": [
    "osm"
   ],
-  "id": 59
+  "id": 56
  },
  {
   "name": "Red Robin",
@@ -729,7 +693,7 @@
   "sources": [
    "osm"
   ],
-  "id": 60
+  "id": 57
  },
  {
   "name": "Red Robin",
@@ -741,7 +705,7 @@
   "sources": [
    "osm"
   ],
-  "id": 61
+  "id": 58
  },
  {
   "name": "Red Robin",
@@ -753,7 +717,7 @@
   "sources": [
    "osm"
   ],
-  "id": 62
+  "id": 59
  },
  {
   "name": "Red Robin",
@@ -765,7 +729,7 @@
   "sources": [
    "osm"
   ],
-  "id": 63
+  "id": 60
  },
  {
   "name": "Red Robin",
@@ -777,7 +741,7 @@
   "sources": [
    "osm"
   ],
-  "id": 64
+  "id": 61
  },
  {
   "name": "Red Robin",
@@ -789,7 +753,7 @@
   "sources": [
    "osm"
   ],
-  "id": 65
+  "id": 62
  },
  {
   "name": "Red Robin",
@@ -801,7 +765,7 @@
   "sources": [
    "osm"
   ],
-  "id": 66
+  "id": 63
  },
  {
   "name": "Red Robin",
@@ -813,7 +777,7 @@
   "sources": [
    "osm"
   ],
-  "id": 67
+  "id": 64
  },
  {
   "name": "Red Robin",
@@ -825,7 +789,7 @@
   "sources": [
    "osm"
   ],
-  "id": 68
+  "id": 65
  },
  {
   "name": "Red Robin",
@@ -837,7 +801,7 @@
   "sources": [
    "osm"
   ],
-  "id": 69
+  "id": 66
  },
  {
   "name": "Red Robin",
@@ -849,7 +813,7 @@
   "sources": [
    "osm"
   ],
-  "id": 70
+  "id": 67
  },
  {
   "name": "Red Robin",
@@ -861,7 +825,7 @@
   "sources": [
    "osm"
   ],
-  "id": 71
+  "id": 68
  },
  {
   "name": "Red Robin",
@@ -873,7 +837,7 @@
   "sources": [
    "osm"
   ],
-  "id": 72
+  "id": 69
  },
  {
   "name": "Red Robin",
@@ -885,7 +849,7 @@
   "sources": [
    "osm"
   ],
-  "id": 73
+  "id": 70
  },
  {
   "name": "Red Robin",
@@ -897,7 +861,7 @@
   "sources": [
    "osm"
   ],
-  "id": 74
+  "id": 71
  },
  {
   "name": "Red Robin",
@@ -909,7 +873,7 @@
   "sources": [
    "osm"
   ],
-  "id": 75
+  "id": 72
  },
  {
   "name": "Red Robin",
@@ -921,7 +885,7 @@
   "sources": [
    "osm"
   ],
-  "id": 76
+  "id": 73
  },
  {
   "name": "Red Robin",
@@ -933,7 +897,7 @@
   "sources": [
    "osm"
   ],
-  "id": 77
+  "id": 74
  },
  {
   "name": "Red Robin",
@@ -945,7 +909,7 @@
   "sources": [
    "osm"
   ],
-  "id": 78
+  "id": 75
  },
  {
   "name": "Red Robin",
@@ -957,7 +921,7 @@
   "sources": [
    "osm"
   ],
-  "id": 79
+  "id": 76
  },
  {
   "name": "Red Robin",
@@ -969,7 +933,7 @@
   "sources": [
    "osm"
   ],
-  "id": 80
+  "id": 77
  },
  {
   "name": "Red Robin",
@@ -981,7 +945,7 @@
   "sources": [
    "osm"
   ],
-  "id": 81
+  "id": 78
  },
  {
   "name": "Red Robin",
@@ -993,7 +957,7 @@
   "sources": [
    "osm"
   ],
-  "id": 82
+  "id": 79
  },
  {
   "name": "Red Robin",
@@ -1005,7 +969,7 @@
   "sources": [
    "osm"
   ],
-  "id": 83
+  "id": 80
  },
  {
   "name": "Red Robin",
@@ -1017,7 +981,7 @@
   "sources": [
    "osm"
   ],
-  "id": 84
+  "id": 81
  },
  {
   "name": "Red Robin",
@@ -1029,7 +993,7 @@
   "sources": [
    "osm"
   ],
-  "id": 85
+  "id": 82
  },
  {
   "name": "Red Robin",
@@ -1041,7 +1005,7 @@
   "sources": [
    "osm"
   ],
-  "id": 86
+  "id": 83
  },
  {
   "name": "Red Robin",
@@ -1053,7 +1017,7 @@
   "sources": [
    "osm"
   ],
-  "id": 87
+  "id": 84
  },
  {
   "name": "Red Robin",
@@ -1065,7 +1029,7 @@
   "sources": [
    "osm"
   ],
-  "id": 88
+  "id": 85
  },
  {
   "name": "Red Robin",
@@ -1077,7 +1041,7 @@
   "sources": [
    "osm"
   ],
-  "id": 89
+  "id": 86
  },
  {
   "name": "Red Robin",
@@ -1089,7 +1053,7 @@
   "sources": [
    "osm"
   ],
-  "id": 90
+  "id": 87
  },
  {
   "name": "Red Robin",
@@ -1101,7 +1065,7 @@
   "sources": [
    "osm"
   ],
-  "id": 91
+  "id": 88
  },
  {
   "name": "Red Robin",
@@ -1113,7 +1077,7 @@
   "sources": [
    "osm"
   ],
-  "id": 92
+  "id": 89
  },
  {
   "name": "Red Robin",
@@ -1125,7 +1089,7 @@
   "sources": [
    "osm"
   ],
-  "id": 93
+  "id": 90
  },
  {
   "name": "Red Robin",
@@ -1137,7 +1101,7 @@
   "sources": [
    "osm"
   ],
-  "id": 94
+  "id": 91
  },
  {
   "name": "Red Robin",
@@ -1149,7 +1113,7 @@
   "sources": [
    "osm"
   ],
-  "id": 95
+  "id": 92
  },
  {
   "name": "Red Robin",
@@ -1161,7 +1125,7 @@
   "sources": [
    "osm"
   ],
-  "id": 96
+  "id": 93
  },
  {
   "name": "Red Robin",
@@ -1173,7 +1137,7 @@
   "sources": [
    "osm"
   ],
-  "id": 97
+  "id": 94
  },
  {
   "name": "Red Robin",
@@ -1185,7 +1149,7 @@
   "sources": [
    "osm"
   ],
-  "id": 98
+  "id": 95
  },
  {
   "name": "Red Robin",
@@ -1197,7 +1161,7 @@
   "sources": [
    "osm"
   ],
-  "id": 99
+  "id": 96
  },
  {
   "name": "Red Robin",
@@ -1209,7 +1173,7 @@
   "sources": [
    "osm"
   ],
-  "id": 100
+  "id": 97
  },
  {
   "name": "Red Robin",
@@ -1221,7 +1185,7 @@
   "sources": [
    "osm"
   ],
-  "id": 101
+  "id": 98
  },
  {
   "name": "Red Robin",
@@ -1233,7 +1197,7 @@
   "sources": [
    "osm"
   ],
-  "id": 102
+  "id": 99
  },
  {
   "name": "Red Robin",
@@ -1245,7 +1209,7 @@
   "sources": [
    "osm"
   ],
-  "id": 103
+  "id": 100
  },
  {
   "name": "Red Robin",
@@ -1257,7 +1221,7 @@
   "sources": [
    "osm"
   ],
-  "id": 104
+  "id": 101
  },
  {
   "name": "Red Robin",
@@ -1269,7 +1233,7 @@
   "sources": [
    "osm"
   ],
-  "id": 105
+  "id": 102
  },
  {
   "name": "Red Robin",
@@ -1281,7 +1245,7 @@
   "sources": [
    "osm"
   ],
-  "id": 106
+  "id": 103
  },
  {
   "name": "Red Robin",
@@ -1293,7 +1257,7 @@
   "sources": [
    "osm"
   ],
-  "id": 107
+  "id": 104
  },
  {
   "name": "Red Robin",
@@ -1305,7 +1269,7 @@
   "sources": [
    "osm"
   ],
-  "id": 108
+  "id": 105
  },
  {
   "name": "Red Robin",
@@ -1317,7 +1281,7 @@
   "sources": [
    "osm"
   ],
-  "id": 109
+  "id": 106
  },
  {
   "name": "Red Robin",
@@ -1329,7 +1293,7 @@
   "sources": [
    "osm"
   ],
-  "id": 110
+  "id": 107
  },
  {
   "name": "Red Robin",
@@ -1341,7 +1305,7 @@
   "sources": [
    "osm"
   ],
-  "id": 111
+  "id": 108
  },
  {
   "name": "Red Robin",
@@ -1353,7 +1317,7 @@
   "sources": [
    "osm"
   ],
-  "id": 112
+  "id": 109
  },
  {
   "name": "Red Robin",
@@ -1365,7 +1329,7 @@
   "sources": [
    "osm"
   ],
-  "id": 113
+  "id": 110
  },
  {
   "name": "Red Robin",
@@ -1377,7 +1341,7 @@
   "sources": [
    "osm"
   ],
-  "id": 114
+  "id": 111
  },
  {
   "name": "Red Robin",
@@ -1389,7 +1353,7 @@
   "sources": [
    "osm"
   ],
-  "id": 115
+  "id": 112
  },
  {
   "name": "Red Robin",
@@ -1401,7 +1365,7 @@
   "sources": [
    "osm"
   ],
-  "id": 116
+  "id": 113
  },
  {
   "name": "Red Robin",
@@ -1410,6 +1374,42 @@
   "address": "14400 Bear Valley Road",
   "city": "Victorville",
   "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 114
+ },
+ {
+  "name": "Red Robin",
+  "lat": 42.5744291,
+  "lon": -87.8867519,
+  "address": "",
+  "city": "",
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 115
+ },
+ {
+  "name": "Red Robin",
+  "lat": 40.4303685,
+  "lon": -79.794683,
+  "address": "200 Mall Circle Drive",
+  "city": "Monroeville",
+  "state": "PA",
+  "sources": [
+   "osm"
+  ],
+  "id": 116
+ },
+ {
+  "name": "Red Robin",
+  "lat": 30.4756593,
+  "lon": -87.2086969,
+  "address": "",
+  "city": "",
+  "state": "",
   "sources": [
    "osm"
   ],
