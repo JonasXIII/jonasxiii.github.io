@@ -31,6 +31,15 @@
 
 /* ---- Help button (reopens the intro modal on demand) ---- */
 .help-btn {
+  /* box-sizing + padding:0 + flex centering: a bare <button> picks up the
+     browser's own default padding (uneven side-to-side vs top-to-bottom),
+     which on top of content-box sizing made the 34x34 render as an oval,
+     not a circle. This makes the declared 34x34 the true, total box. */
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 14px;
   right: 14px;
