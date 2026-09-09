@@ -28,6 +28,13 @@ const CHAINS = [
   { slug: 'red-robin', name: 'Red Robin', color: '#e87ba4', reused: true },
 ];
 
+// CARTO retired anonymous access to these raster tiles - a free API key
+// (from carto.com/basemaps/apikey, tied to this site's domain) is now
+// required, appended as a `key` query param. This is a public "which
+// domain is asking" key like any map provider's client-side key (Mapbox,
+// MapTiler, Google Maps), not a secret - it's meant to sit in browser JS.
+const CARTO_KEY = 'cb1_33xn_1_8bd240c2860fc88dfe8b1913';
+
 const map = new maplibregl.Map({
   container: 'map',
   style: {
@@ -36,10 +43,10 @@ const map = new maplibregl.Map({
       basemap: {
         type: 'raster',
         tiles: [
-          'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-          'https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-          'https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-          'https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+          `https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=${CARTO_KEY}`,
+          `https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=${CARTO_KEY}`,
+          `https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=${CARTO_KEY}`,
+          `https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=${CARTO_KEY}`,
         ],
         tileSize: 256,
         attribution:

@@ -1,3539 +1,8098 @@
 [
  {
-  "id": 212435197,
   "name": "Trader Joe's",
   "lat": 37.8455422,
   "lon": -122.252612,
   "address": "5727 College Avenue",
   "city": "Oakland",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 0
  },
  {
-  "id": 273593515,
   "name": "Trader Joe's",
   "lat": 32.865636,
   "lon": -117.232406,
   "address": "8657 Villa La Jolla Drive",
   "city": "La Jolla",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 1
  },
  {
-  "id": 276600064,
   "name": "Trader Joe's",
   "lat": 34.0203234,
   "lon": -118.422068,
   "address": "3456 Sepulveda Boulevard",
   "city": "Los Angeles",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 2
  },
  {
-  "id": 276606426,
   "name": "Trader Joe's",
   "lat": 34.0252586,
   "lon": -118.3930604,
   "address": "9290 Culver Boulevard",
   "city": "Culver City",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 3
  },
  {
-  "id": 304595383,
   "name": "Trader Joe's",
   "lat": 36.0696149,
   "lon": -115.0813114,
   "address": "2716 North Green Valley Parkway",
   "city": "Henderson",
-  "state": "NV"
+  "state": "NV",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 4
  },
  {
-  "id": 343317788,
   "name": "Trader Joe's",
   "lat": 37.8988539,
   "lon": -122.2995747,
   "address": "225 El Cerrito Plaza",
   "city": "El Cerrito",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 5
  },
  {
-  "id": 357522348,
   "name": "Trader Joe's",
   "lat": 37.2882737,
   "lon": -121.9324361,
   "address": "1875 South Bascom Avenue",
   "city": "Campbell",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 6
  },
  {
-  "id": 363915431,
   "name": "Trader Joe's",
   "lat": 37.8099099,
   "lon": -122.2443754,
   "address": "3250 Lakeshore Avenue",
   "city": "Oakland",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 7
  },
  {
-  "id": 364554102,
   "name": "Trader Joe's",
   "lat": 33.6503583,
   "lon": -117.8375537,
   "address": "4225 Campus Drive",
   "city": "Irvine",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 8
  },
  {
-  "id": 373374203,
   "name": "Trader Joe's",
   "lat": 37.3410206,
   "lon": -121.909507,
   "address": "635 Coleman Avenue",
   "city": "San Jose",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 9
  },
  {
-  "id": 385009952,
   "name": "Trader Joe's",
   "lat": 37.6038042,
   "lon": -122.395901,
   "address": "765 Broadway",
   "city": "Milbrae",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 10
  },
  {
-  "id": 389156199,
   "name": "Trader Joe's",
   "lat": 42.2755993,
   "lon": -71.7511892,
   "address": "77 Boston Turnpike",
   "city": "Shrewsbury",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm"
+  ],
+  "id": 11
  },
  {
-  "id": 429187144,
   "name": "Trader Joe's",
   "lat": 37.2930603,
   "lon": -121.9942009,
   "address": "5269 Prospect Road",
   "city": "San Jose",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 12
  },
  {
-  "id": 444159684,
   "name": "Trader Joe's",
   "lat": 32.736068,
   "lon": -117.2173712,
   "address": "2401 Truxtun Road",
   "city": "San Diego",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 13
  },
  {
-  "id": 470780581,
   "name": "Trader Joe's",
   "lat": 37.7577613,
   "lon": -122.2514016,
   "address": "2217 South Shore Center",
   "city": "Alameda",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 14
  },
  {
-  "id": 473852564,
   "name": "Trader Joe's",
   "lat": 33.3040314,
   "lon": -111.9944973,
   "address": "4025 East Chandler Boulevard",
   "city": "Phoenix",
-  "state": "AZ"
+  "state": "AZ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 15
  },
  {
-  "id": 494482850,
   "name": "Trader Joe's",
   "lat": 41.7235386,
   "lon": -72.7580604,
   "address": "1489 New Britain Avenue",
   "city": "West Hartford",
-  "state": "CT"
+  "state": "CT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 16
  },
  {
-  "id": 502635393,
   "name": "Trader Joe's",
   "lat": 38.0091681,
   "lon": -121.3226915,
   "address": "6535 Pacific Avenue",
   "city": "Stockton",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 17
  },
  {
-  "id": 512951847,
   "name": "Trader Joe's",
   "lat": 39.031441,
   "lon": -77.0036075,
   "address": "10741 Columbia Pike",
   "city": "Silver Spring",
-  "state": "MD"
+  "state": "MD",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 18
  },
  {
-  "id": 532466814,
   "name": "Trader Joe's",
   "lat": 33.7797895,
   "lon": -84.3678804,
   "address": "931 Monroe Drive Northeast",
   "city": "Atlanta",
-  "state": "GA"
+  "state": "GA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 19
  },
  {
-  "id": 544270122,
   "name": "Trader Joe's",
   "lat": 44.9344763,
   "lon": -93.33746,
   "address": "4500 Excelsior Boulevard",
   "city": "Saint Louis Park",
-  "state": "MN"
+  "state": "MN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 20
  },
  {
-  "id": 551108965,
   "name": "Trader Joe's",
   "lat": 39.057125,
   "lon": -77.1232791,
   "address": "12268 Rockville Pike",
   "city": "Rockville",
-  "state": "MD"
+  "state": "MD",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 21
  },
  {
-  "id": 562620568,
   "name": "Trader Joe's",
   "lat": 42.3899301,
   "lon": -71.1433772,
   "address": "211 Alewife Brook Parkway",
   "city": "Cambridge",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 22
  },
  {
-  "id": 596943098,
   "name": "Trader Joe's",
   "lat": 32.982014,
   "lon": -117.074986,
   "address": "11955 Carmel Mountain Road",
   "city": "San Diego",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 23
  },
  {
-  "id": 614308326,
   "name": "Trader Joe's",
   "lat": 47.7534206,
   "lon": -122.1504957,
   "address": "14035 Northeast Woodinville Duvall Road",
   "city": "Woodinville",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 24
  },
  {
-  "id": 621048214,
   "name": "Trader Joe's",
   "lat": 38.7815834,
   "lon": -77.1892307,
   "address": "6394 Springfield Plaza",
   "city": "Springfield",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 25
  },
  {
-  "id": 630347870,
   "name": "Trader Joe's",
   "lat": 34.9380455,
   "lon": -120.4209,
   "address": "1303 South Bradley Road",
   "city": "Santa Maria",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 26
  },
  {
-  "id": 639236177,
   "name": "Trader Joe's",
   "lat": 42.4824956,
   "lon": -71.414558,
   "address": "145 Great Road",
   "city": "Acton",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 27
  },
  {
-  "id": 663001961,
   "name": "Trader Joe's",
   "lat": 33.7274855,
   "lon": -116.3965765,
   "address": "44250 Town Center Way",
   "city": "Palm Desert",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 28
  },
  {
-  "id": 671782461,
   "name": "Trader Joe's",
   "lat": 34.4389102,
   "lon": -119.728945,
   "address": "3025 De La Vina Street",
   "city": "Santa Barbara",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 29
  },
  {
-  "id": 701686401,
   "name": "Trader Joe's",
   "lat": 33.5288349,
   "lon": -117.156097,
   "address": "40665 Winchester Road",
   "city": "Temecula",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 30
  },
  {
-  "id": 726925190,
   "name": "Trader Joe's",
   "lat": 32.7791359,
   "lon": -117.0057306,
   "address": "5495 Grossmont Center Drive",
   "city": "La Mesa",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 31
  },
  {
-  "id": 735126406,
   "name": "Trader Joe's",
   "lat": 38.9041925,
   "lon": -77.0531294,
   "address": "1101 25th Street Northwest",
   "city": "Washington",
-  "state": "DC"
+  "state": "DC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 32
  },
  {
-  "id": 761533799,
   "name": "Trader Joe's",
-  "lat": 43.0649298,
-  "lon": -89.4174475,
+  "lat": 43.0649485,
+  "lon": -89.4175016,
   "address": "1810 Monroe Street",
   "city": "Madison",
-  "state": "WI"
+  "state": "WI",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 33
  },
  {
-  "id": 761762694,
   "name": "Trader Joe's",
   "lat": 37.7265935,
   "lon": -122.4762074,
   "address": "265 Winston Drive",
   "city": "San Francisco",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 34
  },
  {
-  "id": 761870395,
   "name": "Trader Joe's",
   "lat": 37.9377015,
   "lon": -122.0256327,
   "address": "785 Oak Grove Road",
   "city": "Concord",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 35
  },
  {
-  "id": 775881481,
   "name": "Trader Joe's",
   "lat": 37.871802,
   "lon": -122.2733012,
   "address": "1885 University Avenue",
   "city": "Berkeley",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 36
  },
  {
-  "id": 790706885,
   "name": "Trader Joe's",
   "lat": 45.0920661,
   "lon": -93.4341287,
   "address": "12105 Elm Creek Boulevard North",
   "city": "Maple Grove",
-  "state": "MN"
+  "state": "MN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 37
  },
  {
-  "id": 820215768,
   "name": "Trader Joe's",
   "lat": 33.8111592,
   "lon": -117.5062534,
   "address": "2790 Cabot Drive",
   "city": "Corona",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 38
  },
  {
-  "id": 875436875,
   "name": "Trader Joe's",
   "lat": 38.8110954,
   "lon": -77.0447977,
   "address": "612 North Saint Asaph Street",
   "city": "Alexandria",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 39
  },
  {
-  "id": 906158821,
   "name": "Trader Joe's",
   "lat": 38.8425854,
   "lon": -77.270331,
   "address": "9464 Main Street",
   "city": "Fairfax",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 40
  },
  {
-  "id": 939272544,
   "name": "Trader Joe's",
   "lat": 34.0691676,
   "lon": -118.3443578,
   "address": "263 South La Brea Avenue",
   "city": "Los Angeles",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 41
  },
  {
-  "id": 947058374,
   "name": "Trader Joe's",
   "lat": 40.0733808,
   "lon": -75.4334677,
   "address": "171 East Swedesford Road",
   "city": "Wayne",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 42
  },
  {
-  "id": 966856845,
   "name": "Trader Joe's",
   "lat": 34.8293977,
   "lon": -82.3055843,
   "address": "59 Woodruff Industrial Lane",
   "city": "Greenville",
-  "state": "SC"
+  "state": "SC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 43
  },
  {
-  "id": 977090147,
   "name": "Trader Joe's",
   "lat": 44.000604,
   "lon": -92.481162,
   "address": "1200 16th Street Southwest",
   "city": "Rochester",
-  "state": "MN"
+  "state": "MN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 44
  },
  {
-  "id": 992061147,
   "name": "Trader Joe's",
   "lat": 45.6194215,
   "lon": -122.5528361,
   "address": "305 Southeast Chkalov Drive",
   "city": "Vancouver",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 45
  },
  {
-  "id": 1001375378,
   "name": "Trader Joe's",
   "lat": 33.1701533,
   "lon": -117.218354,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 46
  },
  {
-  "id": 1009389232,
   "name": "Trader Joe's",
   "lat": 33.1840258,
   "lon": -117.3318769,
   "address": "2570 Vista Way",
   "city": "Oceanside",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 47
  },
  {
-  "id": 1028012984,
   "name": "Trader Joe's",
   "lat": 40.722993,
   "lon": -74.2960658,
   "address": "187 Millburn Avenue",
   "city": "Millburn",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 48
  },
  {
-  "id": 1038205809,
   "name": "Trader Joe's",
   "lat": 40.7785925,
   "lon": -73.9822755,
   "address": "2073 Broadway",
   "city": "New York",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 49
  },
  {
-  "id": 1052335476,
   "name": "Trader Joe's",
   "lat": 38.5467537,
   "lon": -121.7614973,
   "address": "885 Russell Boulevard",
   "city": "Davis",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 50
  },
  {
-  "id": 1076268999,
   "name": "Trader Joe's",
   "lat": 47.6756999,
   "lon": -122.1279042,
   "address": "15932 Redmond Way",
   "city": "Redmond",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 51
  },
  {
-  "id": 1078357957,
   "name": "Trader Joe's",
   "lat": 37.2445799,
   "lon": -121.9576836,
   "address": "15466 Los Gatos Boulevard",
   "city": "Los Gatos",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 52
  },
  {
-  "id": 1199004366,
   "name": "Trader Joe's",
   "lat": 37.5354941,
   "lon": -122.298437,
   "address": "45 West Hillsdale Boulevard",
   "city": "San Mateo",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 53
  },
  {
-  "id": 1203556956,
   "name": "Trader Joe's",
   "lat": 40.0473205,
   "lon": -75.4372412,
   "address": "550 Lancaster Avenue",
   "city": "Berwyn",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 54
  },
  {
-  "id": 1213823254,
   "name": "Trader Joe's",
   "lat": 37.7709988,
   "lon": -122.4077368,
   "address": "555 9th Street",
   "city": "San Francisco",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 55
  },
  {
-  "id": 1252974601,
   "name": "Trader Joe's",
   "lat": 40.7111513,
   "lon": -73.8581219,
   "address": "9030 Metropolitan Avenue",
   "city": "Rego Park",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 56
  },
  {
-  "id": 1254873299,
   "name": "Trader Joe's",
   "lat": 42.1534218,
   "lon": -88.3398061,
   "address": "1800 South Randall Road",
   "city": "Algonquin",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 57
  },
  {
-  "id": 1291644957,
   "name": "Trader Joe's",
   "lat": 33.9831695,
   "lon": -84.4262326,
   "address": "4250 Roswell Road",
   "city": "Marietta",
-  "state": "GA"
+  "state": "GA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 58
  },
  {
-  "id": 1311240821,
   "name": "Trader Joe's",
   "lat": 47.6551635,
   "lon": -122.6832107,
   "address": "9991 Mickelberry Road Northwest",
   "city": "Silverdale",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 59
  },
  {
-  "id": 1325485353,
   "name": "Trader Joe's",
   "lat": 41.8638988,
   "lon": -88.3385334,
   "address": "1942 West Fabyan Parkway",
   "city": "Batavia",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 60
  },
  {
-  "id": 1347464433,
   "name": "Trader Joe's",
   "lat": 38.3227883,
   "lon": -122.3059235,
   "address": "3654 Bel Aire Plaza",
   "city": "Napa",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 61
  },
  {
-  "id": 1348747780,
   "name": "Trader Joe's",
   "lat": 34.4407421,
   "lon": -119.8250202,
   "address": "5767 Calle Real",
   "city": "Goleta",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 62
  },
  {
-  "id": 1356795823,
   "name": "Trader Joe's",
   "lat": 42.3484447,
   "lon": -71.0841008,
   "address": "899 Boylston Street",
   "city": "Boston",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 63
  },
  {
-  "id": 1454286203,
   "name": "Trader Joe's",
   "lat": 39.1077684,
   "lon": -77.5302708,
   "address": "504 Fort Evans Road Northeast",
   "city": "Leesburg",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm"
+  ],
+  "id": 64
  },
  {
-  "id": 1514589804,
   "name": "Trader Joe's",
   "lat": 34.0880565,
   "lon": -118.3796094,
   "address": "8611 Santa Monica Boulevard",
   "city": "West Hollywood",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 65
  },
  {
-  "id": 1534343994,
   "name": "Trader Joe's",
   "lat": 38.8867204,
   "lon": -77.0947148,
   "address": "1109 North Highland Street",
   "city": "Arlington",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 66
  },
  {
-  "id": 1592989381,
   "name": "Trader Joe's",
   "lat": 33.5290131,
   "lon": -111.927455,
   "address": "6202 North Scottsdale Road",
   "city": "Paradise Valley",
-  "state": "AZ"
+  "state": "AZ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 67
  },
  {
-  "id": 1609230734,
   "name": "Trader Joe's",
-  "lat": 38.6620983,
-  "lon": -121.2749434,
+  "lat": 38.6620857,
+  "lon": -121.2738417,
   "address": "5309 Sunrise Boulevard",
   "city": "Fair Oaks",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 68
  },
  {
-  "id": 1648518457,
   "name": "Trader Joe's",
   "lat": 36.5965039,
   "lon": -121.8945766,
   "address": "570 Munras Avenue",
   "city": "Monterey",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 69
  },
  {
-  "id": 1654012034,
   "name": "Trader Joe's",
   "lat": 34.0621165,
   "lon": -118.4439469,
   "address": "1000 Glendon Avenue",
   "city": "Los Angeles",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 70
  },
  {
-  "id": 1666308018,
   "name": "Trader Joe's",
   "lat": 41.1830926,
   "lon": -73.2533157,
   "address": "2258 Black Rock Turnpike",
   "city": "Fairfield",
-  "state": "CT"
+  "state": "CT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 71
  },
  {
-  "id": 1711811935,
   "name": "Trader Joe's",
   "lat": 34.0299222,
   "lon": -118.4214045,
   "address": "10850 National Boulevard",
   "city": "Los Angeles",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 72
  },
  {
-  "id": 1726018710,
   "name": "Trader Joe's",
   "lat": 47.6626473,
   "lon": -122.317644,
   "address": "4555 Roosevelt Way Northeast",
   "city": "Seattle",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 73
  },
  {
-  "id": 1735895556,
   "name": "Trader Joe's",
   "lat": 47.6157986,
   "lon": -122.3100354,
   "address": "1700 Madison Street",
   "city": "Seattle",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 74
  },
  {
-  "id": 1736128578,
   "name": "Trader Joe's",
   "lat": 47.3167766,
   "lon": -122.3108877,
   "address": "1758 South 320th Street",
   "city": "Federal Way",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 75
  },
  {
-  "id": 1742495877,
   "name": "Trader Joe's",
   "lat": 36.9778385,
   "lon": -121.970515,
   "address": "3555 Clares Street",
   "city": "Capitola",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 76
  },
  {
-  "id": 1770644634,
   "name": "Trader Joe's",
   "lat": 40.3105934,
   "lon": -74.6610884,
   "address": "3528 Brunswick Pike",
   "city": "Princeton",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 77
  },
  {
-  "id": 1776990072,
   "name": "Trader Joe's",
   "lat": 38.4065756,
   "lon": -121.4202938,
   "address": "9670 Bruceville Road",
   "city": "Elk Grove",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 78
  },
  {
-  "id": 1808899347,
   "name": "Trader Joe's",
   "lat": 38.904443,
   "lon": -77.2038554,
   "address": "7514 Leesburg Pike",
   "city": "Falls Church",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 79
  },
  {
-  "id": 1829361396,
   "name": "Trader Joe's",
   "lat": 33.5925609,
   "lon": -117.658887,
   "address": "25410 Marguerite Parkway",
   "city": "Mission Viejo",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 80
  },
  {
-  "id": 1902175919,
   "name": "Trader Joe's",
   "lat": 34.1000166,
   "lon": -118.326466,
   "address": "1600 Vine Street",
   "city": "Los Angeles",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 81
  },
  {
-  "id": 1905081743,
   "name": "Trader Joe's",
   "lat": 28.077894,
   "lon": -82.7374033,
   "address": "33591 US Highway 19 North",
   "city": "Palm Harbor",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 82
  },
  {
-  "id": 1974494879,
   "name": "Trader Joe's",
   "lat": 32.74976,
   "lon": -117.1539752,
   "address": "1090 University Avenue",
   "city": "San Diego",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 83
  },
  {
-  "id": 1975875138,
   "name": "Trader Joe's",
   "lat": 42.3954311,
   "lon": -71.0829423,
   "address": "145 Middlesex Avenue",
   "city": "Somerville",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 84
  },
  {
-  "id": 1983846890,
   "name": "Trader Joe's",
   "lat": 42.3436361,
   "lon": -122.8817333,
   "address": "55 Rossanley Drive",
   "city": "Medford",
-  "state": "OR"
+  "state": "OR",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 85
  },
  {
-  "id": 1991861271,
   "name": "Trader Joe's",
   "lat": 44.8897811,
   "lon": -123.032672,
   "address": "4450 Commercial Street Southeast",
   "city": "Salem",
-  "state": "OR"
+  "state": "OR",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 86
  },
  {
-  "id": 1999508500,
   "name": "Trader Joe's",
   "lat": 33.1000685,
   "lon": -117.0747179,
   "address": "1885 South Centre City Parkway",
   "city": "Escondido",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 87
  },
  {
-  "id": 2040508139,
   "name": "Trader Joe's",
   "lat": 42.2584412,
   "lon": -83.7129035,
   "address": "2398 East Stadium Boulevard",
   "city": "Ann Arbor",
-  "state": "MI"
+  "state": "MI",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 88
  },
  {
-  "id": 2067187624,
   "name": "Trader Joe's",
   "lat": 41.8605469,
   "lon": -88.0588424,
   "address": "680 East Roosevelt Road",
   "city": "Glen Ellyn",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 89
  },
  {
-  "id": 2086389462,
   "name": "Trader Joe's",
   "lat": 38.9124389,
   "lon": -94.6359163,
   "address": "4201 West 119th Street",
   "city": "Leawood",
-  "state": "KS"
+  "state": "KS",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 90
  },
  {
-  "id": 2104775676,
   "name": "Trader Joe's",
   "lat": 37.6800597,
   "lon": -121.7817694,
   "address": "1122 A East Stanley Boulevard",
   "city": "Livermore",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 91
  },
  {
-  "id": 2110025349,
   "name": "Trader Joe's",
   "lat": 47.0330365,
   "lon": -122.9380576,
-  "address": "",
-  "city": "",
-  "state": ""
+  "address": "1530 Black Lake Blvd SW",
+  "city": "Olympia",
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 92
  },
  {
-  "id": 2123318277,
   "name": "Trader Joe's",
   "lat": 48.762185,
   "lon": -122.464044,
   "address": "2410 James Street",
   "city": "Bellingham",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 93
  },
  {
-  "id": 2123330791,
   "name": "Trader Joe's",
   "lat": 40.1084848,
   "lon": -75.1214067,
   "address": "933 Old York Road",
   "city": "Jenkintown",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 94
  },
  {
-  "id": 2123741534,
   "name": "Trader Joe's",
-  "lat": 39.9541843,
-  "lon": -75.1764296,
+  "lat": 39.9542498,
+  "lon": -75.1760814,
   "address": "2121 Market Street",
   "city": "Philadelphia",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 95
  },
  {
-  "id": 2125918594,
   "name": "Trader Joe's",
   "lat": 37.3679656,
   "lon": -122.0358812,
   "address": "316 West El Camino Real",
   "city": "Sunnyvale",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 96
  },
  {
-  "id": 2130264969,
   "name": "Trader Joe's",
   "lat": 37.8054807,
   "lon": -122.4137896,
   "address": "401 Bay Street",
   "city": "San Francisco",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 97
  },
  {
-  "id": 2140773396,
   "name": "Trader Joe's",
-  "lat": 40.7598613,
-  "lon": -111.872625,
+  "lat": 40.7598448,
+  "lon": -111.8726304,
   "address": "634 East 400 South",
   "city": "Salt Lake City",
-  "state": "UT"
+  "state": "UT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 98
  },
  {
-  "id": 2143335207,
   "name": "Trader Joe's",
   "lat": 40.4628852,
   "lon": -74.4582051,
   "address": "869 US 1 South",
   "city": "North Brunswick",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 99
  },
  {
-  "id": 2151873692,
   "name": "Trader Joe's",
   "lat": 40.5589501,
   "lon": -74.3086974,
   "address": "675 US 1",
   "city": "Iselin",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm"
+  ],
+  "id": 100
  },
  {
-  "id": 2159403447,
   "name": "Trader Joe's",
   "lat": 38.0630186,
   "lon": -78.4914463,
   "address": "2025 Bond Street",
   "city": "Charlottesville",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 101
  },
  {
-  "id": 2177460989,
   "name": "Trader Joe's",
   "lat": 44.8592018,
   "lon": -93.332432,
   "address": "4270 78th Street West",
   "city": "Bloomington",
-  "state": "MN"
+  "state": "MN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 102
  },
  {
-  "id": 2180261965,
   "name": "Trader Joe's",
   "lat": 29.7392004,
   "lon": -95.4111693,
   "address": "2922 South Shepherd Drive",
   "city": "Houston",
-  "state": "TX"
+  "state": "TX",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 103
  },
  {
-  "id": 2184790554,
   "name": "Trader Joe's",
   "lat": 37.7907686,
   "lon": -122.4179305,
   "address": "1095 Hyde Street",
   "city": "San Francisco",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 104
  },
  {
-  "id": 2184917998,
   "name": "Trader Joe's",
   "lat": 34.1380129,
   "lon": -118.0121045,
   "address": "604 West Huntington Drive",
   "city": "Monrovia",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 105
  },
  {
-  "id": 2204100722,
   "name": "Trader Joe's",
   "lat": 37.3371572,
   "lon": -122.0675117,
   "address": "2310 Homestead Road",
   "city": "Los Altos",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 106
  },
  {
-  "id": 2205964663,
   "name": "Trader Joe's",
   "lat": 38.840255,
   "lon": -77.4327461,
   "address": "14100 Route 29",
   "city": "Centreville",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 107
  },
  {
-  "id": 2249287679,
   "name": "Trader Joe's",
   "lat": 44.0661987,
   "lon": -123.0751926,
   "address": "85 Oakway Center",
   "city": "Eugene",
-  "state": "OR"
+  "state": "OR",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 108
  },
  {
-  "id": 2257171269,
   "name": "Trader Joe's",
   "lat": 42.4735387,
   "lon": -71.2108139,
   "address": "51 Middlesex Turnpike",
   "city": "Burlington",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 109
  },
  {
-  "id": 2279562464,
   "name": "Trader Joe's",
   "lat": 40.7334209,
   "lon": -73.987875,
   "address": "142 East 14th Street",
   "city": "New York",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm"
+  ],
+  "id": 110
  },
  {
-  "id": 2285982789,
   "name": "Trader Joe's",
   "lat": 35.7588143,
   "lon": -78.7813155,
   "address": "1393 Kildaire Farm Road",
   "city": "Cary",
-  "state": "NC"
+  "state": "NC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 111
  },
  {
-  "id": 2294954171,
   "name": "Trader Joe's",
   "lat": 28.2412583,
   "lon": -80.727993,
   "address": "2221 Town Center Avenue",
   "city": "Melbourne",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 112
  },
  {
-  "id": 2295128397,
   "name": "Trader Joe's",
   "lat": 38.6724297,
   "lon": -121.1558851,
   "address": "850 East Bidwell Street",
   "city": "Folsom",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 113
  },
  {
-  "id": 2296077689,
   "name": "Trader Joe's",
   "lat": 41.8934915,
   "lon": -87.6262699,
   "address": "44 East Ontario Street",
   "city": "Chicago",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 114
  },
  {
-  "id": 2318548747,
   "name": "Trader Joe's",
   "lat": 34.1430333,
   "lon": -118.3931305,
   "address": "11976 Ventura Boulevard",
   "city": "Studio City",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 115
  },
  {
-  "id": 2343271254,
   "name": "Trader Joe's",
   "lat": 33.0293549,
   "lon": -96.7928208,
   "address": "2400 Preston Road",
   "city": "Plano",
-  "state": "TX"
+  "state": "TX",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 116
  },
  {
-  "id": 2356511948,
   "name": "Trader Joe's",
   "lat": 41.8678438,
   "lon": -87.6256386,
   "address": "1147 South Wabash Avenue",
   "city": "Chicago",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 117
  },
  {
-  "id": 2383873345,
   "name": "Trader Joe's",
   "lat": 38.9891423,
   "lon": -76.5399277,
   "address": "160 Jennifer Road",
   "city": "Annapolis",
-  "state": "MD"
+  "state": "MD",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 118
  },
  {
-  "id": 2428651345,
   "name": "Trader Joe's",
   "lat": 40.7818792,
   "lon": -73.5015393,
   "address": "425 South Oyster Bay Road",
   "city": "Plainview",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 119
  },
  {
-  "id": 2467969138,
   "name": "Trader Joe's",
   "lat": 40.8101976,
   "lon": -77.9024367,
   "address": "243 Patriot Lane",
   "city": "State College",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 120
  },
  {
-  "id": 2485876939,
   "name": "Trader Joe's",
   "lat": 41.9146551,
   "lon": -87.6551388,
   "address": "1840 North Clybourn Avenue",
   "city": "Chicago",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 121
  },
  {
-  "id": 2500233823,
   "name": "Trader Joe's",
   "lat": 40.3515402,
   "lon": -80.0517007,
   "address": "1630 Washington Road",
   "city": "Pittsburgh",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 122
  },
  {
-  "id": 2502974183,
   "name": "Trader Joe's",
   "lat": 39.912493,
   "lon": -86.212464,
   "address": "2902 West 86th Street",
   "city": "Indianapolis",
-  "state": "IN"
+  "state": "IN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 123
  },
  {
-  "id": 2525563273,
   "name": "Trader Joe's",
   "lat": 26.2680011,
   "lon": -81.8006885,
-  "address": "10600 Tamiami Trail",
+  "address": "10600 Tamiami Trail North",
   "city": "Naples",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 124
  },
  {
-  "id": 2556102710,
   "name": "Trader Joe's",
   "lat": 34.0604619,
   "lon": -117.1812162,
   "address": "552 Orange Street",
   "city": "Redlands",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 125
  },
  {
-  "id": 2612603442,
   "name": "Trader Joe's",
   "lat": 36.0008937,
   "lon": -115.1092556,
   "address": "10345 Eastern Avenue",
   "city": "Henderson",
-  "state": "NV"
+  "state": "NV",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 126
  },
  {
-  "id": 2624945142,
   "name": "Trader Joe's",
   "lat": 36.1806142,
   "lon": -115.257803,
   "address": "7575 West Washington Avenue",
   "city": "Las Vegas",
-  "state": "NV"
+  "state": "NV",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 127
  },
  {
-  "id": 2643086367,
   "name": "Trader Joe's",
   "lat": 40.7423995,
   "lon": -96.6747957,
   "address": "3120 Pine Lake Road",
   "city": "Lincoln",
-  "state": "NE"
+  "state": "NE",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 128
  },
  {
-  "id": 2645046056,
   "name": "Trader Joe's",
   "lat": 32.6522644,
   "lon": -116.970681,
   "address": "878 Eastlake Parkway",
   "city": "Chula Vista",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 129
  },
  {
-  "id": 2670074347,
   "name": "Trader Joe's",
   "lat": 38.9712607,
   "lon": -94.6062882,
   "address": "8600 Ward Parkway",
   "city": "Kansas City",
-  "state": "MO"
+  "state": "MO",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 130
  },
  {
-  "id": 2688946704,
   "name": "Trader Joe's",
   "lat": 39.6091225,
   "lon": -104.9573575,
   "address": "5910 South University Boulevard",
   "city": "Greenwood Village",
-  "state": "CO"
+  "state": "CO",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 131
  },
  {
-  "id": 2700281463,
   "name": "Trader Joe's",
   "lat": 36.8487071,
   "lon": -76.024771,
   "address": "503 Hilltop Plaza",
   "city": "Virginia Beach",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 132
  },
  {
-  "id": 2807667380,
   "name": "Trader Joe's",
   "lat": 33.8689672,
   "lon": -118.058037,
   "address": "12861 Towne Center Drive",
   "city": "Cerritos",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 133
  },
  {
-  "id": 2823612559,
   "name": "Trader Joe's",
   "lat": 40.8365511,
   "lon": -74.1513987,
   "address": "259 Allwood Road",
   "city": "Clifton",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 134
  },
  {
-  "id": 2840741024,
   "name": "Trader Joe's",
   "lat": 36.0928876,
   "lon": -80.2819711,
   "address": "252 South Stratford Road",
   "city": "Winston Salem",
-  "state": "NC"
+  "state": "NC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 135
  },
  {
-  "id": 2926450069,
   "name": "Trader Joe's",
   "lat": 35.1752083,
   "lon": -106.5428004,
   "address": "8928 Holly Avenue Northeast",
   "city": "Albuquerque",
-  "state": "NM"
+  "state": "NM",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 136
  },
  {
-  "id": 2940058338,
   "name": "Trader Joe's",
   "lat": 33.7966967,
   "lon": -118.1230626,
   "address": "2222 North Bellflower Boulevard",
   "city": "Long Beach",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 137
  },
  {
-  "id": 2944759499,
   "name": "Trader Joe's",
   "lat": 33.642285,
   "lon": -117.5954056,
   "address": "30652 Santa Margarita Parkway",
   "city": "Rancho Santa Margarita",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 138
  },
  {
-  "id": 2962302140,
   "name": "Trader Joe's",
   "lat": 33.4594075,
   "lon": -117.652459,
   "address": "638 Camino de Los Mares",
   "city": "San Clemente",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 139
  },
  {
-  "id": 2965930333,
   "name": "Trader Joe's",
   "lat": 38.9161261,
   "lon": -77.0322113,
   "address": "1914 14th Street Northwest",
   "city": "Washington",
-  "state": "DC"
+  "state": "DC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 140
  },
  {
-  "id": 2995351003,
   "name": "Trader Joe's",
   "lat": 47.6364969,
   "lon": -122.3566714,
   "address": "1916 Queen Anne Avenue North",
   "city": "Seattle",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 141
  },
  {
-  "id": 3036238699,
   "name": "Trader Joe's",
   "lat": 41.5621046,
   "lon": -93.7939384,
   "address": "6305 Mills Civic Parkway",
   "city": "West Des Moines",
-  "state": "IA"
+  "state": "IA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 142
  },
  {
-  "id": 3042128806,
   "name": "Trader Joe's",
   "lat": 41.7124488,
   "lon": -71.4873393,
   "address": "1000 Bald Hill Road",
   "city": "Warwick",
-  "state": "RI"
+  "state": "RI",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 143
  },
  {
-  "id": 3049033222,
   "name": "Trader Joe's",
   "lat": 37.6490044,
   "lon": -77.6071544,
   "address": "11331 West Broad Street",
   "city": "Glen Allen",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 144
  },
  {
-  "id": 3076013111,
   "name": "Trader Joe's",
   "lat": 38.8028944,
   "lon": -121.20906,
   "address": "5116 Commons Drive",
-  "city": "",
-  "state": ""
+  "city": "Rocklin",
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 145
  },
  {
-  "id": 3098736998,
   "name": "Trader Joe's",
   "lat": 26.4392684,
   "lon": -80.0702715,
   "address": "1851 Federal Highway",
   "city": "Delray Beach",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 146
  },
  {
-  "id": 3106269418,
   "name": "Trader Joe's",
   "lat": 41.251309,
   "lon": -73.0177287,
   "address": "560 Boston Post Road",
   "city": "Orange",
-  "state": "CT"
+  "state": "CT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 147
  },
  {
-  "id": 3111803013,
   "name": "Trader Joe's",
   "lat": 40.9723228,
   "lon": -73.8048298,
   "address": "727 White Plains Road",
   "city": "Scarsdale",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 148
  },
  {
-  "id": 3112822233,
   "name": "Trader Joe's",
   "lat": 30.395413,
   "lon": -97.75191,
   "address": "9722 Great Hills Trail",
   "city": "Austin",
-  "state": "TX"
+  "state": "TX",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 149
  },
  {
-  "id": 3113884576,
   "name": "Trader Joe's",
   "lat": 43.0463242,
   "lon": -76.0704123,
   "address": "3422 Erie Boulevard East",
   "city": "DeWitt",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 150
  },
  {
-  "id": 3130645788,
   "name": "Trader Joe's",
   "lat": 33.6924689,
   "lon": -117.9925205,
   "address": "18681 Main Street",
   "city": "Huntington Beach",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 151
  },
  {
-  "id": 3137961994,
   "name": "Trader Joe's",
   "lat": 33.887547,
   "lon": -118.3798207,
   "address": "1821 Manhattan Beach Boulevard",
   "city": "Manhattan Beach",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 152
  },
  {
-  "id": 3163223007,
   "name": "Trader Joe's",
   "lat": 35.6730721,
   "lon": -105.953164,
   "address": "530 West Cordova Road",
   "city": "Santa Fe",
-  "state": "NM"
+  "state": "NM",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 153
  },
  {
-  "id": 3195118369,
   "name": "Trader Joe's",
   "lat": 28.5982017,
   "lon": -81.3655486,
   "address": "131 Orlando Avenue",
   "city": "Winter Park",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 154
  },
  {
-  "id": 3221827458,
   "name": "Trader Joe's",
   "lat": 26.0060034,
   "lon": -80.3108133,
   "address": "11960 Pines Boulevard",
   "city": "Pembroke Pines",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 155
  },
  {
-  "id": 3262518518,
   "name": "Trader Joe's",
   "lat": 32.3505043,
   "lon": -110.9732578,
   "address": "7912 North Oracle Road",
   "city": "Oro Valley",
-  "state": "AZ"
+  "state": "AZ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 156
  },
  {
-  "id": 3291531680,
   "name": "Trader Joe's",
   "lat": 38.978214,
   "lon": -77.0905786,
   "address": "6831 Wisconsin Avenue",
   "city": "Bethesda",
-  "state": "MD"
+  "state": "MD",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 157
  },
  {
-  "id": 3358046340,
   "name": "Trader Joe's",
   "lat": 40.6240113,
   "lon": -111.8540437,
   "address": "6989 South 1300 East",
   "city": "Cottonwood Heights",
-  "state": "UT"
+  "state": "UT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 158
  },
  {
-  "id": 3359956637,
   "name": "Trader Joe's",
   "lat": 38.7800057,
   "lon": -77.2347588,
   "address": "8402 Old Keene Mill Road",
   "city": "Springfield",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm"
+  ],
+  "id": 159
  },
  {
-  "id": 3398186521,
   "name": "Trader Joe's",
   "lat": 33.9789035,
   "lon": -84.2198002,
   "address": "5185 Peachtree Parkway",
   "city": "Norcross",
-  "state": "GA"
+  "state": "GA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 160
  },
  {
-  "id": 3449555795,
   "name": "Trader Joe's",
   "lat": 41.8109469,
   "lon": -87.9890092,
   "address": "122 Ogden Avenue",
   "city": "Downers Grove",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 161
  },
  {
-  "id": 3489981986,
   "name": "Trader Joe's",
   "lat": 34.1036077,
   "lon": -117.821291,
   "address": "856 West Arrow Highway",
   "city": "San Dimas",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 162
  },
  {
-  "id": 3561883816,
   "name": "Trader Joe's",
   "lat": 33.9586411,
   "lon": -118.3965106,
   "address": "8645 South Sepulveda Boulevard",
   "city": "Westchester",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 163
  },
  {
-  "id": 3564531327,
   "name": "Trader Joe's",
   "lat": 45.4112029,
   "lon": -122.6266749,
   "address": "15574 Southeast McLoughlin Boulevard",
   "city": "Portland",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 164
  },
  {
-  "id": 3567660621,
   "name": "Trader Joe's",
   "lat": 44.9736423,
   "lon": -93.4227459,
   "address": "11220 Wayzata Boulevard",
   "city": "Minnetonka",
-  "state": "MN"
+  "state": "MN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 165
  },
  {
-  "id": 3581089478,
   "name": "Trader Joe's",
   "lat": 26.3421367,
   "lon": -80.0872065,
   "address": "855 South Federal Highway",
   "city": "Boca Raton",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 166
  },
  {
-  "id": 3621209397,
   "name": "Trader Joe's",
   "lat": 37.5435716,
   "lon": -121.9860846,
   "address": "39324 Argonaut Way",
   "city": "Fremont",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 167
  },
  {
-  "id": 3637834243,
   "name": "Trader Joe's",
   "lat": 47.3600784,
   "lon": -122.1659383,
   "address": "12966 Southeast Kent Kangley Road",
   "city": "Kent",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 168
  },
  {
-  "id": 3719477850,
   "name": "Trader Joe's",
   "lat": 40.2082117,
   "lon": -75.2230554,
   "address": "1460 Bethlehem Pike",
   "city": "North Wales",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 169
  },
  {
-  "id": 3727949456,
   "name": "Trader Joe's",
   "lat": 42.4254014,
   "lon": -71.1884932,
   "address": "1427 Massachusetts Avenue",
   "city": "Arlington",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 170
  },
  {
-  "id": 3782638059,
   "name": "Trader Joe's",
   "lat": 40.5704614,
   "lon": -80.0222573,
   "address": "9020 Covenant Avenue",
   "city": "Pittsburgh",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 171
  },
  {
-  "id": 3784837911,
   "name": "Trader Joe's",
   "lat": 40.402922,
   "lon": -74.1235289,
   "address": "1447 NJ 35",
   "city": "Middletown",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm"
+  ],
+  "id": 172
  },
  {
-  "id": 3810482243,
   "name": "Trader Joe's",
   "lat": 30.2676959,
   "lon": -97.7526645,
   "address": "211 Walter Seaholm Drive",
   "city": "Austin",
-  "state": "TX"
+  "state": "TX",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 173
  },
  {
-  "id": 3843952229,
   "name": "Trader Joe's",
   "lat": 34.2189137,
   "lon": -118.8691687,
   "address": "451 East Avenida de Los Arboles",
   "city": "Thousand Oaks",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 174
  },
  {
-  "id": 3843957342,
   "name": "Trader Joe's",
   "lat": 34.1638993,
   "lon": -118.8249784,
   "address": "3835 East Thousand Oaks Boulevard",
   "city": "Westlake Village",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 175
  },
  {
-  "id": 3859051755,
   "name": "Trader Joe's",
   "lat": 40.7418779,
   "lon": -73.9938343,
   "address": "675 6th Avenue",
   "city": "New York",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 176
  },
  {
-  "id": 3892685535,
   "name": "Trader Joe's",
   "lat": 47.6309003,
   "lon": -122.1334738,
   "address": "15563 Northeast 24th Street",
   "city": "Bellevue",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 177
  },
  {
-  "id": 3956135638,
   "name": "Trader Joe's",
   "lat": 34.1930814,
   "lon": -118.6255657,
   "address": "6751 Fallbrook Avenue",
   "city": "West Hills",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 178
  },
  {
-  "id": 3957214248,
   "name": "Trader Joe's",
   "lat": 41.4571758,
   "lon": -81.9510194,
   "address": "175 Market Street",
   "city": "Westlake",
-  "state": "OH"
+  "state": "OH",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 179
  },
  {
-  "id": 4003092379,
   "name": "Trader Joe's",
   "lat": 34.2714375,
   "lon": -119.2489203,
   "address": "103 South Mills Road",
   "city": "Ventura",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 180
  },
  {
-  "id": 4008802791,
   "name": "Trader Joe's",
   "lat": 37.7001684,
   "lon": -122.4822883,
   "address": "417 Westlake Center",
   "city": "Daly City",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 181
  },
  {
-  "id": 4015581473,
   "name": "Trader Joe's",
   "lat": 34.0337202,
   "lon": -118.4492798,
   "address": "11755 West Olympic Boulevard",
   "city": "Los Angeles",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 182
  },
  {
-  "id": 4062754780,
   "name": "Trader Joe's",
   "lat": 28.4503079,
   "lon": -81.4965381,
   "address": "8323 Sand Lake Road",
   "city": "Orlando",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 183
  },
  {
-  "id": 4141972189,
   "name": "Trader Joe's",
   "lat": 38.2640861,
   "lon": -122.053199,
   "address": "1350 Gateway Boulevard",
   "city": "Fairfield",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 184
  },
  {
-  "id": 4162552729,
   "name": "Trader Joe's",
   "lat": 47.7088598,
   "lon": -117.4096014,
   "address": "5520 North Division Street",
   "city": "Spokane",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 185
  },
  {
-  "id": 4206224189,
   "name": "Trader Joe's",
   "lat": 40.5397289,
   "lon": -105.0761,
   "address": "3500 South College Avenue",
   "city": "Fort Collins",
-  "state": "CO"
+  "state": "CO",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 186
  },
  {
-  "id": 4214721862,
   "name": "Trader Joe's",
   "lat": 29.6232552,
   "lon": -82.3798985,
   "address": "3724 Southwest Archer Road",
   "city": "Gainesville",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 187
  },
  {
-  "id": 4243823090,
   "name": "Trader Joe's",
   "lat": 33.8185754,
   "lon": -118.386094,
   "address": "1761 South Elena Avenue",
   "city": "Redondo Beach",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 188
  },
  {
-  "id": 4332726389,
   "name": "Trader Joe's",
   "lat": 35.9271514,
   "lon": -84.0459196,
   "address": "8001 Kingston Pike",
   "city": "Knoxville",
-  "state": "TN"
+  "state": "TN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 189
  },
  {
-  "id": 4351548458,
   "name": "Trader Joe's",
   "lat": 40.743901,
   "lon": -73.9791696,
   "address": "200 East 32nd Street",
   "city": "New York",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 190
  },
  {
-  "id": 4379237190,
   "name": "Trader Joe's",
   "lat": 33.8639002,
   "lon": -118.391905,
   "address": "1100 Pacific Coast Highway",
   "city": "Hermosa Beach",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 191
  },
  {
-  "id": 4413356502,
   "name": "Trader Joe's",
   "lat": 37.937841,
   "lon": -122.5149545,
   "address": "2052 Redwood Highway",
   "city": "Greenbrae",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 192
  },
  {
-  "id": 4415509691,
   "name": "Trader Joe's",
   "lat": 37.969678,
   "lon": -122.5165256,
   "address": "337 Third Street",
   "city": "San Rafael",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 193
  },
  {
-  "id": 4453903190,
   "name": "Trader Joe's",
   "lat": 36.145576,
   "lon": -115.335281,
   "address": "2315 Summa Drive",
   "city": "Las Vegas",
-  "state": "NV"
+  "state": "NV",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 194
  },
  {
-  "id": 4515637691,
   "name": "Trader Joe's",
   "lat": 40.0965062,
   "lon": -83.0928799,
   "address": "6355 Sawmill Road",
   "city": "Dublin",
-  "state": "OH"
+  "state": "OH",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 195
  },
  {
-  "id": 4612331186,
   "name": "Trader Joe's",
   "lat": 35.537825,
   "lon": -97.5310906,
   "address": "6409 Avondale Drive",
   "city": "Nichols Hills",
-  "state": "OK"
+  "state": "OK",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 196
  },
  {
-  "id": 4703926637,
   "name": "Trader Joe's",
   "lat": 47.6137607,
   "lon": -122.1847563,
   "address": "416 116th Avenue Northeast",
   "city": "Bellevue",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 197
  },
  {
-  "id": 4704557447,
   "name": "Trader Joe's",
   "lat": 37.785398,
   "lon": -122.4056288,
   "address": "10 4th Street",
   "city": "San Francisco",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 198
  },
  {
-  "id": 4732463756,
   "name": "Trader Joe's",
   "lat": 38.671909,
   "lon": -90.4364479,
   "address": "11505 Olive Boulevard",
   "city": "Creve Coeur",
-  "state": "MO"
+  "state": "MO",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 199
  },
  {
-  "id": 4740189040,
   "name": "Trader Joe's",
   "lat": 39.4112798,
   "lon": -76.619151,
   "address": "800 Kenilworth Drive",
   "city": "Towson",
-  "state": "MD"
+  "state": "MD",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 200
  },
  {
-  "id": 4788723923,
   "name": "Trader Joe's",
   "lat": 33.9879295,
   "lon": -118.3930851,
   "address": "6150 Slauson Avenue",
   "city": "Culver City",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 201
  },
  {
-  "id": 4836985408,
   "name": "Trader Joe's",
   "lat": 33.4465102,
   "lon": -86.7296304,
   "address": "205 Summit Boulevard",
   "city": "Birmingham",
-  "state": "AL"
+  "state": "AL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 202
  },
  {
-  "id": 4866729431,
   "name": "Trader Joe's",
   "lat": 33.5688054,
   "lon": -117.8307333,
   "address": "8086 East Coast Highway",
   "city": "Newport Beach",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 203
  },
  {
-  "id": 4913346423,
   "name": "Trader Joe's",
   "lat": 40.7537589,
   "lon": -74.0299209,
   "address": "1350 Willow Avenue",
   "city": "Hoboken",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 204
  },
  {
-  "id": 4939202420,
   "name": "Trader Joe's",
   "lat": 33.7579178,
   "lon": -118.1089144,
   "address": "6451 East Pacific Coast Highway",
   "city": "Long Beach",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 205
  },
  {
-  "id": 4998695353,
   "name": "Trader Joe's",
   "lat": 26.0930247,
   "lon": -80.2496633,
   "address": "2296 South University Drive",
   "city": "Davie",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 206
  },
  {
-  "id": 5074283024,
   "name": "Trader Joe's",
   "lat": 39.6116591,
   "lon": -105.089239,
   "address": "8055 West Bowles Avenue",
   "city": "Littleton",
-  "state": "CO"
+  "state": "CO",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 207
  },
  {
-  "id": 5162229212,
   "name": "Trader Joe's",
   "lat": 34.0732508,
   "lon": -81.1602167,
   "address": "275 Harbison Boulevard",
   "city": "Columbia",
-  "state": "SC"
+  "state": "SC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 208
  },
  {
-  "id": 5162444623,
   "name": "Trader Joe's",
   "lat": 34.0719907,
   "lon": -118.3618302,
   "address": "175 South Fairfax Avenue",
   "city": "Los Angeles",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 209
  },
  {
-  "id": 5233168036,
   "name": "Trader Joe's",
   "lat": 40.6914157,
   "lon": -73.982755,
   "address": "445 Gold Street",
   "city": "Brooklyn",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 210
  },
  {
-  "id": 5237417649,
   "name": "Trader Joe's",
   "lat": 34.0257159,
   "lon": -118.2848075,
   "address": "3131 Hoover Street",
   "city": "Los Angeles",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 211
  },
  {
-  "id": 5249822272,
   "name": "Trader Joe's",
   "lat": 37.6969236,
   "lon": -121.8770007,
   "address": "3903 Santa Rita Road",
   "city": "Pleasanton",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 212
  },
  {
-  "id": 5251222382,
   "name": "Trader Joe's",
   "lat": 39.83381,
   "lon": -75.5415864,
   "address": "5605 Concord Pike",
   "city": "Wilmington",
-  "state": "DE"
+  "state": "DE",
+  "sources": [
+   "osm"
+  ],
+  "id": 213
  },
  {
-  "id": 5274568992,
   "name": "Trader Joe's",
   "lat": 38.6185413,
   "lon": -121.400195,
   "address": "2625 Marconi Avenue",
   "city": "Sacramento",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 214
  },
  {
-  "id": 5281051126,
   "name": "Trader Joe's",
   "lat": 37.979301,
   "lon": -122.0561587,
   "address": "1150 Concord Avenue",
   "city": "Concord",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 215
  },
  {
-  "id": 5312145054,
   "name": "Trader Joe's",
   "lat": 42.682873,
   "lon": -83.1950866,
   "address": "3044 Walton Boulevard",
   "city": "Rochester Hills",
-  "state": "MI"
+  "state": "MI",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 216
  },
  {
-  "id": 5335879547,
   "name": "Trader Joe's",
   "lat": 32.7717912,
   "lon": -117.070301,
   "address": "SDSU South Campus Plaza",
   "city": "San Diego",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 217
  },
  {
-  "id": 5367108621,
   "name": "Trader Joe's",
   "lat": 40.3165942,
   "lon": -74.0609261,
   "address": "1031 Broad Street",
   "city": "Shrewsbury",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 218
  },
  {
-  "id": 5376787642,
   "name": "Trader Joe's",
   "lat": 38.8847367,
   "lon": -76.99547,
   "address": "750 Pennsylvania Avenue Southeast",
   "city": "Washington",
-  "state": "DC"
+  "state": "DC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 219
  },
  {
-  "id": 5429674015,
   "name": "Trader Joe's",
   "lat": 42.3634369,
   "lon": -71.130034,
   "address": "199 North Harvard Street",
   "city": "Allston",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 220
  },
  {
-  "id": 5512866192,
   "name": "Trader Joe's",
   "lat": 47.6627102,
   "lon": -122.37424,
   "address": "4609 14th Avenue Northwest",
   "city": "Seattle",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 221
  },
  {
-  "id": 5526087833,
   "name": "Trader Joe's",
   "lat": 39.9037659,
   "lon": -86.0751612,
   "address": "5473 East 82nd Street",
   "city": "Indianapolis",
-  "state": "IN"
+  "state": "IN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 222
  },
  {
-  "id": 5538757541,
   "name": "Trader Joe's",
   "lat": 34.4284056,
   "lon": -118.5381487,
   "address": "26517 Bouquet Canyon Road",
   "city": "Santa Clarita",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 223
  },
  {
-  "id": 5599500370,
   "name": "Trader Joe's",
   "lat": 40.7908664,
   "lon": -73.9692378,
   "address": "670 Columbus Avenue",
   "city": "New York",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 224
  },
  {
-  "id": 5641994876,
   "name": "Trader Joe's",
   "lat": 42.4954415,
   "lon": -83.1638009,
   "address": "27880 Woodward Avenue",
   "city": "Royal Oak",
-  "state": "MI"
+  "state": "MI",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 225
  },
  {
-  "id": 5646055731,
   "name": "Trader Joe's",
   "lat": 32.7661721,
   "lon": -117.1552299,
   "address": "1072 Camino del Rio North",
   "city": "San Diego",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 226
  },
  {
-  "id": 5695685931,
   "name": "Trader Joe's",
   "lat": 33.4224913,
   "lon": -111.9247528,
   "address": "940 East University Drive",
   "city": "Tempe",
-  "state": "AZ"
+  "state": "AZ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 227
  },
  {
-  "id": 5706863780,
   "name": "Trader Joe's",
   "lat": 41.80672,
   "lon": -72.5577086,
   "address": "1510 Pleasant Valley Road",
   "city": "Manchester",
-  "state": "CT"
+  "state": "CT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 228
  },
  {
-  "id": 5732198470,
   "name": "Trader Joe's",
   "lat": 35.9366787,
   "lon": -79.0243971,
   "address": "1800 East Franklin Street",
   "city": "Chapel Hill",
-  "state": "NC"
+  "state": "NC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 229
  },
  {
-  "id": 5764483118,
   "name": "Trader Joe's",
   "lat": 41.7543725,
   "lon": -88.1407747,
   "address": "44 West Gartner Road",
   "city": "Naperville",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 230
  },
  {
-  "id": 5840605202,
   "name": "Trader Joe's",
   "lat": 41.1398518,
   "lon": -73.3519236,
   "address": "400 Post Road East",
   "city": "Westport",
-  "state": "CT"
+  "state": "CT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 231
  },
  {
-  "id": 5859974970,
   "name": "Trader Joe's",
   "lat": 44.9770639,
   "lon": -93.2577228,
   "address": "721 Washington Avenue South",
-  "city": "",
-  "state": "MN"
+  "city": "Minneapolis",
+  "state": "MN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 232
  },
  {
-  "id": 5883225929,
   "name": "Trader Joe's",
   "lat": 40.5899749,
   "lon": -74.1658103,
   "address": "2385 Richmond Avenue",
   "city": "Staten Island",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 233
  },
  {
-  "id": 5894609765,
   "name": "Trader Joe's",
   "lat": 40.7895019,
   "lon": -74.3912254,
   "address": "176 Columbia Turnpike",
   "city": "Florham Park",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 234
  },
  {
-  "id": 5895573443,
   "name": "Trader Joe's",
   "lat": 39.7593442,
   "lon": -121.846984,
   "address": "801 East Avenue",
   "city": "Chico",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 235
  },
  {
-  "id": 5899746387,
   "name": "Trader Joe's",
   "lat": 33.8408678,
   "lon": -84.3751232,
   "address": "3183 Peachtree Road",
   "city": "Atlanta",
-  "state": "GA"
+  "state": "GA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 236
  },
  {
-  "id": 5910778051,
   "name": "Trader Joe's",
   "lat": 32.8506192,
   "lon": -96.8182348,
   "address": "5550 West Lovers Lane",
   "city": "Dallas",
-  "state": "TX"
+  "state": "TX",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 237
  },
  {
-  "id": 5910786110,
   "name": "Trader Joe's",
   "lat": 32.8219483,
   "lon": -96.7898919,
   "address": "4525 Cole Avenue",
   "city": "Dallas",
-  "state": "TX"
+  "state": "TX",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 238
  },
  {
-  "id": 5910814791,
   "name": "Trader Joe's",
   "lat": 29.7403594,
   "lon": -95.7753081,
   "address": "2717 Commercial Center Boulevard",
   "city": "Katy",
-  "state": "TX"
+  "state": "TX",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 239
  },
  {
-  "id": 5910826356,
   "name": "Trader Joe's",
   "lat": 30.1760606,
   "lon": -95.5360538,
   "address": "10868 Kuykendahl Road",
   "city": "The Woodlands",
-  "state": "TX"
+  "state": "TX",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 240
  },
  {
-  "id": 5917155515,
   "name": "Trader Joe's",
   "lat": 33.5070981,
   "lon": -112.0377882,
   "address": "4821 North 20th Street",
   "city": "Phoenix",
-  "state": "AZ"
+  "state": "AZ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 241
  },
  {
-  "id": 5917161038,
   "name": "Trader Joe's",
   "lat": 34.5487019,
   "lon": -112.4053084,
   "address": "252 North Lee Boulevard",
   "city": "Prescott",
-  "state": "AZ"
+  "state": "AZ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 242
  },
  {
-  "id": 5921181175,
   "name": "Trader Joe's",
   "lat": 43.093924,
   "lon": -70.8013363,
   "address": "45 Gosling Road",
   "city": "Newington",
-  "state": "NH"
+  "state": "NH",
+  "sources": [
+   "osm"
+  ],
+  "id": 243
  },
  {
-  "id": 5922272299,
   "name": "Trader Joe's",
   "lat": 30.422742,
   "lon": -91.1535477,
   "address": "3535 Perkins Road",
   "city": "Baton Rouge",
-  "state": "LA"
+  "state": "LA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 244
  },
  {
-  "id": 5924712671,
   "name": "Trader Joe's",
   "lat": 35.0909747,
   "lon": -89.8011646,
   "address": "2130 Exeter Road",
   "city": "Germantown",
-  "state": "TN"
+  "state": "TN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 245
  },
  {
-  "id": 5987343687,
   "name": "Trader Joe's",
   "lat": 40.8687486,
   "lon": -73.1282903,
   "address": "2085 Smith Haven Plaza",
   "city": "Lake Grove",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 246
  },
  {
-  "id": 6077853368,
   "name": "Trader Joe's",
   "lat": 34.1597397,
   "lon": -118.254494,
   "address": "103 East Glenoaks Boulevard",
   "city": "Glendale",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 247
  },
  {
-  "id": 6119560491,
   "name": "Trader Joe's",
   "lat": 32.8008673,
   "lon": -117.240676,
   "address": "1640 Garnet Avenue",
   "city": "San Diego",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 248
  },
  {
-  "id": 6206390143,
   "name": "Trader Joe's",
   "lat": 34.2197911,
   "lon": -119.0529016,
   "address": "363 Carmen Drive",
   "city": "Camarillo",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 249
  },
  {
-  "id": 6225744430,
   "name": "Trader Joe's",
   "lat": 40.0292642,
   "lon": -75.6320243,
   "address": "125 West Lincoln Highway",
   "city": "Exton",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm"
+  ],
+  "id": 250
  },
  {
-  "id": 6232229115,
   "name": "Trader Joe's",
   "lat": 38.9074588,
   "lon": -77.0005857,
   "address": "350 Florida Avenue Northeast",
   "city": "Washington",
-  "state": "DC"
+  "state": "DC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 251
  },
  {
-  "id": 6240965611,
   "name": "Trader Joe's",
   "lat": 37.8230234,
   "lon": -122.0033266,
   "address": "85 Railroad Avenue",
   "city": "Danville",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 252
  },
  {
-  "id": 6401264416,
   "name": "Trader Joe's",
   "lat": 42.1609109,
   "lon": -71.5017355,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 253
  },
  {
-  "id": 6527437345,
   "name": "Trader Joe's",
   "lat": 33.9559471,
   "lon": -117.388437,
   "address": "6225 Riverside Avenue",
   "city": "Riverside",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 254
  },
  {
-  "id": 6540025385,
   "name": "Trader Joe's",
   "lat": 40.7257088,
   "lon": -74.0048369,
   "address": "233 Spring Street",
   "city": "New York",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 255
  },
  {
-  "id": 6545769185,
   "name": "Trader Joe's",
   "lat": 34.4249852,
   "lon": -119.681662,
   "address": "222 North Milpas Street",
   "city": "Santa Barbara",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 256
  },
  {
-  "id": 6566728985,
   "name": "Trader Joe's",
   "lat": 40.7161587,
   "lon": -73.9867257,
   "address": "400 Grand Street",
   "city": "New York",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 257
  },
  {
-  "id": 6587441285,
   "name": "Trader Joe's",
   "lat": 39.6884835,
   "lon": -84.1649379,
   "address": "328 East Stroop Road",
   "city": "Kettering",
-  "state": "OH"
+  "state": "OH",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 258
  },
  {
-  "id": 6810225658,
   "name": "Trader Joe's",
   "lat": 34.6003065,
   "lon": -118.14914,
   "address": "39507 10th Street West",
   "city": "Palmdale",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 259
  },
  {
-  "id": 6861438996,
   "name": "Trader Joe's",
   "lat": 40.2761171,
   "lon": -111.6848362,
   "address": "440 East Park Avenue",
   "city": "Orem",
-  "state": "UT"
+  "state": "UT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 260
  },
  {
-  "id": 6883785640,
   "name": "Trader Joe's",
   "lat": 41.6181431,
   "lon": -87.8546535,
   "address": "14924 South La Grange Road",
   "city": "Orland Park",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 261
  },
  {
-  "id": 6900050290,
   "name": "Trader Joe's",
   "lat": 42.0865212,
   "lon": -71.2693487,
   "address": "350 Patriot Place",
   "city": "Foxborough",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 262
  },
  {
-  "id": 6919380186,
   "name": "Trader Joe's",
   "lat": 45.5004306,
   "lon": -122.4098498,
   "address": "2083 Northeast Burnside Road",
   "city": "Gresham",
-  "state": "OR"
+  "state": "OR",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 263
  },
  {
-  "id": 6946277681,
   "name": "Trader Joe's",
   "lat": 42.2700671,
   "lon": -85.6501359,
   "address": "5099 Century Avenue",
   "city": "Kalamazoo",
-  "state": "MI"
+  "state": "MI",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 264
  },
  {
-  "id": 7007089040,
   "name": "Trader Joe's",
   "lat": 40.5635879,
   "lon": -74.5565312,
   "address": "315 Promenade Boulevard",
   "city": "Bridgewater",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 265
  },
  {
-  "id": 7041152015,
   "name": "Trader Joe's",
   "lat": 35.0787316,
   "lon": -80.8178677,
   "address": "6418 Rea Road",
   "city": "Charlotte",
-  "state": "NC"
+  "state": "NC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 266
  },
  {
-  "id": 7073917461,
   "name": "Trader Joe's",
   "lat": 34.1277897,
   "lon": -118.0897248,
   "address": "3035 East Huntington Drive",
   "city": "Pasadena",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 267
  },
  {
-  "id": 7112719343,
   "name": "Trader Joe's",
   "lat": 40.7445181,
   "lon": -73.6041239,
   "address": "910 Old Country Road",
   "city": "Garden City",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 268
  },
  {
-  "id": 7139897198,
   "name": "Trader Joe's",
   "lat": 34.2808876,
   "lon": -118.738571,
   "address": "2975 Cochran Street",
   "city": "Simi Valley",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 269
  },
  {
-  "id": 7140439804,
   "name": "Trader Joe's",
   "lat": 40.7305095,
   "lon": -73.9810994,
   "address": "436 East 14th Street",
   "city": "New York",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 270
  },
  {
-  "id": 7176480316,
   "name": "Trader Joe's",
   "lat": 30.2569889,
   "lon": -81.389875,
   "address": "4180 South 3rd Street South",
   "city": "Jacksonville Beach",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 271
  },
  {
-  "id": 7347217046,
   "name": "Trader Joe's",
   "lat": 41.7963222,
   "lon": -87.5884753,
   "address": "1528 East 55th Street",
   "city": "Chicago",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 272
  },
  {
-  "id": 7444082737,
   "name": "Trader Joe's",
   "lat": 42.0128024,
   "lon": -87.8324359,
   "address": "190 North Northwest Highway",
   "city": "Park Ridge",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 273
  },
  {
-  "id": 7472318309,
   "name": "Trader Joe's",
   "lat": 40.938228,
   "lon": -73.7465468,
   "address": "1260 Boston Post Road",
   "city": "Larchmont",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 274
  },
  {
-  "id": 7472433244,
   "name": "Trader Joe's",
   "lat": 35.8095067,
   "lon": -78.8176405,
   "address": "951 Morrisville Parkway",
   "city": "Morrisville",
-  "state": "NC"
+  "state": "NC",
+  "sources": [
+   "osm"
+  ],
+  "id": 275
  },
  {
-  "id": 7552874713,
   "name": "Trader Joe's",
   "lat": 30.004488,
   "lon": -90.1521317,
   "address": "2949 Veterans Memorial Boulevard",
   "city": "Metairie",
-  "state": "LA"
+  "state": "LA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 276
  },
  {
-  "id": 7932381439,
   "name": "Trader Joe's",
   "lat": 33.9490498,
   "lon": -118.0053013,
   "address": "15025 Whittier Boulevard",
   "city": "Whittier",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 277
  },
  {
-  "id": 8145309341,
   "name": "Trader Joe's",
   "lat": 39.866635,
   "lon": -105.0511327,
   "address": "9350 Sheridan Boulevard",
   "city": "Westminster",
-  "state": "CO"
+  "state": "CO",
+  "sources": [
+   "osm"
+  ],
+  "id": 278
  },
  {
-  "id": 8177320304,
   "name": "Trader Joe's",
   "lat": 41.025499,
   "lon": -73.7934466,
   "address": "215 North Central Avenue",
   "city": "Hartsdale",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 279
  },
  {
-  "id": 8233167105,
   "name": "Trader Joe's",
   "lat": 40.9600029,
   "lon": -74.2301671,
   "address": "910 Hamburg Turnpike",
   "city": "Wayne",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 280
  },
  {
-  "id": 8241788547,
   "name": "Trader Joe's",
   "lat": 36.9745224,
   "lon": -122.0248018,
   "address": "700 Front Street",
   "city": "Santa Cruz",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 281
  },
  {
-  "id": 8413589094,
   "name": "Trader Joe's",
   "lat": 42.1888649,
   "lon": -88.109056,
   "address": "735 West Main Street",
   "city": "Lake Zurich",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 282
  },
  {
-  "id": 8416812579,
   "name": "Trader Joe's",
   "lat": 37.4125524,
   "lon": -121.8998299,
   "address": "1306 Great Mall Parkway",
   "city": "Milpitas",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 283
  },
  {
-  "id": 8579851097,
   "name": "Trader Joe's",
   "lat": 42.5440997,
   "lon": -83.2866035,
   "address": "6536 Telegraph Road",
   "city": "Bloomfield Hills",
-  "state": "MI"
+  "state": "MI",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 284
  },
  {
-  "id": 8641318777,
   "name": "Trader Joe's",
   "lat": 42.3898141,
   "lon": -82.9164362,
   "address": "17028 Kercheval Avenue",
   "city": "Grosse Pointe",
-  "state": "MI"
+  "state": "MI",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 285
  },
  {
-  "id": 8723783684,
   "name": "Trader Joe's",
   "lat": 41.7133136,
   "lon": -72.5999093,
   "address": "400 Hebron Avenue",
   "city": "Glastonbury",
-  "state": "CT"
+  "state": "CT",
+  "sources": [
+   "osm"
+  ],
+  "id": 286
  },
  {
-  "id": 8786013614,
   "name": "Trader Joe's",
   "lat": 43.1023489,
   "lon": -77.5414352,
   "address": "3349 Monroe Avenue",
   "city": "Rochester",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 287
  },
  {
-  "id": 8791934223,
   "name": "Trader Joe's",
   "lat": 40.8402952,
   "lon": -73.3074897,
   "address": "5900 Jericho Turnpike",
   "city": "Commack",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 288
  },
  {
-  "id": 8811254087,
   "name": "Trader Joe's",
   "lat": 41.393178,
   "lon": -73.5222755,
   "address": "113 Mill Plain Road",
   "city": "Danbury",
-  "state": "CT"
+  "state": "CT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 289
  },
  {
-  "id": 8855361600,
   "name": "Trader Joe's",
   "lat": 34.0333612,
   "lon": -118.480462,
   "address": "2300 Wilshire Boulevard",
   "city": "Santa Monica",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 290
  },
  {
-  "id": 8902948828,
   "name": "Trader Joe's",
   "lat": 33.7906764,
   "lon": -118.3302815,
   "address": "2545 Pacific Coast Highway",
   "city": "Torrance",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 291
  },
  {
-  "id": 9153322544,
   "name": "Trader Joe's",
   "lat": 40.0944902,
   "lon": -75.367418,
   "address": "224 West Dekalb Pike",
   "city": "King of Prussia",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 292
  },
  {
-  "id": 9180394562,
   "name": "Trader Joe's",
   "lat": 35.2118382,
   "lon": -80.8354251,
   "address": "1133 Metropolitan Avenue",
   "city": "Charlotte",
-  "state": "NC"
+  "state": "NC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 293
  },
  {
-  "id": 9231029656,
   "name": "Trader Joe's",
   "lat": 36.1313196,
   "lon": -79.8576431,
   "address": "3721 Battleground Avenue",
   "city": "Greensboro",
-  "state": "NC"
+  "state": "NC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 294
  },
  {
-  "id": 9291299084,
   "name": "Trader Joe's",
   "lat": 40.0582938,
   "lon": -74.1425806,
   "address": "110 Brick Plaza",
   "city": "Brick",
-  "state": "NJ"
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 295
  },
  {
-  "id": 9371560490,
   "name": "Trader Joe's",
   "lat": 40.7458731,
   "lon": -73.9459681,
   "address": "22-43 Jackson Avenue",
   "city": "Long Island City",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 296
  },
  {
-  "id": 9438788567,
   "name": "Trader Joe's",
   "lat": 33.9155978,
   "lon": -83.4429632,
   "address": "1850 Epps Bridge Parkway",
   "city": "Athens",
-  "state": "GA"
+  "state": "GA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 297
  },
  {
-  "id": 9470281843,
   "name": "Trader Joe's",
   "lat": 40.7596586,
   "lon": -73.9613341,
   "address": "405 East 59th Street",
   "city": "New York",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 298
  },
  {
-  "id": 9634747837,
   "name": "Trader Joe's",
   "lat": 47.6289581,
   "lon": -117.3666631,
   "address": "2975 East 29th Avenue",
   "city": "Spokane",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 299
  },
  {
-  "id": 9672099115,
   "name": "Trader Joe's",
   "lat": 41.6802091,
   "lon": -81.2999721,
   "address": "9474 Mentor Avenue",
   "city": "Mentor",
-  "state": "OH"
+  "state": "OH",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 300
  },
  {
-  "id": 9672799605,
   "name": "Trader Joe's",
   "lat": 38.8507224,
   "lon": -77.1327462,
   "address": "5847 Leesburg Pike",
   "city": "Bailey's Crossroads",
-  "state": "VA"
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 301
  },
  {
-  "id": 9742142722,
   "name": "Trader Joe's",
   "lat": 39.9541969,
   "lon": -75.1624251,
   "address": "1324 Arch Street",
   "city": "Philadelphia",
-  "state": "PA"
+  "state": "PA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 302
  },
  {
-  "id": 9785836645,
   "name": "Trader Joe's",
-  "lat": 42.4282228,
-  "lon": -76.5102158,
+  "lat": 42.4282753,
+  "lon": -76.5099744,
   "address": "744 South Meadow Street",
   "city": "Ithaca",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 303
  },
  {
-  "id": 9885944620,
   "name": "Trader Joe's",
   "lat": 42.4837385,
   "lon": -71.017663,
   "address": "358 Broadway",
   "city": "Saugus",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 304
  },
  {
-  "id": 9900711918,
   "name": "Trader Joe's",
   "lat": 38.989994,
   "lon": -77.0957571,
   "address": "7900 Wisconsin Avenue",
   "city": "Bethesda",
-  "state": "MD"
+  "state": "MD",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 305
  },
  {
-  "id": 9902961324,
   "name": "Trader Joe's",
   "lat": 34.1073555,
   "lon": -117.7219566,
   "address": "475 West Foothill Boulevard",
   "city": "Claremont",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 306
  },
  {
-  "id": 9906973036,
   "name": "Trader Joe's",
   "lat": 34.0155924,
   "lon": -118.4919687,
   "address": "500 Broadway",
   "city": "Santa Monica",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 307
  },
  {
-  "id": 9936345018,
   "name": "Trader Joe's",
   "lat": 37.7641577,
   "lon": -121.9520829,
   "address": "300 Market Place",
   "city": "San Ramon",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 308
  },
  {
-  "id": 10026175698,
   "name": "Trader Joe's",
   "lat": 34.1820159,
   "lon": -118.3956215,
   "address": "6130 Laurel Canyon Boulevard",
   "city": "North Hollywood",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 309
  },
  {
-  "id": 10116864040,
   "name": "Trader Joe's",
   "lat": 38.9781007,
   "lon": -76.9381968,
   "address": "4429 Calvert Road",
   "city": "College Park",
-  "state": "MD"
+  "state": "MD",
+  "sources": [
+   "osm"
+  ],
+  "id": 310
  },
  {
-  "id": 10131002319,
   "name": "Trader Joe's",
   "lat": 34.0905575,
   "lon": -118.3490124,
   "address": "7310 Santa Monica Boulevard",
   "city": "West Hollywood",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 311
  },
  {
-  "id": 10200345930,
   "name": "Trader Joe's",
   "lat": 42.2926121,
   "lon": -71.2347235,
   "address": "958 Highland Avenue",
   "city": "Needham",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 312
  },
  {
-  "id": 10242617512,
   "name": "Trader Joe's",
   "lat": 35.0327206,
   "lon": -85.1546726,
   "address": "2111 Gunbarrel Road",
   "city": "Chattanooga",
-  "state": "TN"
+  "state": "TN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 313
  },
  {
-  "id": 10245073098,
   "name": "Trader Joe's",
   "lat": 41.8901725,
   "lon": -87.8046854,
   "address": "483 North Harlem Avenue",
   "city": "Oak Park",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 314
  },
  {
-  "id": 10277279088,
   "name": "Trader Joe's",
   "lat": 40.7180715,
   "lon": -73.9644379,
   "address": "200 Kent Avenue",
   "city": "Brooklyn",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 315
  },
  {
-  "id": 10744294777,
   "name": "Trader Joe's",
   "lat": 32.9685154,
   "lon": -96.9922646,
   "address": "120 South Denton Tap Road",
   "city": "Coppell",
-  "state": "TX"
+  "state": "TX",
+  "sources": [
+   "osm"
+  ],
+  "id": 316
  },
  {
-  "id": 11149630922,
   "name": "Trader Joe's",
   "lat": 47.8197992,
   "lon": -122.3136049,
   "address": "19715 State Highway 99",
   "city": "Lynnwood",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 317
  },
  {
-  "id": 11182225401,
   "name": "Trader Joe's",
   "lat": 33.6391331,
   "lon": -112.2262487,
   "address": "7720 West Bell Road",
   "city": "Glendale",
-  "state": "AZ"
+  "state": "AZ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 318
  },
  {
-  "id": 11255838848,
   "name": "Trader Joe's",
   "lat": 48.7958738,
   "lon": -122.4877461,
   "address": "4255 Meridian Street",
   "city": "Bellingham",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm"
+  ],
+  "id": 319
  },
  {
-  "id": 11272446612,
   "name": "Trader Joe's",
   "lat": 40.7226474,
   "lon": -73.848109,
   "address": "69-65 Yellowstone Boulevard",
   "city": "Queens",
-  "state": "NY"
+  "state": "NY",
+  "sources": [
+   "osm"
+  ],
+  "id": 320
  },
  {
-  "id": 11278083599,
   "name": "Trader Joe's",
   "lat": 40.5430851,
   "lon": -111.890063,
   "address": "11477 South State Street",
   "city": "Draper",
-  "state": "UT"
+  "state": "UT",
+  "sources": [
+   "osm"
+  ],
+  "id": 321
  },
  {
-  "id": 11336603471,
   "name": "Trader Joe's",
   "lat": 35.9493405,
   "lon": -86.8218142,
   "address": "545 Cool Springs Boulevard",
   "city": "Franklin",
-  "state": "TN"
+  "state": "TN",
+  "sources": [
+   "osm"
+  ],
+  "id": 322
  },
  {
-  "id": 11514786657,
-  "name": "Trader Joe's",
-  "lat": 40.7599524,
-  "lon": -73.9611699,
-  "address": "",
-  "city": "",
-  "state": ""
- },
- {
-  "id": 11600360544,
   "name": "Trader Joe's",
   "lat": 25.7293706,
   "lon": -80.2582478,
   "address": "211 South Dixie Highway",
   "city": "Coral Gables",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm"
+  ],
+  "id": 323
  },
  {
-  "id": 11600360550,
   "name": "Trader Joe's",
   "lat": 25.806877,
   "lon": -80.1926601,
   "address": "3191 Northeast 1st Avenue",
   "city": "Miami",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm"
+  ],
+  "id": 324
  },
  {
-  "id": 11606168199,
   "name": "Trader Joe's",
   "lat": 27.3912601,
   "lon": -82.4538654,
   "address": "8111 Cooper Creek Boulevard",
   "city": "Bradenton",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm"
+  ],
+  "id": 325
  },
  {
-  "id": 11606328419,
   "name": "Trader Joe's",
   "lat": 30.1738621,
   "lon": -81.6300219,
   "address": "11112 San Jose Boulevard",
   "city": "Jacksonville",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 326
  },
  {
-  "id": 11607935101,
   "name": "Trader Joe's",
   "lat": 33.8041865,
   "lon": -118.0409794,
   "address": "5245 Katella Avenue",
   "city": "Cypress",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 327
  },
  {
-  "id": 11607935107,
   "name": "Trader Joe's",
   "lat": 34.1536991,
   "lon": -118.0782849,
   "address": "467 North Rosemead Boulevard",
   "city": "Pasadena",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 328
  },
  {
-  "id": 11610099285,
   "name": "Trader Joe's",
   "lat": 39.0261622,
   "lon": -84.5772967,
-  "address": "2780 Dixie Highway",
+  "address": "2785 Dixie Highway",
   "city": "Crestview Hills",
-  "state": "KY"
+  "state": "KY",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 329
  },
  {
-  "id": 11617197125,
   "name": "Trader Joe's",
   "lat": 33.9262493,
   "lon": -84.3782039,
   "address": "6277 Roswell Road Northeast",
   "city": "Sandy Springs",
-  "state": "GA"
+  "state": "GA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 330
  },
  {
-  "id": 11635890310,
   "name": "Trader Joe's",
   "lat": 45.4029823,
   "lon": -122.7950791,
   "address": "16200 Southwest Pacific Highway",
   "city": "Tigard",
-  "state": "OR"
+  "state": "OR",
+  "sources": [
+   "osm"
+  ],
+  "id": 331
  },
  {
-  "id": 11651078055,
   "name": "Trader Joe's",
   "lat": 35.3570306,
   "lon": -119.0933723,
   "address": "8200 Stockdale Highway",
   "city": "Bakersfield",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 332
  },
  {
-  "id": 11651078064,
   "name": "Trader Joe's",
   "lat": 34.2582554,
   "lon": -118.5787951,
   "address": "10330 Mason Avenue",
   "city": "Chatsworth",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 333
  },
  {
-  "id": 11651078068,
   "name": "Trader Joe's",
   "lat": 34.0977892,
   "lon": -118.3650306,
   "address": "8000 West Sunset Boulevard",
   "city": "Los Angeles",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 334
  },
  {
-  "id": 11651200769,
   "name": "Trader Joe's",
   "lat": 34.0711651,
   "lon": -118.3770707,
   "address": "8500 Burton Way",
   "city": "Los Angeles",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 335
  },
  {
-  "id": 11651200780,
   "name": "Trader Joe's",
   "lat": 33.6517938,
   "lon": -117.954554,
   "address": "21431 Brookhurst Street",
   "city": "Huntington Beach",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 336
  },
  {
-  "id": 11651200784,
   "name": "Trader Joe's",
   "lat": 33.8896122,
   "lon": -117.7923302,
   "address": "19655 Yorba Linda Boulevard",
   "city": "Yorba Linda",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 337
  },
  {
-  "id": 11663888093,
   "name": "Trader Joe's",
-  "lat": 33.7559816,
-  "lon": -118.3114689,
+  "lat": 33.7563067,
+  "lon": -118.3109439,
   "address": "28901 South Western Avenue",
   "city": "Rancho Palos Verdes",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 338
  },
  {
-  "id": 11809317194,
   "name": "Trader Joe's",
   "lat": 33.4960297,
   "lon": -117.6634466,
   "address": "32151 Camino Capistrano",
   "city": "San Juan Capistrano",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 339
  },
  {
-  "id": 11879279048,
   "name": "Trader Joe's",
   "lat": 26.8437756,
   "lon": -80.0741839,
   "address": "2560 PGA Boulevard",
   "city": "Palm Beach Gardens",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 340
  },
  {
-  "id": 11879279052,
   "name": "Trader Joe's",
   "lat": 26.6368885,
   "lon": -80.2056809,
   "address": "2877 South State Road 7",
   "city": "Wellington",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 341
  },
  {
-  "id": 11879279059,
   "name": "Trader Joe's",
   "lat": 26.2647398,
   "lon": -80.2508095,
   "address": "2796 North University Drive",
   "city": "Coral Springs",
-  "state": "FL"
+  "state": "FL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 342
  },
  {
-  "id": 11950809144,
   "name": "Trader Joe's",
   "lat": 37.7781179,
   "lon": -122.4264269,
   "address": "788 Laguna Street",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 343
  },
  {
-  "id": 12072443190,
   "name": "Trader Joe's",
   "lat": 42.3509954,
   "lon": -71.0733464,
   "address": "500 Boylston Street",
   "city": "Boston",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm"
+  ],
+  "id": 344
  },
  {
-  "id": 12138528851,
   "name": "Trader Joe's",
   "lat": 42.3581395,
   "lon": -71.114146,
   "address": "748 Memorial Drive",
   "city": "Cambridge",
-  "state": "MA"
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 345
  },
  {
-  "id": 12183054494,
   "name": "Trader Joe's",
   "lat": 39.4017487,
   "lon": -119.7516431,
   "address": "",
   "city": "Reno",
-  "state": "NV"
+  "state": "NV",
+  "sources": [
+   "osm"
+  ],
+  "id": 346
  },
  {
-  "id": 12229012041,
   "name": "Trader Joe's",
   "lat": 41.9498654,
   "lon": -87.6751046,
   "address": "3745 North Lincoln Avenue",
   "city": "Chicago",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 347
  },
  {
-  "id": 12291982576,
   "name": "Trader Joe's",
   "lat": 32.8311722,
   "lon": -79.8269443,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 348
  },
  {
-  "id": 12319703175,
   "name": "Trader Joe's",
   "lat": 34.1378465,
   "lon": -117.5741225,
   "address": "6401 Haven Avenue",
   "city": "Rancho Cucamonga",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 349
  },
  {
-  "id": 12347389367,
   "name": "Trader Joe's",
   "lat": 47.6930035,
   "lon": -122.355065,
   "address": "8726 Greenwood Avenue North",
   "city": "Seattle",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm"
+  ],
+  "id": 350
  },
  {
-  "id": 12407693272,
   "name": "Trader Joe's",
   "lat": 39.5565619,
   "lon": -104.7779847,
   "address": "18374 Cottonwood Drive",
   "city": "Parker",
-  "state": "CO"
+  "state": "CO",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 351
  },
  {
-  "id": 12432024354,
   "name": "Trader Joe's",
   "lat": 38.7877683,
   "lon": -121.2814367,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 352
  },
  {
-  "id": 12518850759,
   "name": "Trader Joe's",
   "lat": 35.8986751,
   "lon": -78.6828896,
-  "address": "",
-  "city": "",
-  "state": ""
+  "address": "8111 Creedmoor Rd",
+  "city": "Raleigh",
+  "state": "NC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 353
  },
  {
-  "id": 12555085182,
   "name": "Trader Joe's",
   "lat": 34.10862,
   "lon": -84.2190108,
-  "address": "",
-  "city": "",
-  "state": ""
+  "address": "1605 Halcyon Days Trail",
+  "city": "Alpharetta",
+  "state": "GA",
+  "sources": [
+   "osm"
+  ],
+  "id": 354
  },
  {
-  "id": 12579540675,
   "name": "Trader Joe's",
   "lat": 32.9578792,
   "lon": -117.0353035,
   "address": "13644 Poway Road",
   "city": "Poway",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 355
  },
  {
-  "id": 12662186118,
   "name": "Trader Joe's",
   "lat": 47.9105895,
   "lon": -122.2152317,
   "address": "1302 SE Everett Mall Way",
   "city": "Everett",
-  "state": "WA"
+  "state": "WA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 356
  },
  {
-  "id": 12705368004,
   "name": "Trader Joe's",
   "lat": 42.0809827,
   "lon": -87.7971474,
   "address": "1407 Waukegan Road",
   "city": "Glenview",
-  "state": "IL"
+  "state": "IL",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 357
  },
  {
-  "id": 12717875226,
   "name": "Trader Joe's",
   "lat": 33.39597,
   "lon": -84.5938863,
-  "address": "",
-  "city": "",
-  "state": ""
+  "address": "258 City Circle",
+  "city": "Peachtree City",
+  "state": "GA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 358
  },
  {
-  "id": 12752987477,
   "name": "Trader Joe's",
   "lat": 29.5839358,
   "lon": -95.6501194,
   "address": "13550 University Boulevard",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 359
  },
  {
-  "id": 12823471395,
   "name": "Trader Joe's",
   "lat": 42.143849,
   "lon": -70.8429135,
-  "address": "",
-  "city": "",
-  "state": ""
+  "address": "1775 Washington St",
+  "city": "Hanover",
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 360
  },
  {
-  "id": 12835133250,
   "name": "Trader Joe's",
   "lat": 38.9321627,
   "lon": -76.9958808,
   "address": "701 Monroe Street Northeast",
   "city": "Washington",
-  "state": "DC"
+  "state": "DC",
+  "sources": [
+   "osm"
+  ],
+  "id": 361
  },
  {
-  "id": 12879762317,
   "name": "Trader Joe's",
   "lat": 33.3792085,
   "lon": -86.803154,
   "address": "1769 Montgomery Highway",
   "city": "Hoover",
-  "state": "AL"
+  "state": "AL",
+  "sources": [
+   "osm"
+  ],
+  "id": 362
  },
  {
-  "id": 12887097713,
   "name": "Trader Joe's",
   "lat": 39.086281,
   "lon": -77.1527506,
   "address": "225 North Washington Street",
   "city": "Rockville",
-  "state": "MD"
+  "state": "MD",
+  "sources": [
+   "osm"
+  ],
+  "id": 363
  },
  {
-  "id": 12887631690,
   "name": "Trader Joe's",
   "lat": 40.8084055,
   "lon": -73.9465169,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 364
  },
  {
-  "id": 12913244764,
   "name": "Trader Joe's",
   "lat": 40.2818852,
   "lon": -74.2921606,
-  "address": "",
-  "city": "",
-  "state": ""
+  "address": "4331 US Highway 9",
+  "city": "Freehold",
+  "state": "NJ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 365
  },
  {
-  "id": 12962062851,
   "name": "Trader Joe's",
   "lat": 34.1573557,
   "lon": -118.4404281,
   "address": "14140 Riverside Drive",
   "city": "Sherman Oaks",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 366
  },
  {
-  "id": 12990593801,
   "name": "Trader Joe's",
   "lat": 38.6010824,
   "lon": -90.4671313,
   "address": "13343 Manchester Road",
-  "city": "",
-  "state": ""
+  "city": "Des Peres",
+  "state": "MO",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 367
  },
  {
-  "id": 12990974435,
   "name": "Trader Joe's",
   "lat": 34.1558535,
   "lon": -118.6449048,
   "address": "23741 Calabasas Road",
   "city": "Calabasas",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm"
+  ],
+  "id": 368
  },
  {
-  "id": 13012398001,
   "name": "Trader Joe's",
   "lat": 29.2184173,
   "lon": -81.0950261,
   "address": "",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 369
  },
  {
-  "id": 13038501807,
   "name": "Trader Joe's",
   "lat": 44.5817621,
   "lon": -123.2598853,
   "address": "1550 Northwest 9th Street",
   "city": "Corvallis",
-  "state": "OR"
+  "state": "OR",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 370
  },
  {
-  "id": 13266062201,
   "name": "Trader Joe's",
   "lat": 41.1892616,
   "lon": -111.9800135,
   "address": "4060 South Riverdale Road",
   "city": "Riverdale",
-  "state": "UT"
+  "state": "UT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 371
  },
  {
-  "id": 13286336791,
   "name": "Trader Joe's",
   "lat": 33.4649741,
   "lon": -112.3769281,
   "address": "14770 West McDowell Road",
   "city": "Goodyear",
-  "state": "AZ"
+  "state": "AZ",
+  "sources": [
+   "osm"
+  ],
+  "id": 372
  },
  {
-  "id": 13288451827,
   "name": "Trader Joe's",
   "lat": 38.9584026,
   "lon": -92.3731723,
   "address": "North Stadium Boulevard",
   "city": "Columbia",
-  "state": "MO"
+  "state": "MO",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 373
  },
  {
-  "id": 13297251392,
   "name": "Trader Joe's",
   "lat": 40.6649189,
   "lon": -111.8377773,
-  "address": "",
-  "city": "",
-  "state": ""
+  "address": "1895 East Rodeo Walk Dr",
+  "city": "Holladay",
+  "state": "UT",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 374
  },
  {
-  "id": 13307668901,
-  "name": "Trader Joe's",
-  "lat": 47.0415734,
-  "lon": -122.8344028,
-  "address": "691 Sleater Kinney Road Southeast",
-  "city": "Lacey",
-  "state": "WA"
- },
- {
-  "id": 13355845444,
   "name": "Trader Joe's",
   "lat": 38.9605576,
   "lon": -77.0853016,
   "address": "5335 Wisconsin Avenue Northwest",
   "city": "Washington",
-  "state": "DC"
+  "state": "DC",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 375
  },
  {
-  "id": 13368488061,
   "name": "Trader Joe's",
   "lat": 33.6533564,
   "lon": -117.9179381,
   "address": "2170 Harbor Boulevard",
   "city": "Costa Mesa",
-  "state": ""
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 376
  },
  {
-  "id": 13372827953,
   "name": "Trader Joe's",
   "lat": 42.2991026,
   "lon": -71.4250156,
-  "address": "",
-  "city": "",
-  "state": ""
+  "address": "659 Worcester Road",
+  "city": "Framingham",
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 377
  },
  {
-  "id": 13392136601,
   "name": "Trader Joe's",
   "lat": 37.6871047,
   "lon": -121.0485431,
   "address": "3250 Dale Road",
   "city": "Modesto",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 378
  },
  {
-  "id": 13398900201,
   "name": "Trader Joe's",
   "lat": 36.8417413,
   "lon": -76.1298474,
   "address": "220 Constitution Drive",
-  "city": "",
-  "state": ""
+  "city": "Virginia Beach",
+  "state": "VA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 379
  },
  {
-  "id": 13433505970,
   "name": "Trader Joe's",
   "lat": 34.1400318,
   "lon": -118.1329307,
   "address": "345 South Lake Avenue",
   "city": "Pasadena",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 380
  },
  {
-  "id": 13451601712,
   "name": "Trader Joe's",
   "lat": 33.918652,
   "lon": -117.9694451,
-  "address": "",
-  "city": "",
-  "state": ""
+  "address": "2101 W Imperial Hwy",
+  "city": "La Habra",
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 381
  },
  {
-  "id": 13478147793,
   "name": "Trader Joe's",
   "lat": 34.1351549,
   "lon": -118.1469377,
   "address": "610 South Arroyo Parkway",
   "city": "Pasadena",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 382
  },
  {
-  "id": 13484620701,
   "name": "Trader Joe's",
   "lat": 42.2818453,
   "lon": -71.1584789,
   "address": "1999 Centre Street",
-  "city": "",
-  "state": ""
+  "city": "Boston",
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 383
  },
  {
-  "id": 13607927324,
   "name": "Trader Joe's",
   "lat": 42.3123457,
   "lon": -71.2140057,
   "address": "165 Needham Street",
-  "city": "",
-  "state": ""
+  "city": "Newton",
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 384
  },
  {
-  "id": 13630192572,
   "name": "Trader Joe's",
   "lat": 41.6877554,
   "lon": -86.2349739,
   "address": "1140 Howard Street",
   "city": "South Bend",
-  "state": "IN"
+  "state": "IN",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 385
  },
  {
-  "id": 13656797542,
   "name": "Trader Joe's",
   "lat": 33.8355124,
   "lon": -118.1886014,
   "address": "4210 Long Beach Boulevard",
   "city": "Long Beach",
-  "state": "CA"
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 386
  },
  {
-  "id": 13724218801,
   "name": "Trader Joe's",
   "lat": 29.91988,
   "lon": -95.6911802,
   "address": "9715 Towne Lake Parkway",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 387
  },
  {
-  "id": 13728718101,
   "name": "Trader Joes",
   "lat": 34.0276287,
   "lon": -117.1158198,
   "address": "31515 Yucaipa Boulevard",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 388
  },
  {
-  "id": 13728719801,
-  "name": "Trader Joes",
-  "lat": 34.0278649,
-  "lon": -117.1156127,
-  "address": "31515 Yucaipa Boulevard",
-  "city": "",
-  "state": ""
- },
- {
-  "id": 13905036191,
   "name": "Trader Joe's",
   "lat": 33.5775028,
   "lon": -117.7244314,
-  "address": "",
+  "address": "26541 Aliso Creek Rd",
+  "city": "Aliso Viejo",
+  "state": "CA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 389
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.0650455,
+  "lon": -84.1622794,
+  "address": "1000 Medley Blvd",
+  "city": "Johns Creek",
+  "state": "GA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 390
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.6663398,
+  "lon": -70.2921798,
+  "address": "655 Iyannough Road",
+  "city": "Hyannis",
+  "state": "MA",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 391
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.2372452,
+  "lon": -110.8585075,
+  "address": "1101 North Wilmot Road",
+  "city": "Tucson",
+  "state": "AZ",
+  "sources": [
+   "osm",
+   "overture"
+  ],
+  "id": 392
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 29.5505612,
+  "lon": -98.5839022,
+  "address": "11745 Interstate 10 West",
+  "city": "San Antonio",
+  "state": "TX",
+  "sources": [
+   "osm"
+  ],
+  "id": 393
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.7565192,
+  "lon": -121.4604158,
+  "address": "2530 Naglee Road",
   "city": "",
-  "state": ""
+  "state": "",
+  "sources": [
+   "osm"
+  ],
+  "id": 394
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 25.68443673,
+  "lon": -80.31268841,
+  "address": "9205 S Dixie Hwy",
+  "city": "Pinecrest",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 395
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 25.7917609,
+  "lon": -80.14227277,
+  "address": "1683 West Ave",
+  "city": "Miami Beach",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 396
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 26.58720935,
+  "lon": -81.86988661,
+  "address": "4983 S Cleveland Ave",
+  "city": "Fort Myers",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 397
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 26.14808899,
+  "lon": -80.11906715,
+  "address": "1560 N Federal Hwy",
+  "city": "Fort Lauderdale",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 398
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 26.64507,
+  "lon": -80.05661,
+  "address": "8111 S Dixie Highway",
+  "city": "West Palm Beach",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 399
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.91430813,
+  "lon": -117.11498812,
+  "address": "9850 Hibert St",
+  "city": "San Diego",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 400
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.28362524,
+  "lon": -110.94476422,
+  "address": "4209 N Campbell Ave",
+  "city": "Tucson",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 401
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.22113,
+  "lon": -110.94,
+  "address": "2150 E Broadway Blvd",
+  "city": "Tucson",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 402
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.24978406,
+  "lon": -110.89102422,
+  "address": "4766 E Grant Rd",
+  "city": "Tucson",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 403
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 29.49670969,
+  "lon": -98.47803665,
+  "address": "350 E Basse Rd",
+  "city": "San Antonio",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 404
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 29.54915,
+  "lon": -98.58351,
+  "address": "11745 I-10 W",
+  "city": "San Antonio",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 405
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 29.60934849,
+  "lon": -98.49906015,
+  "address": "403 N Loop 1604 W",
+  "city": "San Antonio",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 406
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 30.30663,
+  "lon": -97.94218,
+  "address": "12812 Shops Pkwy, Ste 300",
+  "city": "Bee Cave",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 407
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 30.27018984,
+  "lon": -97.78976196,
+  "address": "2805 Bee Cave Rd",
+  "city": "Austin",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 408
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.71197553,
+  "lon": -97.38512644,
+  "address": "2701 S Hulen St",
+  "city": "Fort Worth",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 409
+ },
+ {
+  "name": "Trader Joes",
+  "lat": 32.81876051,
+  "lon": -97.0215246,
+  "address": "5101 Frye Rd",
+  "city": "Irving",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 410
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.81480553,
+  "lon": -96.77045909,
+  "address": "2001 Greenville Ave",
+  "city": "Dallas",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 411
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.88067139,
+  "lon": -96.77248791,
+  "address": "7939 Walnut Hill Ln",
+  "city": "Dallas",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 412
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.749281,
+  "lon": -118.40663982,
+  "address": "31176 Hawthorne Blvd",
+  "city": "Rancho Palos Verdes",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 413
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.85226247,
+  "lon": -118.35317292,
+  "address": "19720 Hawthorne Blvd",
+  "city": "Torrance",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 414
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.71739326,
+  "lon": -118.05115049,
+  "address": "16821 Algonquin St",
+  "city": "Huntington Beach",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 415
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.9007056,
+  "lon": -118.38095129,
+  "address": "1800 Rosecrans Ave",
+  "city": "Manhattan Beach",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 416
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.9795376,
+  "lon": -118.44136213,
+  "address": "4675 Admiralty Way",
+  "city": "Marina del Rey",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 417
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.63671179,
+  "lon": -117.924743,
+  "address": "640 W 17th St",
+  "city": "Costa Mesa",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 418
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.70118674,
+  "lon": -117.88431925,
+  "address": "3329 S Bristol St",
+  "city": "Santa Ana",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 419
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.49308999,
+  "lon": -117.69673349,
+  "address": "32351 Golden Lantern",
+  "city": "Laguna Niguel",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 420
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.45743827,
+  "lon": -117.65174669,
+  "address": "638 Camino de los Mares",
+  "city": "San Clemente",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 421
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.70608733,
+  "lon": -117.78840278,
+  "address": "14443 Culver Dr",
+  "city": "Irvine",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 422
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.6998709,
+  "lon": -117.74186195,
+  "address": "6222 Irvine Blvd",
+  "city": "Irvine",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 423
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.609696,
+  "lon": -117.70298504,
+  "address": "24231 Avenida de la Carlota",
+  "city": "Laguna Hills",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 424
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.74653277,
+  "lon": -117.80959047,
+  "address": "1198 Irvine Blvd",
+  "city": "Tustin",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 425
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.8232595,
+  "lon": -117.83656904,
+  "address": "2114 N Tustin St",
+  "city": "Orange",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 426
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.85617,
+  "lon": -117.77096,
+  "address": "6336 E Santa Ana Canyon Rd",
+  "city": "Anaheim Hills",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 427
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.99523648,
+  "lon": -117.7034347,
+  "address": "4681 Edison Ave",
+  "city": "Chino",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 428
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.02629503,
+  "lon": -118.45580355,
+  "address": "3212 Pico Blvd",
+  "city": "Santa Monica",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 429
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.14629715,
+  "lon": -118.75657671,
+  "address": "28941 Canwood St",
+  "city": "Agoura Hills",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 430
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.1519412,
+  "lon": -118.35188342,
+  "address": "10130 Riverside Dr",
+  "city": "North Hollywood",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 431
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.18013996,
+  "lon": -118.95362853,
+  "address": "125 N Reino Rd",
+  "city": "Thousand Oaks",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 432
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.16726633,
+  "lon": -118.59240243,
+  "address": "21055 Ventura Blvd",
+  "city": "Woodland Hills",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 433
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.25732379,
+  "lon": -119.21184415,
+  "address": "1795 S Victoria Ave",
+  "city": "Ventura",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 434
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.17199792,
+  "lon": -118.51772485,
+  "address": "17640 Burbank Blvd",
+  "city": "Encino",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 435
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.27268763,
+  "lon": -118.50176758,
+  "address": "11114 Balboa Blvd",
+  "city": "Granada Hills",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 436
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.0005415,
+  "lon": -117.73211773,
+  "address": "13911 Peyton Dr",
+  "city": "Chino Hills",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 437
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.1078251,
+  "lon": -118.27171518,
+  "address": "2738 Hyperion Ave",
+  "city": "Los Angeles",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 438
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.13929414,
+  "lon": -118.20033939,
+  "address": "1566 Colorado Blvd",
+  "city": "Los Angeles",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 439
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.11536675,
+  "lon": -118.16293835,
+  "address": "613 Mission St",
+  "city": "South Pasadena",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 440
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.17496884,
+  "lon": -118.29898563,
+  "address": "214 E Alameda Ave",
+  "city": "Burbank",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 441
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.147195885371,
+  "lon": -118.2464559041,
+  "address": "130 N Glendale Ave",
+  "city": "Glendale",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 442
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.20699092,
+  "lon": -118.23297746,
+  "address": "2462 Honolulu Ave",
+  "city": "Montrose",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 443
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.20004309,
+  "lon": -118.18859205,
+  "address": "475 Foothill Blvd",
+  "city": "La Canada Flintridge",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 444
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.11054,
+  "lon": -117.76157,
+  "address": "2330 Foothill Blvd",
+  "city": "La Verne",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 445
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.96131458,
+  "lon": -117.19125786,
+  "address": "13480 Highlands Pl",
+  "city": "San Diego",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 446
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.04710371,
+  "lon": -117.255866,
+  "address": "115 N El Camino Real",
+  "city": "Encinitas",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 447
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.12659242,
+  "lon": -117.25307002,
+  "address": "2629 Gateway Rd",
+  "city": "Carlsbad",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 448
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.2558414,
+  "lon": -111.6402312,
+  "address": "21186 S Ellsworth Loop Rd",
+  "city": "Queen Creek",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 449
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.36187754,
+  "lon": -111.91224122,
+  "address": "6460 S McClintock Dr",
+  "city": "Tempe",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 450
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.30612047,
+  "lon": -111.75163541,
+  "address": "1779 E Williams Field Rd",
+  "city": "Gilbert",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 451
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.38094285,
+  "lon": -111.78713,
+  "address": "2050 E Baseline Rd",
+  "city": "Mesa",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 452
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.94138565,
+  "lon": -97.12938313,
+  "address": "1492 E Southlake Blvd",
+  "city": "Southlake",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 453
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.95074778,
+  "lon": -96.80198995,
+  "address": "14856 Preston Rd",
+  "city": "Dallas",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 454
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.17542,
+  "lon": -96.72329,
+  "address": "8101 Eldorado Pkwy",
+  "city": "McKinney",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 455
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.17363111,
+  "lon": -96.64272421,
+  "address": "2851 Craig Dr",
+  "city": "McKinney",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 456
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.71190229,
+  "lon": -116.29420466,
+  "address": "46400 Washington St",
+  "city": "La Quinta",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 457
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.65132875,
+  "lon": -112.36757458,
+  "address": "14095 W Grand Ave",
+  "city": "Surprise",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 458
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.46454,
+  "lon": -112.37541,
+  "address": "N Bullard Ave & McDowell Rd",
+  "city": "Goodyear",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 459
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.78926188,
+  "lon": -116.48297553,
+  "address": "67720 E Palm Canyon Dr",
+  "city": "Cathedral City",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 460
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.06698428,
+  "lon": -117.50452787,
+  "address": "10288 Calabash Ave",
+  "city": "Fontana",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 461
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.09343572,
+  "lon": -117.26877608,
+  "address": "343 S Lena Rd",
+  "city": "San Bernardino",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 462
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.44907745,
+  "lon": -112.28479084,
+  "address": "10401 W Van Buren St",
+  "city": "Tolleson",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 463
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.58319903,
+  "lon": -111.97908741,
+  "address": "4726 E Shea Blvd",
+  "city": "Phoenix",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 464
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.63588642,
+  "lon": -111.91725029,
+  "address": "7555 E Frank Lloyd Wright Blvd",
+  "city": "Scottsdale",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 465
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.67664,
+  "lon": -111.97461,
+  "address": "21001 North Tatum Blvd, Suite #1030",
+  "city": "Phoenix",
+  "state": "AZ",
+  "sources": [
+   "overture"
+  ],
+  "id": 466
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 29.73542184,
+  "lon": -95.58254103,
+  "address": "11683 Westheimer Rd",
+  "city": "Houston",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 467
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 29.75266427,
+  "lon": -95.50155165,
+  "address": "1440 S Voss Rd",
+  "city": "Houston",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 468
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 29.91862,
+  "lon": -95.69083,
+  "address": "9715 Towne Lake Pkwy",
+  "city": "Cypress",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 469
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 30.0498,
+  "lon": -95.246,
+  "address": "600 Kingwood Dr",
+  "city": "Kingwood",
+  "state": "TX",
+  "sources": [
+   "overture"
+  ],
+  "id": 470
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 30.16218,
+  "lon": -92.02843,
+  "address": "1710 Camellia Blvd",
+  "city": "Lafayette",
+  "state": "LA",
+  "sources": [
+   "overture"
+  ],
+  "id": 471
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 29.9349,
+  "lon": -90.10395,
+  "address": "2428 Napoleon Ave",
+  "city": "New Orleans",
+  "state": "LA",
+  "sources": [
+   "overture"
+  ],
+  "id": 472
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 30.39333,
+  "lon": -90.08395,
+  "address": "3377 U.S. Hwy 190",
+  "city": "Mandeville",
+  "state": "LA",
+  "sources": [
+   "overture"
+  ],
+  "id": 473
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 27.79731243,
+  "lon": -82.63897618,
+  "address": "2742 4th St N",
+  "city": "St Petersburg",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 474
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 27.29477379,
+  "lon": -82.53004179,
+  "address": "4101 Tamiami Trl",
+  "city": "Sarasota",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 475
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 27.23609,
+  "lon": -82.49803,
+  "address": "8199 S Tamiami Trail, Unit #100",
+  "city": "Sarasota",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 476
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 27.93724897,
+  "lon": -82.50643122,
+  "address": "3808 W Swann Ave",
+  "city": "Tampa",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 477
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 28.56443,
+  "lon": -81.20987,
+  "address": "1444 North Alafaya Trail",
+  "city": "Orlando",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 478
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 29.21986,
+  "lon": -81.09539,
+  "address": "1511 Cornerstone Blvd",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 479
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 30.50316531,
+  "lon": -84.25025298,
+  "address": "3425 Thomasville Rd",
+  "city": "Tallahassee",
+  "state": "FL",
+  "sources": [
+   "overture"
+  ],
+  "id": 480
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 32.80480687,
+  "lon": -79.88720861,
+  "address": "401 N Highway 17",
+  "city": "Mt Pleasant",
+  "state": "SC",
+  "sources": [
+   "overture"
+  ],
+  "id": 481
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 33.65238,
+  "lon": -78.98399,
+  "address": "115 SayeBrook Pkwy",
+  "city": "Myrtle Beach",
+  "state": "SC",
+  "sources": [
+   "overture"
+  ],
+  "id": 482
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.05929015,
+  "lon": -84.37970938,
+  "address": "635 W Crossville Rd",
+  "city": "Roswell",
+  "state": "GA",
+  "sources": [
+   "overture"
+  ],
+  "id": 483
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.02016585,
+  "lon": -80.97286867,
+  "address": "4516 Forest Dr",
+  "city": "Forest Acres",
+  "state": "SC",
+  "sources": [
+   "overture"
+  ],
+  "id": 484
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.21071735,
+  "lon": -77.8858972,
+  "address": "1437 S College Rd",
+  "city": "Wilmington",
+  "state": "NC",
+  "sources": [
+   "overture"
+  ],
+  "id": 485
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.55450482,
+  "lon": -122.30248312,
+  "address": "1820 S Grant St",
+  "city": "San Mateo",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 486
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.49653353,
+  "lon": -122.24847841,
+  "address": "1482 CA-82",
+  "city": "San Carlos",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 487
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.4512298,
+  "lon": -122.18342875,
+  "address": "720 Menlo Ave",
+  "city": "Menlo Park",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 488
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.66473398,
+  "lon": -122.44610033,
+  "address": "301 MC Lellan Dr",
+  "city": "South San Francisco",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 489
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.4020596,
+  "lon": -122.11069535,
+  "address": "590 Showers Dr",
+  "city": "Mountain View",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 490
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.31179424,
+  "lon": -122.03091375,
+  "address": "7250 Bollinger Rd",
+  "city": "San Jose",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 491
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.43845083,
+  "lon": -122.15771372,
+  "address": "855 El Camino Real",
+  "city": "Palo Alto",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 492
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.68534953,
+  "lon": -122.07309056,
+  "address": "22224 Redwood Rd",
+  "city": "Castro Valley",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 493
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.78337442,
+  "lon": -122.44787301,
+  "address": "3 Masonic Ave",
+  "city": "San Francisco",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 494
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 36.60565668,
+  "lon": -121.92174155,
+  "address": "1170 Forest Ave",
+  "city": "Pacific Grove",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 495
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.25154331,
+  "lon": -121.87915438,
+  "address": "5353 Almaden Expy",
+  "city": "San Jose",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 496
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 35.54183031,
+  "lon": -120.71525064,
+  "address": "1111 Rossi Rd",
+  "city": "Templeton",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 497
+ },
+ {
+  "name": "Trader Joes",
+  "lat": 35.27891182,
+  "lon": -120.66450819,
+  "address": "3977 S Higuera St",
+  "city": "San Luis Obispo",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 498
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.1311947,
+  "lon": -121.63848802,
+  "address": "17035 Laurel Rd",
+  "city": "Morgan Hill",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 499
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.83690556,
+  "lon": -122.29430028,
+  "address": "5700 Christie Ave",
+  "city": "Emeryville",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 500
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.24887103,
+  "lon": -122.62917994,
+  "address": "169 N McDowell Blvd",
+  "city": "Petaluma",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 501
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.11167269,
+  "lon": -122.567841,
+  "address": "7514 Redwood Blvd",
+  "city": "Novato",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 502
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.89035943,
+  "lon": -122.12694375,
+  "address": "3649 Mt Diablo Blvd",
+  "city": "Lafayette",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 503
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.89319017,
+  "lon": -122.06080146,
+  "address": "1372 S California Blvd",
+  "city": "Walnut Creek",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 504
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.99529246,
+  "lon": -122.28663123,
+  "address": "2742 Pinole Valley Rd",
+  "city": "Pinole",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 505
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.47341112,
+  "lon": -122.7322994,
+  "address": "3225 Cleveland Ave",
+  "city": "Santa Rosa",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 506
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.41744039,
+  "lon": -122.71215784,
+  "address": "2100 Santa Rosa Ave",
+  "city": "Santa Rosa",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 507
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.59180236,
+  "lon": -122.35711649,
+  "address": "845 Browning St",
+  "city": "Redding",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 508
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.96079382,
+  "lon": -121.74986543,
+  "address": "5451 Lone Tree Way",
+  "city": "Brentwood",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 509
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.56047638,
+  "lon": -121.44472565,
+  "address": "5000 Folsom Blvd",
+  "city": "Sacramento",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 510
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.91095212,
+  "lon": -121.24368922,
+  "address": "2121 Boeing Way",
+  "city": "Stockton",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 511
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.74621071,
+  "lon": -121.27489304,
+  "address": "1117 Roseville Sq",
+  "city": "Roseville",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 512
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 35.12574897,
+  "lon": -120.59400781,
+  "address": "955 Rancho Pkwy",
+  "city": "Arroyo Grande",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 513
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 35.63546,
+  "lon": -120.6581,
+  "address": "2457 Golden Hill Rd",
+  "city": "Paso Robles",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 514
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 36.26360923,
+  "lon": -115.25741714,
+  "address": "5639 Centennial Center Blvd",
+  "city": "Las Vegas",
+  "state": "NV",
+  "sources": [
+   "overture"
+  ],
+  "id": 515
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 35.10229292,
+  "lon": -106.56541897,
+  "address": "2200 Uptown Loop NE",
+  "city": "Albuquerque",
+  "state": "NM",
+  "sources": [
+   "overture"
+  ],
+  "id": 516
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 36.85796668,
+  "lon": -119.78271046,
+  "address": "8478 N Friant Rd",
+  "city": "Fresno",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 517
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.11294038,
+  "lon": -119.77572364,
+  "address": "3790 US-395",
+  "city": "Carson City",
+  "state": "NV",
+  "sources": [
+   "overture"
+  ],
+  "id": 518
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 36.84930413,
+  "lon": -119.72812028,
+  "address": "1077 N Willow Ave",
+  "city": "Clovis",
+  "state": "CA",
+  "sources": [
+   "overture"
+  ],
+  "id": 519
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.4787234,
+  "lon": -119.78408976,
+  "address": "5035 S McCarran Blvd",
+  "city": "Reno",
+  "state": "NV",
+  "sources": [
+   "overture"
+  ],
+  "id": 520
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.60903,
+  "lon": -112.02356,
+  "address": "5561 W 7800 S",
+  "city": "West Jordan",
+  "state": "UT",
+  "sources": [
+   "overture"
+  ],
+  "id": 521
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.51076,
+  "lon": -112.00724,
+  "address": "4850 W 13400 South",
+  "city": "Herriman",
+  "state": "UT",
+  "sources": [
+   "overture"
+  ],
+  "id": 522
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 45.41384602,
+  "lon": -122.74336036,
+  "address": "15391 SW Bangy Rd",
+  "city": "Lake Oswego",
+  "state": "OR",
+  "sources": [
+   "overture"
+  ],
+  "id": 523
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 45.53665518,
+  "lon": -122.86952241,
+  "address": "2285 NW 185th Ave",
+  "city": "Hillsboro",
+  "state": "OR",
+  "sources": [
+   "overture"
+  ],
+  "id": 524
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.04156,
+  "lon": -122.83437,
+  "address": "691 Sleater Kinney Rd SE",
+  "city": "Lacey",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 525
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 45.48819351,
+  "lon": -122.79844205,
+  "address": "11753 SW Beaverton-Hillsdale Hwy",
+  "city": "Beaverton",
+  "state": "OR",
+  "sources": [
+   "overture"
+  ],
+  "id": 526
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 45.46603238,
+  "lon": -122.75137796,
+  "address": "7215 SW Garden Home Rd",
+  "city": "Portland",
+  "state": "OR",
+  "sources": [
+   "overture"
+  ],
+  "id": 527
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.0856059,
+  "lon": -122.76619908,
+  "address": "3707 Hogum Bay Rd NE",
+  "city": "Lacey",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 528
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 45.52616518,
+  "lon": -122.69517229,
+  "address": "2122 NW Glisan St",
+  "city": "Portland",
+  "state": "OR",
+  "sources": [
+   "overture"
+  ],
+  "id": 529
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 45.48879251,
+  "lon": -122.62342016,
+  "address": "4715 SE Cesar E Chavez Blvd",
+  "city": "Portland",
+  "state": "OR",
+  "sources": [
+   "overture"
+  ],
+  "id": 530
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 45.45590756,
+  "lon": -122.58057403,
+  "address": "9345 SE 82nd Ave",
+  "city": "Happy Valley",
+  "state": "OR",
+  "sources": [
+   "overture"
+  ],
+  "id": 531
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 45.53463547,
+  "lon": -122.62079024,
+  "address": "4121 NE Halsey St",
+  "city": "Portland",
+  "state": "OR",
+  "sources": [
+   "overture"
+  ],
+  "id": 532
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.22289326,
+  "lon": -122.53784071,
+  "address": "3800 Bridgeport Way W",
+  "city": "University Place",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 533
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.56192831,
+  "lon": -122.38085064,
+  "address": "4545 Fauntleroy Way SW",
+  "city": "Seattle",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 534
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.63248,
+  "lon": -122.35881,
+  "address": "112 W Galer St",
+  "city": "Seattle",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 535
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.46010998,
+  "lon": -122.33156489,
+  "address": "15868 1st Ave S",
+  "city": "Burien",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 536
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.75490569,
+  "lon": -122.34364674,
+  "address": "1201 N 175th St",
+  "city": "Shoreline",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 537
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.70575,
+  "lon": -122.32584,
+  "address": "401 NE Northgate Way",
+  "city": "Seattle",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 538
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 44.09894554,
+  "lon": -121.30259157,
+  "address": "63455 N Highway 97",
+  "city": "Bend",
+  "state": "OR",
+  "sources": [
+   "overture"
+  ],
+  "id": 539
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.71181334,
+  "lon": -122.18074196,
+  "address": "12520 Totem Lake Blvd NE",
+  "city": "Kirkland",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 540
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.54358668,
+  "lon": -122.05183321,
+  "address": "975 NW Gilman Blvd",
+  "city": "Issaquah",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 541
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.6139147,
+  "lon": -122.03396482,
+  "address": "430 228th Ave NE",
+  "city": "Sammamish",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 542
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 47.65687,
+  "lon": -117.22383,
+  "address": "13414 E Sprague Ave",
+  "city": "Spokane Valley",
+  "state": "WA",
+  "sources": [
+   "overture"
+  ],
+  "id": 543
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 43.61297503,
+  "lon": -116.20379364,
+  "address": "300 S Capitol Blvd",
+  "city": "Boise",
+  "state": "ID",
+  "sources": [
+   "overture"
+  ],
+  "id": 544
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 43.63175463,
+  "lon": -116.35219762,
+  "address": "2986 N Eagle Rd",
+  "city": "Meridian",
+  "state": "ID",
+  "sources": [
+   "overture"
+  ],
+  "id": 545
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 35.55552,
+  "lon": -97.63617,
+  "address": "6920 Northwest Expy",
+  "city": "Oklahoma City",
+  "state": "OK",
+  "sources": [
+   "overture"
+  ],
+  "id": 546
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 36.10962226,
+  "lon": -95.97600125,
+  "address": "3702 S Peoria Ave",
+  "city": "Tulsa",
+  "state": "OK",
+  "sources": [
+   "overture"
+  ],
+  "id": 547
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 36.06436,
+  "lon": -95.77303,
+  "address": "1525 E Hillside Dr",
+  "city": "Broken Arrow",
+  "state": "OK",
+  "sources": [
+   "overture"
+  ],
+  "id": 548
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.7164672,
+  "lon": -97.24349859,
+  "address": "1800 N Rock Rd",
+  "city": "Wichita",
+  "state": "KS",
+  "sources": [
+   "overture"
+  ],
+  "id": 549
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.72686731,
+  "lon": -104.9827894,
+  "address": "661 N Logan St",
+  "city": "Denver",
+  "state": "CO",
+  "sources": [
+   "overture"
+  ],
+  "id": 550
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.72867562,
+  "lon": -104.94036468,
+  "address": "750 Colorado Blvd",
+  "city": "Denver",
+  "state": "CO",
+  "sources": [
+   "overture"
+  ],
+  "id": 551
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.0155,
+  "lon": -94.68678,
+  "address": "8700 Shawnee Mission Pkwy",
+  "city": "Merriam",
+  "state": "KS",
+  "sources": [
+   "overture"
+  ],
+  "id": 552
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.7480442,
+  "lon": -92.4016145,
+  "address": "11500 Financial Centre Pkwy",
+  "city": "Little Rock",
+  "state": "AR",
+  "sources": [
+   "overture"
+  ],
+  "id": 553
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.64487816,
+  "lon": -90.56651368,
+  "address": "1679 Clarkson Rd",
+  "city": "Chesterfield",
+  "state": "MO",
+  "sources": [
+   "overture"
+  ],
+  "id": 554
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.62735334,
+  "lon": -90.34135805,
+  "address": "48 Brentwood Promenade Ct",
+  "city": "Brentwood",
+  "state": "MO",
+  "sources": [
+   "overture"
+  ],
+  "id": 555
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.02015009,
+  "lon": -105.25767733,
+  "address": "1906 28th St",
+  "city": "Boulder",
+  "state": "CO",
+  "sources": [
+   "overture"
+  ],
+  "id": 556
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.24817278,
+  "lon": -96.07382498,
+  "address": "10305 Pacific St",
+  "city": "Omaha",
+  "state": "NE",
+  "sources": [
+   "overture"
+  ],
+  "id": 557
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.68321948,
+  "lon": -91.56467545,
+  "address": "920 Ponseti Way",
+  "city": "Coralville",
+  "state": "IA",
+  "sources": [
+   "overture"
+  ],
+  "id": 558
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.70879,
+  "lon": -88.29804,
+  "address": "1930 US-34",
+  "city": "Oswego",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 559
+ },
+ {
+  "name": "Trader Joe's Distribution Center",
+  "lat": 41.444367032137556,
+  "lon": -88.30323483994694,
+  "address": "1510 Cargo Ct",
+  "city": "Minooka",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 560
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 44.92673776,
+  "lon": -93.14602917,
+  "address": "484 Lexington Pkwy S",
+  "city": "St Paul",
+  "state": "MN",
+  "sources": [
+   "overture"
+  ],
+  "id": 561
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 44.94576338,
+  "lon": -92.92276767,
+  "address": "8960 Hudson Rd",
+  "city": "Woodbury",
+  "state": "MN",
+  "sources": [
+   "overture"
+  ],
+  "id": 562
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 45.05793798,
+  "lon": -93.14456392,
+  "address": "1041 Red Fox Rd",
+  "city": "Shoreview",
+  "state": "MN",
+  "sources": [
+   "overture"
+  ],
+  "id": 563
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 34.7402405,
+  "lon": -86.66532389,
+  "address": "1100 Mid City Dr NW",
+  "city": "Huntsville",
+  "state": "AL",
+  "sources": [
+   "overture"
+  ],
+  "id": 564
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 36.10504344,
+  "lon": -86.81549157,
+  "address": "3909 Hillsboro Pike",
+  "city": "Nashville",
+  "state": "TN",
+  "sources": [
+   "overture"
+  ],
+  "id": 565
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 36.1306493,
+  "lon": -86.852237,
+  "address": "90 White Bridge Rd",
+  "city": "Nashville",
+  "state": "TN",
+  "sources": [
+   "overture"
+  ],
+  "id": 566
+ },
+ {
+  "name": "Trader Joes",
+  "lat": 38.24927772,
+  "lon": -85.63000208,
+  "address": "4600 Shelbyville Rd",
+  "city": "Louisville",
+  "state": "KY",
+  "sources": [
+   "overture"
+  ],
+  "id": 567
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.00486393,
+  "lon": -84.51827358,
+  "address": "2326 Nicholasville Rd",
+  "city": "Lexington",
+  "state": "KY",
+  "sources": [
+   "overture"
+  ],
+  "id": 568
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 35.60303668,
+  "lon": -82.55348047,
+  "address": "120 Merrimon Ave",
+  "city": "Asheville",
+  "state": "NC",
+  "sources": [
+   "overture"
+  ],
+  "id": 569
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.19733123,
+  "lon": -84.38170916,
+  "address": "7788 Montgomery Rd",
+  "city": "Cincinnati",
+  "state": "OH",
+  "sources": [
+   "overture"
+  ],
+  "id": 570
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.04923783,
+  "lon": -82.91795083,
+  "address": "3888 Townsfair Way",
+  "city": "Columbus",
+  "state": "OH",
+  "sources": [
+   "overture"
+  ],
+  "id": 571
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.81727034,
+  "lon": -87.86927086,
+  "address": "25 N La Grange Rd",
+  "city": "La Grange",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 572
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.96201,
+  "lon": -87.65025,
+  "address": "804 West Montrose Ave",
+  "city": "Chicago",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 573
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.9324165,
+  "lon": -87.64626463,
+  "address": "667 W Diversey Pkwy",
+  "city": "Chicago",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 574
+ },
+ {
+  "name": "Trader Joes",
+  "lat": 41.90183,
+  "lon": -87.63352,
+  "address": "555 Maple St",
+  "city": "Chicago",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 575
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.0511061,
+  "lon": -88.04194258,
+  "address": "1426 E Golf Rd",
+  "city": "Schaumburg",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 576
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.11296656,
+  "lon": -87.98271097,
+  "address": "17 W Rand Rd",
+  "city": "Arlington Heights",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 577
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.25508213,
+  "lon": -87.94674052,
+  "address": "1600 S Milwaukee Ave",
+  "city": "Libertyville",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 578
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 43.03572409,
+  "lon": -88.07025725,
+  "address": "12665 W Bluemound Rd",
+  "city": "Brookfield",
+  "state": "WI",
+  "sources": [
+   "overture"
+  ],
+  "id": 579
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 43.11906533,
+  "lon": -87.91624947,
+  "address": "5600 N Port Washington Rd",
+  "city": "Milwaukee",
+  "state": "WI",
+  "sources": [
+   "overture"
+  ],
+  "id": 580
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.03985386,
+  "lon": -87.68014913,
+  "address": "1211 Chicago Ave",
+  "city": "Evanston",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 581
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.15035878,
+  "lon": -87.79870433,
+  "address": "127 Skokie Blvd",
+  "city": "Northbrook",
+  "state": "IL",
+  "sources": [
+   "overture"
+  ],
+  "id": 582
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.91189167,
+  "lon": -85.57673664,
+  "address": "3684 28th St SE",
+  "city": "Kentwood",
+  "state": "MI",
+  "sources": [
+   "overture"
+  ],
+  "id": 583
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.07126787,
+  "lon": -85.19592185,
+  "address": "4110 W Jefferson Blvd",
+  "city": "Fort Wayne",
+  "state": "IN",
+  "sources": [
+   "overture"
+  ],
+  "id": 584
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.46326999,
+  "lon": -81.47922403,
+  "address": "28425 Chagrin Blvd",
+  "city": "Woodmere",
+  "state": "OH",
+  "sources": [
+   "overture"
+  ],
+  "id": 585
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.48776,
+  "lon": -81.53582,
+  "address": "2643 Warrensville Center Rd",
+  "city": "University Heights",
+  "state": "OH",
+  "sources": [
+   "overture"
+  ],
+  "id": 586
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.42277044,
+  "lon": -83.43376681,
+  "address": "18771 Traditions Dr",
+  "city": "Northville",
+  "state": "MI",
+  "sources": [
+   "overture"
+  ],
+  "id": 587
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.49872,
+  "lon": -83.3375,
+  "address": "27658 Middlebelt Rd",
+  "city": "Farmington Hills",
+  "state": "MI",
+  "sources": [
+   "overture"
+  ],
+  "id": 588
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 35.33672809,
+  "lon": -80.75469005,
+  "address": "1820 E Arbors Dr",
+  "city": "Charlotte",
+  "state": "NC",
+  "sources": [
+   "overture"
+  ],
+  "id": 589
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 35.82331074,
+  "lon": -78.62160874,
+  "address": "3000 Wake Forest Rd",
+  "city": "Raleigh",
+  "state": "NC",
+  "sources": [
+   "overture"
+  ],
+  "id": 590
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.53849289,
+  "lon": -77.56400243,
+  "address": "3000 Stony Point Rd",
+  "city": "Richmond",
+  "state": "VA",
+  "sources": [
+   "overture"
+  ],
+  "id": 591
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 37.27715284,
+  "lon": -76.74767793,
+  "address": "5000 Settlers Market Blvd",
+  "city": "Williamsburg",
+  "state": "VA",
+  "sources": [
+   "overture"
+  ],
+  "id": 592
+ },
+ {
+  "name": "Trader Joes",
+  "lat": 37.12798296,
+  "lon": -76.51752572,
+  "address": "12551 Jefferson Ave",
+  "city": "Newport News",
+  "state": "VA",
+  "sources": [
+   "overture"
+  ],
+  "id": 593
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.96732679,
+  "lon": -77.35913169,
+  "address": "11958 Killingsworth Ave",
+  "city": "Reston",
+  "state": "VA",
+  "sources": [
+   "overture"
+  ],
+  "id": 594
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.0503554,
+  "lon": -77.45264891,
+  "address": "44755 Brimfield Dr",
+  "city": "Ashburn",
+  "state": "VA",
+  "sources": [
+   "overture"
+  ],
+  "id": 595
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 38.91761984,
+  "lon": -77.06889739,
+  "address": "2101 Wisconsin Ave NW",
+  "city": "Washington",
+  "state": "DC",
+  "sources": [
+   "overture"
+  ],
+  "id": 596
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.09649415,
+  "lon": -77.20690852,
+  "address": "10076 Darnestown Rd",
+  "city": "Rockville",
+  "state": "MD",
+  "sources": [
+   "overture"
+  ],
+  "id": 597
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.18833703,
+  "lon": -76.79547521,
+  "address": "6610 Marie Curie Dr",
+  "city": "Elkridge",
+  "state": "MD",
+  "sources": [
+   "overture"
+  ],
+  "id": 598
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.38787622,
+  "lon": -76.73589577,
+  "address": "1809 Reisterstown Rd",
+  "city": "Pikesville",
+  "state": "MD",
+  "sources": [
+   "overture"
+  ],
+  "id": 599
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.67304312,
+  "lon": -75.6480904,
+  "address": "2500 Fashion Center Blvd",
+  "city": "Newark",
+  "state": "DE",
+  "sources": [
+   "overture"
+  ],
+  "id": 600
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.45917014,
+  "lon": -79.91909938,
+  "address": "6343 Penn Ave",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "sources": [
+   "overture"
+  ],
+  "id": 601
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.02825,
+  "lon": -75.62922,
+  "address": "125 West Lincoln Hwy",
+  "city": "Exton",
+  "state": "PA",
+  "sources": [
+   "overture"
+  ],
+  "id": 602
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.91761696,
+  "lon": -75.38885104,
+  "address": "12 E State St",
+  "city": "Media",
+  "state": "PA",
+  "sources": [
+   "overture"
+  ],
+  "id": 603
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.99783002,
+  "lon": -78.82166616,
+  "address": "1565 Niagara Falls Blvd",
+  "city": "Buffalo",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 604
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.98387,
+  "lon": -78.69628,
+  "address": "5017 Transit Rd",
+  "city": "Williamsville",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 605
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 43.04731,
+  "lon": -76.23227,
+  "address": "3515 West Genesee St",
+  "city": "Syracuse",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 606
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.92897113,
+  "lon": -75.03311488,
+  "address": "775 Haddonfield Rd",
+  "city": "Cherry Hill",
+  "state": "NJ",
+  "sources": [
+   "overture"
+  ],
+  "id": 607
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.00732087,
+  "lon": -75.28648196,
+  "address": "112 Coulter Ave",
+  "city": "Ardmore",
+  "state": "PA",
+  "sources": [
+   "overture"
+  ],
+  "id": 608
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 39.88950293,
+  "lon": -74.92402847,
+  "address": "300 Route 73 S",
+  "city": "Marlton",
+  "state": "NJ",
+  "sources": [
+   "overture"
+  ],
+  "id": 609
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.55978,
+  "lon": -74.3076,
+  "address": "675 US-1",
+  "city": "Iselin",
+  "state": "NJ",
+  "sources": [
+   "overture"
+  ],
+  "id": 610
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.52211,
+  "lon": -74.21529,
+  "address": "6400 Amboy Rd",
+  "city": "Staten Island",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 611
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.65212752,
+  "lon": -74.34999227,
+  "address": "155 Elm St",
+  "city": "Westfield",
+  "state": "NJ",
+  "sources": [
+   "overture"
+  ],
+  "id": 612
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.79302,
+  "lon": -74.26813,
+  "address": "471 Mt Pleasant Ave",
+  "city": "West Orange",
+  "state": "NJ",
+  "sources": [
+   "overture"
+  ],
+  "id": 613
+ },
+ {
+  "name": "Trader Joes",
+  "lat": 40.86618095,
+  "lon": -74.50632109,
+  "address": "3056 State Route 10",
+  "city": "Denville",
+  "state": "NJ",
+  "sources": [
+   "overture"
+  ],
+  "id": 614
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.68955326,
+  "lon": -73.99272883,
+  "address": "130 Court St",
+  "city": "Brooklyn",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 615
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.94830149,
+  "lon": -74.07075172,
+  "address": "404 N State RT 17",
+  "city": "Paramus",
+  "state": "NJ",
+  "sources": [
+   "overture"
+  ],
+  "id": 616
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.99301575,
+  "lon": -74.03597423,
+  "address": "20 Irvington St",
+  "city": "Westwood",
+  "state": "NJ",
+  "sources": [
+   "overture"
+  ],
+  "id": 617
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.63937901,
+  "lon": -73.70168456,
+  "address": "1280 W Broadway",
+  "city": "Hewlett",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 618
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.62683355,
+  "lon": -73.64109723,
+  "address": "3418 Long Beach Rd",
+  "city": "Oceanside",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 619
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.6533957,
+  "lon": -73.55893637,
+  "address": "1714 Merrick Rd",
+  "city": "Merrick",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 620
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.81943129,
+  "lon": -73.977463,
+  "address": "715 River Rd",
+  "city": "Edgewater",
+  "state": "NJ",
+  "sources": [
+   "overture"
+  ],
+  "id": 621
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.98179,
+  "lon": -73.82742,
+  "address": "2482 Central Park Ave",
+  "city": "Yonkers",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 622
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.08446964,
+  "lon": -73.46175359,
+  "address": "436 Boston Post Rd",
+  "city": "Darien",
+  "state": "CT",
+  "sources": [
+   "overture"
+  ],
+  "id": 623
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.106991,
+  "lon": -73.54724348,
+  "address": "1041 High Ridge Rd",
+  "city": "Stamford",
+  "state": "CT",
+  "sources": [
+   "overture"
+  ],
+  "id": 624
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.27166,
+  "lon": -73.12726,
+  "address": "775 Bridgeport Ave",
+  "city": "Shelton",
+  "state": "CT",
+  "sources": [
+   "overture"
+  ],
+  "id": 625
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 40.94095,
+  "lon": -72.99024,
+  "address": "300 Rte 25A",
+  "city": "Miller Place",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 626
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 41.3752,
+  "lon": -72.91363,
+  "address": "46 Skiff St",
+  "city": "Hamden",
+  "state": "CT",
+  "sources": [
+   "overture"
+  ],
+  "id": 627
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.59989,
+  "lon": -73.7943,
+  "address": "388 Feura Bush Rd",
+  "city": "Glenmont",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 628
+ },
+ {
+  "name": "Trader Joe's WCD Center Bloomfield",
+  "lat": 41.86823,
+  "lon": -72.70861,
+  "address": "200 Phoenix Xing",
+  "city": "Bloomfield",
+  "state": "CT",
+  "sources": [
+   "overture"
+  ],
+  "id": 629
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.71423142,
+  "lon": -73.81208627,
+  "address": "79 Wolf Rd",
+  "city": "Colonie",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 630
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.85890593,
+  "lon": -73.76602245,
+  "address": "3 Halfmoon Crossing Blvd",
+  "city": "Halfmoon",
+  "state": "NY",
+  "sources": [
+   "overture"
+  ],
+  "id": 631
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.35770739,
+  "lon": -72.54948908,
+  "address": "375 Russell St",
+  "city": "Hadley",
+  "state": "MA",
+  "sources": [
+   "overture"
+  ],
+  "id": 632
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.95379599,
+  "lon": -71.47739405,
+  "address": "2 Market St",
+  "city": "Bedford",
+  "state": "NH",
+  "sources": [
+   "overture"
+  ],
+  "id": 633
+ },
+ {
+  "name": "Trader Joes",
+  "lat": 44.46359544,
+  "lon": -73.18047542,
+  "address": "200 Dorset St",
+  "city": "South Burlington",
+  "state": "VT",
+  "sources": [
+   "overture"
+  ],
+  "id": 634
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.34987914,
+  "lon": -71.21951761,
+  "address": "1121 Washington St",
+  "city": "West Newton",
+  "state": "MA",
+  "sources": [
+   "overture"
+  ],
+  "id": 635
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.70790744,
+  "lon": -71.4386707,
+  "address": "262 Daniel Webster Hwy",
+  "city": "Nashua",
+  "state": "NH",
+  "sources": [
+   "overture"
+  ],
+  "id": 636
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.34204088,
+  "lon": -71.12059245,
+  "address": "1317 Beacon St",
+  "city": "Brookline",
+  "state": "MA",
+  "sources": [
+   "overture"
+  ],
+  "id": 637
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.51998,
+  "lon": -71.09309,
+  "address": "34 Walkers Brook Drive",
+  "city": "Reading",
+  "state": "MA",
+  "sources": [
+   "overture"
+  ],
+  "id": 638
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.24738,
+  "lon": -71.00237,
+  "address": "111 General McConville Way",
+  "city": "Quincy",
+  "state": "MA",
+  "sources": [
+   "overture"
+  ],
+  "id": 639
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.3511499,
+  "lon": -71.05665,
+  "address": "711 Atlantic Ave",
+  "city": "Boston",
+  "state": "MA",
+  "sources": [
+   "overture"
+  ],
+  "id": 640
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.35184438,
+  "lon": -71.04720604,
+  "address": "44 Thomson Pl",
+  "city": "Boston",
+  "state": "MA",
+  "sources": [
+   "overture"
+  ],
+  "id": 641
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.24901815,
+  "lon": -70.92373595,
+  "address": "5 Essington Dr",
+  "city": "Hingham",
+  "state": "MA",
+  "sources": [
+   "overture"
+  ],
+  "id": 642
+ },
+ {
+  "name": "Trader Joe's",
+  "lat": 42.54911329,
+  "lon": -70.95694615,
+  "address": "300 Andover St",
+  "city": "Peabody",
+  "state": "MA",
+  "sources": [
+   "overture"
+  ],
+  "id": 643
+ },
+ {
+  "name": "Trader Joes",
+  "lat": 43.09451427,
+  "lon": -70.79955603,
+  "address": "45 Gosling Rd",
+  "city": "Newington",
+  "state": "NH",
+  "sources": [
+   "overture"
+  ],
+  "id": 644
+ },
+ {
+  "name": "Trader Joes",
+  "lat": 43.6618167,
+  "lon": -70.26462306,
+  "address": "87 Marginal Way",
+  "city": "Portland",
+  "state": "ME",
+  "sources": [
+   "overture"
+  ],
+  "id": 645
  }
 ]
