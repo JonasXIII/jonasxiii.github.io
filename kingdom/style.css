@@ -173,11 +173,16 @@
    used as column counts here so a row is never left ragged.
 
    Every card also gets a fixed max-width (below) instead of being allowed
-   to stretch to fill its column - that's what kept cards from ballooning
-   on wide screens; extra column space just centers the card instead. */
+   to stretch to fill its column. Columns are capped the same way (190px,
+   not 1fr) - capping the card alone isn't enough, since 1fr columns still
+   stretch to fill the full row on a wide screen, which just relocates the
+   dead space to between cards instead of removing it. justify-content
+   centers the resulting compact block, pushing leftover width to the
+   outer margins instead. */
 #kingdom-cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(130px, 190px));
+  justify-content: center;
   gap: 0.65rem;
 }
 
