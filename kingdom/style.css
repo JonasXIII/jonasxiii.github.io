@@ -165,23 +165,38 @@
 }
 
 /* ---- Card grids ----
-   Both grids size cards the same way: columns come from auto-fill/minmax,
-   and each card's height is derived purely from its own width via
-   aspect-ratio. That's the one thing to keep true here — do NOT also set
-   an independent row height (grid-auto-rows) that fights the aspect-ratio
-   for the same dimension. Two dimensions computed two different ways is
-   what previously caused cards to render narrower than their column and
-   get centered with dead space around them, which read as "too much gap." */
-#kingdom-cards,
+   Kingdom is always exactly 10 cards, so its column count is hardcoded
+   (5, or 2 on phones - see the media query below) rather than derived from
+   a percentage/auto-fill guess. That guess is what broke into a 6-then-4
+   split: auto-fill's column count is a function of continuous width, with
+   no idea the row needs to divide evenly into 10. Only divisors of 10 are
+   used as column counts here so a row is never left ragged.
+
+   Every card also gets a fixed max-width (below) instead of being allowed
+   to stretch to fill its column - that's what kept cards from ballooning
+   on wide screens; extra column space just centers the card instead. */
+#kingdom-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.65rem;
+}
+
+/* Bonus/Landscape counts vary each generation, so these flow naturally -
+   but with the column track itself capped to the same width as the card
+   max-width below (not 1fr), so a half-full row doesn't stretch into
+   oversized columns; leftover space centers the whole row instead. */
 .bonus-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(max(16%, 130px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(130px, 190px));
+  justify-content: center;
   gap: 0.65rem;
 }
 
 /* ---- Card base ---- */
 .card {
   width: 100%;
+  max-width: 190px;
+  justify-self: center;
   aspect-ratio: 5 / 8;
   border-radius: 10px;
   overflow: hidden;
@@ -208,9 +223,14 @@
    span a wide aspect-ratio card ends up with ~1.6x the on-screen area of
    a portrait card (bigger, not just wider). Scaling to 80% of the span
    brings its area back in line with a portrait card's, so it reads as
-   "wide" rather than "giant" next to its neighbors. */
+   "wide" rather than "giant" next to its neighbors.
+   max-width needs its own value here (not the general .card 190px) - a
+   2-column span capped at 190px each is up to ~390px, and 80% of that is
+   ~312px; inheriting the flat 190px cap instead would clamp it down to
+   the same width as a portrait card, making it smaller, not comparable. */
 .card.sideways {
   width: 80%;
+  max-width: 312px;
   aspect-ratio: 8 / 5;
   grid-column: span 2;
   justify-self: center;
@@ -327,6 +347,12 @@
   #kingdom-cards,
   .bonus-grid {
     gap: 0.4rem;
+  }
+
+  /* 5 columns gets too cramped below ~480px - 2 still divides 10 evenly,
+     so this never leaves a ragged row either. */
+  #kingdom-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
