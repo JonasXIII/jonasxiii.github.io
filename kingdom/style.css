@@ -189,10 +189,17 @@
 /* Bonus/Landscape counts vary each generation, so these flow naturally -
    but with the column track itself capped to the same width as the card
    max-width below (not 1fr), so a half-full row doesn't stretch into
-   oversized columns; leftover space centers the whole row instead. */
+   oversized columns; leftover space centers the whole row instead.
+   auto-fit, not auto-fill: auto-fill reserves as many column tracks as
+   mathematically fit the container, even ones no card occupies, and
+   justify-content:center centers that whole reserved set - so with only
+   1-2 cards in a very wide row, the real cards sit near the left edge of
+   a mostly-empty invisible block, looking uncentered. auto-fit collapses
+   the unused trailing tracks to 0 width, so centering only accounts for
+   the tracks actually holding a card. */
 .bonus-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 190px));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 190px));
   justify-content: center;
   gap: 0.65rem;
 }
