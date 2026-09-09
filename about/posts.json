@@ -1,6 +1,33 @@
 [
   {
     "layout": "full-width",
+    "title": "Mt.St Helens",
+    "date": "September 2026",
+    "image": "images/St-Helens.jpg",
+    "imageAlt": "A view of Mt. St. Helens from Lahar Viewpoint.",
+    "caption": "",
+    "text": "To close out the summer, we went camping jsut south of Mt. St. Helents this Labor Day weekend. We had a great time seeing the volcano up close, and exploring the lava canyon."
+  },
+  {
+    "layout": "full-width",
+    "title": "Patterson Lake Cabins",
+    "date": "August 2026",
+    "image": "images/Sun_Mountain_Summer.jpg",
+    "imageAlt": "Cabins beyond a lawn, beach with kayaks in the foreground.",
+    "caption": "",
+    "text": "We went back to Sun Mountain lodge in August. The fire smoke was a bit of a damper, but did provide great lighting and sunsets."
+  },
+  {
+    "layout": "full-width",
+    "title": "New Plant",
+    "date": "July 2026",
+    "image": "images/Suvulent.jpg",
+    "imageAlt": "A red pearled suculent plant on a bed of rocks in front of a window.",
+    "caption": "",
+    "text": "We went backpacking in the North Cascades and found this little guy on a rock field. Watering it and seeing the new sprouts has become an antisapioty part of my morning routinne."
+  },
+  {
+    "layout": "full-width",
     "title": "Patterson Lake Cabins",
     "date": "January 2026",
     "image": "images/Frozen_Lake.jpg",
