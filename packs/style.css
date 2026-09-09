@@ -1,0 +1,448 @@
+/* Pack Expected Value page — light theme matching the rest of the site
+   (see mtg/style.css, kingdom/style.css for the same gradient/card language) */
+
+.packs-main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  text-align: left;
+}
+
+.packs-mono {
+  font-family: ui-monospace, "SFMono-Regular", "Courier New", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- banner ---- */
+.packs-banner {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.packs-banner h1 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  font-weight: 700;
+}
+
+.packs-subtitle {
+  margin: 0 auto;
+  max-width: 62ch;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  opacity: 0.92;
+}
+
+/* ---- toolbar / pack picker ---- */
+.packs-toolbar {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.packs-field label {
+  display: block;
+  font-size: 0.78rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.packs-select-field {
+  min-width: 260px;
+  flex: 1;
+}
+
+.packs-select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  background: white;
+  cursor: pointer;
+  color: #333;
+}
+
+.packs-select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.packs-badge {
+  align-self: center;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #b7791f;
+  background: #fffaf0;
+  border: 1px solid #f0d9a8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ---- hero calculator ---- */
+.packs-hero {
+  margin: 0 0 1.75rem;
+  padding: 24px 26px 20px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.packs-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  align-items: end;
+}
+
+@media (max-width: 640px) {
+  .packs-hero-grid { grid-template-columns: 1fr; gap: 18px; }
+}
+
+.packs-evlabel {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.packs-evnum {
+  font-size: clamp(42px, 9vw, 68px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.packs-evsub {
+  color: #888;
+  font-size: 13px;
+  margin-top: 8px;
+  min-height: 18px;
+}
+
+.packs-ctrls {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.packs-toggle {
+  display: inline-flex;
+  background: #f4f4f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 3px;
+  width: max-content;
+}
+
+.packs-toggle button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #888;
+  font: inherit;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.packs-toggle button.on {
+  background: #fff;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+}
+
+.packs-field input {
+  width: 100%;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  color: #333;
+  font: inherit;
+  font-size: 15px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.packs-field input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.packs-margin {
+  font-size: 14px;
+  color: #666;
+  min-height: 20px;
+}
+
+.packs-margin b { font-weight: 700; }
+.packs-good { color: #2f855a; }
+.packs-bad { color: #e53e3e; }
+
+.packs-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #eee;
+  color: #888;
+  font-size: 12.5px;
+}
+
+.packs-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #ccc; flex: none;
+}
+
+.packs-dot.live { background: #48bb78; box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.15); }
+.packs-dot.err { background: #f56565; }
+
+.packs-refresh {
+  margin-left: auto;
+  appearance: none;
+  background: #f4f4f9;
+  border: 1px solid #e0e0e0;
+  color: #333;
+  font: inherit;
+  font-size: 12.5px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.packs-refresh:hover:not(:disabled) { border-color: #667eea; color: #667eea; }
+.packs-refresh:disabled { opacity: 0.5; cursor: default; }
+
+/* ---- sections ---- */
+.packs-section { margin-top: 2.75rem; }
+
+.packs-h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0 0 4px;
+}
+
+.packs-h2 h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.packs-n {
+  font-size: 12px;
+  color: #aaa;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.packs-lead {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 16px;
+  max-width: 70ch;
+}
+
+/* ---- ledger table ---- */
+.packs-table-wrap { overflow-x: auto; }
+
+.packs-ledger {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+.packs-ledger td, .packs-ledger th {
+  padding: 11px 10px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.packs-ledger th {
+  color: #888;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.packs-ledger td:first-child, .packs-ledger th:first-child { text-align: left; }
+.packs-ledger tr { border-bottom: 1px solid #f0f0f0; }
+.packs-ledger tbody tr:hover { background: #f7f8fc; }
+
+.packs-slot { display: flex; align-items: center; gap: 10px; }
+.packs-swatch { width: 9px; height: 9px; border-radius: 2px; flex: none; }
+.packs-barcell { width: 150px; }
+.packs-bar { height: 8px; border-radius: 5px; background: #eee; overflow: hidden; }
+.packs-bar > span { display: block; height: 100%; border-radius: 5px; }
+
+.packs-totrow td {
+  border-top: 2px solid #ccc;
+  border-bottom: 0;
+  font-weight: 700;
+  padding-top: 14px;
+  color: #333;
+}
+
+.packs-evnum-sm {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+/* ---- chase cards ---- */
+.packs-chase {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.packs-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.packs-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.packs-card .packs-thumb {
+  width: 42px; height: 58px; border-radius: 5px;
+  background: #eee center/cover; flex: none;
+  border: 1px solid #e0e0e0;
+}
+
+.packs-card .packs-nm { font-size: 13.5px; font-weight: 600; line-height: 1.25; color: #333; }
+.packs-card .packs-meta { font-size: 11px; color: #999; margin-top: 3px; }
+.packs-card .packs-val { margin-left: auto; text-align: right; flex: none; }
+.packs-card .packs-val .packs-v { font-weight: 700; font-size: 14px; color: #333; }
+.packs-card .packs-val .packs-p { font-size: 11px; color: #999; }
+
+.packs-tag {
+  display: inline-block;
+  font-size: 10px;
+  padding: 1px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.4px;
+  vertical-align: middle;
+  border: 1px solid #e0e0e0;
+  color: #888;
+  background: #f7f8fc;
+}
+
+/* ---- composition / details ---- */
+.packs-details {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-top: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.packs-details > summary {
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 14.5px;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+}
+
+.packs-details > summary::-webkit-details-marker { display: none; }
+.packs-details > summary::before { content: "+"; color: #888; width: 14px; }
+.packs-details[open] > summary::before { content: "\2013"; }
+.packs-details > summary:hover { background: #f7f8fc; }
+
+.packs-dbody { padding: 4px 16px 16px; }
+
+.packs-vtable { width: 100%; border-collapse: collapse; margin-top: 6px; }
+.packs-vtable td, .packs-vtable th {
+  padding: 9px 8px; font-size: 13px; text-align: left; border-bottom: 1px solid #f0f0f0;
+}
+.packs-vtable th { color: #888; font-weight: 600; font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; }
+
+.packs-oddstable { width: 100%; border-collapse: collapse; margin-top: 6px; }
+.packs-oddstable td { padding: 6px 8px; font-size: 12.5px; border-bottom: 1px solid #f4f4f4; }
+.packs-oddstable td:nth-child(2), .packs-oddstable td:nth-child(3) { text-align: right; white-space: nowrap; }
+.packs-oddstable td:first-child { color: #333; }
+.packs-miss { color: #aaa; font-style: italic; }
+
+.packs-method p { color: #555; font-size: 14px; }
+.packs-method code {
+  background: #f4f4f9; padding: 1px 6px; border-radius: 5px; font-size: 12.5px; color: #333;
+  font-family: ui-monospace, "SFMono-Regular", "Courier New", monospace;
+}
+
+.packs-formula {
+  background: #f4f4f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-family: ui-monospace, "SFMono-Regular", "Courier New", monospace;
+  font-size: 13px;
+  color: #333;
+  overflow-x: auto;
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+.packs-caveat {
+  border-left: 3px solid #d8d8ea;
+  padding-left: 14px;
+  color: #666;
+  font-size: 13.5px;
+  margin: 10px 0;
+}
+
+.packs-footnote {
+  margin-top: 3rem;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  color: #999;
+  font-size: 12.5px;
+  line-height: 1.9;
+}
+
+.packs-footnote a { color: #667eea; text-decoration: none; border-bottom: 1px solid transparent; }
+.packs-footnote a:hover { border-bottom-color: #667eea; }
+
+@media (max-width: 480px) {
+  .packs-main { padding: 1.25rem 0.9rem 3rem; }
+  .packs-hero { padding: 18px 16px 16px; }
+}

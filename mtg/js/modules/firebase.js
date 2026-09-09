@@ -4,8 +4,6 @@
 // public and safe to commit. Security comes from Firestore Security Rules
 // (see firestore.rules at the repo root) plus Firebase Auth, not from hiding
 // these values. See the setup instructions for where to get them.
-//
-// TODO (one-time setup): replace firebaseConfig and OWNER_UID below.
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js';
 import {
   initializeFirestore,
@@ -16,19 +14,19 @@ import { getAuth } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-aut
 
 // From: Firebase Console -> Project Settings -> General -> Your apps -> Web app.
 const firebaseConfig = {
-  apiKey: 'REPLACE_ME',
-  authDomain: 'REPLACE_ME.firebaseapp.com',
-  projectId: 'REPLACE_ME',
-  storageBucket: 'REPLACE_ME.appspot.com',
-  messagingSenderId: 'REPLACE_ME',
-  appId: 'REPLACE_ME',
+  apiKey: 'AIzaSyDA1sJmCFSADQVbK1PBUlU2zZ0q2CMkmzQ',
+  authDomain: 'jonasxiii-tracker.firebaseapp.com',
+  projectId: 'jonasxiii-tracker',
+  storageBucket: 'jonasxiii-tracker.firebasestorage.app',
+  messagingSenderId: '28011581084',
+  appId: '1:28011581084:web:b19f6c1e8d2b6a40bae759',
 };
 
 // From: Firebase Console -> Authentication -> Users, after signing in once via
 // this app's "Sign in" button. This is what Firestore Security Rules check
 // against to allow writes, and what the client uses to know it's you (see
 // isOwner() in auth.js).
-export const OWNER_UID = 'REPLACE_WITH_YOUR_UID';
+export const OWNER_UID = 'XcZWy9Grc8RImp8ha6lRIJ1JE3O2';
 
 const app = initializeApp(firebaseConfig);
 

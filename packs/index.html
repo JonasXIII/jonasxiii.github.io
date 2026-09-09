@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pack Expected Value – Jonas Loeser</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <main class="packs-main">
+    <div class="packs-banner">
+      <h1>What's a booster pack worth?</h1>
+      <p class="packs-subtitle">Every card slot, its real pull rate, and live market prices, combined into the expected value of a sealed Magic: the Gathering Play Booster. Prices load in your browser from Scryfall, so the number moves with the market.</p>
+    </div>
+
+    <div class="packs-toolbar">
+      <div class="packs-field packs-select-field">
+        <label for="pack-select">Pack</label>
+        <select id="pack-select" class="packs-select"></select>
+      </div>
+      <div id="pack-badge" class="packs-badge" hidden></div>
+    </div>
+
+    <div class="packs-hero">
+      <div class="packs-hero-grid">
+        <div>
+          <div class="packs-evlabel">Expected value per pack</div>
+          <div class="packs-evnum" id="ev">—</div>
+          <div class="packs-evsub" id="evsub">Loading live prices…</div>
+        </div>
+        <div class="packs-ctrls">
+          <div class="packs-toggle" id="cur" role="tablist" aria-label="Currency">
+            <button type="button" data-cur="usd" class="on">USD $</button>
+            <button type="button" data-cur="eur">EUR €</button>
+          </div>
+          <div class="packs-field">
+            <label for="cost">Your cost per pack (optional)</label>
+            <input id="cost" type="number" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 4.50">
+          </div>
+          <div class="packs-margin" id="margin"></div>
+        </div>
+      </div>
+      <div class="packs-status">
+        <span class="packs-dot" id="dot"></span>
+        <span id="statustext">Fetching…</span>
+        <button type="button" class="packs-refresh" id="refresh" disabled>Refresh prices</button>
+      </div>
+    </div>
+
+    <section class="packs-section">
+      <div class="packs-h2"><span class="packs-n">01</span><h2>Where the value sits</h2></div>
+      <p class="packs-lead">Every pack draws from fixed slots. This ledger breaks the expected value down by slot: how many of each you get on average, what one is worth, and how much it contributes. Sorted by contribution.</p>
+      <div class="packs-table-wrap">
+        <table class="packs-ledger">
+          <thead><tr>
+            <th>Slot</th><th>Avg&nbsp;/&nbsp;pack</th><th>Value each</th><th>EV&nbsp;contribution</th><th class="packs-barcell">Share</th>
+          </tr></thead>
+          <tbody id="ledger"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="packs-section">
+      <div class="packs-h2"><span class="packs-n">02</span><h2>What's driving it</h2></div>
+      <p class="packs-lead">The individual cards contributing the most expected value per pack: each card's price times how often it lands in a pack, in the finish shown. This is what you're really paying for.</p>
+      <div class="packs-chase" id="chase"></div>
+    </section>
+
+    <section class="packs-section">
+      <div class="packs-h2"><span class="packs-n">03</span><h2>How the pack is built</h2></div>
+      <p class="packs-lead">Physical packs come in a few configurations, chosen by weight; some replace a common with a bonus card in a small fraction of packs. Expand any sheet below to see every card in it, its exact pull rate, and its live price.</p>
+      <details class="packs-details">
+        <summary>Pack configurations (<span id="variant-count"></span> variants)</summary>
+        <div class="packs-dbody">
+          <table class="packs-vtable"><thead><tr><th>Chance</th><th>Slots</th></tr></thead><tbody id="variants"></tbody></table>
+        </div>
+      </details>
+      <div id="sheets"></div>
+    </section>
+
+    <section class="packs-section packs-method">
+      <div class="packs-h2"><span class="packs-n">04</span><h2>Method &amp; caveats</h2></div>
+      <details class="packs-details">
+        <summary>How the expected value is computed (and why it's exact)</summary>
+        <div class="packs-dbody">
+          <p>A pack is one of a handful of variants, each a fixed set of slots. Every slot is one draw from a named <em>sheet</em>, a weighted list of cards. Within a sheet, the chance of a given card is its weight divided by the sheet's total weight; every sheet's weights sum exactly to its total, so each sheet is a proper probability distribution.</p>
+          <p>By <strong>linearity of expectation</strong>, the expected value of the whole pack is just the sum of the expected value of each slot; this holds regardless of duplicates or any dependence between slots, so no simulation is needed. Collapsing the variants gives an expected number of draws from each sheet per pack:</p>
+          <div class="packs-formula" id="formula"></div>
+          <p>The value of one draw from a sheet is <code>Σ (weight ÷ total) × price</code> over its cards, using the foil price for foil sheets and the non-foil price otherwise. Multiply each sheet's per-draw value by its expected draws per pack, sum, and that's the pack EV.</p>
+          <div class="packs-caveat"><strong>Market price, not sell price.</strong> Prices are Scryfall's market/median (roughly TCGplayer). What a shop or buylist actually pays you is materially lower, and singles have fees and shipping. Treat EV as gross retail value, not cash-in-hand.</div>
+          <div class="packs-caveat"><strong>Missing prices count as $0.</strong> Any card without a listed price in the chosen currency is skipped, so the EV is a slight <em>under</em>-estimate when data is missing, and $0 for a pack that hasn't released yet. The status line reports how many cards were affected.</div>
+          <div class="packs-caveat"><strong>Prices are volatile and per-condition.</strong> These are near-mint market snapshots; they drift daily and don't reflect condition or regional supply.</div>
+          <div class="packs-caveat"><strong>Pack cost is whatever you enter.</strong> There's no reliable, CORS-friendly live feed for sealed-product retail prices, so "your cost per pack" is a manual field, not a fetched one.</div>
+        </div>
+      </details>
+    </section>
+
+    <div class="packs-footnote">
+      <div>Collation: <a href="https://github.com/taw/magic-sealed-data" target="_blank" rel="noopener">taw/magic-sealed-data</a>, the same dataset behind <a href="https://mtg.wtf" target="_blank" rel="noopener">mtg.wtf</a>'s pack odds.</div>
+      <div>Prices: <a href="https://scryfall.com/docs/api" target="_blank" rel="noopener">Scryfall API</a>, fetched live in your browser · <span id="ts">—</span></div>
+      <div>Not affiliated with Wizards of the Coast. Informational only; verify before making purchasing decisions.</div>
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="../load-header-footer.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
