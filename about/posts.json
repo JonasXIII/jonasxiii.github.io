@@ -28,6 +28,42 @@
   },
   {
     "layout": "full-width",
+    "title": "Columbia River Sunset",
+    "date": "June 2026",
+    "image": "images/Kalama.jpg",
+    "imageAlt": "A view of the Columbia River from Kalama, WA with a Mississippi Style steam boat off to the side.",
+    "caption": "",
+    "text": "We visited the McMinamens in Kalama, WA in an ongoing effort to get as many stamps in my McMinamens passport as possible. The food was great, but the view of sunset over the Columbia River was even better."
+  },
+  {
+    "layout": "image-right",
+    "title": "Anual Lantern Festival",
+    "date": "May 2026",
+    "image": "images/Lanters.jpg",
+    "imageAlt": "A sky full of lanterns floating into the night sky, over a crowd of people in the center of a race track.",
+    "caption": "",
+    "text": "Our anual tradition of going to the Night Lights Lantern Festival in Idaho was as magical as ever."
+  },
+  {
+    "layout": "image-left",
+    "title": "Fluid Archetecture",
+    "date": "April 2026",
+    "image": "images/German_Building.jpg",
+    "imageAlt": "A view of a German building with fluid architecture.",
+    "caption": "",
+    "text": "While I love living the states, going back to Germany to visit family is always a treat. Especially when I see archatecture like this, it just feels like they're living in a fairytale."
+  },
+  {
+    "layout": "full-width",
+    "title": "Russell Cave",
+    "date": "March 2026",
+    "image": "images/Cave.jpg",
+    "imageAlt": "A view of a stream flowing into a cave in the middle of a forest.",
+    "caption": "",
+    "text": "While vitsiting family in Tennessee, we did a day trip into Alabama and saw this beautiful cave. We learned the cave is believed to have been first used over 12,000 years ago by Native Americans."
+  },
+  {
+    "layout": "full-width",
     "title": "Patterson Lake Cabins",
     "date": "January 2026",
     "image": "images/Frozen_Lake.jpg",
