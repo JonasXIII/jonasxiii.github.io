@@ -1,12 +1,12 @@
 [
   {
     "layout": "full-width",
-    "title": "Mt.St Helens",
+    "title": "Mt.St. Helens",
     "date": "September 2026",
     "image": "images/St-Helens.jpg",
     "imageAlt": "A view of Mt. St. Helens from Lahar Viewpoint.",
     "caption": "",
-    "text": "To close out the summer, we went camping jsut south of Mt. St. Helents this Labor Day weekend. We had a great time seeing the volcano up close, and exploring the lava canyon."
+    "text": "To close out the summer, we went camping just south of Mt. St. Helens this Labor Day weekend. We had a great time seeing the volcano up close, and exploring the lava canyon."
   },
   {
     "layout": "full-width",
@@ -24,7 +24,7 @@
     "image": "images/Succulent.jpg",
     "imageAlt": "A red pearled succulent plant on a bed of rocks in front of a window.",
     "caption": "",
-    "text": "We went backpacking in the North Cascades and found this little guy on a rock field. Watering it and seeing the new sprouts has become an antisapioty part of my morning routinne."
+    "text": "We went backpacking in the North Cascades and found this little guy on a rock field. Watering it and seeing the new sprouts has become a part of my morning routine that I look forward to."
   },
   {
     "layout": "full-width",
@@ -37,21 +37,21 @@
   },
   {
     "layout": "image-right",
-    "title": "Anual Lantern Festival",
+    "title": "Annual Lantern Festival",
     "date": "May 2026",
     "image": "images/Lanters.jpg",
     "imageAlt": "A sky full of lanterns floating into the night sky, over a crowd of people in the center of a race track.",
     "caption": "",
-    "text": "Our anual tradition of going to the Night Lights Lantern Festival in Idaho was as magical as ever."
+    "text": "Our annual tradition of going to the Night Lights Lantern Festival in Idaho was as magical as ever."
   },
   {
     "layout": "image-left",
-    "title": "Fluid Archetecture",
+    "title": "Fluid Architecture",
     "date": "April 2026",
     "image": "images/German_Building.jpg",
     "imageAlt": "A view of a German building with fluid architecture.",
     "caption": "",
-    "text": "While I love living the states, going back to Germany to visit family is always a treat. Especially when I see archatecture like this, it just feels like they're living in a fairytale."
+    "text": "While I love living the states, going back to Germany to visit family is always a treat. Especially when I see architecture like this, it just feels like they're living in a fairytale."
   },
   {
     "layout": "full-width",
@@ -60,7 +60,7 @@
     "image": "images/Cave.jpg",
     "imageAlt": "A view of a stream flowing into a cave in the middle of a forest.",
     "caption": "",
-    "text": "While vitsiting family in Tennessee, we did a day trip into Alabama and saw this beautiful cave. We learned the cave is believed to have been first used over 12,000 years ago by Native Americans."
+    "text": "While visiting family in Tennessee, we did a day trip into Alabama and saw this beautiful cave. We learned the cave is believed to have been first used over 12,000 years ago by Native Americans."
   },
   {
     "layout": "full-width",
@@ -78,7 +78,7 @@
     "image": "images/Bean_Curtain.jpg",
     "imageAlt": "My cat bean sitting between the curtains and the sunlit window casting an iconic cat shaped shadow.",
     "caption": "",
-    "text": "Bean loves basking in the sunlight, even when theres no birds to watch."
+    "text": "Bean loves basking in the sunlight, even when there's no birds to watch."
   },
   {
     "layout": "image-left",
@@ -87,6 +87,6 @@
     "image": "images/Mushroom_Goo.jpg",
     "imageAlt": "A closeup of a gooey mushroom in a forest",
     "caption": "",
-    "text": "During a recent nature walk, I stumbled upon this funky msuhroom."
+    "text": "During a recent nature walk, I stumbled upon this funky mushroom."
   }
 ]
