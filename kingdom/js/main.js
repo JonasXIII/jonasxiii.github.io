@@ -16,30 +16,40 @@ let currentState = {
   config: {}
 };
 
-// Parse URL search params into boolean flags
+// Default state of each option when the URL says nothing. The four that
+// start on are the ones that make for a playable kingdom most of the time;
+// the rest are deliberate opt-ins.
+const DEFAULTS = {
+  accs: true,
+  draw: true,
+  attack: false,
+  reactionIfAttack: true,
+  blacklist: true,
+  baseOnly: false,
+  twoExpansions: false
+};
+
+// Parse URL search params into boolean flags, falling back to DEFAULTS for
+// any option the URL doesn't mention.
 function readParams() {
   const p = new URLSearchParams(window.location.search);
-  return {
-    accs: p.get('accs') === 'true',
-    draw: p.get('draw') === 'true',
-    attack: p.get('attack') === 'true',
-    reactionIfAttack: p.get('reactionIfAttack') === 'true',
-    blacklist: p.get('blacklist') === 'true',
-    baseOnly: p.get('baseOnly') === 'true',
-    twoExpansions: p.get('twoExpansions') === 'true'
-  };
+  return Object.fromEntries(
+    Object.entries(DEFAULTS).map(([key, fallback]) => [
+      key,
+      p.has(key) ? p.get(key) === 'true' : fallback
+    ])
+  );
 }
 
-// Set URL params and reload page
+// Set URL params and reload page. Only options that differ from their
+// default are written, and they're written explicitly as true/false - an
+// option that defaults to on needs '=false' in the URL, or turning it off
+// would read straight back as on after the reload.
 function writeParams(params) {
   const p = new URLSearchParams();
-  if (params.accs) p.set('accs', 'true');
-  if (params.draw) p.set('draw', 'true');
-  if (params.attack) p.set('attack', 'true');
-  if (params.reactionIfAttack) p.set('reactionIfAttack', 'true');
-  if (params.blacklist) p.set('blacklist', 'true');
-  if (params.baseOnly) p.set('baseOnly', 'true');
-  if (params.twoExpansions) p.set('twoExpansions', 'true');
+  for (const [key, fallback] of Object.entries(DEFAULTS)) {
+    if (params[key] !== fallback) p.set(key, String(params[key]));
+  }
   window.location.search = p.toString();
 }
 

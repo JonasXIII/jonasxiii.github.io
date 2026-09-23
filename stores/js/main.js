@@ -44,6 +44,10 @@ const CHAINS = [
   { slug: 'red-robin', name: 'Red Robin', color: '#e87ba4', reused: true },
 ];
 
+// All ten chains at once is a solid wall of dots that hides the clustering
+// entirely, so the map opens with one chain on and the rest a click away.
+const DEFAULT_ON = ['aldi'];
+
 // CARTO retired anonymous access to these raster tiles - a free API key
 // (from carto.com/basemaps/apikey, tied to this site's domain) is now
 // required, appended as a `key` query param. This is a public "which
@@ -259,13 +263,14 @@ function buildToggleList(chains) {
   container.innerHTML = '';
   for (const chain of chains) {
     const hasData = chain.count > 0;
+    const visible = hasData && DEFAULT_ON.includes(chain.slug);
     // Three distinct states, because they mean three different things:
     // a count, a genuine zero in the source data, and a load failure.
     const status = chain.failed ? "didn't load" : hasData ? chain.count.toLocaleString() : 'none found';
     const row = document.createElement('label');
     row.className = 'chain-toggle-row' + (hasData ? '' : chain.failed ? ' failed' : ' no-data');
     row.innerHTML = `
-      <input type="checkbox" data-slug="${chain.slug}" ${hasData ? 'checked' : 'disabled'}>
+      <input type="checkbox" data-slug="${chain.slug}" ${visible ? 'checked' : ''} ${hasData ? '' : 'disabled'}>
       <span class="chain-swatch" style="background:${chain.color}"></span>
       <span class="chain-name">${chain.name}</span>
       <span class="chain-count">${status}</span>
@@ -273,6 +278,9 @@ function buildToggleList(chains) {
     const checkbox = row.querySelector('input');
     checkbox.addEventListener('change', () => setChainVisible(chain.slug, checkbox.checked));
     container.appendChild(row);
+    // The layers are created visible, so the map has to be told about the
+    // ones that start off - otherwise the box says off while dots show.
+    setChainVisible(chain.slug, visible);
   }
 }
 
