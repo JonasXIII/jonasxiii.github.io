@@ -1,92 +1,102 @@
 [
   {
     "layout": "full-width",
-    "title": "Mt.St. Helens",
+    "title": "Mt. St. Helens",
     "date": "September 2026",
+    "location": "Lahar Viewpoint, Mount St. Helens, WA",
     "image": "images/St-Helens.jpg",
     "imageAlt": "A view of Mt. St. Helens from Lahar Viewpoint.",
     "caption": "",
-    "text": "To close out the summer, we went camping just south of Mt. St. Helens this Labor Day weekend. We had a great time seeing the volcano up close, and exploring the lava canyon."
+    "text": "To close out the summer we camped just south of Mt. St. Helens over Labor Day weekend. We got up close to the crater, and walked the lava canyon where the 1980 mudflow scoured the rock down to bare basalt."
   },
   {
     "layout": "full-width",
-    "title": "Patterson Lake Cabins",
+    "title": "Patterson Lake in August",
     "date": "August 2026",
+    "location": "Sun Mountain Lodge, Winthrop, WA",
     "image": "images/Sun_Mountain_Summer.jpg",
     "imageAlt": "Cabins beyond a lawn, beach with kayaks in the foreground.",
     "caption": "",
-    "text": "We went back to Sun Mountain lodge in August. The fire smoke was a bit of a damper, but did provide great lighting and sunsets."
+    "text": "Back to the Sun Mountain cabins, this time with the lake unfrozen and the kayaks out. Wildfire smoke sat over the valley all week, which was a damper on the hiking but did turn every sunset orange."
   },
   {
     "layout": "full-width",
     "title": "New Plant",
     "date": "July 2026",
+    "location": "Found in the North Cascades, WA",
     "image": "images/Succulent.jpg",
     "imageAlt": "A red pearled succulent plant on a bed of rocks in front of a window.",
     "caption": "",
-    "text": "We went backpacking in the North Cascades and found this little guy on a rock field. Watering it and seeing the new sprouts has added an extra spark of excitement to my morning routine."
+    "text": "We went backpacking in the North Cascades and I found this little guy growing out of a rock field. It has been on the windowsill ever since, and checking it for new sprouts has quietly become part of my morning routine."
   },
   {
     "layout": "full-width",
     "title": "Columbia River Sunset",
     "date": "June 2026",
+    "location": "Kalama, WA",
     "image": "images/Kalama.jpg",
-    "imageAlt": "A view of the Columbia River from Kalama, WA with a Mississippi Style steam boat off to the side.",
+    "imageAlt": "A view of the Columbia River from Kalama, WA with a Mississippi style steamboat off to the side.",
     "caption": "",
-    "text": "We visited the McMenamins in Kalama, WA in an ongoing effort to get as many stamps in my McMenamins passport as possible. The food was great, but the view of sunset over the Columbia River was even better."
+    "text": "Another stamp in the McMenamins passport, this one at the Kalama Harbor Lodge. The food was good. The sunset over the Columbia, with that steamboat parked in the middle of it, was better."
   },
   {
     "layout": "image-right",
     "title": "Annual Lantern Festival",
     "date": "May 2026",
-    "image": "images/Lanters.jpg",
+    "location": "Night Lights Lantern Festival, Idaho",
+    "image": "images/Lanterns.jpg",
     "imageAlt": "A sky full of lanterns floating into the night sky, over a crowd of people in the center of a race track.",
     "caption": "",
-    "text": "Our annual tradition of going to the Night Lights Lantern Festival in Idaho was as magical as ever."
+    "text": "Our yearly trip to the Night Lights Lantern Festival in Idaho. Everyone crowds into the infield of a race track and sends their lantern up at the same moment, which is the two minutes this photo is trying to hold onto."
   },
   {
     "layout": "image-left",
     "title": "Fluid Architecture",
     "date": "April 2026",
+    "location": "Germany",
     "image": "images/German_Building.jpg",
-    "imageAlt": "A view of a German building with fluid architecture.",
+    "imageAlt": "A view of a German building with fluid, curving architecture.",
     "caption": "",
-    "text": "While I love living the states, going back to Germany to visit family is always a treat. Especially when I see architecture like this, it just feels like they're living in a fairytale."
+    "text": "While I love living in the states, going back to Germany to visit family is always a treat. Especially when I run into a building like this one, where nothing is a straight line and the whole street feels like it wandered out of a fairytale."
   },
   {
     "layout": "full-width",
     "title": "Russell Cave",
     "date": "March 2026",
+    "location": "Russell Cave National Monument, AL",
     "image": "images/Cave.jpg",
     "imageAlt": "A view of a stream flowing into a cave in the middle of a forest.",
     "caption": "",
-    "text": "While visiting family in Tennessee, we did a day trip into Alabama and saw this beautiful cave. We learned the cave is believed to have been first used over 12,000 years ago by Native Americans."
+    "text": "We were visiting family in Tennessee and made a day trip across the Alabama line to this cave. People sheltered in that entrance more than 12,000 years ago, which is a hard number to hold in your head while standing in front of it."
   },
   {
     "layout": "full-width",
-    "title": "Patterson Lake Cabins",
+    "title": "Patterson Lake, Frozen Over",
     "date": "January 2026",
+    "location": "Sun Mountain Lodge, Winthrop, WA",
     "image": "images/Frozen_Lake.jpg",
-    "imageAlt": "Cabins covered in snow seen from the surface of a frozen lake",
+    "imageAlt": "Cabins covered in snow, seen from the surface of a frozen lake.",
     "caption": "",
-    "text": "My family stayed at the Sun Mountain Lodge cabins at Patterson Lake over the long weekend in January. We spent a wonderful time enjoying the winter wonderland. There wasn't much fresh snow, but the lake was completely frozen over allowing for endless fun on ice."
+    "text": "The family took the Sun Mountain cabins for the long weekend in January. Not much fresh snow fell, but the lake had frozen end to end, so this photo is taken standing on water."
   },
   {
     "layout": "image-right",
     "title": "Bean in the Sunshine",
     "date": "December 2025",
+    "location": "At home",
     "image": "images/Bean_Curtain.jpg",
-    "imageAlt": "My cat bean sitting between the curtains and the sunlit window casting an iconic cat shaped shadow.",
+    "imageAlt": "My cat Bean sitting between the curtains and the sunlit window, casting an iconic cat shaped shadow.",
     "caption": "",
-    "text": "Bean loves basking in the sunlight, even when there's no birds to watch."
+    "text": "Bean loves basking in the sunlight, even when there are no birds to watch. The shadow on the curtain is doing most of the work here."
   },
   {
     "layout": "image-left",
     "title": "Ooey Gooey Mushroom",
     "date": "October 2025",
+    "location": "",
     "image": "images/Mushroom_Goo.jpg",
-    "imageAlt": "A closeup of a gooey mushroom in a forest",
+    "imageAlt": "A closeup of a mushroom covered in amber colored droplets, growing in a forest.",
     "caption": "",
-    "text": "During a recent nature walk, I stumbled upon this funky mushroom."
+    "text": "Stumbled on this one halfway through a nature walk. Every cap was beaded with amber droplets, like the whole thing was sweating."
   }
 ]

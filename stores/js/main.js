@@ -10,6 +10,22 @@
 // parse errors). The official UMD build sidesteps that entirely.
 const maplibregl = window.maplibregl;
 
+// The library comes off a CDN, which can be blocked or simply down. Without
+// this the page just shows an empty grey box and a console error nobody
+// reads. A top-level throw aborts the rest of this module cleanly.
+if (!maplibregl) {
+  const box = document.getElementById('map');
+  if (box) {
+    box.innerHTML =
+      '<div class="stores-state stores-state-error">' +
+      '<strong>The map could not load.</strong>' +
+      '<span>The MapLibre library did not download &mdash; usually a blocked CDN, an extension, or a dropped connection. ' +
+      'The store data itself is fine; a refresh normally fixes it.</span>' +
+      '</div>';
+  }
+  throw new Error('MapLibre GL failed to load from the CDN');
+}
+
 // Color assignment follows the dataviz skill's 8-slot validated categorical
 // palette. Two chains (Burger King, Red Robin) reuse a hue from earlier in
 // the list rather than inventing a 9th/10th hue - they're told apart by a
@@ -83,13 +99,35 @@ function pointLayerId(slug) {
   return `${slug}-point`;
 }
 
+// Returns { records, failed }. `failed` is what lets the sidebar say
+// "couldn't load" instead of silently claiming a chain has zero stores -
+// an empty result and a 404 look identical once you throw the error away.
 async function loadChainData(chain) {
   try {
     const res = await fetch(`data/${chain.slug}.json`);
-    if (!res.ok) return [];
-    return await res.json();
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const records = await res.json();
+    return { records, failed: false };
+  } catch (err) {
+    console.error(`Could not load ${chain.slug}.json:`, err);
+    return { records: [], failed: true };
+  }
+}
+
+// Shown under the chain list: when the locations were last pulled.
+async function loadFetchedDate() {
+  try {
+    const res = await fetch('data/meta.json');
+    if (!res.ok) return null;
+    const { fetched } = await res.json();
+    if (!fetched) return null;
+    return new Date(`${fetched}T00:00:00`).toLocaleDateString(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
   } catch {
-    return [];
+    return null;
   }
 }
 
@@ -216,18 +254,21 @@ function setChainVisible(slug, visible) {
   }
 }
 
-function buildToggleList(chainsWithCounts) {
+function buildToggleList(chains) {
   const container = document.getElementById('chain-toggle-list');
   container.innerHTML = '';
-  for (const chain of chainsWithCounts) {
+  for (const chain of chains) {
     const hasData = chain.count > 0;
+    // Three distinct states, because they mean three different things:
+    // a count, a genuine zero in the source data, and a load failure.
+    const status = chain.failed ? "didn't load" : hasData ? chain.count.toLocaleString() : 'none found';
     const row = document.createElement('label');
-    row.className = 'chain-toggle-row' + (hasData ? '' : ' no-data');
+    row.className = 'chain-toggle-row' + (hasData ? '' : chain.failed ? ' failed' : ' no-data');
     row.innerHTML = `
       <input type="checkbox" data-slug="${chain.slug}" ${hasData ? 'checked' : 'disabled'}>
       <span class="chain-swatch" style="background:${chain.color}"></span>
       <span class="chain-name">${chain.name}</span>
-      <span class="chain-count">${hasData ? chain.count.toLocaleString() : 'no data'}</span>
+      <span class="chain-count">${status}</span>
     `;
     const checkbox = row.querySelector('input');
     checkbox.addEventListener('change', () => setChainVisible(chain.slug, checkbox.checked));
@@ -251,12 +292,32 @@ function wireBulkButtons() {
 }
 
 map.on('load', async () => {
-  const chainsWithCounts = [];
+  const loaded = [];
   for (const chain of CHAINS) {
-    const records = await loadChainData(chain);
+    const { records, failed } = await loadChainData(chain);
     addChainLayers(chain, toGeoJson(records));
-    chainsWithCounts.push({ ...chain, count: records.length });
+    loaded.push({ ...chain, count: records.length, failed });
   }
-  buildToggleList(chainsWithCounts);
+  buildToggleList(loaded);
   wireBulkButtons();
+
+  const failures = loaded.filter((c) => c.failed).length;
+  const total = loaded.reduce((sum, c) => sum + c.count, 0);
+  const fetched = await loadFetchedDate();
+  setSidebarNote(total, failures, fetched);
 });
+
+function setSidebarNote(total, failures, fetched) {
+  const note = document.getElementById('stores-note');
+  if (!note) return;
+  const lines = [
+    `${total.toLocaleString()} locations from OpenStreetMap and Overture Maps community data; coverage varies by chain.`,
+  ];
+  if (fetched) lines.push(`Last refreshed ${fetched}.`);
+  if (failures > 0) {
+    lines.push(
+      `<span class="stores-note-error">${failures} chain${failures === 1 ? "'s" : "s'"} data failed to load &mdash; those rows say so above.</span>`
+    );
+  }
+  note.innerHTML = lines.join(' ');
+}

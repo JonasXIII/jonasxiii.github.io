@@ -1,9 +1,17 @@
 /* ============================================================
    Abalone AI Playground — layout, board, modal, and batch-run styles.
-   Reuses a few existing global classes (.chess-panel-section,
-   .move-pair/#move-history, .status-normal/.status-gameover) rather than
-   duplicating them.
+   Self-contained: the side-panel, move-history and status styles used to
+   live in the global stylesheet under chess-themed names, which meant
+   editing the home page could move the board around. They live here now.
    ============================================================ */
+
+/* Slate: a quiet, analytical page. Deliberately the coolest palette on the
+   site - this one is a lab, not a photo album. Declared on :root because
+   the settings dialogs sit outside <main>. */
+:root {
+  --page-accent: #2c5364;
+  --page-accent-dark: #16323d;
+}
 
 .abalone-main {
   width: 100%;
@@ -17,11 +25,10 @@
 .abalone-header {
   text-align: center;
   padding: 1.75rem 1.5rem;
-  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+  background: var(--page-accent-dark);
   color: white;
-  border-radius: 12px;
+  border-radius: var(--radius);
   margin-bottom: 1.25rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .abalone-header h1 {
@@ -75,7 +82,7 @@
   font-weight: 700;
   line-height: 1.6;
   background: #fff;
-  color: #2c5364;
+  color: var(--page-accent);
   border: 2px solid #dfe9ee;
   border-radius: 12px;
   cursor: pointer;
@@ -89,7 +96,7 @@
 }
 
 .mode-btn.active {
-  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+  background: var(--page-accent-dark);
   color: #fff;
   border-color: transparent;
   box-shadow: 0 4px 14px rgba(44, 83, 100, 0.4);
@@ -119,7 +126,7 @@
   font-size: 0.95rem;
   font-weight: 600;
   background: #eef3f5;
-  color: #2c5364;
+  color: var(--page-accent);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -135,7 +142,7 @@
   padding: 0.9rem 1.75rem;
   font-size: 1.05rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+  background: var(--page-accent-dark);
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -177,7 +184,7 @@
   font-size: 0.88rem;
   font-weight: 600;
   background: transparent;
-  color: #2c5364;
+  color: var(--page-accent);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -193,7 +200,7 @@
   align-items: center;
   gap: 0.5rem;
   font-weight: 600;
-  color: #2c5364;
+  color: var(--page-accent);
   font-size: 0.9rem;
 }
 
@@ -231,7 +238,7 @@ dialog::backdrop {
 dialog h2 {
   margin: 0;
   padding: 1.25rem 1.5rem 0.75rem;
-  color: #2c5364;
+  color: var(--page-accent);
   font-size: 1.3rem;
   border-bottom: 2px solid #eef3f5;
 }
@@ -249,7 +256,7 @@ dialog .abalone-note {
 .modal-body label {
   display: block;
   font-weight: 600;
-  color: #2c5364;
+  color: var(--page-accent);
   font-size: 0.9rem;
   margin-bottom: 0.3rem;
 }
@@ -276,7 +283,7 @@ dialog .abalone-note {
 
 .modal-body h3 {
   margin: 1.25rem 0 0.5rem;
-  color: #2c5364;
+  color: var(--page-accent);
   font-size: 1rem;
   border-top: 1px solid #eef3f5;
   padding-top: 1rem;
@@ -346,7 +353,7 @@ dialog .abalone-note {
 }
 
 .opponent-card-head strong {
-  color: #2c5364;
+  color: var(--page-accent);
 }
 
 .opponent-record {
@@ -414,7 +421,7 @@ dialog .abalone-note {
 }
 
 .captured-chip strong {
-  color: #2c5364;
+  color: var(--page-accent);
 }
 
 #board {
@@ -496,7 +503,7 @@ dialog .abalone-note {
 
 #thinking-panel span {
   font-weight: 600;
-  color: #2c5364;
+  color: var(--page-accent);
   text-align: right;
   word-break: break-word;
 }
@@ -543,7 +550,7 @@ dialog .abalone-note {
 
 #thinking-panel-advanced span {
   font-weight: 600;
-  color: #2c5364;
+  color: var(--page-accent);
   text-align: right;
   word-break: break-word;
 }
@@ -563,7 +570,7 @@ dialog .abalone-note {
 #batch-progress-text {
   margin: 0 0 0.6rem;
   font-weight: 600;
-  color: #2c5364;
+  color: var(--page-accent);
 }
 
 .progress-bar-track {
@@ -576,7 +583,7 @@ dialog .abalone-note {
 .progress-bar-fill {
   height: 100%;
   width: 0%;
-  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+  background: var(--page-accent-dark);
   transition: width 0.2s ease;
 }
 
@@ -590,7 +597,7 @@ dialog .abalone-note {
 
 #batch-results h2 {
   margin: 0 0 1rem;
-  color: #2c5364;
+  color: var(--page-accent);
   font-size: 1.2rem;
 }
 
@@ -616,7 +623,7 @@ dialog .abalone-note {
 .stat-value {
   font-size: 1.15rem;
   font-weight: 600;
-  color: #2c5364;
+  color: var(--page-accent);
 }
 
 #batch-chart-container {
@@ -665,13 +672,13 @@ dialog .abalone-note {
 
 #optimize-results h2 {
   margin: 0 0 1rem;
-  color: #2c5364;
+  color: var(--page-accent);
   font-size: 1.2rem;
 }
 
 #optimize-results h3 {
   margin: 1.5rem 0 0.3rem;
-  color: #2c5364;
+  color: var(--page-accent);
   font-size: 1.05rem;
 }
 
@@ -705,7 +712,7 @@ dialog .abalone-note {
   flex: 0 0 160px;
   font-size: 0.85rem;
   font-weight: 600;
-  color: #2c5364;
+  color: var(--page-accent);
 }
 
 .insight-bars {
@@ -745,7 +752,7 @@ dialog .abalone-note {
 }
 
 .insight-bar-line strong {
-  color: #2c5364;
+  color: var(--page-accent);
   font-size: 0.8rem;
   text-align: right;
 }
@@ -790,7 +797,7 @@ dialog .abalone-note {
   justify-content: space-between;
   gap: 0.5rem;
   font-size: 0.88rem;
-  color: #2c5364;
+  color: var(--page-accent);
 }
 
 .ranked-desc {
@@ -816,7 +823,7 @@ dialog .abalone-note {
 
 .batch-history-head h2 {
   margin: 0;
-  color: #2c5364;
+  color: var(--page-accent);
   font-size: 1.2rem;
 }
 
@@ -843,7 +850,7 @@ dialog .abalone-note {
 
 .batch-history-row div:first-child {
   margin-bottom: 0.2rem;
-  color: #2c5364;
+  color: var(--page-accent);
 }
 
 /* ============================================================
@@ -858,7 +865,7 @@ dialog .abalone-note {
 .learn-back {
   display: inline-block;
   margin-bottom: 1rem;
-  color: #2c5364;
+  color: var(--page-accent);
   font-weight: 600;
   text-decoration: none;
 }
@@ -876,7 +883,7 @@ dialog .abalone-note {
 }
 
 .learn-section h2 {
-  color: #2c5364;
+  color: var(--page-accent);
   margin-top: 0;
 }
 
@@ -937,4 +944,101 @@ dialog .abalone-note {
   .abalone-main {
     padding: 0.75rem;
   }
+}
+
+
+/* ============================================================
+   Side panel, move history and game status.
+   Moved here out of the global stylesheet (where they were named after
+   a chess board that no longer exists) so nothing outside this page
+   can reach them.
+   ============================================================ */
+
+.panel-section {
+  background: var(--paper);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid var(--page-accent);
+}
+
+.panel-section h3 {
+  margin: 0 0 10px 0;
+  color: var(--ink);
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 8px;
+}
+
+#move-history {
+  max-height: 300px;
+  overflow-y: auto;
+  background: var(--surface);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: ui-monospace, "Cascadia Mono", "Courier New", monospace;
+}
+
+#move-history::-webkit-scrollbar {
+  width: 8px;
+}
+
+#move-history::-webkit-scrollbar-track {
+  background: var(--paper);
+  border-radius: 5px;
+}
+
+#move-history::-webkit-scrollbar-thumb {
+  background: var(--page-accent);
+  border-radius: 5px;
+}
+
+.move-pair {
+  display: flex;
+  gap: 15px;
+  padding: 5px;
+  border-bottom: 1px solid var(--rule);
+  align-items: center;
+}
+
+.move-pair:last-child {
+  border-bottom: none;
+}
+
+.move-number {
+  font-weight: bold;
+  color: var(--ink-faint);
+  min-width: 25px;
+}
+
+.move-notation {
+  color: var(--ink);
+  min-width: 80px;
+}
+
+.history-empty {
+  text-align: center;
+  color: var(--ink-faint);
+  padding: 20px;
+  font-style: italic;
+}
+
+.status-normal,
+.status-gameover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.status-normal {
+  color: var(--ink);
+  background: var(--paper);
+  border-left: 4px solid var(--page-accent);
+}
+
+.status-gameover {
+  color: var(--page-accent-dark);
+  background: #e3eef3;
+  border-left: 4px solid var(--page-accent-dark);
 }

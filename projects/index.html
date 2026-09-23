@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects - Jonas Loeser</title>
+        <meta name="description" content="Longer writeups: LiDAR segmentation at Mayap&aacute;n, an in-store customer tracker built for a shop in Fairhaven, and a spectral path tracer in Julia.">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="../images/Cup.png">
+    </head>
+    <body>
+        <div id="header-container"></div>
+
+        <main class="projects-main">
+            <div class="projects-header">
+                <h1>Projects</h1>
+                <p class="projects-intro">Some of the bigger projects I have worked on and am happy to talk more about.</p>
+            </div>
+
+            <article class="project" id="mayapan">
+                <h2>Finding Maya Structures in LiDAR</h2>
+                <p class="project-meta">Research &middot; Western Washington University &middot; 2023&ndash;2026 &middot; PyTorch</p>
+
+                <p>Airborne LiDAR records ground elevation beneath a forest canopy, which makes it the standard survey method for Maya sites that centuries of jungle have overgrown. Mayap&aacute;n, in Yucat&aacute;n, has been scanned. The resulting point cloud is large enough that structures within it are still identified largely by hand, an archaeologist scrolling through hillshade renders looking for rectangles.</p>
+
+                <p>My work was on the segmentation pipeline. I evaluated two approaches: DeepLabV3+ applied to rasterized elevation, treating detection as ordinary image segmentation, and SuperPoint Transformer applied directly to the point cloud. Neither architecture is designed for archaeological LiDAR, so the majority of the effort went into preprocessing: coordinate normalization, hierarchical superpoint partitioning, and format conversion between the two representations.</p>
+
+                <p>DeepLabV3+, the stronger of the two, finds 231 of the 334 catalogued structures and raises a false alarm on about a quarter of what it flags. The catalogue comes from decades of ground survey rather than from the scan itself, so some of what the model misses has eroded flat and leaves no signal in the LiDAR at all.</p>
+            </article>
+
+            <article class="project" id="store-tracker">
+                <h2>In-Store Customer Tracker</h2>
+                <p class="project-meta">Senior capstone &middot; 2023 &middot; Python, OpenCV, SQL</p>
+
+                <p>The client, The Post and Parcel, is a retail shop in the Fairhaven district of Bellingham. Sales records showed what sold, but nothing showed where customers spent time before buying, which sections drew traffic, or whether staffing levels matched the busiest hours. Four of us built the system as our senior capstone.</p>
+
+                <p>A camera records during store hours. Each frame is passed to a pretrained person detector; detections are filtered to discard noise such as shadows and window reflections, then attributed to the floor section they fall in. Counts are written to a local SQL database on a single machine in the store. Parsing runs after close: the operator enters a date and the interface returns a heatmap of the store grid with that day&rsquo;s customer total.</p>
+
+                <p>The system is entirely local. The database runs on that one machine, no footage is uploaded, and no third party holds video of the client&rsquo;s customers. This was a requirement rather than a preference. It keeps the project inside the privacy rules a private business in Bellingham operates under, and it avoids committing a small retailer to an indefinite subscription.</p>
+
+                <p>Detection accuracy is the main limitation. A partially occluded person returns confidence as low as 46%, and the pipeline performs no re-identification, so a single customer crossing the floor twice is indistinguishable from two customers. The counts are reliable for comparing sections against one another and unreliable as an absolute headcount. Re-identification was the first item on the future-work list. Built with Finn Payton, Marco Sobrino and Walsh Quigley, released under BSD-3.</p>
+
+                <p class="project-links"><a href="https://github.com/MarcoSobrino/In-Store-Tracker">Source on GitHub</a></p>
+            </article>
+
+            <article class="project" id="raytracer">
+                <h2>Spectral Path Tracer</h2>
+                <p class="project-meta">Class project &middot; 2024 &middot; Julia</p>
+
+                <p>The graphics course ends with a raytracer that lights a scene from a small number of point lights. For the final project, three of us extended it into a physically based path tracer. The first component replaced was the color model.</p>
+
+                <p>Every color in the renderer, including materials, lights and the value accumulating at each pixel, is a <code>LightSpectrum</code>: a vector of intensities over bucketed wavelengths rather than three channels. Producing a displayable pixel requires approximating the XYZ color-matching functions, integrating the spectrum against them, and applying a linear transform into RGB with negative values clipped. The spectral representation is what makes refraction behave correctly. Index of refraction is computed per wavelength using the Cauchy equation, so a glass sphere under a white light disperses that light into a visible spectrum on the floor.</p>
+
+                <div class="project-figures">
+                    <figure>
+                        <img src="images/raytracer-prism.jpg" alt="A rendered glass sphere casting a rainbow-coloured caustic ring onto a grey floor." width="900" height="900" loading="lazy">
+                        <figcaption>Chromatic dispersion through a glass sphere. No object in the scene is colored; the spectrum is produced entirely by wavelength-dependent refraction.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/raytracer-bunny.jpg" alt="A rendered glass Stanford bunny lit from above, casting a bright caustic on the floor, with two moon-like spheres behind it." width="500" height="500" loading="lazy">
+                        <figcaption>Approximately 24 hours of accumulated samples. The colored speckle in the caustic is dispersion noise that had not yet averaged out.</figcaption>
+                    </figure>
+                </div>
+
+                <p>The renderer has no explicit light sources. Illumination comes from emissive materials and from the sky, and each sample traces a single path through the scene, sampling its next direction at each surface from that surface&rsquo;s shader. Two shaders cover every material: a Glossy shader parameterized by roughness, from perfect mirror to fully diffuse, and a refractive shader mixed with a small amount of surface reflection for glass. Inverse-square falloff, colored bounce light, caustics and lens behavior all emerge from those two, without being modelled explicitly. Geometry that cannot be expressed as a single equation is built with constructive solid geometry: union, intersection and difference over spheres and rectangular prisms. The lens in one test scene was constructed that way.</p>
+
+                <p>The cost of this approach is sample count. The renderer writes the running average to disk after every pass, so a render can be stopped at any point once the noise level is acceptable. Three things made that practical: a bounding volume hierarchy to keep scenes with real geometry tractable, Julia&rsquo;s multithreading across the pixel loop, and a Condor job file distributing the render across the department&rsquo;s lab machines. Each process returns its own array of spectra, and averaging them is equivalent to a single machine computing the same total number of samples. The glass bunny render took approximately 24 hours. Built with Nic Preisig and Dylan Carroll.</p>
+            </article>
+
+            <h2 class="projects-tools-title">Also on this site</h2>
+            <p class="projects-tools-note">Smaller things, both of which run in the browser:</p>
+            <ul class="projects-tools">
+                <li><a href="../kingdom/">Dominion Kingdom Generator</a> &mdash; deals a playable 10-card Kingdom from every expansion I own, and checks it&rsquo;s worth playing before handing it over.</li>
+                <li><a href="../stores/">Chain Store Map</a> &mdash; every American location of ten big chains, from OpenStreetMap and Overture data. Built in a day.</li>
+            </ul>
+        </main>
+
+        <div id="footer-container"></div>
+        <script src="../load-header-footer.js"></script>
+    </body>
+</html>

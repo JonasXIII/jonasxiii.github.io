@@ -2,7 +2,11 @@
    Chain Store Map — layout, sidebar toggles, and map styles.
    ============================================================ */
 
+/* The store map keeps the site's evergreen as its own accent - it is the
+   page the palette was picked from, so these are the defaults already. */
+
 .stores-main {
+  flex: 1;
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
@@ -14,11 +18,10 @@
 .stores-header {
   text-align: center;
   padding: 1.75rem 1.5rem;
-  background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);
+  background: var(--page-accent-dark);
   color: white;
-  border-radius: 12px;
+  border-radius: var(--radius);
   margin-bottom: 1.25rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .stores-header h1 {
@@ -42,10 +45,10 @@
 }
 
 #stores-sidebar {
-  background: #fff;
+  background: var(--surface);
+  border: 1px solid var(--rule);
   padding: 1.25rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  border-radius: var(--radius);
   position: sticky;
   top: 1rem;
   max-height: calc(100vh - 2rem);
@@ -61,17 +64,18 @@
 .stores-sidebar-actions .action-btn {
   flex: 1;
   padding: 0.55rem;
+  font-family: inherit;
   font-size: 0.85rem;
   font-weight: 600;
-  background: #eef3f5;
-  color: #1b4332;
+  background: var(--accent-wash);
+  color: var(--page-accent-dark);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
 }
 
 .stores-sidebar-actions .action-btn:hover {
-  background: #dfe9ee;
+  background: color-mix(in srgb, var(--page-accent) 20%, var(--accent-wash));
 }
 
 #chain-toggle-list {
@@ -91,13 +95,13 @@
 }
 
 .chain-toggle-row:hover {
-  background: #f7fafc;
+  background: var(--paper);
 }
 
 .chain-toggle-row input[type="checkbox"] {
   width: 1.05rem;
   height: 1.05rem;
-  accent-color: #1b4332;
+  accent-color: var(--page-accent-dark);
   cursor: pointer;
   flex-shrink: 0;
 }
@@ -112,12 +116,12 @@
 
 .chain-toggle-row .chain-name {
   flex: 1;
-  color: #333;
+  color: var(--ink);
 }
 
 .chain-toggle-row .chain-count {
   font-size: 0.78rem;
-  color: #718096;
+  color: var(--ink-faint);
   font-weight: 600;
 }
 
@@ -132,9 +136,9 @@
 .stores-note {
   margin-top: 1.25rem;
   padding-top: 1rem;
-  border-top: 1px solid #eef3f5;
+  border-top: 1px solid var(--rule);
   font-size: 0.75rem;
-  color: #888;
+  color: var(--ink-faint);
   line-height: 1.5;
 }
 
@@ -148,9 +152,61 @@
 #map {
   height: calc(100vh - 12rem);
   min-height: 480px;
-  border-radius: 12px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  background: var(--surface);
+}
+
+/* ---- Loading / failure states ---- */
+
+.stores-state {
+  margin: 0;
+  padding: 1.25rem 0.6rem;
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+}
+
+/* Centered in the map box when the map itself never arrived. */
+.stores-state-error {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: var(--ink-soft);
+}
+
+.stores-state-error strong {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.stores-state-error span {
+  max-width: 42ch;
+  font-size: 0.9rem;
+}
+
+/* A chain whose data file failed to load, vs one that genuinely has no
+   locations in the source data. */
+.chain-toggle-row.failed {
+  opacity: 0.85;
+}
+
+.chain-toggle-row.failed .chain-count {
+  color: #a4442f;
+  font-style: normal;
+}
+
+.stores-note-error {
+  display: block;
+  margin-top: 0.4rem;
+  color: #a4442f;
 }
 
 .stores-popup {
@@ -162,13 +218,13 @@
   display: block;
   font-size: 0.95rem;
   margin-bottom: 0.2rem;
-  color: #1b4332;
+  color: var(--page-accent-dark);
 }
 
 .stores-popup-source {
   margin-top: 0.4rem;
   font-size: 0.72rem;
-  color: #888;
+  color: var(--ink-faint);
   font-style: italic;
 }
 

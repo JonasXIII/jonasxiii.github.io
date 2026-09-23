@@ -36,6 +36,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from datetime import date
 
 from chain_config import CHAINS, US_BOUNDS
 from geo_utils import dedupe_nearby
@@ -272,6 +273,10 @@ def main():
 
         if i < len(slugs) - 1:
             time.sleep(args.delay)
+
+    # The site shows this date so visitors can tell how stale the map is.
+    with open(os.path.join(DATA_DIR, "meta.json"), "w", encoding="utf-8") as f:
+        json.dump({"fetched": date.today().isoformat()}, f, indent=1)
 
     print("\n--- Summary ---")
     print(f"{'Chain':<16}{'OSM':>8}{'Overture':>10}{'Final':>8}")

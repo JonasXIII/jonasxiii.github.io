@@ -15,7 +15,7 @@
   <main class="stores-main">
     <div class="stores-header">
       <h1>Chain Store Map</h1>
-      <p class="stores-intro">Where major US retail/restaurant chains actually are. Built in sadness after realizing Aldi somehow skips the entire Pacific Northwest.</p>
+      <p class="stores-intro">Every American location of ten big chains on one map. Built in sadness after working out that Aldi skips the entire Pacific Northwest.</p>
     </div>
 
     <div id="stores-layout">
@@ -24,8 +24,10 @@
           <button type="button" id="select-all-btn" class="action-btn">All</button>
           <button type="button" id="select-none-btn" class="action-btn">None</button>
         </div>
-        <div id="chain-toggle-list"></div>
-        <p class="stores-note">Locations sourced from OpenStreetMap community data, coverage varies by chain.</p>
+        <div id="chain-toggle-list">
+          <p class="stores-state">Loading store locations&hellip;</p>
+        </div>
+        <p class="stores-note" id="stores-note">Locations come from OpenStreetMap and Overture Maps community data; coverage varies by chain.</p>
       </aside>
 
       <div id="map"></div>

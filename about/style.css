@@ -1,0 +1,184 @@
+/* ============================================================
+   Journal — a photo and a note per month.
+
+   A banner up top to match the rest of the site, then nothing
+   that competes with the photographs: no card shadows, no
+   second accent. Below the banner the images do the work.
+   ============================================================ */
+
+/* Rust, for the same reason the photos are mostly autumn. */
+:root {
+  --page-accent: #9a5b33;
+  --page-accent-dark: #6b3a1f;
+}
+
+.about-main {
+  flex: 1;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3.5rem;
+  box-sizing: border-box;
+}
+
+.about-header {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--page-accent-dark);
+  color: #fff;
+  border-radius: var(--radius);
+  margin-bottom: 2.5rem;
+}
+
+.about-header h1 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+}
+
+.about-intro {
+  margin: 0 auto;
+  max-width: 62ch;
+  font-size: 1.05rem;
+  opacity: 0.92;
+}
+
+/* ---- Year markers ---- */
+
+.year-marker {
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 1rem 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.year-marker::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+.about-timeline > .year-marker:first-child {
+  margin-top: 0;
+}
+
+/* ---- Posts ---- */
+
+.about-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.post-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-caption {
+  margin: 0;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--ink-faint);
+  background: var(--paper);
+}
+
+.post-content {
+  padding: 1.5rem 1.65rem;
+}
+
+.post-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.4rem;
+}
+
+.post-meta {
+  margin: 0 0 0.85rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--page-accent);
+  font-weight: 600;
+}
+
+.post-text {
+  margin: 0;
+  max-width: var(--measure);
+  color: var(--ink-soft);
+}
+
+/* Side-by-side layouts. The image column is a fraction rather than a
+   fixed 400px so a portrait photo isn't cropped to a letterbox. */
+.post-image-left,
+.post-image-right {
+  display: grid;
+  align-items: stretch;
+}
+
+.post-image-left {
+  grid-template-columns: 5fr 4fr;
+}
+
+.post-image-right {
+  grid-template-columns: 4fr 5fr;
+}
+
+.post-image-left .post-content,
+.post-image-right .post-content {
+  align-self: center;
+}
+
+/* ---- Load failure / empty journal ---- */
+
+.timeline-message {
+  margin: 0;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  border: 1px dashed var(--rule);
+  border-radius: var(--radius);
+  color: var(--ink-soft);
+}
+
+.timeline-message strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 760px) {
+  .about-timeline {
+    gap: 2rem;
+  }
+
+  .post-image-left,
+  .post-image-right {
+    grid-template-columns: 1fr;
+  }
+
+  /* Photo above the text on every layout, regardless of DOM order. */
+  .post-image-right .post-image {
+    order: -1;
+  }
+
+  .post-content {
+    padding: 1.25rem;
+  }
+}

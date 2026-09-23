@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jonas Loeser</title>
+        <meta name="description" content="Jonas Loeser: computer science, Magic, Dominion, backpacking and mushroom foraging in the Pacific Northwest, plus a photo journal and a couple of tools he built for himself.">
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="images/Cup.png">
     </head>
@@ -11,13 +12,35 @@
 
         <div id="header-container"></div>
 
-        <main>
-            <h1>Welcome to My Website</h1>
+        <main class="home-main">
+            <div class="home-intro">
+                <div>
+                    <h1>Jonas Loeser</h1>
+                    <p>I live in the Pacific Northwest. I was born in Germany and grew up here, and I just finished a master&rsquo;s in computer science at Western Washington University. My thesis taught a model to pick out Maya ruins in LiDAR scans of Mayap&aacute;n, under canopy you can&rsquo;t see through.</p>
+                    <p>I&rsquo;ve been a fan of technical board games for a long time. As a kid I played a lot of chess and <a href="https://lichess.org/@/JonasXIII">topped out at 1700 rapid</a> on Lichess. Now it&rsquo;s Magic every week, either at my LGS with around 30 regulars or online with a couple close friends. A while ago I found Dominion and it became a favorite fast. The randomizer here exists because picking the ten cards is the slowest part of sitting down to play.</p>
+                    <p>At home I run a Jellyfin server off movies I checked out of the library, so our favorites are always right there. A replacement for Google Photos is next.</p>
+                    <p>I&rsquo;m still an amateur, but I love going backpacking, a handful of trips in so far. Carrying everything you need on your back is very satisfying. I bike and forage for mushrooms too. I haven&rsquo;t been bikepacking yet, but it seems amazing.</p>
+                </div>
+                <figure class="home-portrait">
+                    <img src="images/Jonas_Snow.jpg" alt="Jonas standing in deep snow in Winthrop, Washington." width="500">
+                    <figcaption>Winthrop, WA, mid&#8209;winter.</figcaption>
+                </figure>
+            </div>
 
-            <p>This is me!</p>
-            <img src="images/Jonas_Snow.jpg" alt="Jonas in Winthrop in the snow." width="500">
+            <h2 class="home-section-title">Running on this site</h2>
+
+
+            <div class="home-projects">
+                <a class="home-project" href="kingdom/">
+                    <h3>Dominion Kingdom Generator</h3>
+                    <p>Deals a playable 10-card Kingdom out of every expansion I own. Someone else had already built one of these; I wanted one that worked the way I wanted it to, on my own site, so I&rsquo;ve been picking at this one ever since.</p>
+                </a>
+                <a class="home-project" href="stores/">
+                    <h3>Chain Store Map</h3>
+                    <p>Every American location of ten big chains, using OpenStreetMap and Overture data. I built it in a day after realizing there isn&rsquo;t a single Aldi in the Pacific Northwest.</p>
+                </a>
+            </div>
         </main>
-
 
         <div id="footer-container"></div>
         <script src="load-header-footer.js"></script>
